@@ -1,0 +1,90 @@
+    return opts, opts.index(str(correct))
+
+def qrec(slug,i,diff,prompt,correct,distractors,explanation):
+    opts,ans=shuffle_mcq(correct,distractors,R)
+    pts={'easy':0.9,'medium':1.5,'hard':2.6}[diff]
+    return {'id':f'{slug}-{i:03d}','unit':slug,'difficulty':diff,'points':pts,'prompt':prompt,'options':opts,'answer':ans,'explanation':explanation}
+
+def diff_for(i):
+    return 'easy' if i<=34 else ('medium' if i<=67 else 'hard')
+
+def gen_hardware(i,d):
+    inputs=['Klaviatura','Sichqoncha','Mikrofon','Skaner','Veb-kamera']
+    outputs=['Monitor','Printer','Proyektor','Karnay']
+    if i%4==0:
+        c=R.choice(inputs); ds=R.sample(outputs,3)
+        return qrec('hardware',i,d,f"Qaysi biri kiritish qurilmasi?",c,ds,f"{c} ma’lumotni kompyuterga kiritadi.")
+    if i%4==1:
+        c=R.choice(outputs); ds=R.sample(inputs,3)
+        return qrec('hardware',i,d,"Qaysi biri chiqarish qurilmasi?",c,ds,f"{c} kompyuter natijasini foydalanuvchiga chiqaradi.")
+    if i%4==2:
+        return qrec('hardware',i,d,"Dastur ishlayotgan paytda ma’lumotni vaqtincha va tez saqlaydigan xotira qaysi?","RAM",['SSD','HDD','DVD'],"RAM tezkor, vaqtinchalik ishchi xotiradir.")
+    return qrec('hardware',i,d,"Quyidagilardan qaysi biri uzoq muddatli saqlash qurilmasi?","SSD",['RAM','CPU','ALU'],"SSD ma’lumotni elektr o‘chganda ham saqlaydi.")
+
+def gen_files(i,d):
+    if i%3==0:
+        n=R.choice(['ab','xy','k9','uz']); mask=f"{n[0]}?.txt"; c=f"{n}.txt"
+        return qrec('files',i,d,f"Qaysi fayl nomi {mask} maskasiga mos keladi?",c,[f"{n[0]}.txt",f"{n}1.txt",f"{n}.doc"],"? aynan bitta belgini bildiradi.")
+    if i%3==1:
+        ext,kind=R.choice([('.wav','audio'),('.mkv','video'),('.docx','hujjat'),('.png','rasm')])
+        return qrec('files',i,d,f"{kind.capitalize()} fayliga mos kengaytmani tanlang.",ext,['.exe','.tmp','.sys'],f"{ext} kengaytmasi {kind} fayllarida ishlatiladi.")
+    c='Bola.txt'
+    return qrec('files',i,d,"[A-C]*.txt maskasiga qaysi nom mos keladi?",c,['Dala.txt','olma.txt','Ctest.doc'],"[A-C] birinchi belgi A, B yoki C bo‘lishini talab qiladi.")
+
+def gen_data(i,d):
+    if i%5==0:
+        gb=R.choice([2,4,8,16]); c=gb*1024
+        return qrec('data-size-transfer',i,d,f"{gb} GB necha MB?",c,[gb*1000,c-1024,c+1024],"1 GB = 1024 MB deb olinadi.")
+    if i%5==1:
+        mb=R.choice([5,10,20,25,50,100]); speed=R.choice([2,4,5,10,20]); c=mb*8/speed
+        return qrec('data-size-transfer',i,d,f"{mb} MB fayl {speed} Mbit/s tezlikda necha sekundda uzatiladi?",int(c) if c.is_integer() else c,[max(1,int(c/2)),int(c*2),int(c+8)],"MB ni Mbitga ×8 qilib, tezlikka bo‘lamiz.")
+    if i%5==2:
+        orig=R.choice([100,120,200,250]); pct=R.choice([20,25,30,40]); rem=orig*(100-pct)//100
+        return qrec('data-size-transfer',i,d,f"{orig} MB fayl {pct}% ga qisqardi. Yangi hajm qancha MB?",rem,[orig*pct//100,orig-rem,orig],f"{100-pct}% qismi qoladi: {orig}×{100-pct}/100={rem}.")
+    if i%5==3:
+        pages=R.choice([3,4,5,8]); rows=R.choice([32,40,64]); chars=R.choice([16,32,50]); total=pages*rows*chars
+        return qrec('data-size-transfer',i,d,f"Kitob {pages} sahifa, har sahifa {rows} qator, har qator {chars} belgi. 1 belgi=1 byte. Hajm necha byte?",total,[pages*rows,total//2,total*8],"Sahifa×qator×belgi×1 byte.")
+    limit=R.choice([10,20,25]); each=R.choice([2,2.5,5]); count=R.choice([20,30,35,40]); per=math.floor(limit/each); c=math.ceil(count/per)
+    return qrec('data-size-transfer',i,d,f"Bitta xabarga {limit} MB limit. Har fayl {each} MB. {count} fayl kamida nechta xabarda ketadi?",c,[max(1,c-1),c+1,c+2],f"Bir xabarga {per} ta fayl sig‘adi; {count}/{per} ni yuqoriga yaxlitlaymiz.")
+
+def gen_algo(i,d):
+    if i%3==0:
+        n=R.choice([5,6,8,10]); c=n*(n+1)//2
+        return qrec('algorithms-flowcharts',i,d,f"S=0, i=1. i≤{n} bo‘lguncha S=S+i; i=i+1. Oxirida S?",c,[c-n,c+n,n*n],f"Bu 1 dan {n} gacha yig‘indi: n(n+1)/2.")
+    if i%3==1:
+        n=R.choice([4,5,6]); c=math.prod(range(1,n+1))
+        return qrec('algorithms-flowcharts',i,d,f"P=1, i={n}. i≥1 bo‘lsa P=P*i; i=i-1 takrorlanadi. P?",c,[c//n,c+n,n*n],f"Bu {n}! faktorial hisobidir.")
+    a,b,c=R.sample(range(5,30),3); m=max(a,b,c)
+    return qrec('algorithms-flowcharts',i,d,f"Algoritm uch son {a}, {b}, {c} orasidan eng kattasini chiqaradi. Natija?",m,[min(a,b,c),sorted([a,b,c])[1],a+b+c],"Shartlar orqali eng katta qiymat tanlanadi.")
+
+def gen_python(i,d):
+    typ=i%6
+    if typ==0:
+        vals=[R.randint(-5,9) for _ in range(5)]; c=sum(1 for x in vals if x>0)
+        return qrec('python',i,d,f"Kod ro‘yxatdagi musbat sonlarni sanaydi. list={vals}. count?",c,[len(vals)-c,sum(x>1 for x in vals),sum(x<0 for x in vals)],"Har x>0 bo‘lgan element uchun hisoblagich 1 ga oshadi.")
+    if typ==1:
+        vals=[R.randint(-9,9) for _ in range(6)]; c=sum(x for x in vals if x<0)
+        return qrec('python',i,d,f"S=0; for n in {vals}: if n<0: S+=n. print(S) nima chiqaradi?",c,[abs(c),sum(vals),0],"Faqat manfiy elementlar S ga qo‘shiladi.")
+    if typ==2:
+        n=R.choice([10,12,15,20]); step=R.choice([2,3,5]); vals=list(range(1,n+1)); c=sum(x for x in vals if x%step==0)
+        return qrec('python',i,d,f"sum(x for x in range(1,{n+1}) if x%{step}==0) qiymati?",c,[c-step,c+step,n],"Faqat berilgan songa karrali qiymatlar yig‘iladi.")
+    if typ==3:
+        vals=[R.randint(1,10) for _ in range(6)]; c=[x for x in vals if x%2==0]
+        # options as JSON-ish strings
+        return qrec('python',i,d,f"Kod juft sonlarni append qiladi. sonlar={vals}. Natija qaysi?",str(c),[str([x for x in vals if x%2]),str(vals),str(c[::-1])],"x%2==0 faqat juft sonlarni tanlaydi.")
+    if typ==4:
+        a,b=R.sample(range(2,12),2); c=max(a,b)**2
+        return qrec('python',i,d,f"def f(a,b): return max(a,b)**2. f({a},{b})?",c,[min(a,b)**2,a+b,max(a,b)],"Avval max olinadi, keyin kvadratga oshiriladi.")
+    vals=[R.randint(1,6) for _ in range(3)] + [-R.randint(1,5)] + [R.randint(1,6) for _ in range(2)]
+    p=1
+    for x in vals:
+        if x<0: break
+        p*=x
+    return qrec('python',i,d,f"p=1; for x in {vals}: agar x<0: break; aks holda p*=x. print(p)?",p,[abs(math.prod(vals[:3])),0,math.prod(abs(x) for x in vals)],"break birinchi manfiy son kelganda siklni to‘xtatadi.")
+
+def caesar(text,k,enc=True):
+    out=''
+    for ch in text:
+        if ch.isalpha():
+            x=ord(ch)-65; y=(x+(k if enc else -k))%26; out+=chr(65+y)
+        else: out+=ch
