@@ -67,4 +67,5 @@ export type ExamHistory = {
   configuredMinutes: number;
   elapsedSeconds: number;
   wrongUnits: string[];
+  assistedCount?: number;
 };
