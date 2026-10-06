@@ -1,0 +1,75 @@
+    vals=[0,17,34,51,68,85,102,119,136,153,170,187,204,221,238,255]
+    if i%2==0:
+        rgb=tuple(R.choice(vals) for _ in range(3)); h='#'+''.join(f'{x:02X}' for x in rgb)
+        return qrec('colors',i,d,f"RGB={rgb} rangining HEX kodi?",h,['#'+''.join(f'{x:02X}' for x in rgb[::-1]),'#FFFFFF','#000000'],"Har kanal 0..255 dan 2 xonali hexga aylantiriladi.")
+    rgb=tuple(R.choice(vals) for _ in range(3)); h='#'+''.join(f'{x:02X}' for x in rgb)
+    return qrec('colors',i,d,f"{h} rangining RGB qiymati?",str(rgb),[str(rgb[::-1]),'(255, 255, 255)','(0, 0, 0)'],"RR, GG, BB juftliklarini 16 likdan 10 likka aylantiramiz.")
+
+def gen_multimedia(i,d):
+    typ=i%4
+    if typ==0:
+        sec=R.choice([30,60,90,120,150]); fps=R.choice([24,25,30,60]); c=sec*fps
+        return qrec('multimedia',i,d,f"Video {sec} sekund, {fps} FPS. Jami nechta kadr?",c,[sec+fps,c-fps,c+fps],"Kadrlar soni=vaqt×FPS.")
+    if typ==1:
+        sec=R.choice([10,20,30,60]); hz=R.choice([8000,16000,22000]); bits=R.choice([8,16]); ch=R.choice([1,2]); bytes_=sec*hz*bits*ch//8
+        kb=bytes_//1024
+        return qrec('multimedia',i,d,f"{sec}s, {hz}Hz, {bits}bit, {ch} kanal audio xom hajmi taxminan necha KB (1024)?",kb,[max(1,kb//2),kb*2,bytes_],"sekund×Hz×bit×kanal /8 /1024.")
+    if typ==2:
+        return qrec('multimedia',i,d,"Qaysi kengaytma odatda video faylga tegishli?",".mkv",['.wav','.flac','.aac'],".mkv video konteyner formati.")
+    w,h=R.choice([(320,240),(640,480),(800,600)]); depth=R.choice([8,24]); bytes_=w*h*depth//8
+    return qrec('multimedia',i,d,f"{w}×{h} piksel, {depth} bit rang chuqurligidagi bitta xom kadr necha byte?",bytes_,[w*h,bytes_//8,bytes_*8],"piksel soni×bit/piksel /8.")
+
+def gen_networks(i,d):
+    typ=i%6
+    if typ==0:
+        good=f"192.168.{R.randint(0,254)}.{R.randint(1,254)}"
+        return qrec('networks-web',i,d,"Qaysi biri to‘g‘ri IPv4 manzil?",good,['192.168.300.1','10.0.0','256.1.1.1'],"IPv4 4 oktetdan iborat, har biri 0..255.")
+    if typ==1:
+        prefix=R.choice([30,29,28,27]); total=2**(32-prefix); hosts=total-2
+        return qrec('networks-web',i,d,f"/{prefix} IPv4 tarmog‘ida odatda nechta foydalaniladigan host manzili bor?",hosts,[total,prefix,total-1],"Jami 2^(32-prefix), odatda network va broadcast ayiriladi.")
+    if typ==2:
+        return qrec('networks-web',i,d,"www.example.com domenida TLD qaysi?","com",['www','example','www.example'],"Eng o‘ngdagi qism TLD hisoblanadi.")
+    if typ==3:
+        return qrec('networks-web',i,d,"HTTP 404 kodi nimani bildiradi?","Resurs topilmadi",['So‘rov muvaffaqiyatli','Server ichki xatosi','Ruxsat berildi'],"404 = Not Found.")
+    if typ==4:
+        return qrec('networks-web',i,d,"Quyidagilardan qaysi biri URL?","https://example.uz/page",['C:\\Files\\a.txt','255.255.255.0','photo.jpg'],"URL web resursning to‘liq manzilidir.")
+    return qrec('networks-web',i,d,"IPv4 manzil uzunligi nechta bit?",32,[16,64,128],"IPv4 = 4×8=32 bit.")
+
+def gen_model(i,d):
+    typ=i%4
+    if typ==0: return qrec('modeling',i,d,"Binoning kichraytirilgan maketi qaysi model turi?","Fizik model",['Matematik model','Grafik model','Algoritmik model'],"Maket moddiy/fizik nusxadir.")
+    if typ==1: return qrec('modeling',i,d,"y=2x+5 tenglama qaysi model turi?","Matematik model",['Fizik model','Grafik model','Matnli model'],"Formula va tenglamalar matematik modeldir.")
+    if typ==2: return qrec('modeling',i,d,"Yo‘l xaritasi qaysi model turiga eng yaqin?","Grafik model",['Fizik model','Matematik model','Tovush modeli'],"Xarita grafik tasvirdir.")
+    return qrec('modeling',i,d,"Modellashtirishning eng to‘g‘ri ta’rifi?","Haqiqiy obyektning muhim xususiyatlarini soddalashtirib ifodalash",['Kompyuterni tezlatish','Faqat kod yozish','Faylni arxivlash'],"Model muhim xususiyatlarni saqlagan soddalashtirilgan ifodadir.")
+
+def gen_web(i,d):
+    typ=i%4
+    if typ==0: return qrec('web-tech',i,d,"Oddiy HTML formasi ma’lumot yuborishda qaysi methoddan foydalana oladi?","POST",['PUT','PATCH','TRACE'],"HTML formalarida GET va POST asosiy methodlardir.")
+    if typ==1: return qrec('web-tech',i,d,"Qaysi biri JavaScript frontend framework/kutubxona?","React",['PostgreSQL','Excel','Photoshop'],"React web interfeyslar yaratishda ishlatiladi.")
+    if typ==2: return qrec('web-tech',i,d,"Qaysi biri asosan CSS/UI framework?","Bootstrap",['Python','SQLite','NumPy'],"Bootstrap tayyor CSS/UI komponentlari beradi.")
+    return qrec('web-tech',i,d,"GET va POST orasida qaysi fikr to‘g‘ri?","GET odatda parametrlarni URLda yuborishi mumkin",['POST faqat rasm uchun','GET serverga hech qachon bormaydi','POST brauzerda ishlamaydi'],"GET query parametrlarini URLda yuborishi mumkin.")
+
+def gen_encoding(i,d):
+    typ=i%3
+    if typ==0:
+        n=R.choice([20,30,50,64,65,90,100,127,128,129,200]); bits=math.ceil(math.log2(n))
+        return qrec('encoding-bits',i,d,f"{n} ta obyektni noyob ikkilik kodlash uchun kamida nechta bit kerak?",bits,[max(1,bits-1),bits+1,n],f"2^{bits-1} yetmaydi, 2^{bits} ≥ {n}.")
+    if typ==1:
+        ch=R.choice(list('ABCabc012')); code=ord(ch)
+        return qrec('encoding-bits',i,d,f"ASCII bo‘yicha '{ch}' belgining o‘nlik kodi?",code,[code-1,code+1,code+32],"ASCII jadvalida har belgining sonli kodi bor.")
+    chars=R.choice([100,256,512,1024]); c=chars
+    return qrec('encoding-bits',i,d,f"1 belgi=1 byte deb olinsa, {chars} belgili matn hajmi necha byte?",c,[chars*8,chars//8,chars+1024],"Har belgi 1 byte bo‘lsa, byte soni belgilar soniga teng.")
+
+gens={
+'hardware':gen_hardware,'files':gen_files,'data-size-transfer':gen_data,'algorithms-flowcharts':gen_algo,'python':gen_python,'cryptography':gen_crypto,'number-systems':gen_numsys,'boolean-logic':gen_logic,'software':gen_software,'excel':gen_excel,'databases-sql':gen_db,'colors':gen_colors,'multimedia':gen_multimedia,'networks-web':gen_networks,'modeling':gen_model,'web-tech':gen_web,'encoding-bits':gen_encoding}
+
+combined=[]
+for u in units:
+    slug=u['slug']; arr=[]
+    for i in range(1,101):
+        arr.append(gens[slug](i,diff_for(i)))
+    (QDIR/f'{slug}.json').write_text(json.dumps(arr,ensure_ascii=False,indent=2),encoding='utf-8')
+    combined.extend(arr)
+(ROOT/'public'/'data'/'question-bank.json').write_text(json.dumps(combined,ensure_ascii=False),encoding='utf-8')
+
+print(f"Created {len(units)} units, {len(source_questions)} source mappings, {len(combined)} generated questions")
