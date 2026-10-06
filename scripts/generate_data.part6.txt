@@ -1,0 +1,90 @@
+    return out
+
+def vig(text,key,enc=True):
+    out=''; key=key.upper()
+    for idx,ch in enumerate(text.upper()):
+        x=ord(ch)-65; k=ord(key[idx%len(key)])-65
+        y=(x+(k if enc else -k))%26; out+=chr(65+y)
+    return out
+
+def gen_crypto(i,d):
+    words=['HELLO','DATA','CODE','LOGIC','PYTHON','ARRAY','MODEL','QUERY','TABLE','SMART']
+    if i%2==0:
+        w=R.choice(words); k=R.randint(1,9); cipher=caesar(w,k,True)
+        return qrec('cryptography',i,d,f"Sezar shifrida {cipher} matn {k} kalit bilan shifrlangan. Asl matn?",w,[caesar(cipher,k,True),w[::-1],R.choice(words)],f"Deshifrlashda har harfni {k} qadam orqaga suramiz.")
+    w=R.choice(words); key=R.choice(['KEY','LOCK','SUN','ABC','CODE']); cipher=vig(w,key,True)
+    return qrec('cryptography',i,d,f"Vigenère: shifrlangan matn {cipher}, kalit {key}. Asl matn?",w,[vig(cipher,key,True),w[::-1],R.choice(words)],"Shifrlangan harf indeksidan kalit harfi indeksini mod 26 bo‘yicha ayiramiz.")
+
+def to_base(n,b):
+    digits='0123456789ABCDEF'; s=''
+    if n==0:return '0'
+    while n: s=digits[n%b]+s; n//=b
+    return s
+
+def gen_numsys(i,d):
+    typ=i%4
+    if typ==0:
+        n=R.randint(10,255); b=R.choice([2,8,16]); c=to_base(n,b)
+        return qrec('number-systems',i,d,f"{n}₁₀ sonini {b} lik sanoq sistemasiga o‘tkazing.",c,[to_base(n+1,b),to_base(max(1,n-1),b),str(n)],"Ketma-ket asosga bo‘lib, qoldiqlarni teskari tartibda yozamiz.")
+    if typ==1:
+        b=R.choice([2,8,16]); n=R.randint(8,120); s=to_base(n,b)
+        return qrec('number-systems',i,d,f"{s}_{b} sonining o‘nlik qiymati?",n,[n+1,max(0,n-1),n*b],"Pozitsion qiymatlar yig‘indisi o‘nlik sonni beradi.")
+    if typ==2:
+        # choose x in base 5 digit equation x3_5 = decimal
+        x=R.randint(1,4); value=x*5+3
+        return qrec('number-systems',i,d,f"x3₅ = {value}₁₀ bo‘lsa, x nechaga teng?",x,[0,5,x+1],f"5x+3={value}, demak x={x}.")
+    n=R.randint(8,63); c=to_base(n,8)
+    return qrec('number-systems',i,d,f"{n}₁₀ sonining sakkizlik yozuvi?",c,[to_base(n,2),to_base(n,16),str(n)],"8 likka ketma-ket bo‘lish orqali o‘tkazamiz.")
+
+def gen_logic(i,d):
+    typ=i%5
+    if typ==0:
+        p,q=R.randint(0,1),R.randint(0,1); c=int(bool(p and q))
+        return qrec('boolean-logic',i,d,f"p={p}, q={q}. p AND q?",c,[1-c,2,-1],"AND faqat ikkalasi 1 bo‘lsa 1.")
+    if typ==1:
+        p,q=R.randint(0,1),R.randint(0,1); c=int(not (p or q))
+        return qrec('boolean-logic',i,d,f"p={p}, q={q}. p NOR q?",c,[1-c,2,-1],"NOR = NOT(OR).")
+    if typ==2:
+        n=R.choice([2,3,4,5]); c=2**n
+        return qrec('boolean-logic',i,d,f"{n} ta mantiqiy o‘zgaruvchili rostlik jadvalida nechta qator bo‘ladi?",c,[n*2,2*n,2**(n-1)],"n o‘zgaruvchi uchun 2^n kombinatsiya bor.")
+    if typ==3:
+        p,q,r=[R.randint(0,1) for _ in range(3)]; c=int((p and (not q)) or r)
+        return qrec('boolean-logic',i,d,f"p={p}, q={q}, r={r}. (p AND NOT q) OR r?",c,[1-c,2,3],"Avval NOT q, keyin AND, oxirida OR hisoblanadi.")
+    return qrec('boolean-logic',i,d,"AND darvozasining chiqishida kichik inkor doirachasi bo‘lsa, bu qaysi element?","NAND",['NOR','XOR','NOT'],"AND natijasi inkor qilinsa NAND hosil bo‘ladi.")
+
+def gen_software(i,d):
+    items=[('Windows','tizimli dastur'),('Linux','tizimli dastur'),('Excel','amaliy dastur'),('Photoshop','amaliy dastur'),('Python','dasturlash tili'),('Java','dasturlash tili'),('PyCharm','IDE'),('C++','dasturlash tili')]
+    name,cat=R.choice(items)
+    cats=['tizimli dastur','amaliy dastur','dasturlash tili','IDE']
+    return qrec('software',i,d,f"{name} qaysi toifaga kiradi?",cat,[x for x in cats if x!=cat],f"{name} — {cat}.")
+
+def gen_excel(i,d):
+    typ=i%5
+    a,b,c=[R.randint(1,20) for _ in range(3)]
+    if typ==0:
+        ans=a+b+c; return qrec('excel',i,d,f"A1={a}, A2={b}, A3={c}. =SUM(A1:A3) ?",ans,[a+b,b+c,a*b*c],"SUM uch katakni qo‘shadi.")
+    if typ==1:
+        ans=max(a,b,c); return qrec('excel',i,d,f"A1={a}, A2={b}, A3={c}. =MAX(A1:A3) ?",ans,[min(a,b,c),a+b+c,sorted([a,b,c])[1]],"MAX eng katta qiymatni oladi.")
+    if typ==2:
+        ans=a*b*c; return qrec('excel',i,d,f"A1={a}, A2={b}, A3={c}. =PRODUCT(A1:A3) ?",ans,[a+b+c,a*b,b*c],"PRODUCT barcha qiymatlarni ko‘paytiradi.")
+    if typ==3:
+        # average integer-friendly
+        a=R.randint(1,10); b=a+3; c=a+6; ans=a+3
+        return qrec('excel',i,d,f"A1={a}, A2={b}, A3={c}. =AVERAGE(A1:A3) ?",ans,[a,b,c],"O‘rtacha=(a+b+c)/3.")
+    threshold=10; ans=(a+b+c) if a>threshold else (a*b)
+    return qrec('excel',i,d,f"A1={a}, A2={b}, A3={c}. =IF(A1>10,SUM(A1:A3),PRODUCT(A1:A2)) ?",ans,[a+b+c,a*b,max(a,b,c)],"Avval A1>10 sharti tekshiriladi va faqat mos tarmoq hisoblanadi.")
+
+def gen_db(i,d):
+    typ=i%5
+    if typ==0:
+        return qrec('databases-sql',i,d,"Jadvalda har bir yozuvni yagona aniqlash uchun eng mos maydon qaysi?","ID",['Ism','Shahar','Yosh'],"ID odatda takrorlanmaydigan birlamchi kalit sifatida ishlatiladi.")
+    if typ==1:
+        return qrec('databases-sql',i,d,"SQLda jadvaldan ma’lumot olish uchun qaysi buyruq ishlatiladi?","SELECT",['DELETE','UPDATE','DROP'],"SELECT ma’lumotni tanlab oladi.")
+    if typ==2:
+        age=R.choice([16,18,20,21]); c=f"SELECT * FROM Students WHERE Age > {age};"
+        return qrec('databases-sql',i,d,f"Yoshi {age} dan katta talabalarni chiqaradigan to‘g‘ri so‘rov?",c,[f"DELETE FROM Students WHERE Age > {age};",f"SELECT * FROM Students WHERE Age < {age};",f"UPDATE Students SET Age > {age};"],"SELECT yozuvlarni oladi, WHERE Age > ... filtrlaydi.")
+    if typ==3:
+        return qrec('databases-sql',i,d,"Bitta maktabda ko‘plab o‘quvchilar bo‘lishi qaysi munosabat?","One-to-Many",['One-to-One','Many-to-Many emas','Zero-to-One'],"Bitta maktab → ko‘p o‘quvchi.")
+    return qrec('databases-sql',i,d,'Accessda LIKE "S*" sharti nimani tanlaydi?','S harfi bilan boshlanuvchi matnlar',['S bilan tugaydigan matnlar','Faqat aynan S','S harfi qatnashgan barcha matnlar'],"* nol yoki ko‘p belgini bildiradi.")
+
+def gen_colors(i,d):
