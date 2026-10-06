@@ -1,0 +1,90 @@
+        }
+    },
+    {
+        'slug':'boolean-logic', 'title':'Mantiqiy amallar va sxemalar',
+        'short':'AND, OR, NOT, NAND, NOR, rostlik jadvallari va mantiqiy ifodalar.',
+        'lesson':{
+            'intro':'Mantiqiy qiymat atigi ikkita: ROST (1) yoki YOLG‘ON (0). AND — “ikkalasi ham”, OR — “hech bo‘lmasa bittasi”, NOT esa qiymatni teskarisiga aylantiradi.',
+            'keyIdeas':['AND faqat ikkala kirish 1 bo‘lsa 1.','OR hech bo‘lmasa bitta 1 bo‘lsa 1.','NOT 1→0, 0→1.','NAND = NOT(AND), NOR = NOT(OR).','n ta mantiqiy o‘zgaruvchi uchun rostlik jadvalida 2^n qator bo‘ladi.'],
+            'steps':['Ifodani qavslar bo‘yicha kichik qismlarga bo‘l.','Avval NOT, keyin AND, keyin OR ni hisobla (qavs ustun).','Sxemada har darvozaning chiqishini alohida yoz.'],
+            'examples':['p=1,q=0: p AND q=0; p OR q=1.','3 o‘zgaruvchi → 2³=8 qator.'],
+            'pitfalls':['NAND va NOR dagi oxirgi inkorni unutish.','“p∧¬q” da avval q ni inkor qilish kerak.'],
+            'tips':['Sxemani chapdan o‘ngga hisoblang, har tugun yoniga 0/1 yozing.']
+        }
+    },
+    {
+        'slug':'software', 'title':'Dasturiy ta’minot va dasturlash vositalari',
+        'short':'Tizimli va amaliy dasturlar, dasturlash tillari, IDE va frameworklarni ajratish.',
+        'lesson':{
+            'intro':'Kompyuterda dasturlar ham kasblarga o‘xshaydi: Windows va Linux butun “uy”ni boshqaradi; Word, Excel, Photoshop aniq ishni bajaradi; Python va Java esa yangi dastur yozish uchun tillardir.',
+            'keyIdeas':['Tizimli dasturiy ta’minot: operatsion tizimlar va tizim vositalari.','Amaliy dastur: foydalanuvchi vazifasi uchun — Excel, Photoshop, Telegram va hokazo.','Python, Java, C++ — dasturlash tillari.','PyCharm — dastur yozish muhiti (IDE), dasturlash tili emas.','Framework/kutubxona va til tushunchalari bir xil emas.'],
+            'steps':['Nomni tanib ol: OTmi, ilovami, tilmi yoki vositami?','Savolda “amaliy”, “tizimli”, “til” kabi kalit so‘zga qarang.'],
+            'examples':['Windows → tizimli; Excel → amaliy; Python → til; PyCharm → IDE.'],
+            'pitfalls':['Python interpreteri bilan Python tilini aralashtirish.','IDE ni dasturlash tili deb belgilash.'],
+            'tips':['Har bir nom uchun “bu nimani boshqaradi/yordam beradi?” deb so‘rang.']
+        }
+    },
+    {
+        'slug':'excel', 'title':'MS Excel formulalari',
+        'short':'SUM, AVERAGE, MAX, MIN, PRODUCT, IF, AND va katak manzillari.',
+        'lesson':{
+            'intro':'Excel jadvalini katakli daftar deb tasavvur qil. A1 — A ustuni va 1-qator kesishgan katak. Formula esa shu kataklardagi sonlar bilan hisoblaydigan kichik kalkulyator.',
+            'keyIdeas':['SUM — yig‘indi, AVERAGE — o‘rtacha, MAX — eng katta, MIN — eng kichik, PRODUCT — ko‘paytma.','A1:A3 diapazon A1, A2, A3 kataklarini oladi.','IF(shart, rost_natija, yolg‘on_natija) shartga qarab yo‘l tanlaydi.','AND bir nechta shartning hammasi rostligini tekshiradi.','Bo‘sh kataklar funksiyaga qarab turlicha ishlanadi; oddiy SUM/AVERAGEda odatda bo‘sh kataklar e’tiborga olinmaydi.'],
+            'steps':['Katak qiymatlarini alohida yozib oling.','Ichki funksiyalarni avval hisoblang.','IF bo‘lsa shartni tekshirib faqat bitta tarmoqni hisoblang.','Oxirida arifmetik amallarni bajaring.'],
+            'examples':['A1=3,A2=5,A3=2 → PRODUCT(A1:A3)=30.','AVERAGE(2,4,6)=4.'],
+            'pitfalls':['Diapazondagi barcha kataklarni unutib yuborish.','IF ning ikkala tarmog‘ini bir vaqtda hisoblash.'],
+            'tips':['Formula ichidagi funksiyalarni qavs-qavs bo‘yicha qisqartirib boring.']
+        }
+    },
+    {
+        'slug':'databases-sql', 'title':'Ma’lumotlar bazasi, Access va SQL',
+        'short':'Kalitlar, bog‘lanishlar, Access Criteria/LIKE va SELECT/COUNT/WHERE.',
+        'lesson':{
+            'intro':'Ma’lumotlar bazasi — tartibli kartotekaga o‘xshaydi. Har satr bitta obyekt, har ustun esa uning xususiyati. ID esa har bir kartochkani boshqasidan aniq ajratadigan raqam bo‘lishi mumkin.',
+            'keyIdeas':['Birlamchi kalit (Primary Key) qiymati takrorlanmasligi kerak.','One-to-One: bitta yozuvga bitta yozuv. One-to-Many: bittaga ko‘p yozuv.','SELECT — ma’lumot olish, WHERE — shart, COUNT(*) — satrlar soni.','Access LIKE "*va" kabi maska asosida matn filtrlashi mumkin.','SQL shartlarida =, >, < kabi operatorlar ishlatiladi.'],
+            'steps':['Nima so‘ralganini aniqlang: yozuvlarmi, sonimi, yangilashmi?','SELECT kerakmi yoki boshqa buyruqmi, tanlang.','WHERE shartini aynan yozing.','Accessda * ko‘p belgini ifodalashini eslang.'],
+            'examples':['SELECT COUNT(*) FROM Talabalar WHERE Yoshi=20; → 20 yoshli talabalar soni.','LIKE "S*" → S harfi bilan boshlanadigan matnlar.'],
+            'pitfalls':['COUNT o‘rniga SUM ishlatish.','SELECT bilan DELETE ni adashtirish.','Birlamchi kalitga ism kabi takrorlanishi mumkin bo‘lgan maydonni tanlash.'],
+            'tips':['SQL ni gap kabi o‘qi: SELECT nima FROM qayerdan WHERE qaysi shart bilan.']
+        }
+    },
+    {
+        'slug':'colors', 'title':'RGB va HEX ranglar',
+        'short':'RGB kanallari 0–255 va #RRGGBB ko‘rinishidagi HEX rang kodi.',
+        'lesson':{
+            'intro':'Ekrandagi rang uchta chiroqdan yig‘iladi: qizil (R), yashil (G), ko‘k (B). Har bir chiroq 0 dan 255 gacha yonishi mumkin. HEX yozuv shu uch sonni 16 lik sanoq sistemasida qisqa yozadi.',
+            'keyIdeas':['RGB = (R,G,B), har kanal odatda 0..255.','HEX = #RRGGBB; har kanal ikki hex raqam.','00=0, FF=255.','RGB→HEX: har kanalni 16 likda ikki xonali yozing.','HEX→RGB: har ikki xonali bo‘lakni 10 likka aylantiring.'],
+            'steps':['# belgisidan keyin RR, GG, BB ga ajrat.','Har juftlikni 16 likdan 10 likka o‘tkaz.','Teskari yo‘lda 0..255 qiymatni ikki xonali hexga aylantir.'],
+            'examples':['#0000FF → (0,0,255) ko‘k.','#3366CC → (51,102,204).'],
+            'pitfalls':['RGB tartibini R,G,B dan boshqa tartibga almashtirish.','Bir xonali hexni ikki xonali yozishni unutish (masalan A → 0A).'],
+            'tips':['00, 33, 66, 99, CC, FF kabi qiymatlarni tanish hisobni tezlashtiradi.']
+        }
+    },
+    {
+        'slug':'multimedia', 'title':'Audio, video va tasvir hisoblari',
+        'short':'Audio hajmi, video kadrlar soni, piksel/rang chuqurligi va fayl hajmi.',
+        'lesson':{
+            'intro':'Raqamli audio va video juda ko‘p kichik bo‘laklardan iborat. Audio — bir soniyada nechta o‘lchov, nechta bit va nechta kanal; video — bir soniyada nechta kadr va har kadrda nechta piksel.',
+            'keyIdeas':['Audio bit hajmi = vaqt(s) × sample rate(Hz) × bit depth × kanallar.','Byte olish uchun 8 ga bo‘linadi.','Video kadrlar soni = vaqt(s) × FPS.','Soddalashtirilgan xom video hajmi = kadrlar × eni × bo‘yi × rang chuqurligi / 8.','Fayl kengaytmasi orqali audio/video turini ajratish mumkin.'],
+            'steps':['Vaqtni sekundga o‘tkaz.','Kerakli formuladagi barcha ko‘paytuvchilarni yoz.','Bitdan byte/KB/MB ga ketma-ket o‘tkaz.'],
+            'examples':['2,5 min =150 s; 30 FPS → 4500 kadr.','Mono=1 kanal, stereo=2 kanal.'],
+            'pitfalls':['Daqiqani sekundga o‘tkazmaslik.','Stereo uchun ×2 ni unutish.'],
+            'tips':['Formula yoniga birliklarni yozib borish natijani tekshirishga yordam beradi.']
+        }
+    },
+    {
+        'slug':'networks-web', 'title':'Tarmoqlar, IP, subnet, URL va HTTP',
+        'short':'IPv4, subnetdagi hostlar, URL/domain/TLD, HTTP kodlari va web manzillar.',
+        'lesson':{
+            'intro':'Internetni katta shaharga o‘xshat: IP — uy raqami, domen — eslab qolish oson bo‘lgan nom, URL esa aniq manzilga boradigan to‘liq yo‘l. HTTP esa brauzer bilan server gaplashadigan qoidalar.',
+            'keyIdeas':['IPv4 32 bit va 4 ta 0..255 oktetdan iborat.','/30 subnetda 2^(32-30)=4 manzil, odatda 2 ta foydalaniladigan host.','Domenning eng o‘ng qismi TLD: .com, .uz va hokazo.','URL protokol + host + yo‘l kabi qismlardan tuzilishi mumkin.','HTTP 404 — sahifa/resurs topilmadi.'],
+            'steps':['IP bo‘lsa har oktet 0..255 ekanini tekshir.','/n bo‘lsa jami manzil =2^(32-n), hostlar odatda undan network va broadcastni ayirganda chiqadi.','Domen/TLD savolida nuqtalar bo‘yicha ajrat.','HTTP kodini ma’nosi bilan bog‘la.'],
+            'examples':['192.168.1.1 — to‘g‘ri IPv4; 192.168.300.1 — noto‘g‘ri.','www.support.microsoft.com ning TLDsi com.'],
+            'pitfalls':['Subnetdagi jami manzil bilan foydalaniladigan host sonini bir xil deyish.','URL bilan oddiy fayl yo‘lini adashtirish.'],
+            'tips':['IPv4 uchun “4 bo‘lak, har biri 0..255” tekshiruvi juda tez.']
+        }
+    },
+    {
+        'slug':'modeling', 'title':'Modellashtirish',
+        'short':'Model tushunchasi, fizik, matematik, grafik va boshqa model turlari.',
+        'lesson':{
