@@ -1,0 +1,90 @@
+import json, random, math, os
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+QDIR = ROOT / 'public' / 'data' / 'questions'
+QDIR.mkdir(parents=True, exist_ok=True)
+
+units = [
+    {
+        'slug':'hardware', 'title':'Kompyuter qurilmalari va xotira',
+        'short':'Kiritish/chiqarish qurilmalari, RAM, ROM, HDD/SSD va tashqi xotira.',
+        'lesson':{
+            'intro':'Kompyuterni katta bir ish stoli deb tasavvur qil. Klaviatura va sichqoncha unga gapirishga yordam beradi, monitor va printer esa uning javobini ko‘rsatadi. RAM — hozir ishlayotgan daftar, SSD/HDD esa javondagi uzoq saqlanadigan kitoblar.',
+            'keyIdeas':['Kiritish qurilmasi kompyuterga ma’lumot beradi: klaviatura, sichqoncha, mikrofon, skaner.','Chiqarish qurilmasi natijani foydalanuvchiga beradi: monitor, printer, proyektor.','RAM tezkor va vaqtinchalik xotira; elektr o‘chsa undagi ishchi ma’lumot yo‘qoladi.','ROM odatda o‘zgarmas yoki kam o‘zgaradigan tizim ma’lumotlarini saqlaydi.','HDD, SSD, flesh-disk, CD/DVD — uzoq muddatli saqlash qurilmalari.'],
+            'steps':['Savolda qurilma nomini top.','U ma’lumotni kompyuterga kiritadimi yoki natijani chiqaradimi, shuni aniqlang.','Xotira bo‘lsa: vaqtinchalikmi (RAM) yoki doimiymi (SSD/HDD/ROM) deb ajrating.'],
+            'examples':['Mikrofon ovozni kompyuterga kiritadi → kiritish qurilmasi.','Printer qog‘ozga natija chiqaradi → chiqarish qurilmasi.','Dastur ishlayotgan paytda uning kerakli qismi RAMda turadi.'],
+            'pitfalls':['SSD tez bo‘lsa ham RAM emas.','Monitor “ma’lumot ko‘rsatadi”, shuning uchun u kiritish emas, chiqarish qurilmasi.'],
+            'tips':['“Kiritadi” va “chiqaradi” fe’llariga diqqat qil.','RAM = tez + vaqtinchalik; SSD/HDD = doimiy saqlash degan qisqa eslab qolish usulidan foydalan.']
+        }
+    },
+    {
+        'slug':'files', 'title':'Fayllar, kengaytmalar va maskalar',
+        'short':'Fayl kengaytmalari, wildcard maskalar (*, ?, [A-C]) va fayl turlarini ajratish.',
+        'lesson':{
+            'intro':'Fayl nomini odamning ism-familiyasiga o‘xshatish mumkin: nomi — kimligi, nuqtadan keyingi kengaytma esa qaysi turga tegishli ekanini ko‘rsatadi. Maska esa “qaysi ism(lar) mos keladi?” degan qolip.',
+            'keyIdeas':['*.txt — oxiri .txt bilan tugaydigan barcha fayllar.','? — aynan bitta ixtiyoriy belgi o‘rnini bosadi.','* — nol yoki undan ko‘p belgilar o‘rnini bosadi.','[A-C] — A, B yoki C belgilaridan bittasiga mos keladi.','Kengaytma fayl turini bildiradi: .wav audio, .mkv video, .docx hujjat va hokazo.'],
+            'steps':['Maskani chapdan o‘ngga o‘qi.','Har bir ? uchun bittadan belgi bo‘lishini tekshir.','* bo‘lsa, u qancha belgi yutishi mumkinligini ko‘r.','Oxirida kengaytma ham aynan mos kelishi kerak.'],
+            'examples':['a??.doc → a dan keyin aynan 2 ta belgi va .doc. Masalan abc.doc mos.','[A-C]*.txt → A/B/C bilan boshlanadigan .txt fayllar.'],
+            'pitfalls':['? ni * kabi ko‘p belgi deb o‘ylamang.','Kengaytmadagi nuqtani va harflarni e’tibordan qoldirmang.'],
+            'tips':['Maskani belgi-beligicha “kataklar”ga ajratib tekshirish eng xavfsiz usul.']
+        }
+    },
+    {
+        'slug':'data-size-transfer', 'title':'Ma’lumot hajmi, birliklar va uzatish tezligi',
+        'short':'bit/byte/KB/MB/GB, fayl uzatish vaqti, arxivlash va sig‘im masalalari.',
+        'lesson':{
+            'intro':'Ma’lumotni suvga o‘xshat: fayl hajmi — chelakdagi suv, internet tezligi — quvurdan bir soniyada qancha suv o‘tishi. Vaqtni topish uchun hajmni tezlikka bo‘lamiz, faqat birliklarni bir xil qilish kerak.',
+            'keyIdeas':['1 byte = 8 bit.','Olimpiada masalalarida odatda 1 KB = 1024 byte, 1 MB = 1024 KB, 1 GB = 1024 MB.','Uzatish vaqti = ma’lumot hajmi / tezlik.','MB ni Mbit ga aylantirish uchun 8 ga ko‘paytiriladi.','Arxivlash foizi kamaygan qism yoki qolgan qism ekaniga diqqat qilish kerak.'],
+            'steps':['Barcha birliklarni bir xil ko‘rinishga keltir.','Formula tanla: vaqt=hajm/tezlik yoki hajm=tezlik×vaqt.','Foizli masalada 20% qisqarsa, 80% qoladi.','Javobni so‘ralgan birlikka qaytar.'],
+            'examples':['5 MB = 40 Mbit. 2 Mbit/s da vaqt 40/2=20 s.','120 MB fayl 30% qisqarsa, 84 MB qoladi.'],
+            'pitfalls':['MB va Mbit bir xil emas: 1 byte=8 bit.','1000 va 1024 ni aralashtirib yubormang; testdagi kontekstga qarang.'],
+            'tips':['Avval birliklarni yozib chiqing, keyin sonlarni qo‘ying — xato keskin kamayadi.']
+        }
+    },
+    {
+        'slug':'algorithms-flowcharts', 'title':'Algoritmlar va blok-sxemalar',
+        'short':'Ketma-ketlik, shart, takrorlanish va blok-sxema bo‘yicha natijani topish.',
+        'lesson':{
+            'intro':'Algoritm — robotga berilgan juda aniq ko‘rsatmalar. Robot hech narsani “o‘zi tushunib” olmaydi, shuning uchun har qadamni tartib bilan bajaradi. Blok-sxema shu ko‘rsatmalarni rasmlar bilan ko‘rsatadi.',
+            'keyIdeas':['Ketma-ket algoritm qadamlarni birin-ketin bajaradi.','Shartli algoritm “agar ... bo‘lsa” orqali yo‘l tanlaydi.','Takrorlanish sikl deyiladi; shart rost bo‘lib turgan paytda qadamlar qayta bajarilishi mumkin.','Blok-sxemada romb odatda shart, to‘rtburchak amal, parallelogramm kiritish/chiqarish.'],
+            'steps':['Boshlang‘ich qiymatlarni yoz.','Shartni tekshir.','Faqat tanlangan yo‘ldagi amallarni bajar.','Sikl bo‘lsa, har aylanishdan keyin qiymatlarni jadvalda yangila.'],
+            'examples':['S=0, i=1; i≤5 bo‘lsa S=S+i → 1+2+3+4+5=15.','A>B shartida faqat rost bo‘lsa A ga tegishli yo‘l bajariladi.'],
+            'pitfalls':['Sikl oxiridagi i=i+1 kabi qadamni unutish.','“≤” bilan “<” ni bir xil deb o‘qish.'],
+            'tips':['Sikl masalasida kichik jadval: i | S tuzib borish eng ishonchli usul.']
+        }
+    },
+    {
+        'slug':'python', 'title':'Python kodini o‘qish va natijani topish',
+        'short':'for/while, if, list, string, break, funksiya va mantiqiy operatorlar.',
+        'lesson':{
+            'intro':'Python kodini film kabi tomosha qil: har satr navbat bilan ishlaydi. Har bir o‘zgaruvchini kichik quticha deb bil, kod shu qutichadagi qiymatni o‘zgartirib boradi.',
+            'keyIdeas':['range(a,b) odatda a dan boshlanadi va b ni o‘z ichiga olmaydi.','if shart rost bo‘lsa ichki blok ishlaydi.','for elementlarni navbat bilan ko‘rib chiqadi.','break siklni darhol to‘xtatadi.','append(x) ro‘yxat oxiriga x ni qo‘shadi.','Python and operatori faqat True/False emas, operandlardan birini ham qaytarishi mumkin.'],
+            'steps':['Boshlang‘ich o‘zgaruvchilarni yoz.','Sikl qaysi qiymatlarni olishini ro‘yxat qil.','Har iteratsiyada shartni tekshir.','O‘zgargan qiymatni yozib bor.','print nimani chiqarayotganini eng oxirida tekshir.'],
+            'examples':['for n in [2,-1,4]: if n>0: count+=1 → count=2.','[2,5,8] ichidan juftlar append qilinsa [2,8] chiqadi.'],
+            'pitfalls':['range oxirgi sonni olmaydi.','break dan keyingi elementlar ko‘rilmaydi.','print(i) bilan print(S) ni adashtirmang.'],
+            'tips':['Kod trace qilish uchun “qadam jadvali” tuzing: iteratsiya | o‘zgaruvchi1 | o‘zgaruvchi2.']
+        }
+    },
+    {
+        'slug':'cryptography', 'title':'Shifrlash: Sezar va Vigenère',
+        'short':'Harflarni siljitish va kalit bo‘yicha shifrlash/deshifrlash.',
+        'lesson':{
+            'intro':'Shifrlash — xatni sirli yozuvga aylantirish. Sezar shifrida har bir harf bir xil qadamga siljiydi. Vigenère shifrida esa har bir harfga kalitdagi navbatdagi harf “qancha siljish” kerakligini aytadi.',
+            'keyIdeas':['Sezar: har bir harfni bir xil k qadam oldinga surish; deshifrlashda k qadam orqaga.','Alifbo oxiriga yetganda boshiga qaytiladi (mod 26).','Vigenère: matn va kalit harflari sonlarga aylantiriladi.','Deshifrlashda shifrlangan harf indeksidan kalit indeksini ayiramiz (mod 26).'],
+            'steps':['A=0, B=1, ... Z=25 deb ol.','Sezar uchun ±k ni qo‘llang.','Vigenère uchun kalitni matn uzunligigacha takrorlang.','Natijani yana harflarga aylantiring.'],
+            'examples':['KHOOR ni Sezar k=3 bilan deshifrlasak HELLO.','Vigenèreda har bir pozitsiya o‘z kalit harfiga ega.'],
+            'pitfalls':['Shifrlash va deshifrlash yo‘nalishini teskarilash.','A=0 yoki A=1 berilganini tekshirmaslik.'],
+            'tips':['Harflar yoniga indekslarni yozib, mod 26 bilan ishlang.']
+        }
+    },
+    {
+        'slug':'number-systems', 'title':'Sanoq sistemalari',
+        'short':'2, 8, 10, 16 asosli sonlar, kasrlar va noma’lum asosli tenglamalar.',
+        'lesson':{
+            'intro':'Sanoq sistemasi — sonlarni yozish tili. Biz kundalik hayotda 10 lik tilda gaplashamiz, kompyuter esa 2 likni yaxshi ko‘radi. 16 lik sanoq sistemasi esa katta ikkilik sonlarni qisqaroq yozishga yordam beradi.',
+            'keyIdeas':['n asosli sonning raqamlari 0 dan n-1 gacha bo‘ladi.','Butun qismni boshqa asosga o‘tkazishda ketma-ket bo‘lish usuli ishlaydi.','Kasr qismni o‘tkazishda asosga ko‘paytirish usuli ishlaydi.','16 likda A=10, B=11, ..., F=15.','Tenglamada har bir yozuvni o‘z asosidan 10 lik qiymatga aylantirib tenglashtirish mumkin.'],
+            'steps':['Son qaysi asosda ekanini yoz.','Pozitsion qiymatlarni yoki bo‘lish/ko‘paytirish algoritmini qo‘llang.','Kasr bo‘lsa verguldan keyingi qismni alohida ishlang.','Noma’lum asos bo‘lsa algebraik tenglama tuzing.'],
+            'examples':['1011₂ = 1·8+0·4+1·2+1=11₁₀.','10₁₆ = 16₁₀.'],
+            'pitfalls':['8 likda 8 yoki 9 raqami bo‘la olmaydi.','Kasrni butun qism kabi bo‘lib yubormang.'],
+            'tips':['2↔8 va 2↔16 o‘tishlarda 3 bit va 4 bitli guruhlar juda tez ishlaydi.']
