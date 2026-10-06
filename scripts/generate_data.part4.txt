@@ -1,0 +1,90 @@
+('databases-sql','One-to-Many munosabatiga mos misolni tanlash.'),
+('colors','RGB=(0,0,255) rangini HEXga o‘tkazish.'),
+('multimedia','1:04 mono, 22 kHz, 8 bit audio fayl hajmini KBda hisoblash.'),
+('networks-web','Berilgan variantlardan to‘g‘ri IPv4 manzilni tanlash.'),
+('modeling','Haqiqiy obyektning kichraytirilgan/kattalashtirilgan nusxasi model turini aniqlash.'),
+('networks-web','HTTP 404 status kodi ma’nosini aniqlash.'),
+('databases-sql','Students jadvalidan Age>16 yozuvlarini SELECT bilan chiqarish.'),
+('python','Ro‘yxatdagi musbat sonlar sonini sanaydigan kod natijasi.'),
+('algorithms-flowcharts','S=S+2*i takrorlanadigan blok-sxema natijasini topish.'),
+('databases-sql','Accessda Nomi LIKE "S*" filtri natijasini aniqlash.'),
+('number-systems','5,(3) o‘nlik kasrini sakkizlik sanoq sistemasiga o‘tkazish.'),
+('data-size-transfer','20% siqilgan fayl 40 Mbit/s da 4 daqiqada uzatilsa dastlabki hajmni topish.'),
+('encoding-bits','ASCII jadvalidagi qator/ustun bo‘yicha “b” harfining o‘nlik kodini aniqlash.'),
+('boolean-logic','3 o‘zgaruvchili mantiqiy ifoda rostlik jadvali nechta qator bo‘lishini topish.'),
+('excel','SUM va MAX natijalari berilgan jadvalda AVERAGE natijasini topish.'),
+('python','Ro‘yxatda birinchi manfiygacha sonlarni ko‘paytirib break qiladigan kod natijasi.')],
+11:[
+('hardware','RAMning asosiy vazifasini aniqlash.'),
+('files','[A-C]*.txt maskasiga mos EMAS fayl nomini topish.'),
+('networks-web','www.support.microsoft.com manzilida TLD domenni aniqlash.'),
+('multimedia','2 daqiqa stereo 32 kHz 16 bit audio hajmini KBda hisoblash.'),
+('algorithms-flowcharts','1 dan 10 gacha sonlar yig‘indisini hisoblaydigan algoritm natijasi.'),
+('python','1..50 oralig‘ida 15 ga karrali sonlarni yig‘uvchi Python kodi natijasi.'),
+('data-size-transfer','64 qator × 32 belgi × 5 sahifa, 1 belgi=1 byte bo‘yicha kitob hajmi.'),
+('data-size-transfer','100 MB faylni 20 Mbit/s tezlikda yuborish vaqtini topish.'),
+('cryptography','Vigenère shifrini KEY kaliti bilan deshifrlash.'),
+('number-systems','162_x = 200_16 - 616_x tenglamadan sanoq asosi x ni topish.'),
+('boolean-logic','NAND/NOR/NOT elementlari qatnashgan sxemaga mos ifodani tanlash.'),
+('hardware','Flash, RAM, HDD, SSD, ROM, CD/DVD orasidan faqat tashqi xotirani tanlash.'),
+('software','Python, Java, PyCharm, Windows, C++, Excel orasidan dasturlash tillarini ajratish.'),
+('excel','PRODUCT+MAX-MIN qatnashgan Excel formulasi natijasi.'),
+('databases-sql','Chiptalar jadvali uchun eng to‘g‘ri birlamchi kalit maydonini tanlash.'),
+('colors','#3366CC rangini RGB formatiga o‘tkazish.'),
+('multimedia','1024×512, 24 bit, 30 FPS, 1 daqiqalik xom video hajmini hisoblash.'),
+('networks-web','172.16.0.0/30 tarmog‘ida foydalaniladigan host IP sonini topish.'),
+('modeling','P=P0(1+r)^t tenglamasi qaysi model turiga kirishini aniqlash.'),
+('web-tech','React/Angular/Vue/Bootstrap orasidan JavaScript framework emasini topish.'),
+('databases-sql','Yoshi=20 talabalar sonini SQL COUNT bilan hisoblaydigan so‘rovni tanlash.'),
+('python','Ro‘yxatdagi manfiy sonlarni yig‘uvchi kod natijasi.'),
+('algorithms-flowcharts','P=1,i=5 dan P=P*i va i=i-1 blok-sxema natijasi.'),
+('databases-sql','Accessda Familiya LIKE "*va" filtri natijasini aniqlash.'),
+('number-systems','8,(2) o‘nlik kasrini sakkizlik sanoq sistemasiga o‘tkazish.'),
+('data-size-transfer','20 MB limit va har rasm 2,5 MB bo‘lsa 35 rasm nechta xabarda ketishini topish.'),
+('encoding-bits','90 ishchini ikkilik kodlash uchun minimal bitlar sonini topish.'),
+('boolean-logic','p∧¬q=1 shartida ¬(p∨q)∧¬k ifoda qiymatini topish.'),
+('excel','IF(A1>A3,INT(RAND())+3.14,SUM(...)) formulasini berilgan qiymatlar bilan tahlil qilish.'),
+('python','Ro‘yxatdan juft sonlarni append qilib yangi ro‘yxat tuzadigan kod natijasi.')]
+}
+
+source_questions=[]
+for grade in (9,10,11):
+    for i,(topic,summary) in enumerate(summaries[grade], start=1):
+        pts = 0.9 if i<=10 else (1.5 if i<=20 else 2.6)
+        source_questions.append({'grade':grade,'question':i,'points':pts,'answer':answers[grade][i-1],'unit':topic,'summary':summary})
+
+# attach source counts to units
+for u in units:
+    u['source_questions']=[q for q in source_questions if q['unit']==u['slug']]
+    u['question_bank_file']=f"/data/questions/{u['slug']}.json"
+    u['question_count']=100
+
+meta={
+    'title':'2025 Informatika tuman (shahar) olimpiadasi mavzu xaritasi',
+    'description':'9-, 10- va 11-sinf 2025-yil Informatika olimpiada testlaridagi 90 savol tahlili asosida tuzilgan unitlar.',
+    'source':[
+        {'grade':9,'file':'9-sinf-Informatika-2025-tuman-shahar-bosqichi-olimpiada.pdf','questions':30,'time_minutes':90,'max_score':50},
+        {'grade':10,'file':'10-sinf-Informatika-2025-tuman-shahar-bosqichi-olimpiada.pdf','questions':30,'time_minutes':90,'max_score':50},
+        {'grade':11,'file':'11-sinf-Informatika-2025-tuman-shahar-bosqichi-olimpiada.pdf','questions':30,'time_minutes':90,'max_score':50}],
+    'scoring':{'questions_1_10':0.9,'questions_11_20':1.5,'questions_21_30':2.6,'max_score':50,'default_time_minutes':90},
+    'units':units,
+    'source_questions':source_questions
+}
+
+(ROOT/'unit.json').write_text(json.dumps(meta,ensure_ascii=False,indent=2),encoding='utf-8')
+(ROOT/'public'/'data'/'unit.json').write_text(json.dumps(meta,ensure_ascii=False,indent=2),encoding='utf-8')
+
+# ----- question generators -----
+R=random.Random(20251006)
+
+def shuffle_mcq(correct, distractors, rng):
+    opts=[str(correct)]+[str(x) for x in distractors]
+    # unique preserving
+    uniq=[]
+    for x in opts:
+        if x not in uniq: uniq.append(x)
+    while len(uniq)<4:
+        candidate=str(rng.randint(1,999))
+        if candidate not in uniq: uniq.append(candidate)
+    opts=uniq[:4]
+    rng.shuffle(opts)
