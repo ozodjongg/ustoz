@@ -1,0 +1,90 @@
+            'intro':'Model — haqiqiy narsaning o‘zi emas, uni tushunishga yordam beradigan soddalashtirilgan nusxa. O‘yinchoq samolyot — fizik model, formula — matematik model, chizma — grafik model.',
+            'keyIdeas':['Model real obyektning muhim xususiyatlarini saqlab, keraksiz tafsilotlarni soddalashtiradi.','Fizik model — moddiy ko‘rinishdagi nusxa yoki maket.','Matematik model — formula, tenglama yoki sonli bog‘lanish.','Grafik model — rasm, diagramma, chizma.','Algoritmik model — jarayon qadamlarini algoritm orqali ifodalash.'],
+            'steps':['Savolda model nimadan yasalgan yoki qanday ifodalanganini top.','Formula bo‘lsa matematik, moddiy maket bo‘lsa fizik, chizma bo‘lsa grafik deb ajrat.'],
+            'examples':['P=P0(1+r)^t — matematik model.','Binoning kichraytirilgan maketi — fizik model.'],
+            'pitfalls':['Modelni real obyektning aynan o‘zi deb hisoblash.'],
+            'tips':['“Qanday ko‘rinishda ifodalangan?” degan savol model turini topishga yordam beradi.']
+        }
+    },
+    {
+        'slug':'web-tech', 'title':'Web texnologiyalar',
+        'short':'HTML form usullari, JavaScript frameworklar va Bootstrap kabi vositalar.',
+        'lesson':{
+            'intro':'Web-sahifa — uyga o‘xshaydi: HTML skelet, CSS bezak, JavaScript esa harakat beradi. React, Angular va Vue JavaScript bilan katta interfeyslar qurishga yordam beradigan framework/kutubxonalar; Bootstrap esa asosan tayyor UI/CSS komponentlari to‘plami.',
+            'keyIdeas':['HTML formalarida GET va POST eng ko‘p ishlatiladigan yuborish usullari.','React, Angular, Vue — JavaScript ekotizimidagi frontend vositalari.','Bootstrap — CSS/UI frameworki, odatda JavaScript framework deb tasniflanmaydi.','GET ma’lumotni URLga qo‘shishi mumkin; POST tanada yuboradi.'],
+            'steps':['Savolda til, framework, CSS framework yoki HTTP metod so‘ralganini ajrat.','Form ma’lumotini serverga yuborish bo‘lsa GET/POST ni esla.'],
+            'examples':['<form method="post"> → POST.','Bootstrap — responsiv dizayn uchun UI/CSS frameworki.'],
+            'pitfalls':['PUT ni odatiy HTML form methodi deb belgilash.','Bootstrapni React/Angular/Vue bilan bir xil tur deb hisoblash.'],
+            'tips':['Web vositasining asosiy vazifasini yodda tutish nomlarni aralashtirmaslikka yordam beradi.']
+        }
+    },
+    {
+        'slug':'encoding-bits', 'title':'Kodlash, ASCII va bitlar',
+        'short':'Belgilarni kodlash, ASCII, nechta obyektni kodlash uchun minimal bitlar.',
+        'lesson':{
+            'intro':'Kompyuter harfning o‘zini emas, uning raqamli kodini saqlaydi. Bit esa 0 yoki 1 bo‘lishi mumkin. n bit bilan 2^n xil holatni kodlash mumkin.',
+            'keyIdeas':['n bit → 2^n xil kod.','N ta obyekt uchun minimal n: 2^n ≥ N bo‘ladigan eng kichik n.','ASCII belgilarni sonli kodlar bilan ifodalaydi.','Matn hajmida “1 belgi = 1 byte” kabi shart berilsa aynan shu shartdan foydalaniladi.'],
+            'steps':['Obyektlar sonini N deb ol.','2^n qiymatlarni 1,2,4,8,16,32,64,128... tarzida tekshir.','N dan kam bo‘lmagan birinchi quvvatning n ini ol.'],
+            'examples':['90 ishchini kodlash: 2^6=64 yetmaydi, 2^7=128 yetadi → 7 bit.'],
+            'pitfalls':['N=90 bo‘lsa 90 bit kerak deb o‘ylash.','2^n > N shartida tenglik ham yetarli ekanini unutish.'],
+            'tips':['2 ning darajalarini 1 dan 1024 gacha yodlash ko‘p masalani tezlashtiradi.']
+        }
+    }
+]
+
+# source summaries, topic classification and official answers
+answers = {
+  9: list('CBAACABBACABDBBCD CBAA AACAC'.replace(' ','')),
+}
+# overwrite explicitly to avoid accidental formatting
+answers[9]  = ['C','B','A','A','C','A','B','B','A','C','A','B','D','B','B','C','D','C','B','A','D','A','B','A','A','A','A','C','A','C']
+answers[10] = ['A','A','B','B','B','C','A','C','C','B','A','A','D','A','B','B','B','A','B','C','A','C','A','B','C','B','A','A','B','C']
+answers[11] = ['C','D','C','A','C','B','C','B','A','D','C','A','A','D','C','B','D','A','A','D','A','A','B','B','A','C','C','D','A','A']
+
+summaries = {
+9:[
+('hardware','Kiritish qurilmasini aniqlash: printer, monitor, klaviatura, plotter.'),
+('files','*.txt kabi barcha kengaytmalarga mos fayl maskasini aniqlash.'),
+('networks-web','Berilgan manzillar orasidan URL/web manzilni aniqlash.'),
+('files','Audio fayl kengaytmasini (.wav) aniqlash.'),
+('algorithms-flowcharts','A, B, C qiymatlarini shartlar orqali taqqoslaydigan algoritm natijasi.'),
+('software','Windows/Linux/Android/macOS kabi tizimli dasturiy ta’minotni ajratish.'),
+('data-size-transfer','4,5 GB ni MB ga aylantirish.'),
+('data-size-transfer','15 ta rasm × 4 MB bo‘yicha internet trafik hajmini topish.'),
+('cryptography','Sezar shifri: KHOOR, kalit 3 dan asl matnni topish.'),
+('hardware','ROM/CPU/RAM/CRT/SSD/LCD orasidan xotira qurilmalarini ajratish.'),
+('number-systems','Turli asoslarda berilgan raqamli tenglamadan x ni topish.'),
+('boolean-logic','AND/OR/NOT elementli mantiqiy sxema chiqishini topish.'),
+('python','while siklida juft i larni ko‘paytirish natijasini trace qilish.'),
+('excel','AVERAGE, MAX va MIN qatnashgan Excel formulasi natijasi.'),
+('databases-sql','Ma’lumotlar bazasida One-to-One munosabat misolini tanlash.'),
+('colors','RGB kanalining maksimal qiymatini bilish.'),
+('multimedia','2,5 daqiqalik 30 FPS videodagi umumiy kadrlar soni.'),
+('networks-web','IPv4 manzil necha bitdan iboratligini aniqlash.'),
+('modeling','Modellashtirish ta’rifini aniqlash.'),
+('web-tech','HTML formada ma’lumotni serverga yuborish usulini tanlash.'),
+('databases-sql','SQLda ma’lumot olish uchun SELECT buyrug‘ini aniqlash.'),
+('python','Matndagi ma’lum harf sonini for va if bilan sanaydigan kod natijasi.'),
+('algorithms-flowcharts','S=0, i=1 dan i<=5 gacha yig‘uvchi blok-sxema natijasi.'),
+('databases-sql','Access jadvalida Yoshi>20 AND Kurs<>2 filtri natijasini aniqlash.'),
+('python','Python and operatorlari: 25 and 12 and 11 ifodasi natijasi.'),
+('data-size-transfer','120 MB fayl 84 MB bo‘lganda siqilish foizini topish.'),
+('number-systems','8,(2) o‘nlik kasrini sakkizlik sanoq sistemasiga o‘tkazish.'),
+('boolean-logic','p∧q=1 shartida qaysi mantiqiy ifodalar doim rostligini tekshirish.'),
+('excel','SUM va MAX natijalari berilgan jadvalda AVERAGE(A1:C3) ni topish.'),
+('python','max(a,b) dan foydalanadigan funksiya natijasini hisoblash.')],
+10:[
+('hardware','Chiqarish qurilmasini aniqlash: printer/sichqoncha/klaviatura/skaner.'),
+('files','a??.doc maskasiga mos fayl nomini tanlash.'),
+('networks-web','Berilgan variantlardan domen nomini tanlash.'),
+('files','Video fayl kengaytmasini (.mkv) aniqlash.'),
+('algorithms-flowcharts','1..10 oralig‘idagi juft sonlar yig‘indisini hisoblaydigan algoritm.'),
+('python','while siklida 3 ga karrali sonlarni yig‘ish kodini trace qilish.'),
+('data-size-transfer','16 GB fleshkadan 7,5% xizmat joyi ajratilganda foydalanuvchi sig‘imi.'),
+('data-size-transfer','5 MB faylni 2 Mbit/s tezlikda yuborish vaqtini topish.'),
+('cryptography','Vigenère shifri: DATA, kalit LOCK natijasini aniqlash.'),
+('number-systems','4x4_5 + x53_8 = D8_16 tenglamada x ni topish.'),
+('boolean-logic','AND, NOT va OR elementli mantiqiy sxema ifodasini tanlash.'),
+('hardware','Klaviatura, printer, sichqoncha, skaner, proyektor, mikrofon orasidan kiritish qurilmalari.'),
+('software','Excel/Telegram/AutoCAD/Python interpreteri/Photoshop/Windows orasidan amaliy dasturlar.'),
+('excel','IF(AND(...),SUM(...),PRODUCT(...)) formulasi natijasi.'),
