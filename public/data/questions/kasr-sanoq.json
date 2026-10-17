@@ -1,0 +1,1008 @@
+[
+ {
+  "id": "kasr-sanoq-01",
+  "unit": "kasr-sanoq",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "O‘nlik sistemadagi 0,5 sonini ikkilik sistemaga o‘tkazing.",
+  "options": [
+   "0,11",
+   "0,5",
+   "0,1",
+   "0,01"
+  ],
+  "answer": 2,
+  "explanation": "0,5 · 2 = 1,0 → 0,1₂.",
+  "solution": [
+   "Kasr qismini 2 ga ko‘paytiramiz: 0,5 · 2 = 1,0 → butun qismi 1, kasr qismi 0 qoldi.",
+   "Kasr 0 bo‘ldi — to‘xtaymiz. Butun qismlar yuqoridan pastga o‘qiladi.",
+   "Natija: 0,1₂"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-02",
+  "unit": "kasr-sanoq",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Ikkilik sistemadagi 0,11₂ sonini o‘nlik sistemaga o‘tkazing.",
+  "options": [
+   "0,5",
+   "0,11",
+   "0,3",
+   "0,75"
+  ],
+  "answer": 3,
+  "explanation": "½ + ¼ = 0,75.",
+  "solution": [
+   "Verguldan keyingi o‘rinlar og‘irligi: ½, ¼, ⅛, …",
+   "0,11₂ = 1·½ + 1·¼ = 0,5 + 0,25",
+   "Natija: 0,75"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-03",
+  "unit": "kasr-sanoq",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Ikkilikdagi 101,01₂ sonini o‘nlik sistemaga o‘tkazing.",
+  "options": [
+   "4,25",
+   "5,25",
+   "5,01",
+   "5,5"
+  ],
+  "answer": 1,
+  "explanation": "5 + 0,25 = 5,25.",
+  "solution": [
+   "Butun qism: 101₂ = 4 + 1 = 5.",
+   "Kasr qism: 0,01₂ = 0·½ + 1·¼ = 0,25.",
+   "Natija: 5,25"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-04",
+  "unit": "kasr-sanoq",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "O‘nlik sistemadagi 0,25 sonini ikkilik sistemaga o‘tkazing.",
+  "options": [
+   "0,11",
+   "0,01",
+   "0,001",
+   "0,1"
+  ],
+  "answer": 1,
+  "explanation": "0,25 → 0, 1 → 0,01₂.",
+  "solution": [
+   "0,25 · 2 = 0,5 → butun 0.",
+   "0,5 · 2 = 1,0 → butun 1, kasr 0 — to‘xtaymiz.",
+   "Butun qismlarni yuqoridan o‘qiymiz: 0,01₂"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-05",
+  "unit": "kasr-sanoq",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Sakkizlik sistemadagi 0,4₈ sonini o‘nlik sistemaga o‘tkazing.",
+  "options": [
+   "0,125",
+   "0,5",
+   "0,25",
+   "0,4"
+  ],
+  "answer": 1,
+  "explanation": "4/8 = 0,5.",
+  "solution": [
+   "Sakkizlikda verguldan keyingi birinchi o‘rin og‘irligi 1/8.",
+   "0,4₈ = 4 · 1/8 = 4/8",
+   "Natija: 0,5"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-06",
+  "unit": "kasr-sanoq",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "O‘n oltilikdagi 0,8₁₆ sonini o‘nlik sistemaga o‘tkazing.",
+  "options": [
+   "0,5",
+   "0,8",
+   "0,125",
+   "0,05"
+  ],
+  "answer": 0,
+  "explanation": "8/16 = 0,5.",
+  "solution": [
+   "Verguldan keyingi birinchi o‘rin og‘irligi 1/16.",
+   "0,8₁₆ = 8/16",
+   "Natija: 0,5"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-07",
+  "unit": "kasr-sanoq",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Ikkilik sistemada verguldan keyingi 3-o‘rinning og‘irligi (qiymati) nechaga teng?",
+  "options": [
+   "1/6",
+   "3/10",
+   "1/8",
+   "1/3"
+  ],
+  "answer": 2,
+  "explanation": "k-o‘rin og‘irligi 1/2ᵏ, 3-o‘rin = 1/8.",
+  "solution": [
+   "Verguldan keyingi o‘rinlar: 1-o‘rin = 1/2, 2-o‘rin = 1/4, 3-o‘rin = 1/8.",
+   "Umumiy qoida: k-o‘rin = 1/2ᵏ.",
+   "Javob: 1/8"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-08",
+  "unit": "kasr-sanoq",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "O‘nlik sistemadagi 0,75 sonini ikkilik sistemaga o‘tkazing.",
+  "options": [
+   "0,75",
+   "0,111",
+   "0,11",
+   "0,101"
+  ],
+  "answer": 2,
+  "explanation": "1 va 1 → 0,11₂.",
+  "solution": [
+   "0,75 · 2 = 1,5 → butun 1, kasr 0,5.",
+   "0,5 · 2 = 1,0 → butun 1, kasr 0.",
+   "Natija: 0,11₂"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-09",
+  "unit": "kasr-sanoq",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Ikkilikdagi 0,1₂ + 0,01₂ yig‘indisini o‘nlik sistemada toping.",
+  "options": [
+   "0,5",
+   "0,11",
+   "0,02",
+   "0,75"
+  ],
+  "answer": 3,
+  "explanation": "0,5 + 0,25 = 0,75.",
+  "solution": [
+   "0,1₂ = 0,5; 0,01₂ = 0,25.",
+   "0,5 + 0,25",
+   "Natija: 0,75"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-10",
+  "unit": "kasr-sanoq",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "O‘nlik sistemadagi 2,5 sonini ikkilik sistemaga o‘tkazing.",
+  "options": [
+   "11,1",
+   "10,01",
+   "10,5",
+   "10,1"
+  ],
+  "answer": 3,
+  "explanation": "2 = 10₂, 0,5 = 0,1₂.",
+  "solution": [
+   "Butun qism: 2 = 10₂.",
+   "Kasr qism: 0,5 · 2 = 1,0 → 0,1₂.",
+   "Natija: 10,1₂"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-11",
+  "unit": "kasr-sanoq",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Uchlik sistemadagi 0,1₃ sonini oddiy kasr ko‘rinishida yozing.",
+  "options": [
+   "1/10",
+   "1/3",
+   "3/10",
+   "1/9"
+  ],
+  "answer": 1,
+  "explanation": "0,1₃ = 1/3.",
+  "solution": [
+   "Uchlikda verguldan keyingi birinchi o‘rin og‘irligi 1/3.",
+   "0,1₃ = 1 · 1/3",
+   "Javob: 1/3"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-12",
+  "unit": "kasr-sanoq",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Kasr sonni o‘nlikdan boshqa sistemaga o‘tkazishda kasr qism nima qilinadi?",
+  "options": [
+   "o‘zgarmasdan qoladi",
+   "asosga ketma-ket ko‘paytiriladi",
+   "asosga ketma-ket bo‘linadi",
+   "asosdan ayriladi"
+  ],
+  "answer": 1,
+  "explanation": "Kasr qism asosga ko‘paytiriladi, butun qismlar yuqoridan o‘qiladi.",
+  "solution": [
+   "Butun qism — asosga BO‘LINADI (qoldiqlar pastdan o‘qiladi).",
+   "Kasr qism — asosga KO‘PAYTIRILADI (butun qismlar yuqoridan o‘qiladi).",
+   "Javob: asosga ketma-ket ko‘paytiriladi"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-13",
+  "unit": "kasr-sanoq",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Ikkilikdagi 0,101101₂ sonini sakkizlik sistemaga o‘tkazing.",
+  "options": [
+   "0,55",
+   "0,26",
+   "0,65",
+   "0,54"
+  ],
+  "answer": 0,
+  "explanation": "101|101 → 0,55₈.",
+  "solution": [
+   "Kasr qismda guruhlash VERGULDAN O‘NGGA qarab (chapdan) qilinadi: 101 | 101.",
+   "101₂ = 5, 101₂ = 5.",
+   "Natija: 0,55₈"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-14",
+  "unit": "kasr-sanoq",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Ikkilikdagi 0,1011₂ sonini o‘n oltilik sistemaga o‘tkazing.",
+  "options": [
+   "0,D",
+   "0,B",
+   "0,11",
+   "0,A"
+  ],
+  "answer": 1,
+  "explanation": "1011 = B → 0,B₁₆.",
+  "solution": [
+   "Verguldan keyin 4 tadan guruhlaymiz: 1011.",
+   "1011₂ = 8 + 2 + 1 = 11 = B.",
+   "Natija: 0,B₁₆"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-15",
+  "unit": "kasr-sanoq",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "O‘nlik sistemadagi 6,125 sonini ikkilik sistemaga o‘tkazing.",
+  "options": [
+   "110,01",
+   "110,101",
+   "111,001",
+   "110,001"
+  ],
+  "answer": 3,
+  "explanation": "6 = 110₂, 0,125 = 0,001₂.",
+  "solution": [
+   "Butun: 6 = 110₂.",
+   "Kasr: 0,125·2 = 0,25 (0); 0,25·2 = 0,5 (0); 0,5·2 = 1,0 (1) → 0,001₂.",
+   "Natija: 110,001₂"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-16",
+  "unit": "kasr-sanoq",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Sakkizlikdagi 0,3₈ sonini ikkilik sistemaga o‘tkazing.",
+  "options": [
+   "0,011",
+   "0,3",
+   "0,11",
+   "0,0011"
+  ],
+  "answer": 0,
+  "explanation": "3 → 011, demak 0,011₂.",
+  "solution": [
+   "Har bir sakkizlik raqam 3 bitga yoyiladi: 3 = 011.",
+   "Kasr qismda oxiridagi nollarni tashlash mumkin, boshidagilarni emas!",
+   "Natija: 0,011₂"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-17",
+  "unit": "kasr-sanoq",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "O‘nlik sistemadagi 18,5 sonini uchlik sistemaga o‘tkazing.",
+  "options": [
+   "200,(1)",
+   "201,1",
+   "200,(2)",
+   "200,12"
+  ],
+  "answer": 0,
+  "explanation": "18 = 200₃, 0,5 = 0,(1)₃.",
+  "solution": [
+   "Butun qism: 18 : 3 = 6 q0; 6 : 3 = 2 q0; 2 : 3 = 0 q2 → 200₃.",
+   "Kasr qism: 0,5 · 3 = 1,5 → 1, kasr yana 0,5 — takrorlanadi!",
+   "Demak kasr qism cheksiz: 0,111…₃ = 0,(1)₃.",
+   "Natija: 200,(1)₃"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-18",
+  "unit": "kasr-sanoq",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Ikkilikdagi 0,(1)₂ = 0,1111…₂ davriy kasr nechaga teng?",
+  "options": [
+   "0,5",
+   "0,(9)",
+   "1",
+   "0,1"
+  ],
+  "answer": 2,
+  "explanation": "0,(1)₂ = 1 (xuddi 0,(9)₁₀ = 1 kabi).",
+  "solution": [
+   "½ + ¼ + ⅛ + … — bu cheksiz yig‘indi.",
+   "Har qadamda qolgan masofaning yarmini qo‘shamiz, natija 1 ga yaqinlashadi va aynan 1 ga teng.",
+   "Xuddi o‘nlikdagi 0,(9) = 1 kabi: 0,(1)₂ = 1"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-19",
+  "unit": "kasr-sanoq",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "O‘nlik sistemadagi 0,1 sonini ikkilik sistemaga o‘tkazsak, nima hosil bo‘ladi?",
+  "options": [
+   "0,0(0011)",
+   "0,00011",
+   "0,0001",
+   "0,1"
+  ],
+  "answer": 0,
+  "explanation": "0,1 ikkilikda cheksiz: 0,0(0011)₂.",
+  "solution": [
+   "0,1·2 = 0,2 (0); 0,2·2 = 0,4 (0); 0,4·2 = 0,8 (0); 0,8·2 = 1,6 (1); 0,6·2 = 1,2 (1).",
+   "Endi kasr 0,2 — bu 2-qadamdagi holat! Demak 0011 qismi takrorlanadi.",
+   "Natija: 0,0(0011)₂ — cheksiz davriy kasr."
+  ]
+ },
+ {
+  "id": "kasr-sanoq-20",
+  "unit": "kasr-sanoq",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi o‘nlik kasrlardan qaysi biri ikkilik sistemada CHEKLI kasr bo‘ladi?",
+  "options": [
+   "0,375",
+   "0,1",
+   "0,2",
+   "0,3"
+  ],
+  "answer": 0,
+  "explanation": "0,375 = 3/8, maxraj 2 ning darajasi.",
+  "solution": [
+   "Qisqarmas kasr m/n ikkilikda chekli bo‘lishi uchun n faqat 2 ning darajasi bo‘lishi kerak.",
+   "0,375 = 3/8 (8 = 2³ ✔). 0,1 = 1/10, 0,2 = 1/5, 0,3 = 3/10 — maxrajda 5 bor ✘.",
+   "Javob: 0,375"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-21",
+  "unit": "kasr-sanoq",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "O‘n oltilikdagi 2,A₁₆ sonini o‘nlik sistemaga o‘tkazing.",
+  "options": [
+   "2,625",
+   "2,6",
+   "2,10",
+   "2,1"
+  ],
+  "answer": 0,
+  "explanation": "2 + 10/16 = 2,625.",
+  "solution": [
+   "Butun qism: 2.",
+   "Kasr qism: A₁₆ = 10, og‘irligi 1/16 → 10/16 = 0,625.",
+   "Natija: 2,625"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-22",
+  "unit": "kasr-sanoq",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Uchlik sistemadagi 0,(1)₃ = 0,111…₃ davriy kasrni oddiy kasr ko‘rinishida yozing.",
+  "options": [
+   "1/10",
+   "1/3",
+   "1/9",
+   "1/2"
+  ],
+  "answer": 3,
+  "explanation": "0,(1)₃ = 1/(3−1) = 1/2.",
+  "solution": [
+   "Formula: n lik sistemada 0,(a)ₙ = a / (n − 1).",
+   "0,(1)₃ = 1 / (3 − 1).",
+   "Javob: 1/2"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-23",
+  "unit": "kasr-sanoq",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Ikkilikdagi 0,(01)₂ = 0,010101…₂ davriy kasr nechaga teng?",
+  "options": [
+   "1/5",
+   "1/3",
+   "1/2",
+   "1/4"
+  ],
+  "answer": 1,
+  "explanation": "1 / (4 − 1) = 1/3.",
+  "solution": [
+   "Davr uzunligi 2 ta raqam: 01₂ = 1.",
+   "Formula: 0,(P)ₙ = P / (nᵏ − 1), k — davr uzunligi. 0,(01)₂ = 1 / (2² − 1).",
+   "Javob: 1/3"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-24",
+  "unit": "kasr-sanoq",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "O‘nlik sistemadagi 1/3 sonini uchlik sistemada yozing.",
+  "options": [
+   "0,(3)",
+   "0,(1)",
+   "0,3",
+   "0,1"
+  ],
+  "answer": 3,
+  "explanation": "1/3 = 0,1₃.",
+  "solution": [
+   "Uchlikda verguldan keyingi 1-o‘rin og‘irligi aynan 1/3.",
+   "Shuning uchun 1/3 = 0,1₃ — chekli kasr! (o‘nlikda esa 0,(3) — cheksiz).",
+   "Javob: 0,1₃"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-25",
+  "unit": "kasr-sanoq",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "O‘nlik sistemadagi 0,2 sonini beshlik sistemaga o‘tkazing.",
+  "options": [
+   "0,2",
+   "0,1",
+   "0,04",
+   "0,(1)"
+  ],
+  "answer": 1,
+  "explanation": "0,2·5 = 1 → 0,1₅.",
+  "solution": [
+   "0,2 · 5 = 1,0 → butun 1, kasr 0.",
+   "To‘xtaymiz.",
+   "Natija: 0,1₅"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-26",
+  "unit": "kasr-sanoq",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Sakkizlikdagi 7,4₈ sonini o‘n oltilik sistemaga o‘tkazing.",
+  "options": [
+   "7,4",
+   "7,8",
+   "7,5",
+   "7,C"
+  ],
+  "answer": 1,
+  "explanation": "111,100₂ → 0111,1000₂ → 7,8₁₆.",
+  "solution": [
+   "Avval ikkilikka: 7 = 111, 4 = 100 → 111,100₂.",
+   "Endi 4 tadan guruhlaymiz (butun qism o‘ngdan, kasr qism chapdan): 0111 , 1000.",
+   "0111 = 7, 1000 = 8 → 7,8₁₆"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-27",
+  "unit": "kasr-sanoq",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "O‘nlik sistemadagi 1/4 sonini uchlik sistemaga o‘tkazing.",
+  "options": [
+   "0,(02)",
+   "0,02",
+   "0,(1)",
+   "0,(2)"
+  ],
+  "answer": 0,
+  "explanation": "Raqamlar 0, 2 takrorlanadi: 0,(02)₃.",
+  "solution": [
+   "0,25 · 3 = 0,75 → 0. 0,75 · 3 = 2,25 → 2.",
+   "Kasr yana 0,25 — boshlang‘ich holat takrorlandi.",
+   "Natija: 0,(02)₃"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-28",
+  "unit": "kasr-sanoq",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Ikkilikdagi 11,011₂ sonini o‘nlik sistemaga o‘tkazing.",
+  "options": [
+   "3,011",
+   "3,375",
+   "3,3",
+   "3,75"
+  ],
+  "answer": 1,
+  "explanation": "3 + 0,375 = 3,375.",
+  "solution": [
+   "Butun: 11₂ = 3.",
+   "Kasr: 0,011₂ = 0·½ + 1·¼ + 1·⅛ = 0,25 + 0,125 = 0,375.",
+   "Natija: 3,375"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-29",
+  "unit": "kasr-sanoq",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "O‘nlikdagi 0,6875 sonini o‘n oltilik sistemaga o‘tkazing.",
+  "options": [
+   "0,A",
+   "0,B",
+   "0,6875",
+   "0,C"
+  ],
+  "answer": 1,
+  "explanation": "0,6875·16 = 11 = B.",
+  "solution": [
+   "0,6875 · 16 = 11,0 → butun qism 11 = B.",
+   "Kasr 0 bo‘ldi.",
+   "Natija: 0,B₁₆"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-30",
+  "unit": "kasr-sanoq",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Ikkilik sistemada 1/32 soni verguldan keyin nechta xonada yoziladi?",
+  "options": [
+   "32",
+   "5",
+   "4",
+   "6"
+  ],
+  "answer": 1,
+  "explanation": "1/2⁵ = 0,00001₂ — 5 ta xona.",
+  "solution": [
+   "1/32 = 1/2⁵ — bu verguldan keyingi 5-o‘rin og‘irligi.",
+   "1/32 = 0,00001₂.",
+   "Javob: 5"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-31",
+  "unit": "kasr-sanoq",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Qaysi sanoq sistemasida 1/6 soni CHEKLI kasr bo‘ladi?",
+  "options": [
+   "12 lik",
+   "8 lik",
+   "2 lik",
+   "10 lik"
+  ],
+  "answer": 0,
+  "explanation": "Asosning tub bo‘luvchilari 2 va 3 ni o‘z ichiga olishi kerak → 12.",
+  "solution": [
+   "1/6 ning maxraji 6 = 2 · 3. Chekli bo‘lishi uchun asos 2 ga ham, 3 ga ham bo‘linishi kerak.",
+   "10 = 2·5 (3 yo‘q) ✘; 2 ✘; 8 ✘; 12 = 2²·3 ✔.",
+   "Javob: 12 lik (1/6 = 0,2₁₂)"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-32",
+  "unit": "kasr-sanoq",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Ikkilikdagi 0,(011)₂ davriy kasrni oddiy kasrga aylantiring.",
+  "options": [
+   "3/11",
+   "3/7",
+   "3/8",
+   "1/3"
+  ],
+  "answer": 1,
+  "explanation": "3 / (8 − 1) = 3/7.",
+  "solution": [
+   "Davr: 011₂ = 3, uzunligi 3.",
+   "0,(P)₂ = P / (2³ − 1) = 3 / 7.",
+   "Javob: 3/7"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-33",
+  "unit": "kasr-sanoq",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "O‘nlikdagi 9,75 sonini sakkizlik sistemaga o‘tkazing.",
+  "options": [
+   "11,6",
+   "11,3",
+   "9,6",
+   "11,75"
+  ],
+  "answer": 0,
+  "explanation": "9 = 11₈, 0,75 = 0,6₈.",
+  "solution": [
+   "Butun: 9 = 11₈.",
+   "Kasr: 0,75 · 8 = 6,0 → 6.",
+   "Natija: 11,6₈"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-34",
+  "unit": "kasr-sanoq",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Ikkilikdagi 10110,(110)₂ davriy kasrni (davrda 110) yettilik sistemada ifodalang.",
+  "options": [
+   "31,(6)",
+   "22,6",
+   "31,6",
+   "31,(5)"
+  ],
+  "answer": 2,
+  "explanation": "22 = 31₇, 0,(110)₂ = 6/7 = 0,6₇.",
+  "solution": [
+   "Butun qism: 10110₂ = 16 + 4 + 2 = 22.",
+   "Kasr qism: 0,(110)₂ = 110₂ / (2³ − 1) = 6/7.",
+   "Demak son = 22 + 6/7.",
+   "Yettilikda: 22 = 3·7 + 1 = 31₇, 6/7 = 0,6₇ (aynan 1-o‘rin og‘irligi 1/7).",
+   "Natija: 31,6₇"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-35",
+  "unit": "kasr-sanoq",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Uchlikdagi 102,(12)₃ davriy kasrni (davrda 12) ikkilik sistemaga o‘tkazing.",
+  "options": [
+   "1011,101",
+   "1010,101",
+   "1011,011",
+   "1011,(01)"
+  ],
+  "answer": 0,
+  "explanation": "11 = 1011₂, 0,(12)₃ = 5/8 = 0,101₂.",
+  "solution": [
+   "Butun qism: 102₃ = 9 + 2 = 11 = 1011₂.",
+   "Kasr qism: 0,(12)₃ = 12₃ / (3² − 1) = 5/8.",
+   "5/8 = 0,625 = ½ + ⅛ = 0,101₂.",
+   "Natija: 1011,101₂"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-36",
+  "unit": "kasr-sanoq",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "O‘nlikdagi 0,(3) davriy kasrni oltilik sistemaga o‘tkazing.",
+  "options": [
+   "0,(3)",
+   "0,2",
+   "0,3",
+   "0,(2)"
+  ],
+  "answer": 1,
+  "explanation": "1/3 · 6 = 2 → 0,2₆.",
+  "solution": [
+   "0,(3) = 1/3.",
+   "1/3 · 6 = 2,0 → butun 2, kasr 0.",
+   "Natija: 0,2₆"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-37",
+  "unit": "kasr-sanoq",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Sakkizlikdagi 0,(7)₈ davriy kasr nechaga teng?",
+  "options": [
+   "7/8",
+   "7/9",
+   "1",
+   "0,7"
+  ],
+  "answer": 2,
+  "explanation": "7/7 = 1 (eng katta raqam takrorlansa natija 1).",
+  "solution": [
+   "Formula: 0,(a)ₙ = a / (n − 1).",
+   "0,(7)₈ = 7 / (8 − 1) = 7/7.",
+   "Javob: 1"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-38",
+  "unit": "kasr-sanoq",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "O‘nlikdagi 1/7 sonini ikkilik sistemada yozganda davr uzunligi nechaga teng?",
+  "options": [
+   "6",
+   "2",
+   "7",
+   "3"
+  ],
+  "answer": 3,
+  "explanation": "1/7 = 0,(001)₂ → davr 3.",
+  "solution": [
+   "2ᵏ − 1 soni 7 ga bo‘linadigan eng kichik k ni topamiz: 2¹−1=1, 2²−1=3, 2³−1=7 ✔.",
+   "Demak 1/7 = 1/(2³ − 1) = 0,(001)₂.",
+   "Davr uzunligi: 3"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-39",
+  "unit": "kasr-sanoq",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Ikkilikdagi 0,0(1)₂ = 0,0111…₂ son o‘nlikda nechaga teng?",
+  "options": [
+   "0,(1)",
+   "0,5",
+   "0,75",
+   "0,25"
+  ],
+  "answer": 1,
+  "explanation": "0,0(1)₂ = ½ · 0,(1)₂ = ½.",
+  "solution": [
+   "0,(1)₂ = 1. Oldida bitta qo‘shimcha 0 bor — demak 2 ga bo‘linadi.",
+   "0,0(1)₂ = 1/2.",
+   "Javob: 0,5"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-40",
+  "unit": "kasr-sanoq",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "O‘nlikdagi 12,8 sonini o‘n oltilik sistemaga o‘tkazing.",
+  "options": [
+   "C,C",
+   "C,8",
+   "B,(C)",
+   "C,(C)"
+  ],
+  "answer": 3,
+  "explanation": "12 = C, 0,8 = 0,(C)₁₆.",
+  "solution": [
+   "Butun: 12 = C.",
+   "Kasr: 0,8·16 = 12,8 → C, kasr yana 0,8 — takrorlanadi.",
+   "Natija: C,(C)₁₆"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-41",
+  "unit": "kasr-sanoq",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Uchlikdagi 0,(2)₃ va ikkilikdagi 0,(1)₂ sonlarini solishtiring.",
+  "options": [
+   "taqqoslab bo‘lmaydi",
+   "0,(1)₂ katta",
+   "0,(2)₃ katta",
+   "teng (ikkalasi 1)"
+  ],
+  "answer": 3,
+  "explanation": "Ikkalasi ham 1.",
+  "solution": [
+   "0,(2)₃ = 2 / (3 − 1) = 1.",
+   "0,(1)₂ = 1 / (2 − 1) = 1.",
+   "Javob: teng (ikkalasi 1)"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-42",
+  "unit": "kasr-sanoq",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "O‘nlikdagi 5/12 sonini o‘n ikkilik sistemada yozing.",
+  "options": [
+   "0,5",
+   "0,(4)",
+   "0,41(6)",
+   "0,(5)"
+  ],
+  "answer": 0,
+  "explanation": "5/12 = 0,5₁₂.",
+  "solution": [
+   "O‘n ikkilikda 1-o‘rin og‘irligi 1/12.",
+   "5/12 = 5 · 1/12.",
+   "Natija: 0,5₁₂"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-43",
+  "unit": "kasr-sanoq",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "O‘nlikdagi 0,(6) davriy kasrni to‘qqizlik sistemaga o‘tkazing.",
+  "options": [
+   "0,(6)",
+   "0,7",
+   "0,6",
+   "0,(5)"
+  ],
+  "answer": 2,
+  "explanation": "2/3 · 9 = 6 → 0,6₉.",
+  "solution": [
+   "0,(6) = 2/3.",
+   "2/3 · 9 = 6,0 → 6, kasr 0.",
+   "Natija: 0,6₉"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-44",
+  "unit": "kasr-sanoq",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Ikkilikdagi 0,(10)₂ = 0,1010…₂ son nechaga teng (oddiy kasr)?",
+  "options": [
+   "1/3",
+   "1/2",
+   "2/3",
+   "5/8"
+  ],
+  "answer": 2,
+  "explanation": "2/(4−1) = 2/3.",
+  "solution": [
+   "Davr: 10₂ = 2, uzunligi 2.",
+   "0,(10)₂ = 2 / (2² − 1) = 2/3.",
+   "Javob: 2/3"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-45",
+  "unit": "kasr-sanoq",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "O‘nlik sistemadagi 7,1 sonini sakkizlik sistemaga o‘tkazing.",
+  "options": [
+   "7,0(6)",
+   "7,0(6314)",
+   "7,(06)",
+   "7,1"
+  ],
+  "answer": 1,
+  "explanation": "0,1 = 0,0(6314)₈.",
+  "solution": [
+   "Butun: 7 = 7₈.",
+   "Kasr: 0,1·8 = 0,8 (0); 0,8·8 = 6,4 (6); 0,4·8 = 3,2 (3); 0,2·8 = 1,6 (1); 0,6·8 = 4,8 (4); 0,8·8 = 6,4 (6) — 0,8 holati takrorlandi!",
+   "Takrorlanish 2-qadamdan boshlanadi: 0 dan keyin 6314 davri.",
+   "Natija: 7,0(6314)₈"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-46",
+  "unit": "kasr-sanoq",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Uchlikdagi 2,(1)₃ sonini o‘nlik sistemada yozing.",
+  "options": [
+   "2,(3)",
+   "2,(1)",
+   "2,1",
+   "2,5"
+  ],
+  "answer": 3,
+  "explanation": "2 + 1/2 = 2,5.",
+  "solution": [
+   "Butun: 2.",
+   "Kasr: 0,(1)₃ = 1/(3−1) = 1/2 = 0,5.",
+   "Natija: 2,5"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-47",
+  "unit": "kasr-sanoq",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Beshlikdagi 0,(4)₅ va 0,1₅ sonlarining yig‘indisi o‘nlikda nechaga teng?",
+  "options": [
+   "0,5",
+   "1,2",
+   "1,1",
+   "1"
+  ],
+  "answer": 1,
+  "explanation": "1 + 0,2 = 1,2.",
+  "solution": [
+   "0,(4)₅ = 4/(5 − 1) = 1.",
+   "0,1₅ = 1/5 = 0,2.",
+   "Yig‘indi: 1 + 0,2 = 1,2"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-48",
+  "unit": "kasr-sanoq",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "O‘nlikdagi 0,625 sonini to‘rtlik sistemaga o‘tkazing.",
+  "options": [
+   "0,(2)",
+   "0,52",
+   "0,21",
+   "0,22"
+  ],
+  "answer": 3,
+  "explanation": "0,625 = 0,22₄.",
+  "solution": [
+   "0,625 · 4 = 2,5 → 2. 0,5 · 4 = 2,0 → 2.",
+   "Kasr 0 bo‘ldi.",
+   "Natija: 0,22₄"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-49",
+  "unit": "kasr-sanoq",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Qaysi kasr ikkilikda CHEKSIZ, lekin uchlik sistemada CHEKLI bo‘ladi?",
+  "options": [
+   "1/6",
+   "1/9",
+   "1/8",
+   "1/5"
+  ],
+  "answer": 1,
+  "explanation": "1/9 = 0,01₃, lekin ikkilikda cheksiz.",
+  "solution": [
+   "Ikkilikda chekli bo‘lishi uchun maxraj = 2ᵏ. Uchlikda chekli bo‘lishi uchun maxraj = 3ᵏ.",
+   "1/9: 9 = 3² → uchlikda chekli (0,01₃), ikkilikda cheksiz ✔.",
+   "1/8 — ikkilikda chekli; 1/5 — ikkalasida cheksiz; 1/6 — ikkalasida cheksiz.",
+   "Javob: 1/9"
+  ]
+ },
+ {
+  "id": "kasr-sanoq-50",
+  "unit": "kasr-sanoq",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Ikkilikdagi 1,(1)₂ va o‘nlikdagi 2 sonini solishtiring.",
+  "options": [
+   "teng",
+   "2 katta",
+   "taqqoslab bo‘lmaydi",
+   "1,(1)₂ katta"
+  ],
+  "answer": 0,
+  "explanation": "1,(1)₂ = 1 + 1 = 2.",
+  "solution": [
+   "1,(1)₂ = 1 + 0,(1)₂.",
+   "0,(1)₂ = 1/(2 − 1) = 1, demak 1,(1)₂ = 1 + 1 = 2.",
+   "Javob: teng"
+  ]
+ }
+]

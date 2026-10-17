@@ -1,0 +1,4062 @@
+{
+ "title": "Informatika olimpiadasi: mavzular va mashqlar",
+ "description": "2024-yil 9-, 10-, 11-sinf Informatika fan olimpiadasi tuman (shahar) bosqichidagi 90 ta savol tahlili asosida.",
+ "scoring": {
+  "easy": 0.9,
+  "medium": 1.7,
+  "hard": 2.4,
+  "max_score": 50,
+  "default_time_minutes": 90
+ },
+ "topics": [
+  {
+   "order": 1,
+   "icon": "🔢",
+   "title": "Sanoq sistemalari",
+   "short": "Ikkilik, sakkizlik, o‘n oltilik va boshqa asoslar: sonlarni o‘tkazish, solishtirish, noma’lum asosni topish.",
+   "sources": [
+    {
+     "grade": 9,
+     "number": 1,
+     "points": 0.9,
+     "text": "120102₃ ni o‘nlikka o‘tkazish"
+    },
+    {
+     "grade": 9,
+     "number": 11,
+     "points": 1.7,
+     "text": "ABC₁₅ − ABC₁₄ farqi"
+    },
+    {
+     "grade": 9,
+     "number": 12,
+     "points": 1.7,
+     "text": "100ₓ + 100ₓ₊₁ = 100ₓ₊₂ tenglama"
+    },
+    {
+     "grade": 9,
+     "number": 22,
+     "points": 2.4,
+     "text": "16FAB90081₁₆ ni to‘rtlikka o‘tkazish"
+    },
+    {
+     "grade": 9,
+     "number": 25,
+     "points": 2.4,
+     "text": "112₇ ni 5 ga bo‘lib, o‘n beshlikda yozish"
+    },
+    {
+     "grade": 10,
+     "number": 1,
+     "points": 0.9,
+     "text": "3A1₁₂ ni yettilikka o‘tkazish"
+    },
+    {
+     "grade": 10,
+     "number": 17,
+     "points": 1.7,
+     "text": "20₃ + 14ₓ = 100₁₀₋ₓ tenglama"
+    },
+    {
+     "grade": 11,
+     "number": 3,
+     "points": 0.9,
+     "text": "76A₁₁ ni o‘nlikka o‘tkazish"
+    },
+    {
+     "grade": 11,
+     "number": 13,
+     "points": 1.7,
+     "text": "Noma’lum asosli tenglama va 33ₓ"
+    },
+    {
+     "grade": 11,
+     "number": 24,
+     "points": 2.4,
+     "text": "Uchlikdagi sondan 3 marta katta sonni to‘qqizlikda yozish"
+    }
+   ],
+   "lesson": {
+    "hook": {
+     "title": "Barmoqlar va qutilar",
+     "text": "Tasavvur qil: sening 10 ta barmog‘ing bor. Shuning uchun odamlar 10 tagacha sanab, keyin «bir o‘nlik» deb boshidan boshlaydi. Bu — o‘nlik sanoq sistemasi. Endi kompyuterni tasavvur qil: unda faqat 2 ta «barmoq» bor — chiroq YONIQ (1) yoki O‘CHIQ (0). Shuning uchun kompyuter 2 tagacha sanaydi va bu — ikkilik sistema. Sanoq sistemasi — bu «nechtadan guruhlab sanaymiz?» degan savolga javob."
+    },
+    "sections": [
+     {
+      "title": "1. Asos nima?",
+      "text": [
+       "Sanoq sistemasining ASOSI — nechta xil raqam borligi. O‘nlikda 10 ta raqam bor: 0, 1, 2, …, 9. Ikkilikda 2 ta: 0 va 1. Sakkizlikda 8 ta: 0..7.",
+       "Qoida juda oddiy: n lik sistemada raqamlar 0 dan n−1 gacha bo‘ladi. Shuning uchun sakkizlikda «8» raqami YO‘Q, beshlikda «5» raqami YO‘Q.",
+       "9 dan katta raqamlar harf bilan yoziladi: A = 10, B = 11, C = 12, D = 13, E = 14, F = 15."
+      ],
+      "table": {
+       "head": [
+        "Sistema",
+        "Raqamlar",
+        "Misol"
+       ],
+       "rows": [
+        [
+         "2 lik",
+         "0, 1",
+         "1011₂"
+        ],
+        [
+         "3 lik",
+         "0, 1, 2",
+         "2101₃"
+        ],
+        [
+         "8 lik",
+         "0 … 7",
+         "157₈"
+        ],
+        [
+         "10 lik",
+         "0 … 9",
+         "2024"
+        ],
+        [
+         "12 lik",
+         "0 … 9, A, B",
+         "3A1₁₂"
+        ],
+        [
+         "16 lik",
+         "0 … 9, A … F",
+         "2F₁₆"
+        ]
+       ]
+      }
+     },
+     {
+      "title": "2. Har bir o‘rinning «og‘irligi» bor",
+      "text": [
+       "O‘nlikdagi 345 sonini olaylik. Bu «3 ta yuz, 4 ta o‘n, 5 ta bir» degani: 3·100 + 4·10 + 5·1.",
+       "Boshqa sistemalarda ham xuddi shunday, faqat og‘irliklar asosning darajalari bo‘ladi. O‘ngdan boshlab: 1, n, n², n³, …",
+       "Ikkilikda og‘irliklar: 1, 2, 4, 8, 16, 32, 64, 128… Uchlikda: 1, 3, 9, 27, 81, 243…"
+      ],
+      "table": {
+       "head": [
+        "O‘rin (o‘ngdan)",
+        "4-chi",
+        "3-chi",
+        "2-chi",
+        "1-chi"
+       ],
+       "rows": [
+        [
+         "2 likda og‘irlik",
+         "8",
+         "4",
+         "2",
+         "1"
+        ],
+        [
+         "3 likda og‘irlik",
+         "27",
+         "9",
+         "3",
+         "1"
+        ],
+        [
+         "8 likda og‘irlik",
+         "512",
+         "64",
+         "8",
+         "1"
+        ],
+        [
+         "16 likda og‘irlik",
+         "4096",
+         "256",
+         "16",
+         "1"
+        ]
+       ]
+      }
+     },
+     {
+      "title": "3. Istalgan sistemadan o‘nlikka o‘tkazish",
+      "text": [
+       "Har bir raqamni o‘z o‘rnining og‘irligiga ko‘paytirib, hammasini qo‘shamiz. Tamom!"
+      ],
+      "code": "2101₃ = 2·27 + 1·9 + 0·3 + 1·1\n      = 54 + 9 + 0 + 1\n      = 64",
+      "note": "Bu usulni «ko‘paytirib qo‘shish» deb eslab qol."
+     },
+     {
+      "title": "4. O‘nlikdan istalgan sistemaga o‘tkazish",
+      "text": [
+       "Sonni asosga qayta-qayta bo‘lamiz va QOLDIQlarni yozib boramiz. Bo‘linma 0 bo‘lganda to‘xtaymiz.",
+       "Javob — qoldiqlarni PASTDAN YUQORIGA (oxirgisidan birinchisiga) o‘qish."
+      ],
+      "code": "37 ni ikkilikka:\n37 : 2 = 18  qoldiq 1\n18 : 2 = 9   qoldiq 0\n 9 : 2 = 4   qoldiq 1\n 4 : 2 = 2   qoldiq 0\n 2 : 2 = 1   qoldiq 0\n 1 : 2 = 0   qoldiq 1   ↑ pastdan o‘qiymiz\nJavob: 100101₂",
+      "note": "Bu usulni «bo‘lib, qoldiqni teskari o‘qish» deb eslab qol."
+     },
+     {
+      "title": "5. Tezkor yo‘l: 2 ↔ 4 ↔ 8 ↔ 16",
+      "text": [
+       "4 = 2², 8 = 2³, 16 = 2⁴. Shuning uchun bu sistemalar orasida bo‘lish shart emas — guruhlash kifoya!",
+       "Ikkilikdan sakkizlikka: o‘ngdan 3 tadan guruhla. O‘n oltilikka: 4 tadan. To‘rtlikka: 2 tadan.",
+       "Teskari yo‘l: har bir sakkizlik raqamni 3 bitga, o‘n oltilik raqamni 4 bitga yoy.",
+       "Xuddi shunday: 3 ↔ 9 (9 = 3²) — uchlik raqamlarni 2 tadan guruhlanadi."
+      ],
+      "table": {
+       "head": [
+        "16 lik",
+        "2 lik (4 bit)",
+        "8 lik",
+        "2 lik (3 bit)"
+       ],
+       "rows": [
+        [
+         "0",
+         "0000",
+         "0",
+         "000"
+        ],
+        [
+         "1",
+         "0001",
+         "1",
+         "001"
+        ],
+        [
+         "5",
+         "0101",
+         "5",
+         "101"
+        ],
+        [
+         "7",
+         "0111",
+         "7",
+         "111"
+        ],
+        [
+         "A (10)",
+         "1010",
+         "—",
+         "—"
+        ],
+        [
+         "F (15)",
+         "1111",
+         "—",
+         "—"
+        ]
+       ]
+      },
+      "code": "11010111₂ → 1101 | 0111 → D 7 → D7₁₆\n365₈ → 011 | 110 | 101 → 11110101₂"
+     },
+     {
+      "title": "6. Noma’lum asosli tenglamalar",
+      "text": [
+       "Agar asos x bo‘lsa, sonni og‘irliklar orqali yozamiz va oddiy tenglama hosil bo‘ladi.",
+       "Juda foydali qoidalar: 10ₓ = x, 100ₓ = x², 1000ₓ = x³, 11ₓ = x + 1, 121ₓ = (x + 1)².",
+       "Yechim topilgach, albatta tekshir: asos yozuvdagi eng katta raqamdan katta bo‘lishi shart!"
+      ],
+      "code": "23ₓ = 17\n2·x + 3 = 17\n2x = 14\nx = 7   (raqamlar 2 va 3 < 7 ✔)"
+     }
+    ],
+    "examples": [
+     {
+      "title": "Sakkizlikdan o‘n oltilikka",
+      "steps": [
+       "157₈ → har raqamni 3 bitga: 001 101 111",
+       "Bitlarni 4 tadan guruhlaymiz: 0110 1111",
+       "0110 = 6, 1111 = F"
+      ],
+      "answer": "157₈ = 6F₁₆"
+     },
+     {
+      "title": "Qaysi son katta: 77₈ yoki 3F₁₆?",
+      "steps": [
+       "77₈ = 7·8 + 7 = 63",
+       "3F₁₆ = 3·16 + 15 = 63"
+      ],
+      "answer": "Ikkalasi ham 63 — teng"
+     },
+     {
+      "title": "O‘n ikkilikdan yettilikka",
+      "steps": [
+       "3A1₁₂ = 3·144 + 10·12 + 1 = 553",
+       "553 : 7 = 79 q0; 79 : 7 = 11 q2; 11 : 7 = 1 q4; 1 : 7 = 0 q1",
+       "Pastdan o‘qiymiz"
+      ],
+      "answer": "1420₇"
+     }
+    ],
+    "pitfalls": [
+     "Qoldiqlarni yuqoridan pastga o‘qish (to‘g‘risi — pastdan yuqoriga).",
+     "Guruhlashni CHAPDAN boshlash (to‘g‘risi — o‘ngdan, chapda yetmasa 0 qo‘shiladi).",
+     "A=10, B=11 … ni unutib, harfni raqam deb hisoblamaslik.",
+     "Noma’lum asos topilganda asos raqamlardan katta ekanini tekshirmaslik.",
+     "Bir xil yozuvni turli asosda bir xil son deb o‘ylash: 10₂ = 2, lekin 10₈ = 8."
+    ],
+    "remember": [
+     "n lik sistemada raqamlar: 0 … n−1.",
+     "Boshqasidan o‘nlikka: ko‘paytirib qo‘sh.",
+     "O‘nlikdan boshqasiga: bo‘l, qoldiqni pastdan o‘qi.",
+     "2→8: 3 bit, 2→16: 4 bit, 2→4: 2 bit, 3→9: 2 raqam.",
+     "100ₓ = x², 10ₓ = x."
+    ],
+    "glossary": [
+     {
+      "term": "Asos",
+      "meaning": "Sanoq sistemasidagi turli raqamlar soni (2, 8, 10, 16…)."
+     },
+     {
+      "term": "Raqam",
+      "meaning": "Son yozish uchun ishlatiladigan belgi (0, 1, …, A, B…)."
+     },
+     {
+      "term": "Og‘irlik",
+      "meaning": "Raqam turgan o‘rinning qiymati: 1, n, n², n³…"
+     },
+     {
+      "term": "Bit",
+      "meaning": "Ikkilik sistemadagi bitta raqam (0 yoki 1)."
+     }
+    ]
+   },
+   "ai": {
+    "subtopics": [
+     "2/3/8/12/16 lik sistemalar",
+     "o‘nlikka va o‘nlikdan o‘tkazish",
+     "guruhlash usuli",
+     "noma’lum asosli tenglamalar",
+     "asoslarda arifmetika"
+    ],
+    "mistakes": [
+     "qoldiqlarni teskari o‘qimaslik",
+     "guruhlashni chapdan boshlash",
+     "A–F qiymatlarini unutish",
+     "asos raqamlardan katta bo‘lishini tekshirmaslik"
+    ],
+    "rules": [
+     "n lik sistemada raqamlar 0..n−1",
+     "100ₓ = x²",
+     "2↔8: 3 bit, 2↔16: 4 bit, 3↔9: 2 raqam"
+    ]
+   },
+   "slug": "sanoq-sistemalari",
+   "question_count": 50
+  },
+  {
+   "order": 2,
+   "icon": "➗",
+   "title": "Kasr va davriy kasrlar sanoq sistemalarida",
+   "short": "Kasr sonlarni bir sistemadan boshqasiga o‘tkazish, cheksiz davriy kasrlar va ularni oddiy kasrga aylantirish.",
+   "sources": [
+    {
+     "grade": 10,
+     "number": 21,
+     "points": 2.4,
+     "text": "18,5 ni uchlik sistemaga o‘tkazish"
+    },
+    {
+     "grade": 10,
+     "number": 29,
+     "points": 2.4,
+     "text": "10110,(110)₂ ni yettilikda ifodalash"
+    },
+    {
+     "grade": 11,
+     "number": 21,
+     "points": 2.4,
+     "text": "102,(12)₃ ni ikkilikka o‘tkazish"
+    }
+   ],
+   "lesson": {
+    "hook": {
+     "title": "Pitsa bo‘laklari",
+     "text": "Bitta pitsani 2 ga bo‘lsang — yarim (½). Yana 2 ga bo‘lsang — chorak (¼). Yana — sakkizdan bir (⅛). Ikkilik kasr aynan shu: verguldan keyingi har bir raqam «shu bo‘lakdan bormi?» degan savolga javob. 0,11₂ — «yarim bor, chorak ham bor» = ¾ pitsa!"
+    },
+    "sections": [
+     {
+      "title": "1. Verguldan keyingi o‘rinlar",
+      "text": [
+       "O‘nlikda 0,25 = 2 ta o‘ndan bir + 5 ta yuzdan bir. Boshqa sistemalarda ham xuddi shunday, faqat bo‘laklar 1/n, 1/n², 1/n³…",
+       "Ikkilikda: ½, ¼, ⅛, 1/16 … Uchlikda: ⅓, 1/9, 1/27 … Sakkizlikda: ⅛, 1/64 …"
+      ],
+      "table": {
+       "head": [
+        "Sistema",
+        "1-o‘rin",
+        "2-o‘rin",
+        "3-o‘rin"
+       ],
+       "rows": [
+        [
+         "2 lik",
+         "1/2 = 0,5",
+         "1/4 = 0,25",
+         "1/8 = 0,125"
+        ],
+        [
+         "3 lik",
+         "1/3",
+         "1/9",
+         "1/27"
+        ],
+        [
+         "8 lik",
+         "1/8",
+         "1/64",
+         "1/512"
+        ],
+        [
+         "16 lik",
+         "1/16",
+         "1/256",
+         "1/4096"
+        ]
+       ]
+      }
+     },
+     {
+      "title": "2. Boshqa sistemadan o‘nlikka",
+      "text": [
+       "Xuddi butun sonlardagidek: har raqamni o‘z og‘irligiga ko‘paytirib qo‘shamiz."
+      ],
+      "code": "101,01₂ = 4 + 0 + 1 + 0·½ + 1·¼\n        = 5 + 0,25 = 5,25"
+     },
+     {
+      "title": "3. O‘nlikdan boshqa sistemaga (kasr qism)",
+      "text": [
+       "Butun qismni odatdagidek BO‘LAMIZ. Kasr qismni esa asosga KO‘PAYTIRAMIZ.",
+       "Har ko‘paytirishdan keyin butun qismini yozib olamiz va uni tashlab, kasr bilan davom etamiz.",
+       "Butun qismlar YUQORIDAN PASTGA o‘qiladi (butun sondagining teskarisi!)."
+      ],
+      "code": "0,625 ni ikkilikka:\n0,625 · 2 = 1,25  → 1\n0,25  · 2 = 0,5   → 0\n0,5   · 2 = 1,0   → 1   ↓ yuqoridan o‘qiymiz\nJavob: 0,101₂"
+     },
+     {
+      "title": "4. Davriy (cheksiz) kasr nima?",
+      "text": [
+       "Ba’zan ko‘paytirish hech tugamaydi va bir xil kasr qayta-qayta chiqaveradi. Unda raqamlar ham takrorlanadi — bu DAVRIY KASR.",
+       "O‘nlikda 1/3 = 0,333… = 0,(3). Qavs ichidagi qism — DAVR, u cheksiz takrorlanadi.",
+       "Qachon kasr chekli bo‘ladi? Qisqarmas kasr maxrajining barcha tub bo‘luvchilari asosning ham bo‘luvchisi bo‘lsa. Masalan ikkilikda maxraj faqat 2, 4, 8, 16… bo‘lishi kerak."
+      ],
+      "code": "0,1 ni ikkilikka:\n0,1·2 = 0,2 → 0\n0,2·2 = 0,4 → 0  ←┐\n0,4·2 = 0,8 → 0   │ takrorlanadi\n0,8·2 = 1,6 → 1   │\n0,6·2 = 1,2 → 1  ─┘ (yana 0,2)\nJavob: 0,0(0011)₂"
+     },
+     {
+      "title": "5. Sehrli formula: davriy kasr → oddiy kasr",
+      "text": [
+       "Agar davr verguldan darhol boshlansa: 0,(P)ₙ = P / (nᵏ − 1), bu yerda P — davrning o‘nlikdagi qiymati, k — davr uzunligi.",
+       "Bitta raqamli davr: 0,(a)ₙ = a / (n − 1). Masalan 0,(1)₃ = 1/2, 0,(7)₈ = 7/7 = 1.",
+       "Bu formula olimpiadadagi eng qiyin savollarni 1 daqiqada yechishga yordam beradi!"
+      ],
+      "table": {
+       "head": [
+        "Davriy kasr",
+        "Hisob",
+        "Natija"
+       ],
+       "rows": [
+        [
+         "0,(1)₂",
+         "1/(2−1)",
+         "1"
+        ],
+        [
+         "0,(01)₂",
+         "1/(4−1)",
+         "1/3"
+        ],
+        [
+         "0,(110)₂",
+         "6/(8−1)",
+         "6/7"
+        ],
+        [
+         "0,(12)₃",
+         "5/(9−1)",
+         "5/8"
+        ]
+       ]
+      }
+     },
+     {
+      "title": "6. Guruhlash kasrlarda ham ishlaydi",
+      "text": [
+       "2 ↔ 8 ↔ 16 orasida kasr qismni VERGULDAN BOSHLAB O‘NGGA guruhlaymiz. Oxirida yetmasa — o‘ngga 0 qo‘shamiz.",
+       "Butun qism esa doimgidek verguldan chapga guruhlanadi."
+      ],
+      "code": "111,1₂ → 16 likka: 0111 , 1000 → 7,8₁₆"
+     }
+    ],
+    "examples": [
+     {
+      "title": "18,5 → uchlik",
+      "steps": [
+       "18 = 200₃",
+       "0,5·3 = 1,5 → 1, yana 0,5 → takrorlanadi",
+       "0,5 = 0,(1)₃"
+      ],
+      "answer": "200,(1)₃"
+     },
+     {
+      "title": "10110,(110)₂ → yettilik",
+      "steps": [
+       "10110₂ = 22",
+       "0,(110)₂ = 6/7",
+       "22 = 31₇, 6/7 = 0,6₇"
+      ],
+      "answer": "31,6₇"
+     },
+     {
+      "title": "102,(12)₃ → ikkilik",
+      "steps": [
+       "102₃ = 11 = 1011₂",
+       "0,(12)₃ = 5/8",
+       "5/8 = 0,101₂"
+      ],
+      "answer": "1011,101₂"
+     }
+    ],
+    "pitfalls": [
+     "Kasr qismni asosga bo‘lish (to‘g‘risi — ko‘paytirish).",
+     "Kasr qismdagi butun raqamlarni pastdan o‘qish (to‘g‘risi — yuqoridan).",
+     "Kasr qismni guruhlashni o‘ngdan boshlash (to‘g‘risi — verguldan o‘ngga).",
+     "0,(P)ₙ formulasida nᵏ − 1 o‘rniga nᵏ olish.",
+     "Davriy kasr bir sistemada cheksiz bo‘lsa, boshqasida ham cheksiz deb o‘ylash (1/3 = 0,1₃ chekli!)."
+    ],
+    "remember": [
+     "Kasr qism: ko‘paytir, butunlarni yuqoridan o‘qi.",
+     "0,(P)ₙ = P / (nᵏ − 1).",
+     "0,(a)ₙ = a / (n − 1).",
+     "Chekli ↔ maxraj tub bo‘luvchilari asosda ham bor."
+    ],
+    "glossary": [
+     {
+      "term": "Davr",
+      "meaning": "Kasrda cheksiz takrorlanadigan raqamlar guruhi (qavs ichida yoziladi)."
+     },
+     {
+      "term": "Chekli kasr",
+      "meaning": "Verguldan keyin raqamlari tugaydigan kasr: 0,101₂."
+     },
+     {
+      "term": "Davriy kasr",
+      "meaning": "Raqamlari cheksiz takrorlanadigan kasr: 0,(3)."
+     }
+    ]
+   },
+   "ai": {
+    "subtopics": [
+     "kasr qismni o‘tkazish",
+     "davriy kasrlar",
+     "0,(P)ₙ formulasi",
+     "chekli/cheksiz kasr sharti"
+    ],
+    "mistakes": [
+     "kasrni bo‘lish",
+     "raqamlarni teskari o‘qish",
+     "nᵏ − 1 ni unutish"
+    ],
+    "rules": [
+     "kasr qism × asos",
+     "0,(P)ₙ = P/(nᵏ−1)",
+     "maxraj tub bo‘luvchilari asosda bo‘lsa chekli"
+    ]
+   },
+   "slug": "kasr-sanoq",
+   "question_count": 50
+  },
+  {
+   "order": 3,
+   "icon": "🧠",
+   "title": "Mantiqiy amallar va ifodalar",
+   "short": "VA, YOKI, EMAS, implikatsiya, ekvivalensiya, XOR. Rostlik jadvali, mulohazalar va ifodalarni soddalashtirish.",
+   "sources": [
+    {
+     "grade": 9,
+     "number": 10,
+     "points": 0.9,
+     "text": "Dizyunksiya amali nima?"
+    },
+    {
+     "grade": 9,
+     "number": 21,
+     "points": 2.4,
+     "text": "Mulohazalar bilan murakkab ifodaning qiymati"
+    },
+    {
+     "grade": 10,
+     "number": 22,
+     "points": 2.4,
+     "text": "C ∨ A ∧ B rostlik jadvalidagi rost qiymatlar soni"
+    },
+    {
+     "grade": 11,
+     "number": 9,
+     "points": 0.9,
+     "text": "A = True, B = False bo‘lganda to‘g‘ri tenglik"
+    },
+    {
+     "grade": 11,
+     "number": 29,
+     "points": 2.4,
+     "text": "¬(A ∧ ((A → C) ∨ (B → A))) ni soddalashtirish"
+    }
+   ],
+   "lesson": {
+    "hook": {
+     "title": "Ha yoki yo‘q o‘yini",
+     "text": "Onang: «Agar darsingni qilsang VA xonangni yig‘ishtirsang, multfilm ko‘rasan» dedi. Faqat ikkala ishni qilsang — multfilm bor. Dadang esa: «Darsingni qilsang YOKI xonangni yig‘ishtirsang, muzqaymoq olaman» dedi — bittasini qilsang ham yetadi! Mantiq — mana shunday «ha (1)» va «yo‘q (0)» lardan iborat o‘yin. Kompyuter ham aynan shunday o‘ylaydi."
+    },
+    "sections": [
+     {
+      "title": "1. Mulohaza — rost yoki yolg‘on gap",
+      "text": [
+       "Mulohaza — rost (1) yoki yolg‘on (0) deyish mumkin bo‘lgan gap. «Quyosh — yulduz» — rost. «3 > 5» — yolg‘on.",
+       "Savol va buyruq gaplar mulohaza EMAS: «Soat necha?», «Eshikni yop!»."
+      ]
+     },
+     {
+      "title": "2. Asosiy amallar",
+      "text": [
+       "EMAS (¬, NOT, inkor) — teskarisiga aylantiradi.",
+       "VA (∧, AND, konyunksiya, mantiqiy ko‘paytirish) — ikkalasi 1 bo‘lsagina 1.",
+       "YOKI (∨, OR, dizyunksiya, mantiqiy qo‘shish) — kamida bittasi 1 bo‘lsa 1.",
+       "XOR (⊕, istisno qiluvchi YOKI) — har xil bo‘lsa 1.",
+       "IMPLIKATSIYA (→, «agar … u holda …») — faqat 1 → 0 da yolg‘on.",
+       "EKVIVALENSIYA (↔, «faqat va faqat») — bir xil bo‘lsa 1."
+      ],
+      "table": {
+       "head": [
+        "A",
+        "B",
+        "¬A",
+        "A ∧ B",
+        "A ∨ B",
+        "A ⊕ B",
+        "A → B",
+        "A ↔ B"
+       ],
+       "rows": [
+        [
+         "0",
+         "0",
+         "1",
+         "0",
+         "0",
+         "0",
+         "1",
+         "1"
+        ],
+        [
+         "0",
+         "1",
+         "1",
+         "0",
+         "1",
+         "1",
+         "1",
+         "0"
+        ],
+        [
+         "1",
+         "0",
+         "0",
+         "0",
+         "1",
+         "1",
+         "0",
+         "0"
+        ],
+        [
+         "1",
+         "1",
+         "0",
+         "1",
+         "1",
+         "0",
+         "1",
+         "1"
+        ]
+       ]
+      }
+     },
+     {
+      "title": "3. Amallar tartibi",
+      "text": [
+       "Matematikada avval ko‘paytirish, keyin qo‘shish bo‘lgani kabi, mantiqda ham tartib bor:",
+       "1) qavslar  2) ¬  3) ∧  4) ∨  5) →  6) ↔",
+       "Masalan C ∨ A ∧ B — bu C ∨ (A ∧ B), chunki ∧ kuchliroq."
+      ]
+     },
+     {
+      "title": "4. Rostlik jadvali",
+      "text": [
+       "n ta o‘zgaruvchi bo‘lsa, jadvalda 2ⁿ ta qator bo‘ladi: 2 ta → 4, 3 ta → 8, 4 ta → 16.",
+       "Qatorlarni ikkilik sanoq tartibida yozamiz: 000, 001, 010, … , 111 — hech birini tashlab ketmaslik uchun.",
+       "Maslahat: «nechta qatorda rost?» savolida ba’zan YOLG‘ON qatorlarni sanab, umumiydan ayirish osonroq."
+      ],
+      "code": "C ∨ A ∧ B:\nA B C | A∧B | natija\n0 0 0 |  0  |  0\n0 0 1 |  0  |  1\n0 1 0 |  0  |  0\n0 1 1 |  0  |  1\n1 0 0 |  0  |  0\n1 0 1 |  0  |  1\n1 1 0 |  1  |  1\n1 1 1 |  1  |  1   → 5 ta rost"
+     },
+     {
+      "title": "5. Soddalashtirish qonunlari",
+      "text": [
+       "Bu qonunlar uzun ifodani qisqa qilishga yordam beradi:"
+      ],
+      "table": {
+       "head": [
+        "Qonun",
+        "Ko‘rinishi"
+       ],
+       "rows": [
+        [
+         "Ikki karra inkor",
+         "¬¬A = A"
+        ],
+        [
+         "Inkor bilan",
+         "A ∨ ¬A = 1,  A ∧ ¬A = 0"
+        ],
+        [
+         "0 va 1 bilan",
+         "A ∨ 1 = 1, A ∧ 0 = 0, A ∨ 0 = A, A ∧ 1 = A"
+        ],
+        [
+         "De Morgan",
+         "¬(A ∧ B) = ¬A ∨ ¬B,  ¬(A ∨ B) = ¬A ∧ ¬B"
+        ],
+        [
+         "Yutilish",
+         "A ∨ A∧B = A,  A ∧ (A ∨ B) = A"
+        ],
+        [
+         "Implikatsiya",
+         "A → B = ¬A ∨ B"
+        ],
+        [
+         "Ekvivalensiya",
+         "A ↔ B = A∧B ∨ ¬A∧¬B"
+        ]
+       ]
+      }
+     }
+    ],
+    "examples": [
+     {
+      "title": "Mulohazalar bilan",
+      "steps": [
+       "A = «Sutkada 1440 daqiqa bor» = 1, C = «π < 3,14» = 0",
+       "A ∧ C = 0",
+       "A ∨ C = 1"
+      ],
+      "answer": "A ∧ C = 0, A ∨ C = 1"
+     },
+     {
+      "title": "Soddalashtirish",
+      "steps": [
+       "¬(A ∧ ((A→C) ∨ (B→A)))",
+       "(A→C) ∨ (B→A) = ¬A ∨ C ∨ ¬B ∨ A = 1",
+       "¬(A ∧ 1) = ¬A"
+      ],
+      "answer": "¬A"
+     }
+    ],
+    "pitfalls": [
+     "C ∨ A ∧ B ni chapdan o‘ngga (C ∨ A) ∧ B deb hisoblash.",
+     "1 → 0 dan boshqa hollarda ham implikatsiyani yolg‘on deb o‘ylash (0 → 0 = 1!).",
+     "De Morganda amalni almashtirishni unutish.",
+     "Rostlik jadvalida qator tashlab ketish (2ⁿ ta bo‘lishi shart)."
+    ],
+    "remember": [
+     "VA — ikkalasi 1; YOKI — kamida bittasi 1.",
+     "A → B faqat 1 → 0 da 0.",
+     "Tartib: ¬, ∧, ∨, →, ↔.",
+     "n o‘zgaruvchi → 2ⁿ qator."
+    ],
+    "glossary": [
+     {
+      "term": "Konyunksiya",
+      "meaning": "VA amali (∧), mantiqiy ko‘paytirish."
+     },
+     {
+      "term": "Dizyunksiya",
+      "meaning": "YOKI amali (∨), mantiqiy qo‘shish."
+     },
+     {
+      "term": "Inversiya",
+      "meaning": "EMAS amali (¬), inkor."
+     },
+     {
+      "term": "Tavtologiya",
+      "meaning": "Har doim rost bo‘ladigan ifoda."
+     }
+    ]
+   },
+   "ai": {
+    "subtopics": [
+     "mantiqiy amallar",
+     "rostlik jadvali",
+     "mulohazalar",
+     "De Morgan va yutilish qonunlari",
+     "implikatsiya"
+    ],
+    "mistakes": [
+     "amallar tartibini buzish",
+     "implikatsiyani noto‘g‘ri baholash",
+     "De Morganda amalni almashtirmaslik"
+    ],
+    "rules": [
+     "tartib: ¬ ∧ ∨ → ↔",
+     "A → B = ¬A ∨ B",
+     "n o‘zgaruvchi → 2ⁿ qator"
+    ]
+   },
+   "slug": "mantiqiy-ifodalar",
+   "question_count": 50
+  },
+  {
+   "order": 4,
+   "icon": "🔌",
+   "title": "Mantiqiy elementlar va sxemalar",
+   "short": "AND, OR, NOT, NAND, NOR, XOR elementlari. Sxemani ifodaga va ifodani sxemaga aylantirish, jamlagichlar.",
+   "sources": [
+    {
+     "grade": 9,
+     "number": 4,
+     "points": 0.9,
+     "text": "Rasmdagi sxema qaysi mantiqiy amal (nor/or/nand/xor)?"
+    },
+    {
+     "grade": 9,
+     "number": 15,
+     "points": 1.7,
+     "text": "Sxemaga mos mantiqiy ifoda"
+    },
+    {
+     "grade": 10,
+     "number": 2,
+     "points": 0.9,
+     "text": "Rasmdagi sxema qaysi mantiqiy amal?"
+    },
+    {
+     "grade": 10,
+     "number": 16,
+     "points": 1.7,
+     "text": "4 kirishli sxemaga mos ifoda"
+    }
+   ],
+   "lesson": {
+    "hook": {
+     "title": "Chiroq va kalitlar",
+     "text": "Xonangda bitta chiroq va ikkita kalit bor deb tasavvur qil. Agar kalitlar KETMA-KET ulangan bo‘lsa, chiroq faqat ikkala kalit yoqilganda yonadi — bu VA (AND). Agar kalitlar YONMA-YON (parallel) ulangan bo‘lsa, bittasini yoqish kifoya — bu YOKI (OR). Kompyuter ichida milliardlab shunday mitti «kalitlar» bor, ular mantiqiy elementlar deyiladi."
+    },
+    "sections": [
+     {
+      "title": "1. Asosiy elementlar",
+      "text": [
+       "Har bir element — kichik «quti»: chap tomondan signal kiradi, o‘ng tomondan natija chiqadi.",
+       "Rasmda NOT oxirida kichik doiracha bilan chiziladi. Har qanday elementning chiqishidagi doiracha — «inkor» degani (NAND, NOR, XNOR)."
+      ],
+      "table": {
+       "head": [
+        "Element",
+        "O‘zbekcha",
+        "Formula",
+        "Qachon 1?"
+       ],
+       "rows": [
+        [
+         "NOT",
+         "EMAS (invertor)",
+         "¬A",
+         "A = 0 bo‘lsa"
+        ],
+        [
+         "AND",
+         "VA (konyunktor)",
+         "A ∧ B",
+         "ikkalasi 1"
+        ],
+        [
+         "OR",
+         "YOKI (dizyunktor)",
+         "A ∨ B",
+         "kamida bittasi 1"
+        ],
+        [
+         "NAND",
+         "VA-EMAS",
+         "¬(A ∧ B)",
+         "11 dan tashqari hammasi"
+        ],
+        [
+         "NOR",
+         "YOKI-EMAS",
+         "¬(A ∨ B)",
+         "faqat 00"
+        ],
+        [
+         "XOR",
+         "istisno YOKI",
+         "A ⊕ B",
+         "har xil bo‘lsa"
+        ],
+        [
+         "XNOR",
+         "ekvivalensiya",
+         "A ↔ B",
+         "bir xil bo‘lsa"
+        ]
+       ]
+      }
+     },
+     {
+      "title": "2. Elementlarning to‘liq jadvali",
+      "text": [
+       "Bu jadvalni yod olsang, rasmdagi istalgan sxemani taniy olasan:"
+      ],
+      "table": {
+       "head": [
+        "A",
+        "B",
+        "AND",
+        "OR",
+        "NAND",
+        "NOR",
+        "XOR",
+        "XNOR"
+       ],
+       "rows": [
+        [
+         "0",
+         "0",
+         "0",
+         "0",
+         "1",
+         "1",
+         "0",
+         "1"
+        ],
+        [
+         "0",
+         "1",
+         "0",
+         "1",
+         "1",
+         "0",
+         "1",
+         "0"
+        ],
+        [
+         "1",
+         "0",
+         "0",
+         "1",
+         "1",
+         "0",
+         "1",
+         "0"
+        ],
+        [
+         "1",
+         "1",
+         "1",
+         "1",
+         "0",
+         "0",
+         "0",
+         "1"
+        ]
+       ]
+      }
+     },
+     {
+      "title": "3. Sxemani ifodaga aylantirish",
+      "text": [
+       "Sxemani CHAPDAN O‘NGGA o‘qi. Har bir element chiqishiga kichik formula yoz.",
+       "Keyingi element bu formulalarni o‘z amali bilan birlashtiradi. Oxirgi elementning formulasi — javob.",
+       "Inkor (doiracha) butun formula ustiga qo‘yiladi va qavs bilan o‘raladi."
+      ],
+      "code": "A ─┐\n   OR ── (A∨B) ─┐\nB ─┘             AND ── (A∨B) ∧ ¬C\nC ── NOT ── ¬C ─┘"
+     },
+     {
+      "title": "4. NAND va NOR — «universal» elementlar",
+      "text": [
+       "Faqat NAND elementlaridan (yoki faqat NOR dan) istalgan sxemani yasash mumkin!",
+       "NOT = NAND(A, A). AND = NOT(NAND(A, B)) — 2 ta NAND. OR = NAND(¬A, ¬B) — 3 ta NAND.",
+       "XOR ni 4 ta NAND bilan yasash mumkin."
+      ]
+     },
+     {
+      "title": "5. Kompyuter qanday qo‘shadi? (Jamlagich)",
+      "text": [
+       "Ikki bitni qo‘shganda: 0+0=0, 0+1=1, 1+0=1, 1+1=10₂.",
+       "Yig‘indi biti (S) = A ⊕ B, ko‘chirish (C) = A ∧ B. Bu — YARIM JAMLAGICH.",
+       "Uchta bitni (oldingi ko‘chirish bilan) qo‘shadigan sxema — TO‘LIQ JAMLAGICH."
+      ]
+     }
+    ],
+    "examples": [
+     {
+      "title": "Sxema → ifoda",
+      "steps": [
+       "A, B → NAND: ¬(A∧B)",
+       "C, D → OR: C∨D",
+       "AND, keyin NOT"
+      ],
+      "answer": "¬(¬(A∧B) ∧ (C∨D))"
+     },
+     {
+      "title": "Elementni topish",
+      "steps": [
+       "Jadval: 00→1, 01→0, 10→0, 11→0",
+       "Faqat 00 da 1"
+      ],
+      "answer": "NOR"
+     }
+    ],
+    "pitfalls": [
+     "Chiqishdagi kichik doirachani (inkorni) e’tiborsiz qoldirish.",
+     "NAND va NOR ni adashtirish.",
+     "Sxemani o‘ngdan chapga o‘qish.",
+     "Inkorni faqat bitta o‘zgaruvchiga qo‘yib, butun qavsga qo‘ymaslik."
+    ],
+    "remember": [
+     "Doiracha = inkor.",
+     "NAND faqat 11 da 0; NOR faqat 00 da 1.",
+     "XOR — har xil; XNOR — bir xil.",
+     "S = A⊕B, C = A∧B."
+    ],
+    "glossary": [
+     {
+      "term": "Invertor",
+      "meaning": "EMAS elementi, signalni teskarisiga aylantiradi."
+     },
+     {
+      "term": "Ventil",
+      "meaning": "Mantiqiy element (gate)."
+     },
+     {
+      "term": "Jamlagich",
+      "meaning": "Ikkilik sonlarni qo‘shuvchi sxema."
+     }
+    ]
+   },
+   "ai": {
+    "subtopics": [
+     "AND/OR/NOT",
+     "NAND/NOR/XOR/XNOR",
+     "sxemadan ifoda",
+     "jamlagich",
+     "universal elementlar"
+    ],
+    "mistakes": [
+     "inkor doirachasini unutish",
+     "NAND va NOR ni adashtirish",
+     "sxemani noto‘g‘ri tartibda o‘qish"
+    ],
+    "rules": [
+     "NAND faqat 11 da 0",
+     "NOR faqat 00 da 1",
+     "XOR har xil kirishda 1"
+    ]
+   },
+   "slug": "mantiqiy-sxemalar",
+   "question_count": 50
+  },
+  {
+   "order": 5,
+   "icon": "📏",
+   "title": "Axborot o‘lchov birliklari",
+   "short": "Bit, bayt, KB, MB, GB … YB. Birliklarni almashtirish, solishtirish va 2 ning darajalari bilan ishlash.",
+   "sources": [
+    {
+     "grade": 9,
+     "number": 3,
+     "points": 0.9,
+     "text": "ZB, EB, YB, PB dan eng kichigi"
+    },
+    {
+     "grade": 10,
+     "number": 3,
+     "points": 0.9,
+     "text": "10 Gb, 1 GB, 1300 MB, 1048576 KB dan eng kattasi"
+    },
+    {
+     "grade": 11,
+     "number": 7,
+     "points": 0.9,
+     "text": "To‘g‘ri yozilgan birlik tengligi"
+    }
+   ],
+   "lesson": {
+    "hook": {
+     "title": "Lego g‘ishtchalari",
+     "text": "Eng kichik Lego g‘ishtchasini tasavvur qil — bu BIT. 8 ta g‘ishtchani birlashtirsang — bitta kichik «uy» (BAYT) bo‘ladi. 1024 ta uy — bitta ko‘cha (kilobayt). 1024 ta ko‘cha — bitta shahar (megabayt). Kompyuterdagi har bir rasm, o‘yin va video aynan shunday g‘ishtchalardan qurilgan!"
+    },
+    "sections": [
+     {
+      "title": "1. Bit va bayt",
+      "text": [
+       "BIT — eng kichik axborot birligi. U faqat ikki holatdan birini saqlaydi: 0 yoki 1 (chiroq o‘chiq yoki yoniq).",
+       "BAYT — 8 ta bit. Bitta harf (masalan «A») odatda 1 bayt joy egallaydi.",
+       "Yodda tut: kichik b — bit, katta B — bayt. Kb — kilobit, KB — kilobayt."
+      ]
+     },
+     {
+      "title": "2. Katta birliklar zinapoyasi",
+      "text": [
+       "Har bir keyingi pog‘ona oldingisidan 1024 marta katta (1024 = 2¹⁰).",
+       "Nega 1000 emas? Chunki kompyuter ikkilik sistemada ishlaydi va 1024 — 2 ning darajasi."
+      ],
+      "table": {
+       "head": [
+        "Birlik",
+        "Nomi",
+        "Qiymati",
+        "2 ning darajasi (bayt)"
+       ],
+       "rows": [
+        [
+         "B",
+         "bayt",
+         "8 bit",
+         "2⁰"
+        ],
+        [
+         "KB",
+         "kilobayt",
+         "1024 B",
+         "2¹⁰"
+        ],
+        [
+         "MB",
+         "megabayt",
+         "1024 KB",
+         "2²⁰"
+        ],
+        [
+         "GB",
+         "gigabayt",
+         "1024 MB",
+         "2³⁰"
+        ],
+        [
+         "TB",
+         "terabayt",
+         "1024 GB",
+         "2⁴⁰"
+        ],
+        [
+         "PB",
+         "petabayt",
+         "1024 TB",
+         "2⁵⁰"
+        ],
+        [
+         "EB",
+         "eksabayt",
+         "1024 PB",
+         "2⁶⁰"
+        ],
+        [
+         "ZB",
+         "zettabayt",
+         "1024 EB",
+         "2⁷⁰"
+        ],
+        [
+         "YB",
+         "yottabayt",
+         "1024 ZB",
+         "2⁸⁰"
+        ]
+       ]
+      }
+     },
+     {
+      "title": "3. Qanday almashtiramiz?",
+      "text": [
+       "Kattadan kichikka tushsang — KO‘PAYTIR. Kichikdan kattaga chiqsang — BO‘L.",
+       "Bit ↔ bayt: 8 ga. Qolgan har bir pog‘ona: 1024 ga."
+      ],
+      "code": "3 MB → KB:   3 · 1024 = 3072 KB\n4096 B → KB: 4096 : 1024 = 4 KB\n64 Kb → KB:  64 : 8 = 8 KB"
+     },
+     {
+      "title": "4. Sehrli usul: 2 ning darajalari",
+      "text": [
+       "Katta sonlar bilan ishlash qiyin, shuning uchun hammasini 2 ning darajasiga aylantiramiz.",
+       "8 = 2³, 1024 = 2¹⁰, 1 MB = 2²⁰ bayt = 2²³ bit.",
+       "Darajalarni ko‘paytirganda ko‘rsatkichlar QO‘SHILADI: 2¹⁰ · 2³ = 2¹³. Bo‘lganda AYRILADI: 2²⁰ : 2¹⁰ = 2¹⁰."
+      ],
+      "code": "16ˣ bit = 32 MB\n32 MB = 2⁵ · 2²⁰ · 2³ bit = 2²⁸ bit\n16ˣ = 2⁴ˣ  →  4x = 28  →  x = 7"
+     },
+     {
+      "title": "5. Solishtirish",
+      "text": [
+       "Turli birlikdagi qiymatlarni solishtirish uchun hammasini BIR XIL birlikka keltir.",
+       "Ayniqsa bit va baytga e’tibor ber: 10 Gb (gigabit) atigi 1,25 GB (gigabayt)!"
+      ]
+     }
+    ],
+    "examples": [
+     {
+      "title": "Eng kattasini top",
+      "steps": [
+       "10 Gb = 10240 Mb = 1280 MB",
+       "1 GB = 1024 MB",
+       "1048576 KB = 1024 MB",
+       "1300 MB"
+      ],
+      "answer": "1300 MB"
+     },
+     {
+      "title": "Tenglikni tekshir",
+      "steps": [
+       "8 Mb = 8 megabit",
+       "8 bit = 1 bayt, demak 8 Mb = 1 MB",
+       "1 MB = 1024 KB"
+      ],
+      "answer": "8 Mb = 1024 KB — to‘g‘ri"
+     }
+    ],
+    "pitfalls": [
+     "Kb (kilobit) va KB (kilobayt) ni adashtirish.",
+     "1 KB = 1000 bayt deb hisoblash (olimpiadada 1024).",
+     "Pog‘onalarni sakrab o‘tish: 1 GB = 1024 KB emas!",
+     "Bit → bayt o‘tishda 1024 ga bo‘lish (to‘g‘risi — 8 ga)."
+    ],
+    "remember": [
+     "1 bayt = 8 bit.",
+     "Har pog‘ona ×1024 = 2¹⁰.",
+     "KB < MB < GB < TB < PB < EB < ZB < YB.",
+     "Kattadan kichikka — ko‘paytir; kichikdan kattaga — bo‘l."
+    ],
+    "glossary": [
+     {
+      "term": "Bit",
+      "meaning": "0 yoki 1 — eng kichik axborot birligi."
+     },
+     {
+      "term": "Bayt",
+      "meaning": "8 bit."
+     },
+     {
+      "term": "Kilo",
+      "meaning": "Informatikada 1024 marta."
+     }
+    ]
+   },
+   "ai": {
+    "subtopics": [
+     "bit va bayt",
+     "KB..YB zinapoyasi",
+     "2 ning darajalari",
+     "bit/bayt farqi"
+    ],
+    "mistakes": [
+     "Kb va KB ni adashtirish",
+     "1000 va 1024 ni aralashtirish",
+     "pog‘onalarni sakrab o‘tish"
+    ],
+    "rules": [
+     "1 bayt = 8 bit",
+     "har pog‘ona 2¹⁰",
+     "hammasini bir birlikka keltir"
+    ]
+   },
+   "slug": "olchov-birliklari",
+   "question_count": 50
+  },
+  {
+   "order": 6,
+   "icon": "💾",
+   "title": "Axborot hajmi va uzatish tezligi",
+   "short": "Matn, rasm va ovoz hajmini hisoblash, alifbo quvvati, N = 2ⁱ formulasi, fayl uzatish vaqti.",
+   "sources": [
+    {
+     "grade": 9,
+     "number": 13,
+     "points": 1.7,
+     "text": "90 MB ni 128 Kb/s orqali yuborish vaqti"
+    },
+    {
+     "grade": 9,
+     "number": 29,
+     "points": 2.4,
+     "text": "40 belgili xabar, 75 belgili alifbo — minimal hajm"
+    },
+    {
+     "grade": 10,
+     "number": 13,
+     "points": 1.7,
+     "text": "17 Kb matnli fayldagi belgilar soni"
+    },
+    {
+     "grade": 10,
+     "number": 28,
+     "points": 2.4,
+     "text": "1920×1080 rasm, 3037,5 KB — ranglar soni"
+    },
+    {
+     "grade": 11,
+     "number": 18,
+     "points": 1.7,
+     "text": "Video yuklab olish va kadrlar soni"
+    },
+    {
+     "grade": 11,
+     "number": 26,
+     "points": 2.4,
+     "text": "Diktofon xotirasi necha sekundda to‘ladi"
+    }
+   ],
+   "lesson": {
+    "hook": {
+     "title": "Maxfiy signallar o‘yini",
+     "text": "Do‘sting bilan fonar orqali gaplashmoqchisan. Fonar yoniq yoki o‘chiq — 2 xil signal (1 bit). Agar 2 marta yoqib-o‘chirsang — 4 xil xabar: «uyga», «maktabga», «parkka», «do‘konga». 3 marta — 8 xil xabar! Har safar bitta bit qo‘shsang, xabarlar soni 2 marta ko‘payadi. Axborot hajmini hisoblash — mana shu o‘yinning o‘zi."
+    },
+    "sections": [
+     {
+      "title": "1. Asosiy formula: N = 2ⁱ",
+      "text": [
+       "N — turli belgilar (ranglar, signallar) soni, i — bitta belgi uchun kerakli bitlar.",
+       "Agar N 2 ning darajasi bo‘lmasa, i ni YUQORIGA yaxlitlaymiz: 75 belgi uchun 2⁶ = 64 yetmaydi, 2⁷ = 128 yetadi → 7 bit."
+      ],
+      "table": {
+       "head": [
+        "Bitlar (i)",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+       ],
+       "rows": [
+        [
+         "Holatlar (2ⁱ)",
+         "2",
+         "4",
+         "8",
+         "16",
+         "32",
+         "64",
+         "128",
+         "256"
+        ]
+       ]
+      }
+     },
+     {
+      "title": "2. Matn hajmi",
+      "text": [
+       "Hajm = belgilar soni · bitta belgi hajmi.",
+       "ASCII matnda 1 belgi = 8 bit = 1 bayt. Unicode (UTF-16) da 1 belgi = 16 bit = 2 bayt."
+      ],
+      "code": "40 belgi, alifbo 75 ta\ni = 7 bit (chunki 64 < 75 ≤ 128)\nV = 40 · 7 = 280 bit"
+     },
+     {
+      "title": "3. Rasm hajmi",
+      "text": [
+       "Rasm mayda kvadratchalardan — PIKSELlardan iborat. Har piksel o‘z rangini saqlaydi.",
+       "Hajm = kenglik · balandlik · rang chuqurligi (bit).",
+       "Ranglar soni = 2^(rang chuqurligi). 24 bit → 16,7 mln rang (True Color)."
+      ],
+      "code": "1920 × 1080, 3037,5 KB\n3037,5 · 1024 · 8 = 24 883 200 bit\n24 883 200 : (1920·1080) = 12 bit\nRanglar = 2¹² = 4096"
+     },
+     {
+      "title": "4. Ovoz hajmi",
+      "text": [
+       "Kompyuter ovozni har sekundda ko‘p marta o‘lchaydi (diskretlash chastotasi, Hz).",
+       "Hajm = chastota · kodlash chuqurligi · vaqt · kanallar soni (mono = 1, stereo = 2).",
+       "Diqqat: 1 kHz = 1000 Hz (bu yerda 1024 emas!)."
+      ],
+      "code": "44 kHz, 24 bit, xotira 4125 KB\nXotira: 4125 · 1024 · 8 = 33 792 000 bit\n1 sekund: 44 000 · 24 = 1 056 000 bit\nVaqt = 33 792 000 : 1 056 000 = 32 s"
+     },
+     {
+      "title": "5. Uzatish vaqti",
+      "text": [
+       "Vaqt = hajm : tezlik. Hajm ham, tezlik ham BIR XIL birlikda bo‘lishi shart (odatda bit va bit/s).",
+       "Olimpiadada 1 Kbit = 1024 bit, 1 Mbit = 2²⁰ bit deb olinadi. Hamma narsani 2 ning darajasiga keltirsang, hisob juda osonlashadi."
+      ],
+      "code": "90 MB, 128 Kb/s\n90 MB = 90 · 2²³ bit\n128 Kb/s = 2¹⁷ bit/s\nt = 90 · 2²³ / 2¹⁷ = 90 · 64 = 5760 s = 96 daqiqa"
+     }
+    ],
+    "examples": [
+     {
+      "title": "Matn",
+      "steps": [
+       "17 Kb = 17·1024 bit = 2176 bayt",
+       "Meta 75 bayt: 2176 − 75",
+       "1 belgi = 1 bayt"
+      ],
+      "answer": "2101 belgi"
+     },
+     {
+      "title": "Video",
+      "steps": [
+       "Yuklangan: 100·2²⁰·900 bit",
+       "Kadr: 768·2¹³ bit → 15000 kadr",
+       "15000 : 600 s"
+      ],
+      "answer": "25 kadr/s"
+     }
+    ],
+    "pitfalls": [
+     "Bit va baytni aralashtirish (8 ga ko‘paytirishni unutish).",
+     "N = 2ⁱ da i ni pastga yaxlitlash.",
+     "kHz ni 1024 ga ko‘paytirish (1 kHz = 1000 Hz).",
+     "Stereo bo‘lsa 2 ga ko‘paytirishni unutish.",
+     "Daqiqa va sekundlarni adashtirish."
+    ],
+    "remember": [
+     "N = 2ⁱ, i yuqoriga yaxlitlanadi.",
+     "Matn: belgilar · i.",
+     "Rasm: piksellar · bit chuqurligi.",
+     "Ovoz: Hz · bit · s · kanal.",
+     "Vaqt = hajm : tezlik."
+    ],
+    "glossary": [
+     {
+      "term": "Piksel",
+      "meaning": "Rasmning eng kichik nuqtasi."
+     },
+     {
+      "term": "Rang chuqurligi",
+      "meaning": "Bitta piksel rangi uchun bitlar soni."
+     },
+     {
+      "term": "Diskretlash chastotasi",
+      "meaning": "1 sekunddagi ovoz o‘lchovlari soni (Hz)."
+     },
+     {
+      "term": "Alifbo quvvati",
+      "meaning": "Alifbodagi belgilar soni N."
+     }
+    ]
+   },
+   "ai": {
+    "subtopics": [
+     "N = 2ⁱ",
+     "matn hajmi",
+     "rasm hajmi",
+     "ovoz hajmi",
+     "uzatish vaqti"
+    ],
+    "mistakes": [
+     "bit va bayt",
+     "i ni pastga yaxlitlash",
+     "kHz ni 1024 deb olish",
+     "stereo kanallarni unutish"
+    ],
+    "rules": [
+     "N = 2ⁱ",
+     "V = K·i",
+     "t = V/v"
+    ]
+   },
+   "slug": "axborot-hajmi",
+   "question_count": 50
+  },
+  {
+   "order": 7,
+   "icon": "📊",
+   "title": "Excel: bloklar va katak manzillari",
+   "short": "Katak va blok manzillari, nisbiy, absolyut va aralash manzillar, formulalarni nusxalash.",
+   "sources": [
+    {
+     "grade": 9,
+     "number": 2,
+     "points": 0.9,
+     "text": "B6:E15 blokidagi kataklar soni"
+    },
+    {
+     "grade": 9,
+     "number": 14,
+     "points": 1.7,
+     "text": "=B2*4 formulasini C4 dan E3 ga nusxalash"
+    },
+    {
+     "grade": 10,
+     "number": 4,
+     "points": 0.9,
+     "text": "C3:J5 blokidagi kataklar soni"
+    },
+    {
+     "grade": 10,
+     "number": 19,
+     "points": 1.7,
+     "text": "=$F6*$C$1 ni D3 dan F6 ga nusxalash"
+    },
+    {
+     "grade": 11,
+     "number": 1,
+     "points": 0.9,
+     "text": "F2:J4 blokidagi kataklar soni"
+    },
+    {
+     "grade": 11,
+     "number": 11,
+     "points": 1.7,
+     "text": "=$B2*C$7 ni E5 dan F7 ga nusxalash"
+    }
+   ],
+   "lesson": {
+    "hook": {
+     "title": "Dengiz jangi o‘yini",
+     "text": "«Dengiz jangi» o‘yinini bilasanmi? Taxtada harflar (A, B, C…) va raqamlar (1, 2, 3…) bor, sen «B5!» deb otasan. Excel jadvali ham xuddi shunday katta taxta: har bir katakning o‘z «manzili» bor — ustun harfi + qator raqami. Endi tasavvur qil: sen do‘stingga «menden 2 qadam o‘ngdagi katakka qara» deding — bu NISBIY manzil. «Aynan B5 ga qara» deding — bu ABSOLYUT manzil."
+    },
+    "sections": [
+     {
+      "title": "1. Katak manzili",
+      "text": [
+       "Ustunlar harflar bilan: A, B, …, Z, AA, AB, … Qatorlar raqamlar bilan: 1, 2, 3, …",
+       "Manzil = ustun + qator: C5 — C ustun, 5-qator. Har doim avval HARF, keyin RAQAM."
+      ]
+     },
+     {
+      "title": "2. Blok (diapazon) va kataklar soni",
+      "text": [
+       "Blok «chap yuqori : o‘ng pastki» ko‘rinishida yoziladi: B6:E15.",
+       "Kataklar soni = ustunlar soni · qatorlar soni.",
+       "Ustunlar soni: harflarni sanaymiz (B, C, D, E → 4). Qatorlar: oxirgi − birinchi + 1 (15 − 6 + 1 = 10)."
+      ],
+      "code": "B6:E15 → 4 ustun · 10 qator = 40 katak\nC3:J5  → 8 ustun · 3 qator  = 24 katak\nF2:J4  → 5 ustun · 3 qator  = 15 katak",
+      "note": "Ko‘p uchraydigan xato: «+1» ni unutish. 6 dan 15 gacha 9 ta emas, 10 ta qator!"
+     },
+     {
+      "title": "3. «:» va «;» farqi",
+      "text": [
+       "A1:C3 — A1 dan C3 gacha bo‘lgan BUTUN to‘rtburchak (9 katak).",
+       "A1;C3 — faqat ikkita alohida katak.",
+       "Inglizcha Excelda «;» o‘rniga ko‘pincha «,» ishlatiladi."
+      ]
+     },
+     {
+      "title": "4. Nisbiy manzil — «qadam bilan»",
+      "text": [
+       "Oddiy manzil (B2) nusxalanganda formula qancha siljisa, manzil ham shuncha siljiydi.",
+       "C4 dagi =B2*4 ni E3 ga nusxalaymiz: ustun C → E (+2), qator 4 → 3 (−1). Demak B2 → D1."
+      ],
+      "code": "C4: =B2*4\n      ↓ +2 ustun, −1 qator\nE3: =D1*4"
+     },
+     {
+      "title": "5. Absolyut va aralash manzil — «qulf» $",
+      "text": [
+       "$ belgisi qulf vazifasini bajaradi. U qaysi qism oldida tursa, o‘sha qism nusxalanganda o‘zgarmaydi.",
+       "$A$1 — ikkalasi qulf (absolyut). $A1 — faqat ustun qulf. A$1 — faqat qator qulf (aralash)."
+      ],
+      "table": {
+       "head": [
+        "Manzil",
+        "Ustun",
+        "Qator",
+        "Nomi"
+       ],
+       "rows": [
+        [
+         "A1",
+         "siljiydi",
+         "siljiydi",
+         "nisbiy"
+        ],
+        [
+         "$A$1",
+         "qulf",
+         "qulf",
+         "absolyut"
+        ],
+        [
+         "$A1",
+         "qulf",
+         "siljiydi",
+         "aralash"
+        ],
+        [
+         "A$1",
+         "siljiydi",
+         "qulf",
+         "aralash"
+        ]
+       ]
+      },
+      "code": "E5: =$B2*C$7  →  F7 ga (+1 ustun, +2 qator)\n$B2 → $B4   (B qulf, 2+2=4)\nC$7 → D$7   (C+1=D, 7 qulf)\nF7: =$B4*D$7"
+     }
+    ],
+    "examples": [
+     {
+      "title": "Kataklar soni",
+      "steps": [
+       "B6:E15: ustunlar B..E = 4",
+       "qatorlar 6..15 = 10",
+       "4·10"
+      ],
+      "answer": "40"
+     },
+     {
+      "title": "Nusxalash",
+      "steps": [
+       "D3 → F6: +2 ustun, +3 qator",
+       "$F6 → $F9",
+       "$C$1 o‘zgarmaydi"
+      ],
+      "answer": "=$F9*$C$1"
+     }
+    ],
+    "pitfalls": [
+     "Qatorlarni sanashda +1 ni unutish.",
+     "$ ni noto‘g‘ri qismga tegishli deb o‘ylash ($A1 da ustun qulf!).",
+     "Formuladagi oddiy sonlarni ham siljitish (ular o‘zgarmaydi).",
+     "Siljishni manba va manzil o‘rtasida emas, boshqa katakdan hisoblash."
+    ],
+    "remember": [
+     "Kataklar = ustunlar · qatorlar.",
+     "$ qaysi qism oldida — o‘sha qism qulf.",
+     "Siljish = manzil katak − manba katak.",
+     "A1:C3 — blok; A1;C3 — ikki katak."
+    ],
+    "glossary": [
+     {
+      "term": "Katak",
+      "meaning": "Ustun va qator kesishmasi."
+     },
+     {
+      "term": "Blok (diapazon)",
+      "meaning": "To‘rtburchak shaklidagi kataklar guruhi."
+     },
+     {
+      "term": "Nisbiy manzil",
+      "meaning": "Nusxalanganda siljiydigan manzil (A1)."
+     },
+     {
+      "term": "Absolyut manzil",
+      "meaning": "Nusxalanganda o‘zgarmaydigan manzil ($A$1)."
+     }
+    ]
+   },
+   "ai": {
+    "subtopics": [
+     "katak manzili",
+     "blok va kataklar soni",
+     "nisbiy/absolyut/aralash manzil",
+     "formulani nusxalash"
+    ],
+    "mistakes": [
+     "+1 ni unutish",
+     "$ ni noto‘g‘ri tushunish",
+     "siljishni noto‘g‘ri hisoblash"
+    ],
+    "rules": [
+     "kataklar = ustun · qator",
+     "$ — qulf",
+     "siljish = manzil − manba"
+    ]
+   },
+   "slug": "excel-manzillar",
+   "question_count": 50
+  },
+  {
+   "order": 8,
+   "icon": "🧮",
+   "title": "Excel: formulalar va funksiyalar",
+   "short": "SUM, IF, COUNTIF, LEN, REPT, LEFT/RIGHT, ROUND, SQRT, POWER, XOR va boshqa funksiyalar (ruscha nomlari bilan).",
+   "sources": [
+    {
+     "grade": 9,
+     "number": 24,
+     "points": 2.4,
+     "text": "=СЧЁТЕСЛИ(A1:C3; \">1,5\")"
+    },
+    {
+     "grade": 9,
+     "number": 26,
+     "points": 2.4,
+     "text": "ЕСЛИ, СТЕПЕНЬ, ДЛСТР bilan C4 ni topish"
+    },
+    {
+     "grade": 10,
+     "number": 14,
+     "points": 1.7,
+     "text": "=ЕСЛИ(ЕЧЁТН(12); …)"
+    },
+    {
+     "grade": 10,
+     "number": 23,
+     "points": 2.4,
+     "text": "=КОРЕНЬ(ДЛСТР(ПОВТОР(\"ABC\"; СУММ(A1:B3)))+1)"
+    },
+    {
+     "grade": 10,
+     "number": 30,
+     "points": 2.4,
+     "text": "=ИСКЛИЛИ(ИСТИНА; ИЛИ(0<ЗНАК(-32); НЕ(ЛОЖЬ)))"
+    },
+    {
+     "grade": 11,
+     "number": 17,
+     "points": 1.7,
+     "text": "=ЛЕВСИМВ(\"capybara\";2) & ПРАВСИМВ(\"rest\";1)"
+    },
+    {
+     "grade": 11,
+     "number": 27,
+     "points": 2.4,
+     "text": "СУММПРОИЗВ formulasini nusxalash"
+    },
+    {
+     "grade": 11,
+     "number": 28,
+     "points": 2.4,
+     "text": "=ОКРУГЛ((1-СЛУЧМЕЖДУ(12;15))/11;0)+КОРЕНЬ(СТЕПЕНЬ(4;3))"
+    }
+   ],
+   "lesson": {
+    "hook": {
+     "title": "Sehrli kalkulyator",
+     "text": "Funksiya — bu ichiga narsa solsang, javob chiqaradigan sehrli quti. «Qo‘sh» qutisiga 2, 3, 5 ni solsang — 10 chiqadi. «Uzunlik» qutisiga «Dota» so‘zini solsang — 4 chiqadi (4 ta harf). Excelda yuzlab shunday qutilar bor. Eng muhimi — qutini to‘g‘ri tanlash va ichkaridan tashqariga qarab hisoblash."
+    },
+    "sections": [
+     {
+      "title": "1. Funksiya qanday yoziladi?",
+      "text": [
+       "=NOM(argument1; argument2; …). Argumentlar «;» bilan ajratiladi.",
+       "Olimpiadada funksiyalar ko‘pincha RUSCHA nomlari bilan beriladi. Quyidagi jadvalni yodlab ol!",
+       "Ichma-ich funksiyalarda ENG ICHKARIDAGISIDAN boshlab hisobla."
+      ]
+     },
+     {
+      "title": "2. Sonli funksiyalar",
+      "table": {
+       "head": [
+        "Inglizcha",
+        "Ruscha",
+        "Nima qiladi",
+        "Misol"
+       ],
+       "rows": [
+        [
+         "SUM",
+         "СУММ",
+         "yig‘indi",
+         "SUM(2;3) = 5"
+        ],
+        [
+         "AVERAGE",
+         "СРЗНАЧ",
+         "o‘rta qiymat",
+         "AVERAGE(2;4) = 3"
+        ],
+        [
+         "MAX / MIN",
+         "МАКС / МИН",
+         "eng katta / kichik",
+         "MAX(1;9) = 9"
+        ],
+        [
+         "POWER",
+         "СТЕПЕНЬ",
+         "daraja",
+         "POWER(2;5) = 32"
+        ],
+        [
+         "SQRT",
+         "КОРЕНЬ",
+         "kvadrat ildiz",
+         "SQRT(64) = 8"
+        ],
+        [
+         "ROUND",
+         "ОКРУГЛ",
+         "yaxlitlash",
+         "ROUND(3,46;1) = 3,5"
+        ],
+        [
+         "INT",
+         "ЦЕЛОЕ",
+         "pastga butunlash",
+         "INT(−3,7) = −4"
+        ],
+        [
+         "MOD",
+         "ОСТАТ",
+         "qoldiq",
+         "MOD(17;5) = 2"
+        ],
+        [
+         "ABS",
+         "ABS",
+         "modul",
+         "ABS(−5) = 5"
+        ],
+        [
+         "SIGN",
+         "ЗНАК",
+         "ishora: 1, 0, −1",
+         "SIGN(−32) = −1"
+        ],
+        [
+         "RANDBETWEEN",
+         "СЛУЧМЕЖДУ",
+         "tasodifiy butun son",
+         "12..15"
+        ],
+        [
+         "SUMPRODUCT",
+         "СУММПРОИЗВ",
+         "ko‘paytmalar yig‘indisi",
+         "1·4+2·5"
+        ]
+       ]
+      },
+      "text": []
+     },
+     {
+      "title": "3. Sanash funksiyalari",
+      "table": {
+       "head": [
+        "Inglizcha",
+        "Ruscha",
+        "Nima qiladi"
+       ],
+       "rows": [
+        [
+         "COUNT",
+         "СЧЁТ",
+         "sonli kataklar soni"
+        ],
+        [
+         "COUNTIF",
+         "СЧЁТЕСЛИ",
+         "shartga mos kataklar soni"
+        ],
+        [
+         "SUMIF",
+         "СУММЕСЛИ",
+         "shartga mos qiymatlar yig‘indisi"
+        ]
+       ]
+      },
+      "text": [
+       "Shart qo‘shtirnoqda yoziladi: \">1,5\" — 1,5 dan QAT’IY katta (1,5 ning o‘zi kirmaydi). \">=1,5\" — katta yoki teng."
+      ]
+     },
+     {
+      "title": "4. Matnli funksiyalar",
+      "table": {
+       "head": [
+        "Inglizcha",
+        "Ruscha",
+        "Nima qiladi",
+        "Misol"
+       ],
+       "rows": [
+        [
+         "LEN",
+         "ДЛСТР",
+         "belgilar soni",
+         "LEN(\"Dota\") = 4"
+        ],
+        [
+         "LEFT",
+         "ЛЕВСИМВ",
+         "chapdan n belgi",
+         "LEFT(\"capybara\";2) = ca"
+        ],
+        [
+         "RIGHT",
+         "ПРАВСИМВ",
+         "o‘ngdan n belgi",
+         "RIGHT(\"rest\";1) = t"
+        ],
+        [
+         "MID",
+         "ПСТР",
+         "o‘rtadan qism",
+         "MID(\"ABCDE\";2;3) = BCD"
+        ],
+        [
+         "REPT",
+         "ПОВТОР",
+         "takrorlash",
+         "REPT(\"ab\";3) = ababab"
+        ],
+        [
+         "&",
+         "&",
+         "yopishtirish",
+         "\"ca\"&\"t\" = cat"
+        ]
+       ]
+      },
+      "text": []
+     },
+     {
+      "title": "5. Mantiqiy funksiyalar",
+      "table": {
+       "head": [
+        "Inglizcha",
+        "Ruscha",
+        "Nima qiladi"
+       ],
+       "rows": [
+        [
+         "IF(shart; ha; yo‘q)",
+         "ЕСЛИ",
+         "shart rost → 2-argument, yolg‘on → 3-argument"
+        ],
+        [
+         "AND",
+         "И",
+         "hammasi rost bo‘lsa TRUE"
+        ],
+        [
+         "OR",
+         "ИЛИ",
+         "kamida bittasi rost bo‘lsa TRUE"
+        ],
+        [
+         "NOT",
+         "НЕ",
+         "teskarisi"
+        ],
+        [
+         "XOR",
+         "ИСКЛИЛИ",
+         "TRUE lar soni toq bo‘lsa TRUE"
+        ],
+        [
+         "ISEVEN / ISODD",
+         "ЕЧЁТН / ЕНЕЧЁТ",
+         "juftmi / toqmi"
+        ],
+        [
+         "TRUE / FALSE",
+         "ИСТИНА / ЛОЖЬ",
+         "rost / yolg‘on"
+        ]
+       ]
+      },
+      "text": [
+       "IF faqat BITTA tarmoqni qaytaradi. Matn ichidagi so‘z ma’nosiga qarama: IF(ISEVEN(12); \"juftmas\"; \"juft\") → «juftmas» (chunki 12 juft va 2-argument qaytadi)."
+      ]
+     }
+    ],
+    "examples": [
+     {
+      "title": "Ichma-ich",
+      "steps": [
+       "REPT(\"ABC\";5) → 15 belgi",
+       "LEN = 15, +1 = 16",
+       "SQRT(16)"
+      ],
+      "answer": "4"
+     },
+     {
+      "title": "Tasodif aldamasin",
+      "steps": [
+       "(1 − 12..15)/11 → −1 .. −1,27",
+       "ROUND(…;0) = −1 har doim",
+       "SQRT(POWER(4;3)) = 8"
+      ],
+      "answer": "7"
+     }
+    ],
+    "pitfalls": [
+     "\">1,5\" da 1,5 ning o‘zini ham sanash.",
+     "IF ning ikkala tarmog‘ini hisoblash.",
+     "Matn mazmuniga qarab javob berish («juftmas» so‘zi aldaydi).",
+     "SIGN(−32) ni 32 deb o‘ylash.",
+     "INT manfiy sonlarda yuqoriga butunlaydi deb o‘ylash."
+    ],
+    "remember": [
+     "Ichkaridan tashqariga hisobla.",
+     "Ruscha nomlarni bil: СУММ, ЕСЛИ, ДЛСТР, ПОВТОР, КОРЕНЬ, СТЕПЕНЬ.",
+     "COUNTIF shartida > va >= farqi.",
+     "XOR — TRUE lar soni toq."
+    ],
+    "glossary": [
+     {
+      "term": "Argument",
+      "meaning": "Funksiyaga beriladigan qiymat (qavs ichida)."
+     },
+     {
+      "term": "Ichma-ich funksiya",
+      "meaning": "Bir funksiya ichida boshqasi."
+     },
+     {
+      "term": "Mantiqiy qiymat",
+      "meaning": "TRUE (ИСТИНА) yoki FALSE (ЛОЖЬ)."
+     }
+    ]
+   },
+   "ai": {
+    "subtopics": [
+     "sonli funksiyalar",
+     "COUNTIF/SUMIF",
+     "matnli funksiyalar",
+     "IF va mantiqiy funksiyalar",
+     "ruscha nomlar"
+    ],
+    "mistakes": [
+     "ichki funksiyani keyin hisoblash",
+     "> va >= ni adashtirish",
+     "IF ning ikkala tarmog‘ini hisoblash"
+    ],
+    "rules": [
+     "ichkaridan tashqariga",
+     "IF bitta tarmoq qaytaradi",
+     "XOR — toq sonli TRUE"
+    ]
+   },
+   "slug": "excel-funksiyalar",
+   "question_count": 50
+  },
+  {
+   "order": 9,
+   "icon": "🐍",
+   "title": "Python asoslari: turlar, operatorlar, satrlar",
+   "short": "int, float, str, bool turlari, arifmetik va mantiqiy operatorlar, satrlar bilan ishlash, indekslar va kesishlar.",
+   "sources": [
+    {
+     "grade": 9,
+     "number": 16,
+     "points": 1.7,
+     "text": "print(type({}))"
+    },
+    {
+     "grade": 9,
+     "number": 17,
+     "points": 1.7,
+     "text": "print(bool(0))"
+    },
+    {
+     "grade": 9,
+     "number": 23,
+     "points": 2.4,
+     "text": "print(pow(2,5,20))"
+    },
+    {
+     "grade": 10,
+     "number": 5,
+     "points": 0.9,
+     "text": "print(3 * '7')"
+    },
+    {
+     "grade": 10,
+     "number": 8,
+     "points": 0.9,
+     "text": "Qaysi biri ma’lumot turi emas"
+    },
+    {
+     "grade": 10,
+     "number": 15,
+     "points": 1.7,
+     "text": "print('abc' > 'bcd')"
+    },
+    {
+     "grade": 10,
+     "number": 18,
+     "points": 1.7,
+     "text": "Satrlar haqida to‘g‘ri mulohaza"
+    },
+    {
+     "grade": 10,
+     "number": 27,
+     "points": 2.4,
+     "text": "print(bool([]))"
+    },
+    {
+     "grade": 11,
+     "number": 2,
+     "points": 0.9,
+     "text": "x, y = y, x + y"
+    },
+    {
+     "grade": 11,
+     "number": 8,
+     "points": 0.9,
+     "text": "Python versiyasini tekshirish"
+    },
+    {
+     "grade": 11,
+     "number": 15,
+     "points": 1.7,
+     "text": "print(1 or 0 and 1)"
+    }
+   ],
+   "lesson": {
+    "hook": {
+     "title": "Qutilar va yorliqlar",
+     "text": "Python’da o‘zgaruvchi — ustiga nom yozilgan quti. x = 5 deganda «x» degan qutiga 5 ni solding. Qutilar har xil bo‘ladi: butun sonlar uchun (int), kasr sonlar uchun (float), so‘zlar uchun (str) va «ha/yo‘q» uchun (bool). Kompyuterga buyruq berish — qutilardagi narsalar bilan nima qilishni aytish."
+    },
+    "sections": [
+     {
+      "title": "1. Asosiy turlar",
+      "table": {
+       "head": [
+        "Tur",
+        "Nima saqlaydi",
+        "Misol"
+       ],
+       "rows": [
+        [
+         "int",
+         "butun son",
+         "5, -3, 0"
+        ],
+        [
+         "float",
+         "kasr son (nuqta bilan)",
+         "3.14, 2.0"
+        ],
+        [
+         "str",
+         "matn (satr)",
+         "'salom', \"7\""
+        ],
+        [
+         "bool",
+         "rost/yolg‘on",
+         "True, False"
+        ],
+        [
+         "list",
+         "ro‘yxat",
+         "[1, 2, 3]"
+        ],
+        [
+         "dict",
+         "lug‘at",
+         "{'a': 1}, {}"
+        ],
+        [
+         "set",
+         "to‘plam",
+         "{1, 2}, set()"
+        ],
+        [
+         "tuple",
+         "kortej",
+         "(1, 2)"
+        ]
+       ]
+      },
+      "text": [
+       "type(x) — x ning turini ko‘rsatadi. Diqqat: {} — bo‘sh DICT, bo‘sh to‘plam esa set()."
+      ]
+     },
+     {
+      "title": "2. Arifmetik operatorlar",
+      "table": {
+       "head": [
+        "Operator",
+        "Ma’nosi",
+        "Misol",
+        "Natija"
+       ],
+       "rows": [
+        [
+         "+  -  *",
+         "qo‘shish, ayirish, ko‘paytirish",
+         "7 * 2",
+         "14"
+        ],
+        [
+         "/",
+         "bo‘lish (doim float)",
+         "7 / 2",
+         "3.5"
+        ],
+        [
+         "//",
+         "butun bo‘lish (pastga)",
+         "7 // 2",
+         "3"
+        ],
+        [
+         "%",
+         "qoldiq",
+         "7 % 2",
+         "1"
+        ],
+        [
+         "**",
+         "daraja",
+         "2 ** 4",
+         "16"
+        ],
+        [
+         "pow(a,b,m)",
+         "(a**b) % m",
+         "pow(2,5,20)",
+         "12"
+        ]
+       ]
+      },
+      "text": [
+       "Tartib: ** (o‘ngdan chapga!) → * / // % → + −. 2 ** 3 ** 2 = 2 ** 9 = 512.",
+       "Manfiy sonlarda // pastga yaxlitlaydi: −7 // 2 = −4."
+      ]
+     },
+     {
+      "title": "3. Rost va yolg‘on (bool)",
+      "text": [
+       "Yolg‘on qiymatlar: False, 0, 0.0, '' (bo‘sh satr), [] , {}, set(), None. Qolgan HAMMASI rost.",
+       "bool(0) = False, bool([]) = False, bool([0]) = True (ro‘yxat bo‘sh emas!).",
+       "and va or True/False emas, OPERANDNING o‘zini qaytaradi: a or b — birinchi rost qiymat; a and b — birinchi yolg‘on qiymat (yoki oxirgisi).",
+       "Tartib: not → and → or. 1 or 0 and 1 = 1 or (0 and 1) = 1 or 0 = 1."
+      ]
+     },
+     {
+      "title": "4. Satrlar",
+      "text": [
+       "Satr — belgilar ketma-ketligi. Indekslar 0 dan boshlanadi, oxiridan esa −1, −2, …",
+       "Kesish s[a:b] — a dan b gacha (b kirmaydi). s[::-1] — teskari.",
+       "'7' * 3 = '777' (takrorlash), '5' + '3' = '53' (yopishtirish).",
+       "Satrlarni o‘zgartirib bo‘lmaydi (immutable): s[0] = 'x' — xato.",
+       "Taqqoslash alifbo bo‘yicha, birinchi har xil belgidan: 'abc' < 'bcd'."
+      ],
+      "code": "s = 'Python'\n#    P  y  t  h  o  n\n#    0  1  2  3  4  5\n#   -6 -5 -4 -3 -2 -1\ns[0]    → 'P'\ns[-1]   → 'n'\ns[1:4]  → 'yth'\ns[::-1] → 'nohtyP'"
+     },
+     {
+      "title": "5. Bir vaqtda o‘zlashtirish",
+      "text": [
+       "x, y = y, x + y — avval o‘ng tomon ESKI qiymatlar bilan to‘liq hisoblanadi, keyin chapga yoziladi."
+      ],
+      "code": "x = 5; y = 10\nx, y = y, x + y\n# o‘ng: (10, 15)\nprint(x, y)  # 10 15"
+     }
+    ],
+    "examples": [
+     {
+      "title": "Mantiqiy operatorlar",
+      "steps": [
+       "1 or 0 and 1",
+       "and kuchli: 0 and 1 = 0",
+       "1 or 0 = 1"
+      ],
+      "answer": "1"
+     },
+     {
+      "title": "pow",
+      "steps": [
+       "pow(2, 5, 20)",
+       "2⁵ = 32",
+       "32 % 20"
+      ],
+      "answer": "12"
+     }
+    ],
+    "pitfalls": [
+     "/ va // ni adashtirish.",
+     "{} ni bo‘sh to‘plam deb o‘ylash.",
+     "and/or doim True/False qaytaradi deb o‘ylash.",
+     "s[a:b] da b ni ham olish.",
+     "** ni chapdan o‘ngga hisoblash."
+    ],
+    "remember": [
+     "0, '', [], {}, None — yolg‘on.",
+     "// pastga yaxlitlaydi.",
+     "Satr — immutable.",
+     "not → and → or."
+    ],
+    "glossary": [
+     {
+      "term": "O‘zgaruvchi",
+      "meaning": "Qiymat saqlanadigan nomli quti."
+     },
+     {
+      "term": "Indeks",
+      "meaning": "Elementning tartib raqami (0 dan)."
+     },
+     {
+      "term": "Immutable",
+      "meaning": "O‘zgarmas: yaratilgandan keyin ichini o‘zgartirib bo‘lmaydi."
+     }
+    ]
+   },
+   "ai": {
+    "subtopics": [
+     "turlar",
+     "operatorlar va ustuvorlik",
+     "bool va truthiness",
+     "satrlar va slicing"
+    ],
+    "mistakes": [
+     "/ va // ni adashtirish",
+     "and/or natijasini noto‘g‘ri baholash",
+     "slicing chegarasini noto‘g‘ri olish"
+    ],
+    "rules": [
+     "// pastga",
+     "or — birinchi rost, and — birinchi yolg‘on",
+     "s[a:b] da b kirmaydi"
+    ]
+   },
+   "slug": "python-asoslar",
+   "question_count": 50
+  },
+  {
+   "order": 10,
+   "icon": "📦",
+   "title": "Python: list, tuple, set, dict",
+   "short": "Ro‘yxatlar, kortejlar, to‘plamlar va lug‘atlar: indekslar, kesish, metodlar, havolalar (alias) va o‘zgaruvchanlik.",
+   "sources": [
+    {
+     "grade": 9,
+     "number": 6,
+     "points": 0.9,
+     "text": "Ro‘yxat oxiriga element qo‘shish"
+    },
+    {
+     "grade": 9,
+     "number": 7,
+     "points": 0.9,
+     "text": "x[-3:-1]"
+    },
+    {
+     "grade": 9,
+     "number": 20,
+     "points": 1.7,
+     "text": "x[4:]"
+    },
+    {
+     "grade": 9,
+     "number": 28,
+     "points": 2.4,
+     "text": "y = x; y.append(4); print(x)"
+    },
+    {
+     "grade": 11,
+     "number": 4,
+     "points": 0.9,
+     "text": "Turli elementlarni chiqarish — set(lst)"
+    },
+    {
+     "grade": 11,
+     "number": 10,
+     "points": 0.9,
+     "text": "Kortej elementini o‘zgartirish"
+    },
+    {
+     "grade": 11,
+     "number": 14,
+     "points": 1.7,
+     "text": "enumerate() vazifasi"
+    },
+    {
+     "grade": 11,
+     "number": 16,
+     "points": 1.7,
+     "text": "dict da kalit borligini tekshirish"
+    }
+   ],
+   "lesson": {
+    "hook": {
+     "title": "Sumka, quti, xalta va daftar",
+     "text": "Ro‘yxat (list) — tartibli sumka: narsalarni ketma-ket solasan, xohlagan payt o‘zgartirasan. Kortej (tuple) — muhrlangan quti: bir marta yopilgach, ichini o‘zgartirib bo‘lmaydi. To‘plam (set) — sehrli xalta: bir xil narsani ikki marta solsang ham, faqat bittasi qoladi. Lug‘at (dict) — telefon daftari: ism (kalit) bo‘yicha raqamni (qiymat) topasan."
+    },
+    "sections": [
+     {
+      "title": "1. To‘rt xil kolleksiya",
+      "table": {
+       "head": [
+        "Tur",
+        "Yozilishi",
+        "Tartibli?",
+        "O‘zgaradimi?",
+        "Takror?"
+       ],
+       "rows": [
+        [
+         "list",
+         "[1, 2, 2]",
+         "ha",
+         "ha",
+         "mumkin"
+        ],
+        [
+         "tuple",
+         "(1, 2, 2)",
+         "ha",
+         "yo‘q",
+         "mumkin"
+        ],
+        [
+         "set",
+         "{1, 2}",
+         "yo‘q",
+         "ha",
+         "yo‘q"
+        ],
+        [
+         "dict",
+         "{'a': 1}",
+         "kalit tartibi",
+         "ha",
+         "kalit takrorlanmaydi"
+        ]
+       ]
+      },
+      "text": [
+       "Bo‘sh: [] — list, () — tuple, {} — DICT (!), set() — to‘plam. Bitta elementli kortej: (5,) — vergul shart."
+      ]
+     },
+     {
+      "title": "2. Indekslar va kesish",
+      "text": [
+       "Indekslar 0 dan. Manfiy: −1 — oxirgisi. a[i:j] — i dan j gacha (j kirmaydi). a[::k] — har k-chi.",
+       "Indeks chegaradan chiqsa → IndexError. Lekin KESISH chegaradan chiqsa xato YO‘Q, shunchaki bo‘sh yoki qisqa natija."
+      ],
+      "code": "x = [1, 2, 3, 4]\n#    0  1  2  3\n#   -4 -3 -2 -1\nx[-3:-1] → [2, 3]\nx[4:]    → []\nx[4]     → IndexError\nx[::-1]  → [4, 3, 2, 1]"
+     },
+     {
+      "title": "3. Muhim metodlar",
+      "table": {
+       "head": [
+        "Metod",
+        "Nima qiladi",
+        "Qaytaradi"
+       ],
+       "rows": [
+        [
+         "append(x)",
+         "oxiriga qo‘shadi",
+         "None"
+        ],
+        [
+         "insert(i, x)",
+         "i-o‘ringa qo‘yadi",
+         "None"
+        ],
+        [
+         "pop()",
+         "oxirgisini oladi",
+         "o‘chirilgan element"
+        ],
+        [
+         "remove(x)",
+         "qiymati x bo‘lganini o‘chiradi",
+         "None"
+        ],
+        [
+         "sort()",
+         "joyida saralaydi",
+         "None"
+        ],
+        [
+         "sorted(a)",
+         "yangi saralangan ro‘yxat",
+         "list"
+        ],
+        [
+         "count(x) / index(x)",
+         "nechta / qayerda",
+         "son"
+        ],
+        [
+         "set: add, &, |, -",
+         "qo‘shish, kesishma, birlashma, ayirma",
+         "—"
+        ],
+        [
+         "dict: get(k, d)",
+         "xatosiz olish",
+         "qiymat"
+        ]
+       ]
+      },
+      "text": [
+       "enumerate(seq) → (indeks, qiymat) juftliklari. key in d → kalit bormi (d.__contains__(key))."
+      ]
+     },
+     {
+      "title": "4. Eng xavfli joy: havola (alias)",
+      "text": [
+       "y = x — ro‘yxatni NUSXALAMAYDI! Ikkala nom bitta ro‘yxatga ishora qiladi.",
+       "Nusxa olish uchun: y = x[:] yoki y = x.copy() yoki y = list(x).",
+       "a = a + [4] — YANGI ro‘yxat; a += [4] — joyida o‘zgartirish (eski havolalar ham ko‘radi)."
+      ],
+      "code": "x = [1, 2, 3]\ny = x          # bitta ro‘yxat, ikki nom\ny.append(4)\nprint(x)       # [1, 2, 3, 4]\n\nz = x[:]       # nusxa\nz.append(5)\nprint(x)       # [1, 2, 3, 4] — o‘zgarmadi"
+     }
+    ],
+    "examples": [
+     {
+      "title": "Alias",
+      "steps": [
+       "y = x — bitta obyekt",
+       "y.append(4) — umumiy ro‘yxat o‘zgaradi"
+      ],
+      "answer": "x = [1, 2, 3, 4]"
+     },
+     {
+      "title": "Kortej",
+      "steps": [
+       "a = (1, 2, 3)",
+       "a[1] = 5 — kortej o‘zgarmas"
+      ],
+      "answer": "TypeError"
+     }
+    ],
+    "pitfalls": [
+     "y = x ni nusxa deb o‘ylash.",
+     "sort() natijasini o‘zgaruvchiga yozish (None bo‘ladi).",
+     "remove(i) ni indeks bo‘yicha o‘chiradi deb o‘ylash.",
+     "{} ni bo‘sh to‘plam deb o‘ylash.",
+     "Kesish ham IndexError beradi deb o‘ylash."
+    ],
+    "remember": [
+     "list o‘zgaradi, tuple o‘zgarmaydi.",
+     "set — takrorsiz.",
+     "y = x — alias, x[:] — nusxa.",
+     "Kesish xato bermaydi."
+    ],
+    "glossary": [
+     {
+      "term": "Alias (havola)",
+      "meaning": "Bitta obyektga ikki xil nom."
+     },
+     {
+      "term": "Mutable",
+      "meaning": "O‘zgaruvchan (list, dict, set)."
+     },
+     {
+      "term": "Kalit",
+      "meaning": "Lug‘atda qiymatni topish uchun nom."
+     }
+    ]
+   },
+   "ai": {
+    "subtopics": [
+     "list metodlari",
+     "slicing",
+     "tuple immutability",
+     "set amallari",
+     "dict",
+     "alias va nusxa"
+    ],
+    "mistakes": [
+     "alias ni nusxa deb o‘ylash",
+     "sort() None qaytarishini unutish",
+     "slicing chegaralari"
+    ],
+    "rules": [
+     "y = x — alias",
+     "kesish xato bermaydi",
+     "{} — dict"
+    ]
+   },
+   "slug": "python-kolleksiyalar",
+   "question_count": 50
+  },
+  {
+   "order": 11,
+   "icon": "🔁",
+   "title": "Python: sikllar va range",
+   "short": "for va while sikllari, range(a, b, qadam), break, continue, else, ichma-ich sikllar va takrorlanishlar sonini hisoblash.",
+   "sources": [
+    {
+     "grade": 9,
+     "number": 18,
+     "points": 1.7,
+     "text": "for i in range(8,0,-2): s += (i-3)**2"
+    },
+    {
+     "grade": 9,
+     "number": 19,
+     "points": 1.7,
+     "text": "Blok-sxemadagi operator (sikl)"
+    },
+    {
+     "grade": 10,
+     "number": 20,
+     "points": 1.7,
+     "text": "Ichma-ich sikllarda print necha marta chaqiriladi"
+    },
+    {
+     "grade": 10,
+     "number": 25,
+     "points": 2.4,
+     "text": "print(range(5))"
+    }
+   ],
+   "lesson": {
+    "hook": {
+     "title": "Zinapoyadan chiqish",
+     "text": "Onang «zinapoyadan 10 ta pog‘ona chiq» desa, sen bitta harakatni (bir qadam) 10 marta takrorlaysan. Sikl — kompyuterga «shu ishni N marta qil» yoki «shart bajarilguncha qilaver» deyish. for — sanoqli takrorlash (10 ta pog‘ona), while — shartli takrorlash (eshikka yetguncha yur)."
+    },
+    "sections": [
+     {
+      "title": "1. range() — sonlar qatori",
+      "table": {
+       "head": [
+        "Yozuv",
+        "Qiymatlar",
+        "Eslatma"
+       ],
+       "rows": [
+        [
+         "range(5)",
+         "0 1 2 3 4",
+         "0 dan boshlanadi"
+        ],
+        [
+         "range(2, 6)",
+         "2 3 4 5",
+         "6 kirmaydi"
+        ],
+        [
+         "range(1, 10, 3)",
+         "1 4 7",
+         "qadam 3"
+        ],
+        [
+         "range(8, 0, -2)",
+         "8 6 4 2",
+         "manfiy qadam"
+        ],
+        [
+         "range(5, 5)",
+         "(bo‘sh)",
+         "hech narsa"
+        ]
+       ]
+      },
+      "text": [
+       "OXIRGI SON HECH QACHON KIRMAYDI. Elementlar soni: len(range(a, b)) = b − a (qadam 1 bo‘lsa).",
+       "print(range(5)) ro‘yxat chiqarmaydi, «range(0, 5)» deb chiqaradi. Ro‘yxat kerak bo‘lsa: list(range(5))."
+      ]
+     },
+     {
+      "title": "2. for sikli",
+      "text": [
+       "for o‘zgaruvchi in ketma-ketlik: — har bir element uchun ichki blok bajariladi.",
+       "Ketma-ketlik range, ro‘yxat, satr bo‘lishi mumkin. Sikl tugagach o‘zgaruvchi OXIRGI qiymatini saqlaydi."
+      ],
+      "code": "s = 0\nfor i in range(8, 0, -2):   # 8, 6, 4, 2\n    s += (i - 3) ** 2       # 25, 9, 1, 1\nprint(s)                    # 36"
+     },
+     {
+      "title": "3. while sikli",
+      "text": [
+       "while shart: — shart rost ekan, takrorlanadi. Har qadam oldidan shart tekshiriladi.",
+       "Ichkarida o‘zgaruvchini o‘zgartirishni unutma, aks holda sikl cheksiz bo‘ladi!",
+       "Raqamlar bilan ishlash: n % 10 — oxirgi raqam, n //= 10 — oxirgi raqamni tashlash."
+      ]
+     },
+     {
+      "title": "4. break, continue, else",
+      "table": {
+       "head": [
+        "So‘z",
+        "Nima qiladi"
+       ],
+       "rows": [
+        [
+         "break",
+         "siklni butunlay to‘xtatadi"
+        ],
+        [
+         "continue",
+         "joriy qadamni tashlab, keyingisiga o‘tadi"
+        ],
+        [
+         "pass",
+         "hech narsa qilmaydi (bo‘sh blok)"
+        ],
+        [
+         "else (sikldan keyin)",
+         "sikl break SIZ tugasa bajariladi"
+        ]
+       ]
+      },
+      "text": []
+     },
+     {
+      "title": "5. Ichma-ich sikllar: nechta marta?",
+      "text": [
+       "Ichki sikl tashqi siklning HAR BIR qadamida to‘liq bajariladi.",
+       "Agar ikkalasi ham o‘zgarmas bo‘lsa: a · b marta. Agar ichki sikl tashqiga bog‘liq bo‘lsa (range(i)): 0 + 1 + … + (n−1) = n(n−1)/2.",
+       "Formula: 1 + 2 + … + n = n(n+1)/2."
+      ],
+      "code": "for i in range(100):\n    for j in range(i):   # i marta\n        print(i*j)\n# 0 + 1 + ... + 99 = 99·100/2 = 4950"
+     },
+     {
+      "title": "6. Kuzatuv jadvali (trace)",
+      "text": [
+       "Murakkab siklni hisoblashda har qadamni jadvalga yoz: i qiymati, shart, o‘zgaruvchilar. Bu xatolarning 90% ini oldini oladi."
+      ],
+      "table": {
+       "head": [
+        "i",
+        "i − 3",
+        "(i−3)²",
+        "s"
+       ],
+       "rows": [
+        [
+         "8",
+         "5",
+         "25",
+         "25"
+        ],
+        [
+         "6",
+         "3",
+         "9",
+         "34"
+        ],
+        [
+         "4",
+         "1",
+         "1",
+         "35"
+        ],
+        [
+         "2",
+         "−1",
+         "1",
+         "36"
+        ]
+       ]
+      }
+     }
+    ],
+    "examples": [
+     {
+      "title": "print necha marta?",
+      "steps": [
+       "tashqi: i = 0..99",
+       "ichki: i marta",
+       "0+1+…+99 = 4950"
+      ],
+      "answer": "4950"
+     },
+     {
+      "title": "range chiqishi",
+      "steps": [
+       "print(range(5))",
+       "range — ro‘yxat emas"
+      ],
+      "answer": "range(0, 5)"
+     }
+    ],
+    "pitfalls": [
+     "range oxirini ham qo‘shish.",
+     "Manfiy qadamda oxirini noto‘g‘ri tushunish.",
+     "for…else da else har doim ishlaydi deb o‘ylash.",
+     "while da o‘zgaruvchini yangilashni unutish.",
+     "Ichma-ich siklda a+b deb hisoblash (a·b bo‘lishi kerak)."
+    ],
+    "remember": [
+     "range(a, b) — b kirmaydi.",
+     "1+…+n = n(n+1)/2.",
+     "break — to‘xtat, continue — o‘tkazib yubor.",
+     "Har qadamni jadvalga yoz."
+    ],
+    "glossary": [
+     {
+      "term": "Iteratsiya",
+      "meaning": "Siklning bitta qadami."
+     },
+     {
+      "term": "Sikl tanasi",
+      "meaning": "Takrorlanadigan buyruqlar bloki."
+     },
+     {
+      "term": "Hisoblagich",
+      "meaning": "Qadamlarni sanaydigan o‘zgaruvchi."
+     }
+    ]
+   },
+   "ai": {
+    "subtopics": [
+     "range",
+     "for",
+     "while",
+     "break/continue/else",
+     "ichma-ich sikllar"
+    ],
+    "mistakes": [
+     "range oxirini olish",
+     "ichma-ich sikl sonini noto‘g‘ri hisoblash",
+     "trace qilmaslik"
+    ],
+    "rules": [
+     "range(a,b) — b kirmaydi",
+     "1+…+n = n(n+1)/2",
+     "for…else break siz"
+    ]
+   },
+   "slug": "python-sikllar",
+   "question_count": 50
+  },
+  {
+   "order": 12,
+   "icon": "🧩",
+   "title": "Python: funksiyalar",
+   "short": "def va return, argumentlar (default, nomli, *args), global va mahalliy o‘zgaruvchilar, lambda, pass va o‘zgaruvchan default qiymat.",
+   "sources": [
+    {
+     "grade": 9,
+     "number": 5,
+     "points": 0.9,
+     "text": "Funksiya to‘g‘ri yaratilgan qator"
+    },
+    {
+     "grade": 10,
+     "number": 11,
+     "points": 1.7,
+     "text": "global x; x = 20"
+    },
+    {
+     "grade": 11,
+     "number": 12,
+     "points": 1.7,
+     "text": "Ichki funksiyada global va set"
+    },
+    {
+     "grade": 11,
+     "number": 20,
+     "points": 1.7,
+     "text": "pass kalit so‘zi vazifasi"
+    },
+    {
+     "grade": 11,
+     "number": 22,
+     "points": 2.4,
+     "text": "Ichma-ich lambda"
+    },
+    {
+     "grade": 11,
+     "number": 30,
+     "points": 2.4,
+     "text": "def f(a, L=[]) — o‘zgaruvchan default"
+    }
+   ],
+   "lesson": {
+    "hook": {
+     "title": "Oshxona retsepti",
+     "text": "Funksiya — retsept. «Choy damlash» retseptiga suv va choy beriladi (argumentlar), u ishni bajaradi va tayyor choy qaytaradi (return). Retseptni bir marta yozib, xohlagancha ishlatasan. Har safar boshqa idish (argument) bersang, boshqa natija olasan."
+    },
+    "sections": [
+     {
+      "title": "1. Funksiya yaratish va chaqirish",
+      "text": [
+       "def nom(parametrlar): — keyin tana 4 ta bo‘sh joy surib yoziladi.",
+       "return qiymatni qaytaradi va funksiyani DARHOL tugatadi. return bo‘lmasa — None qaytadi.",
+       "print — ekranga chiqaradi; return — qiymatni qaytaradi. Bular har xil narsa!"
+      ],
+      "code": "def kv(x):\n    return x * x\n\nprint(kv(6))   # 36"
+     },
+     {
+      "title": "2. Argumentlar turlari",
+      "table": {
+       "head": [
+        "Turi",
+        "Misol",
+        "Izoh"
+       ],
+       "rows": [
+        [
+         "oddiy",
+         "f(3, 4)",
+         "tartib bo‘yicha"
+        ],
+        [
+         "nomli",
+         "f(b=2, a=10)",
+         "nom bo‘yicha, tartib ahamiyatsiz"
+        ],
+        [
+         "default",
+         "def f(x=10)",
+         "berilmasa 10"
+        ],
+        [
+         "*args",
+         "def f(*a)",
+         "qolgan oddiy argumentlar kortejda"
+        ],
+        [
+         "**kw",
+         "def f(**k)",
+         "nomli argumentlar lug‘atda"
+        ]
+       ]
+      },
+      "text": []
+     },
+     {
+      "title": "3. Mahalliy va global o‘zgaruvchilar",
+      "text": [
+       "Funksiya ICHIDA yaratilgan o‘zgaruvchi — mahalliy (faqat ichkarida yashaydi).",
+       "Ichkarida x = … yozilsa, bu YANGI mahalliy x. Tashqi x ni o‘zgartirish uchun global x yozish kerak.",
+       "nonlocal x — tashqi FUNKSIYAning o‘zgaruvchisini o‘zgartirish uchun."
+      ],
+      "code": "x = 10\ndef foo():\n    global x\n    x = 20\nfoo()\nprint(x)   # 20  (global bo‘lmasa 10)"
+     },
+     {
+      "title": "4. lambda — kichik funksiya",
+      "text": [
+       "lambda argumentlar: ifoda — nomsiz bir qatorli funksiya.",
+       "Ichma-ich lambda chaqiruvlarida ichkaridan tashqariga hisobla.",
+       "map(f, seq) — har elementga f; filter(f, seq) — shartga mos elementlar; sorted(seq, key=f) — f bo‘yicha saralash."
+      ],
+      "code": "print((lambda x: x % 4)((lambda y: y + 1)(5)))\n# ichki: 5 + 1 = 6\n# tashqi: 6 % 4 = 2"
+     },
+     {
+      "title": "5. Tuzoq: o‘zgaruvchan default qiymat",
+      "text": [
+       "def f(a, L=[]) — bo‘sh ro‘yxat FAQAT BIR MARTA yaratiladi va barcha chaqiruvlar uchun umumiy!",
+       "Boshqa ro‘yxat berilsa, default ga tegmaydi. To‘g‘ri usul: L=None va ichkarida L = [] yaratish."
+      ],
+      "code": "def f(a, L=[]):\n    L.append(a)\n    return L\nprint(f(1))       # [1]\nprint(f(2, [1]))  # [1, 2]  (boshqa ro‘yxat)\nprint(f(3))       # [1, 3]  (default saqlangan!)"
+     },
+     {
+      "title": "6. pass",
+      "text": [
+       "pass — hech narsa qilmaydigan buyruq. Bo‘sh blok yozib bo‘lmagani uchun «joy band qiluvchi» sifatida ishlatiladi: def keyinroq(): pass."
+      ]
+     }
+    ],
+    "examples": [
+     {
+      "title": "global",
+      "steps": [
+       "global x — tashqi x bilan ishlaymiz",
+       "x = 20"
+      ],
+      "answer": "20"
+     },
+     {
+      "title": "Default ro‘yxat",
+      "steps": [
+       "f(1) → [1]",
+       "f(2,[1]) → [1, 2]",
+       "f(3) → eski default [1] + 3"
+      ],
+      "answer": "[1], [1, 2], [1, 3]"
+     }
+    ],
+    "pitfalls": [
+     "print va return ni adashtirish.",
+     "global siz tashqi o‘zgaruvchi o‘zgaradi deb o‘ylash.",
+     "Default ro‘yxat har safar yangilanadi deb o‘ylash.",
+     "return dan keyingi qatorlar ham bajariladi deb o‘ylash.",
+     "Ro‘yxat funksiyaga nusxa bo‘lib uzatiladi deb o‘ylash."
+    ],
+    "remember": [
+     "return yo‘q → None.",
+     "global — tashqi o‘zgaruvchi.",
+     "Default qiymat bir marta yaratiladi.",
+     "lambda: ichkaridan tashqariga."
+    ],
+    "glossary": [
+     {
+      "term": "Parametr",
+      "meaning": "Funksiya ta’rifidagi o‘zgaruvchi nomi."
+     },
+     {
+      "term": "Argument",
+      "meaning": "Chaqiruvda beriladigan qiymat."
+     },
+     {
+      "term": "Mahalliy o‘zgaruvchi",
+      "meaning": "Faqat funksiya ichida mavjud."
+     },
+     {
+      "term": "Closure",
+      "meaning": "Tashqi o‘zgaruvchilarni eslab qolgan ichki funksiya."
+     }
+    ]
+   },
+   "ai": {
+    "subtopics": [
+     "def/return",
+     "argumentlar",
+     "global/nonlocal",
+     "lambda, map, filter",
+     "mutable default"
+    ],
+    "mistakes": [
+     "print va return",
+     "global ni unutish",
+     "mutable default"
+    ],
+    "rules": [
+     "return yo‘q → None",
+     "default bir marta yaratiladi",
+     "global — tashqi o‘zgaruvchi"
+    ]
+   },
+   "slug": "python-funksiyalar",
+   "question_count": 50
+  },
+  {
+   "order": 13,
+   "icon": "🪆",
+   "title": "Rekursiya",
+   "short": "O‘zini chaqiradigan funksiyalar: bazaviy holat, chaqiruvlar daraxti, o‘zaro rekursiya va pastdan yuqoriga jadval usuli.",
+   "sources": [
+    {
+     "grade": 9,
+     "number": 30,
+     "points": 2.4,
+     "text": "f(x) = 3f(x−1) − 2f(x−2) + f(x−3), f(7)"
+    },
+    {
+     "grade": 10,
+     "number": 24,
+     "points": 2.4,
+     "text": "O‘zaro rekursiya f va g: f(7) + g(4)"
+    },
+    {
+     "grade": 11,
+     "number": 23,
+     "points": 2.4,
+     "text": "O‘zaro rekursiya f va g: f(5) + g(8)"
+    }
+   ],
+   "lesson": {
+    "hook": {
+     "title": "Matryoshka qo‘g‘irchog‘i",
+     "text": "Matryoshkani ochsang, ichidan kichikroq matryoshka chiqadi. Uni ochsang — yana kichikroq… Oxirida eng kichik, ochilmaydigan qo‘g‘irchoq qoladi. Rekursiya ham shunday: masala o‘zining kichikroq nusxasiga aylanadi, toki eng oddiy (ochilmaydigan) holatga yetguncha. Bu eng oddiy holat — BAZAVIY HOLAT."
+    },
+    "sections": [
+     {
+      "title": "1. Rekursiv funksiyaning ikki qismi",
+      "text": [
+       "1) Bazaviy holat — javobi tayyor bo‘lgan eng oddiy holat (masalan, n == 0 bo‘lsa 1 qaytar).",
+       "2) Rekursiv qadam — masalani kichikroq masalaga keltirish (n · f(n−1)).",
+       "Bazaviy holat bo‘lmasa, funksiya cheksiz chaqiriladi → RecursionError."
+      ],
+      "code": "def f(n):\n    if n == 0:          # bazaviy holat\n        return 1\n    return n * f(n - 1) # rekursiv qadam\n\nf(4) = 4·f(3) = 4·3·f(2) = 4·3·2·f(1) = 4·3·2·1·f(0) = 24"
+     },
+     {
+      "title": "2. Eng kuchli usul: pastdan yuqoriga jadval",
+      "text": [
+       "f(7) ni yuqoridan hisoblash — chalkash daraxt. Buning o‘rniga f(0), f(1), f(2)… dan boshlab jadval tuz.",
+       "Har bir yangi qiymat avvalgi (allaqachon hisoblangan) qiymatlardan topiladi. Bu usul o‘zaro rekursiyada (f g ni, g f ni chaqirsa) ayniqsa foydali."
+      ],
+      "table": {
+       "head": [
+        "x",
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+       ],
+       "rows": [
+        [
+         "f(x) = 3f(x−1) − 2f(x−2) + f(x−3)",
+         "0",
+         "1",
+         "2",
+         "4",
+         "9",
+         "21",
+         "49",
+         "114"
+        ]
+       ]
+      }
+     },
+     {
+      "title": "3. O‘zaro rekursiya",
+      "text": [
+       "Ikki funksiya bir-birini chaqiradi. Ikkalasi uchun bitta jadval tuz va qiymatlarni KICHIK x dan boshlab navbat bilan to‘ldir.",
+       "Har bir hisobda kerakli qiymat jadvalda borligiga ishonch hosil qil."
+      ],
+      "table": {
+       "head": [
+        "x",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+       ],
+       "rows": [
+        [
+         "f(x)",
+         "0",
+         "1",
+         "2",
+         "3",
+         "5",
+         "8",
+         "11"
+        ],
+        [
+         "g(x)",
+         "0",
+         "0",
+         "2",
+         "3",
+         "5",
+         "6",
+         "8"
+        ]
+       ]
+      },
+      "code": "f(x) = x−1 (x ≤ 4), aks holda g(x−1) + f(x−2)\ng(x) = 0 (x ≤ 2), aks holda f(x) − g(x−3)\nf(7) + g(4) = 11 + 3 = 14"
+     },
+     {
+      "title": "4. Chop etish tartibi",
+      "text": [
+       "print rekursiv chaqiruvdan OLDIN bo‘lsa — kirishda chiqadi (3 2 1).",
+       "print rekursiv chaqiruvdan KEYIN bo‘lsa — qaytishda chiqadi (1 2 3).",
+       "Ikki marta chaqirsa — daraxt hosil bo‘ladi; chap shoxni oxirigacha, keyin o‘ng shoxni bajar."
+      ]
+     },
+     {
+      "title": "5. Mashhur rekursiyalar",
+      "table": {
+       "head": [
+        "Nomi",
+        "Formula",
+        "Qiymatlar"
+       ],
+       "rows": [
+        [
+         "Faktorial",
+         "n·f(n−1)",
+         "1, 1, 2, 6, 24, 120"
+        ],
+        [
+         "Fibonachchi",
+         "f(n−1)+f(n−2)",
+         "0, 1, 1, 2, 3, 5, 8, 13"
+        ],
+        [
+         "Xanoy minorasi",
+         "2h(n−1)+1",
+         "1, 3, 7, 15, 31 (2ⁿ−1)"
+        ],
+        [
+         "Yevklid (EKUB)",
+         "g(b, a mod b)",
+         "EKUB(48,18) = 6"
+        ],
+        [
+         "Raqamlar yig‘indisi",
+         "n%10 + f(n//10)",
+         "f(2024) = 8"
+        ]
+       ]
+      },
+      "text": []
+     }
+    ],
+    "examples": [
+     {
+      "title": "f(7)",
+      "steps": [
+       "f(0..2) = 0, 1, 2",
+       "f(3) = 4, f(4) = 9, f(5) = 21, f(6) = 49",
+       "f(7) = 3·49 − 2·21 + 9"
+      ],
+      "answer": "114"
+     },
+     {
+      "title": "O‘zaro rekursiya",
+      "steps": [
+       "Jadval f va g uchun",
+       "f(7) = 11, g(4) = 3"
+      ],
+      "answer": "14"
+     }
+    ],
+    "pitfalls": [
+     "Bazaviy holatni noto‘g‘ri o‘qish (x < 3 va x <= 3 farqi!).",
+     "Yuqoridan pastga hisoblashda qiymatlarni yo‘qotish.",
+     "O‘zaro rekursiyada qaysi funksiya chaqirilayotganini adashtirish.",
+     "print tartibini noto‘g‘ri tushunish."
+    ],
+    "remember": [
+     "Bazaviy holat + rekursiv qadam.",
+     "Pastdan yuqoriga jadval tuz.",
+     "print oldin — kirishda, keyin — qaytishda.",
+     "fib chaqiruvlari tez ko‘payadi."
+    ],
+    "glossary": [
+     {
+      "term": "Bazaviy holat",
+      "meaning": "Rekursiyani to‘xtatuvchi eng oddiy holat."
+     },
+     {
+      "term": "Chaqiruvlar steki",
+      "meaning": "Hali tugamagan chaqiruvlar navbati."
+     },
+     {
+      "term": "Memoizatsiya",
+      "meaning": "Hisoblangan qiymatlarni eslab qolish."
+     }
+    ]
+   },
+   "ai": {
+    "subtopics": [
+     "bazaviy holat",
+     "jadval usuli",
+     "o‘zaro rekursiya",
+     "chop etish tartibi",
+     "chaqiruvlar soni"
+    ],
+    "mistakes": [
+     "bazaviy shartni noto‘g‘ri o‘qish",
+     "qiymatlarni yo‘qotish",
+     "funksiyalarni adashtirish"
+    ],
+    "rules": [
+     "pastdan yuqoriga jadval",
+     "har qiymatni yozib bor",
+     "bazaviy holatni tekshir"
+    ]
+   },
+   "slug": "rekursiya",
+   "question_count": 50
+  },
+  {
+   "order": 14,
+   "icon": "⚙️",
+   "title": "Bit amallari",
+   "short": "&, |, ^, ~, <<, >> amallari, bitni tekshirish, yoqish va o‘chirish, popcount va qism-maskalar.",
+   "sources": [
+    {
+     "grade": 9,
+     "number": 27,
+     "points": 2.4,
+     "text": "Σ (i & 1), i < 2ⁿ — natija 64 dan katta"
+    },
+    {
+     "grade": 10,
+     "number": 26,
+     "points": 2.4,
+     "text": "Σ popcount(i), i < 2ⁿ — natija 200 dan katta"
+    },
+    {
+     "grade": 11,
+     "number": 25,
+     "points": 2.4,
+     "text": "Σ count_submask(i) — natija 300 dan katta"
+    }
+   ],
+   "lesson": {
+    "hook": {
+     "title": "Chiroqlar qatori",
+     "text": "Xonada 8 ta chiroq ketma-ket turibdi deb tasavvur qil. Har biri yoniq (1) yoki o‘chiq (0). Son — bu chiroqlarning holati: 5 = 00000101 (o‘ngdan 1- va 3-chiroq yoniq). Bit amallari — chiroqlarni boshqarish: «ikkalasida yoniqlarini qoldir» (&), «birortasida yoniqni yoq» (|), «hammasini bir qadam chapga sur» (<<)."
+    },
+    "sections": [
+     {
+      "title": "1. Amallar jadvali",
+      "table": {
+       "head": [
+        "Amal",
+        "Nomi",
+        "Qoida",
+        "Misol (6 va 3)"
+       ],
+       "rows": [
+        [
+         "&",
+         "VA",
+         "ikkalasi 1 → 1",
+         "110 & 011 = 010 = 2"
+        ],
+        [
+         "|",
+         "YOKI",
+         "kamida bittasi 1 → 1",
+         "110 | 011 = 111 = 7"
+        ],
+        [
+         "^",
+         "XOR",
+         "har xil → 1",
+         "110 ^ 011 = 101 = 5"
+        ],
+        [
+         "~",
+         "inkor",
+         "~x = −x − 1",
+         "~6 = −7"
+        ],
+        [
+         "<<",
+         "chapga surish",
+         "x · 2ᵏ",
+         "3 << 2 = 12"
+        ],
+        [
+         ">>",
+         "o‘ngga surish",
+         "x // 2ᵏ",
+         "40 >> 3 = 5"
+        ]
+       ]
+      },
+      "text": [
+       "Ishlash usuli: ikkala sonni ikkilikka o‘tkaz, ustma-ust yoz, har bir ustunni alohida hisobla."
+      ]
+     },
+     {
+      "title": "2. Foydali hiylalar",
+      "table": {
+       "head": [
+        "Ifoda",
+        "Ma’nosi"
+       ],
+       "rows": [
+        [
+         "x & 1",
+         "x toqmi? (oxirgi bit)"
+        ],
+        [
+         "(x >> k) & 1",
+         "k-bitni o‘qish"
+        ],
+        [
+         "x | (1 << k)",
+         "k-bitni yoqish"
+        ],
+        [
+         "x & ~(1 << k)",
+         "k-bitni o‘chirish"
+        ],
+        [
+         "x ^ (1 << k)",
+         "k-bitni teskarilash"
+        ],
+        [
+         "x & (x − 1)",
+         "eng o‘ngdagi 1 ni o‘chirish"
+        ],
+        [
+         "x & −x",
+         "eng o‘ngdagi 1 ni ajratish"
+        ],
+        [
+         "1 << n",
+         "2ⁿ"
+        ]
+       ]
+      },
+      "text": [
+       "Bitlar o‘ngdan 0 dan boshlab raqamlanadi: 0-bit (qiymati 1), 1-bit (2), 2-bit (4), …"
+      ]
+     },
+     {
+      "title": "3. range(1 << n) — barcha n bitli sonlar",
+      "text": [
+       "1 << n = 2ⁿ. Demak for i in range(1 << n) — 0 dan 2ⁿ − 1 gacha, ya’ni barcha n bitli sonlar.",
+       "Bu sonlarning har bir bit o‘rnida aynan YARMIDA 1 bor (2ⁿ⁻¹ ta)."
+      ],
+      "table": {
+       "head": [
+        "Yig‘indi (i < 2ⁿ)",
+        "Formula",
+        "Sabab"
+       ],
+       "rows": [
+        [
+         "Σ (i & 1)",
+         "2ⁿ⁻¹",
+         "toq sonlar yarmi"
+        ],
+        [
+         "Σ popcount(i)",
+         "n · 2ⁿ⁻¹",
+         "har bitda 2ⁿ⁻¹ ta 1"
+        ],
+        [
+         "Σ 2^popcount(i) (qism-maskalar)",
+         "3ⁿ",
+         "har bit: 0 → 1 usul, 1 → 2 usul"
+        ]
+       ]
+      }
+     },
+     {
+      "title": "4. Olimpiada savolini qanday yechamiz?",
+      "text": [
+       "1) Kodni kichik n uchun qo‘lda hisobla (n = 1, 2, 3).",
+       "2) Qonuniyatni top (2ⁿ⁻¹, n·2ⁿ⁻¹, 3ⁿ …).",
+       "3) Shartni tekshir: «qat’iy katta» → >. Minimal n ni top."
+      ],
+      "code": "s(n) = n · 2ⁿ⁻¹ > 200 ?\nn = 6: 6 · 32  = 192  ✘\nn = 7: 7 · 64  = 448  ✔  → javob 7"
+     },
+     {
+      "title": "5. Ustuvorlik tuzog‘i",
+      "text": [
+       "Python’da tartib: arifmetika (+ −) → siljitish (<< >>) → & → ^ → | → taqqoslash (== < >) → not → and → or.",
+       "Demak x & 1 == 0 Python’da (x & 1) == 0 degani. (C/C++ da esa aksincha — == kuchliroq, shuning uchun u yerda qavs shart.)",
+       "Siljitish + − dan kuchsizroq: 1 << 2 + 1 = 1 << 3 = 8. Shubha bo‘lsa — qavs qo‘y!"
+      ]
+     }
+    ],
+    "examples": [
+     {
+      "title": "Σ (i & 1) > 64",
+      "steps": [
+       "s(n) = 2ⁿ⁻¹",
+       "2⁶ = 64 — teng, katta emas",
+       "2⁷ = 128 > 64 → n − 1 = 7"
+      ],
+      "answer": "n = 8"
+     },
+     {
+      "title": "Qism-maskalar > 300",
+      "steps": [
+       "s(n) = 3ⁿ",
+       "3⁵ = 243",
+       "3⁶ = 729"
+      ],
+      "answer": "n = 6"
+     }
+    ],
+    "pitfalls": [
+     "Bitlarni chapdan raqamlash (to‘g‘risi — o‘ngdan, 0 dan).",
+     "1 << 2 + 1 ni (1 << 2) + 1 deb hisoblash (to‘g‘risi 1 << 3 = 8).",
+     "~x ni «faqat bitlarni teskarilash» deb musbat son kutish.",
+     "«Qat’iy katta» shartida tenglikni ham qabul qilish."
+    ],
+    "remember": [
+     "1 << n = 2ⁿ, x >> k = x // 2ᵏ.",
+     "x & 1 — toq/juft.",
+     "x ^ x = 0.",
+     "Σ popcount = n·2ⁿ⁻¹, qism-maskalar = 3ⁿ."
+    ],
+    "glossary": [
+     {
+      "term": "Bit",
+      "meaning": "Ikkilik raqam: 0 yoki 1."
+     },
+     {
+      "term": "Maska",
+      "meaning": "Kerakli bitlarni tanlash uchun son."
+     },
+     {
+      "term": "popcount",
+      "meaning": "Sonning ikkilik yozuvidagi 1 lar soni."
+     }
+    ]
+   },
+   "ai": {
+    "subtopics": [
+     "& | ^ ~",
+     "<< >>",
+     "bit hiylalari",
+     "range(1<<n) yig‘indilari",
+     "qism-maskalar"
+    ],
+    "mistakes": [
+     "bit raqamlash",
+     "ustuvorlik",
+     "qat’iy tengsizlik"
+    ],
+    "rules": [
+     "1<<n = 2ⁿ",
+     "Σpopcount = n·2ⁿ⁻¹",
+     "Σ2^popcount = 3ⁿ"
+    ]
+   },
+   "slug": "bit-amallari",
+   "question_count": 50
+  },
+  {
+   "order": 15,
+   "icon": "🧭",
+   "title": "Algoritmlar va blok-sxemalar",
+   "short": "Algoritm xossalari va turlari, blok-sxema shakllari, Yevklid algoritmi, qidiruv va saralash, tub sonlar.",
+   "sources": [
+    {
+     "grade": 9,
+     "number": 9,
+     "points": 0.9,
+     "text": "EKUB topishning mashhur algoritmi (Yevklid)"
+    },
+    {
+     "grade": 9,
+     "number": 19,
+     "points": 1.7,
+     "text": "Blok-sxema qaysi operatorni ifodalaydi"
+    }
+   ],
+   "lesson": {
+    "hook": {
+     "title": "Choy damlash retsepti",
+     "text": "Algoritm — biror ishni bajarish uchun aniq qadamlar ketma-ketligi. Choy damlash: 1) choynakka suv quy, 2) qaynat, 3) choy sol, 4) 5 daqiqa kut. Agar «shakar kerakmi?» deb so‘rasang — bu SHART. «Stakan to‘lguncha quy» desang — bu TAKRORLASH. Har qanday dastur shu uch g‘ishtdan quriladi: ketma-ketlik, shart va takrorlash."
+    },
+    "sections": [
+     {
+      "title": "1. Algoritm xossalari",
+      "table": {
+       "head": [
+        "Xossa",
+        "Ma’nosi"
+       ],
+       "rows": [
+        [
+         "Diskretlilik",
+         "alohida, aniq qadamlarga bo‘lingan"
+        ],
+        [
+         "Tushunarlilik",
+         "bajaruvchi har bir buyruqni tushunadi"
+        ],
+        [
+         "Aniqlik",
+         "har bir qadam bir xil ma’noda tushuniladi"
+        ],
+        [
+         "Natijaviylik (cheklilik)",
+         "chekli qadamdan so‘ng natija beradi"
+        ],
+        [
+         "Ommaviylik",
+         "bir turdagi turli ma’lumotlar uchun ishlaydi"
+        ]
+       ]
+      },
+      "text": [
+       "«Algoritm» so‘zi buyuk vatandoshimiz Muhammad al-Xorazmiy nomidan kelib chiqqan (lotincha «Algorithmi»)."
+      ]
+     },
+     {
+      "title": "2. Algoritm turlari",
+      "text": [
+       "Chiziqli — qadamlar ketma-ket. Tarmoqlanuvchi — shartga qarab yo‘l tanlanadi (if). Takrorlanuvchi (siklik) — qadamlar takrorlanadi (for, while)."
+      ]
+     },
+     {
+      "title": "3. Blok-sxema shakllari",
+      "table": {
+       "head": [
+        "Shakl",
+        "Nomi",
+        "Vazifasi"
+       ],
+       "rows": [
+        [
+         "⬭ Oval",
+         "Terminator",
+         "Boshlash / Tugatish"
+        ],
+        [
+         "▱ Parallelogramm",
+         "Kiritish/chiqarish",
+         "a ni kirit, S ni chiqar"
+        ],
+        [
+         "▭ To‘rtburchak",
+         "Jarayon",
+         "S = a + b"
+        ],
+        [
+         "◇ Romb",
+         "Shart",
+         "a > b ? ha / yo‘q"
+        ],
+        [
+         "→ Strelka",
+         "Oqim",
+         "keyingi qadam"
+        ]
+       ]
+      },
+      "text": [
+       "Agar rombdan chiqqan strelka YUQORIGA (oldingi bloklarga) qaytsa — bu SIKL. Agar ikki tarmoq pastda qo‘shilsa — bu SHART (tarmoqlanish)."
+      ]
+     },
+     {
+      "title": "4. Yevklid algoritmi (EKUB)",
+      "text": [
+       "EKUB(a, b) = EKUB(b, a mod b). b = 0 bo‘lganda javob — a.",
+       "EKUK(a, b) = a · b / EKUB(a, b)."
+      ],
+      "code": "EKUB(252, 105):\n252 = 105·2 + 42\n105 = 42·2  + 21\n 42 = 21·2  + 0   → EKUB = 21"
+     },
+     {
+      "title": "5. Qidiruv va saralash",
+      "table": {
+       "head": [
+        "Algoritm",
+        "G‘oyasi",
+        "Murakkabligi"
+       ],
+       "rows": [
+        [
+         "Chiziqli qidiruv",
+         "birma-bir tekshirish",
+         "O(n)"
+        ],
+        [
+         "Binar qidiruv",
+         "saralangan ro‘yxatni yarmiga bo‘lish",
+         "O(log n)"
+        ],
+        [
+         "Pufakchali saralash",
+         "qo‘shnilarni almashtirish",
+         "O(n²)"
+        ],
+        [
+         "Tanlash orqali",
+         "minimumni oldinga qo‘yish",
+         "O(n²)"
+        ],
+        [
+         "Birlashtirish (merge)",
+         "bo‘l va birlashtir",
+         "O(n log n)"
+        ]
+       ]
+      },
+      "text": [
+       "Binar qidiruvda eng ko‘pi bilan ⌊log₂ n⌋ + 1 taqqoslash: 1024 ta elementda — 11 ta."
+      ]
+     },
+     {
+      "title": "6. Tub sonlar",
+      "text": [
+       "n tubligini tekshirish uchun √n gacha bo‘lish yetarli.",
+       "Eratosfen g‘alviri: 2 dan boshlab har bir tub sonning karralilarini o‘chiramiz; p² > N bo‘lganda to‘xtaymiz."
+      ]
+     }
+    ],
+    "examples": [
+     {
+      "title": "EKUB(48, 18)",
+      "steps": [
+       "48 = 18·2 + 12",
+       "18 = 12·1 + 6",
+       "12 = 6·2 + 0"
+      ],
+      "answer": "6"
+     },
+     {
+      "title": "Blok-sxema trace",
+      "steps": [
+       "S = 0, i = 1",
+       "i ≤ 4: S += i² → 1, 5, 14, 30",
+       "i = 5 → chiqarish"
+      ],
+      "answer": "30"
+     }
+    ],
+    "pitfalls": [
+     "Rombni har doim sikl deb o‘ylash (orqaga qaytish bo‘lsagina sikl).",
+     "Binar qidiruvni saralanmagan ro‘yxatda qo‘llash.",
+     "EKUB va EKUK ni adashtirish.",
+     "Blok-sxemada sikl shartini oxirgi marta tekshirishni unutish."
+    ],
+    "remember": [
+     "EKUB(a,b) = EKUB(b, a mod b).",
+     "EKUB · EKUK = a · b.",
+     "Romb — shart, oval — boshlash/tugatish, parallelogramm — kiritish/chiqarish.",
+     "Binar qidiruv: log₂ n."
+    ],
+    "glossary": [
+     {
+      "term": "Algoritm",
+      "meaning": "Masalani yechish uchun aniq qadamlar ketma-ketligi."
+     },
+     {
+      "term": "Blok-sxema",
+      "meaning": "Algoritmning grafik tasviri."
+     },
+     {
+      "term": "Murakkablik",
+      "meaning": "Algoritm bajaradigan amallar soni qanday o‘sishi."
+     }
+    ]
+   },
+   "ai": {
+    "subtopics": [
+     "algoritm xossalari",
+     "blok-sxema shakllari",
+     "Yevklid",
+     "qidiruv va saralash",
+     "tub sonlar"
+    ],
+    "mistakes": [
+     "shakllarni adashtirish",
+     "sikl va shartni farqlamaslik",
+     "binar qidiruv shartini unutish"
+    ],
+    "rules": [
+     "romb — shart",
+     "EKUB(a,b) = EKUB(b, a mod b)",
+     "binar qidiruv — saralangan ro‘yxat"
+    ]
+   },
+   "slug": "algoritmlar",
+   "question_count": 50
+  },
+  {
+   "order": 16,
+   "icon": "💻",
+   "title": "Kompyuter, dasturiy ta’minot va IT tarixi",
+   "short": "Kompyuter qurilmalari, operatsion tizimlar va fayl tizimlari, ma’lumotlar bazalari, mashhur qisqartmalar va IT tarixidagi voqealar.",
+   "sources": [
+    {
+     "grade": 9,
+     "number": 8,
+     "points": 0.9,
+     "text": "Arastu qaysi asrda yashagan"
+    },
+    {
+     "grade": 10,
+     "number": 6,
+     "points": 0.9,
+     "text": "GPS akronimi"
+    },
+    {
+     "grade": 10,
+     "number": 7,
+     "points": 0.9,
+     "text": "Python’da faylni ochish"
+    },
+    {
+     "grade": 10,
+     "number": 9,
+     "points": 0.9,
+     "text": "Protsessor vazifasi"
+    },
+    {
+     "grade": 10,
+     "number": 10,
+     "points": 0.9,
+     "text": "Smartfonlar uchun OT (PalmOS)"
+    },
+    {
+     "grade": 10,
+     "number": 12,
+     "points": 1.7,
+     "text": "NTFS qaysi OT da ishlatiladi"
+    },
+    {
+     "grade": 11,
+     "number": 5,
+     "points": 0.9,
+     "text": "Kasparovni yutgan Deep Blue"
+    },
+    {
+     "grade": 11,
+     "number": 6,
+     "points": 0.9,
+     "text": "SQL akronimi"
+    },
+    {
+     "grade": 11,
+     "number": 19,
+     "points": 1.7,
+     "text": "NoSQL MBBT (MongoDB)"
+    }
+   ],
+   "lesson": {
+    "hook": {
+     "title": "Kompyuter — kichik shahar",
+     "text": "Kompyuterni shahar deb tasavvur qil. Protsessor — shahar hokimi: hamma ishni boshqaradi va hisob-kitob qiladi. Tezkor xotira (RAM) — hokimning stoli: hozir kerakli qog‘ozlar shu yerda, lekin chiroq o‘chsa stol tozalanadi. Qattiq disk — arxiv: hamma narsa uzoq saqlanadi. Operatsion tizim — shahar qonunlari: kim qachon qaysi yo‘ldan yurishini belgilaydi."
+    },
+    "sections": [
+     {
+      "title": "1. Kompyuter qurilmalari",
+      "table": {
+       "head": [
+        "Qurilma",
+        "Vazifasi",
+        "Turi"
+       ],
+       "rows": [
+        [
+         "Protsessor (CPU)",
+         "hisoblaydi va boshqaradi",
+         "asosiy"
+        ],
+        [
+         "RAM",
+         "ishlayotgan dastur va ma’lumotlar (vaqtinchalik)",
+         "ichki xotira"
+        ],
+        [
+         "HDD / SSD",
+         "fayllarni uzoq saqlash",
+         "tashqi xotira"
+        ],
+        [
+         "Tizimli (ona) plata",
+         "barcha qurilmalarni ulaydi",
+         "asosiy"
+        ],
+        [
+         "Ta’minot bloki",
+         "elektr toki beradi",
+         "asosiy"
+        ],
+        [
+         "Klaviatura, sichqoncha, skaner, mikrofon",
+         "kompyuterga ma’lumot beradi",
+         "kiritish"
+        ],
+        [
+         "Monitor, printer, karnay",
+         "natijani ko‘rsatadi",
+         "chiqarish"
+        ]
+       ]
+      },
+      "text": [
+       "Xotira ierarxiyasi (tezdan sekinga): registrlar → kesh → RAM → SSD → HDD. Tezroq — qimmatroq va kichikroq."
+      ]
+     },
+     {
+      "title": "2. Operatsion tizimlar",
+      "table": {
+       "head": [
+        "OT",
+        "Qayerda",
+        "Fayl tizimi"
+       ],
+       "rows": [
+        [
+         "Windows",
+         "shaxsiy kompyuter",
+         "NTFS (eski: FAT32)"
+        ],
+        [
+         "MacOS",
+         "Apple kompyuterlari",
+         "APFS"
+        ],
+        [
+         "Linux (Ubuntu, CentOS…)",
+         "server, kompyuter",
+         "ext4"
+        ],
+        [
+         "Android",
+         "smartfon",
+         "ext4 / F2FS"
+        ],
+        [
+         "iOS",
+         "iPhone",
+         "APFS"
+        ],
+        [
+         "PalmOS",
+         "eski cho‘ntak kompyuterlari va smartfonlar",
+         "—"
+        ]
+       ]
+      },
+      "text": [
+       "Linux yadrosini 1991-yilda Linus Torvalds yaratgan; u ochiq kodli."
+      ]
+     },
+     {
+      "title": "3. Mashhur qisqartmalar",
+      "table": {
+       "head": [
+        "Qisqartma",
+        "To‘liq nomi",
+        "Ma’nosi"
+       ],
+       "rows": [
+        [
+         "CPU",
+         "Central Processing Unit",
+         "markaziy protsessor"
+        ],
+        [
+         "RAM",
+         "Random Access Memory",
+         "tezkor xotira"
+        ],
+        [
+         "ROM",
+         "Read-Only Memory",
+         "faqat o‘qiladigan xotira"
+        ],
+        [
+         "GPS",
+         "Global Positioning System",
+         "joylashuvni aniqlash tizimi"
+        ],
+        [
+         "SQL",
+         "Structured Query Language",
+         "so‘rovlar tili"
+        ],
+        [
+         "HTML",
+         "HyperText Markup Language",
+         "veb-sahifa belgilash tili"
+        ],
+        [
+         "HTTP(S)",
+         "HyperText Transfer Protocol (Secure)",
+         "veb protokoli"
+        ],
+        [
+         "NTFS",
+         "New Technology File System",
+         "Windows fayl tizimi"
+        ],
+        [
+         "WWW",
+         "World Wide Web",
+         "Butunjahon o‘rgimchak to‘ri"
+        ]
+       ]
+      },
+      "text": []
+     },
+     {
+      "title": "4. Ma’lumotlar bazalari",
+      "text": [
+       "MBBT — ma’lumotlar bazasini boshqarish tizimi.",
+       "Relyatsion (SQL) — jadvallar: MySQL, PostgreSQL, Oracle, SQLite, MS SQL Server.",
+       "NoSQL — jadvalsiz: MongoDB (hujjatlar), Redis (kalit-qiymat), Cassandra.",
+       "Birlamchi kalit (Primary Key) — har bir yozuvni noyob aniqlaydi."
+      ]
+     },
+     {
+      "title": "5. IT tarixi xronologiyasi",
+      "table": {
+       "head": [
+        "Yil",
+        "Voqea"
+       ],
+       "rows": [
+        [
+         "mil. avv. IV asr",
+         "Arastu — formal mantiq asoschisi"
+        ],
+        [
+         "IX asr",
+         "Al-Xorazmiy — «algoritm» so‘zi uning nomidan"
+        ],
+        [
+         "1946",
+         "ENIAC — birinchi elektron kompyuterlardan"
+        ],
+        [
+         "1950",
+         "Tyuring testi"
+        ],
+        [
+         "1971",
+         "Intel 4004 — birinchi mikroprotsessor"
+        ],
+        [
+         "1989",
+         "Tim Berners-Li — WWW"
+        ],
+        [
+         "1991",
+         "Python (Guido van Rossum), Linux (Linus Torvalds)"
+        ],
+        [
+         "1997",
+         "Deep Blue Kasparovni yutdi"
+        ],
+        [
+         "2011",
+         "IBM Watson «Jeopardy!» viktorinasida g‘olib"
+        ]
+       ]
+      },
+      "text": []
+     },
+     {
+      "title": "6. Python va buyruqlar qatori",
+      "text": [
+       "Versiyani tekshirish: python --version (yoki python -V).",
+       "Faylni ochish: f = open(\"fayl.txt\", \"r\") — \"r\" o‘qish, \"w\" qayta yozish, \"a\" oxiriga qo‘shish."
+      ]
+     }
+    ],
+    "examples": [
+     {
+      "title": "Akronim",
+      "steps": [
+       "G — Global",
+       "P — Positioning",
+       "S — System"
+      ],
+      "answer": "GPS = Global Positioning System"
+     },
+     {
+      "title": "Tarix",
+      "steps": [
+       "Arastu: mil. avv. 384–322",
+       "400–301 → IV asr"
+      ],
+      "answer": "IV asr"
+     }
+    ],
+    "pitfalls": [
+     "RAM ni doimiy xotira deb o‘ylash.",
+     "MacOS ni smartfon OT deb o‘ylash (iPhone’da iOS).",
+     "MySQL ni NoSQL deb o‘ylash.",
+     "HTML ni dasturlash tili deb o‘ylash.",
+     "python -v ni versiya buyrug‘i deb o‘ylash."
+    ],
+    "remember": [
+     "CPU — hisoblash va boshqarish.",
+     "NTFS — Windows, ext4 — Linux, APFS — Apple.",
+     "MongoDB — NoSQL.",
+     "Deep Blue — 1997."
+    ],
+    "glossary": [
+     {
+      "term": "OT",
+      "meaning": "Operatsion tizim — kompyuterni boshqaruvchi asosiy dastur."
+     },
+     {
+      "term": "Fayl tizimi",
+      "meaning": "Diskda fayllarni tartiblash usuli."
+     },
+     {
+      "term": "MBBT",
+      "meaning": "Ma’lumotlar bazasini boshqarish tizimi."
+     },
+     {
+      "term": "Akronim",
+      "meaning": "So‘zlarning bosh harflaridan tuzilgan qisqartma."
+     }
+    ]
+   },
+   "ai": {
+    "subtopics": [
+     "kompyuter qurilmalari",
+     "operatsion tizimlar",
+     "fayl tizimlari",
+     "MBBT",
+     "akronimlar",
+     "IT tarixi"
+    ],
+    "mistakes": [
+     "RAM va doimiy xotira",
+     "OT va amaliy dastur",
+     "SQL va NoSQL"
+    ],
+    "rules": [
+     "CPU — miya",
+     "NTFS — Windows",
+     "MongoDB — NoSQL"
+    ]
+   },
+   "slug": "kompyuter-va-it",
+   "question_count": 50
+  }
+ ]
+}

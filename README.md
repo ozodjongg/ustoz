@@ -1,82 +1,81 @@
 # Informatika Olimpiada Trainer
 
-2025-yil O‘zbekiston 9-, 10- va 11-sinf Informatika fan olimpiadasi tuman (shahar) bosqichidagi 90 ta test savolining mavzu tahlili asosida tuzilgan **to‘liq statik Next.js** tayyorgarlik sayti.
+2024-yil O‘zbekiston **9-, 10- va 11-sinf Informatika** fan olimpiadasi tuman (shahar) bosqichidagi 90 ta savol tahlili asosida tuzilgan, **to‘liq statik** Next.js tayyorgarlik sayti.
 
-## Nimalar tayyor
+## Nimalar bor
 
-- `unit.json` — 90 original savol uchun sinf, savol raqami, ball, rasmiy javob, mavzu va qisqa mazmun; 17 ta birlashtirilgan unit.
-- `public/data/questions/*.json` — har bir unit uchun 100 tadan yangi mashq, jami **1700 ta savol**.
-- Har bir mavzu uchun juda sodda, bosqichma-bosqich dars sahifasi.
-- Har mavzu sahifasida tasodifiy savol.
-- **AI Tutor**: har bir savol uchun kontekstga mos mukammal promptni avtomatik tuzadi.
-- AI Tutor 3 rejimda ishlaydi: **Hint**, **Tushuntirish**, **Chuqur o‘rganish**.
-- Hint rejimi to‘g‘ri javobni promptga kiritmaydi; o‘quvchini mustaqil yechimga yo‘naltiradi.
-- Tushuntirish rejimi foydalanuvchi tanlagan javobni, variantlarni va xato sababini tahlil qilishni AIga buyuradi.
-- Chuqur rejim AIni mikro-dars + adaptiv savollar beradigan repetitorga aylantiradi va ketma-ket 3 ta mustaqil to‘g‘ri javobgacha davom etishni so‘raydi.
-- Vaqt va savollar sonini foydalanuvchi o‘zi tanlaydigan sinov.
-- Original ball tizimi: 0.9 / 1.5 / 2.6.
-- Xato savollar mavzusi `localStorage` ga saqlanadi.
-- Sinov natijasida nechta savolda AI yordami ishlatilgani alohida hisoblanadi va Telegram hisobotiga qo‘shiladi.
-- Ism birinchi kirishda so‘raladi.
-- Sinov tugagach Telegram Bot API orqali admin xabarini yuborish opsiyasi.
-- Backend yo‘q: `next.config.mjs` ichida `output: 'export'`.
+- **16 ta mavzu** — 90 ta asl olimpiada savoli mavzularga ajratilgan (`data/topics.json` → `sources`).
+- Har bir mavzu uchun **juda sodda tushuntirish sahifasi**: hayotiy o‘xshatish, bosqichma-bosqich bo‘limlar, jadvallar, kod misollari, ishlangan misollar, ko‘p uchraydigan xatolar, «Eslab qol» va lug‘at.
+- Har bir mavzu uchun **50 tadan turli savol** — jami **800 ta**, har birida **qadam-baqadam yechim**.
+- Savollar qiyinligi olimpiada ball tizimiga mos: **0,9 / 1,7 / 2,4** ball.
+- Mavzu bo‘yicha mashq: filtrlar (ball, yechilmagan, xatolarim), savollar xaritasi, natijalar saqlanadi.
+- Olimpiada formatidagi **sinov**: 30 savol = 10 × 0,9 + 10 × 1,7 + 10 × 2,4 = 50 ball, vaqt va mavzularni tanlash mumkin, oxirida xatolar tahlili.
+- **Xatolar bo‘limi**: xato qilingan savollarni qayta ishlash; to‘g‘ri yechilsa ro‘yxatdan o‘chadi.
+- **AI yordamchi**: savol konteksti bilan tayyor prompt (Maslahat / Tushuntir / Chuqur o‘rgan) — Claude yoki ChatGPT’da ochiladi. Maslahat rejimi javobni oshkor qilmaydi.
+- Yorug‘ va qorong‘i rejim, mobil qurilmalarga moslashgan dizayn.
+- Ixtiyoriy Telegram hisobot (token faqat brauzer `localStorage` ida saqlanadi).
+
+## Mavzular
+
+| № | Mavzu | Asl savollar |
+|---|-------|--------------|
+| 1 | Sanoq sistemalari | 10 |
+| 2 | Kasr va davriy kasrlar sanoq sistemalarida | 3 |
+| 3 | Mantiqiy amallar va ifodalar | 5 |
+| 4 | Mantiqiy elementlar va sxemalar | 4 |
+| 5 | Axborot o‘lchov birliklari | 3 |
+| 6 | Axborot hajmi va uzatish tezligi | 6 |
+| 7 | Excel: bloklar va katak manzillari | 6 |
+| 8 | Excel: formulalar va funksiyalar | 8 |
+| 9 | Python asoslari: turlar, operatorlar, satrlar | 11 |
+| 10 | Python: list, tuple, set, dict | 8 |
+| 11 | Python: sikllar va range | 4 |
+| 12 | Python: funksiyalar | 6 |
+| 13 | Rekursiya | 3 |
+| 14 | Bit amallari | 3 |
+| 15 | Algoritmlar va blok-sxemalar | 2 |
+| 16 | Kompyuter, dasturiy ta’minot va IT tarixi | 9 |
+
+## Tuzilma
+
+```
+data/topics.json               mavzular, darslar, asl savollar manbasi, AI konteksti
+public/data/questions/*.json   har bir mavzu uchun 50 ta savol (yechimlari bilan)
+scripts/validate-data.mjs      savol banklari yaxlitligini tekshirish
+pages/                         bosh sahifa, dars, mashq, sinov, xatolar, sozlamalar
+components/                    savol kartasi, dars ko‘rinishi, AI yordamchi
+```
+
+Savollar **statik JSON** fayllarda saqlanadi — build vaqtida hech narsa generatsiya qilinmaydi. Savolni tahrirlash uchun tegishli `public/data/questions/<mavzu>.json` faylini o‘zgartiring:
+
+```json
+{
+  "id": "rekursiya-01",
+  "unit": "rekursiya",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "code": "def f(n): ...",
+  "options": ["…", "…", "…", "…"],
+  "answer": 3,
+  "explanation": "Qisqa izoh",
+  "solution": ["1-qadam", "2-qadam", "Natija: …"]
+}
+```
+
+So‘ng tekshiring: `npm run validate`.
 
 ## Ishga tushirish
 
 ```bash
 npm install
-npm run dev
+npm run dev        # ishlab chiqish rejimi
+npm run validate   # savol banklarini tekshirish
+npm run build      # statik sayt → out/
 ```
 
-Static build:
-
-```bash
-npm run build
-```
-
-`npm run dev` va `npm run build` oldidan `scripts/generate_data.py` avtomatik ishga tushib, `unit.json` va 17 × 100 savol bankini yaratadi.
-
-Natija `out/` papkasiga chiqadi.
+`next.config.mjs` ichida `output: 'export'` — natija `out/` papkasiga chiqadi va istalgan statik hostingga joylanadi.
 
 ## Telegram xavfsizligi
 
-Backend bo‘lmagani uchun bot tokenini ommaviy source code yoki `NEXT_PUBLIC_*` o‘zgaruvchiga qo‘shish xavfsiz emas. Hozirgi rejimda token faqat admin/o‘qituvchi brauzerining `localStorage` xotirasida saqlanadi.
-
-Public deploymentda tokenni yashirish uchun kichik serverless proxy kerak bo‘ladi.
-
-
-## AI Tutor qanday ishlaydi
-
-Loyiha backend yoki AI API kalitiga bog‘lanmagan. Har bir savolda sayt quyidagi kontekstni o‘zi yig‘adi:
-
-- mavzu va kichik mavzular;
-- qiyinlik va ball;
-- savol va A/B/C/D variantlar;
-- foydalanuvchi tanlagan javob;
-- kerak bo‘lsa to‘g‘ri javob;
-- shu mavzudagi asosiy tushunchalar;
-- keng tarqalgan xatolar;
-- olimpiadada tez ishlatiladigan qoidalar.
-
-`lib/aiTutor.ts` 17 ta unit uchun alohida pedagogik kontekst saqlaydi. `components/AiTutorActions.tsx` shu ma’lumotlardan uch xil prompt yaratadi.
-
-### 1. Hint
-
-To‘g‘ri javob promptga kiritilmaydi. AIga faqat bitta kichik yo‘naltiruvchi hint berish va o‘quvchining keyingi urinishini kutish buyuriladi.
-
-### 2. Tushuntirish
-
-AI:
-1. savolni sodda tilda qayta aytadi;
-2. kerakli nazariyani noldan tushuntiradi;
-3. qadam-baqadam yechadi;
-4. foydalanuvchining xatosini tahlil qiladi;
-5. barcha variantlarni tekshiradi;
-6. tez yechish usulini beradi;
-7. oxirida javobsiz o‘xshash savol beradi.
-
-### 3. Chuqur o‘rganish
-
-AI avval bilim bo‘shlig‘ini aniqlaydi, 5 daqiqalik mikro-dars beradi va keyin bir vaqtning o‘zida faqat bitta savol bilan adaptiv mashq olib boradi. Prompt AIga ketma-ket 3 ta mustaqil to‘g‘ri javobdan keyingina mavzuni o‘zlashtirilgan deb hisoblashni buyuradi.
-
-“ChatGPTda ochish” tugmasi promptni clipboardga nusxalab, yangi ChatGPT oynasini ochadi. Shu sababli saytda OpenAI API key saqlash talab qilinmaydi.
+Backend yo‘qligi sababli bot tokeni faqat admin/o‘qituvchi brauzerining `localStorage` xotirasida saqlanadi. Tokenni kodga yoki `NEXT_PUBLIC_*` o‘zgaruvchiga yozmang. Ommaviy deploymentda tokenni yashirish uchun kichik serverless proxy kerak bo‘ladi.

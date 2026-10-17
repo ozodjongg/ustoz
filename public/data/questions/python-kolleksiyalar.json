@@ -1,0 +1,1049 @@
+[
+ {
+  "id": "python-kolleksiyalar-01",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Python’da ro‘yxat (list) oxiriga yangi element qo‘shish qanday amalga oshiriladi?",
+  "options": [
+   "lst.add(element)",
+   "lst.insert(element)",
+   "lst.append(element)",
+   "lst.put(element)"
+  ],
+  "answer": 2,
+  "explanation": "append() oxiriga qo‘shadi.",
+  "solution": [
+   "append() — ro‘yxat OXIRIGA bitta element qo‘shadi.",
+   "add() — to‘plam (set) metodi; insert() ikki argument talab qiladi (indeks, element); put() mavjud emas.",
+   "Javob: lst.append(element)"
+  ]
+ },
+ {
+  "id": "python-kolleksiyalar-02",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "[2, 3]",
+   "[3, 4]",
+   "[4]",
+   "[2, 1]"
+  ],
+  "answer": 0,
+  "explanation": "x[−3], x[−2] = [2, 3].",
+  "solution": [
+   "Manfiy indekslar: −1 → 4, −2 → 3, −3 → 2, −4 → 1.",
+   "x[−3:−1] — −3 dan −1 gacha (−1 kirmaydi): −3, −2 → 2, 3.",
+   "Natija: [2, 3]"
+  ],
+  "code": "x = [1, 2, 3, 4]\nprint(x[-3:-1])"
+ },
+ {
+  "id": "python-kolleksiyalar-03",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "[]",
+   "IndexError",
+   "[None]",
+   "[4]"
+  ],
+  "answer": 0,
+  "explanation": "Slicing xato bermaydi: [].",
+  "solution": [
+   "Kesish (slicing) chegaradan chiqsa xato bermaydi — shunchaki bo‘sh natija beradi.",
+   "4-indeksdan boshlab element yo‘q (oxirgi indeks 3).",
+   "Natija: []"
+  ],
+  "code": "x = [1, 2, 3, 4]\nprint(x[4:])"
+ },
+ {
+  "id": "python-kolleksiyalar-04",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "3",
+   "2",
+   "60",
+   "30"
+  ],
+  "answer": 0,
+  "explanation": "3 ta element.",
+  "solution": [
+   "len() — elementlar soni.",
+   "Ro‘yxatda 3 ta element.",
+   "Natija: 3"
+  ],
+  "code": "a = [10, 20, 30]\nprint(len(a))"
+ },
+ {
+  "id": "python-kolleksiyalar-05",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "13",
+   "11",
+   "18",
+   "12"
+  ],
+  "answer": 3,
+  "explanation": "5 + 7 = 12.",
+  "solution": [
+   "a[0] = 5, a[2] = 7.",
+   "5 + 7.",
+   "Natija: 12"
+  ],
+  "code": "a = [5, 6, 7]\nprint(a[0] + a[2])"
+ },
+ {
+  "id": "python-kolleksiyalar-06",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Pythonda lst ro‘yxatidagi barcha turli xil elementlarni chop etish to‘g‘ri ko‘rsatilgan qatorni belgilang.",
+  "options": [
+   "print(dict(lst))",
+   "print(unique(lst))",
+   "print(distinct(lst))",
+   "print(set(lst))"
+  ],
+  "answer": 3,
+  "explanation": "set() takrorlarni olib tashlaydi.",
+  "solution": [
+   "set (to‘plam) faqat takrorlanmaydigan elementlarni saqlaydi.",
+   "distinct() va unique() Python’da standart funksiya emas; dict(lst) esa juftliklar talab qiladi.",
+   "Javob: print(set(lst))"
+  ]
+ },
+ {
+  "id": "python-kolleksiyalar-07",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod bajarilgandan so‘ng nima bo‘ladi?\na = (1, 2, 3)\na[1] = 5",
+  "options": [
+   "Error (TypeError)",
+   "None",
+   "(1, 5, 3)",
+   "(1, 2, 3)"
+  ],
+  "answer": 0,
+  "explanation": "tuple o‘zgarmas → TypeError.",
+  "solution": [
+   "(1, 2, 3) — kortej (tuple). Kortejlar o‘zgarmas (immutable).",
+   "Element o‘zlashtirish mumkin emas → TypeError: 'tuple' object does not support item assignment.",
+   "Javob: Error (TypeError)"
+  ]
+ },
+ {
+  "id": "python-kolleksiyalar-08",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "6",
+   "5",
+   "3",
+   "2"
+  ],
+  "answer": 2,
+  "explanation": "Noyob: {1, 2, 3} → 3.",
+  "solution": [
+   "To‘plam (set) takroriy elementlarni saqlamaydi.",
+   "Noyob elementlar: 1, 2, 3.",
+   "Natija: 3"
+  ],
+  "code": "s = {3, 1, 3, 2, 1}\nprint(len(s))"
+ },
+ {
+  "id": "python-kolleksiyalar-09",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "'b'",
+   "KeyError",
+   "2",
+   "1"
+  ],
+  "answer": 2,
+  "explanation": "d['b'] = 2.",
+  "solution": [
+   "Lug‘atda qiymat kalit orqali olinadi.",
+   "'b' kalitining qiymati 2.",
+   "Natija: 2"
+  ],
+  "code": "d = {'a': 1, 'b': 2}\nprint(d['b'])"
+ },
+ {
+  "id": "python-kolleksiyalar-10",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "None",
+   "[3, 1, 2]",
+   "[1, 2, 3]",
+   "[3, 2, 1]"
+  ],
+  "answer": 2,
+  "explanation": "O‘sish tartibida: [1, 2, 3].",
+  "solution": [
+   "sort() ro‘yxatni o‘sish tartibida joyida saralaydi.",
+   "3, 1, 2 → 1, 2, 3.",
+   "Natija: [1, 2, 3]"
+  ],
+  "code": "a = [3, 1, 2]\na.sort()\nprint(a)"
+ },
+ {
+  "id": "python-kolleksiyalar-11",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "[1, 2, [3]]",
+   "[4, 2]",
+   "[1, 2, 3]",
+   "Error"
+  ],
+  "answer": 2,
+  "explanation": "Birlashtirish: [1, 2, 3].",
+  "solution": [
+   "Ro‘yxatlarni + bilan qo‘shish — ularni birlashtirish.",
+   "[1, 2] va [3] → [1, 2, 3].",
+   "Natija: [1, 2, 3]"
+  ],
+  "code": "a = [1, 2] + [3]\nprint(a)"
+ },
+ {
+  "id": "python-kolleksiyalar-12",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "[3]",
+   "[0]",
+   "0",
+   "[0, 0, 0]"
+  ],
+  "answer": 3,
+  "explanation": "[0, 0, 0].",
+  "solution": [
+   "Ro‘yxatni songa ko‘paytirish — takrorlash.",
+   "[0] uch marta: [0, 0, 0].",
+   "Natija: [0, 0, 0]"
+  ],
+  "code": "a = [0] * 3\nprint(a)"
+ },
+ {
+  "id": "python-kolleksiyalar-13",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "IndexError",
+   "4",
+   "8",
+   "15"
+  ],
+  "answer": 3,
+  "explanation": "a[−1] = 15.",
+  "solution": [
+   "−1 indeks — oxirgi element.",
+   "Oxirgi element 15.",
+   "Natija: 15"
+  ],
+  "code": "a = [4, 8, 15]\nprint(a[-1])"
+ },
+ {
+  "id": "python-kolleksiyalar-14",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "True False",
+   "3 5",
+   "False True",
+   "True True"
+  ],
+  "answer": 0,
+  "explanation": "True False.",
+  "solution": [
+   "in operatori element ro‘yxatda bormi, tekshiradi.",
+   "3 bor → True, 5 yo‘q → False.",
+   "Natija: True False"
+  ],
+  "code": "print(3 in [1, 2, 3], 5 in [1, 2, 3])"
+ },
+ {
+  "id": "python-kolleksiyalar-15",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "[1, 2]",
+   "[2, 3]",
+   "3",
+   "[1, 2, 3]"
+  ],
+  "answer": 0,
+  "explanation": "Oxirgisi o‘chadi: [1, 2].",
+  "solution": [
+   "pop() argumentsiz — OXIRGI elementni olib tashlaydi.",
+   "3 o‘chiriladi.",
+   "Natija: [1, 2]"
+  ],
+  "code": "a = [1, 2, 3]\na.pop()\nprint(a)"
+ },
+ {
+  "id": "python-kolleksiyalar-16",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "10 9",
+   "4 9",
+   "10 7",
+   "24 9"
+  ],
+  "answer": 0,
+  "explanation": "10 va 9.",
+  "solution": [
+   "sum() — elementlar yig‘indisi: 1+2+3+4 = 10.",
+   "max() — eng kattasi: 9.",
+   "Natija: 10 9"
+  ],
+  "code": "print(sum([1, 2, 3, 4]), max([7, 2, 9]))"
+ },
+ {
+  "id": "python-kolleksiyalar-17",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "<class 'set'>",
+   "<class 'list'>",
+   "<class 'tuple'>",
+   "<class 'int'>"
+  ],
+  "answer": 2,
+  "explanation": "Vergul kortej yaratadi.",
+  "solution": [
+   "(5,) — vergul borligi uchun bu bitta elementli KORTEJ.",
+   "(5) esa shunchaki qavsdagi son bo‘lardi.",
+   "Natija: <class 'tuple'>"
+  ],
+  "code": "t = (5,)\nprint(type(t))"
+ },
+ {
+  "id": "python-kolleksiyalar-18",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "[1, 2, 3, 4]",
+   "Error",
+   "[4]",
+   "[1, 2, 3]"
+  ],
+  "answer": 0,
+  "explanation": "x va y — bitta obyekt.",
+  "solution": [
+   "y = x — yangi ro‘yxat yaratmaydi! y va x BITTA ro‘yxatga ishora qiladi (ikki nom, bitta quti).",
+   "y.append(4) o‘sha umumiy ro‘yxatni o‘zgartiradi.",
+   "Natija: [1, 2, 3, 4]"
+  ],
+  "code": "x = [1, 2, 3]\ny = x\ny.append(4)\nprint(x)"
+ },
+ {
+  "id": "python-kolleksiyalar-19",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Pythonda dict obyektida kalit (key) bor yoki yo‘qligini qanday tekshirish mumkin?",
+  "options": [
+   "dct.contains(key)",
+   "dct.__find__(key)",
+   "dct.find(key)",
+   "dct.__contains__(key)"
+  ],
+  "answer": 3,
+  "explanation": "key in dct ↔ dct.__contains__(key).",
+  "solution": [
+   "Odatda key in dct yoziladi. U ichki tarzda dct.__contains__(key) ni chaqiradi.",
+   "dict da find(), contains(), __find__() metodlari yo‘q.",
+   "Javob: dct.__contains__(key)"
+  ]
+ },
+ {
+  "id": "python-kolleksiyalar-20",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Pythonda enumerate() funksiyasi nima vazifa bajaradi?",
+  "options": [
+   "Ketma-ketlik bo‘yicha yurib, (indeks, qiymat) juftliklarini beradi",
+   "Elementlar sonini qaytaradi",
+   "Ketma-ketlikni saralaydi",
+   "Indekslardan iborat list qaytaradi"
+  ],
+  "answer": 0,
+  "explanation": "enumerate → (indeks, qiymat).",
+  "solution": [
+   "for i, v in enumerate(['a', 'b']) → (0, 'a'), (1, 'b').",
+   "Ya’ni har bir element bilan birga uning indeksini ham beradi.",
+   "Javob: Ketma-ketlik bo‘yicha yurib, (indeks, qiymat) juftliklarini beradi"
+  ]
+ },
+ {
+  "id": "python-kolleksiyalar-21",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "[1, 2]",
+   "['a', 'b']",
+   "[(0, 'a'), (1, 'b')]",
+   "[(1, 'a'), (2, 'b')]"
+  ],
+  "answer": 3,
+  "explanation": "Indeks 1 dan boshlanadi.",
+  "solution": [
+   "enumerate(ketma-ketlik, start) — indeks start dan boshlanadi.",
+   "start = 1: (1, 'a'), (2, 'b').",
+   "Natija: [(1, 'a'), (2, 'b')]"
+  ],
+  "code": "print(list(enumerate('ab', 1)))"
+ },
+ {
+  "id": "python-kolleksiyalar-22",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "[1, 3, 5]",
+   "[1, 3]",
+   "[1, 2]",
+   "[2, 4, 6]"
+  ],
+  "answer": 0,
+  "explanation": "Har ikkinchisi: [1, 3, 5].",
+  "solution": [
+   "[::2] — boshidan oxirigacha, har 2-elementni olish.",
+   "Indekslar 0, 2, 4 → 1, 3, 5.",
+   "Natija: [1, 3, 5]"
+  ],
+  "code": "a = [1, 2, 3, 4, 5, 6]\nprint(a[::2])"
+ },
+ {
+  "id": "python-kolleksiyalar-23",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "Error",
+   "[1, 2, 3, 4] [1, 2, 3, 4]",
+   "[1, 2, 3] [1, 2, 3]",
+   "[1, 2, 3] [1, 2, 3, 4]"
+  ],
+  "answer": 3,
+  "explanation": "a[:] — nusxa, a o‘zgarmaydi.",
+  "solution": [
+   "a[:] — ro‘yxatning NUSXASINI yaratadi (yangi obyekt).",
+   "b ga qo‘shilgan element a ga ta’sir qilmaydi.",
+   "Natija: [1, 2, 3] [1, 2, 3, 4]"
+  ],
+  "code": "a = [1, 2, 3]\nb = a[:]\nb.append(4)\nprint(a, b)"
+ },
+ {
+  "id": "python-kolleksiyalar-24",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "{1, 4} {1, 2, 3, 4}",
+   "{2, 3} {2, 3}",
+   "{1, 2, 3, 4} {2, 3}",
+   "{2, 3} {1, 2, 3, 4}"
+  ],
+  "answer": 3,
+  "explanation": "& kesishma, | birlashma.",
+  "solution": [
+   "& — kesishma (ikkalasida bor): {2, 3}.",
+   "| — birlashma (birortasida bor): {1, 2, 3, 4}.",
+   "Natija: {2, 3} {1, 2, 3, 4}"
+  ],
+  "code": "a = {1, 2, 3}\nb = {2, 3, 4}\nprint(a & b, a | b)"
+ },
+ {
+  "id": "python-kolleksiyalar-25",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "{'x': 1, 'y': 2}",
+   "{'y': 2, 'x': 5}",
+   "{'x': 1, 'y': 2, 'x': 5}",
+   "{'x': 5, 'y': 2}"
+  ],
+  "answer": 3,
+  "explanation": "Kalit yangilanadi.",
+  "solution": [
+   "d['y'] = 2 — yangi kalit qo‘shiladi.",
+   "d['x'] = 5 — mavjud kalit qiymati yangilanadi (kalitlar takrorlanmaydi, tartib saqlanadi).",
+   "Natija: {'x': 5, 'y': 2}"
+  ],
+  "code": "d = {'x': 1}\nd['y'] = 2\nd['x'] = 5\nprint(d)"
+ },
+ {
+  "id": "python-kolleksiyalar-26",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "[8, 5, 2] [2, 5, 8]",
+   "[5, 2, 8] None",
+   "[2, 5, 8] [2, 5, 8]",
+   "[5, 2, 8] [2, 5, 8]"
+  ],
+  "answer": 3,
+  "explanation": "sorted() yangi ro‘yxat qaytaradi.",
+  "solution": [
+   "sorted() YANGI saralangan ro‘yxat qaytaradi, asl ro‘yxatni o‘zgartirmaydi.",
+   "a = [5, 2, 8] qoladi, b = [2, 5, 8].",
+   "Natija: [5, 2, 8] [2, 5, 8]"
+  ],
+  "code": "a = [5, 2, 8]\nb = sorted(a)\nprint(a, b)"
+ },
+ {
+  "id": "python-kolleksiyalar-27",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "None",
+   "[3, 2, 1]",
+   "Error",
+   "[1, 2, 3]"
+  ],
+  "answer": 0,
+  "explanation": "sort() None qaytaradi.",
+  "solution": [
+   "list.sort() ro‘yxatni joyida saralaydi va hech narsa qaytarmaydi.",
+   "Hech narsa qaytarmaydigan funksiya natijasi — None.",
+   "Natija: None"
+  ],
+  "code": "a = [1, 2, 3]\nprint(a.sort())"
+ },
+ {
+  "id": "python-kolleksiyalar-28",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "[9, 1, 2, 3]",
+   "[1, 2, 9, 3]",
+   "[1, 9, 2, 3]",
+   "[1, 9, 3]"
+  ],
+  "answer": 2,
+  "explanation": "1-o‘ringa 9 qo‘yiladi.",
+  "solution": [
+   "insert(i, x) — x ni i-indeksga qo‘yadi, qolganlar o‘ngga suriladi.",
+   "1-indeksga 9: [1, 9, 2, 3].",
+   "Natija: [1, 9, 2, 3]"
+  ],
+  "code": "a = [1, 2, 3]\na.insert(1, 9)\nprint(a)"
+ },
+ {
+  "id": "python-kolleksiyalar-29",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "3",
+   "KeyError",
+   "None",
+   "2"
+  ],
+  "answer": 3,
+  "explanation": "0 + 2 = 2.",
+  "solution": [
+   "get(kalit, standart) — kalit bo‘lmasa standart qiymatni qaytaradi (xato bermaydi): 0.",
+   "len(d) = 2.",
+   "Natija: 2"
+  ],
+  "code": "d = {'a': 1, 'b': 2}\nprint(d.get('c', 0) + len(d))"
+ },
+ {
+  "id": "python-kolleksiyalar-30",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "2",
+   "3",
+   "4",
+   "1"
+  ],
+  "answer": 1,
+  "explanation": "a[1] = [3, 4], [0] = 3.",
+  "solution": [
+   "a[1] — ikkinchi ichki ro‘yxat: [3, 4].",
+   "a[1][0] — uning birinchi elementi.",
+   "Natija: 3"
+  ],
+  "code": "a = [[1, 2], [3, 4]]\nprint(a[1][0])"
+ },
+ {
+  "id": "python-kolleksiyalar-31",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "2 3",
+   "3 2",
+   "2 2",
+   "1 3"
+  ],
+  "answer": 2,
+  "explanation": "count = 2, index = 2.",
+  "solution": [
+   "count(2) — 2 nechta marta uchraydi: 2 marta.",
+   "index(3) — birinchi 3 ning indeksi: 2.",
+   "Natija: 2 2"
+  ],
+  "code": "a = [1, 2, 3, 2, 1]\nprint(a.count(2), a.index(3))"
+ },
+ {
+  "id": "python-kolleksiyalar-32",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "Error",
+   "3",
+   "6",
+   "5"
+  ],
+  "answer": 3,
+  "explanation": "2 + 3 = 5.",
+  "solution": [
+   "Kortejni «ochish» (unpacking): a = 1, b = 2, c = 3.",
+   "b + c = 2 + 3.",
+   "Natija: 5"
+  ],
+  "code": "t = (1, 2, 3)\na, b, c = t\nprint(b + c)"
+ },
+ {
+  "id": "python-kolleksiyalar-33",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "[0, 1, 3, 4]",
+   "[0, 1, 2, 4]",
+   "[0, 1, 2, 3]",
+   "[0, 1, 2, 4, 3]"
+  ],
+  "answer": 1,
+  "explanation": "Qiymati 3 o‘chadi.",
+  "solution": [
+   "list(range(5)) = [0, 1, 2, 3, 4].",
+   "remove(3) — QIYMATI 3 bo‘lgan birinchi elementni o‘chiradi (indeks emas!).",
+   "Natija: [0, 1, 2, 4]"
+  ],
+  "code": "a = list(range(5))\na.remove(3)\nprint(a)"
+ },
+ {
+  "id": "python-kolleksiyalar-34",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "[20, 30, 40] 3",
+   "[10, 20, 30] 3",
+   "[10, 30, 40] 4",
+   "[10, 30, 40] 3"
+  ],
+  "answer": 3,
+  "explanation": "20 o‘chadi, uzunlik 3.",
+  "solution": [
+   "del a[1] — 1-indeksdagi elementni (20) o‘chiradi.",
+   "Ro‘yxat qisqaradi: [10, 30, 40], uzunligi 3.",
+   "Natija: [10, 30, 40] 3"
+  ],
+  "code": "a = [10, 20, 30, 40]\ndel a[1]\nprint(a, len(a))"
+ },
+ {
+  "id": "python-kolleksiyalar-35",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "['a', 'b', 'c'] abc",
+   "['a', 'b', 'c'] 6",
+   "['a', 'b', 'c'] 3",
+   "[1, 2, 3] 6"
+  ],
+  "answer": 1,
+  "explanation": "Kalitlar va qiymatlar yig‘indisi.",
+  "solution": [
+   "keys() — kalitlar: 'a', 'b', 'c'.",
+   "values() — qiymatlar: 1, 2, 3; yig‘indisi 6.",
+   "Natija: ['a', 'b', 'c'] 6"
+  ],
+  "code": "d = {'a': 1, 'b': 2, 'c': 3}\nprint(list(d.keys()), sum(d.values()))"
+ },
+ {
+  "id": "python-kolleksiyalar-36",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "2",
+   "3",
+   "5",
+   "4"
+  ],
+  "answer": 2,
+  "explanation": "3 + 2 = 5.",
+  "solution": [
+   "extend() boshqa ro‘yxatning HAR BIR elementini qo‘shadi (append esa butun ro‘yxatni bitta element qilib qo‘shardi).",
+   "3 + 2 = 5 ta element.",
+   "Natija: 5"
+  ],
+  "code": "a = [1, 2, 3]\na.extend([4, 5])\nprint(len(a))"
+ },
+ {
+  "id": "python-kolleksiyalar-37",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "{3, 4} {5}",
+   "{5} {1, 2}",
+   "{1, 2} {3, 4}",
+   "{1, 2} {5}"
+  ],
+  "answer": 3,
+  "explanation": "To‘plamlar ayirmasi.",
+  "solution": [
+   "a − b — a da bor, b da yo‘q: {1, 2}.",
+   "b − a — b da bor, a da yo‘q: {5}.",
+   "Natija: {1, 2} {5}"
+  ],
+  "code": "a = {1, 2, 3, 4}\nb = {3, 4, 5}\nprint(a - b, b - a)"
+ },
+ {
+  "id": "python-kolleksiyalar-38",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "[[1, 0], [0, 0]]",
+   "[[1, 1], [0, 0]]",
+   "Error",
+   "[[1, 0], [1, 0]]"
+  ],
+  "answer": 3,
+  "explanation": "Ikkala qator bitta obyekt.",
+  "solution": [
+   "[[0] * 2] * 2 — tashqi * ichki ro‘yxatni NUSXALAMAYDI, unga ikkita havola yaratadi.",
+   "Ya’ni a[0] va a[1] — bitta va o‘sha ro‘yxat.",
+   "a[0][0] = 1 ikkala «qatorga» ham ta’sir qiladi.",
+   "Natija: [[1, 0], [1, 0]]"
+  ],
+  "code": "a = [[0] * 2] * 2\na[0][0] = 1\nprint(a)"
+ },
+ {
+  "id": "python-kolleksiyalar-39",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "Error",
+   "[1, 9, 4, 5]",
+   "[1, 9, 3, 4, 5]",
+   "[1, 9, 9, 4, 5]"
+  ],
+  "answer": 1,
+  "explanation": "2 element o‘rniga 1 ta.",
+  "solution": [
+   "a[1:3] = 2 ta element (2 va 3). Ularning o‘rniga [9] — bitta element qo‘yiladi.",
+   "Kesishga o‘zlashtirish ro‘yxat uzunligini o‘zgartirishi mumkin.",
+   "Natija: [1, 9, 4, 5]"
+  ],
+  "code": "a = [1, 2, 3, 4, 5]\na[1:3] = [9]\nprint(a)"
+ },
+ {
+  "id": "python-kolleksiyalar-40",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "{'b': 1, 'a': 3, 'n': 2}",
+   "{'a': 3, 'b': 1, 'n': 2}",
+   "{'b': 1, 'a': 1, 'n': 1}",
+   "{'b': 1, 'a': 2, 'n': 2}"
+  ],
+  "answer": 0,
+  "explanation": "Harflar chastotasi.",
+  "solution": [
+   "Har bir harf uchun hisoblagich: yo‘q bo‘lsa 0 dan boshlanadi.",
+   "b — 1 marta, a — 3 marta, n — 2 marta. Kalitlar birinchi uchrash tartibida: b, a, n.",
+   "Natija: {'b': 1, 'a': 3, 'n': 2}"
+  ],
+  "code": "d = {}\nfor ch in 'banana':\n    d[ch] = d.get(ch, 0) + 1\nprint(d)"
+ },
+ {
+  "id": "python-kolleksiyalar-41",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "[3, 1, 2, 4, 5] [3, 1, 2, 4, 5]",
+   "[3, 1, 2, 4] [3, 1, 2, 4, 5]",
+   "[3, 1, 2, 5] [3, 1, 2, 5]",
+   "[3, 1, 2, 4] [3, 1, 2, 5]"
+  ],
+  "answer": 3,
+  "explanation": "a + [...] yangi obyekt yaratadi.",
+  "solution": [
+   "b = a — bitta ro‘yxat. a = a + [4] — YANGI ro‘yxat yaratib, a ni unga bog‘laydi; b eski ro‘yxatda qoladi.",
+   "b.append(5) — eski ro‘yxatga qo‘shadi: [3, 1, 2, 5]. a = [3, 1, 2, 4].",
+   "Natija: [3, 1, 2, 4] [3, 1, 2, 5]"
+  ],
+  "code": "a = [3, 1, 2]\nb = a\na = a + [4]\nb.append(5)\nprint(a, b)"
+ },
+ {
+  "id": "python-kolleksiyalar-42",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "[4]",
+   "[1, 2, 3, 4]",
+   "Error",
+   "[1, 2, 3]"
+  ],
+  "answer": 1,
+  "explanation": "Ro‘yxatda += joyida o‘zgartiradi.",
+  "solution": [
+   "Ro‘yxatlar uchun += joyida o‘zgartiradi (extend bilan bir xil), yangi obyekt yaratmaydi.",
+   "b ham o‘sha ro‘yxatga ishora qiladi.",
+   "Natija: [1, 2, 3, 4]"
+  ],
+  "code": "a = [1, 2, 3]\nb = a\na += [4]\nprint(b)"
+ },
+ {
+  "id": "python-kolleksiyalar-43",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "[1, 9, 25]",
+   "[0, 4, 16]",
+   "[1, 4, 9, 16, 25]",
+   "[1, 3, 5]"
+  ],
+  "answer": 0,
+  "explanation": "Toq sonlar kvadratlari.",
+  "solution": [
+   "range(6) = 0..5; toqlari: 1, 3, 5.",
+   "Ularning kvadratlari: 1, 9, 25.",
+   "Natija: [1, 9, 25]"
+  ],
+  "code": "print([x * x for x in range(6) if x % 2 == 1])"
+ },
+ {
+  "id": "python-kolleksiyalar-44",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "4 i",
+   "11 m",
+   "3 i",
+   "4 m"
+  ],
+  "answer": 0,
+  "explanation": "4 ta noyob harf, eng kichigi 'i'.",
+  "solution": [
+   "set('mississippi') — noyob harflar: m, i, s, p → 4 ta.",
+   "sorted(s) = ['i', 'm', 'p', 's'], birinchisi 'i'.",
+   "Natija: 4 i"
+  ],
+  "code": "s = set('mississippi')\nprint(len(s), sorted(s)[0])"
+ },
+ {
+  "id": "python-kolleksiyalar-45",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "[4, 6, 18, 16]",
+   "[1, 4, 9, 16]",
+   "[4, 6, 6, 4]",
+   "[4, 6, 36, 16]"
+  ],
+  "answer": 0,
+  "explanation": "O‘zgargan qiymatlar ishlatiladi: [4, 6, 18, 16].",
+  "solution": [
+   "Ro‘yxat sikl davomida o‘zgaradi — diqqat!",
+   "i=0: a[0] = 1·a[−1] = 1·4 = 4 → [4,2,3,4]. i=1: a[1] = 2·a[−2] = 2·3 = 6 → [4,6,3,4].",
+   "i=2: a[2] = 3·a[−3] = 3·6 = 18 → [4,6,18,4]. i=3: a[3] = 4·a[−4] = 4·4 = 16.",
+   "Natija: [4, 6, 18, 16]"
+  ],
+  "code": "a = [1, 2, 3, 4]\nfor i in range(len(a)):\n    a[i] = a[i] * a[-1 - i]\nprint(a)"
+ },
+ {
+  "id": "python-kolleksiyalar-46",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "4",
+   "KeyError",
+   "3",
+   "'b2'"
+  ],
+  "answer": 0,
+  "explanation": "2 + 2 = 4.",
+  "solution": [
+   "d.items() → (1, 'a'), (2, 'b'). Yangi lug‘atda kalit va qiymat almashtiriladi: {'a': 1, 'b': 2}.",
+   "d2['b'] = 2, len(d2) = 2.",
+   "Natija: 4"
+  ],
+  "code": "d = {1: 'a', 2: 'b'}\nd2 = {v: k for k, v in d.items()}\nprint(d2['b'] + len(d2))"
+ },
+ {
+  "id": "python-kolleksiyalar-47",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "Error",
+   "(1, 2, 3, 4)",
+   "(1, [2, 3])",
+   "(1, [2, 3, 4])"
+  ],
+  "answer": 3,
+  "explanation": "Kortej ichidagi list o‘zgaradi.",
+  "solution": [
+   "Kortej o‘zgarmas — lekin uning ICHIDAGI ro‘yxat o‘zgaruvchan!",
+   "a[1] — ro‘yxat, append() unga element qo‘shadi. Kortejning o‘zi (havolalar) o‘zgarmadi.",
+   "Natija: (1, [2, 3, 4])"
+  ],
+  "code": "a = (1, [2, 3])\na[1].append(4)\nprint(a)"
+ },
+ {
+  "id": "python-kolleksiyalar-48",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "8 5",
+   "3 3",
+   "1 8",
+   "5 3"
+  ],
+  "answer": 1,
+  "explanation": "a[1] va a[1]: 3 3.",
+  "solution": [
+   "a[3] = 1 → a[1] = 3.",
+   "a.index(8) = 2 → a[2 − 1] = a[1] = 3.",
+   "Natija: 3 3"
+  ],
+  "code": "a = [5, 3, 8, 1]\nprint(a[a[3]], a[a.index(8) - 1])"
+ },
+ {
+  "id": "python-kolleksiyalar-49",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "[[1, 2], [3, 4], [5, 6]]",
+   "[(1, 4), (2, 5), (3, 6)]",
+   "[[1, 2, 3], [4, 5, 6]]",
+   "[[1, 4], [2, 5], [3, 6]]"
+  ],
+  "answer": 3,
+  "explanation": "Transponirlash.",
+  "solution": [
+   "zip(*m) — matritsani transponirlaydi: ustunlarni qator qiladi.",
+   "Ustunlar: (1, 4), (2, 5), (3, 6). Har birini list ga aylantiramiz.",
+   "Natija: [[1, 4], [2, 5], [3, 6]]"
+  ],
+  "code": "m = [[1, 2, 3], [4, 5, 6]]\nprint([list(r) for r in zip(*m)])"
+ },
+ {
+  "id": "python-kolleksiyalar-50",
+  "unit": "python-kolleksiyalar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "IndexError",
+   "[5, 3, 1] [5, 4, 3]",
+   "[1, 3, 5] [5, 4, 3]",
+   "[5, 3, 1] [5, 4]"
+  ],
+  "answer": 1,
+  "explanation": "[5, 3, 1] va [5, 4, 3].",
+  "solution": [
+   "a[−1:−6:−2]: −1 (5), −3 (3), −5 (1) → [5, 3, 1].",
+   "a[10:1:−1]: boshlanish chegaradan katta → oxirgi elementdan boshlanadi: 5, 4, 3 (1-indeks kirmaydi).",
+   "Natija: [5, 3, 1] [5, 4, 3]"
+  ],
+  "code": "a = [1, 2, 3, 4, 5]\nprint(a[-1:-6:-2], a[10:1:-1])"
+ }
+]

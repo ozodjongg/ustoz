@@ -1,0 +1,1057 @@
+[
+ {
+  "id": "rekursiya-01",
+  "unit": "rekursiya",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "10",
+   "16",
+   "4",
+   "24"
+  ],
+  "answer": 3,
+  "explanation": "4! = 24.",
+  "solution": [
+   "Bu faktorial: f(n) = n · f(n−1), f(0) = 1.",
+   "f(4) = 4 · 3 · 2 · 1 · 1.",
+   "Natija: 24"
+  ],
+  "code": "def f(n):\n    if n == 0:\n        return 1\n    return n * f(n - 1)\nprint(f(4))"
+ },
+ {
+  "id": "rekursiya-02",
+  "unit": "rekursiya",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "5",
+   "10",
+   "15",
+   "120"
+  ],
+  "answer": 2,
+  "explanation": "1+…+5 = 15.",
+  "solution": [
+   "s(n) = n + s(n−1), s(0) = 0 → 1 dan n gacha yig‘indi.",
+   "5 + 4 + 3 + 2 + 1 + 0.",
+   "Natija: 15"
+  ],
+  "code": "def s(n):\n    if n == 0:\n        return 0\n    return n + s(n - 1)\nprint(s(5))"
+ },
+ {
+  "id": "rekursiya-03",
+  "unit": "rekursiya",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Rekursiya nima?",
+  "options": [
+   "Funksiyaning o‘zini o‘zi chaqirishi",
+   "Funksiyaning hech narsa qaytarmasligi",
+   "Siklning boshqa nomi",
+   "Xatolik turi"
+  ],
+  "answer": 0,
+  "explanation": "Rekursiya — o‘zini chaqirish.",
+  "solution": [
+   "Rekursiv funksiya — o‘z tanasida O‘ZINI chaqiradigan funksiya.",
+   "Masalan: f(n) = n · f(n − 1).",
+   "Javob: Funksiyaning o‘zini o‘zi chaqirishi"
+  ]
+ },
+ {
+  "id": "rekursiya-04",
+  "unit": "rekursiya",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Rekursiv funksiyada «to‘xtash sharti» (bazaviy holat) bo‘lmasa nima bo‘ladi?",
+  "options": [
+   "Funksiya 0 qaytaradi",
+   "Funksiya bir marta ishlaydi",
+   "Cheksiz chaqiruv va RecursionError",
+   "Hech narsa bo‘lmaydi"
+  ],
+  "answer": 2,
+  "explanation": "To‘xtash sharti shart.",
+  "solution": [
+   "Bazaviy holat — rekursiyani to‘xtatadigan shart (masalan, n == 0).",
+   "U bo‘lmasa funksiya o‘zini cheksiz chaqiradi. Python ~1000 chuqurlikdan keyin xato beradi.",
+   "Javob: Cheksiz chaqiruv va RecursionError"
+  ]
+ },
+ {
+  "id": "rekursiya-05",
+  "unit": "rekursiya",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "5",
+   "10",
+   "25",
+   "32"
+  ],
+  "answer": 3,
+  "explanation": "2⁵ = 32.",
+  "solution": [
+   "p(n) = 2 · p(n−1), p(0) = 1 → 2ⁿ.",
+   "2⁵.",
+   "Natija: 32"
+  ],
+  "code": "def p(n):\n    if n == 0:\n        return 1\n    return 2 * p(n - 1)\nprint(p(5))"
+ },
+ {
+  "id": "rekursiya-06",
+  "unit": "rekursiya",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "8",
+   "13",
+   "6",
+   "5"
+  ],
+  "answer": 0,
+  "explanation": "F(6) = 8.",
+  "solution": [
+   "Fibonachchi: f(0)=0, f(1)=1, keyingisi oldingi ikkitasi yig‘indisi.",
+   "0, 1, 1, 2, 3, 5, 8 — f(6) = 8.",
+   "Natija: 8"
+  ],
+  "code": "def f(n):\n    if n <= 1:\n        return n\n    return f(n - 1) + f(n - 2)\nprint(f(6))"
+ },
+ {
+  "id": "rekursiya-07",
+  "unit": "rekursiya",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "1 2 3",
+   "3 2 1",
+   "3",
+   "0 1 2 3"
+  ],
+  "answer": 1,
+  "explanation": "Chop etish rekursiyadan oldin: 3 2 1.",
+  "solution": [
+   "Avval chop etamiz, keyin o‘zimizni chaqiramiz.",
+   "f(3): 3 chiqadi → f(2): 2 → f(1): 1 → f(0): hech narsa.",
+   "Natija: 3 2 1"
+  ],
+  "code": "def f(n):\n    if n > 0:\n        print(n, end=' ')\n        f(n - 1)\nf(3)"
+ },
+ {
+  "id": "rekursiya-08",
+  "unit": "rekursiya",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "3 2 1",
+   "3",
+   "0 1 2 3",
+   "1 2 3"
+  ],
+  "answer": 3,
+  "explanation": "Chop etish rekursiyadan keyin: 1 2 3.",
+  "solution": [
+   "Avval o‘zimizni chaqiramiz, chop etish keyin — qaytishda.",
+   "f(3) → f(2) → f(1) → f(0) to‘xtaydi; qaytishda 1, keyin 2, keyin 3 chiqadi.",
+   "Natija: 1 2 3"
+  ],
+  "code": "def f(n):\n    if n > 0:\n        f(n - 1)\n        print(n, end=' ')\nf(3)"
+ },
+ {
+  "id": "rekursiya-09",
+  "unit": "rekursiya",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "4",
+   "15",
+   "1",
+   "4821"
+  ],
+  "answer": 0,
+  "explanation": "Birinchi raqam: 4.",
+  "solution": [
+   "Har qadamda oxirgi raqam tashlanadi: 4821 → 482 → 48 → 4.",
+   "4 < 10 → qaytariladi.",
+   "Natija: 4"
+  ],
+  "code": "def f(n):\n    if n < 10:\n        return n\n    return f(n // 10)\nprint(f(4821))"
+ },
+ {
+  "id": "rekursiya-10",
+  "unit": "rekursiya",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "5",
+   "10",
+   "7",
+   "9"
+  ],
+  "answer": 3,
+  "explanation": "1, 3, 5, 7, 9.",
+  "solution": [
+   "f(1) = 1, keyin har qadamda +2: f(2) = 3, f(3) = 5, f(4) = 7.",
+   "f(5) = 7 + 2.",
+   "Natija: 9"
+  ],
+  "code": "def f(n):\n    if n == 1:\n        return 1\n    return f(n - 1) + 2\nprint(f(5))"
+ },
+ {
+  "id": "rekursiya-11",
+  "unit": "rekursiya",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "3",
+   "18",
+   "2",
+   "6"
+  ],
+  "answer": 3,
+  "explanation": "EKUB(48, 18) = 6.",
+  "solution": [
+   "Bu Yevklid algoritmi (EKUB): g(a, b) = g(b, a mod b).",
+   "g(48, 18) → g(18, 12) → g(12, 6) → g(6, 0) = 6.",
+   "Natija: 6"
+  ],
+  "code": "def g(a, b):\n    if b == 0:\n        return a\n    return g(b, a % b)\nprint(g(48, 18))"
+ },
+ {
+  "id": "rekursiya-12",
+  "unit": "rekursiya",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "1",
+   "0",
+   "8",
+   "9"
+  ],
+  "answer": 3,
+  "explanation": "Satr uzunligi: 9.",
+  "solution": [
+   "Har qadamda birinchi belgi tashlanadi va 1 qo‘shiladi — bu satr uzunligi.",
+   "'rekursiya' — 9 ta belgi.",
+   "Natija: 9"
+  ],
+  "code": "def f(s):\n    if s == '':\n        return 0\n    return 1 + f(s[1:])\nprint(f('rekursiya'))"
+ },
+ {
+  "id": "rekursiya-13",
+  "unit": "rekursiya",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "2024",
+   "4",
+   "24",
+   "8"
+  ],
+  "answer": 3,
+  "explanation": "2+0+2+4 = 8.",
+  "solution": [
+   "Oxirgi raqam + qolgan qismning raqamlar yig‘indisi.",
+   "4 + 2 + 0 + 2.",
+   "Natija: 8"
+  ],
+  "code": "def f(n):\n    if n == 0:\n        return 0\n    return n % 10 + f(n // 10)\nprint(f(2024))"
+ },
+ {
+  "id": "rekursiya-14",
+  "unit": "rekursiya",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "3",
+   "14",
+   "4",
+   "7"
+  ],
+  "answer": 2,
+  "explanation": "7, 5, 3, 1 → 4.",
+  "solution": [
+   "n: 7 → 5 → 3 → 1 → −1 (to‘xtaydi). Har qadamda +1.",
+   "4 ta qadam.",
+   "Natija: 4"
+  ],
+  "code": "def f(n):\n    if n <= 0:\n        return 0\n    return 1 + f(n - 2)\nprint(f(7))"
+ },
+ {
+  "id": "rekursiya-15",
+  "unit": "rekursiya",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "3",
+   "9",
+   "21",
+   "7"
+  ],
+  "answer": 1,
+  "explanation": "Maksimum 9.",
+  "solution": [
+   "Ro‘yxat maksimumi: birinchi element va qolganlarining maksimumidan kattasi.",
+   "m([7]) = 7; m([2,7]) = 7; m([9,2,7]) = 9; m([3,9,2,7]) = 9.",
+   "Natija: 9"
+  ],
+  "code": "def m(a):\n    if len(a) == 1:\n        return a[0]\n    return max(a[0], m(a[1:]))\nprint(m([3, 9, 2, 7]))"
+ },
+ {
+  "id": "rekursiya-16",
+  "unit": "rekursiya",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "1010",
+   "0101",
+   "10",
+   "5"
+  ],
+  "answer": 0,
+  "explanation": "10 = 1010₂.",
+  "solution": [
+   "Bu sonni ikkilikka o‘tkazish: f(n // 2) + oxirgi bit.",
+   "10 → 5 → 2 → 1 → 0. Bitlar (pastdan): 1, 0, 1, 0.",
+   "Natija: 1010"
+  ],
+  "code": "def f(n):\n    if n == 0:\n        return ''\n    return f(n // 2) + str(n % 2)\nprint(f(10))"
+ },
+ {
+  "id": "rekursiya-17",
+  "unit": "rekursiya",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "21",
+   "114",
+   "100",
+   "49"
+  ],
+  "answer": 1,
+  "explanation": "Jadval: 0,1,2,4,9,21,49,114.",
+  "solution": [
+   "Bazaviy: f(0) = 0, f(1) = 1, f(2) = 2. Qolganini pastdan yuqoriga jadval bilan hisoblaymiz.",
+   "f(3) = 3·2 − 2·1 + 0 = 4. f(4) = 3·4 − 2·2 + 1 = 9. f(5) = 3·9 − 2·4 + 2 = 21.",
+   "f(6) = 3·21 − 2·9 + 4 = 49. f(7) = 3·49 − 2·21 + 9 = 147 − 42 + 9.",
+   "Natija: 114"
+  ],
+  "code": "def f(x):\n    if x < 3:\n        return x\n    return 3*f(x-1) - 2*f(x-2) + f(x-3)\nprint(f(7))"
+ },
+ {
+  "id": "rekursiya-18",
+  "unit": "rekursiya",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "14",
+   "11",
+   "3",
+   "17"
+  ],
+  "answer": 0,
+  "explanation": "f(7) = 11, g(4) = 3 → 14.",
+  "solution": [
+   "Bazaviy: f(x) = x − 1 (x ≤ 4) → f(1..4) = 0, 1, 2, 3. g(x) = 0 (x ≤ 2).",
+   "g(3) = f(3) − g(0) = 2. g(4) = f(4) − g(1) = 3. f(5) = g(4) + f(3) = 3 + 2 = 5. g(5) = f(5) − g(2) = 5.",
+   "f(6) = g(5) + f(4) = 5 + 3 = 8. g(6) = f(6) − g(3) = 8 − 2 = 6. f(7) = g(6) + f(5) = 6 + 5 = 11.",
+   "f(7) + g(4) = 11 + 3 = 14"
+  ],
+  "code": "def f(x):\n    if x <= 4: return x - 1\n    else: return g(x - 1) + f(x - 2)\ndef g(x):\n    if x <= 2: return 0\n    else: return f(x) - g(x - 3)\nprint(f(7) + g(4))"
+ },
+ {
+  "id": "rekursiya-19",
+  "unit": "rekursiya",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "8",
+   "7",
+   "16",
+   "9"
+  ],
+  "answer": 0,
+  "explanation": "f(5) = 1, g(8) = 7 → 8.",
+  "solution": [
+   "Bazaviy: f(1) = 0, f(2) = 1; g(1..3) = 0. Pastdan hisoblaymiz.",
+   "f(3) = 2g(1) + f(2) = 1. f(4) = 2g(2) + f(3) = 1. f(5) = 2g(3) + f(4) = 1. g(4) = f(4) − g(2) = 1. g(5) = f(5) − g(3) = 1.",
+   "f(6) = 2g(4) + f(5) = 3. g(6) = f(6) − g(4) = 2. f(7) = 2g(5) + f(6) = 5. f(8) = 2g(6) + f(7) = 9. g(8) = f(8) − g(6) = 7.",
+   "f(5) + g(8) = 1 + 7 = 8"
+  ],
+  "code": "def f(x):\n    if x <= 2: return x - 1\n    else: return 2*g(x-2) + f(x-1)\ndef g(x):\n    if x <= 3: return 0\n    else: return f(x) - g(x-2)\nprint(f(5) + g(8))"
+ },
+ {
+  "id": "rekursiya-20",
+  "unit": "rekursiya",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "5",
+   "15",
+   "8",
+   "9"
+  ],
+  "answer": 1,
+  "explanation": "fib(5) uchun 15 ta chaqiruv.",
+  "solution": [
+   "c — funksiya necha marta chaqirilganini sanaydi. C(n) = 1 + C(n−1) + C(n−2), C(0) = C(1) = 1.",
+   "C(2) = 3, C(3) = 5, C(4) = 9, C(5) = 1 + 9 + 5.",
+   "Natija: 15"
+  ],
+  "code": "c = 0\ndef f(n):\n    global c\n    c += 1\n    if n <= 1:\n        return n\n    return f(n - 1) + f(n - 2)\nf(5)\nprint(c)"
+ },
+ {
+  "id": "rekursiya-21",
+  "unit": "rekursiya",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "dcba",
+   "a",
+   "bcda",
+   "abcd"
+  ],
+  "answer": 0,
+  "explanation": "Teskari: 'dcba'.",
+  "solution": [
+   "f(s) = f(qolgani) + birinchi belgi — satrni teskari aylantiradi.",
+   "f('d') = 'd'; f('cd') = 'dc'; f('bcd') = 'dcb'; f('abcd') = 'dcba'.",
+   "Natija: dcba"
+  ],
+  "code": "def f(s):\n    if len(s) <= 1:\n        return s\n    return f(s[1:]) + s[0]\nprint(f('abcd'))"
+ },
+ {
+  "id": "rekursiya-22",
+  "unit": "rekursiya",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "12",
+   "64",
+   "63",
+   "32"
+  ],
+  "answer": 2,
+  "explanation": "2⁶ − 1 = 63.",
+  "solution": [
+   "Bu Xanoy minorasi uchun yurishlar soni: h(n) = 2·h(n−1) + 1 = 2ⁿ − 1.",
+   "h(1)=1, h(2)=3, h(3)=7, h(4)=15, h(5)=31, h(6)=63.",
+   "Natija: 63"
+  ],
+  "code": "def h(n):\n    if n == 0:\n        return 0\n    return 2 * h(n - 1) + 1\nprint(h(6))"
+ },
+ {
+  "id": "rekursiya-23",
+  "unit": "rekursiya",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "11",
+   "7",
+   "28",
+   "47"
+  ],
+  "answer": 2,
+  "explanation": "7·4 = 28.",
+  "solution": [
+   "f(a, b) = a + f(a, b−1) — a ni b marta qo‘shish, ya’ni ko‘paytirish.",
+   "7 + 7 + 7 + 7.",
+   "Natija: 28"
+  ],
+  "code": "def f(a, b):\n    if b == 0:\n        return 0\n    return a + f(a, b - 1)\nprint(f(7, 4))"
+ },
+ {
+  "id": "rekursiya-24",
+  "unit": "rekursiya",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "6",
+   "3",
+   "8",
+   "16"
+  ],
+  "answer": 2,
+  "explanation": "8 qadam.",
+  "solution": [
+   "Kollats ketma-ketligi: juft → n/2, toq → 3n+1. Qadamlar sonini sanaymiz.",
+   "6 → 3 → 10 → 5 → 16 → 8 → 4 → 2 → 1.",
+   "Qadamlar: 8"
+  ],
+  "code": "def f(n):\n    if n == 1:\n        return 0\n    if n % 2 == 0:\n        return 1 + f(n // 2)\n    return 1 + f(3 * n + 1)\nprint(f(6))"
+ },
+ {
+  "id": "rekursiya-25",
+  "unit": "rekursiya",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "7",
+   "4",
+   "12",
+   "5"
+  ],
+  "answer": 0,
+  "explanation": "f(6) + f(4) = 7.",
+  "solution": [
+   "f(0) = f(1) = 1.",
+   "f(2) = f(1)+f(0) = 2. f(3) = f(1)+f(1) = 2. f(4) = f(2)+f(1) = 3. f(6) = f(3)+f(2) = 4.",
+   "f(12) = f(6) + f(4) = 4 + 3",
+   "Natija: 7"
+  ],
+  "code": "def f(n):\n    if n < 2:\n        return 1\n    return f(n // 2) + f(n // 3)\nprint(f(12))"
+ },
+ {
+  "id": "rekursiya-26",
+  "unit": "rekursiya",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "True True",
+   "False False",
+   "True False",
+   "False True"
+  ],
+  "answer": 2,
+  "explanation": "'kiyik' palindrom, 'olma' emas.",
+  "solution": [
+   "p — palindrom tekshiruvi: chetki belgilar teng va o‘rtasi ham palindrom.",
+   "'kiyik': k=k, i=i, 'y' → True. 'olma': o ≠ a → False.",
+   "Natija: True False"
+  ],
+  "code": "def p(s):\n    if len(s) < 2:\n        return True\n    return s[0] == s[-1] and p(s[1:-1])\nprint(p('kiyik'), p('olma'))"
+ },
+ {
+  "id": "rekursiya-27",
+  "unit": "rekursiya",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "6",
+   "100",
+   "7",
+   "50"
+  ],
+  "answer": 2,
+  "explanation": "100 = 1100100₂ — 7 xona.",
+  "solution": [
+   "n har qadamda 2 ga bo‘linadi, d — qadamlar soni.",
+   "100 → 50 → 25 → 12 → 6 → 3 → 1 → 0: 7 qadam.",
+   "Natija: 7 (100 ning ikkilik yozuvidagi xonalar soni)"
+  ],
+  "code": "def f(n, d=0):\n    if n == 0:\n        return d\n    return f(n // 2, d + 1)\nprint(f(100))"
+ },
+ {
+  "id": "rekursiya-28",
+  "unit": "rekursiya",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "8",
+   "7",
+   "13",
+   "5"
+  ],
+  "answer": 0,
+  "explanation": "Jadval: 1,2,3,5,8.",
+  "solution": [
+   "f(n ≤ 0) = 0. f(1) = f(0)+f(−2)+1 = 1. f(2) = f(1)+f(−1)+1 = 2. f(3) = f(2)+f(0)+1 = 3.",
+   "f(4) = f(3)+f(1)+1 = 5. f(5) = f(4)+f(2)+1 = 5 + 2 + 1.",
+   "Natija: 8"
+  ],
+  "code": "def f(n):\n    if n <= 0:\n        return 0\n    return f(n - 1) + f(n - 3) + 1\nprint(f(5))"
+ },
+ {
+  "id": "rekursiya-29",
+  "unit": "rekursiya",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "35",
+   "2",
+   "5",
+   "3"
+  ],
+  "answer": 3,
+  "explanation": "3 ta toq son.",
+  "solution": [
+   "lst[0] % 2 — toq bo‘lsa 1, juft bo‘lsa 0. Demak f toq elementlarni sanaydi.",
+   "Toqlar: 3, 7, 11.",
+   "Natija: 3"
+  ],
+  "code": "def f(lst):\n    if not lst:\n        return 0\n    return (lst[0] % 2) + f(lst[1:])\nprint(f([3, 4, 7, 10, 11]))"
+ },
+ {
+  "id": "rekursiya-30",
+  "unit": "rekursiya",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "10",
+   "16",
+   "30",
+   "100"
+  ],
+  "answer": 2,
+  "explanation": "1+4+9+16 = 30.",
+  "solution": [
+   "f(n) = 1² + 2² + … + n².",
+   "1 + 4 + 9 + 16.",
+   "Natija: 30"
+  ],
+  "code": "def f(n):\n    if n == 0:\n        return 0\n    return f(n - 1) + n * n\nprint(f(4))"
+ },
+ {
+  "id": "rekursiya-31",
+  "unit": "rekursiya",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "5",
+   "10",
+   "15",
+   "20"
+  ],
+  "answer": 1,
+  "explanation": "C(5,2) = 10.",
+  "solution": [
+   "Bu Paskal uchburchagi — kombinatsiyalar soni C(n, k).",
+   "C(5, 2) = 5·4/2.",
+   "Natija: 10"
+  ],
+  "code": "def b(n, k):\n    if k == 0 or k == n:\n        return 1\n    return b(n - 1, k - 1) + b(n - 1, k)\nprint(b(5, 2))"
+ },
+ {
+  "id": "rekursiya-32",
+  "unit": "rekursiya",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "3",
+   "1",
+   "729",
+   "0"
+  ],
+  "answer": 1,
+  "explanation": "3⁶ mod 7 = 1.",
+  "solution": [
+   "f(n) = 3ⁿ mod 7 (har qadamda qoldiq olinadi).",
+   "3¹=3, 3²=9→2, 2·3=6, 6·3=18→4, 4·3=12→5, 5·3=15→1.",
+   "Natija: 1"
+  ],
+  "code": "def f(n):\n    if n == 0:\n        return 1\n    return f(n - 1) * 3 % 7\nprint(f(6))"
+ },
+ {
+  "id": "rekursiya-33",
+  "unit": "rekursiya",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "11",
+   "30",
+   "36",
+   "21"
+  ],
+  "answer": 2,
+  "explanation": "Birinchi 6 ta toq son yig‘indisi = 36.",
+  "solution": [
+   "f(n) = f(n−1) + (2n − 1): har qadamda navbatdagi toq son qo‘shiladi.",
+   "1 + 3 + 5 + 7 + 9 + 11 = n² = 6².",
+   "Natija: 36"
+  ],
+  "code": "def f(n):\n    if n == 1:\n        return 1\n    return f(n - 1) + 2 * n - 1\nprint(f(6))"
+ },
+ {
+  "id": "rekursiya-34",
+  "unit": "rekursiya",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "11",
+   "9875",
+   "2",
+   "29"
+  ],
+  "answer": 2,
+  "explanation": "9875 → 29 → 11 → 2.",
+  "solution": [
+   "Raqamlar yig‘indisini bir xonali son qolguncha takrorlaymiz (raqamli ildiz).",
+   "9 + 8 + 7 + 5 = 29 → 2 + 9 = 11 → 1 + 1 = 2.",
+   "Natija: 2"
+  ],
+  "code": "def f(n):\n    if n < 10:\n        return n\n    return f(sum(int(c) for c in str(n)))\nprint(f(9875))"
+ },
+ {
+  "id": "rekursiya-35",
+  "unit": "rekursiya",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "tamom",
+   "100",
+   "None",
+   "0"
+  ],
+  "answer": 0,
+  "explanation": "Oxirgi qiymat 'tamom' yuqoriga uzatiladi.",
+  "solution": [
+   "f(100) → f(99) → … → f(0) = 'tamom'. Har qadamda shu qiymat qaytariladi.",
+   "Chuqurlik 101 — Python chegarasidan (≈1000) ancha kam.",
+   "Natija: tamom"
+  ],
+  "code": "def f(n):\n    if n == 0:\n        return 'tamom'\n    return f(n - 1)\nprint(f(100))"
+ },
+ {
+  "id": "rekursiya-36",
+  "unit": "rekursiya",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "31",
+   "43",
+   "13",
+   "64"
+  ],
+  "answer": 1,
+  "explanation": "Jadval: 1,1,3,5,11,21,43.",
+  "solution": [
+   "f(0) = f(1) = 1. f(2) = 1 + 2 = 3. f(3) = 3 + 2 = 5. f(4) = 5 + 6 = 11.",
+   "f(5) = 11 + 10 = 21. f(6) = 21 + 22.",
+   "Natija: 43"
+  ],
+  "code": "def f(n):\n    if n <= 1:\n        return 1\n    return f(n - 1) + f(n - 2) * 2\nprint(f(6))"
+ },
+ {
+  "id": "rekursiya-37",
+  "unit": "rekursiya",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "[6, 4, 2]",
+   "[2, 4, 6]",
+   "[3, 2, 1]",
+   "[1, 2, 3, 1, 2, 3]"
+  ],
+  "answer": 0,
+  "explanation": "Teskari tartibda ikkilangan: [6, 4, 2].",
+  "solution": [
+   "Har bir element 2 ga ko‘paytiriladi, lekin qolganning natijasidan KEYIN qo‘shiladi — tartib teskari bo‘ladi.",
+   "f([3]) = [6]; f([2,3]) = [6, 4]; f([1,2,3]) = [6, 4, 2].",
+   "Natija: [6, 4, 2]"
+  ],
+  "code": "def f(lst):\n    if len(lst) == 0:\n        return []\n    return f(lst[1:]) + [lst[0] * 2]\nprint(f([1, 2, 3]))"
+ },
+ {
+  "id": "rekursiya-38",
+  "unit": "rekursiya",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "4",
+   "5",
+   "7",
+   "6"
+  ],
+  "answer": 2,
+  "explanation": "A(2, n) = 2n + 3 → 7.",
+  "solution": [
+   "Akkerman funksiyasi. Ma’lum formulalar: A(1, n) = n + 2, A(2, n) = 2n + 3.",
+   "Tekshiramiz: A(2, 0) = A(1, 1) = 3; A(2, 1) = A(1, A(2,0)) = A(1, 3) = 5; A(2, 2) = A(1, 5) = 7.",
+   "Natija: 7"
+  ],
+  "code": "def A(m, n):\n    if m == 0:\n        return n + 1\n    if n == 0:\n        return A(m - 1, 1)\n    return A(m - 1, A(m, n - 1))\nprint(A(2, 2))"
+ },
+ {
+  "id": "rekursiya-39",
+  "unit": "rekursiya",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "21",
+   "24",
+   "57",
+   "44"
+  ],
+  "answer": 2,
+  "explanation": "Tribonachchi: …, 17, 31, 57.",
+  "solution": [
+   "Bazaviy: f(n ≤ 2) = 1 (f(0), f(1), f(2) = 1).",
+   "f(3) = 3, f(4) = 1+1+3 = 5, f(5) = 3+5+1 = 9, f(6) = 9+5+3 = 17.",
+   "f(7) = 17+9+5 = 31, f(8) = 31+17+9.",
+   "Natija: 57"
+  ],
+  "code": "def f(n):\n    if n <= 2:\n        return 1\n    return f(n - 1) + f(n - 2) + f(n - 3)\nprint(f(8))"
+ },
+ {
+  "id": "rekursiya-40",
+  "unit": "rekursiya",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "4 2 1",
+   "4 2 1 1 2 1 1",
+   "4 2 2 1 1",
+   "1 1 2 1 1 2 4"
+  ],
+  "answer": 1,
+  "explanation": "Daraxt bo‘yicha chuqurlikka: 4 2 1 1 2 1 1.",
+  "solution": [
+   "f(4): 4 chiqadi, keyin f(2) ikki marta.",
+   "Har f(2): 2 chiqadi, keyin f(1) ikki marta (1 1).",
+   "Tartib: 4 | 2 1 1 | 2 1 1",
+   "Natija: 4 2 1 1 2 1 1"
+  ],
+  "code": "def f(n):\n    print(n, end=' ')\n    if n > 1:\n        f(n // 2)\n        f(n // 2)\nf(4)"
+ },
+ {
+  "id": "rekursiya-41",
+  "unit": "rekursiya",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "30",
+   "514229",
+   "832040",
+   "1346269"
+  ],
+  "answer": 2,
+  "explanation": "F(30) = 832040.",
+  "solution": [
+   "Bu memoizatsiyali Fibonachchi — har qiymat bir marta hisoblanadi.",
+   "F(20) = 6765, F(25) = 75025, F(30) = 832040.",
+   "Natija: 832040"
+  ],
+  "code": "memo = {}\ndef f(n):\n    if n in memo:\n        return memo[n]\n    if n < 2:\n        return n\n    memo[n] = f(n - 1) + f(n - 2)\n    return memo[n]\nprint(f(30))"
+ },
+ {
+  "id": "rekursiya-42",
+  "unit": "rekursiya",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "24",
+   "16",
+   "4",
+   "8"
+  ],
+  "answer": 1,
+  "explanation": "2⁴ = 16 ta qism to‘plam.",
+  "solution": [
+   "f(n) — {1..n} ning barcha qism to‘plamlari. Har qadamda ro‘yxat 2 marta kattalashadi.",
+   "len(f(0)) = 1, keyin 2, 4, 8, 16.",
+   "Natija: 16 (= 2⁴)"
+  ],
+  "code": "def f(n):\n    if n == 0:\n        return [[]]\n    r = f(n - 1)\n    return r + [x + [n] for x in r]\nprint(len(f(4)))"
+ },
+ {
+  "id": "rekursiya-43",
+  "unit": "rekursiya",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "8 8",
+   "7 1",
+   "255 256",
+   "8 1"
+  ],
+  "answer": 3,
+  "explanation": "popcount: 8 va 1.",
+  "solution": [
+   "n & 1 — oxirgi bit; n >> 1 — oxirgi bitni tashlash. f — ikkilik yozuvdagi 1 lar soni.",
+   "255 = 11111111₂ → 8 ta. 256 = 100000000₂ → 1 ta.",
+   "Natija: 8 1"
+  ],
+  "code": "def f(n):\n    if n == 0:\n        return 0\n    return (n & 1) + f(n >> 1)\nprint(f(255), f(256))"
+ },
+ {
+  "id": "rekursiya-44",
+  "unit": "rekursiya",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "16",
+   "6",
+   "13",
+   "8"
+  ],
+  "answer": 3,
+  "explanation": "Pastdan: f(3)=2, f(6)=4, f(12)=8, f(13)=8.",
+  "solution": [
+   "13 toq → f(12). 12 juft → f(6)·2. 6 juft → f(3)·2. 3 toq → f(2) = 2.",
+   "f(3) = 2, f(6) = 4, f(12) = 8, f(13) = 8.",
+   "Natija: 8"
+  ],
+  "code": "def f(n):\n    if n < 3:\n        return n\n    return f(n - 1) if n % 2 else f(n // 2) * 2\nprint(f(13))"
+ },
+ {
+  "id": "rekursiya-45",
+  "unit": "rekursiya",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "120",
+   "25",
+   "42",
+   "14"
+  ],
+  "answer": 2,
+  "explanation": "Katalan soni C₅ = 42.",
+  "solution": [
+   "Bu Katalan sonlari: g(n) = Σ g(i)·g(n−1−i).",
+   "g(0)=1, g(1)=1, g(2)=2, g(3)=5, g(4)=14, g(5)=1·14+1·5+2·2+5·1+14·1.",
+   "Natija: 42"
+  ],
+  "code": "def g(n):\n    if n <= 1:\n        return 1\n    return sum(g(i) * g(n - 1 - i) for i in range(n))\nprint(g(5))"
+ },
+ {
+  "id": "rekursiya-46",
+  "unit": "rekursiya",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "6",
+   "4",
+   "36",
+   "12"
+  ],
+  "answer": 3,
+  "explanation": "EKUB(84, 36) = 12.",
+  "solution": [
+   "Ayirish orqali EKUB: kattasidan kichigini ayiramiz.",
+   "(84, 36) → (48, 36) → (12, 36) → (12, 24) → (12, 12).",
+   "Natija: 12"
+  ],
+  "code": "def f(a, b):\n    if a == b:\n        return a\n    if a > b:\n        return f(a - b, b)\n    return f(a, b - a)\nprint(f(84, 36))"
+ },
+ {
+  "id": "rekursiya-47",
+  "unit": "rekursiya",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "1024",
+   "100",
+   "512",
+   "20"
+  ],
+  "answer": 0,
+  "explanation": "2¹⁰ = 1024.",
+  "solution": [
+   "Tez darajaga ko‘tarish: 2ⁿ ni hisoblaydi (juftda kvadrat, toqda ×2).",
+   "f(10) = f(5)² ; f(5) = 2·f(4) ; f(4) = f(2)² ; f(2) = f(1)² ; f(1) = 2·f(0) = 2.",
+   "f(2) = 4, f(4) = 16, f(5) = 32, f(10) = 1024.",
+   "Natija: 1024"
+  ],
+  "code": "def f(n):\n    if n == 0:\n        return 1\n    if n % 2 == 0:\n        h = f(n // 2)\n        return h * h\n    return 2 * f(n - 1)\nprint(f(10))"
+ },
+ {
+  "id": "rekursiya-48",
+  "unit": "rekursiya",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "6",
+   "3",
+   "9",
+   "12"
+  ],
+  "answer": 3,
+  "explanation": "2 + 4 + 6 = 12.",
+  "solution": [
+   "'a' turgan o‘rinlarning (1 dan sanalgan) tartib raqamlari yig‘indisi.",
+   "b-a-n-a-n-a: 'a' lar 2-, 4-, 6-o‘rinlarda.",
+   "2 + 4 + 6 = 12"
+  ],
+  "code": "def f(s, k=0):\n    if k == len(s):\n        return 0\n    return (s[k] == 'a') * (k + 1) + f(s, k + 1)\nprint(f('banana'))"
+ },
+ {
+  "id": "rekursiya-49",
+  "unit": "rekursiya",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "4",
+   "11",
+   "10",
+   "13"
+  ],
+  "answer": 3,
+  "explanation": "3, 13, 23 va 30–39: 13 ta.",
+  "solution": [
+   "f(n) — 1 dan n gacha bo‘lgan, yozuvida 3 raqami bor sonlar soni.",
+   "3, 13, 23, 30..39 (10 ta) → 3 + 10 = 13.",
+   "Natija: 13"
+  ],
+  "code": "def f(n):\n    if n == 0:\n        return 0\n    return f(n - 1) + (1 if '3' in str(n) else 0)\nprint(f(40))"
+ },
+ {
+  "id": "rekursiya-50",
+  "unit": "rekursiya",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "LL RR",
+   "LL LR RL RR",
+   "LR RL",
+   "L R LL LR"
+  ],
+  "answer": 1,
+  "explanation": "Barcha 2 ta harfli yo‘llar.",
+  "solution": [
+   "Har qadamda avval 'L', keyin 'R' tarmog‘iga boriladi — barcha uzunligi 2 bo‘lgan yo‘llar.",
+   "Tartib: LL, LR, RL, RR.",
+   "Natija: LL LR RL RR"
+  ],
+  "code": "def walk(n, path=''):\n    if n == 0:\n        print(path, end=' ')\n        return\n    walk(n - 1, path + 'L')\n    walk(n - 1, path + 'R')\nwalk(2)"
+ }
+]

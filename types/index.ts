@@ -1,53 +1,61 @@
 export type Difficulty = 'easy' | 'medium' | 'hard';
 
-export type GeneratedQuestion = {
+export type Question = {
   id: string;
   unit: string;
   difficulty: Difficulty;
   points: number;
   prompt: string;
+  code?: string;
   options: string[];
   answer: number;
   explanation: string;
+  solution: string[];
+};
+
+export type LessonTable = { head: string[]; rows: string[][] };
+
+export type LessonSection = {
+  title: string;
+  text?: string[];
+  table?: LessonTable;
+  code?: string;
+  note?: string;
 };
 
 export type Lesson = {
-  intro: string;
-  keyIdeas: string[];
-  steps: string[];
-  examples: string[];
+  hook: { title: string; text: string };
+  sections: LessonSection[];
+  examples: Array<{ title: string; steps: string[]; answer: string }>;
   pitfalls: string[];
-  tips: string[];
+  remember: string[];
+  glossary: Array<{ term: string; meaning: string }>;
 };
 
-export type Unit = {
+export type SourceQuestion = {
+  grade: number;
+  number: number;
+  points: number;
+  text: string;
+};
+
+export type Topic = {
   slug: string;
+  order: number;
+  icon: string;
   title: string;
   short: string;
-  lesson: Lesson;
-  question_bank_file: string;
   question_count: number;
-  source_questions: Array<{
-    grade: number;
-    question: number;
-    points: number;
-    answer: string;
-    unit: string;
-    summary: string;
-  }>;
+  sources: SourceQuestion[];
+  lesson: Lesson;
+  ai: { subtopics: string[]; mistakes: string[]; rules: string[] };
 };
 
-export type UnitFile = {
+export type TopicsFile = {
   title: string;
   description: string;
-  scoring: {
-    questions_1_10: number;
-    questions_11_20: number;
-    questions_21_30: number;
-    max_score: number;
-    default_time_minutes: number;
-  };
-  units: Unit[];
+  scoring: { easy: number; medium: number; hard: number; max_score: number; default_time_minutes: number };
+  topics: Topic[];
 };
 
 export type MistakeStats = Record<string, {
@@ -55,6 +63,9 @@ export type MistakeStats = Record<string, {
   lastSeen: string;
   questionIds: string[];
 }>;
+
+/** questionId → true (to‘g‘ri) | false (xato) — oxirgi urinish natijasi */
+export type ProgressMap = Record<string, boolean>;
 
 export type ExamHistory = {
   id: string;
