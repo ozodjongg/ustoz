@@ -28,7 +28,7 @@ export const shuffle = <T,>(arr: T[]) => {
   return copy;
 };
 
-/** Olimpiada tuzilmasi: teng ulushda 0,9 / 1,7 / 2,4 ballik savollar, mavzular aralash. */
+/** Olimpiada tuzilmasi: teng ulushda 0,9 / 1,5 / 2,6 ballik savollar, mavzular aralash. */
 export function buildExam(all: Question[], total = 30): Question[] {
   const shares: Record<Difficulty, number> = {
     easy: Math.floor(total / 3),

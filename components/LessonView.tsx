@@ -13,7 +13,10 @@ export const lessonAnchors = (t: Topic) => [
 
 export default function LessonView({ topic }: { topic: Topic }) {
   const { lesson } = topic;
-  const byGrade = [9, 10, 11].map(g => ({ g, items: topic.sources.filter(s => s.grade === g) })).filter(x => x.items.length);
+  const YEARS: Array<{ year: number; label: string }> = [{ year: 2025, label: '2025–2026 o‘quv yili' }, { year: 2024, label: '2024-yil' }];
+  const groups = YEARS.flatMap(({ year, label }) => [9, 10, 11].map(g => ({
+    key: `${year}-${g}`, label, g, items: topic.sources.filter(s => s.year === year && s.grade === g)
+  }))).filter(x => x.items.length);
 
   return <article className="lesson">
     <section className="hook">
@@ -64,10 +67,10 @@ export default function LessonView({ topic }: { topic: Topic }) {
 
     <section id="olimpiadada" className="lessonSection">
       <h2>Olimpiadada qayerda uchragan?</h2>
-      <p className="muted">2024-yil tuman (shahar) bosqichi savollaridan shu mavzuga tegishlilari:</p>
+      <p className="muted">Tuman (shahar) bosqichi savollaridan shu mavzuga tegishlilari:</p>
       <div className="sourceGrid">
-        {byGrade.map(({ g, items }) => <div className="sourceGroup" key={g}>
-          <b>{g}-sinf</b>
+        {groups.map(({ key, label, g, items }) => <div className="sourceGroup" key={key}>
+          <b>{label} · {g}-sinf</b>
           {items.map(s => <div className="sourceRow" key={s.number}><span>№{s.number} · {pointsLabel(s.points)}</span><p>{s.text}</p></div>)}
         </div>)}
       </div>

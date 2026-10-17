@@ -144,34 +144,14 @@
   "unit": "kompyuter-va-it",
   "difficulty": "easy",
   "points": 0.9,
-  "prompt": "Quyidagilardan qaysi biri CHIQARISH qurilmasi?",
-  "options": [
-   "Sichqoncha",
-   "Mikrofon",
-   "Printer",
-   "Skaner"
-  ],
-  "answer": 2,
-  "explanation": "Printer — chiqarish.",
-  "solution": [
-   "Chiqarish qurilmasi kompyuterdan natijani tashqariga beradi.",
-   "Sichqoncha, skaner, mikrofon — kiritish qurilmalari.",
-   "Javob: Printer"
-  ]
- },
- {
-  "id": "kompyuter-va-it-09",
-  "unit": "kompyuter-va-it",
-  "difficulty": "easy",
-  "points": 0.9,
   "prompt": "Kompyuter o‘chirilganda ma’lumotlari o‘chib ketadigan xotira qaysi?",
   "options": [
-   "Tezkor xotira (RAM)",
-   "SSD",
+   "Qattiq disk (HDD)",
    "Fleshka",
-   "Qattiq disk (HDD)"
+   "Tezkor xotira (RAM)",
+   "SSD"
   ],
-  "answer": 0,
+  "answer": 2,
   "explanation": "RAM — vaqtinchalik.",
   "solution": [
    "RAM — vaqtinchalik (energiyaga bog‘liq) xotira, tok uzilsa tozalanadi.",
@@ -180,18 +160,18 @@
   ]
  },
  {
-  "id": "kompyuter-va-it-10",
+  "id": "kompyuter-va-it-09",
   "unit": "kompyuter-va-it",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "NTFS fayl tizimi asosan qaysi operatsion sistemada ishlatiladi?",
   "options": [
-   "Android",
-   "MacOS",
    "Windows",
-   "Linux"
+   "Linux",
+   "Android",
+   "MacOS"
   ],
-  "answer": 2,
+  "answer": 0,
   "explanation": "NTFS — Windows fayl tizimi.",
   "solution": [
    "NTFS (New Technology File System) — Microsoft tomonidan Windows NT uchun yaratilgan.",
@@ -200,18 +180,18 @@
   ]
  },
  {
-  "id": "kompyuter-va-it-11",
+  "id": "kompyuter-va-it-10",
   "unit": "kompyuter-va-it",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Operatsion sistema nima?",
   "options": [
    "Internet brauzeri",
-   "Kompyuter qurilmalari va dasturlarini boshqaruvchi asosiy dasturlar majmuasi",
    "Matn muharriri",
+   "Kompyuter qurilmalari va dasturlarini boshqaruvchi asosiy dasturlar majmuasi",
    "Antivirus"
   ],
-  "answer": 1,
+  "answer": 2,
   "explanation": "OT — boshqaruvchi tizim.",
   "solution": [
    "OT (operatsion tizim) qurilmalar, xotira, fayllar va dasturlar ishini boshqaradi.",
@@ -220,36 +200,16 @@
   ]
  },
  {
-  "id": "kompyuter-va-it-12",
-  "unit": "kompyuter-va-it",
-  "difficulty": "easy",
-  "points": 0.9,
-  "prompt": "Quyidagilardan qaysi biri operatsion sistema EMAS?",
-  "options": [
-   "Windows",
-   "Android",
-   "Microsoft Word",
-   "Linux"
-  ],
-  "answer": 2,
-  "explanation": "Word — amaliy dastur.",
-  "solution": [
-   "Linux, Windows, Android — operatsion tizimlar.",
-   "Microsoft Word — matn muharriri (amaliy dastur).",
-   "Javob: Microsoft Word"
-  ]
- },
- {
-  "id": "kompyuter-va-it-13",
+  "id": "kompyuter-va-it-11",
   "unit": "kompyuter-va-it",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "CPU qisqartmasi nimani anglatadi?",
   "options": [
-   "Computer Personal Unit",
+   "Control Power Unit",
    "Central Processing Unit",
-   "Central Program Utility",
-   "Control Power Unit"
+   "Computer Personal Unit",
+   "Central Program Utility"
   ],
   "answer": 1,
   "explanation": "CPU = Central Processing Unit.",
@@ -260,18 +220,18 @@
   ]
  },
  {
-  "id": "kompyuter-va-it-14",
+  "id": "kompyuter-va-it-12",
   "unit": "kompyuter-va-it",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "RAM qisqartmasi nimani anglatadi?",
   "options": [
-   "Random Access Memory",
-   "Real Active Memory",
    "Rapid Action Memory",
+   "Real Active Memory",
+   "Random Access Memory",
    "Read Access Memory"
   ],
-  "answer": 0,
+  "answer": 2,
   "explanation": "RAM = Random Access Memory.",
   "solution": [
    "RAM — ixtiyoriy murojaatli xotira: istalgan katakka bir xil tezlikda murojaat qilinadi.",
@@ -280,18 +240,18 @@
   ]
  },
  {
-  "id": "kompyuter-va-it-15",
+  "id": "kompyuter-va-it-13",
   "unit": "kompyuter-va-it",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Kompyuter viruslaridan himoya qiluvchi dastur qanday ataladi?",
   "options": [
-   "Antivirus",
    "Arxivator",
+   "Antivirus",
    "Drayver",
    "Brauzer"
   ],
-  "answer": 0,
+  "answer": 1,
   "explanation": "Antivirus.",
   "solution": [
    "Antivirus — zararli dasturlarni aniqlaydi va o‘chiradi.",
@@ -300,18 +260,18 @@
   ]
  },
  {
-  "id": "kompyuter-va-it-16",
+  "id": "kompyuter-va-it-14",
   "unit": "kompyuter-va-it",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Quyidagilardan qaysi biri ma’lumotni DOIMIY saqlovchi qurilma?",
   "options": [
-   "Kesh xotira",
-   "RAM",
    "SSD",
-   "Registrlar"
+   "Registrlar",
+   "Kesh xotira",
+   "RAM"
   ],
-  "answer": 2,
+  "answer": 0,
   "explanation": "SSD — doimiy xotira.",
   "solution": [
    "SSD (Solid State Drive) — tok o‘chsa ham ma’lumotni saqlaydi.",
@@ -320,18 +280,18 @@
   ]
  },
  {
-  "id": "kompyuter-va-it-17",
+  "id": "kompyuter-va-it-15",
   "unit": "kompyuter-va-it",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Veb-sahifalarni ko‘rish uchun mo‘ljallangan dastur qanday ataladi?",
   "options": [
+   "Brauzer",
    "Kompilyator",
-   "Arxivator",
    "Antivirus",
-   "Brauzer"
+   "Arxivator"
   ],
-  "answer": 3,
+  "answer": 0,
   "explanation": "Brauzer.",
   "solution": [
    "Brauzer (Chrome, Firefox, Edge, Safari) HTML sahifalarni ko‘rsatadi.",
@@ -340,38 +300,18 @@
   ]
  },
  {
-  "id": "kompyuter-va-it-18",
+  "id": "kompyuter-va-it-16",
   "unit": "kompyuter-va-it",
   "difficulty": "medium",
-  "points": 1.7,
-  "prompt": "Quyidagi ma’lumotlar bazasini boshqarish tizimlaridan (MBBT) qaysi biri NoSQL hisoblanadi?",
-  "options": [
-   "Oracle",
-   "PostgreSQL",
-   "MySQL",
-   "MongoDB"
-  ],
-  "answer": 3,
-  "explanation": "MongoDB — NoSQL.",
-  "solution": [
-   "Oracle, MySQL, PostgreSQL — relyatsion (jadvalli, SQL) MBBT lar.",
-   "MongoDB — hujjatlarga yo‘naltirilgan (JSON ko‘rinishidagi) NoSQL baza.",
-   "Javob: MongoDB"
-  ]
- },
- {
-  "id": "kompyuter-va-it-19",
-  "unit": "kompyuter-va-it",
-  "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Python’da matnli faylni o‘qish uchun to‘g‘ri ochish usuli qaysi?",
   "options": [
-   "file = open(\"filename\", \"r\")",
-   "file = open_file(\"filename\", \"r\")",
    "file.read(\"filename\")",
-   "file.open(\"filename\", \"r\")"
+   "file.open(\"filename\", \"r\")",
+   "file = open(\"filename\", \"r\")",
+   "file = open_file(\"filename\", \"r\")"
   ],
-  "answer": 0,
+  "answer": 2,
   "explanation": "open(nom, rejim).",
   "solution": [
    "Fayl ichki open() funksiyasi bilan ochiladi va natija o‘zgaruvchiga yoziladi.",
@@ -380,18 +320,18 @@
   ]
  },
  {
-  "id": "kompyuter-va-it-20",
+  "id": "kompyuter-va-it-17",
   "unit": "kompyuter-va-it",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Kompyuterning qaysi xotirasi protsessorga eng yaqin va eng tez?",
   "options": [
-   "SSD",
+   "RAM",
    "HDD",
-   "Registrlar",
-   "RAM"
+   "SSD",
+   "Registrlar"
   ],
-  "answer": 2,
+  "answer": 3,
   "explanation": "Registrlar — eng tez.",
   "solution": [
    "Xotira ierarxiyasi (tezdan sekinga): registrlar → kesh → RAM → SSD → HDD.",
@@ -400,18 +340,18 @@
   ]
  },
  {
-  "id": "kompyuter-va-it-21",
+  "id": "kompyuter-va-it-18",
   "unit": "kompyuter-va-it",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Linux operatsion tizimining yadrosi (kernel) muallifi kim?",
   "options": [
-   "Linus Torvalds",
-   "Steve Jobs",
    "Bill Gates",
-   "Richard Stallman"
+   "Richard Stallman",
+   "Steve Jobs",
+   "Linus Torvalds"
   ],
-  "answer": 0,
+  "answer": 3,
   "explanation": "Linux — Linus Torvalds (1991).",
   "solution": [
    "1991-yilda Finlyandiyalik talaba Linus Torvalds Linux yadrosini yaratgan.",
@@ -420,16 +360,16 @@
   ]
  },
  {
-  "id": "kompyuter-va-it-22",
+  "id": "kompyuter-va-it-19",
   "unit": "kompyuter-va-it",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Python dasturlash tilining muallifi kim?",
   "options": [
    "Guido van Rossum",
    "Bjarne Stroustrup",
-   "Dennis Ritchie",
-   "James Gosling"
+   "James Gosling",
+   "Dennis Ritchie"
   ],
   "answer": 0,
   "explanation": "Python — Guido van Rossum.",
@@ -440,38 +380,18 @@
   ]
  },
  {
-  "id": "kompyuter-va-it-23",
+  "id": "kompyuter-va-it-20",
   "unit": "kompyuter-va-it",
   "difficulty": "medium",
-  "points": 1.7,
-  "prompt": "HTML qisqartmasi nimani anglatadi?",
-  "options": [
-   "HyperText Markup Language",
-   "Home Text Markup Link",
-   "High Text Machine Language",
-   "HyperTool Multi Language"
-  ],
-  "answer": 0,
-  "explanation": "HTML = HyperText Markup Language.",
-  "solution": [
-   "HTML — veb-sahifalarni belgilash (razmetka) tili.",
-   "HyperText — gipermatn (havolali matn), Markup — belgilash, Language — til.",
-   "Javob: HyperText Markup Language"
-  ]
- },
- {
-  "id": "kompyuter-va-it-24",
-  "unit": "kompyuter-va-it",
-  "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagilardan qaysi biri DASTURLASH tili EMAS?",
   "options": [
-   "HTML",
-   "Python",
+   "C++",
    "Java",
-   "C++"
+   "HTML",
+   "Python"
   ],
-  "answer": 0,
+  "answer": 2,
   "explanation": "HTML — belgilash tili.",
   "solution": [
    "HTML — belgilash tili: sahifa tuzilishini tasvirlaydi, lekin shart va sikl kabi algoritmik buyruqlari yo‘q.",
@@ -480,18 +400,18 @@
   ]
  },
  {
-  "id": "kompyuter-va-it-25",
+  "id": "kompyuter-va-it-21",
   "unit": "kompyuter-va-it",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Ma’lumotlarni siqish (arxivlash) uchun ishlatiladigan fayl formati qaysi?",
   "options": [
+   "ZIP",
    "DOCX",
    "MP3",
-   "ZIP",
    "EXE"
   ],
-  "answer": 2,
+  "answer": 0,
   "explanation": "ZIP — arxiv formati.",
   "solution": [
    "ZIP, RAR, 7z — arxiv formatlari.",
@@ -500,18 +420,18 @@
   ]
  },
  {
-  "id": "kompyuter-va-it-26",
+  "id": "kompyuter-va-it-22",
   "unit": "kompyuter-va-it",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Birinchi elektron raqamli umumiy maqsadli kompyuter deb ataladigan ENIAC qachon ishga tushirilgan?",
   "options": [
-   "1981-yil",
-   "1971-yil",
    "1946-yil",
-   "1936-yil"
+   "1981-yil",
+   "1936-yil",
+   "1971-yil"
   ],
-  "answer": 2,
+  "answer": 0,
   "explanation": "ENIAC — 1946.",
   "solution": [
    "ENIAC AQShda yaratilib, 1946-yilda rasman taqdim etilgan.",
@@ -520,18 +440,18 @@
   ]
  },
  {
-  "id": "kompyuter-va-it-27",
+  "id": "kompyuter-va-it-23",
   "unit": "kompyuter-va-it",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Kompyuterlarning ikkinchi avlodi qaysi element bazasida qurilgan?",
   "options": [
-   "Elektron lampalar",
    "Tranzistorlar",
-   "Integral sxemalar",
-   "Mikroprotsessorlar"
+   "Mikroprotsessorlar",
+   "Elektron lampalar",
+   "Integral sxemalar"
   ],
-  "answer": 1,
+  "answer": 0,
   "explanation": "2-avlod — tranzistorlar.",
   "solution": [
    "1-avlod — elektron lampalar, 2-avlod — tranzistorlar.",
@@ -540,18 +460,18 @@
   ]
  },
  {
-  "id": "kompyuter-va-it-28",
+  "id": "kompyuter-va-it-24",
   "unit": "kompyuter-va-it",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Fayl kengaytmasi .py bo‘lgan fayl qaysi tilga tegishli?",
   "options": [
-   "PHP",
-   "Pascal",
    "Python",
-   "Perl"
+   "Pascal",
+   "Perl",
+   "PHP"
   ],
-  "answer": 2,
+  "answer": 0,
   "explanation": ".py — Python.",
   "solution": [
    "Kengaytma fayl turini bildiradi.",
@@ -560,38 +480,18 @@
   ]
  },
  {
-  "id": "kompyuter-va-it-29",
+  "id": "kompyuter-va-it-25",
   "unit": "kompyuter-va-it",
   "difficulty": "medium",
-  "points": 1.7,
-  "prompt": "IP manzil (IPv4) necha bitdan iborat?",
-  "options": [
-   "128",
-   "32",
-   "16",
-   "64"
-  ],
-  "answer": 1,
-  "explanation": "IPv4 — 4 bayt = 32 bit.",
-  "solution": [
-   "IPv4 manzil 4 ta baytdan iborat: masalan 192.168.1.1.",
-   "4 · 8 = 32 bit. (IPv6 esa 128 bit.)",
-   "Javob: 32"
-  ]
- },
- {
-  "id": "kompyuter-va-it-30",
-  "unit": "kompyuter-va-it",
-  "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Python dasturini mashina tushunadigan ko‘rinishga satrma-satr o‘girib bajaradigan dastur qanday ataladi?",
   "options": [
-   "Arxivator",
    "Drayver",
    "Kompilyator",
-   "Interpretator"
+   "Interpretator",
+   "Arxivator"
   ],
-  "answer": 3,
+  "answer": 2,
   "explanation": "Python — interpretator orqali.",
   "solution": [
    "Interpretator kodni satrma-satr o‘qib, darhol bajaradi (Python, JavaScript).",
@@ -600,18 +500,18 @@
   ]
  },
  {
-  "id": "kompyuter-va-it-31",
+  "id": "kompyuter-va-it-26",
   "unit": "kompyuter-va-it",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagilardan qaysi biri ochiq kodli (open source) operatsion tizim?",
   "options": [
-   "Linux",
+   "iOS",
    "MacOS",
-   "Windows 11",
-   "iOS"
+   "Linux",
+   "Windows 11"
   ],
-  "answer": 0,
+  "answer": 2,
   "explanation": "Linux — ochiq kodli.",
   "solution": [
    "Ochiq kodli — dastlabki kodi hamma uchun ochiq va bepul o‘zgartirish mumkin.",
@@ -620,58 +520,18 @@
   ]
  },
  {
-  "id": "kompyuter-va-it-32",
+  "id": "kompyuter-va-it-27",
   "unit": "kompyuter-va-it",
   "difficulty": "medium",
-  "points": 1.7,
-  "prompt": "URL manzilidagi «https» ning «s» harfi nimani bildiradi?",
-  "options": [
-   "Secure (xavfsiz, shifrlangan)",
-   "Speed",
-   "Server",
-   "Site"
-  ],
-  "answer": 0,
-  "explanation": "S — Secure.",
-  "solution": [
-   "HTTPS — HTTP Secure: ma’lumotlar TLS/SSL orqali shifrlab uzatiladi.",
-   "Brauzerda qulf belgisi ko‘rinadi.",
-   "Javob: Secure (xavfsiz, shifrlangan)"
-  ]
- },
- {
-  "id": "kompyuter-va-it-33",
-  "unit": "kompyuter-va-it",
-  "difficulty": "medium",
-  "points": 1.7,
-  "prompt": "Ma’lumotlar bazasi jadvalida har bir yozuvni noyob aniqlovchi maydon qanday ataladi?",
-  "options": [
-   "Tashqi kalit (Foreign Key)",
-   "Birlamchi kalit (Primary Key)",
-   "Indeks",
-   "Atribut"
-  ],
-  "answer": 1,
-  "explanation": "Primary Key — noyob identifikator.",
-  "solution": [
-   "Primary Key qiymatlari takrorlanmaydi va bo‘sh bo‘lmaydi — har bir qatorni aniq ko‘rsatadi.",
-   "Foreign Key — boshqa jadvalning birlamchi kalitiga havola.",
-   "Javob: Birlamchi kalit (Primary Key)"
-  ]
- },
- {
-  "id": "kompyuter-va-it-34",
-  "unit": "kompyuter-va-it",
-  "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "ROM xotiraning asosiy xususiyati nima?",
   "options": [
-   "Faqat videolar uchun",
-   "Eng katta hajmli xotira",
    "Tok o‘chsa tozalanadi",
-   "Undagi ma’lumot asosan faqat o‘qiladi va tok o‘chsa ham saqlanadi"
+   "Undagi ma’lumot asosan faqat o‘qiladi va tok o‘chsa ham saqlanadi",
+   "Eng katta hajmli xotira",
+   "Faqat videolar uchun"
   ],
-  "answer": 3,
+  "answer": 1,
   "explanation": "ROM — doimiy, faqat o‘qiladigan.",
   "solution": [
    "ROM — Read-Only Memory, «faqat o‘qiladigan xotira».",
@@ -680,18 +540,18 @@
   ]
  },
  {
-  "id": "kompyuter-va-it-35",
+  "id": "kompyuter-va-it-28",
   "unit": "kompyuter-va-it",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Qaysi kompaniya Windows operatsion tizimini ishlab chiqaradi?",
   "options": [
-   "IBM",
-   "Microsoft",
+   "Google",
    "Apple",
-   "Google"
+   "Microsoft",
+   "IBM"
   ],
-  "answer": 1,
+  "answer": 2,
   "explanation": "Windows — Microsoft.",
   "solution": [
    "Windows — Microsoft korporatsiyasining mahsuloti (1985-yildan).",
@@ -700,55 +560,15 @@
   ]
  },
  {
-  "id": "kompyuter-va-it-36",
-  "unit": "kompyuter-va-it",
-  "difficulty": "medium",
-  "points": 1.7,
-  "prompt": "Kompyuter tarmog‘ida har bir qurilmaning noyob fizik (apparat) manzili qanday ataladi?",
-  "options": [
-   "MAC manzil",
-   "IP manzil",
-   "URL",
-   "DNS"
-  ],
-  "answer": 0,
-  "explanation": "MAC — apparat manzili.",
-  "solution": [
-   "MAC manzil tarmoq kartasiga ishlab chiqaruvchi tomonidan beriladi (48 bit).",
-   "IP manzil — mantiqiy manzil va o‘zgarishi mumkin; URL — sahifa manzili; DNS — nomlarni IP ga aylantiruvchi tizim.",
-   "Javob: MAC manzil"
-  ]
- },
- {
-  "id": "kompyuter-va-it-37",
-  "unit": "kompyuter-va-it",
-  "difficulty": "hard",
-  "points": 2.4,
-  "prompt": "DNS tizimi qanday vazifani bajaradi?",
-  "options": [
-   "Viruslarni o‘chiradi",
-   "Elektron pochtani shifrlaydi",
-   "Fayllarni siqadi",
-   "Domen nomlarini (masalan, uz.wikipedia.org) IP manzillarga aylantiradi"
-  ],
-  "answer": 3,
-  "explanation": "DNS: nom → IP.",
-  "solution": [
-   "DNS — Domain Name System, Internetning «telefon kitobi».",
-   "Brauzerga nom yozamiz, DNS uni kompyuter tushunadigan IP manzilga o‘giradi.",
-   "Javob: Domen nomlarini (masalan, uz.wikipedia.org) IP manzillarga aylantiradi"
-  ]
- },
- {
-  "id": "kompyuter-va-it-38",
+  "id": "kompyuter-va-it-29",
   "unit": "kompyuter-va-it",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Matn terish va tahrirlash uchun mo‘ljallangan dastur qaysi?",
   "options": [
-   "Windows Media Player",
-   "Microsoft Word",
    "Adobe Photoshop",
+   "Microsoft Word",
+   "Windows Media Player",
    "Microsoft Excel"
   ],
   "answer": 1,
@@ -760,18 +580,18 @@
   ]
  },
  {
-  "id": "kompyuter-va-it-39",
+  "id": "kompyuter-va-it-30",
   "unit": "kompyuter-va-it",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Fon Neyman prinsiplariga ko‘ra kompyuter xotirasida nima saqlanadi?",
   "options": [
-   "Faqat ma’lumotlar",
+   "Faqat natijalar",
    "Faqat dastur",
-   "Dastur ham, ma’lumotlar ham bir xil xotirada",
-   "Faqat natijalar"
+   "Faqat ma’lumotlar",
+   "Dastur ham, ma’lumotlar ham bir xil xotirada"
   ],
-  "answer": 2,
+  "answer": 3,
   "explanation": "Saqlanuvchi dastur prinsipi.",
   "solution": [
    "Fon Neyman arxitekturasining asosiy g‘oyasi — «saqlanuvchi dastur»: buyruqlar va ma’lumotlar bitta xotirada, ikkilik kodda saqlanadi.",
@@ -780,18 +600,18 @@
   ]
  },
  {
-  "id": "kompyuter-va-it-40",
+  "id": "kompyuter-va-it-31",
   "unit": "kompyuter-va-it",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Quyidagi juftliklardan qaysi biri NOTO‘G‘RI?",
   "options": [
-   "NTFS — Windows fayl tizimi",
-   "APFS — Apple fayl tizimi",
+   "FAT32 — Linux’ning asosiy fayl tizimi",
    "ext4 — Linux fayl tizimi",
-   "FAT32 — Linux’ning asosiy fayl tizimi"
+   "APFS — Apple fayl tizimi",
+   "NTFS — Windows fayl tizimi"
   ],
-  "answer": 3,
+  "answer": 0,
   "explanation": "Linux’ning asosiy fayl tizimi — ext4.",
   "solution": [
    "FAT32 — Microsoft tomonidan yaratilgan eski fayl tizimi; fleshkalarda keng tarqalgan, lekin Linux’ning asosiy tizimi emas (Linux’da ext4).",
@@ -800,18 +620,18 @@
   ]
  },
  {
-  "id": "kompyuter-va-it-41",
+  "id": "kompyuter-va-it-32",
   "unit": "kompyuter-va-it",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "FAT32 fayl tizimida bitta faylning maksimal hajmi qancha?",
   "options": [
-   "cheklanmagan",
    "4 GB dan 1 bayt kam",
    "16 MB",
-   "2 TB"
+   "2 TB",
+   "cheklanmagan"
   ],
-  "answer": 1,
+  "answer": 0,
   "explanation": "2³² − 1 bayt ≈ 4 GB.",
   "solution": [
    "FAT32 da fayl hajmi 32 bitli son bilan yoziladi: maksimal 2³² − 1 bayt.",
@@ -820,16 +640,16 @@
   ]
  },
  {
-  "id": "kompyuter-va-it-42",
+  "id": "kompyuter-va-it-33",
   "unit": "kompyuter-va-it",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Mur qonuni (Moore’s law) nimani bashorat qiladi?",
   "options": [
-   "Dasturlar hajmi har yili kamayadi",
+   "Kompyuter narxi har yili ikki baravar oshadi",
    "Mikrosxemadagi tranzistorlar soni taxminan har 2 yilda ikki baravar oshadi",
    "Internet tezligi har oy ikki baravar oshadi",
-   "Kompyuter narxi har yili ikki baravar oshadi"
+   "Dasturlar hajmi har yili kamayadi"
   ],
   "answer": 1,
   "explanation": "Tranzistorlar soni ~2 yilda ×2.",
@@ -840,18 +660,18 @@
   ]
  },
  {
-  "id": "kompyuter-va-it-43",
+  "id": "kompyuter-va-it-34",
   "unit": "kompyuter-va-it",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "«Mashina o‘ylay oladimi?» savolini tekshirish uchun taklif qilingan test va uning muallifi?",
   "options": [
-   "Tyuring testi — Alan Tyuring",
    "Turing–Gates testi — Bill Geyts",
+   "Neyman testi — Jon fon Neyman",
    "Deep Blue testi — IBM",
-   "Neyman testi — Jon fon Neyman"
+   "Tyuring testi — Alan Tyuring"
   ],
-  "answer": 0,
+  "answer": 3,
   "explanation": "Tyuring testi (1950).",
   "solution": [
    "1950-yilda Alan Tyuring «Computing Machinery and Intelligence» maqolasida «imitatsiya o‘yini»ni taklif qilgan.",
@@ -860,18 +680,18 @@
   ]
  },
  {
-  "id": "kompyuter-va-it-44",
+  "id": "kompyuter-va-it-35",
   "unit": "kompyuter-va-it",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Birinchi mikroprotsessor Intel 4004 necha bitli bo‘lgan va qachon chiqarilgan?",
   "options": [
-   "4 bitli, 1971-yil",
    "32 bitli, 1985-yil",
-   "16 bitli, 1978-yil",
-   "8 bitli, 1981-yil"
+   "4 bitli, 1971-yil",
+   "8 bitli, 1981-yil",
+   "16 bitli, 1978-yil"
   ],
-  "answer": 0,
+  "answer": 1,
   "explanation": "Intel 4004 — 4 bit, 1971.",
   "solution": [
    "Intel 4004 — 1971-yilda chiqarilgan dunyodagi birinchi tijoriy mikroprotsessor.",
@@ -880,18 +700,18 @@
   ]
  },
  {
-  "id": "kompyuter-va-it-45",
+  "id": "kompyuter-va-it-36",
   "unit": "kompyuter-va-it",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Qaysi qurilma ham kiritish, ham chiqarish qurilmasi hisoblanadi?",
   "options": [
-   "Monitor (sensorsiz)",
+   "Sensorli ekran",
    "Klaviatura",
-   "Skaner",
-   "Sensorli ekran"
+   "Monitor (sensorsiz)",
+   "Skaner"
   ],
-  "answer": 3,
+  "answer": 0,
   "explanation": "Sensorli ekran — ikkala vazifa.",
   "solution": [
    "Sensorli ekran tasvirni ko‘rsatadi (chiqarish) va teginishni qabul qiladi (kiritish).",
@@ -900,15 +720,15 @@
   ]
  },
  {
-  "id": "kompyuter-va-it-46",
+  "id": "kompyuter-va-it-37",
   "unit": "kompyuter-va-it",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Python’da faylga yozish rejimlari: \"w\" va \"a\" farqi nimada?",
   "options": [
    "ikkalasi bir xil",
-   "\"w\" o‘qiydi, \"a\" yozadi",
    "\"a\" faylni o‘chiradi",
+   "\"w\" o‘qiydi, \"a\" yozadi",
    "\"w\" faylni tozalab yozadi, \"a\" oxiriga qo‘shadi"
   ],
   "answer": 3,
@@ -920,18 +740,18 @@
   ]
  },
  {
-  "id": "kompyuter-va-it-47",
+  "id": "kompyuter-va-it-38",
   "unit": "kompyuter-va-it",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Qaysi xotira turi tezlik bo‘yicha RAM va protsessor registrlari orasida turadi?",
   "options": [
-   "SSD",
    "ROM",
+   "Kesh xotira",
    "HDD",
-   "Kesh xotira"
+   "SSD"
   ],
-  "answer": 3,
+  "answer": 1,
   "explanation": "Kesh — registr va RAM orasida.",
   "solution": [
    "Ierarxiya: registrlar → kesh (L1, L2, L3) → RAM → SSD → HDD.",
@@ -940,18 +760,18 @@
   ]
  },
  {
-  "id": "kompyuter-va-it-48",
+  "id": "kompyuter-va-it-39",
   "unit": "kompyuter-va-it",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "World Wide Web (WWW) ni kim va qachon ixtiro qilgan?",
   "options": [
    "Bill Geyts, 1995-yil",
-   "Mark Sukerberg, 2004-yil",
    "Vint Serf, 1969-yil",
-   "Tim Berners-Li, 1989-yil (CERN)"
+   "Tim Berners-Li, 1989-yil (CERN)",
+   "Mark Sukerberg, 2004-yil"
   ],
-  "answer": 3,
+  "answer": 2,
   "explanation": "WWW — Tim Berners-Li, 1989.",
   "solution": [
    "Tim Berners-Li 1989-yilda CERN laboratoriyasida gipermatnli tizim — WWW ni taklif qilgan; birinchi veb-sayt 1991-yilda ishga tushgan.",
@@ -960,18 +780,18 @@
   ]
  },
  {
-  "id": "kompyuter-va-it-49",
+  "id": "kompyuter-va-it-40",
   "unit": "kompyuter-va-it",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Unicode (UTF-8) kodlashda lotin harflari (ASCII belgilar) necha bayt egallaydi?",
   "options": [
-   "4 bayt",
+   "3 bayt",
    "2 bayt",
-   "1 bayt",
-   "3 bayt"
+   "4 bayt",
+   "1 bayt"
   ],
-  "answer": 2,
+  "answer": 3,
   "explanation": "ASCII belgilar UTF-8 da 1 bayt.",
   "solution": [
    "UTF-8 — o‘zgaruvchan uzunlikdagi kodlash: 1 dan 4 baytgacha.",
@@ -980,23 +800,203 @@
   ]
  },
  {
-  "id": "kompyuter-va-it-50",
+  "id": "kompyuter-va-it-41",
   "unit": "kompyuter-va-it",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Python’da `python -V` va `python --version` buyruqlari haqida to‘g‘ri fikr qaysi?",
   "options": [
    "-V batafsil (verbose) rejimni yoqadi",
+   "Ikkalasi ham Python versiyasini ko‘rsatadi",
    "Ikkalasi ham xato beradi",
-   "Faqat -V ishlaydi",
-   "Ikkalasi ham Python versiyasini ko‘rsatadi"
+   "Faqat -V ishlaydi"
   ],
-  "answer": 3,
+  "answer": 1,
   "explanation": "-V = --version; -v — verbose.",
   "solution": [
    "--version va uning qisqa shakli -V (katta V) versiyani chiqaradi.",
    "Kichik -v esa «verbose» — import qilinayotgan modullar haqida batafsil ma’lumot beradi.",
    "Javob: Ikkalasi ham Python versiyasini ko‘rsatadi"
+  ]
+ },
+ {
+  "id": "kompyuter-va-it-42",
+  "unit": "kompyuter-va-it",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Faqat xotira qurilmalari berilgan javobni toping.\n1) ROM  2) CPU  3) RAM  4) CRT  5) SSD  6) LCD",
+  "options": [
+   "3, 4, 5",
+   "1, 3, 5",
+   "1, 5, 6",
+   "2, 4, 6"
+  ],
+  "answer": 1,
+  "explanation": "ROM, RAM, SSD.",
+  "solution": [
+   "ROM, RAM, SSD — ma’lumot saqlaydi (xotira).",
+   "CPU — protsessor; CRT va LCD — monitor turlari (chiqarish).",
+   "Javob: 1, 3, 5"
+  ]
+ },
+ {
+  "id": "kompyuter-va-it-43",
+  "unit": "kompyuter-va-it",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Quyidagilardan qaysilari tizimli dasturiy ta’minotga kiradi?\n1) Windows 11  2) Linux  3) MS Word  4) Android  5) Google Chrome  6) macOS",
+  "options": [
+   "1, 2, 4, 6",
+   "1, 2, 5, 6",
+   "1, 3, 4, 5",
+   "2, 3, 4, 5"
+  ],
+  "answer": 0,
+  "explanation": "OT lar: 1, 2, 4, 6.",
+  "solution": [
+   "Tizimli dasturiy ta’minot — operatsion tizimlar va kompyuterni boshqaruvchi dasturlar.",
+   "Windows 11, Linux, Android, macOS — operatsion tizimlar. MS Word va Chrome — amaliy dasturlar.",
+   "Javob: 1, 2, 4, 6"
+  ]
+ },
+ {
+  "id": "kompyuter-va-it-44",
+  "unit": "kompyuter-va-it",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Quyidagilardan qaysilari faqat kiritish qurilmalari hisoblanadi?\n1) Klaviatura  2) Printer  3) Sichqoncha  4) Skaner  5) Proyektor  6) Mikrofon",
+  "options": [
+   "1, 3, 4, 6",
+   "1, 2, 5, 6",
+   "2, 4, 5, 6",
+   "1, 2, 3, 4"
+  ],
+  "answer": 0,
+  "explanation": "1, 3, 4, 6.",
+  "solution": [
+   "Kiritish — kompyuterga ma’lumot beruvchi: klaviatura, sichqoncha, skaner, mikrofon.",
+   "Printer va proyektor — chiqarish qurilmalari.",
+   "Javob: 1, 3, 4, 6"
+  ]
+ },
+ {
+  "id": "kompyuter-va-it-45",
+  "unit": "kompyuter-va-it",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Quyidagilardan qaysilari amaliy dasturiy ta’minot hisoblanadi?\n1) MS Excel  2) Telegram  3) AutoCAD  4) Python interpretatori  5) Photoshop  6) Windows",
+  "options": [
+   "1, 3, 4, 6",
+   "2, 3, 5, 6",
+   "1, 2, 3, 4",
+   "1, 2, 3, 5"
+  ],
+  "answer": 3,
+  "explanation": "1, 2, 3, 5.",
+  "solution": [
+   "Amaliy dastur — foydalanuvchining aniq ishini bajaradi (jadval, chat, chizma, rasm).",
+   "Python interpretatori — dasturlash vositasi (instrumental), Windows — tizimli.",
+   "Javob: 1, 2, 3, 5"
+  ]
+ },
+ {
+  "id": "kompyuter-va-it-46",
+  "unit": "kompyuter-va-it",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Quyidagilardan qaysilari faqat tashqi xotira qurilmalari?\n1) Flash-disk  2) RAM  3) Qattiq disk (HDD)  4) SSD  5) ROM  6) CD/DVD disk",
+  "options": [
+   "1, 2, 5, 6",
+   "2, 3, 4, 5",
+   "1, 3, 5, 6",
+   "1, 3, 4, 6"
+  ],
+  "answer": 3,
+  "explanation": "1, 3, 4, 6.",
+  "solution": [
+   "Tashqi (doimiy, uzoq muddatli) xotira: fleshka, HDD, SSD, CD/DVD.",
+   "RAM va ROM — ichki xotira (ona platada).",
+   "Javob: 1, 3, 4, 6"
+  ]
+ },
+ {
+  "id": "kompyuter-va-it-47",
+  "unit": "kompyuter-va-it",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Quyidagilardan qaysilari dasturlash tillari?\n1) Python  2) Java  3) PyCharm  4) Windows  5) C++  6) Excel",
+  "options": [
+   "1, 2, 4",
+   "2, 3, 6",
+   "1, 3, 5",
+   "1, 2, 5"
+  ],
+  "answer": 3,
+  "explanation": "1, 2, 5.",
+  "solution": [
+   "Python, Java, C++ — dasturlash tillari.",
+   "PyCharm — dasturlash muhiti (IDE), Windows — OT, Excel — elektron jadval.",
+   "Javob: 1, 2, 5"
+  ]
+ },
+ {
+  "id": "kompyuter-va-it-48",
+  "unit": "kompyuter-va-it",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Kompyuterning tezkor xotirasi (RAM) asosiy vazifasi nimadan iborat?",
+  "options": [
+   "Ma’lumotlarni doimiy saqlash",
+   "Kompyuterni viruslardan himoya qilish",
+   "Dasturlarni faqat o‘rnatish uchun ishlatiladi",
+   "Dasturlar va ma’lumotlarni ishlash jarayonida vaqtinchalik saqlash"
+  ],
+  "answer": 3,
+  "explanation": "RAM — vaqtinchalik ishchi xotira.",
+  "solution": [
+   "RAM — ishlayotgan dastur va ma’lumotlar turadigan tez, vaqtinchalik xotira.",
+   "Tok o‘chsa, RAM tozalanadi.",
+   "Javob: Dasturlar va ma’lumotlarni ishlash jarayonida vaqtinchalik saqlash"
+  ]
+ },
+ {
+  "id": "kompyuter-va-it-49",
+  "unit": "kompyuter-va-it",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Quyidagilardan qaysi biri JavaScript framework/kutubxonasi EMAS?",
+  "options": [
+   "Angular",
+   "React",
+   "Bootstrap",
+   "Vue"
+  ],
+  "answer": 2,
+  "explanation": "Bootstrap — CSS framework.",
+  "solution": [
+   "React, Angular, Vue — JavaScript asosidagi interfeys framework/kutubxonalari.",
+   "Bootstrap — asosan CSS framework (tayyor uslublar to‘plami).",
+   "Javob: Bootstrap"
+  ]
+ },
+ {
+  "id": "kompyuter-va-it-50",
+  "unit": "kompyuter-va-it",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi qurilmalardan qaysi biri chiqarish qurilmasi (output device)?",
+  "options": [
+   "Klaviatura",
+   "Skaner",
+   "Sichqoncha",
+   "Printer"
+  ],
+  "answer": 3,
+  "explanation": "Printer — chiqarish.",
+  "solution": [
+   "Chiqarish — natijani kompyuterdan tashqariga beradi.",
+   "Printer qog‘ozga chiqaradi.",
+   "Javob: Printer"
   ]
  }
 ]

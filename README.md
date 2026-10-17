@@ -1,15 +1,15 @@
 # Informatika Olimpiada Trainer
 
-2024-yil O‘zbekiston **9-, 10- va 11-sinf Informatika** fan olimpiadasi tuman (shahar) bosqichidagi 90 ta savol tahlili asosida tuzilgan, **to‘liq statik** Next.js tayyorgarlik sayti.
+O‘zbekiston **9-, 10- va 11-sinf Informatika** fan olimpiadasi tuman (shahar) bosqichining **2024-yil** va **2025–2026 o‘quv yili** savollari (jami 180 ta) tahlili asosida tuzilgan, **to‘liq statik** Next.js tayyorgarlik sayti.
 
 ## Nimalar bor
 
-- **16 ta mavzu** — 90 ta asl olimpiada savoli mavzularga ajratilgan (`data/topics.json` → `sources`).
+- **22 ta mavzu** — 180 ta asl olimpiada savoli mavzularga ajratilgan (`data/topics.json` → `sources`, yili va sinfi bilan).
 - Har bir mavzu uchun **juda sodda tushuntirish sahifasi**: hayotiy o‘xshatish, bosqichma-bosqich bo‘limlar, jadvallar, kod misollari, ishlangan misollar, ko‘p uchraydigan xatolar, «Eslab qol» va lug‘at.
-- Har bir mavzu uchun **50 tadan turli savol** — jami **800 ta**, har birida **qadam-baqadam yechim**.
-- Savollar qiyinligi olimpiada ball tizimiga mos: **0,9 / 1,7 / 2,4** ball.
+- Har bir mavzu uchun **50 tadan turli savol** — jami **1100 ta**, har birida **qadam-baqadam yechim**.
+- Savollar qiyinligi olimpiada ball tizimiga mos: **0,9 / 1,5 / 2,6** ball (2025–2026 o‘quv yili tizimi).
 - Mavzu bo‘yicha mashq: filtrlar (ball, yechilmagan, xatolarim), savollar xaritasi, natijalar saqlanadi.
-- Olimpiada formatidagi **sinov**: 30 savol = 10 × 0,9 + 10 × 1,7 + 10 × 2,4 = 50 ball, vaqt va mavzularni tanlash mumkin, oxirida xatolar tahlili.
+- Olimpiada formatidagi **sinov**: 30 savol = 10 × 0,9 + 10 × 1,5 + 10 × 2,6 = 50 ball, vaqt va mavzularni tanlash mumkin, oxirida xatolar tahlili.
 - **Xatolar bo‘limi**: xato qilingan savollarni qayta ishlash; to‘g‘ri yechilsa ro‘yxatdan o‘chadi.
 - **AI yordamchi**: savol konteksti bilan tayyor prompt (Maslahat / Tushuntir / Chuqur o‘rgan) — Claude yoki ChatGPT’da ochiladi. Maslahat rejimi javobni oshkor qilmaydi.
 - Yorug‘ va qorong‘i rejim, mobil qurilmalarga moslashgan dizayn.
@@ -17,24 +17,30 @@
 
 ## Mavzular
 
-| № | Mavzu | Asl savollar |
-|---|-------|--------------|
-| 1 | Sanoq sistemalari | 10 |
-| 2 | Kasr va davriy kasrlar sanoq sistemalarida | 3 |
-| 3 | Mantiqiy amallar va ifodalar | 5 |
-| 4 | Mantiqiy elementlar va sxemalar | 4 |
-| 5 | Axborot o‘lchov birliklari | 3 |
-| 6 | Axborot hajmi va uzatish tezligi | 6 |
-| 7 | Excel: bloklar va katak manzillari | 6 |
-| 8 | Excel: formulalar va funksiyalar | 8 |
-| 9 | Python asoslari: turlar, operatorlar, satrlar | 11 |
-| 10 | Python: list, tuple, set, dict | 8 |
-| 11 | Python: sikllar va range | 4 |
-| 12 | Python: funksiyalar | 6 |
-| 13 | Rekursiya | 3 |
-| 14 | Bit amallari | 3 |
-| 15 | Algoritmlar va blok-sxemalar | 2 |
-| 16 | Kompyuter, dasturiy ta’minot va IT tarixi | 9 |
+| № | Mavzu | 2024 savollari | 2025–2026 savollari |
+|---|-------|----|----|
+| 1 | Sanoq sistemalari | 10 | 3 |
+| 2 | Kasr va davriy kasrlar sanoq sistemalarida | 3 | 3 |
+| 3 | Axborot o‘lchov birliklari | 3 | 2 |
+| 4 | Axborot hajmi va uzatish tezligi | 6 | 12 |
+| 5 | Kodlash: ASCII, RGB va HEX | 0 | 4 |
+| 6 | Mantiqiy amallar va ifodalar | 5 | 3 |
+| 7 | Mantiqiy elementlar va sxemalar | 4 | 3 |
+| 8 | Bit amallari | 3 | 1 |
+| 9 | Algoritmlar va blok-sxemalar | 2 | 6 |
+| 10 | Python asoslari: turlar, operatorlar, satrlar | 11 | 0 |
+| 11 | Python: list, tuple, set, dict | 8 | 3 |
+| 12 | Python: sikllar va range | 4 | 5 |
+| 13 | Python: funksiyalar | 6 | 1 |
+| 14 | Rekursiya | 3 | 0 |
+| 15 | Excel: bloklar va katak manzillari | 6 | 0 |
+| 16 | Excel: formulalar va funksiyalar | 8 | 6 |
+| 17 | Ma’lumotlar bazasi: Access va SQL | 0 | 9 |
+| 18 | Fayllar: maskalar va kengaytmalar | 0 | 5 |
+| 19 | Tarmoq va Internet | 0 | 8 |
+| 20 | Shifrlash: Sezar va Vigenère | 0 | 3 |
+| 21 | Modellashtirish | 0 | 3 |
+| 22 | Kompyuter, dasturiy ta’minot va IT tarixi | 9 | 10 |
 
 ## Tuzilma
 

@@ -24,34 +24,14 @@
   "unit": "axborot-hajmi",
   "difficulty": "easy",
   "points": 0.9,
-  "prompt": "Alifboda 2 ta belgi bor (masalan, «+» va «−»). Bitta belgi necha bit axborot olib yuradi?",
-  "options": [
-   "8",
-   "1",
-   "0",
-   "2"
-  ],
-  "answer": 1,
-  "explanation": "2 = 2¹ → 1 bit.",
-  "solution": [
-   "2 = 2¹.",
-   "Bitta bit 2 holatni ajrata oladi.",
-   "Javob: 1"
-  ]
- },
- {
-  "id": "axborot-hajmi-03",
-  "unit": "axborot-hajmi",
-  "difficulty": "easy",
-  "points": 0.9,
   "prompt": "3 bit yordamida nechta turli belgini kodlash mumkin?",
   "options": [
    "6",
+   "8",
    "9",
-   "3",
-   "8"
+   "3"
   ],
-  "answer": 3,
+  "answer": 1,
   "explanation": "2³ = 8 xil kod.",
   "solution": [
    "i bit bilan 2ⁱ ta turli kod hosil qilish mumkin.",
@@ -60,18 +40,18 @@
   ]
  },
  {
-  "id": "axborot-hajmi-04",
+  "id": "axborot-hajmi-03",
   "unit": "axborot-hajmi",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Alifboda 64 ta belgi bor. 10 ta belgidan iborat xabar necha bit?",
   "options": [
    "64",
-   "60",
+   "80",
    "640",
-   "80"
+   "60"
   ],
-  "answer": 1,
+  "answer": 3,
   "explanation": "10 · 6 = 60 bit.",
   "solution": [
    "Bitta belgi: 64 = 2⁶ → 6 bit.",
@@ -80,38 +60,18 @@
   ]
  },
  {
-  "id": "axborot-hajmi-05",
-  "unit": "axborot-hajmi",
-  "difficulty": "easy",
-  "points": 0.9,
-  "prompt": "Rangli rasmda faqat 2 ta rang (oq va qora) bor. Bitta piksel necha bit joy oladi?",
-  "options": [
-   "2",
-   "24",
-   "8",
-   "1"
-  ],
-  "answer": 3,
-  "explanation": "2 rang → 1 bit.",
-  "solution": [
-   "Ranglar soni N = 2ⁱ. 2 = 2¹.",
-   "Bitta piksel uchun 1 bit yetarli: 0 — oq, 1 — qora.",
-   "Javob: 1"
-  ]
- },
- {
-  "id": "axborot-hajmi-06",
+  "id": "axborot-hajmi-04",
   "unit": "axborot-hajmi",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Pikselning rang chuqurligi 8 bit. Rasmda eng ko‘pi bilan nechta rang bo‘lishi mumkin?",
   "options": [
-   "8",
    "64",
-   "16",
-   "256"
+   "256",
+   "8",
+   "16"
   ],
-  "answer": 3,
+  "answer": 1,
   "explanation": "2⁸ = 256 rang.",
   "solution": [
    "Ranglar soni = 2^(rang chuqurligi).",
@@ -120,18 +80,18 @@
   ]
  },
  {
-  "id": "axborot-hajmi-07",
+  "id": "axborot-hajmi-05",
   "unit": "axborot-hajmi",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Matn 100 ta belgidan iborat, har bir belgi 1 bayt. Matn hajmi necha bit?",
   "options": [
    "100",
+   "8",
    "1000",
-   "800",
-   "8"
+   "800"
   ],
-  "answer": 2,
+  "answer": 3,
   "explanation": "100 bayt = 800 bit.",
   "solution": [
    "Hajm = 100 · 1 bayt = 100 bayt.",
@@ -140,18 +100,18 @@
   ]
  },
  {
-  "id": "axborot-hajmi-08",
+  "id": "axborot-hajmi-06",
   "unit": "axborot-hajmi",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Ma’lumot uzatish tezligi qanday birlikda o‘lchanadi?",
   "options": [
-   "bit/s (sekundiga bit)",
    "bayt",
    "Gerts",
-   "piksel"
+   "piksel",
+   "bit/s (sekundiga bit)"
   ],
-  "answer": 0,
+  "answer": 3,
   "explanation": "Uzatish tezligi — bit/s.",
   "solution": [
    "Tezlik — 1 sekundda qancha axborot uzatilishi.",
@@ -160,16 +120,16 @@
   ]
  },
  {
-  "id": "axborot-hajmi-09",
+  "id": "axborot-hajmi-07",
   "unit": "axborot-hajmi",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Faylni uzatish vaqtini topish formulasi qaysi?",
   "options": [
    "vaqt = hajm · tezlik",
-   "vaqt = hajm + tezlik",
+   "vaqt = tezlik : hajm",
    "vaqt = hajm : tezlik",
-   "vaqt = tezlik : hajm"
+   "vaqt = hajm + tezlik"
   ],
   "answer": 2,
   "explanation": "t = V : v.",
@@ -180,58 +140,18 @@
   ]
  },
  {
-  "id": "axborot-hajmi-10",
-  "unit": "axborot-hajmi",
-  "difficulty": "easy",
-  "points": 0.9,
-  "prompt": "Tezlik 8 bit/s. 1 bayt ma’lumot necha sekundda uzatiladi?",
-  "options": [
-   "0,125",
-   "8",
-   "64",
-   "1"
-  ],
-  "answer": 3,
-  "explanation": "8 bit : 8 bit/s = 1 s.",
-  "solution": [
-   "1 bayt = 8 bit.",
-   "8 bit : 8 bit/s = 1 s.",
-   "Javob: 1"
-  ]
- },
- {
-  "id": "axborot-hajmi-11",
-  "unit": "axborot-hajmi",
-  "difficulty": "easy",
-  "points": 0.9,
-  "prompt": "Rasm o‘lchami 10 × 10 piksel, har bir piksel 1 bit. Rasm hajmi necha bit?",
-  "options": [
-   "20",
-   "800",
-   "10",
-   "100"
-  ],
-  "answer": 3,
-  "explanation": "100 piksel · 1 bit = 100 bit.",
-  "solution": [
-   "Piksellar soni: 10 · 10 = 100.",
-   "Hajm = 100 · 1 bit.",
-   "Javob: 100"
-  ]
- },
- {
-  "id": "axborot-hajmi-12",
+  "id": "axborot-hajmi-08",
   "unit": "axborot-hajmi",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Alifboda 16 ta belgi bor. Bitta belgining axborot hajmi necha bit?",
   "options": [
-   "8",
    "4",
+   "16",
    "2",
-   "16"
+   "8"
   ],
-  "answer": 1,
+  "answer": 0,
   "explanation": "16 = 2⁴ → 4 bit.",
   "solution": [
    "16 = 2⁴.",
@@ -240,18 +160,18 @@
   ]
  },
  {
-  "id": "axborot-hajmi-13",
+  "id": "axborot-hajmi-09",
   "unit": "axborot-hajmi",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Ovoz yozishda «diskretlash chastotasi» nimani bildiradi?",
   "options": [
-   "fayl nomini",
-   "1 sekundda necha marta ovoz o‘lchanishini",
    "ovoz balandligini",
-   "kanallar sonini"
+   "kanallar sonini",
+   "1 sekundda necha marta ovoz o‘lchanishini",
+   "fayl nomini"
   ],
-  "answer": 1,
+  "answer": 2,
   "explanation": "Chastota — sekunddagi o‘lchovlar soni.",
   "solution": [
    "Ovoz uzluksiz to‘lqin. Kompyuter uni har sekundda ko‘p marta «suratga oladi» (o‘lchaydi).",
@@ -260,18 +180,18 @@
   ]
  },
  {
-  "id": "axborot-hajmi-14",
+  "id": "axborot-hajmi-10",
   "unit": "axborot-hajmi",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Alifboda 100 ta belgi bor. Bitta belgi uchun eng kamida necha bit kerak?",
   "options": [
+   "8",
    "6",
-   "7",
    "100",
-   "8"
+   "7"
   ],
-  "answer": 1,
+  "answer": 3,
   "explanation": "2⁷ = 128 ≥ 100 → 7 bit.",
   "solution": [
    "2⁶ = 64 < 100 — yetmaydi. 2⁷ = 128 ≥ 100 — yetadi.",
@@ -280,18 +200,18 @@
   ]
  },
  {
-  "id": "axborot-hajmi-15",
+  "id": "axborot-hajmi-11",
   "unit": "axborot-hajmi",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Tezlik 1024 bit/s. 1 KB fayl necha sekundda uzatiladi?",
   "options": [
    "1",
-   "8",
    "0,125",
-   "1024"
+   "1024",
+   "8"
   ],
-  "answer": 1,
+  "answer": 3,
   "explanation": "8192 bit : 1024 bit/s = 8 s.",
   "solution": [
    "1 KB = 1024 bayt = 8192 bit.",
@@ -300,18 +220,18 @@
   ]
  },
  {
-  "id": "axborot-hajmi-16",
+  "id": "axborot-hajmi-12",
   "unit": "axborot-hajmi",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Rang chuqurligi 24 bit bo‘lgan rasmda bitta piksel necha bayt?",
   "options": [
    "1",
+   "3",
    "8",
-   "24",
-   "3"
+   "24"
   ],
-  "answer": 3,
+  "answer": 1,
   "explanation": "24 bit = 3 bayt.",
   "solution": [
    "24 bit : 8 = 3 bayt.",
@@ -320,10 +240,10 @@
   ]
  },
  {
-  "id": "axborot-hajmi-17",
+  "id": "axborot-hajmi-13",
   "unit": "axborot-hajmi",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Uzunligi 40 ta belgidan iborat ma’lumot 75 belgili alifbo yordamida yozilgan. Uning eng kichik hajmi necha bit?",
   "options": [
    "300",
@@ -340,18 +260,18 @@
   ]
  },
  {
-  "id": "axborot-hajmi-18",
+  "id": "axborot-hajmi-14",
   "unit": "axborot-hajmi",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "ASCII belgilaridan iborat matnli fayl 17 Kb (kilobit) hajmga ega. Shundan 75 bayti meta ma’lumot. Matn nechta belgidan iborat?",
   "options": [
    "17333",
-   "17408",
    "2101",
-   "2176"
+   "2176",
+   "17408"
   ],
-  "answer": 2,
+  "answer": 1,
   "explanation": "2176 − 75 = 2101 belgi.",
   "solution": [
    "17 Kb = 17 · 1024 bit = 17408 bit = 17408 : 8 = 2176 bayt.",
@@ -361,18 +281,18 @@
   ]
  },
  {
-  "id": "axborot-hajmi-19",
+  "id": "axborot-hajmi-15",
   "unit": "axborot-hajmi",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "90 MB ma’lumotni 128 Kb/s tezlikdagi tarmoq orqali yuborish uchun necha daqiqa kerak?",
   "options": [
-   "48",
-   "192",
    "12",
-   "96"
+   "96",
+   "48",
+   "192"
   ],
-  "answer": 3,
+  "answer": 1,
   "explanation": "90·2²³ / 2¹⁷ = 5760 s = 96 daqiqa.",
   "solution": [
    "Hajmni bitga: 90 MB = 90 · 2²⁰ · 2³ bit = 90 · 2²³ bit.",
@@ -382,18 +302,18 @@
   ]
  },
  {
-  "id": "axborot-hajmi-20",
+  "id": "axborot-hajmi-16",
   "unit": "axborot-hajmi",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "1920 × 1080 o‘lchamdagi rasmning hajmi 3037,5 KB. Har bir piksel necha xil rangda bo‘lishi mumkin?",
   "options": [
-   "256",
-   "4096",
    "65536",
-   "12"
+   "256",
+   "12",
+   "4096"
   ],
-  "answer": 1,
+  "answer": 3,
   "explanation": "12 bit/piksel → 2¹² = 4096 rang.",
   "solution": [
    "Hajmni bitga: 3037,5 · 1024 · 8 = 24 883 200 bit.",
@@ -403,38 +323,18 @@
   ]
  },
  {
-  "id": "axborot-hajmi-21",
+  "id": "axborot-hajmi-17",
   "unit": "axborot-hajmi",
   "difficulty": "medium",
-  "points": 1.7,
-  "prompt": "Rasm 640 × 480 piksel, 256 rangli. Rasm hajmi necha KB?",
-  "options": [
-   "2400",
-   "150",
-   "300",
-   "600"
-  ],
-  "answer": 2,
-  "explanation": "307200 bayt = 300 KB.",
-  "solution": [
-   "256 rang = 2⁸ → 1 piksel = 8 bit = 1 bayt.",
-   "Hajm: 640 · 480 = 307 200 bayt.",
-   "307 200 : 1024 = 300 KB"
-  ]
- },
- {
-  "id": "axborot-hajmi-22",
-  "unit": "axborot-hajmi",
-  "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Ovoz 1 kanalda (mono), 8 bitli kodlash bilan, 8 kHz chastotada 10 sekund yozildi. Fayl hajmi necha bayt?",
   "options": [
    "8000",
-   "800",
    "80000",
-   "640000"
+   "640000",
+   "800"
   ],
-  "answer": 2,
+  "answer": 1,
   "explanation": "8000·8·10 / 8 = 80000 bayt.",
   "solution": [
    "Hajm (bit) = chastota · bit chuqurligi · vaqt · kanallar.",
@@ -444,36 +344,16 @@
   ]
  },
  {
-  "id": "axborot-hajmi-23",
+  "id": "axborot-hajmi-18",
   "unit": "axborot-hajmi",
   "difficulty": "medium",
-  "points": 1.7,
-  "prompt": "256 rangli rasm 16 rangli rasmga aylantirildi (o‘lcham o‘zgarmadi). Hajm necha marta kamaydi?",
-  "options": [
-   "240",
-   "4",
-   "16",
-   "2"
-  ],
-  "answer": 3,
-  "explanation": "8 bit → 4 bit: 2 marta.",
-  "solution": [
-   "256 rang = 2⁸ → 8 bit/piksel. 16 rang = 2⁴ → 4 bit/piksel.",
-   "8 : 4 = 2.",
-   "Javob: 2"
-  ]
- },
- {
-  "id": "axborot-hajmi-24",
-  "unit": "axborot-hajmi",
-  "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Tezligi 256 000 bit/s bo‘lgan tarmoq orqali 500 KB hajmli fayl necha sekundda uzatiladi?",
   "options": [
    "2",
-   "0,5",
+   "160",
    "16",
-   "160"
+   "0,5"
   ],
   "answer": 2,
   "explanation": "4096000 / 256000 = 16 s.",
@@ -484,18 +364,18 @@
   ]
  },
  {
-  "id": "axborot-hajmi-25",
+  "id": "axborot-hajmi-19",
   "unit": "axborot-hajmi",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Kitobda 50 bet, har betda 40 qator, har qatorda 64 belgi (1 belgi = 1 bayt). Kitob hajmi necha KB?",
   "options": [
    "200",
-   "125",
    "1000",
-   "128000"
+   "128000",
+   "125"
   ],
-  "answer": 1,
+  "answer": 3,
   "explanation": "128000 bayt = 125 KB.",
   "solution": [
    "Belgilar soni: 50 · 40 · 64 = 128 000.",
@@ -504,59 +384,18 @@
   ]
  },
  {
-  "id": "axborot-hajmi-26",
+  "id": "axborot-hajmi-20",
   "unit": "axborot-hajmi",
   "difficulty": "medium",
-  "points": 1.7,
-  "prompt": "Xabar 16 belgili alifboda yozilgan va hajmi 1/16 KB. Xabarda nechta belgi bor?",
-  "options": [
-   "512",
-   "16",
-   "128",
-   "64"
-  ],
-  "answer": 2,
-  "explanation": "512 bit / 4 bit = 128 belgi.",
-  "solution": [
-   "1/16 KB = 64 bayt = 512 bit.",
-   "Bitta belgi: 16 = 2⁴ → 4 bit.",
-   "512 : 4",
-   "Javob: 128"
-  ]
- },
- {
-  "id": "axborot-hajmi-27",
-  "unit": "axborot-hajmi",
-  "difficulty": "medium",
-  "points": 1.7,
-  "prompt": "Svetofor 3 xil signal (qizil, sariq, yashil) beradi. Bitta signalni kodlash uchun eng kamida necha bit kerak?",
-  "options": [
-   "1",
-   "8",
-   "2",
-   "3"
-  ],
-  "answer": 2,
-  "explanation": "2² = 4 ≥ 3 → 2 bit.",
-  "solution": [
-   "1 bit → 2 holat — yetmaydi. 2 bit → 4 holat — yetadi.",
-   "Eng kamida i: 2ⁱ ≥ 3 → i = 2.",
-   "Javob: 2"
-  ]
- },
- {
-  "id": "axborot-hajmi-28",
-  "unit": "axborot-hajmi",
-  "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Tezlik 2 Mbit/s. 15 sekundda necha MB ma’lumot uzatiladi?",
   "options": [
-   "240",
    "7,5",
-   "30",
-   "3,75"
+   "3,75",
+   "240",
+   "30"
   ],
-  "answer": 3,
+  "answer": 1,
   "explanation": "30 Mbit = 3,75 MB.",
   "solution": [
    "15 sekundda: 2 · 15 = 30 Mbit.",
@@ -565,14 +404,14 @@
   ]
  },
  {
-  "id": "axborot-hajmi-29",
+  "id": "axborot-hajmi-21",
   "unit": "axborot-hajmi",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Stereo (2 kanal) ovoz, 16 bit, 32 kHz chastota, 4 sekund. Hajmi necha KB? (1 kHz = 1000 Hz)",
   "options": [
-   "1000",
    "4000",
+   "1000",
    "500",
    "250"
   ],
@@ -585,38 +424,18 @@
   ]
  },
  {
-  "id": "axborot-hajmi-30",
+  "id": "axborot-hajmi-22",
   "unit": "axborot-hajmi",
   "difficulty": "medium",
-  "points": 1.7,
-  "prompt": "Rang chuqurligi 4 bitdan 16 bitga oshirildi. Rasm hajmi qanday o‘zgaradi?",
-  "options": [
-   "12 marta ortadi",
-   "o‘zgarmaydi",
-   "4 marta ortadi",
-   "16 marta ortadi"
-  ],
-  "answer": 2,
-  "explanation": "16/4 = 4 marta.",
-  "solution": [
-   "Hajm = piksellar soni · bit chuqurligi.",
-   "16 : 4 = 4.",
-   "Javob: 4 marta ortadi"
-  ]
- },
- {
-  "id": "axborot-hajmi-31",
-  "unit": "axborot-hajmi",
-  "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Sportchilar raqamlari 1 dan 600 gacha. Har bir raqamni bir xil uzunlikdagi minimal ikkilik kod bilan yozsak, 200 ta raqam necha bayt bo‘ladi?",
   "options": [
    "225",
-   "250",
    "1200",
+   "250",
    "200"
   ],
-  "answer": 1,
+  "answer": 2,
   "explanation": "10 bit · 200 = 2000 bit = 250 bayt.",
   "solution": [
    "600 xil raqam: 2⁹ = 512 < 600 ≤ 1024 = 2¹⁰ → 10 bit.",
@@ -625,18 +444,18 @@
   ]
  },
  {
-  "id": "axborot-hajmi-32",
+  "id": "axborot-hajmi-23",
   "unit": "axborot-hajmi",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Rasm 800 × 600 piksel, har bir piksel 2 bayt. Rasm hajmi necha KB?",
   "options": [
    "468,75",
-   "937,5",
    "7500",
-   "960"
+   "960",
+   "937,5"
   ],
-  "answer": 1,
+  "answer": 3,
   "explanation": "960000 bayt = 937,5 KB.",
   "solution": [
    "Piksellar: 800 · 600 = 480 000.",
@@ -646,18 +465,18 @@
   ]
  },
  {
-  "id": "axborot-hajmi-33",
+  "id": "axborot-hajmi-24",
   "unit": "axborot-hajmi",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Tezlik 64 Kbit/s. 1 daqiqada necha KB ma’lumot uzatiladi?",
   "options": [
-   "64",
-   "60",
    "3840",
-   "480"
+   "60",
+   "480",
+   "64"
   ],
-  "answer": 3,
+  "answer": 2,
   "explanation": "3840 Kbit = 480 KB.",
   "solution": [
    "1 daqiqa = 60 s. 64 · 60 = 3840 Kbit.",
@@ -666,36 +485,16 @@
   ]
  },
  {
-  "id": "axborot-hajmi-34",
-  "unit": "axborot-hajmi",
-  "difficulty": "easy",
-  "points": 0.9,
-  "prompt": "Rasmdagi ranglar soni 4 ta. Bitta piksel necha bit?",
-  "options": [
-   "4",
-   "1",
-   "2",
-   "8"
-  ],
-  "answer": 2,
-  "explanation": "4 = 2² → 2 bit.",
-  "solution": [
-   "N = 2ⁱ: 4 = 2².",
-   "Demak i = 2.",
-   "Javob: 2"
-  ]
- },
- {
-  "id": "axborot-hajmi-35",
+  "id": "axborot-hajmi-25",
   "unit": "axborot-hajmi",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Xabar 8 belgili alifboda 120 belgi, ikkinchi xabar 32 belgili alifboda 80 belgi. Qaysi xabarda axborot ko‘p va qanchaga (bit)?",
   "options": [
-   "teng",
+   "ikkinchisida, 80 bit ko‘p",
    "ikkinchisida, 40 bit ko‘p",
-   "birinchisida, 40 bit ko‘p",
-   "ikkinchisida, 80 bit ko‘p"
+   "teng",
+   "birinchisida, 40 bit ko‘p"
   ],
   "answer": 1,
   "explanation": "360 bit va 400 bit.",
@@ -707,10 +506,10 @@
   ]
  },
  {
-  "id": "axborot-hajmi-36",
+  "id": "axborot-hajmi-26",
   "unit": "axborot-hajmi",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Faylni 4 Mbit/s tezlikda yuklash 2 daqiqa davom etdi. Fayl hajmi necha MB?",
   "options": [
    "8",
@@ -728,16 +527,16 @@
   ]
  },
  {
-  "id": "axborot-hajmi-37",
+  "id": "axborot-hajmi-27",
   "unit": "axborot-hajmi",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Diktofon 24 bitli kodlash bilan 44 kHz chastotada ovoz yozadi. Xotira hajmi 4125 KB bo‘lsa, necha sekund to‘xtovsiz yozuvdan keyin to‘ladi?",
   "options": [
-   "24",
    "44",
+   "16",
    "32",
-   "16"
+   "24"
   ],
   "answer": 2,
   "explanation": "33792000 / 1056000 = 32 s.",
@@ -749,18 +548,18 @@
   ]
  },
  {
-  "id": "axborot-hajmi-38",
+  "id": "axborot-hajmi-28",
   "unit": "axborot-hajmi",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "100 Mb/s tezlikdagi tarmoq orqali 10 daqiqalik video 15 daqiqada yuklab olindi. Bitta tasvir (kadr) 768 KB. Videoning 1 soniyasida nechta kadr bor?",
   "options": [
-   "25",
-   "50",
    "200",
-   "12.5"
+   "12.5",
+   "50",
+   "25"
   ],
-  "answer": 0,
+  "answer": 3,
   "explanation": "15000 kadr / 600 s = 25 kadr/s.",
   "solution": [
    "Yuklangan hajm: 100 · 2²⁰ bit/s · 900 s.",
@@ -770,38 +569,18 @@
   ]
  },
  {
-  "id": "axborot-hajmi-39",
+  "id": "axborot-hajmi-29",
   "unit": "axborot-hajmi",
   "difficulty": "hard",
-  "points": 2.4,
-  "prompt": "Ikki kompyuter orasida 4 MB fayl 32 sekundda uzatildi. Tarmoq tezligi necha Kbit/s?",
-  "options": [
-   "128",
-   "1024",
-   "8192",
-   "32"
-  ],
-  "answer": 1,
-  "explanation": "32768 Kbit / 32 s = 1024 Kbit/s.",
-  "solution": [
-   "4 MB = 4 · 1024 KB = 4096 KB = 4096 · 8 = 32 768 Kbit.",
-   "Tezlik = 32 768 : 32",
-   "Javob: 1024"
-  ]
- },
- {
-  "id": "axborot-hajmi-40",
-  "unit": "axborot-hajmi",
-  "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Rasm 1024 × 768 piksel va hajmi 1,5 MB. Palitrada (rasmda) eng ko‘pi bilan nechta rang bo‘lishi mumkin?",
   "options": [
    "256",
-   "65536",
    "16",
+   "65536",
    "4096"
   ],
-  "answer": 1,
+  "answer": 2,
   "explanation": "16 bit/piksel → 65536 rang.",
   "solution": [
    "Hajm bitda: 1,5 · 2²³ = 12 582 912 bit.",
@@ -811,18 +590,18 @@
   ]
  },
  {
-  "id": "axborot-hajmi-41",
+  "id": "axborot-hajmi-30",
   "unit": "axborot-hajmi",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Alifbo 200 ta belgidan iborat. Xabar hajmi 1 KB va har bir belgi minimal bir xil bitlar bilan kodlangan. Xabarda nechta belgi bor?",
   "options": [
-   "1024",
-   "200",
+   "1170",
    "1365",
-   "1170"
+   "1024",
+   "200"
   ],
-  "answer": 0,
+  "answer": 2,
   "explanation": "8 bit/belgi → 1024 belgi.",
   "solution": [
    "200 belgi: 2⁷ = 128 < 200 ≤ 256 = 2⁸ → 8 bit.",
@@ -832,18 +611,18 @@
   ]
  },
  {
-  "id": "axborot-hajmi-42",
+  "id": "axborot-hajmi-31",
   "unit": "axborot-hajmi",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Ovoz fayli: stereo, 16 bit, 44,1 kHz. 1 daqiqalik yozuv taxminan necha MB? (1 kHz = 1000 Hz)",
   "options": [
-   "≈ 10,1",
-   "≈ 5,0",
    "≈ 1,3",
-   "≈ 80,7"
+   "≈ 10,1",
+   "≈ 80,7",
+   "≈ 5,0"
   ],
-  "answer": 0,
+  "answer": 1,
   "explanation": "≈ 10,1 MB.",
   "solution": [
    "Bitlar: 44 100 · 16 · 2 · 60 = 84 672 000 bit.",
@@ -853,18 +632,18 @@
   ]
  },
  {
-  "id": "axborot-hajmi-43",
+  "id": "axborot-hajmi-32",
   "unit": "axborot-hajmi",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Birinchi tarmoq tezligi 2¹⁸ bit/s, ikkinchisiniki 2¹⁶ bit/s. 2 MB faylni ikkinchi tarmoqda uzatish birinchisiga qaraganda necha sekund ko‘p vaqt oladi?",
   "options": [
-   "192",
-   "256",
    "4",
-   "64"
+   "192",
+   "64",
+   "256"
   ],
-  "answer": 0,
+  "answer": 1,
   "explanation": "256 − 64 = 192 s.",
   "solution": [
    "2 MB = 2 · 2²³ = 2²⁴ bit.",
@@ -874,18 +653,18 @@
   ]
  },
  {
-  "id": "axborot-hajmi-44",
+  "id": "axborot-hajmi-33",
   "unit": "axborot-hajmi",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Video: 1280 × 720 piksel, 24 bit rang, 30 kadr/s, siqilmagan. 1 sekund video necha MB? (2 xona aniqlikda)",
   "options": [
-   "79,10",
    "633,6",
    "26,37",
-   "2,64"
+   "2,64",
+   "79,10"
   ],
-  "answer": 0,
+  "answer": 3,
   "explanation": "≈ 79,10 MB.",
   "solution": [
    "Bitta kadr: 1280 · 720 · 3 bayt = 2 764 800 bayt.",
@@ -895,16 +674,16 @@
   ]
  },
  {
-  "id": "axborot-hajmi-45",
+  "id": "axborot-hajmi-34",
   "unit": "axborot-hajmi",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Matn 2 xil kodlashda saqlandi: 8 bitli va 16 bitli (Unicode). Ikkinchi fayl birinchisidan 3 KB katta. Matnda nechta belgi bor?",
   "options": [
    "6144",
-   "24576",
+   "1536",
    "3072",
-   "1536"
+   "24576"
   ],
   "answer": 2,
   "explanation": "Farq 1 bayt/belgi → 3072 belgi.",
@@ -916,18 +695,18 @@
   ]
  },
  {
-  "id": "axborot-hajmi-46",
+  "id": "axborot-hajmi-35",
   "unit": "axborot-hajmi",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Tezlik 512 Kbit/s. 20 sekundda uzatilgan matnda (1 belgi = 16 bit) nechta belgi bor?",
   "options": [
-   "81920",
-   "640000",
+   "327680",
    "655360",
-   "327680"
+   "640000",
+   "81920"
   ],
-  "answer": 2,
+  "answer": 1,
   "explanation": "10485760 / 16 = 655360 belgi.",
   "solution": [
    "Uzatilgan: 512 · 1024 · 20 = 10 485 760 bit.",
@@ -936,18 +715,18 @@
   ]
  },
  {
-  "id": "axborot-hajmi-47",
+  "id": "axborot-hajmi-36",
   "unit": "axborot-hajmi",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Rasm palitrasi 2¹⁰ rangdan 2⁵ rangga kamaytirildi va hajmi 320 KB ga kamaydi. Rasmning boshlang‘ich hajmi necha KB edi?",
   "options": [
    "1024",
-   "640",
    "160",
+   "640",
    "320"
   ],
-  "answer": 1,
+  "answer": 2,
   "explanation": "V/2 = 320 → V = 640 KB.",
   "solution": [
    "Bit chuqurligi: 2¹⁰ rang → 10 bit, 2⁵ rang → 5 bit. Hajm 2 marta kamayadi.",
@@ -957,39 +736,18 @@
   ]
  },
  {
-  "id": "axborot-hajmi-48",
+  "id": "axborot-hajmi-37",
   "unit": "axborot-hajmi",
   "difficulty": "hard",
-  "points": 2.4,
-  "prompt": "Ovoz mono, 8 kHz, 1 MB xotiraga 2 daqiqa 11 sekund (taxminan) sig‘di. Kodlash chuqurligi necha bit?",
-  "options": [
-   "4",
-   "8",
-   "16",
-   "24"
-  ],
-  "answer": 1,
-  "explanation": "≈ 64000 bit/s : 8000 Hz = 8 bit.",
-  "solution": [
-   "1 MB = 8 388 608 bit. Vaqt: 131 s.",
-   "Bitlar soni 1 sekundda: 8 388 608 : 131 ≈ 64 035 bit/s.",
-   "Chuqurlik ≈ 64 035 : 8000 ≈ 8.",
-   "Javob: 8"
-  ]
- },
- {
-  "id": "axborot-hajmi-49",
-  "unit": "axborot-hajmi",
-  "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "40 ta o‘quvchiga 1 dan 40 gacha nomer berilgan. Har bir nomer minimal bitlar bilan kodlanadi. Barcha 40 ta nomerni yozish uchun necha bayt kerak (butun baytlarga yaxlitlang)?",
   "options": [
-   "30",
    "24",
    "40",
+   "30",
    "32"
   ],
-  "answer": 0,
+  "answer": 2,
   "explanation": "6 bit · 40 = 240 bit = 30 bayt.",
   "solution": [
    "40 xil nomer: 2⁵ = 32 < 40 ≤ 64 = 2⁶ → 6 bit.",
@@ -998,10 +756,10 @@
   ]
  },
  {
-  "id": "axborot-hajmi-50",
+  "id": "axborot-hajmi-38",
   "unit": "axborot-hajmi",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Tarmoq tezligi 10 Mbit/s, lekin 20% vaqt xizmat ma’lumotlariga sarflanadi. 50 MB fayl necha sekundda yuklanadi?",
   "options": [
    "50",
@@ -1016,6 +774,250 @@
    "Hajm: 50 MB = 400 Mbit.",
    "400 : 8",
    "Javob: 50"
+  ]
+ },
+ {
+  "id": "axborot-hajmi-39",
+  "unit": "axborot-hajmi",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Instagramga har bir suratni yuklash uchun o‘rtacha 4 MB trafik sarflanadi. Bir kunda 15 ta surat yuklansa, qancha MB trafik sarflanadi?",
+  "options": [
+   "40",
+   "60",
+   "50",
+   "80"
+  ],
+  "answer": 1,
+  "explanation": "15 · 4 = 60 MB.",
+  "solution": [
+   "Bitta surat — 4 MB.",
+   "15 ta surat: 15 · 4.",
+   "Javob: 60"
+  ]
+ },
+ {
+  "id": "axborot-hajmi-40",
+  "unit": "axborot-hajmi",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Video 2,5 daqiqa davom etadi, 1 sekundda 30 ta kadr ko‘rsatiladi. Umumiy kadrlar soni qancha?",
+  "options": [
+   "6000",
+   "4500",
+   "3000",
+   "1500"
+  ],
+  "answer": 1,
+  "explanation": "150 s · 30 = 4500.",
+  "solution": [
+   "2,5 daqiqa = 2,5 · 60 = 150 sekund.",
+   "Kadrlar: 150 · 30.",
+   "Javob: 4500"
+  ]
+ },
+ {
+  "id": "axborot-hajmi-41",
+  "unit": "axborot-hajmi",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "5 MB hajmli rasmni 2 Mbit/s tezlikdagi internet orqali yuborish uchun qancha vaqt ketadi?",
+  "options": [
+   "20 soniya",
+   "15 soniya",
+   "25 soniya",
+   "10 soniya"
+  ],
+  "answer": 0,
+  "explanation": "40 Mbit : 2 = 20 s.",
+  "solution": [
+   "Hajmni bitga o‘tkazamiz: 5 MB = 5 · 8 = 40 Mbit.",
+   "Vaqt = 40 : 2.",
+   "Javob: 20 soniya"
+  ]
+ },
+ {
+  "id": "axborot-hajmi-42",
+  "unit": "axborot-hajmi",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "100 MB hajmdagi faylni 20 Mbit/s tezlikda yuborish uchun qancha vaqt kerak?",
+  "options": [
+   "40 soniya",
+   "20 soniya",
+   "60 soniya",
+   "80 soniya"
+  ],
+  "answer": 0,
+  "explanation": "800 : 20 = 40 s.",
+  "solution": [
+   "100 MB = 800 Mbit.",
+   "800 : 20.",
+   "Javob: 40 soniya"
+  ]
+ },
+ {
+  "id": "axborot-hajmi-43",
+  "unit": "axborot-hajmi",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "120 MB fayl arxivlash natijasida 84 MB ga teng bo‘ldi. Fayl necha foizga qisqargan?",
+  "options": [
+   "30%",
+   "40%",
+   "70%",
+   "50%"
+  ],
+  "answer": 0,
+  "explanation": "36/120 = 30%.",
+  "solution": [
+   "Qisqargan qism: 120 − 84 = 36 MB.",
+   "Foiz: 36 / 120 · 100% = 30%.",
+   "(70% — bu QOLGAN qism, qisqargan emas!) Javob: 30%"
+  ]
+ },
+ {
+  "id": "axborot-hajmi-44",
+  "unit": "axborot-hajmi",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Kitobda har bir sahifa 64 qator, har qator 32 belgi, kitob 5 sahifa. 1 belgi = 1 bayt bo‘lsa, kitob hajmi necha KB?",
+  "options": [
+   "10 KB",
+   "8 KB",
+   "12 KB",
+   "5 KB"
+  ],
+  "answer": 0,
+  "explanation": "10240 bayt = 10 KB.",
+  "solution": [
+   "Belgilar: 64 · 32 · 5 = 10240.",
+   "10240 bayt : 1024 = 10 KB.",
+   "Javob: 10 KB"
+  ]
+ },
+ {
+  "id": "axborot-hajmi-45",
+  "unit": "axborot-hajmi",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Emailda bitta xabar uchun 20 MB cheklov bor. Har bir rasm 2,5 MB bo‘lsa, 35 ta rasmni eng kamida nechta xabarda yuborish mumkin?",
+  "options": [
+   "4",
+   "2",
+   "5",
+   "6"
+  ],
+  "answer": 2,
+  "explanation": "⌈35/8⌉ = 5 xabar.",
+  "solution": [
+   "Bitta xabarga: 20 : 2,5 = 8 ta rasm sig‘adi.",
+   "35 : 8 = 4,375 → 4 ta xabar yetmaydi, yuqoriga yaxlitlaymiz.",
+   "Javob: 5"
+  ]
+ },
+ {
+  "id": "axborot-hajmi-46",
+  "unit": "axborot-hajmi",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Firmada 90 ta ishchi ishlaydi. Har bir xodimni ikkilik kod bilan kodlash uchun eng kamida necha bit kerak?",
+  "options": [
+   "9",
+   "6",
+   "7",
+   "8"
+  ],
+  "answer": 2,
+  "explanation": "2⁷ = 128 ≥ 90.",
+  "solution": [
+   "N = 2ⁱ ≥ 90 bo‘lishi kerak.",
+   "2⁶ = 64 < 90, 2⁷ = 128 ≥ 90.",
+   "Javob: 7"
+  ]
+ },
+ {
+  "id": "axborot-hajmi-47",
+  "unit": "axborot-hajmi",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "1 daqiqa 4 sekundlik mono audio yozuv 22 kHz, 8 bit formatda yozilgan. Fayl hajmi necha KB? (1 kHz = 1000 Hz, 1 KB = 1024 bayt)",
+  "options": [
+   "22000",
+   "1375",
+   "1000",
+   "1024"
+  ],
+  "answer": 1,
+  "explanation": "1408000 bayt = 1375 KB.",
+  "solution": [
+   "Vaqt: 64 s. Bitlar: 22 000 · 8 · 64 · 1 = 11 264 000 bit.",
+   "Baytlar: 11 264 000 : 8 = 1 408 000 bayt.",
+   "1 408 000 : 1024 = 1375 KB",
+   "Javob: 1375"
+  ]
+ },
+ {
+  "id": "axborot-hajmi-48",
+  "unit": "axborot-hajmi",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Fayl arxivlanganda 20% ga qisqardi. Qisqargan fayl 40 Mbit/s tezlikda 4 daqiqada uzatildi. Dastlabki fayl hajmi necha MB? (1 MB = 8 Mbit)",
+  "options": [
+   "9600",
+   "1500",
+   "1200",
+   "7680"
+  ],
+  "answer": 1,
+  "explanation": "1200 MB = 80% → asl 1500 MB.",
+  "solution": [
+   "Uzatilgan: 40 · 240 = 9600 Mbit = 9600 : 8 = 1200 MB — bu arxivlangan fayl.",
+   "Arxiv asl faylning 80% i: 0,8 · V = 1200.",
+   "V = 1200 : 0,8",
+   "Javob: 1500"
+  ]
+ },
+ {
+  "id": "axborot-hajmi-49",
+  "unit": "axborot-hajmi",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Video 1 daqiqa, kadr o‘lchami 1024 × 512, rang chuqurligi 24 bit, 1 sekundda 30 kadr. Video hajmi necha MB?",
+  "options": [
+   "2700",
+   "2500",
+   "5000",
+   "3000"
+  ],
+  "answer": 0,
+  "explanation": "1,5 MB · 1800 = 2700 MB.",
+  "solution": [
+   "Bitta kadr: 1024 · 512 · 3 bayt = 1 572 864 bayt = 1,5 MB.",
+   "Kadrlar: 60 · 30 = 1800.",
+   "1,5 · 1800",
+   "Javob: 2700"
+  ]
+ },
+ {
+  "id": "axborot-hajmi-50",
+  "unit": "axborot-hajmi",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "2 daqiqalik stereo audio 32 kHz, 16 bit formatda yozilgan. Hajmi necha KB? (1 kHz = 1000 Hz, 1 KB = 1000 bayt deb oling)",
+  "options": [
+   "15360",
+   "12000",
+   "16000",
+   "14000"
+  ],
+  "answer": 0,
+  "explanation": "15 360 000 bayt = 15360 KB (1 KB = 1000 deb).",
+  "solution": [
+   "Bitlar: 32 000 · 16 · 120 · 2 = 122 880 000 bit.",
+   "Baytlar: 122 880 000 : 8 = 15 360 000 bayt.",
+   "15 360 000 : 1000",
+   "Javob: 15360 (diqqat: 1 KB = 1024 bayt olinsa 15 000 KB chiqadi)"
   ]
  }
 ]

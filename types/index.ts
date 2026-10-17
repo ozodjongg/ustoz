@@ -33,6 +33,7 @@ export type Lesson = {
 };
 
 export type SourceQuestion = {
+  year: number;
   grade: number;
   number: number;
   points: number;

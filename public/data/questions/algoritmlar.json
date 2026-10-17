@@ -224,54 +224,14 @@
   "unit": "algoritmlar",
   "difficulty": "easy",
   "points": 0.9,
-  "prompt": "EKUK(4, 6) nechaga teng?",
-  "options": [
-   "24",
-   "10",
-   "2",
-   "12"
-  ],
-  "answer": 3,
-  "explanation": "EKUK(4, 6) = 12.",
-  "solution": [
-   "EKUK — ikkala songa bo‘linadigan eng kichik son.",
-   "4 ning karralilari: 4, 8, 12… 6 ning: 6, 12… Birinchi umumiy — 12.",
-   "Javob: 12"
-  ]
- },
- {
-  "id": "algoritmlar-13",
-  "unit": "algoritmlar",
-  "difficulty": "easy",
-  "points": 0.9,
-  "prompt": "Blok-sxemada a = 5, b = 3 kiritildi. Shart «a > b?» — ha bo‘lsa «c = a − b», yo‘q bo‘lsa «c = b − a». c ni toping.",
-  "options": [
-   "2",
-   "15",
-   "-2",
-   "8"
-  ],
-  "answer": 0,
-  "explanation": "Ha tarmog‘i: 5 − 3 = 2.",
-  "solution": [
-   "5 > 3 — rost, «ha» tarmog‘iga boramiz.",
-   "c = a − b = 5 − 3.",
-   "Javob: 2"
-  ]
- },
- {
-  "id": "algoritmlar-14",
-  "unit": "algoritmlar",
-  "difficulty": "easy",
-  "points": 0.9,
   "prompt": "Chiziqli qidiruvda n ta elementli ro‘yxatdan kerakli elementni topish uchun eng yomon holatda nechta taqqoslash kerak?",
   "options": [
    "log₂ n",
    "n²",
-   "n",
-   "1"
+   "1",
+   "n"
   ],
-  "answer": 2,
+  "answer": 3,
   "explanation": "Har birini tekshirish: n ta.",
   "solution": [
    "Chiziqli qidiruv elementlarni birma-bir tekshiradi.",
@@ -280,18 +240,18 @@
   ]
  },
  {
-  "id": "algoritmlar-15",
+  "id": "algoritmlar-13",
   "unit": "algoritmlar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Ikkilik (binar) qidiruvni qo‘llash uchun ro‘yxat qanday bo‘lishi shart?",
   "options": [
-   "Teskari tartibda yozilgan bo‘lishi shart emas, istalgan",
    "Saralangan",
+   "Teskari tartibda yozilgan bo‘lishi shart emas, istalgan",
    "Bo‘sh",
    "Faqat juft sonlardan iborat"
   ],
-  "answer": 1,
+  "answer": 0,
   "explanation": "Binar qidiruv saralangan ro‘yxatda ishlaydi.",
   "solution": [
    "Binar qidiruv o‘rtadagi element bilan taqqoslab, qidiruvni yarmiga qisqartiradi.",
@@ -300,38 +260,18 @@
   ]
  },
  {
-  "id": "algoritmlar-16",
-  "unit": "algoritmlar",
-  "difficulty": "easy",
-  "points": 0.9,
-  "prompt": "Blok-sxemada strelka (chiziq) nimani ko‘rsatadi?",
-  "options": [
-   "Kiritishni",
-   "Tugashni",
-   "Bajarilish tartibini (keyingi qadamni)",
-   "Xatolikni"
-  ],
-  "answer": 2,
-  "explanation": "Strelka — bajarilish yo‘nalishi.",
-  "solution": [
-   "Bloklar strelkalar bilan bog‘lanadi.",
-   "Strelka qaysi blokdan keyin qaysi blok bajarilishini ko‘rsatadi.",
-   "Javob: Bajarilish tartibini (keyingi qadamni)"
-  ]
- },
- {
-  "id": "algoritmlar-17",
+  "id": "algoritmlar-14",
   "unit": "algoritmlar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Yevklid algoritmi bilan EKUB(252, 105) ni toping.",
   "options": [
-   "21",
-   "35",
    "7",
-   "3"
+   "3",
+   "21",
+   "35"
   ],
-  "answer": 0,
+  "answer": 2,
   "explanation": "252 → 105 → 42 → 21.",
   "solution": [
    "252 = 105 · 2 + 42 → EKUB(105, 42).",
@@ -340,18 +280,18 @@
   ]
  },
  {
-  "id": "algoritmlar-18",
+  "id": "algoritmlar-15",
   "unit": "algoritmlar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Yevklid algoritmida EKUB(89, 55) ni topish uchun nechta bo‘lish (qoldiq olish) bajariladi?",
   "options": [
+   "55",
    "9",
-   "3",
    "5",
-   "55"
+   "3"
   ],
-  "answer": 0,
+  "answer": 1,
   "explanation": "9 ta bo‘lish (Fibonachchi — eng yomon holat).",
   "solution": [
    "89, 55 — ketma-ket Fibonachchi sonlari — Yevklid uchun eng «qiyin» holat.",
@@ -361,18 +301,18 @@
   ]
  },
  {
-  "id": "algoritmlar-19",
+  "id": "algoritmlar-16",
   "unit": "algoritmlar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Binar qidiruv bilan 1024 ta saralangan elementdan birini topish uchun eng ko‘pi bilan nechta taqqoslash kerak?",
   "options": [
    "512",
-   "1024",
    "32",
-   "11"
+   "11",
+   "1024"
   ],
-  "answer": 3,
+  "answer": 2,
   "explanation": "⌊log₂1024⌋ + 1 = 11.",
   "solution": [
    "Har taqqoslashda qidiruv oralig‘i 2 marta qisqaradi.",
@@ -382,18 +322,18 @@
   ]
  },
  {
-  "id": "algoritmlar-20",
+  "id": "algoritmlar-17",
   "unit": "algoritmlar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "EKUB(a, b) · EKUK(a, b) nimaga teng?",
   "options": [
-   "a + b",
+   "a · b",
    "a − b",
-   "a / b",
-   "a · b"
+   "a + b",
+   "a / b"
   ],
-  "answer": 3,
+  "answer": 0,
   "explanation": "EKUB · EKUK = a · b.",
   "solution": [
    "Masalan a = 4, b = 6: EKUB = 2, EKUK = 12 → 2 · 12 = 24 = 4 · 6.",
@@ -402,16 +342,16 @@
   ]
  },
  {
-  "id": "algoritmlar-21",
+  "id": "algoritmlar-18",
   "unit": "algoritmlar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "EKUK(18, 24) ni EKUB yordamida toping.",
   "options": [
    "72",
-   "432",
    "6",
-   "144"
+   "144",
+   "432"
   ],
   "answer": 0,
   "explanation": "432 / 6 = 72.",
@@ -422,18 +362,18 @@
   ]
  },
  {
-  "id": "algoritmlar-22",
+  "id": "algoritmlar-19",
   "unit": "algoritmlar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Pufakchali saralash (bubble sort) 5 elementli ro‘yxatda eng yomon holatda nechta taqqoslash bajaradi?",
   "options": [
-   "10",
    "5",
+   "25",
    "20",
-   "25"
+   "10"
   ],
-  "answer": 0,
+  "answer": 3,
   "explanation": "n(n−1)/2 = 10.",
   "solution": [
    "Har o‘tishda qo‘shni juftlar taqqoslanadi: 1-o‘tish 4, 2-o‘tish 3, 3-o‘tish 2, 4-o‘tish 1.",
@@ -442,15 +382,15 @@
   ]
  },
  {
-  "id": "algoritmlar-23",
+  "id": "algoritmlar-20",
   "unit": "algoritmlar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Blok-sxema: S = 0, i = 1. Shart «i ≤ 4?» — ha: S = S + i·i, i = i + 1 va shartga qayt; yo‘q: S ni chiqar. Nima chiqadi?",
   "options": [
-   "14",
-   "16",
    "10",
+   "16",
+   "14",
    "30"
   ],
   "answer": 3,
@@ -462,18 +402,18 @@
   ]
  },
  {
-  "id": "algoritmlar-24",
+  "id": "algoritmlar-21",
   "unit": "algoritmlar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Blok-sxema: n kiritiladi, k = 0. Shart «n > 0?» — ha: n = n // 10, k = k + 1 va qayt; yo‘q: k chiqariladi. n = 50721 bo‘lsa, nima chiqadi?",
   "options": [
-   "50721",
-   "15",
    "5",
-   "4"
+   "50721",
+   "4",
+   "15"
   ],
-  "answer": 2,
+  "answer": 0,
   "explanation": "Raqamlar soni: 5.",
   "solution": [
    "Har aylanishda oxirgi raqam tashlanadi va k bittaga oshadi.",
@@ -482,16 +422,16 @@
   ]
  },
  {
-  "id": "algoritmlar-25",
+  "id": "algoritmlar-22",
   "unit": "algoritmlar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Saralangan [2, 5, 8, 12, 16, 23, 38, 56, 72, 91] ro‘yxatida binar qidiruv bilan 23 ni qidirganda birinchi bo‘lib qaysi element bilan taqqoslanadi? (o‘rta = (0 + 9) // 2)",
   "options": [
    "16",
-   "23",
    "12",
-   "38"
+   "38",
+   "23"
   ],
   "answer": 0,
   "explanation": "O‘rta indeks 4 → 16.",
@@ -502,10 +442,10 @@
   ]
  },
  {
-  "id": "algoritmlar-26",
+  "id": "algoritmlar-23",
   "unit": "algoritmlar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Qaysi saralash usuli har qadamda qolgan qismdan eng kichik elementni topib, uni oldinga qo‘yadi?",
   "options": [
    "Tez saralash (quick sort)",
@@ -522,18 +462,18 @@
   ]
  },
  {
-  "id": "algoritmlar-27",
+  "id": "algoritmlar-24",
   "unit": "algoritmlar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Tub sonni aniqlash uchun n ni 2 dan qaysi songacha bo‘lgan sonlarga bo‘lib tekshirish yetarli?",
   "options": [
    "n² gacha",
-   "√n gacha",
    "n gacha",
+   "√n gacha",
    "n/2 gacha"
   ],
-  "answer": 1,
+  "answer": 2,
   "explanation": "√n gacha tekshirish yetarli.",
   "solution": [
    "Agar n = a · b bo‘lsa, a va b dan biri albatta √n dan oshmaydi.",
@@ -542,16 +482,16 @@
   ]
  },
  {
-  "id": "algoritmlar-28",
+  "id": "algoritmlar-25",
   "unit": "algoritmlar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Eratosfen g‘alviri qanday masalani yechadi?",
   "options": [
    "N gacha bo‘lgan barcha tub sonlarni topish",
-   "Kvadrat ildizni hisoblash",
+   "EKUB ni topish",
    "Ro‘yxatni saralash",
-   "EKUB ni topish"
+   "Kvadrat ildizni hisoblash"
   ],
   "answer": 0,
   "explanation": "Eratosfen — tub sonlar.",
@@ -562,15 +502,15 @@
   ]
  },
  {
-  "id": "algoritmlar-29",
+  "id": "algoritmlar-26",
   "unit": "algoritmlar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "1 dan 50 gacha bo‘lgan tub sonlar nechta?",
   "options": [
-   "14",
    "25",
    "16",
+   "14",
    "15"
   ],
   "answer": 3,
@@ -582,16 +522,16 @@
   ]
  },
  {
-  "id": "algoritmlar-30",
+  "id": "algoritmlar-27",
   "unit": "algoritmlar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Blok-sxema: a = 10, b = 4. Sikl: «a ≠ b?» — ha: agar a > b bo‘lsa a = a − b, aks holda b = b − a; yo‘q: a ni chiqar. Nima chiqadi?",
   "options": [
-   "6",
+   "10",
    "2",
    "4",
-   "10"
+   "6"
   ],
   "answer": 1,
   "explanation": "EKUB(10, 4) = 2.",
@@ -602,38 +542,18 @@
   ]
  },
  {
-  "id": "algoritmlar-31",
+  "id": "algoritmlar-28",
   "unit": "algoritmlar",
   "difficulty": "medium",
-  "points": 1.7,
-  "prompt": "Kvadrat tenglama ax² + bx + c = 0 yechish algoritmida diskriminant D < 0 bo‘lsa nima chiqariladi?",
-  "options": [
-   "Ikkita ildiz",
-   "Bitta ildiz",
-   "x = 0",
-   "Haqiqiy ildiz yo‘q"
-  ],
-  "answer": 3,
-  "explanation": "D < 0 → haqiqiy ildiz yo‘q.",
-  "solution": [
-   "D = b² − 4ac. D > 0 — 2 ildiz, D = 0 — 1 ildiz, D < 0 — haqiqiy ildiz yo‘q.",
-   "Bu tarmoqlanuvchi algoritmga misol.",
-   "Javob: Haqiqiy ildiz yo‘q"
-  ]
- },
- {
-  "id": "algoritmlar-32",
-  "unit": "algoritmlar",
-  "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Ikkita o‘zgaruvchi qiymatini almashtirish algoritmi (yordamchi o‘zgaruvchi bilan) qaysi qatorda to‘g‘ri?",
   "options": [
-   "t = a; b = t; a = b",
-   "a = b; b = a",
+   "t = a; a = b; b = t",
    "a = t; t = b; b = a",
-   "t = a; a = b; b = t"
+   "t = a; b = t; a = b",
+   "a = b; b = a"
   ],
-  "answer": 3,
+  "answer": 0,
   "explanation": "Yordamchi t orqali almashtirish.",
   "solution": [
    "a = b; b = a — a ning eski qiymati yo‘qoladi, ikkalasi b bo‘lib qoladi.",
@@ -642,18 +562,18 @@
   ]
  },
  {
-  "id": "algoritmlar-33",
+  "id": "algoritmlar-29",
   "unit": "algoritmlar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Ro‘yxatdagi eng katta elementni topish algoritmida boshlang‘ich «max» qiymati sifatida nima olish to‘g‘ri?",
   "options": [
    "Har doim 0",
    "Ro‘yxat uzunligi",
-   "Ro‘yxatning birinchi elementi",
-   "Har doim 100"
+   "Har doim 100",
+   "Ro‘yxatning birinchi elementi"
   ],
-  "answer": 2,
+  "answer": 3,
   "explanation": "max = a[0] — xavfsiz boshlanish.",
   "solution": [
    "Agar max = 0 olinsa, barcha elementlar manfiy bo‘lganda (masalan [−5, −2]) noto‘g‘ri javob (0) chiqadi.",
@@ -662,18 +582,18 @@
   ]
  },
  {
-  "id": "algoritmlar-34",
+  "id": "algoritmlar-30",
   "unit": "algoritmlar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Blok-sxema: n = 13. Sikl «n ≠ 1?» — ha: agar n juft bo‘lsa n = n / 2, aks holda n = 3n + 1; qadamlar sanaladi. Nechta qadamdan keyin n = 1 bo‘ladi?",
   "options": [
+   "7",
    "9",
    "13",
-   "10",
-   "7"
+   "10"
   ],
-  "answer": 0,
+  "answer": 1,
   "explanation": "Kollats ketma-ketligi: 9 qadam.",
   "solution": [
    "13 → 40 → 20 → 10 → 5 → 16 → 8 → 4 → 2 → 1.",
@@ -682,79 +602,18 @@
   ]
  },
  {
-  "id": "algoritmlar-35",
-  "unit": "algoritmlar",
-  "difficulty": "easy",
-  "points": 0.9,
-  "prompt": "Qaysi algoritm turi «takrorlanuvchi» (siklik) deb ataladi?",
-  "options": [
-   "Hech qachon tugamaydigan",
-   "Shartga qarab ikki yo‘ldan biri tanlanadigan",
-   "Ba’zi qadamlari shart bajarilguncha qayta-qayta bajariladigan",
-   "Faqat bitta qadamdan iborat"
-  ],
-  "answer": 2,
-  "explanation": "Sikl — takrorlash.",
-  "solution": [
-   "Siklik algoritmda bir guruh buyruqlar bir necha marta takrorlanadi.",
-   "Takrorlash shart yoki hisoblagich orqali boshqariladi va albatta tugaydi.",
-   "Javob: Ba’zi qadamlari shart bajarilguncha qayta-qayta bajariladigan"
-  ]
- },
- {
-  "id": "algoritmlar-36",
+  "id": "algoritmlar-31",
   "unit": "algoritmlar",
   "difficulty": "hard",
-  "points": 2.4,
-  "prompt": "Uchta a, b, c sonning eng kattasini topish uchun eng kamida nechta taqqoslash kerak?",
-  "options": [
-   "6",
-   "2",
-   "3",
-   "1"
-  ],
-  "answer": 1,
-  "explanation": "n − 1 = 2 taqqoslash.",
-  "solution": [
-   "Avval a va b ni taqqoslab kattasini olamiz (1-taqqoslash).",
-   "Keyin uni c bilan taqqoslaymiz (2-taqqoslash).",
-   "Umuman n ta son uchun n − 1 taqqoslash: 3 − 1 = 2.",
-   "Javob: 2"
-  ]
- },
- {
-  "id": "algoritmlar-37",
-  "unit": "algoritmlar",
-  "difficulty": "medium",
-  "points": 1.7,
-  "prompt": "EKUB(17, 23) nechaga teng va bunday sonlar qanday ataladi?",
-  "options": [
-   "391 — murakkab sonlar",
-   "17 — karrali sonlar",
-   "23 — juft sonlar",
-   "1 — o‘zaro tub sonlar"
-  ],
-  "answer": 3,
-  "explanation": "EKUB = 1 → o‘zaro tub.",
-  "solution": [
-   "17 va 23 — ikkalasi ham tub, umumiy bo‘luvchisi faqat 1.",
-   "EKUB = 1 bo‘lgan sonlar o‘zaro tub deyiladi.",
-   "Javob: 1 — o‘zaro tub sonlar"
-  ]
- },
- {
-  "id": "algoritmlar-38",
-  "unit": "algoritmlar",
-  "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Yevklid algoritmida EKUB(a, b) topishda bo‘lishlar soni eng ko‘p bo‘ladigan juftlik (a, b < 100) qaysi?",
   "options": [
-   "(89, 55)",
-   "(97, 2)",
    "(96, 64)",
-   "(99, 98)"
+   "(99, 98)",
+   "(97, 2)",
+   "(89, 55)"
   ],
-  "answer": 0,
+  "answer": 3,
   "explanation": "Fibonachchi juftliklari — eng ko‘p qadam.",
   "solution": [
    "Yevklid algoritmi uchun eng yomon holat — ketma-ket Fibonachchi sonlari (Lame teoremasi).",
@@ -763,18 +622,18 @@
   ]
  },
  {
-  "id": "algoritmlar-39",
+  "id": "algoritmlar-32",
   "unit": "algoritmlar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Binar qidiruv 1 000 000 ta saralangan elementdan eng ko‘pi bilan nechta taqqoslashda topadi?",
   "options": [
    "1000000",
-   "20",
+   "1000",
    "100",
-   "1000"
+   "20"
   ],
-  "answer": 1,
+  "answer": 3,
   "explanation": "≈ log₂(10⁶) ≈ 20.",
   "solution": [
    "2¹⁹ = 524 288 < 1 000 000 < 1 048 576 = 2²⁰.",
@@ -783,18 +642,18 @@
   ]
  },
  {
-  "id": "algoritmlar-40",
+  "id": "algoritmlar-33",
   "unit": "algoritmlar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Qaysi saralash algoritmining o‘rtacha murakkabligi O(n log n)?",
   "options": [
-   "Birlashtirish orqali saralash (merge sort)",
-   "Tanlash orqali saralash",
    "Pufakchali saralash",
-   "Qo‘shish orqali saralash (insertion sort)"
+   "Qo‘shish orqali saralash (insertion sort)",
+   "Birlashtirish orqali saralash (merge sort)",
+   "Tanlash orqali saralash"
   ],
-  "answer": 0,
+  "answer": 2,
   "explanation": "Merge sort — O(n log n).",
   "solution": [
    "Bubble, selection va insertion sort — O(n²).",
@@ -803,16 +662,16 @@
   ]
  },
  {
-  "id": "algoritmlar-41",
+  "id": "algoritmlar-34",
   "unit": "algoritmlar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Blok-sxema: x = 1, k = 0. Sikl: «x < 1000?» — ha: x = x · 3, k = k + 1; yo‘q: k ni chiqar. Nima chiqadi?",
   "options": [
    "7",
-   "1000",
+   "6",
    "729",
-   "6"
+   "1000"
   ],
   "answer": 0,
   "explanation": "3⁷ = 2187 ≥ 1000 → k = 7.",
@@ -823,18 +682,18 @@
   ]
  },
  {
-  "id": "algoritmlar-42",
+  "id": "algoritmlar-35",
   "unit": "algoritmlar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "[5, 1, 4, 2, 8] ro‘yxatida pufakchali saralashning BIRINCHI o‘tishidan keyin ro‘yxat qanday bo‘ladi?",
   "options": [
-   "[1, 2, 4, 5, 8]",
-   "[1, 5, 4, 2, 8]",
    "[5, 1, 4, 2, 8]",
-   "[1, 4, 2, 5, 8]"
+   "[1, 5, 4, 2, 8]",
+   "[1, 4, 2, 5, 8]",
+   "[1, 2, 4, 5, 8]"
   ],
-  "answer": 3,
+  "answer": 2,
   "explanation": "Eng katta element oxiriga «suzib chiqadi».",
   "solution": [
    "Qo‘shnilarni taqqoslab, katta bo‘lsa almashtiramiz: (5,1) → [1,5,4,2,8].",
@@ -843,15 +702,15 @@
   ]
  },
  {
-  "id": "algoritmlar-43",
+  "id": "algoritmlar-36",
   "unit": "algoritmlar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Eratosfen g‘alvirida N = 100 uchun qaysi sonning karralilarini o‘chirgandan keyin to‘xtash mumkin?",
   "options": [
-   "10",
-   "7",
    "97",
+   "7",
+   "10",
    "50"
   ],
   "answer": 1,
@@ -863,15 +722,15 @@
   ]
  },
  {
-  "id": "algoritmlar-44",
+  "id": "algoritmlar-37",
   "unit": "algoritmlar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Kesmaga bo‘lish (bisection) usulida [0; 1] kesmadagi ildizni 0,001 aniqlikda topish uchun kamida nechta qadam kerak?",
   "options": [
-   "3",
-   "1000",
    "100",
+   "1000",
+   "3",
    "10"
   ],
   "answer": 3,
@@ -883,10 +742,10 @@
   ]
  },
  {
-  "id": "algoritmlar-45",
+  "id": "algoritmlar-38",
   "unit": "algoritmlar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Qo‘shish orqali saralash (insertion sort) qaysi holatda eng tez (n − 1 taqqoslash) ishlaydi?",
   "options": [
    "Ro‘yxat allaqachon saralangan bo‘lsa",
@@ -903,18 +762,18 @@
   ]
  },
  {
-  "id": "algoritmlar-46",
+  "id": "algoritmlar-39",
   "unit": "algoritmlar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Blok-sxema: n = 6, f = 1, i = 1. Sikl «i ≤ n?» — ha: f = f · i, i = i + 2; yo‘q: f ni chiqar. Nima chiqadi?",
   "options": [
-   "105",
-   "720",
    "48",
-   "15"
+   "15",
+   "105",
+   "720"
   ],
-  "answer": 3,
+  "answer": 1,
   "explanation": "1·3·5 = 15.",
   "solution": [
    "i qiymatlari: 1, 3, 5 (keyingisi 7 > 6).",
@@ -923,18 +782,18 @@
   ]
  },
  {
-  "id": "algoritmlar-47",
+  "id": "algoritmlar-40",
   "unit": "algoritmlar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Algoritmlar murakkabligini O(1), O(log n), O(n), O(n²) ni tezdan sekinga qarab tartiblang.",
   "options": [
+   "O(1), O(log n), O(n), O(n²)",
    "O(log n), O(1), O(n), O(n²)",
    "O(n²), O(n), O(log n), O(1)",
-   "O(1), O(log n), O(n), O(n²)",
    "O(1), O(n), O(log n), O(n²)"
   ],
-  "answer": 2,
+  "answer": 0,
   "explanation": "1 < log n < n < n².",
   "solution": [
    "n = 1024 uchun: O(1) — 1, O(log n) — 10, O(n) — 1024, O(n²) — 1 048 576 amal.",
@@ -943,18 +802,18 @@
   ]
  },
  {
-  "id": "algoritmlar-48",
+  "id": "algoritmlar-41",
   "unit": "algoritmlar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Uzunligi n bo‘lgan ro‘yxatdagi barcha juftliklarni (i < j) tekshiradigan ikki ichma-ich sikl nechta tekshiruv bajaradi (n = 20)?",
   "options": [
-   "400",
-   "200",
    "190",
-   "380"
+   "200",
+   "380",
+   "400"
   ],
-  "answer": 2,
+  "answer": 0,
   "explanation": "20·19/2 = 190.",
   "solution": [
    "Juftliklar soni C(n, 2) = n(n − 1)/2.",
@@ -963,18 +822,18 @@
   ]
  },
  {
-  "id": "algoritmlar-49",
+  "id": "algoritmlar-42",
   "unit": "algoritmlar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Raqamli ildiz algoritmi: sonning raqamlarini qo‘shamiz, natija bir xonali bo‘lguncha takrorlaymiz. 987654 uchun natija?",
   "options": [
    "39",
-   "3",
+   "12",
    "6",
-   "12"
+   "3"
   ],
-  "answer": 1,
+  "answer": 3,
   "explanation": "987654 → 39 → 12 → 3.",
   "solution": [
    "9+8+7+6+5+4 = 39. 3+9 = 12. 1+2 = 3.",
@@ -983,10 +842,10 @@
   ]
  },
  {
-  "id": "algoritmlar-50",
+  "id": "algoritmlar-43",
   "unit": "algoritmlar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Qaysi sonlar uchun Yevklid algoritmi birinchi qadamdayoq (bitta bo‘lishda) tugaydi?",
   "options": [
    "a va b tub bo‘lganda",
@@ -1000,6 +859,151 @@
    "Birinchi qadam: a mod b. Agar u 0 bo‘lsa, javob — b.",
    "a mod b = 0 ↔ a b ga qoldiqsiz bo‘linadi.",
    "Javob: a b ga qoldiqsiz bo‘linganda"
+  ]
+ },
+ {
+  "id": "algoritmlar-44",
+  "unit": "algoritmlar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi algoritm qaysi sonni chiqaradi?",
+  "options": [
+   "9",
+   "12",
+   "0",
+   "18"
+  ],
+  "answer": 3,
+  "explanation": "12 > 18 yolg‘on, 18 > 9 rost → 18.",
+  "solution": [
+   "Bu uchta sonning eng kattasini topish algoritmi.",
+   "A > B → 12 > 18 — yolg‘on → «Aks holda» tarmog‘iga o‘tamiz.",
+   "B > C → 18 > 9 — rost → B chiqariladi.",
+   "Javob: 18"
+  ],
+  "code": "1. Boshlash\n2. A = 12, B = 18, C = 9 kiritildi\n3. Agar A > B bo‘lsa\n      Agar A > C bo‘lsa → A chiqarish\n      Aks holda → C chiqarish\n   Aks holda\n      Agar B > C bo‘lsa → B chiqarish\n      Aks holda → C chiqarish\n4. Tugatish"
+ },
+ {
+  "id": "algoritmlar-45",
+  "unit": "algoritmlar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Algoritm bajarilgandan keyin S ning qiymatini aniqlang.",
+  "options": [
+   "30",
+   "55",
+   "40",
+   "20"
+  ],
+  "answer": 0,
+  "explanation": "2+4+6+8+10 = 30.",
+  "solution": [
+   "i 1 dan 10 gacha o‘zgaradi, faqat juft i lar (i % 2 == 0) qo‘shiladi.",
+   "Juftlar: 2, 4, 6, 8, 10.",
+   "2 + 4 + 6 + 8 + 10 = 30",
+   "Javob: 30"
+  ],
+  "code": "1. Boshlash\n2. S = 0\n3. i = 1\n4. Agar i ≤ 10 bo‘lsa\n      Agar i % 2 == 0 bo‘lsa → S = S + i\n      i = i + 1 → 4-qadamga qaytadi\n   Aks holda → 5-qadamga o‘tadi\n5. S ni chiqarish\n6. Tugatish"
+ },
+ {
+  "id": "algoritmlar-46",
+  "unit": "algoritmlar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Algoritm ishlagandan so‘ng S ning qiymati qancha bo‘ladi?",
+  "options": [
+   "60",
+   "45",
+   "50",
+   "55"
+  ],
+  "answer": 3,
+  "explanation": "10·11/2 = 55.",
+  "solution": [
+   "S ga 1 dan 10 gacha barcha sonlar qo‘shiladi.",
+   "1 + 2 + … + 10 = 10 · 11 / 2.",
+   "Javob: 55"
+  ],
+  "code": "1. Boshlash\n2. S = 0, i = 1\n3. Agar i ≤ 10 bo‘lsa → S = S + i, i = i + 1 → 3-qadamga qaytadi\n4. Aks holda → 5-qadamga o‘tadi\n5. S ni chiqarish\n6. Tugatish"
+ },
+ {
+  "id": "algoritmlar-47",
+  "unit": "algoritmlar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Blok-sxema: S = 0, i = 1. Romb «i ≤ 5?» — Rost: S = S + i, i = i + 1 va rombga qayt; Yolg‘on: S chiqariladi. Natija?",
+  "options": [
+   "21",
+   "10",
+   "15",
+   "6"
+  ],
+  "answer": 2,
+  "explanation": "1+2+3+4+5 = 15.",
+  "solution": [
+   "i = 1..5 bo‘lganda S ga qo‘shiladi: 1 + 2 + 3 + 4 + 5.",
+   "i = 6 da shart yolg‘on → S chiqariladi.",
+   "Javob: 15"
+  ]
+ },
+ {
+  "id": "algoritmlar-48",
+  "unit": "algoritmlar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Blok-sxema: S = 0, i = 1. Romb «i ≤ 10?» — Rost: S = S + 2·i, i = i + 1 va qayt; Yolg‘on: S chiqariladi. Natija?",
+  "options": [
+   "132",
+   "90",
+   "110",
+   "55"
+  ],
+  "answer": 2,
+  "explanation": "2·55 = 110.",
+  "solution": [
+   "S = 2·1 + 2·2 + … + 2·10 = 2 · (1 + 2 + … + 10).",
+   "1 + … + 10 = 55, demak S = 2 · 55.",
+   "Javob: 110"
+  ]
+ },
+ {
+  "id": "algoritmlar-49",
+  "unit": "algoritmlar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Blok-sxema: P = 1, i = 5. Romb «i ≥ 1?» — Rost: P = P · i, i = i − 1 va qayt; Yolg‘on: P chiqariladi. Natija?",
+  "options": [
+   "60",
+   "120",
+   "0",
+   "20"
+  ],
+  "answer": 1,
+  "explanation": "5! = 120.",
+  "solution": [
+   "P = 5 · 4 · 3 · 2 · 1 (i = 0 da to‘xtaydi).",
+   "Bu 5! (faktorial).",
+   "Javob: 120"
+  ]
+ },
+ {
+  "id": "algoritmlar-50",
+  "unit": "algoritmlar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Blok-sxema: S = 0, i = 1. Romb «i ≤ 20?» — Rost: agar i % 3 == 0 bo‘lsa S = S + i; so‘ng i = i + 1 va qayt; Yolg‘on: S chiqariladi. Natija?",
+  "options": [
+   "60",
+   "63",
+   "57",
+   "210"
+  ],
+  "answer": 1,
+  "explanation": "3·21 = 63.",
+  "solution": [
+   "3 ga karrali sonlar: 3, 6, 9, 12, 15, 18.",
+   "3 · (1 + 2 + 3 + 4 + 5 + 6) = 3 · 21.",
+   "Javob: 63"
   ]
  }
 ]

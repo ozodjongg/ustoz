@@ -323,7 +323,7 @@
   "id": "excel-manzillar-17",
   "unit": "excel-manzillar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Excel dasturida C4 katakdagi =B2*4 formula E3 katakka nusxalandi. E3 da qanday formula hosil bo‘ladi?",
   "options": [
    "=D1*3",
@@ -343,7 +343,7 @@
   "id": "excel-manzillar-18",
   "unit": "excel-manzillar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Excel dasturida D3 katakdagi =$F6*$C$1 formula F6 katakka nusxalandi. F6 da qanday formula hosil bo‘ladi?",
   "options": [
    "=$F9*$C$1",
@@ -363,7 +363,7 @@
   "id": "excel-manzillar-19",
   "unit": "excel-manzillar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Excel dasturida E5 katakdagi =$B2*C$7 formula F7 katakka nusxalandi. F7 da qanday formula hosil bo‘ladi?",
   "options": [
    "=$B4*D$7",
@@ -383,7 +383,7 @@
   "id": "excel-manzillar-20",
   "unit": "excel-manzillar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Excel dasturida C3 katakdagi =A$1+$B2 formula E6 katakka nusxalandi. E6 da qanday formula hosil bo‘ladi?",
   "options": [
    "=C$4+$D5",
@@ -403,7 +403,7 @@
   "id": "excel-manzillar-21",
   "unit": "excel-manzillar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Excel dasturida A6 katakdagi =SUM(A1:A5) formula B6 katakka nusxalandi. B6 da qanday formula hosil bo‘ladi?",
   "options": [
    "=SUM(B1:B5)",
@@ -423,7 +423,7 @@
   "id": "excel-manzillar-22",
   "unit": "excel-manzillar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Excel dasturida B1 katakdagi =SUM($A1:A$5) formula C3 katakka nusxalandi. C3 da qanday formula hosil bo‘ladi?",
   "options": [
    "=SUM($A3:B$5)",
@@ -443,7 +443,7 @@
   "id": "excel-manzillar-23",
   "unit": "excel-manzillar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Excel dasturida E4 katakdagi =D4-$D$2 formula E10 katakka nusxalandi. E10 da qanday formula hosil bo‘ladi?",
   "options": [
    "=E10-$D$2",
@@ -463,7 +463,7 @@
   "id": "excel-manzillar-24",
   "unit": "excel-manzillar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Excel dasturida B4 katakdagi =B$3*$A4 formula D7 katakka nusxalandi. D7 da qanday formula hosil bo‘ladi?",
   "options": [
    "=D$3*$A7",
@@ -483,7 +483,7 @@
   "id": "excel-manzillar-25",
   "unit": "excel-manzillar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "B2:C4 va C3:D5 bloklari birgalikda (umumiy kataklar bir marta sanalganda) nechta katakni egallaydi?",
   "options": [
    "12",
@@ -503,7 +503,7 @@
   "id": "excel-manzillar-26",
   "unit": "excel-manzillar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "=SUM(A1:B3;D2) formulasi nechta katakdagi qiymatlarni qo‘shadi?",
   "options": [
    "7",
@@ -523,7 +523,7 @@
   "id": "excel-manzillar-27",
   "unit": "excel-manzillar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "AB ustuni chapdan hisoblaganda nechanchi ustun?",
   "options": [
    "29",
@@ -543,7 +543,7 @@
   "id": "excel-manzillar-28",
   "unit": "excel-manzillar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "B ustunidagi 3-qatordan F ustunidagi 8-qatorgacha bo‘lgan to‘rtburchak blok qanday yoziladi va unda nechta katak bor?",
   "options": [
    "B3:F8, 24 ta",
@@ -563,7 +563,7 @@
   "id": "excel-manzillar-29",
   "unit": "excel-manzillar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Qaysi manzil nusxalanganda hech qachon o‘zgarmaydi?",
   "options": [
    "C5",
@@ -583,7 +583,7 @@
   "id": "excel-manzillar-30",
   "unit": "excel-manzillar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "C1 katakda =A1*B1 formula bor. U C2:C10 ga pastga tortib nusxalansa, C7 da qanday formula bo‘ladi?",
   "options": [
    "=C7*B7",
@@ -603,7 +603,7 @@
   "id": "excel-manzillar-31",
   "unit": "excel-manzillar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Formulani bir katakdan boshqasiga nusxalaganda ustun harfi o‘zgarmasligi, lekin qator o‘zgarishi uchun qaysi manzil kerak?",
   "options": [
    "A1",
@@ -623,7 +623,7 @@
   "id": "excel-manzillar-32",
   "unit": "excel-manzillar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "F4 tugmasi formulada katak manzili ustida bosilganda nima qiladi?",
   "options": [
    "katakni bo‘yaydi",
@@ -643,7 +643,7 @@
   "id": "excel-manzillar-33",
   "unit": "excel-manzillar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Excel dasturida D10:H25 bloki nechta katakni o‘z ichiga oladi?",
   "options": [
    "90",
@@ -663,7 +663,7 @@
   "id": "excel-manzillar-34",
   "unit": "excel-manzillar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Excel dasturida AA1:AC4 bloki nechta katakni o‘z ichiga oladi?",
   "options": [
    "8",
@@ -683,7 +683,7 @@
   "id": "excel-manzillar-35",
   "unit": "excel-manzillar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Excel dasturida D5 katakdagi =C$2/$B3 formula B4 katakka nusxalandi. B4 da qanday formula hosil bo‘ladi?",
   "options": [
    "=A$2/$A2",
@@ -703,7 +703,7 @@
   "id": "excel-manzillar-36",
   "unit": "excel-manzillar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Excelda bir nechta qo‘shni bo‘lmagan kataklarni bir vaqtda belgilash uchun sichqoncha bilan birga qaysi tugma bosib turiladi?",
   "options": [
    "Alt",
@@ -723,7 +723,7 @@
   "id": "excel-manzillar-37",
   "unit": "excel-manzillar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Excelda C1 katakda =A1+B$1 formula bor. U C1 dan E4 ga nusxalandi, so‘ng E4 dagi formula D2 ga nusxalandi. D2 da qanday formula bo‘ladi?",
   "options": [
    "=C4+D$1",
@@ -743,7 +743,7 @@
   "id": "excel-manzillar-38",
   "unit": "excel-manzillar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "A1:A5 da 1, 2, 3, 4, 5 sonlari. B1 da =A1*$A$5 formula yozilib, B1:B5 ga pastga tortildi. B4 dagi qiymat nechaga teng?",
   "options": [
    "16",
@@ -763,7 +763,7 @@
   "id": "excel-manzillar-39",
   "unit": "excel-manzillar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "A1 da 2, A2 da 3, B1 da 10. C2 katakda =$A2*B$1 formulasi bor. U D3 ga nusxalanganda D3 dagi formula va (A3=4, C1=5 bo‘lsa) qiymati qanday?",
   "options": [
    "=$A3*C$1 → 20",
@@ -784,7 +784,7 @@
   "id": "excel-manzillar-40",
   "unit": "excel-manzillar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "C3 katakdagi =A1 formula A1 katakka nusxalansa nima bo‘ladi?",
   "options": [
    "#REF! (mavjud bo‘lmagan katakka murojaat)",
@@ -804,7 +804,7 @@
   "id": "excel-manzillar-41",
   "unit": "excel-manzillar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Ko‘paytirish jadvali: B1:J1 da 1..9, A2:A10 da 1..9. B2 katakka qaysi formulani yozib, B2:J10 ga to‘ldirsak, to‘g‘ri jadval hosil bo‘ladi?",
   "options": [
    "=A2*B1",
@@ -824,7 +824,7 @@
   "id": "excel-manzillar-42",
   "unit": "excel-manzillar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Excel dasturida E5 katakdagi =SUM($B$2:C3)*D$1 formula G9 katakka nusxalandi. G9 da qanday formula hosil bo‘ladi?",
   "options": [
    "=SUM($B$2:E7)*D$1",
@@ -844,7 +844,7 @@
   "id": "excel-manzillar-43",
   "unit": "excel-manzillar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Excel dasturida D4 katakdagi =$A$1*B3+B$2-$C5 formula F2 katakka nusxalandi. F2 da qanday formula hosil bo‘ladi?",
   "options": [
    "=$A$1*D1+D$2-$C3",
@@ -864,7 +864,7 @@
   "id": "excel-manzillar-44",
   "unit": "excel-manzillar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "A2:A11 blokida 10 ta son bor. B2 katakka qaysi formulani yozib pastga tortsak, har bir qatorda boshidan shu qatorgacha bo‘lgan yig‘indi (jamg‘arma yig‘indi) hosil bo‘ladi?",
   "options": [
    "=SUM($A$2:$A$2)",
@@ -885,7 +885,7 @@
   "id": "excel-manzillar-45",
   "unit": "excel-manzillar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Excel varag‘idagi XFD ustuni nechanchi ustun (bu Excelning oxirgi ustuni)?",
   "options": [
    "1048576",
@@ -905,7 +905,7 @@
   "id": "excel-manzillar-46",
   "unit": "excel-manzillar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "A1:D4 bloki (4×4) ichidan diagonal kataklar (A1, B2, C3, D4) olib tashlansa, nechta katak qoladi?",
   "options": [
    "8",
@@ -925,7 +925,7 @@
   "id": "excel-manzillar-47",
   "unit": "excel-manzillar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "D2 katakda =B$1+$C2 formula bor. Uni qaysi katakka nusxalasak, formula =B$1+$C5 ga aylanadi?",
   "options": [
    "D5",
@@ -946,7 +946,7 @@
   "id": "excel-manzillar-48",
   "unit": "excel-manzillar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "A ustunida 1-qatordan 100-qatorgacha sonlar, B ustunida ham shunday. C1 da =A1*B1 bo‘lib, C1:C100 ga tortilgan. =SUM(C1:C100) nimani hisoblaydi?",
   "options": [
    "B ustuni yig‘indisi kvadratini",
@@ -966,7 +966,7 @@
   "id": "excel-manzillar-49",
   "unit": "excel-manzillar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "A1:E1 da 1, 2, 3, 4, 5. A2 da =A1*2 formula, u A2:E2 ga o‘ngga tortildi. Keyin A3 da =SUM(A1:E2). A3 qiymati?",
   "options": [
    "30",
@@ -986,7 +986,7 @@
   "id": "excel-manzillar-50",
   "unit": "excel-manzillar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Excel 2016+ varag‘ida jami nechta qator bor?",
   "options": [
    "1 048 576",

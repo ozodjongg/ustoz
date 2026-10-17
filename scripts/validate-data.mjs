@@ -8,7 +8,7 @@ const dir = join(root, 'public/data/questions');
 const files = new Set(readdirSync(dir));
 const errors = [];
 const ids = new Set();
-const POINTS = { easy: 0.9, medium: 1.7, hard: 2.4 };
+const POINTS = { easy: 0.9, medium: 1.5, hard: 2.6 };
 
 for (const t of topics) {
   const file = `${t.slug}.json`;

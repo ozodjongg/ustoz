@@ -7,7 +7,7 @@ export default function Document() {
   return (
     <Html lang="uz">
       <Head>
-        <meta name="description" content="Informatika fan olimpiadasi (9–11-sinf, tuman/shahar bosqichi) uchun 16 mavzu, sodda darslar va 800 ta yechimli mashq." />
+        <meta name="description" content="Informatika fan olimpiadasi (9–11-sinf, tuman/shahar bosqichi) uchun 22 mavzu, sodda darslar va 1100 ta yechimli mashq." />
         <meta name="theme-color" content="#FAF9F5" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

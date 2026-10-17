@@ -27,7 +27,7 @@ export default function Home() {
         <div>
           <div className="eyebrow">9–11-sinf · tuman (shahar) bosqichi</div>
           <h1>Informatika olimpiadasiga <span className="accentText">sokin va puxta</span> tayyorlaning</h1>
-          <p className="lead">2024-yilgi olimpiadaning 90 ta savoli tahlil qilinib, {topics.length} ta mavzuga ajratildi. Har bir mavzuda bolalarcha sodda dars va qadam-baqadam yechimli 50 ta turli savol bor.</p>
+          <p className="lead">2024 va 2025–2026 o‘quv yillari shahar bosqichlarining 180 ta savoli tahlil qilinib, {topics.length} ta mavzuga ajratildi. Har bir mavzuda bolalarcha sodda dars va qadam-baqadam yechimli 50 ta turli savol bor.</p>
           <div className="row">
             <a href="#mavzular" className="btn primary">Mavzularni ko‘rish</a>
             <Link href="/practice" className="btn">Sinov ishlash</Link>

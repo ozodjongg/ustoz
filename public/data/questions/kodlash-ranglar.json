@@ -1,0 +1,1003 @@
+[
+ {
+  "id": "kodlash-ranglar-01",
+  "unit": "kodlash-ranglar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "RGB tizimida har bir rang kanalining maksimal qiymati nechaga teng?",
+  "options": [
+   "100",
+   "255",
+   "128",
+   "1024"
+  ],
+  "answer": 1,
+  "explanation": "0..255 (8 bit).",
+  "solution": [
+   "Har bir kanal (R, G, B) 1 bayt = 8 bit bilan kodlanadi.",
+   "8 bit bilan 0 dan 2⁸ − 1 = 255 gacha sonlar yoziladi.",
+   "Javob: 255"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-02",
+  "unit": "kodlash-ranglar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "RGB qisqartmasidagi harflar qaysi ranglarni bildiradi?",
+  "options": [
+   "Qizil, yashil, ko‘k",
+   "Qizil, sariq, ko‘k",
+   "Qizil, yashil, binafsha",
+   "Qora, oq, kulrang"
+  ],
+  "answer": 0,
+  "explanation": "Red, Green, Blue.",
+  "solution": [
+   "R — Red (qizil), G — Green (yashil), B — Blue (ko‘k).",
+   "Ekranlardagi barcha ranglar shu uch rangni aralashtirib hosil qilinadi.",
+   "Javob: Qizil, yashil, ko‘k"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-03",
+  "unit": "kodlash-ranglar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "RGB = (0, 0, 255) rangini HEX ko‘rinishiga o‘tkazing.",
+  "options": [
+   "#0000FF",
+   "#FF0000",
+   "#00FF00",
+   "#FFFF00"
+  ],
+  "answer": 0,
+  "explanation": "(0, 0, 255) → #0000FF.",
+  "solution": [
+   "Har bir kanalni alohida 2 xonali o‘n oltilik songa o‘tkazamiz.",
+   "R: 0 = 0·16 + 0 → 00; G: 0 → 00; B: 255 → FF.",
+   "Ketma-ket yozamiz: #0000FF"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-04",
+  "unit": "kodlash-ranglar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "RGB = (255, 0, 0) rangini HEX ko‘rinishiga o‘tkazing.",
+  "options": [
+   "#0000FF",
+   "#FF0000",
+   "#FF00FF",
+   "#00FF00"
+  ],
+  "answer": 1,
+  "explanation": "(255, 0, 0) → #FF0000.",
+  "solution": [
+   "Har bir kanalni alohida 2 xonali o‘n oltilik songa o‘tkazamiz.",
+   "R: 255 = 15·16 + 15 → FF; G: 0 → 00; B: 0 → 00.",
+   "Ketma-ket yozamiz: #FF0000"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-05",
+  "unit": "kodlash-ranglar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "RGB = (0, 0, 0) qaysi rang?",
+  "options": [
+   "Qizil",
+   "Oq",
+   "Qora",
+   "Kulrang"
+  ],
+  "answer": 2,
+  "explanation": "(0,0,0) — qora.",
+  "solution": [
+   "Barcha kanallar 0 — hech qanday nur yo‘q.",
+   "Nur yo‘q — qorong‘ilik.",
+   "Javob: Qora"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-06",
+  "unit": "kodlash-ranglar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "RGB = (255, 255, 255) qaysi rang?",
+  "options": [
+   "Ko‘k",
+   "Oq",
+   "Qora",
+   "Sariq"
+  ],
+  "answer": 1,
+  "explanation": "(255,255,255) — oq.",
+  "solution": [
+   "Uchala kanal maksimal yorqinlikda.",
+   "Qizil + yashil + ko‘k nurlar to‘liq aralashsa — oq.",
+   "Javob: Oq"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-07",
+  "unit": "kodlash-ranglar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "HEX rang kodi #00FF00 qaysi rangni bildiradi?",
+  "options": [
+   "Qizil",
+   "Ko‘k",
+   "Sariq",
+   "Yashil"
+  ],
+  "answer": 3,
+  "explanation": "Faqat G = FF.",
+  "solution": [
+   "#RRGGBB: R = 00, G = FF, B = 00.",
+   "Faqat yashil kanal to‘liq yoqilgan.",
+   "Javob: Yashil"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-08",
+  "unit": "kodlash-ranglar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "HEX rang kodi necha ta o‘n oltilik raqamdan iborat (# belgisisiz)?",
+  "options": [
+   "8",
+   "6",
+   "4",
+   "3"
+  ],
+  "answer": 1,
+  "explanation": "RR GG BB — 6 ta.",
+  "solution": [
+   "#RRGGBB — har bir kanal uchun 2 ta raqam.",
+   "3 kanal · 2 = 6.",
+   "Javob: 6"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-09",
+  "unit": "kodlash-ranglar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "ASCII jadvalida bitta belgi necha bit bilan kodlanadi (standart ASCII)?",
+  "options": [
+   "32",
+   "4",
+   "7 (kengaytirilgani 8)",
+   "16"
+  ],
+  "answer": 2,
+  "explanation": "ASCII — 7 bit, kengaytirilgan — 8 bit.",
+  "solution": [
+   "Standart ASCII 128 ta belgi = 2⁷ → 7 bit.",
+   "Kengaytirilgan ASCII 256 belgi = 8 bit (1 bayt).",
+   "Javob: 7 (kengaytirilgani 8)"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-10",
+  "unit": "kodlash-ranglar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "ASCII jadvalida katta «A» harfining kodi 65 bo‘lsa, «C» ning kodi nechchi?",
+  "options": [
+   "67",
+   "99",
+   "66",
+   "68"
+  ],
+  "answer": 0,
+  "explanation": "A=65, B=66, C=67.",
+  "solution": [
+   "Harflar alifbo tartibida ketma-ket kodlangan.",
+   "A = 65, B = 66, C = 67.",
+   "Javob: 67"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-11",
+  "unit": "kodlash-ranglar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "ASCII jadvalida kichik «a» harfining kodi nechchi?",
+  "options": [
+   "48",
+   "97",
+   "32",
+   "65"
+  ],
+  "answer": 1,
+  "explanation": "a = 97.",
+  "solution": [
+   "Katta harflar 65 dan (A), kichik harflar 97 dan (a) boshlanadi.",
+   "Farq: 97 − 65 = 32.",
+   "Javob: 97"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-12",
+  "unit": "kodlash-ranglar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "ASCII jadvalida «0» raqami (belgi sifatida) qanday kodga ega?",
+  "options": [
+   "30",
+   "65",
+   "48",
+   "0"
+  ],
+  "answer": 2,
+  "explanation": "'0' = 48.",
+  "solution": [
+   "Raqam belgilari 48 dan boshlanadi: '0' = 48, '1' = 49, … '9' = 57.",
+   "Belgi '0' bilan son 0 ni adashtirmang!",
+   "Javob: 48"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-13",
+  "unit": "kodlash-ranglar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Bo‘sh joy (probel) belgisining ASCII kodi qaysi?",
+  "options": [
+   "48",
+   "0",
+   "32",
+   "20"
+  ],
+  "answer": 2,
+  "explanation": "Probel = 32.",
+  "solution": [
+   "Probel — ko‘rinmaydigan, lekin kodga ega belgi.",
+   "Uning kodi 32 (o‘n oltilikda 20).",
+   "Javob: 32"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-14",
+  "unit": "kodlash-ranglar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "RGB = (255, 255, 0) rangini HEX ko‘rinishiga o‘tkazing.",
+  "options": [
+   "#FF00FF",
+   "#FFFF00",
+   "#00FFFF",
+   "#F0F000"
+  ],
+  "answer": 1,
+  "explanation": "(255, 255, 0) → #FFFF00.",
+  "solution": [
+   "Har bir kanalni alohida 2 xonali o‘n oltilik songa o‘tkazamiz.",
+   "R: 255 = 15·16 + 15 → FF; G: 255 → FF; B: 0 → 00.",
+   "Ketma-ket yozamiz: #FFFF00"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-15",
+  "unit": "kodlash-ranglar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Ekranlarda ranglarni hosil qilish uchun qaysi rang modeli ishlatiladi?",
+  "options": [
+   "CMYK",
+   "RGB",
+   "ASCII",
+   "HSB faqat qog‘ozda"
+  ],
+  "answer": 1,
+  "explanation": "Ekran — RGB, printer — CMYK.",
+  "solution": [
+   "Ekran nur chiqaradi — ranglar nurlarni qo‘shish orqali hosil bo‘ladi (additiv model).",
+   "Printerlarda esa CMYK (bo‘yoqlar) ishlatiladi.",
+   "Javob: RGB"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-16",
+  "unit": "kodlash-ranglar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Printerlarda bosish uchun ishlatiladigan rang modeli qaysi?",
+  "options": [
+   "CMYK",
+   "HEX",
+   "RGB",
+   "ASCII"
+  ],
+  "answer": 0,
+  "explanation": "Printer — CMYK.",
+  "solution": [
+   "Printer bo‘yoqlarni aralashtiradi: Cyan (havorang), Magenta (pushti), Yellow (sariq), Key (qora).",
+   "Bu ayiruvchi (subtraktiv) model.",
+   "Javob: CMYK"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-17",
+  "unit": "kodlash-ranglar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "HEX rang kodi #3366CC ni RGB formatiga o‘tkazing.",
+  "options": [
+   "(51, 204, 102)",
+   "(102, 51, 204)",
+   "(51, 102, 204)",
+   "(33, 66, 204)"
+  ],
+  "answer": 2,
+  "explanation": "#3366CC → (51, 102, 204).",
+  "solution": [
+   "HEX kodni 2 tadan bo‘lamiz: 33 | 66 | CC.",
+   "33 = 3·16 + 3 = 51; 66 = 102; CC = 204.",
+   "Javob: (51, 102, 204)"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-18",
+  "unit": "kodlash-ranglar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "RGB = (128, 64, 32) rangini HEX ko‘rinishiga o‘tkazing.",
+  "options": [
+   "#806432",
+   "#402080",
+   "#804020",
+   "#804032"
+  ],
+  "answer": 2,
+  "explanation": "(128, 64, 32) → #804020.",
+  "solution": [
+   "Har bir kanalni alohida 2 xonali o‘n oltilik songa o‘tkazamiz.",
+   "R: 128 = 8·16 + 0 → 80; G: 64 → 40; B: 32 → 20.",
+   "Ketma-ket yozamiz: #804020"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-19",
+  "unit": "kodlash-ranglar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "HEX rang kodi #FF8000 ni RGB formatiga o‘tkazing.",
+  "options": [
+   "(255, 80, 0)",
+   "(255, 128, 0)",
+   "(255, 128, 255)",
+   "(128, 255, 0)"
+  ],
+  "answer": 1,
+  "explanation": "#FF8000 → (255, 128, 0).",
+  "solution": [
+   "HEX kodni 2 tadan bo‘lamiz: FF | 80 | 00.",
+   "FF = 15·16 + 15 = 255; 80 = 128; 00 = 0.",
+   "Javob: (255, 128, 0)"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-20",
+  "unit": "kodlash-ranglar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "RGB = (18, 52, 86) rangini HEX ko‘rinishiga o‘tkazing.",
+  "options": [
+   "#563412",
+   "#125234",
+   "#123456",
+   "#183456"
+  ],
+  "answer": 2,
+  "explanation": "(18, 52, 86) → #123456.",
+  "solution": [
+   "Har bir kanalni alohida 2 xonali o‘n oltilik songa o‘tkazamiz.",
+   "R: 18 = 1·16 + 2 → 12; G: 52 → 34; B: 86 → 56.",
+   "Ketma-ket yozamiz: #123456"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-21",
+  "unit": "kodlash-ranglar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "HEX rang kodi #A0B0C0 ni RGB formatiga o‘tkazing.",
+  "options": [
+   "(10, 11, 12)",
+   "(160, 176, 190)",
+   "(100, 110, 120)",
+   "(160, 176, 192)"
+  ],
+  "answer": 3,
+  "explanation": "#A0B0C0 → (160, 176, 192).",
+  "solution": [
+   "HEX kodni 2 tadan bo‘lamiz: A0 | B0 | C0.",
+   "A0 = 10·16 + 0 = 160; B0 = 176; C0 = 192.",
+   "Javob: (160, 176, 192)"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-22",
+  "unit": "kodlash-ranglar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "RGB = (200, 150, 100) rangini HEX ko‘rinishiga o‘tkazing.",
+  "options": [
+   "#C8966E",
+   "#200150",
+   "#C89664",
+   "#9664C8"
+  ],
+  "answer": 2,
+  "explanation": "(200, 150, 100) → #C89664.",
+  "solution": [
+   "Har bir kanalni alohida 2 xonali o‘n oltilik songa o‘tkazamiz.",
+   "R: 200 = 12·16 + 8 → C8; G: 150 → 96; B: 100 → 64.",
+   "Ketma-ket yozamiz: #C89664"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-23",
+  "unit": "kodlash-ranglar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "«b» harfi ASCII jadvalida (o‘n oltilik ko‘rinishda) 6-qator, 2-ustunda joylashgan bo‘lsa, uning o‘nlikdagi kodi qancha?",
+  "options": [
+   "89",
+   "98",
+   "26",
+   "62"
+  ],
+  "answer": 1,
+  "explanation": "62₁₆ = 98.",
+  "solution": [
+   "Jadvalda qator — kodning katta o‘n oltilik raqami, ustun — kichigi: 6 va 2 → 62₁₆.",
+   "62₁₆ = 6·16 + 2 = 98.",
+   "Javob: 98"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-24",
+  "unit": "kodlash-ranglar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "ASCII da «A» = 65. «Z» ning kodi nechchi?",
+  "options": [
+   "122",
+   "91",
+   "88",
+   "90"
+  ],
+  "answer": 3,
+  "explanation": "65 + 25 = 90.",
+  "solution": [
+   "Z — alifboning 26-harfi, A — 1-harfi.",
+   "65 + 25 = 90.",
+   "Javob: 90"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-25",
+  "unit": "kodlash-ranglar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Katta harf kodini kichik harf kodiga aylantirish uchun ASCII da nima qilinadi?",
+  "options": [
+   "32 qo‘shiladi",
+   "26 qo‘shiladi",
+   "2 ga ko‘paytiriladi",
+   "32 ayiriladi"
+  ],
+  "answer": 0,
+  "explanation": "Kichik = katta + 32.",
+  "solution": [
+   "A = 65, a = 97 → farq 32. Barcha harflar uchun ham shunday.",
+   "Masalan: M = 77, m = 109.",
+   "Javob: 32 qo‘shiladi"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-26",
+  "unit": "kodlash-ranglar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "ASCII kodi 72, 73 bo‘lgan belgilar qaysi so‘zni hosil qiladi?",
+  "options": [
+   "GH",
+   "HI",
+   "IJ",
+   "hi"
+  ],
+  "answer": 1,
+  "explanation": "72 = H, 73 = I.",
+  "solution": [
+   "A = 65 dan sanaymiz: 72 − 65 = 7 → 8-harf H. 73 → I.",
+   "Katta harflar (65–90 oralig‘i).",
+   "Javob: HI"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-27",
+  "unit": "kodlash-ranglar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "24 bitli (True Color) rang tizimida jami nechta turli rang bo‘lishi mumkin?",
+  "options": [
+   "16777216",
+   "65536",
+   "256",
+   "768"
+  ],
+  "answer": 0,
+  "explanation": "2²⁴ = 16 777 216.",
+  "solution": [
+   "Har kanalga 8 bit: 256 xil qiymat.",
+   "256 · 256 · 256 = 2²⁴.",
+   "Javob: 16777216"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-28",
+  "unit": "kodlash-ranglar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "RGB = (128, 128, 128) qanday rang?",
+  "options": [
+   "Qora",
+   "Binafsha",
+   "Kulrang",
+   "Oq"
+  ],
+  "answer": 2,
+  "explanation": "Teng kanallar — kulrang.",
+  "solution": [
+   "Uchala kanal teng bo‘lsa — kulrang tusdagi rang (0 qora, 255 oq).",
+   "128 — o‘rtacha, demak o‘rta kulrang.",
+   "Javob: Kulrang"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-29",
+  "unit": "kodlash-ranglar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "HEX #FF00FF qaysi ranglarning aralashmasi?",
+  "options": [
+   "faqat qizil",
+   "yashil va ko‘k",
+   "qizil va ko‘k (pushti/magenta)",
+   "qizil va yashil"
+  ],
+  "answer": 2,
+  "explanation": "R + B = magenta.",
+  "solution": [
+   "R = FF, G = 00, B = FF.",
+   "Qizil + ko‘k = magenta (pushti-binafsha).",
+   "Javob: qizil va ko‘k (pushti/magenta)"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-30",
+  "unit": "kodlash-ranglar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "HEX #FFFF00 qaysi rang?",
+  "options": [
+   "Sariq",
+   "Pushti",
+   "Oq",
+   "Havorang"
+  ],
+  "answer": 0,
+  "explanation": "R + G = sariq.",
+  "solution": [
+   "R = FF, G = FF, B = 00.",
+   "Qizil + yashil nur = sariq.",
+   "Javob: Sariq"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-31",
+  "unit": "kodlash-ranglar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Unicode kodlashning ASCII dan asosiy afzalligi nimada?",
+  "options": [
+   "Dunyodagi deyarli barcha yozuv belgilarini kodlay oladi",
+   "Har doim 1 bayt joy egallaydi",
+   "Faqat raqamlarni kodlaydi",
+   "Ranglarni kodlaydi"
+  ],
+  "answer": 0,
+  "explanation": "Unicode — universal.",
+  "solution": [
+   "ASCII faqat 128 (256) belgi — lotin harflari, raqamlar, belgilar.",
+   "Unicode bir milliondan ortiq belgini — kirill, arab, xitoy, emoji va hokazolarni qamraydi.",
+   "Javob: Dunyodagi deyarli barcha yozuv belgilarini kodlay oladi"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-32",
+  "unit": "kodlash-ranglar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "So‘z «CAT» ASCII da kodlandi (A = 65). Kodlar yig‘indisi nechaga teng?",
+  "options": [
+   "216",
+   "215",
+   "220",
+   "205"
+  ],
+  "answer": 0,
+  "explanation": "67 + 65 + 84 = 216.",
+  "solution": [
+   "C = 67, A = 65, T = 65 + 19 = 84.",
+   "67 + 65 + 84.",
+   "Javob: 216"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-33",
+  "unit": "kodlash-ranglar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "HEX rang kodi #00CED1 ni RGB formatiga o‘tkazing.",
+  "options": [
+   "(206, 0, 209)",
+   "(0, 206, 209)",
+   "(0, 206, 200)",
+   "(0, 205, 209)"
+  ],
+  "answer": 1,
+  "explanation": "#00CED1 → (0, 206, 209).",
+  "solution": [
+   "HEX kodni 2 tadan bo‘lamiz: 00 | CE | D1.",
+   "00 = 0·16 + 0 = 0; CE = 206; D1 = 209.",
+   "Javob: (0, 206, 209)"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-34",
+  "unit": "kodlash-ranglar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "RGB = (75, 0, 130) rangini HEX ko‘rinishiga o‘tkazing.",
+  "options": [
+   "#00824B",
+   "#4B8200",
+   "#4B0082",
+   "#4B0083"
+  ],
+  "answer": 2,
+  "explanation": "(75, 0, 130) → #4B0082.",
+  "solution": [
+   "Har bir kanalni alohida 2 xonali o‘n oltilik songa o‘tkazamiz.",
+   "R: 75 = 4·16 + 11 → 4B; G: 0 → 00; B: 130 → 82.",
+   "Ketma-ket yozamiz: #4B0082"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-35",
+  "unit": "kodlash-ranglar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Python’da ord('A') + ord('a') natijasi nechaga teng?",
+  "options": [
+   "194",
+   "162",
+   "97",
+   "130"
+  ],
+  "answer": 1,
+  "explanation": "65 + 97 = 162.",
+  "solution": [
+   "ord() — belgining kodi: ord('A') = 65, ord('a') = 97.",
+   "65 + 97.",
+   "Javob: 162"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-36",
+  "unit": "kodlash-ranglar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Rasm rangi RGB = (51, 102, 204). Har bir kanal 2 marta yorqinroq qilinsa (255 dan oshsa 255 olinadi), yangi HEX kod qanday?",
+  "options": [
+   "#66CCFF",
+   "#3366CC",
+   "#66CC198",
+   "#CCFF66"
+  ],
+  "answer": 0,
+  "explanation": "(102, 204, 255) → #66CCFF.",
+  "solution": [
+   "2 marta: 102, 204, 408 → 408 > 255 → 255.",
+   "102 = 66₁₆, 204 = CC₁₆, 255 = FF₁₆.",
+   "Javob: #66CCFF"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-37",
+  "unit": "kodlash-ranglar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Ikki rangning o‘rtachasi: #000000 va #FFFFFF. O‘rtacha rang HEX kodi (butun qismi olinadi)?",
+  "options": [
+   "#888888",
+   "#7F7F7F",
+   "#FFFFFF",
+   "#808080"
+  ],
+  "answer": 1,
+  "explanation": "127 = 7F.",
+  "solution": [
+   "Har bir kanal: (0 + 255) : 2 = 127,5 → butun qismi 127.",
+   "127 = 7F₁₆.",
+   "Javob: #7F7F7F"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-38",
+  "unit": "kodlash-ranglar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "ASCII da «a» = 97. Python’da chr(ord('a') + 25) nima qaytaradi?",
+  "options": [
+   "{",
+   "Z",
+   "z",
+   "y"
+  ],
+  "answer": 2,
+  "explanation": "122 = 'z'.",
+  "solution": [
+   "ord('a') = 97. 97 + 25 = 122.",
+   "122 — alifboning 26-harfi kichik z.",
+   "Javob: z"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-39",
+  "unit": "kodlash-ranglar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "HEX #1E90FF rangidagi ko‘k kanal qiymati yashil kanaldan nechaga katta?",
+  "options": [
+   "111",
+   "225",
+   "30",
+   "110"
+  ],
+  "answer": 0,
+  "explanation": "255 − 144 = 111.",
+  "solution": [
+   "G = 90₁₆ = 144. B = FF₁₆ = 255.",
+   "255 − 144.",
+   "Javob: 111"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-40",
+  "unit": "kodlash-ranglar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "RGB rangni saqlash uchun 24 bit ishlatiladi. 800 × 600 piksel rasm necha bayt? (siqilmagan)",
+  "options": [
+   "1440000",
+   "11520000",
+   "1440",
+   "480000"
+  ],
+  "answer": 0,
+  "explanation": "480000 · 3 = 1440000 bayt.",
+  "solution": [
+   "Har piksel 24 bit = 3 bayt.",
+   "800 · 600 = 480 000 piksel.",
+   "480 000 · 3 = 1 440 000",
+   "Javob: 1440000"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-41",
+  "unit": "kodlash-ranglar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "ASCII kodi o‘n oltilikda 4F, 4B bo‘lgan belgilar qaysi so‘z?",
+  "options": [
+   "ok",
+   "OK",
+   "NO",
+   "OJ"
+  ],
+  "answer": 1,
+  "explanation": "79 = O, 75 = K.",
+  "solution": [
+   "4F₁₆ = 79, 4B₁₆ = 75.",
+   "79 − 65 = 14 → 15-harf O; 75 − 65 = 10 → 11-harf K.",
+   "Javob: OK"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-42",
+  "unit": "kodlash-ranglar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Qaysi HEX rang eng yorqin (R + G + B yig‘indisi eng katta)?",
+  "options": [
+   "#E0E0E0",
+   "#00FFFF",
+   "#F0F000",
+   "#FF0000"
+  ],
+  "answer": 0,
+  "explanation": "224·3 = 672.",
+  "solution": [
+   "#E0E0E0: 224·3 = 672. #FF0000: 255. #00FFFF: 510. #F0F000: 240 + 240 = 480.",
+   "Eng kattasi 672.",
+   "Javob: #E0E0E0"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-43",
+  "unit": "kodlash-ranglar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Matn «AB» kengaytirilgan ASCII da (8 bit) ikkilikda yozilsa, nima hosil bo‘ladi?",
+  "options": [
+   "01000001 01000010",
+   "10000001 10000010",
+   "00110001 00110010",
+   "01000010 01000001"
+  ],
+  "answer": 0,
+  "explanation": "65 va 66 ikkilikda.",
+  "solution": [
+   "A = 65 = 01000001₂, B = 66 = 01000010₂.",
+   "Har biri 8 bitga to‘ldiriladi.",
+   "Javob: 01000001 01000010"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-44",
+  "unit": "kodlash-ranglar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "16 bitli rang (High Color) da R ga 5, G ga 6, B ga 5 bit ajratilgan. Yashil kanal nechta turli qiymat oladi?",
+  "options": [
+   "256",
+   "16",
+   "32",
+   "64"
+  ],
+  "answer": 3,
+  "explanation": "2⁶ = 64.",
+  "solution": [
+   "6 bit → 2⁶ = 64 qiymat.",
+   "R va B esa 2⁵ = 32 tadan.",
+   "Javob: 64"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-45",
+  "unit": "kodlash-ranglar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Rang (r, g, b) ning «inversiyasi» (negativ) (255 − r, 255 − g, 255 − b) bo‘ladi. #3366CC ning negativi qanday?",
+  "options": [
+   "#CC6633",
+   "#3399CC",
+   "#CC9933",
+   "#C9C933"
+  ],
+  "answer": 2,
+  "explanation": "(204, 153, 51) → #CC9933.",
+  "solution": [
+   "33₁₆ = 51 → 255 − 51 = 204 = CC. 66₁₆ = 102 → 153 = 99. CC₁₆ = 204 → 51 = 33.",
+   "Natija: (204, 153, 51).",
+   "Javob: #CC9933"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-46",
+  "unit": "kodlash-ranglar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Python’da ''.join(chr(ord(c) + 1) for c in 'HAL') natijasi?",
+  "options": [
+   "GZK",
+   "IBM",
+   "ibm",
+   "HAL"
+  ],
+  "answer": 1,
+  "explanation": "HAL → IBM.",
+  "solution": [
+   "Har bir harf kodi 1 ga oshiriladi: H → I, A → B, L → M.",
+   "Bu Sezar shifrining 1 qadamli ko‘rinishi.",
+   "Javob: IBM"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-47",
+  "unit": "kodlash-ranglar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Ekranda 1 piksel 4 bayt (RGBA: R, G, B va shaffoflik) bilan saqlanadi. 1920 × 1080 ekran tasviri necha MB? (2 xona aniqlikda)",
+  "options": [
+   "6,22",
+   "7,91",
+   "8,29",
+   "2,07"
+  ],
+  "answer": 1,
+  "explanation": "≈ 7,91 MB.",
+  "solution": [
+   "1920 · 1080 · 4 = 8 294 400 bayt.",
+   "8 294 400 : 1 048 576 ≈ 7,91 MB.",
+   "Javob: 7,91"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-48",
+  "unit": "kodlash-ranglar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "RGB = (171, 205, 239) rangini HEX ko‘rinishiga o‘tkazing.",
+  "options": [
+   "#ABDCEF",
+   "#ABCDEF",
+   "#BACDEF",
+   "#ABCDEE"
+  ],
+  "answer": 1,
+  "explanation": "(171, 205, 239) → #ABCDEF.",
+  "solution": [
+   "Har bir kanalni alohida 2 xonali o‘n oltilik songa o‘tkazamiz.",
+   "R: 171 = 10·16 + 11 → AB; G: 205 → CD; B: 239 → EF.",
+   "Ketma-ket yozamiz: #ABCDEF"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-49",
+  "unit": "kodlash-ranglar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "HEX rang kodi #7F00FF ni RGB formatiga o‘tkazing.",
+  "options": [
+   "(127, 0, 250)",
+   "(127, 0, 255)",
+   "(127, 255, 0)",
+   "(255, 0, 127)"
+  ],
+  "answer": 1,
+  "explanation": "#7F00FF → (127, 0, 255).",
+  "solution": [
+   "HEX kodni 2 tadan bo‘lamiz: 7F | 00 | FF.",
+   "7F = 7·16 + 15 = 127; 00 = 0; FF = 255.",
+   "Javob: (127, 0, 255)"
+  ]
+ },
+ {
+  "id": "kodlash-ranglar-50",
+  "unit": "kodlash-ranglar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "RGB qiymatlari (a, b, c) da har bir kanal 0..255. HEX kodi #ABABAB bo‘lgan rang uchun a + b + c = ?",
+  "options": [
+   "513",
+   "510",
+   "171",
+   "765"
+  ],
+  "answer": 0,
+  "explanation": "171·3 = 513.",
+  "solution": [
+   "AB₁₆ = 10·16 + 11 = 171.",
+   "171 · 3 = 513.",
+   "Javob: 513"
+  ]
+ }
+]

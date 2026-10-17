@@ -1,0 +1,1026 @@
+[
+ {
+  "id": "malumotlar-bazasi-01",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "SQL da ma’lumotlar bazasidan ma’lumot olish (tanlash) uchun qaysi buyruq ishlatiladi?",
+  "options": [
+   "DELETE",
+   "INSERT",
+   "SELECT",
+   "UPDATE"
+  ],
+  "answer": 2,
+  "explanation": "SELECT — ma’lumot olish.",
+  "solution": [
+   "SELECT — tanlash/o‘qish. INSERT — qo‘shish, UPDATE — o‘zgartirish, DELETE — o‘chirish.",
+   "Ma’lumotni faqat ko‘rish uchun SELECT.",
+   "Javob: SELECT"
+  ]
+ },
+ {
+  "id": "malumotlar-bazasi-02",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "SQL da jadvalga yangi yozuv qo‘shish buyrug‘i qaysi?",
+  "options": [
+   "INSERT INTO",
+   "SELECT",
+   "UPDATE",
+   "ADD ROW"
+  ],
+  "answer": 0,
+  "explanation": "INSERT INTO.",
+  "solution": [
+   "INSERT INTO jadval VALUES (…) — yangi qator qo‘shadi.",
+   "UPDATE mavjudini o‘zgartiradi.",
+   "Javob: INSERT INTO"
+  ]
+ },
+ {
+  "id": "malumotlar-bazasi-03",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "SQL da mavjud yozuv qiymatini o‘zgartirish buyrug‘i qaysi?",
+  "options": [
+   "SELECT",
+   "ALTER",
+   "UPDATE",
+   "INSERT"
+  ],
+  "answer": 2,
+  "explanation": "UPDATE — qiymatni o‘zgartirish.",
+  "solution": [
+   "UPDATE jadval SET maydon = qiymat WHERE shart.",
+   "ALTER — jadval TUZILMASINI o‘zgartiradi (ustun qo‘shish), qiymatni emas.",
+   "Javob: UPDATE"
+  ]
+ },
+ {
+  "id": "malumotlar-bazasi-04",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "SQL da yozuvlarni o‘chirish buyrug‘i qaysi?",
+  "options": [
+   "ERASE",
+   "DELETE",
+   "REMOVE",
+   "DROP"
+  ],
+  "answer": 1,
+  "explanation": "DELETE — qatorlarni o‘chirish.",
+  "solution": [
+   "DELETE FROM jadval WHERE shart — qatorlarni o‘chiradi.",
+   "DROP TABLE esa butun jadvalni o‘chirib yuboradi.",
+   "Javob: DELETE"
+  ]
+ },
+ {
+  "id": "malumotlar-bazasi-05",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Ma’lumotlar bazasi jadvalidagi bitta QATOR qanday ataladi?",
+  "options": [
+   "So‘rov",
+   "Maydon (field)",
+   "Kalit",
+   "Yozuv (record)"
+  ],
+  "answer": 3,
+  "explanation": "Qator — yozuv.",
+  "solution": [
+   "Qator — bitta obyekt haqidagi to‘liq ma’lumot: yozuv.",
+   "Ustun — maydon.",
+   "Javob: Yozuv (record)"
+  ]
+ },
+ {
+  "id": "malumotlar-bazasi-06",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Ma’lumotlar bazasi jadvalidagi USTUN qanday ataladi?",
+  "options": [
+   "Maydon (field)",
+   "Hisobot",
+   "Yozuv (record)",
+   "Forma"
+  ],
+  "answer": 0,
+  "explanation": "Ustun — maydon.",
+  "solution": [
+   "Ustun — bir xil turdagi xususiyat (masalan, Yoshi): maydon.",
+   "Qator esa yozuv.",
+   "Javob: Maydon (field)"
+  ]
+ },
+ {
+  "id": "malumotlar-bazasi-07",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Har bir yozuvni noyob (takrorlanmas) aniqlovchi maydon qanday ataladi?",
+  "options": [
+   "Tashqi kalit",
+   "Birlamchi kalit (Primary Key)",
+   "Atribut",
+   "Indeks"
+  ],
+  "answer": 1,
+  "explanation": "Primary Key.",
+  "solution": [
+   "Birlamchi kalit qiymatlari takrorlanmaydi va bo‘sh bo‘lmaydi.",
+   "Odatda ID raqami.",
+   "Javob: Birlamchi kalit (Primary Key)"
+  ]
+ },
+ {
+  "id": "malumotlar-bazasi-08",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "«Chiptalar» jadvalida ID, Yo‘lovchi_ismi, Avtobus_raqami, Sana maydonlari bor. Har bir chipta unikal bo‘lishi uchun qaysi maydon birlamchi kalit bo‘lishi kerak?",
+  "options": [
+   "Sana",
+   "ID",
+   "Yo‘lovchi_ismi",
+   "Avtobus_raqami"
+  ],
+  "answer": 1,
+  "explanation": "ID — noyob.",
+  "solution": [
+   "Ism, sana, avtobus raqami takrorlanishi mumkin (bir avtobusda ko‘p yo‘lovchi).",
+   "ID har bir chipta uchun alohida beriladi.",
+   "Javob: ID"
+  ]
+ },
+ {
+  "id": "malumotlar-bazasi-09",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi misollardan qaysi biri «Birga-bir» (One-to-One) munosabatiga mos keladi?",
+  "options": [
+   "Talaba ↔ Kitoblar",
+   "O‘quvchi ↔ Baholar",
+   "Mijoz ↔ Buyurtmalar",
+   "Xodim ↔ Pasport ma’lumotlari"
+  ],
+  "answer": 3,
+  "explanation": "1 xodim — 1 pasport.",
+  "solution": [
+   "Birga-bir: bitta obyektga aynan bitta obyekt mos.",
+   "Bitta xodimning bitta pasporti, bitta pasport — bitta xodimniki.",
+   "Javob: Xodim ↔ Pasport ma’lumotlari"
+  ]
+ },
+ {
+  "id": "malumotlar-bazasi-10",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi misollardan qaysi biri «Birga-ko‘p» (One-to-Many) munosabatiga mos keladi?",
+  "options": [
+   "Mijoz ↔ Mijozning pasport ma’lumotlari",
+   "Maktab ↔ O‘quvchilar",
+   "Shaxs ↔ Shaxsning pasporti",
+   "Davlat ↔ Poytaxt"
+  ],
+  "answer": 1,
+  "explanation": "1 maktab — ko‘p o‘quvchi.",
+  "solution": [
+   "Birga-ko‘p: bitta obyektga ko‘p obyekt bog‘lanadi, lekin ularning har biri faqat bittasiga tegishli.",
+   "Bitta maktabda ko‘p o‘quvchi; har o‘quvchi bitta maktabda.",
+   "Javob: Maktab ↔ O‘quvchilar"
+  ]
+ },
+ {
+  "id": "malumotlar-bazasi-11",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "«Ko‘pga-ko‘p» (Many-to-Many) munosabatiga misol qaysi?",
+  "options": [
+   "Maktab ↔ Direktor",
+   "Shaxs ↔ Pasport",
+   "Talabalar ↔ Fanlar",
+   "Mamlakat ↔ Bayroq"
+  ],
+  "answer": 2,
+  "explanation": "Ko‘p talaba — ko‘p fan.",
+  "solution": [
+   "Bir talaba ko‘p fan o‘qiydi, bir fanni ko‘p talaba o‘qiydi.",
+   "Bunday bog‘lanish uchun odatda oraliq jadval kerak.",
+   "Javob: Talabalar ↔ Fanlar"
+  ]
+ },
+ {
+  "id": "malumotlar-bazasi-12",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "MS Access da so‘rov (query) nima uchun ishlatiladi?",
+  "options": [
+   "Shartga mos ma’lumotlarni tanlab olish uchun",
+   "Matn terish uchun",
+   "Rasm chizish uchun",
+   "Internetga ulanish uchun"
+  ],
+  "answer": 0,
+  "explanation": "So‘rov — tanlab olish.",
+  "solution": [
+   "So‘rov — bazadan kerakli yozuvlarni shart bo‘yicha ajratib olish vositasi.",
+   "Access obyektlari: jadval, so‘rov, forma, hisobot.",
+   "Javob: Shartga mos ma’lumotlarni tanlab olish uchun"
+  ]
+ },
+ {
+  "id": "malumotlar-bazasi-13",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagilardan qaysi biri ma’lumotlar bazasini boshqarish tizimi (MBBT)?",
+  "options": [
+   "WinRAR",
+   "MS Word",
+   "Paint",
+   "MS Access"
+  ],
+  "answer": 3,
+  "explanation": "Access — MBBT.",
+  "solution": [
+   "MBBT — bazani yaratish, to‘ldirish va so‘rov berish dasturi.",
+   "Access, MySQL, PostgreSQL, Oracle — MBBT. Word — matn muharriri.",
+   "Javob: MS Access"
+  ]
+ },
+ {
+  "id": "malumotlar-bazasi-14",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "SQL so‘rovida WHERE qismi nima vazifani bajaradi?",
+  "options": [
+   "Ustunlarni tanlaydi",
+   "Natijani tartiblaydi",
+   "Qatorlarni shart bo‘yicha saralab (filtrlab) oladi",
+   "Jadvalni yaratadi"
+  ],
+  "answer": 2,
+  "explanation": "WHERE — shart.",
+  "solution": [
+   "SELECT — qaysi ustunlar, FROM — qaysi jadval, WHERE — qaysi qatorlar (shart).",
+   "ORDER BY — tartiblash.",
+   "Javob: Qatorlarni shart bo‘yicha saralab (filtrlab) oladi"
+  ]
+ },
+ {
+  "id": "malumotlar-bazasi-15",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "SELECT * FROM Students so‘rovidagi * belgisi nimani bildiradi?",
+  "options": [
+   "Barcha jadvallarni",
+   "Birinchi ustunni",
+   "Barcha ustunlarni",
+   "Ko‘paytirishni"
+  ],
+  "answer": 2,
+  "explanation": "* — barcha ustunlar.",
+  "solution": [
+   "SELECT dan keyingi * — «hamma ustunlar».",
+   "Ustunlarni alohida ham yozish mumkin: SELECT Ism, Yoshi …",
+   "Javob: Barcha ustunlarni"
+  ]
+ },
+ {
+  "id": "malumotlar-bazasi-16",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "MS Access da Like \"A*\" sharti nimani bildiradi?",
+  "options": [
+   "A harfi bilan boshlanadigan qiymatlar",
+   "Faqat «A*» matni",
+   "A harfi bilan tugaydigan qiymatlar",
+   "A harfi qatnashmagan qiymatlar"
+  ],
+  "answer": 0,
+  "explanation": "A* — A bilan boshlanadi.",
+  "solution": [
+   "Access da * — istalgan sondagi (0 ham) istalgan belgilar.",
+   "\"A*\" — A dan keyin nima bo‘lsa ham: A bilan boshlanadi.",
+   "Javob: A harfi bilan boshlanadigan qiymatlar"
+  ]
+ },
+ {
+  "id": "malumotlar-bazasi-17",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Students jadvalidan yoshi 16 dan kattalarni chiqarish uchun qaysi so‘rov to‘g‘ri?",
+  "options": [
+   "SELECT * FROM Students WHERE Age > 16;",
+   "UPDATE Students SET Age > 16;",
+   "SELECT * FROM Students WHERE Age < 16;",
+   "DELETE FROM Students WHERE Age > 16;"
+  ],
+  "answer": 0,
+  "explanation": "SELECT … WHERE Age > 16.",
+  "solution": [
+   "Ma’lumot olish — SELECT, shart — WHERE Age > 16.",
+   "UPDATE va DELETE ma’lumotni o‘zgartiradi/o‘chiradi.",
+   "Javob: SELECT * FROM Students WHERE Age > 16;"
+  ]
+ },
+ {
+  "id": "malumotlar-bazasi-18",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Talabalar jadvalidan Yoshi = 20 bo‘lgan talabalar SONINI hisoblash uchun qaysi so‘rov to‘g‘ri?",
+  "options": [
+   "SELECT COUNT(*) FROM Talabalar WHERE Yoshi = 20;",
+   "DELETE FROM Talabalar WHERE Yoshi = 20;",
+   "SELECT SUM(Yoshi) FROM Talabalar WHERE Yoshi = 20;",
+   "SELECT * FROM Talabalar WHERE Yoshi = 20;"
+  ],
+  "answer": 0,
+  "explanation": "COUNT(*) — sanash.",
+  "solution": [
+   "COUNT(*) — qatorlar sonini sanaydi.",
+   "SUM(Yoshi) yoshlarni QO‘SHADI, SELECT * esa qatorlarning o‘zini chiqaradi.",
+   "Javob: SELECT COUNT(*) FROM Talabalar WHERE Yoshi = 20;"
+  ]
+ },
+ {
+  "id": "malumotlar-bazasi-19",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Jadval va so‘rov berilgan. So‘rov natijasini toping.",
+  "options": [
+   "2",
+   "6",
+   "1",
+   "3"
+  ],
+  "answer": 3,
+  "explanation": "Natija: 3.",
+  "solution": [
+   "WHERE Shahar = 'Tashkent' — Toshkentlik qatorlar: Ali, Nilufar, Malika.",
+   "COUNT(*) ularni sanaydi.",
+   "Natija: 3"
+  ],
+  "code": "Talabalar jadvali: (ID, Ism, Familiya, Yoshi, Kurs, Shahar)\n1 Ali Karimov 18 1 Tashkent\n2 Dildora Rustamova 20 2 Samarkand\n3 Jamshid Tursunov 22 3 Bukhara\n4 Nilufar Salimova 19 1 Tashkent\n5 Sardor Qodirov 21 2 Samarkand\n6 Malika Azimova 20 3 Tashkent\n\nSO‘ROV:\nSELECT COUNT(*) FROM Talabalar WHERE Shahar = 'Tashkent';"
+ },
+ {
+  "id": "malumotlar-bazasi-20",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Jadval va so‘rov berilgan. So‘rov natijasini toping.",
+  "options": [
+   "Sardor",
+   "Jamshid, Sardor",
+   "Ali, Nilufar",
+   "Jamshid"
+  ],
+  "answer": 3,
+  "explanation": "Natija: Jamshid.",
+  "solution": [
+   "Yoshi > 20: Jamshid (22), Sardor (21).",
+   "Kurs <> 2 (2 ga teng emas): Jamshid kursi 3 ✔, Sardor kursi 2 ✘.",
+   "Natija: Jamshid"
+  ],
+  "code": "Talabalar jadvali: (ID, Ism, Familiya, Yoshi, Kurs, Shahar)\n1 Ali Karimov 18 1 Tashkent\n2 Dildora Rustamova 20 2 Samarkand\n3 Jamshid Tursunov 22 3 Bukhara\n4 Nilufar Salimova 19 1 Tashkent\n5 Sardor Qodirov 21 2 Samarkand\n6 Malika Azimova 20 3 Tashkent\n\nSO‘ROV:\nSELECT Ism FROM Talabalar WHERE Yoshi > 20 AND Kurs <> 2;"
+ },
+ {
+  "id": "malumotlar-bazasi-21",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Jadval va so‘rov berilgan. So‘rov natijasini toping.",
+  "options": [
+   "22",
+   "20",
+   "18",
+   "19"
+  ],
+  "answer": 3,
+  "explanation": "Natija: 19.",
+  "solution": [
+   "Kurs = 1: Ali (18), Nilufar (19).",
+   "Eng kattasi.",
+   "Natija: 19"
+  ],
+  "code": "Talabalar jadvali: (ID, Ism, Familiya, Yoshi, Kurs, Shahar)\n1 Ali Karimov 18 1 Tashkent\n2 Dildora Rustamova 20 2 Samarkand\n3 Jamshid Tursunov 22 3 Bukhara\n4 Nilufar Salimova 19 1 Tashkent\n5 Sardor Qodirov 21 2 Samarkand\n6 Malika Azimova 20 3 Tashkent\n\nSO‘ROV:\nSELECT MAX(Yoshi) FROM Talabalar WHERE Kurs = 1;"
+ },
+ {
+  "id": "malumotlar-bazasi-22",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Jadval va so‘rov berilgan. So‘rov natijasini toping.",
+  "options": [
+   "Ali, Jamshid, Malika",
+   "Ali, Nilufar, Jamshid",
+   "Ali",
+   "Jamshid, Malika"
+  ],
+  "answer": 0,
+  "explanation": "Natija: Ali, Jamshid, Malika.",
+  "solution": [
+   "OR — kamida bitta shart bajarilsa yetarli.",
+   "Yoshi < 19: Ali. Kurs = 3: Jamshid, Malika.",
+   "Natija: Ali, Jamshid, Malika"
+  ],
+  "code": "Talabalar jadvali: (ID, Ism, Familiya, Yoshi, Kurs, Shahar)\n1 Ali Karimov 18 1 Tashkent\n2 Dildora Rustamova 20 2 Samarkand\n3 Jamshid Tursunov 22 3 Bukhara\n4 Nilufar Salimova 19 1 Tashkent\n5 Sardor Qodirov 21 2 Samarkand\n6 Malika Azimova 20 3 Tashkent\n\nSO‘ROV:\nSELECT Ism FROM Talabalar WHERE Kurs = 3 OR Yoshi < 19;"
+ },
+ {
+  "id": "malumotlar-bazasi-23",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Jadval va so‘rov berilgan. So‘rov natijasini toping.",
+  "options": [
+   "20,5",
+   "41",
+   "20",
+   "21"
+  ],
+  "answer": 0,
+  "explanation": "Natija: 20,5.",
+  "solution": [
+   "Samarqandliklar: Dildora (20), Sardor (21).",
+   "O‘rtacha: (20 + 21) : 2 = 20,5.",
+   "Natija: 20,5"
+  ],
+  "code": "Talabalar jadvali: (ID, Ism, Familiya, Yoshi, Kurs, Shahar)\n1 Ali Karimov 18 1 Tashkent\n2 Dildora Rustamova 20 2 Samarkand\n3 Jamshid Tursunov 22 3 Bukhara\n4 Nilufar Salimova 19 1 Tashkent\n5 Sardor Qodirov 21 2 Samarkand\n6 Malika Azimova 20 3 Tashkent\n\nSO‘ROV:\nSELECT AVG(Yoshi) FROM Talabalar WHERE Shahar = 'Samarkand';"
+ },
+ {
+  "id": "malumotlar-bazasi-24",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Jadval va so‘rov berilgan. So‘rov natijasini toping.",
+  "options": [
+   "3",
+   "105",
+   "80",
+   "225"
+  ],
+  "answer": 1,
+  "explanation": "Natija: 105.",
+  "solution": [
+   "Tur = 'Meva': Kakos (50), Banan (30), Shaftoli (25).",
+   "50 + 30 + 25.",
+   "Natija: 105"
+  ],
+  "code": "Mahsulot jadvali: (ID, Nomi, Tur, Narx, Soni)\n1 Kakos Meva 3000 50\n2 Banan Meva 5000 30\n3 Choy Ichimlik 12000 20\n4 Sut Ichimlik 9000 40\n5 Sabzi Sabzavot 2500 60\n6 Shaftoli Meva 7000 25\n\nSO‘ROV:\nSELECT SUM(Soni) FROM Mahsulot WHERE Tur = 'Meva';"
+ },
+ {
+  "id": "malumotlar-bazasi-25",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Jadval va so‘rov berilgan. So‘rov natijasini toping.",
+  "options": [
+   "Kakos, Banan",
+   "Kakos, Banan, Shaftoli",
+   "Sabzi, Kakos, Banan, Shaftoli",
+   "Banan, Shaftoli"
+  ],
+  "answer": 1,
+  "explanation": "Natija: Kakos, Banan, Shaftoli.",
+  "solution": [
+   "BETWEEN 3000 AND 7000 — chegaralar ham kiradi: Kakos 3000, Banan 5000, Shaftoli 7000.",
+   "ORDER BY Narx — narx o‘sishi bo‘yicha.",
+   "Natija: Kakos, Banan, Shaftoli"
+  ],
+  "code": "Mahsulot jadvali: (ID, Nomi, Tur, Narx, Soni)\n1 Kakos Meva 3000 50\n2 Banan Meva 5000 30\n3 Choy Ichimlik 12000 20\n4 Sut Ichimlik 9000 40\n5 Sabzi Sabzavot 2500 60\n6 Shaftoli Meva 7000 25\n\nSO‘ROV:\nSELECT Nomi FROM Mahsulot WHERE Narx BETWEEN 3000 AND 7000 ORDER BY Narx;"
+ },
+ {
+  "id": "malumotlar-bazasi-26",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "MS Access so‘rovida «Nomi» ustunining Criteria (Условие отбора) qatoriga Like \"S*\" yozildi. Natijada qaysi yozuvlar (Nomi) chiqadi?",
+  "options": [
+   "Sut",
+   "Sabzi",
+   "Kakos, Banan",
+   "Sut, Sabzi, Shaftoli"
+  ],
+  "answer": 3,
+  "explanation": "Like \"S*\" → Sut, Sabzi, Shaftoli.",
+  "solution": [
+   "* — istalgan belgilar. \"S*\" — S bilan boshlanadigan nomlar.",
+   "Sut, Sabzi, Shaftoli — S bilan boshlanadi.",
+   "Javob: Sut, Sabzi, Shaftoli"
+  ],
+  "code": "Mahsulot jadvali: (ID, Nomi, Tur, Narx, Soni)\n1 Kakos Meva 3000 50\n2 Banan Meva 5000 30\n3 Choy Ichimlik 12000 20\n4 Sut Ichimlik 9000 40\n5 Sabzi Sabzavot 2500 60\n6 Shaftoli Meva 7000 25"
+ },
+ {
+  "id": "malumotlar-bazasi-27",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "MS Access so‘rovida «Familiya» ustunining Criteria (Условие отбора) qatoriga Like \"*va\" yozildi. Natijada qaysi yozuvlar (Familiya) chiqadi?",
+  "options": [
+   "Nilufar",
+   "Karimov, Tursunov",
+   "Rustamova, Salimova, Azimova",
+   "Rustamova"
+  ],
+  "answer": 2,
+  "explanation": "Like \"*va\" → Rustamova, Salimova, Azimova.",
+  "solution": [
+   "\"*va\" — oxiri «va» bilan tugaydigan familiyalar.",
+   "Rustamova, Salimova, Azimova — «va» bilan tugaydi.",
+   "Javob: Rustamova, Salimova, Azimova"
+  ],
+  "code": "Talabalar jadvali: (ID, Ism, Familiya, Yoshi, Kurs, Shahar)\n1 Ali Karimov 18 1 Tashkent\n2 Dildora Rustamova 20 2 Samarkand\n3 Jamshid Tursunov 22 3 Bukhara\n4 Nilufar Salimova 19 1 Tashkent\n5 Sardor Qodirov 21 2 Samarkand\n6 Malika Azimova 20 3 Tashkent"
+ },
+ {
+  "id": "malumotlar-bazasi-28",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "MS Access so‘rovida «Ism» ustunining Criteria (Условие отбора) qatoriga Like \"?a*\" yozildi. Natijada qaysi yozuvlar (Ism) chiqadi?",
+  "options": [
+   "Dildora, Nilufar",
+   "Malika",
+   "Jamshid, Sardor, Malika",
+   "Ali, Jamshid"
+  ],
+  "answer": 2,
+  "explanation": "Like \"?a*\" → Jamshid, Sardor, Malika.",
+  "solution": [
+   "? — aynan BITTA istalgan belgi. \"?a*\" — ikkinchi harfi «a» bo‘lgan ismlar.",
+   "Jamshid (J-a), Sardor (S-a), Malika (M-a).",
+   "Javob: Jamshid, Sardor, Malika"
+  ],
+  "code": "Talabalar jadvali: (ID, Ism, Familiya, Yoshi, Kurs, Shahar)\n1 Ali Karimov 18 1 Tashkent\n2 Dildora Rustamova 20 2 Samarkand\n3 Jamshid Tursunov 22 3 Bukhara\n4 Nilufar Salimova 19 1 Tashkent\n5 Sardor Qodirov 21 2 Samarkand\n6 Malika Azimova 20 3 Tashkent"
+ },
+ {
+  "id": "malumotlar-bazasi-29",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "SQL so‘rovida natijani kamayish tartibida saralash uchun nima yoziladi?",
+  "options": [
+   "GROUP BY maydon",
+   "ORDER BY maydon ASC",
+   "ORDER BY maydon DESC",
+   "SORT maydon DOWN"
+  ],
+  "answer": 2,
+  "explanation": "DESC — kamayish.",
+  "solution": [
+   "ORDER BY — saralash. ASC — o‘sish (standart), DESC — kamayish.",
+   "GROUP BY esa guruhlash uchun.",
+   "Javob: ORDER BY maydon DESC"
+  ]
+ },
+ {
+  "id": "malumotlar-bazasi-30",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Tashqi kalit (Foreign Key) nima?",
+  "options": [
+   "Jadvalning birinchi ustuni",
+   "Boshqa jadvalning birlamchi kalitiga havola qiluvchi maydon",
+   "Parol",
+   "Takrorlanmaydigan har qanday maydon"
+  ],
+  "answer": 1,
+  "explanation": "Foreign Key — havola.",
+  "solution": [
+   "Masalan, Buyurtmalar jadvalidagi MijozID — Mijozlar jadvalining ID siga havola.",
+   "Shu orqali jadvallar bog‘lanadi.",
+   "Javob: Boshqa jadvalning birlamchi kalitiga havola qiluvchi maydon"
+  ]
+ },
+ {
+  "id": "malumotlar-bazasi-31",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Access so‘rovida Criteria qatoriga Between 10 And 20 yozilsa, qaysi qiymatlar tanlanadi?",
+  "options": [
+   "20 dan katta",
+   "10 dan katta, 20 dan kichik (chegaralar kirmaydi)",
+   "faqat 10 va 20",
+   "10 dan 20 gacha (10 va 20 ham kiradi)"
+  ],
+  "answer": 3,
+  "explanation": "Between — chegaralar bilan.",
+  "solution": [
+   "Between … And … — chegaraviy qiymatlarni ham o‘z ichiga oladi.",
+   "Ya’ni >= 10 va <= 20.",
+   "Javob: 10 dan 20 gacha (10 va 20 ham kiradi)"
+  ]
+ },
+ {
+  "id": "malumotlar-bazasi-32",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Jadval va so‘rov berilgan. So‘rov natijasini toping.",
+  "options": [
+   "1",
+   "2",
+   "3",
+   "6"
+  ],
+  "answer": 2,
+  "explanation": "Natija: 3.",
+  "solution": [
+   "DISTINCT — takrorlanmaydigan qiymatlar: Tashkent, Samarkand, Bukhara.",
+   "Ularning soni.",
+   "Natija: 3"
+  ],
+  "code": "Talabalar jadvali: (ID, Ism, Familiya, Yoshi, Kurs, Shahar)\n1 Ali Karimov 18 1 Tashkent\n2 Dildora Rustamova 20 2 Samarkand\n3 Jamshid Tursunov 22 3 Bukhara\n4 Nilufar Salimova 19 1 Tashkent\n5 Sardor Qodirov 21 2 Samarkand\n6 Malika Azimova 20 3 Tashkent\n\nSO‘ROV:\nSELECT COUNT(DISTINCT Shahar) FROM Talabalar;"
+ },
+ {
+  "id": "malumotlar-bazasi-33",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Access da <> belgisi Criteria qatorida nimani bildiradi?",
+  "options": [
+   "katta yoki teng",
+   "kichik yoki teng",
+   "taxminan teng",
+   "teng emas"
+  ],
+  "answer": 3,
+  "explanation": "<> — teng emas.",
+  "solution": [
+   "<> — «teng emas» (≠).",
+   "<= — kichik yoki teng, >= — katta yoki teng.",
+   "Javob: teng emas"
+  ]
+ },
+ {
+  "id": "malumotlar-bazasi-34",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Jadval va so‘rov berilgan. So‘rov natijasini toping.",
+  "options": [
+   "Choy, Sut",
+   "(bo‘sh natija)",
+   "Choy",
+   "Sut"
+  ],
+  "answer": 3,
+  "explanation": "Natija: Sut.",
+  "solution": [
+   "Tur = 'Ichimlik': Choy (12000), Sut (9000).",
+   "Narx < 10000 — faqat Sut.",
+   "Natija: Sut"
+  ],
+  "code": "Mahsulot jadvali: (ID, Nomi, Tur, Narx, Soni)\n1 Kakos Meva 3000 50\n2 Banan Meva 5000 30\n3 Choy Ichimlik 12000 20\n4 Sut Ichimlik 9000 40\n5 Sabzi Sabzavot 2500 60\n6 Shaftoli Meva 7000 25\n\nSO‘ROV:\nSELECT Nomi FROM Mahsulot WHERE Tur = 'Ichimlik' AND Narx < 10000;"
+ },
+ {
+  "id": "malumotlar-bazasi-35",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "INSERT INTO Talabalar VALUES (7, 'Bobur', 'Aliyev', 19, 1, 'Fergana'); so‘rovi nima qiladi?",
+  "options": [
+   "Jadvalga yangi talaba yozuvini qo‘shadi",
+   "Barcha talabalarning yoshini 19 qiladi",
+   "Fergana shahridagi talabalarni chiqaradi",
+   "7-talabani o‘chiradi"
+  ],
+  "answer": 0,
+  "explanation": "INSERT — qo‘shish.",
+  "solution": [
+   "INSERT INTO — yangi qator qo‘shish buyrug‘i.",
+   "VALUES ichidagi qiymatlar ustunlar tartibida yoziladi.",
+   "Javob: Jadvalga yangi talaba yozuvini qo‘shadi"
+  ]
+ },
+ {
+  "id": "malumotlar-bazasi-36",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "MS Access dagi asosiy obyektlar qatorini toping.",
+  "options": [
+   "Slayd, animatsiya, o‘tish",
+   "Jadval, so‘rov, forma, hisobot",
+   "Abzas, shrift, sahifa",
+   "Katak, formula, diagramma"
+  ],
+  "answer": 1,
+  "explanation": "Jadval, so‘rov, forma, hisobot.",
+  "solution": [
+   "Access obyektlari: Jadval (ma’lumot), So‘rov (tanlash), Forma (kiritish oynasi), Hisobot (chop etish).",
+   "Slayd — PowerPoint, katak — Excel, abzas — Word.",
+   "Javob: Jadval, so‘rov, forma, hisobot"
+  ]
+ },
+ {
+  "id": "malumotlar-bazasi-37",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Jadval va so‘rov berilgan. So‘rov natijasini toping.",
+  "options": [
+   "6",
+   "1 2, 2 2, 3 1",
+   "1 2, 2 2, 3 2",
+   "1 1, 2 2, 3 3"
+  ],
+  "answer": 2,
+  "explanation": "Natija: 1 2, 2 2, 3 2.",
+  "solution": [
+   "GROUP BY Kurs — har bir kurs uchun alohida guruh, COUNT(*) — guruhdagi talabalar soni.",
+   "1-kurs: Ali, Nilufar; 2-kurs: Dildora, Sardor; 3-kurs: Jamshid, Malika.",
+   "Natija: 1 2, 2 2, 3 2"
+  ],
+  "code": "Talabalar jadvali: (ID, Ism, Familiya, Yoshi, Kurs, Shahar)\n1 Ali Karimov 18 1 Tashkent\n2 Dildora Rustamova 20 2 Samarkand\n3 Jamshid Tursunov 22 3 Bukhara\n4 Nilufar Salimova 19 1 Tashkent\n5 Sardor Qodirov 21 2 Samarkand\n6 Malika Azimova 20 3 Tashkent\n\nSO‘ROV:\nSELECT Kurs, COUNT(*) FROM Talabalar GROUP BY Kurs ORDER BY Kurs;"
+ },
+ {
+  "id": "malumotlar-bazasi-38",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Jadval va so‘rov berilgan. So‘rov natijasini toping.",
+  "options": [
+   "Kakos, Banan",
+   "Sut, Sabzi",
+   "Choy, Sut",
+   "Choy"
+  ],
+  "answer": 2,
+  "explanation": "Natija: Choy, Sut.",
+  "solution": [
+   "Har bir mahsulotning umumiy qiymati: Kakos 150 000, Banan 150 000, Choy 240 000, Sut 360 000, Sabzi 150 000, Shaftoli 175 000.",
+   "200 000 dan kattalari: Choy, Sut.",
+   "Natija: Choy, Sut"
+  ],
+  "code": "Mahsulot jadvali: (ID, Nomi, Tur, Narx, Soni)\n1 Kakos Meva 3000 50\n2 Banan Meva 5000 30\n3 Choy Ichimlik 12000 20\n4 Sut Ichimlik 9000 40\n5 Sabzi Sabzavot 2500 60\n6 Shaftoli Meva 7000 25\n\nSO‘ROV:\nSELECT Nomi FROM Mahsulot WHERE Narx * Soni > 200000 ORDER BY ID;"
+ },
+ {
+  "id": "malumotlar-bazasi-39",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Jadval va so‘rov berilgan. So‘rov natijasini toping.",
+  "options": [
+   "Ali",
+   "22",
+   "Sardor",
+   "Jamshid"
+  ],
+  "answer": 3,
+  "explanation": "Natija: Jamshid.",
+  "solution": [
+   "Ichki so‘rov: MAX(Yoshi) = 22.",
+   "Tashqi so‘rov yoshi 22 bo‘lgan talabani chiqaradi.",
+   "Natija: Jamshid"
+  ],
+  "code": "Talabalar jadvali: (ID, Ism, Familiya, Yoshi, Kurs, Shahar)\n1 Ali Karimov 18 1 Tashkent\n2 Dildora Rustamova 20 2 Samarkand\n3 Jamshid Tursunov 22 3 Bukhara\n4 Nilufar Salimova 19 1 Tashkent\n5 Sardor Qodirov 21 2 Samarkand\n6 Malika Azimova 20 3 Tashkent\n\nSO‘ROV:\nSELECT Ism FROM Talabalar WHERE Yoshi = (SELECT MAX(Yoshi) FROM Talabalar);"
+ },
+ {
+  "id": "malumotlar-bazasi-40",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Jadval va so‘rov berilgan. So‘rov natijasini toping.",
+  "options": [
+   "Meva 5000",
+   "Ichimlik 10500, Meva 5000, Sabzavot 2500",
+   "Ichimlik 10500",
+   "Ichimlik 10500, Meva 5000"
+  ],
+  "answer": 3,
+  "explanation": "Natija: Ichimlik 10500, Meva 5000.",
+  "solution": [
+   "GROUP BY Tur — turlar bo‘yicha guruh. HAVING COUNT(*) > 1 — 1 tadan ko‘p mahsuloti bor turlar: Ichimlik (2), Meva (3).",
+   "Ichimlik: (12000 + 9000)/2 = 10500. Meva: (3000 + 5000 + 7000)/3 = 5000.",
+   "Natija: Ichimlik 10500, Meva 5000"
+  ],
+  "code": "Mahsulot jadvali: (ID, Nomi, Tur, Narx, Soni)\n1 Kakos Meva 3000 50\n2 Banan Meva 5000 30\n3 Choy Ichimlik 12000 20\n4 Sut Ichimlik 9000 40\n5 Sabzi Sabzavot 2500 60\n6 Shaftoli Meva 7000 25\n\nSO‘ROV:\nSELECT Tur, AVG(Narx) FROM Mahsulot GROUP BY Tur HAVING COUNT(*) > 1 ORDER BY Tur;"
+ },
+ {
+  "id": "malumotlar-bazasi-41",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Jadval va so‘rov berilgan. So‘rov natijasini toping.",
+  "options": [
+   "4",
+   "3",
+   "6",
+   "2"
+  ],
+  "answer": 0,
+  "explanation": "Natija: 4.",
+  "solution": [
+   "Shahar LIKE 'S%' (S bilan boshlanadi): Dildora, Sardor.",
+   "Kurs = 1: Ali, Nilufar. OR — birlashma, takror yo‘q.",
+   "Natija: 4"
+  ],
+  "code": "Talabalar jadvali: (ID, Ism, Familiya, Yoshi, Kurs, Shahar)\n1 Ali Karimov 18 1 Tashkent\n2 Dildora Rustamova 20 2 Samarkand\n3 Jamshid Tursunov 22 3 Bukhara\n4 Nilufar Salimova 19 1 Tashkent\n5 Sardor Qodirov 21 2 Samarkand\n6 Malika Azimova 20 3 Tashkent\n\nSO‘ROV:\nSELECT COUNT(*) FROM Talabalar WHERE Shahar LIKE 'S%' OR Kurs = 1;"
+ },
+ {
+  "id": "malumotlar-bazasi-42",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "MS Access so‘rovida «Shahar» ustunining Criteria (Условие отбора) qatoriga Not \"Tashkent\" yozildi. Natijada qaysi yozuvlar (Ism) chiqadi?",
+  "options": [
+   "Dildora, Sardor",
+   "Jamshid",
+   "Ali, Nilufar, Malika",
+   "Dildora, Jamshid, Sardor"
+  ],
+  "answer": 3,
+  "explanation": "Not \"Tashkent\" → Dildora, Jamshid, Sardor.",
+  "solution": [
+   "Not \"Tashkent\" — Toshkentdan boshqa shaharlar.",
+   "Samarkand: Dildora, Sardor; Bukhara: Jamshid.",
+   "Javob: Dildora, Jamshid, Sardor"
+  ],
+  "code": "Talabalar jadvali: (ID, Ism, Familiya, Yoshi, Kurs, Shahar)\n1 Ali Karimov 18 1 Tashkent\n2 Dildora Rustamova 20 2 Samarkand\n3 Jamshid Tursunov 22 3 Bukhara\n4 Nilufar Salimova 19 1 Tashkent\n5 Sardor Qodirov 21 2 Samarkand\n6 Malika Azimova 20 3 Tashkent"
+ },
+ {
+  "id": "malumotlar-bazasi-43",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "UPDATE Mahsulot SET Narx = Narx * 2 WHERE Tur = 'Ichimlik'; so‘rovidan keyin SELECT SUM(Narx) FROM Mahsulot; natijasi? (Mahsulot jadvali yuqoridagicha)",
+  "options": [
+   "38500",
+   "42000",
+   "59500",
+   "77000"
+  ],
+  "answer": 2,
+  "explanation": "38500 + 21000 = 59500.",
+  "solution": [
+   "Avvalgi narxlar yig‘indisi: 3000 + 5000 + 12000 + 9000 + 2500 + 7000 = 38 500.",
+   "Ichimliklar (Choy, Sut) narxi 2 marta oshadi: qo‘shimcha +12000 + 9000 = +21 000.",
+   "38 500 + 21 000 = 59500",
+   "Javob: 59500"
+  ],
+  "code": "Mahsulot jadvali: (ID, Nomi, Tur, Narx, Soni)\n1 Kakos Meva 3000 50\n2 Banan Meva 5000 30\n3 Choy Ichimlik 12000 20\n4 Sut Ichimlik 9000 40\n5 Sabzi Sabzavot 2500 60\n6 Shaftoli Meva 7000 25"
+ },
+ {
+  "id": "malumotlar-bazasi-44",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "DELETE FROM Talabalar WHERE Kurs = 2; bajarilgandan so‘ng SELECT COUNT(*) FROM Talabalar; natijasi? (Talabalar jadvali yuqoridagicha)",
+  "options": [
+   "6",
+   "0",
+   "4",
+   "2"
+  ],
+  "answer": 2,
+  "explanation": "6 − 2 = 4.",
+  "solution": [
+   "Kurs = 2: Dildora, Sardor — 2 ta yozuv o‘chiriladi.",
+   "6 − 2 = 4.",
+   "Javob: 4"
+  ],
+  "code": "Talabalar jadvali: (ID, Ism, Familiya, Yoshi, Kurs, Shahar)\n1 Ali Karimov 18 1 Tashkent\n2 Dildora Rustamova 20 2 Samarkand\n3 Jamshid Tursunov 22 3 Bukhara\n4 Nilufar Salimova 19 1 Tashkent\n5 Sardor Qodirov 21 2 Samarkand\n6 Malika Azimova 20 3 Tashkent"
+ },
+ {
+  "id": "malumotlar-bazasi-45",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Qaysi SQL so‘rovi XATO (sintaksis jihatdan noto‘g‘ri)?",
+  "options": [
+   "SELECT COUNT(*) FROM Talabalar WHERE Kurs = 1;",
+   "SELECT Ism FROM Talabalar;",
+   "SELECT FROM Talabalar WHERE Yoshi > 18;",
+   "SELECT * FROM Talabalar ORDER BY Yoshi DESC;"
+  ],
+  "answer": 2,
+  "explanation": "SELECT dan keyin ustun yo‘q.",
+  "solution": [
+   "SELECT dan keyin albatta ustun(lar) yoki * yozilishi shart.",
+   "«SELECT FROM …» da ustun ko‘rsatilmagan.",
+   "Javob: SELECT FROM Talabalar WHERE Yoshi > 18;"
+  ]
+ },
+ {
+  "id": "malumotlar-bazasi-46",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Kutubxona bazasi: Kitoblar(ID, Nomi), Talabalar(ID, Ism) va ular orasida «ko‘pga-ko‘p» bog‘lanish bor. Buni amalga oshirish uchun nima qilinadi?",
+  "options": [
+   "Kitoblar jadvaliga barcha talabalar ismlari bitta katakka yoziladi",
+   "Ikkala jadval ID larini saqlovchi oraliq jadval (masalan, Ijaralar) yaratiladi",
+   "Bog‘lanishni yaratib bo‘lmaydi",
+   "Ikkala jadval bitta jadvalga birlashtiriladi"
+  ],
+  "answer": 1,
+  "explanation": "Oraliq (bog‘lovchi) jadval.",
+  "solution": [
+   "Ko‘pga-ko‘p bog‘lanish ikkita «birga-ko‘p» bog‘lanishga ajratiladi.",
+   "Oraliq jadval: Ijaralar(KitobID, TalabaID, Sana) — har ikki tomonga tashqi kalit.",
+   "Javob: Ikkala jadval ID larini saqlovchi oraliq jadval (masalan, Ijaralar) yaratiladi"
+  ]
+ },
+ {
+  "id": "malumotlar-bazasi-47",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "MS Access so‘rovida «Yoshi» ustunining Criteria (Условие отбора) qatoriga >=20 And <22 yozildi. Natijada qaysi yozuvlar (Ism) chiqadi?",
+  "options": [
+   "Ali, Nilufar",
+   "Jamshid",
+   "Dildora, Jamshid",
+   "Dildora, Sardor, Malika"
+  ],
+  "answer": 3,
+  "explanation": ">=20 And <22 → Dildora, Sardor, Malika.",
+  "solution": [
+   ">=20 And <22 — 20, 21 yoshlilar (22 kirmaydi).",
+   "Dildora 20, Sardor 21, Malika 20.",
+   "Javob: Dildora, Sardor, Malika"
+  ],
+  "code": "Talabalar jadvali: (ID, Ism, Familiya, Yoshi, Kurs, Shahar)\n1 Ali Karimov 18 1 Tashkent\n2 Dildora Rustamova 20 2 Samarkand\n3 Jamshid Tursunov 22 3 Bukhara\n4 Nilufar Salimova 19 1 Tashkent\n5 Sardor Qodirov 21 2 Samarkand\n6 Malika Azimova 20 3 Tashkent"
+ },
+ {
+  "id": "malumotlar-bazasi-48",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Jadval va so‘rov berilgan. So‘rov natijasini toping.",
+  "options": [
+   "20",
+   "Shaftoli",
+   "Sabzi",
+   "Choy"
+  ],
+  "answer": 3,
+  "explanation": "Natija: Choy.",
+  "solution": [
+   "Ichki so‘rov: eng kam son — 20.",
+   "Soni = 20 bo‘lgan mahsulot.",
+   "Natija: Choy"
+  ],
+  "code": "Mahsulot jadvali: (ID, Nomi, Tur, Narx, Soni)\n1 Kakos Meva 3000 50\n2 Banan Meva 5000 30\n3 Choy Ichimlik 12000 20\n4 Sut Ichimlik 9000 40\n5 Sabzi Sabzavot 2500 60\n6 Shaftoli Meva 7000 25\n\nSO‘ROV:\nSELECT Nomi FROM Mahsulot WHERE Soni = (SELECT MIN(Soni) FROM Mahsulot);"
+ },
+ {
+  "id": "malumotlar-bazasi-49",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Jadval va so‘rov berilgan. So‘rov natijasini toping.",
+  "options": [
+   "Jamshid, Sardor, Dildora, Malika",
+   "Jamshid, Sardor, Malika",
+   "Ali, Nilufar, Dildora",
+   "Jamshid, Sardor, Dildora"
+  ],
+  "answer": 3,
+  "explanation": "Natija: Jamshid, Sardor, Dildora.",
+  "solution": [
+   "Yosh bo‘yicha kamayish: Jamshid 22, Sardor 21, keyin 20 yoshlilar Dildora va Malika — ular ism bo‘yicha alifbo tartibida: Dildora, Malika.",
+   "LIMIT 3 — faqat birinchi 3 tasi.",
+   "Natija: Jamshid, Sardor, Dildora"
+  ],
+  "code": "Talabalar jadvali: (ID, Ism, Familiya, Yoshi, Kurs, Shahar)\n1 Ali Karimov 18 1 Tashkent\n2 Dildora Rustamova 20 2 Samarkand\n3 Jamshid Tursunov 22 3 Bukhara\n4 Nilufar Salimova 19 1 Tashkent\n5 Sardor Qodirov 21 2 Samarkand\n6 Malika Azimova 20 3 Tashkent\n\nSO‘ROV:\nSELECT Ism FROM Talabalar ORDER BY Yoshi DESC, Ism ASC LIMIT 3;"
+ },
+ {
+  "id": "malumotlar-bazasi-50",
+  "unit": "malumotlar-bazasi",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "SQL dagi COUNT(*) va COUNT(maydon) farqi nimada?",
+  "options": [
+   "Hech qanday farq yo‘q",
+   "COUNT(*) faqat raqamlarni sanaydi",
+   "COUNT(maydon) bo‘sh (NULL) qiymatlarni sanamaydi",
+   "COUNT(maydon) yig‘indini hisoblaydi"
+  ],
+  "answer": 2,
+  "explanation": "NULL lar sanalmaydi.",
+  "solution": [
+   "COUNT(*) — barcha qatorlarni sanaydi.",
+   "COUNT(maydon) — shu maydon bo‘sh (NULL) bo‘lmagan qatorlarni sanaydi.",
+   "Javob: COUNT(maydon) bo‘sh (NULL) qiymatlarni sanamaydi"
+  ]
+ }
+]

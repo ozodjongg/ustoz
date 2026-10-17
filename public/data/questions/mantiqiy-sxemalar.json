@@ -104,31 +104,11 @@
   "unit": "mantiqiy-sxemalar",
   "difficulty": "easy",
   "points": 0.9,
-  "prompt": "Dizyunktor qaysi mantiqiy amalni bajaradi?",
-  "options": [
-   "EMAS (NOT)",
-   "VA (AND)",
-   "NAND",
-   "YOKI (OR)"
-  ],
-  "answer": 3,
-  "explanation": "Dizyunktor = YOKI elementi.",
-  "solution": [
-   "Dizyunksiya — YOKI amali.",
-   "Uni bajaradigan sxema elementi — dizyunktor.",
-   "Javob: YOKI (OR)"
-  ]
- },
- {
-  "id": "mantiqiy-sxemalar-07",
-  "unit": "mantiqiy-sxemalar",
-  "difficulty": "easy",
-  "points": 0.9,
   "prompt": "AND elementining ikkala kirishiga 1 va 0 berildi. Chiqishda nima bo‘ladi?",
   "options": [
    "10",
-   "aniqlab bo‘lmaydi",
    "1",
+   "aniqlab bo‘lmaydi",
    "0"
   ],
   "answer": 3,
@@ -140,35 +120,15 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-08",
-  "unit": "mantiqiy-sxemalar",
-  "difficulty": "easy",
-  "points": 0.9,
-  "prompt": "OR elementining kirishlariga 0 va 1 berildi. Chiqishda nima bo‘ladi?",
-  "options": [
-   "1",
-   "0",
-   "2",
-   "01"
-  ],
-  "answer": 0,
-  "explanation": "0 ∨ 1 = 1.",
-  "solution": [
-   "OR (YOKI) kamida bitta kirish 1 bo‘lsa 1 beradi.",
-   "0 ∨ 1 = 1.",
-   "Javob: 1"
-  ]
- },
- {
-  "id": "mantiqiy-sxemalar-09",
+  "id": "mantiqiy-sxemalar-07",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "NAND elementining kirishlariga 0 va 0 berildi. Chiqishda nima bo‘ladi?",
   "options": [
-   "0",
-   "xatolik",
    "00",
+   "xatolik",
+   "0",
    "1"
   ],
   "answer": 3,
@@ -180,18 +140,18 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-10",
+  "id": "mantiqiy-sxemalar-08",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "NOR elementining kirishlariga 1 va 0 berildi. Chiqishda nima bo‘ladi?",
   "options": [
-   "10",
-   "1",
    "0",
-   "2"
+   "1",
+   "2",
+   "10"
   ],
-  "answer": 2,
+  "answer": 0,
   "explanation": "¬(1 ∨ 0) = 0.",
   "solution": [
    "NOR = ¬(A ∨ B).",
@@ -200,18 +160,18 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-11",
+  "id": "mantiqiy-sxemalar-09",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Sxemada A signali invertordan o‘tib, so‘ng yana bir invertordan o‘tdi. Chiqishda nima bo‘ladi?",
   "options": [
-   "A",
    "¬A",
+   "1",
    "0",
-   "1"
+   "A"
   ],
-  "answer": 0,
+  "answer": 3,
   "explanation": "¬¬A = A.",
   "solution": [
    "Birinchi invertor: ¬A. Ikkinchisi: ¬(¬A).",
@@ -220,14 +180,14 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-12",
+  "id": "mantiqiy-sxemalar-10",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Mantiqiy sxemalarda 1 va 0 qiymatlari elektr signalining qaysi holatlarini bildiradi?",
   "options": [
-   "1 — kuchlanish yo‘q, 0 — bor",
    "ikkalasi ham kuchlanish bor",
+   "1 — kuchlanish yo‘q, 0 — bor",
    "1 — kuchlanish bor, 0 — kuchlanish yo‘q",
    "faqat rangni bildiradi"
   ],
@@ -240,18 +200,18 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-13",
+  "id": "mantiqiy-sxemalar-11",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "XOR elementining kirishlariga 1 va 1 berildi. Chiqishda nima bo‘ladi?",
   "options": [
-   "11",
-   "2",
    "0",
-   "1"
+   "1",
+   "2",
+   "11"
   ],
-  "answer": 2,
+  "answer": 0,
   "explanation": "1 ⊕ 1 = 0.",
   "solution": [
    "XOR kirishlar har xil bo‘lsa 1, bir xil bo‘lsa 0.",
@@ -260,18 +220,18 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-14",
+  "id": "mantiqiy-sxemalar-12",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Qaysi element AND va NOT elementlarini ketma-ket ulash natijasiga teng?",
   "options": [
-   "NAND",
-   "OR",
    "NOR",
-   "XOR"
+   "XOR",
+   "NAND",
+   "OR"
   ],
-  "answer": 0,
+  "answer": 2,
   "explanation": "AND → NOT = NAND.",
   "solution": [
    "AND chiqishini NOT ga bersak: ¬(A ∧ B).",
@@ -280,18 +240,18 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-15",
+  "id": "mantiqiy-sxemalar-13",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Qaysi element OR va NOT elementlarini ketma-ket ulash natijasiga teng?",
   "options": [
+   "AND",
    "XNOR",
    "NOR",
-   "AND",
    "NAND"
   ],
-  "answer": 1,
+  "answer": 2,
   "explanation": "OR → NOT = NOR.",
   "solution": [
    "OR chiqishini NOT ga bersak: ¬(A ∨ B).",
@@ -300,30 +260,10 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-16",
-  "unit": "mantiqiy-sxemalar",
-  "difficulty": "easy",
-  "points": 0.9,
-  "prompt": "Uch kirishli AND elementi qachon 1 chiqaradi?",
-  "options": [
-   "kamida ikkita kirish 1 bo‘lganda",
-   "hech qachon",
-   "kamida bitta kirish 1 bo‘lganda",
-   "uchala kirish 1 bo‘lganda"
-  ],
-  "answer": 3,
-  "explanation": "AND — barcha kirishlar 1 bo‘lsa.",
-  "solution": [
-   "AND barcha kirishlar 1 bo‘lishini talab qiladi.",
-   "Kirishlar soni ko‘paysa ham qoida o‘zgarmaydi.",
-   "Javob: uchala kirish 1 bo‘lganda"
-  ]
- },
- {
-  "id": "mantiqiy-sxemalar-17",
+  "id": "mantiqiy-sxemalar-14",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Sxema: A va B YOKI elementiga kiradi; uning chiqishi va ¬C VA elementiga kiradi. Sxemaga mos ifodani toping.",
   "options": [
    "(A ∨ B) ∧ ¬C",
@@ -340,18 +280,18 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-18",
+  "id": "mantiqiy-sxemalar-15",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Sxema: A va B NAND elementiga kiradi; C va D OR elementiga kiradi; ikkala chiqish AND elementiga kiradi, oxirida NOT turadi. Mos ifoda qaysi?",
   "options": [
-   "¬(¬(A ∧ B) ∧ (C ∨ D))",
    "(A ∧ B) ∧ (C ∨ D)",
-   "¬(A ∨ B) ∨ (C ∧ D)",
-   "¬(¬(A ∨ B) ∨ (C ∧ D))"
+   "¬(¬(A ∧ B) ∧ (C ∨ D))",
+   "¬(¬(A ∨ B) ∨ (C ∧ D))",
+   "¬(A ∨ B) ∨ (C ∧ D)"
   ],
-  "answer": 0,
+  "answer": 1,
   "explanation": "¬(¬(A∧B) ∧ (C∨D)).",
   "solution": [
    "NAND: ¬(A ∧ B). OR: C ∨ D.",
@@ -360,18 +300,18 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-19",
+  "id": "mantiqiy-sxemalar-16",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "F = ¬(A ∧ B) ∨ C sxemasida A = 1, B = 1, C = 0 bo‘lsa, chiqish nimaga teng?",
   "options": [
-   "1",
    "C",
-   "0",
-   "¬C"
+   "¬C",
+   "1",
+   "0"
   ],
-  "answer": 2,
+  "answer": 3,
   "explanation": "¬(1) ∨ 0 = 0.",
   "solution": [
    "A ∧ B = 1, ¬(A ∧ B) = 0.",
@@ -380,16 +320,16 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-20",
+  "id": "mantiqiy-sxemalar-17",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Sxemada A va B XOR elementiga, uning chiqishi va C esa AND elementiga kiradi. A = 1, B = 0, C = 1 bo‘lsa chiqish?",
   "options": [
    "1",
+   "aniqlab bo‘lmaydi",
    "0",
-   "2",
-   "aniqlab bo‘lmaydi"
+   "2"
   ],
   "answer": 0,
   "explanation": "(1⊕0) ∧ 1 = 1.",
@@ -400,18 +340,18 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-21",
+  "id": "mantiqiy-sxemalar-18",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Yarim jamlagich (half adder) sxemasida YIG‘INDI (S) chiqishi qaysi element orqali olinadi?",
   "options": [
+   "XOR",
    "OR",
    "AND",
-   "XOR",
    "NOR"
   ],
-  "answer": 2,
+  "answer": 0,
   "explanation": "S = A ⊕ B.",
   "solution": [
    "Ikki bitni qo‘shamiz: 0+0=0, 0+1=1, 1+0=1, 1+1=10 (yig‘indi 0, ko‘chirish 1).",
@@ -420,18 +360,18 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-22",
+  "id": "mantiqiy-sxemalar-19",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Yarim jamlagichda KO‘CHIRISH (carry, C) chiqishi qaysi element orqali olinadi?",
   "options": [
    "XOR",
    "OR",
-   "NOT",
-   "AND"
+   "AND",
+   "NOT"
   ],
-  "answer": 3,
+  "answer": 2,
   "explanation": "C = A ∧ B.",
   "solution": [
    "Ko‘chirish faqat 1 + 1 holatida paydo bo‘ladi.",
@@ -440,16 +380,16 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-23",
+  "id": "mantiqiy-sxemalar-20",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "F = ¬A ∧ ¬B ifodaga qaysi bitta element teng kuchli?",
   "options": [
    "NOR",
+   "NAND",
    "XOR",
-   "AND",
-   "NAND"
+   "AND"
   ],
   "answer": 0,
   "explanation": "¬A∧¬B = ¬(A∨B) = NOR.",
@@ -460,18 +400,18 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-24",
+  "id": "mantiqiy-sxemalar-21",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "F = ¬A ∨ ¬B ifodaga qaysi bitta element teng kuchli?",
   "options": [
    "OR",
-   "XNOR",
    "NOR",
-   "NAND"
+   "NAND",
+   "XNOR"
   ],
-  "answer": 3,
+  "answer": 2,
   "explanation": "¬A∨¬B = ¬(A∧B) = NAND.",
   "solution": [
    "De Morgan: ¬A ∨ ¬B = ¬(A ∧ B).",
@@ -480,15 +420,15 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-25",
+  "id": "mantiqiy-sxemalar-22",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "NAND elementining ikkala kirishiga bir xil signal A berilsa, chiqish nimaga teng?",
   "options": [
+   "A",
    "0",
    "1",
-   "A",
    "¬A"
   ],
   "answer": 3,
@@ -500,18 +440,18 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-26",
+  "id": "mantiqiy-sxemalar-23",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "NOR elementining ikkala kirishiga bir xil signal A berilsa, chiqish nimaga teng?",
   "options": [
-   "0",
-   "A",
    "¬A",
-   "1"
+   "1",
+   "0",
+   "A"
   ],
-  "answer": 2,
+  "answer": 0,
   "explanation": "¬(A ∨ A) = ¬A.",
   "solution": [
    "NOR(A, A) = ¬(A ∨ A).",
@@ -520,18 +460,18 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-27",
+  "id": "mantiqiy-sxemalar-24",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Sxema: A invertordan o‘tadi, so‘ng B bilan OR elementiga kiradi. Bu sxema qaysi amalga teng?",
   "options": [
-   "A ↔ B",
-   "A → B (implikatsiya)",
+   "A ∧ B",
    "A ⊕ B",
-   "A ∧ B"
+   "A ↔ B",
+   "A → B (implikatsiya)"
   ],
-  "answer": 1,
+  "answer": 3,
   "explanation": "¬A ∨ B = A → B.",
   "solution": [
    "Chiqish: ¬A ∨ B.",
@@ -540,18 +480,18 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-28",
+  "id": "mantiqiy-sxemalar-25",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "XNOR (XOR + NOT) elementi qachon 1 chiqaradi?",
   "options": [
-   "kirishlar bir xil bo‘lganda",
+   "faqat 11 da",
    "faqat 00 da",
    "kirishlar har xil bo‘lganda",
-   "faqat 11 da"
+   "kirishlar bir xil bo‘lganda"
   ],
-  "answer": 0,
+  "answer": 3,
   "explanation": "XNOR = A ↔ B.",
   "solution": [
    "XOR har xil bo‘lsa 1. Uning inkori — bir xil bo‘lsa 1.",
@@ -560,18 +500,18 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-29",
+  "id": "mantiqiy-sxemalar-26",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Sxemada A va B AND ga, A va C AND ga kiradi, ikkala chiqish OR ga kiradi. Bu sxema qaysi soddaroq ifodaga teng?",
   "options": [
-   "A ∧ (B ∨ C)",
-   "(A ∨ B) ∧ C",
    "A ∧ B ∧ C",
-   "A ∨ (B ∧ C)"
+   "A ∨ (B ∧ C)",
+   "A ∧ (B ∨ C)",
+   "(A ∨ B) ∧ C"
   ],
-  "answer": 0,
+  "answer": 2,
   "explanation": "AB ∨ AC = A(B ∨ C).",
   "solution": [
    "Chiqish: (A ∧ B) ∨ (A ∧ C).",
@@ -580,18 +520,18 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-30",
+  "id": "mantiqiy-sxemalar-27",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "F = (A ∨ B) ∧ ¬(A ∧ B) sxemasi qaysi elementga teng?",
   "options": [
-   "OR",
    "XNOR",
    "XOR",
-   "NAND"
+   "NAND",
+   "OR"
   ],
-  "answer": 2,
+  "answer": 1,
   "explanation": "«Kamida bitta, lekin ikkalasi emas» = XOR.",
   "solution": [
    "A ∨ B — kamida bittasi 1. ¬(A ∧ B) — ikkalasi bir vaqtda 1 emas.",
@@ -600,18 +540,18 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-31",
+  "id": "mantiqiy-sxemalar-28",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "F = ¬(A ∨ B) ∧ C sxemasida qaysi kirishlar to‘plami 1 beradi?",
   "options": [
-   "A=1, B=0, C=1",
    "A=0, B=0, C=1",
    "A=0, B=1, C=1",
+   "A=1, B=0, C=1",
    "A=0, B=0, C=0"
   ],
-  "answer": 1,
+  "answer": 0,
   "explanation": "A = B = 0 va C = 1.",
   "solution": [
    "¬(A ∨ B) = 1 faqat A = 0, B = 0 da.",
@@ -620,38 +560,18 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-32",
+  "id": "mantiqiy-sxemalar-29",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "medium",
-  "points": 1.7,
-  "prompt": "Sxemada 3 ta kirish (A, B, C) bor. Rostlik jadvalida nechta qator bo‘ladi?",
-  "options": [
-   "8",
-   "9",
-   "3",
-   "6"
-  ],
-  "answer": 0,
-  "explanation": "2³ = 8.",
-  "solution": [
-   "Har kirish 2 xil qiymat oladi.",
-   "2³ = 8.",
-   "Javob: 8"
-  ]
- },
- {
-  "id": "mantiqiy-sxemalar-33",
-  "unit": "mantiqiy-sxemalar",
-  "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Sxema: A va B AND elementiga kiradi, uning chiqishi C bilan birga NOR elementiga kiradi. A=1, B=1, C=0 bo‘lsa, chiqish?",
   "options": [
-   "A",
    "0",
-   "1",
-   "C"
+   "C",
+   "A",
+   "1"
   ],
-  "answer": 1,
+  "answer": 0,
   "explanation": "¬((1∧1) ∨ 0) = 0.",
   "solution": [
    "AND: 1 ∧ 1 = 1.",
@@ -660,18 +580,18 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-34",
+  "id": "mantiqiy-sxemalar-30",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Qaysi element uchun chiqish 1 bo‘ladigan kirish kombinatsiyalari soni eng ko‘p?",
   "options": [
-   "NAND",
    "NOR",
    "AND",
+   "NAND",
    "XOR"
   ],
-  "answer": 0,
+  "answer": 2,
   "explanation": "NAND 4 tadan 3 tasida 1 beradi.",
   "solution": [
    "Ikki kirishli elementlarda 4 ta kombinatsiya bor.",
@@ -680,36 +600,16 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-35",
-  "unit": "mantiqiy-sxemalar",
-  "difficulty": "easy",
-  "points": 0.9,
-  "prompt": "Mantiqiy sxemada signal qaysi tomonga harakatlanadi deb o‘qiladi?",
-  "options": [
-   "tasodifiy",
-   "chiqishdan kirishga",
-   "pastdan yuqoriga",
-   "kirishlardan (chapdan) chiqishga (o‘ngga)"
-  ],
-  "answer": 3,
-  "explanation": "Chapdan o‘ngga: kirish → elementlar → chiqish.",
-  "solution": [
-   "Sxemalar odatda chapda kirishlar, o‘ngda chiqish bilan chiziladi.",
-   "Signal kirishdan elementlar orqali chiqishga boradi, shuning uchun chapdan o‘ngga o‘qiymiz.",
-   "Javob: kirishlardan (chapdan) chiqishga (o‘ngga)"
-  ]
- },
- {
-  "id": "mantiqiy-sxemalar-36",
+  "id": "mantiqiy-sxemalar-31",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Sxema: X = A ⊕ B, Y = X ⊕ C, F = Y ⊕ A. F soddalashtirilsa nimaga teng?",
   "options": [
-   "A",
-   "B ⊕ C",
    "A ⊕ B ⊕ C",
-   "0"
+   "B ⊕ C",
+   "0",
+   "A"
   ],
   "answer": 1,
   "explanation": "A ⊕ A = 0, qoladi B ⊕ C.",
@@ -720,18 +620,18 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-37",
+  "id": "mantiqiy-sxemalar-32",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "NOT elementini faqat NAND elementlari yordamida qanday hosil qilish mumkin?",
   "options": [
-   "ikkita NAND ketma-ket ulanadi",
-   "buning iloji yo‘q",
    "NAND ning ikkala kirishiga bir xil A beriladi",
-   "NAND kirishlaridan biriga 0 beriladi"
+   "NAND kirishlaridan biriga 0 beriladi",
+   "buning iloji yo‘q",
+   "ikkita NAND ketma-ket ulanadi"
   ],
-  "answer": 2,
+  "answer": 0,
   "explanation": "NAND(A,A) = ¬A.",
   "solution": [
    "NAND(A, A) = ¬(A ∧ A) = ¬A.",
@@ -740,16 +640,16 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-38",
+  "id": "mantiqiy-sxemalar-33",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "AND elementini faqat NAND elementlari bilan hosil qilish uchun eng kamida nechta NAND kerak?",
   "options": [
    "4",
    "2",
-   "3",
-   "1"
+   "1",
+   "3"
   ],
   "answer": 1,
   "explanation": "NAND + NAND(invertor) = AND.",
@@ -760,16 +660,16 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-39",
+  "id": "mantiqiy-sxemalar-34",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "OR elementini faqat NAND elementlari bilan hosil qilish uchun eng kamida nechta NAND kerak?",
   "options": [
    "3",
-   "4",
+   "1",
    "2",
-   "1"
+   "4"
   ],
   "answer": 0,
   "explanation": "NAND(NAND(A,A), NAND(B,B)) = A ∨ B — 3 ta.",
@@ -780,10 +680,10 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-40",
+  "id": "mantiqiy-sxemalar-35",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Sxema: X = NAND(A, B), Y = NAND(A, X), Z = NAND(B, X), F = NAND(Y, Z). F qaysi amalga teng?",
   "options": [
    "A ↔ B",
@@ -802,18 +702,18 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-41",
+  "id": "mantiqiy-sxemalar-36",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Sxema: A va B NOR ga kiradi (chiqish X), A va B AND ga kiradi (chiqish Y), X va Y OR ga kiradi. Chiqish qaysi amalga teng?",
   "options": [
-   "A ↔ B",
-   "1",
    "A ∨ B",
-   "A ⊕ B"
+   "A ↔ B",
+   "A ⊕ B",
+   "1"
   ],
-  "answer": 0,
+  "answer": 1,
   "explanation": "00 yoki 11 da 1 → ekvivalensiya.",
   "solution": [
    "X = ¬(A ∨ B) — ikkalasi 0 bo‘lsa 1. Y = A ∧ B — ikkalasi 1 bo‘lsa 1.",
@@ -822,16 +722,16 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-42",
+  "id": "mantiqiy-sxemalar-37",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "F = ¬(¬(A ∨ B) ∨ (C ∧ D)) sxemasida A=0, B=1, C=1, D=0 bo‘lsa, chiqish?",
   "options": [
-   "C",
+   "0",
    "B",
    "1",
-   "0"
+   "C"
   ],
   "answer": 2,
   "explanation": "¬(0 ∨ 0) = 1.",
@@ -843,18 +743,18 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-43",
+  "id": "mantiqiy-sxemalar-38",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Uch kirishli «ko‘pchilik» (majority) elementi kamida ikkita kirish 1 bo‘lsa 1 chiqaradi. Unga mos ifoda qaysi?",
   "options": [
-   "A ∧ B ∧ C",
-   "A ∨ B ∨ C",
+   "A ⊕ B ⊕ C",
    "A∧B ∨ B∧C ∨ A∧C",
-   "A ⊕ B ⊕ C"
+   "A ∨ B ∨ C",
+   "A ∧ B ∧ C"
   ],
-  "answer": 2,
+  "answer": 1,
   "explanation": "Kamida bitta juftlik 1 bo‘lishi kerak.",
   "solution": [
    "Kamida ikkitasi 1 → qaysidir juftlik ikkalasi 1.",
@@ -863,18 +763,18 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-44",
+  "id": "mantiqiy-sxemalar-39",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "To‘liq jamlagich (full adder) A, B va oldingi ko‘chirish Cᵢₙ ni qo‘shadi. A=1, B=1, Cᵢₙ=1 bo‘lsa, yig‘indi S va ko‘chirish Cₒᵤₜ qanday?",
   "options": [
-   "S = 1, Cₒᵤₜ = 0",
-   "S = 0, Cₒᵤₜ = 1",
+   "S = 1, Cₒᵤₜ = 1",
    "S = 3, Cₒᵤₜ = 0",
-   "S = 1, Cₒᵤₜ = 1"
+   "S = 0, Cₒᵤₜ = 1",
+   "S = 1, Cₒᵤₜ = 0"
   ],
-  "answer": 3,
+  "answer": 0,
   "explanation": "1+1+1 = 11₂.",
   "solution": [
    "1 + 1 + 1 = 3 = 11₂.",
@@ -883,18 +783,18 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-45",
+  "id": "mantiqiy-sxemalar-40",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Sxema chiqishi F = (A ∧ ¬B) ∨ (¬A ∧ B) ∨ (A ∧ B). Uni eng kam elementli sxema bilan almashtirsak, qaysi bitta element yetarli?",
   "options": [
    "NAND",
-   "OR",
+   "XOR",
    "AND",
-   "XOR"
+   "OR"
   ],
-  "answer": 1,
+  "answer": 3,
   "explanation": "Faqat 00 da 0 → OR.",
   "solution": [
    "Rost qatorlar: 10, 01, 11 — faqat 00 da 0.",
@@ -903,18 +803,18 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-46",
+  "id": "mantiqiy-sxemalar-41",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "F = (A ∨ ¬A) ∧ B sxemasida A ga qanday signal berilishi chiqishga ta’sir qiladimi?",
   "options": [
-   "ha, F = A ∧ B",
-   "yo‘q, F doim 1",
    "yo‘q, F = B",
-   "ha, F = ¬A"
+   "ha, F = ¬A",
+   "yo‘q, F doim 1",
+   "ha, F = A ∧ B"
   ],
-  "answer": 2,
+  "answer": 0,
   "explanation": "A ∨ ¬A = 1, demak F = B.",
   "solution": [
    "A ∨ ¬A = 1 — A qanday bo‘lmasin.",
@@ -923,10 +823,10 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-47",
+  "id": "mantiqiy-sxemalar-42",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Sxemada 4 ta kirish bor va chiqish F = A ∧ B ∧ C ∧ D. Rostlik jadvalidagi nechta qatorda F = 0?",
   "options": [
    "8",
@@ -943,14 +843,14 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-48",
+  "id": "mantiqiy-sxemalar-43",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "F = NOR(NOR(A, B), NOR(A, B)) sxemasi qaysi amalga teng?",
   "options": [
-   "¬(A ∨ B)",
    "A ∧ B",
+   "¬(A ∨ B)",
    "A ∨ B",
    "A ⊕ B"
   ],
@@ -963,18 +863,18 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-49",
+  "id": "mantiqiy-sxemalar-44",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "A=1, B=0, C=1 da qaysi sxema chiqishi 0 bo‘ladi?",
   "options": [
-   "(A ∨ B) ∧ C",
-   "¬(A ∧ C) ∨ B",
    "A ⊕ B",
-   "¬B ∧ A"
+   "(A ∨ B) ∧ C",
+   "¬B ∧ A",
+   "¬(A ∧ C) ∨ B"
   ],
-  "answer": 1,
+  "answer": 3,
   "explanation": "¬(1∧1) ∨ 0 = 0.",
   "solution": [
    "¬(A ∧ C) ∨ B = ¬(1) ∨ 0 = 0 ✔.",
@@ -983,23 +883,126 @@
   ]
  },
  {
-  "id": "mantiqiy-sxemalar-50",
+  "id": "mantiqiy-sxemalar-45",
   "unit": "mantiqiy-sxemalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Ikki bitli sonlar A₁A₀ va B₁B₀ tengligini tekshiruvchi sxemaga qaysi ifoda mos keladi?",
   "options": [
-   "(A₁ ⊕ B₁) ∧ (A₀ ⊕ B₀)",
-   "(A₁ ∧ B₁) ∨ (A₀ ∧ B₀)",
    "(A₁ ↔ B₁) ∨ (A₀ ↔ B₀)",
-   "(A₁ ↔ B₁) ∧ (A₀ ↔ B₀)"
+   "(A₁ ↔ B₁) ∧ (A₀ ↔ B₀)",
+   "(A₁ ∧ B₁) ∨ (A₀ ∧ B₀)",
+   "(A₁ ⊕ B₁) ∧ (A₀ ⊕ B₀)"
   ],
-  "answer": 3,
+  "answer": 1,
   "explanation": "Har bir bit teng (↔) va hammasi birga (∧).",
   "solution": [
    "Sonlar teng — har bir mos bit teng bo‘lishi kerak.",
    "Bitlar tengligi — ekvivalensiya (XNOR). Ikkalasi ham bajarilishi kerak — VA.",
    "Javob: (A₁ ↔ B₁) ∧ (A₀ ↔ B₀)"
+  ]
+ },
+ {
+  "id": "mantiqiy-sxemalar-46",
+  "unit": "mantiqiy-sxemalar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "A = 1, B = 0, C = 1. Sxema: X = A and B; Y = not C; Z = X or Y; W = not (A and C); chiqish = Z or W. Chiqish signalini toping.",
+  "options": [
+   "1",
+   "A",
+   "0",
+   "C"
+  ],
+  "answer": 2,
+  "explanation": "Z = 0, W = 0 → 0.",
+  "solution": [
+   "X = 1 and 0 = 0. Y = not 1 = 0. Z = 0 or 0 = 0.",
+   "A and C = 1 and 1 = 1 → W = not 1 = 0.",
+   "Chiqish = Z or W = 0 or 0.",
+   "Javob: 0"
+  ]
+ },
+ {
+  "id": "mantiqiy-sxemalar-47",
+  "unit": "mantiqiy-sxemalar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "A = 0, B = 1, C = 1. Sxema: X = A or B; Y = X and C; Z = not B; chiqish = Y or Z. Chiqish signali?",
+  "options": [
+   "B",
+   "aniqlab bo‘lmaydi",
+   "1",
+   "0"
+  ],
+  "answer": 2,
+  "explanation": "Y = 1 → 1.",
+  "solution": [
+   "X = 0 or 1 = 1. Y = 1 and 1 = 1.",
+   "Z = not 1 = 0.",
+   "Chiqish = 1 or 0.",
+   "Javob: 1"
+  ]
+ },
+ {
+  "id": "mantiqiy-sxemalar-48",
+  "unit": "mantiqiy-sxemalar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Sxemada p va q VA elementiga, k esa invertorga kiradi; ikkala chiqish YOKI elementiga beriladi. Mos mantiqiy ifoda qaysi?",
+  "options": [
+   "(p nand q) nor (not k)",
+   "(p and q) nor (not k)",
+   "(p and q) or (not k)",
+   "(p or q) and (not k)"
+  ],
+  "answer": 2,
+  "explanation": "AND + NOT → OR.",
+  "solution": [
+   "1-element: p and q. 2-element: not k.",
+   "Oxirgi element YOKI (oxirida doiracha yo‘q — inkor yo‘q).",
+   "Javob: (p and q) or (not k)"
+  ]
+ },
+ {
+  "id": "mantiqiy-sxemalar-49",
+  "unit": "mantiqiy-sxemalar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Sxemada x va y VA-EMAS (NAND) elementiga, z invertorga kiradi; ikkala chiqish YOKI-EMAS (NOR) elementiga beriladi. Mos ifoda qaysi?",
+  "options": [
+   "(x and y) or (not z)",
+   "(x nand y) nor (not z)",
+   "(x and y) nor (not z)",
+   "(x or y) and (not z)"
+  ],
+  "answer": 1,
+  "explanation": "Doirachalar: NAND va NOR.",
+  "solution": [
+   "Birinchi element chiqishida doiracha bor → AND emas, NAND: x nand y.",
+   "Ikkinchi: not z. Oxirgi element YOKI shaklida, chiqishida doiracha → NOR.",
+   "Javob: (x nand y) nor (not z)"
+  ]
+ },
+ {
+  "id": "mantiqiy-sxemalar-50",
+  "unit": "mantiqiy-sxemalar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "x = 1, y = 1, z = 0 bo‘lsa, (x nand y) nor (not z) ning qiymati?",
+  "options": [
+   "1",
+   "z",
+   "x",
+   "0"
+  ],
+  "answer": 3,
+  "explanation": "not(0 ∨ 1) = 0.",
+  "solution": [
+   "x nand y = not(1 and 1) = 0.",
+   "not z = 1.",
+   "0 nor 1 = not(0 or 1) = 0.",
+   "Javob: 0"
   ]
  }
 ]

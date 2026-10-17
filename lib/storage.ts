@@ -1,10 +1,10 @@
 import type { ExamHistory, MistakeStats, ProgressMap } from '../types';
 
 const NAME = 'io_name';
-const MISTAKES = 'io_mistakes_v2';
+const MISTAKES = 'io_mistakes_v3';
 const HISTORY = 'io_history_v1';
 const TELEGRAM = 'io_telegram_v1';
-const PROGRESS = 'io_progress_v1';
+const PROGRESS = 'io_progress_v2';
 const THEME = 'io_theme';
 
 const safeParse = <T,>(raw: string | null, fallback: T): T => {

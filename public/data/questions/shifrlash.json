@@ -1,0 +1,1014 @@
+[
+ {
+  "id": "shifrlash-01",
+  "unit": "shifrlash",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Sezar shifri bilan (kalit k = 3) shifrlangan matn: KHOOR. Asl matnni toping.",
+  "options": [
+   "HELLO",
+   "HEYOO",
+   "HALLO",
+   "HULLO"
+  ],
+  "answer": 0,
+  "explanation": "KHOOR → HELLO.",
+  "solution": [
+   "Deshifrlash — teskari yo‘nalish: har harfni 3 ta CHAPGA suramiz (A dan oldin Z).",
+   "K→H  H→E  O→L  O→L  R→O",
+   "Natija: HELLO"
+  ]
+ },
+ {
+  "id": "shifrlash-02",
+  "unit": "shifrlash",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "«CAT» so‘zini Sezar shifri bilan, kalit k = 3 (o‘ngga siljitish) bilan shifrlang.",
+  "options": [
+   "FDW",
+   "DBU",
+   "CAT",
+   "ZXQ"
+  ],
+  "answer": 0,
+  "explanation": "CAT → FDW.",
+  "solution": [
+   "Har bir harfni alifboda 3 ta o‘ngga suramiz (Z dan keyin yana A).",
+   "C→F  A→D  T→W",
+   "Natija: FDW"
+  ]
+ },
+ {
+  "id": "shifrlash-03",
+  "unit": "shifrlash",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "«SALOM» so‘zini Sezar shifri bilan, kalit k = 1 (o‘ngga siljitish) bilan shifrlang.",
+  "options": [
+   "TBMPN",
+   "RZKNL",
+   "UCNQO",
+   "SALOM"
+  ],
+  "answer": 0,
+  "explanation": "SALOM → TBMPN.",
+  "solution": [
+   "Har bir harfni alifboda 1 ta o‘ngga suramiz (Z dan keyin yana A).",
+   "S→T  A→B  L→M  O→P  M→N",
+   "Natija: TBMPN"
+  ]
+ },
+ {
+  "id": "shifrlash-04",
+  "unit": "shifrlash",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "«ZEBRA» so‘zini Sezar shifri bilan, kalit k = 2 (o‘ngga siljitish) bilan shifrlang.",
+  "options": [
+   "AFCSB",
+   "BGDTC",
+   "ZEBRA",
+   "XCZPY"
+  ],
+  "answer": 1,
+  "explanation": "ZEBRA → BGDTC.",
+  "solution": [
+   "Har bir harfni alifboda 2 ta o‘ngga suramiz (Z dan keyin yana A).",
+   "Z→B  E→G  B→D  R→T  A→C",
+   "Natija: BGDTC"
+  ]
+ },
+ {
+  "id": "shifrlash-05",
+  "unit": "shifrlash",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Sezar shifri bilan (kalit k = 3) shifrlangan matn: DOG. Asl matnni toping.",
+  "options": [
+   "FQI",
+   "ZKC",
+   "DOG",
+   "ALD"
+  ],
+  "answer": 3,
+  "explanation": "DOG → ALD.",
+  "solution": [
+   "Deshifrlash — teskari yo‘nalish: har harfni 3 ta CHAPGA suramiz (A dan oldin Z).",
+   "D→A  O→L  G→D",
+   "Natija: ALD"
+  ]
+ },
+ {
+  "id": "shifrlash-06",
+  "unit": "shifrlash",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Sezar shifrida kalit k = 3 bo‘lsa, «A» harfi qaysi harfga aylanadi?",
+  "options": [
+   "D",
+   "X",
+   "B",
+   "C"
+  ],
+  "answer": 0,
+  "explanation": "A + 3 = D.",
+  "solution": [
+   "Sezar shifrida har bir harf alifboda k ta o‘ngga suriladi.",
+   "A dan 3 ta o‘ngga: B, C, D.",
+   "Javob: D"
+  ]
+ },
+ {
+  "id": "shifrlash-07",
+  "unit": "shifrlash",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Sezar shifrida kalit k = 3 bo‘lsa, «Y» harfi qaysi harfga aylanadi?",
+  "options": [
+   "B",
+   "A",
+   "Z",
+   "C"
+  ],
+  "answer": 0,
+  "explanation": "Y → Z → A → B.",
+  "solution": [
+   "Y dan o‘ngga: Z (1), keyin alifbo boshiga qaytamiz: A (2), B (3).",
+   "Alifbo halqa kabi yopiq.",
+   "Javob: B"
+  ]
+ },
+ {
+  "id": "shifrlash-08",
+  "unit": "shifrlash",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Shifrlash (kriptografiya) nima uchun kerak?",
+  "options": [
+   "Faylni kichraytirish",
+   "Viruslarni yo‘qotish",
+   "Matnni chiroyli qilish",
+   "Ma’lumotni begonalar o‘qiy olmasligi uchun yashirish"
+  ],
+  "answer": 3,
+  "explanation": "Maxfiylik uchun.",
+  "solution": [
+   "Shifrlash — matnni kalitsiz tushunib bo‘lmaydigan ko‘rinishga keltirish.",
+   "Faylni kichraytirish — arxivlash, bu boshqa narsa.",
+   "Javob: Ma’lumotni begonalar o‘qiy olmasligi uchun yashirish"
+  ]
+ },
+ {
+  "id": "shifrlash-09",
+  "unit": "shifrlash",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Shifrlangan matnni kalit yordamida asl holiga qaytarish nima deyiladi?",
+  "options": [
+   "Deshifrlash",
+   "Arxivlash",
+   "Kodlash jadvali",
+   "Formatlash"
+  ],
+  "answer": 0,
+  "explanation": "Deshifrlash.",
+  "solution": [
+   "Shifrlash: ochiq matn → shifr matn. Deshifrlash: shifr matn → ochiq matn.",
+   "Buning uchun kalit kerak.",
+   "Javob: Deshifrlash"
+  ]
+ },
+ {
+  "id": "shifrlash-10",
+  "unit": "shifrlash",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Ingliz alifbosida nechta harf bor (Sezar shifri uchun modul)?",
+  "options": [
+   "24",
+   "28",
+   "26",
+   "32"
+  ],
+  "answer": 2,
+  "explanation": "26 ta harf.",
+  "solution": [
+   "A dan Z gacha 26 ta harf.",
+   "Shuning uchun siljitish «mod 26» bo‘yicha bajariladi.",
+   "Javob: 26"
+  ]
+ },
+ {
+  "id": "shifrlash-11",
+  "unit": "shifrlash",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Sezar shifri qanday shifr turiga kiradi?",
+  "options": [
+   "Har bir harf boshqa harfga almashtiriladigan (o‘rniga qo‘yish) shifr",
+   "Arxivlash usuli",
+   "Ochiq kalitli shifr",
+   "Harflar o‘rni almashtiriladigan shifr"
+  ],
+  "answer": 0,
+  "explanation": "O‘rniga qo‘yish shifri.",
+  "solution": [
+   "Sezar shifrida har bir harf alifboda belgilangan qadamdagi boshqa harfga almashtiriladi.",
+   "Bu — o‘rniga qo‘yish (substitution) shifri.",
+   "Javob: Har bir harf boshqa harfga almashtiriladigan (o‘rniga qo‘yish) shifr"
+  ]
+ },
+ {
+  "id": "shifrlash-12",
+  "unit": "shifrlash",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Sezar shifrida kalit 26 bo‘lsa, shifrlangan matn qanday bo‘ladi?",
+  "options": [
+   "Bo‘sh matn",
+   "Asl matnning o‘zi",
+   "Faqat A harflari",
+   "Teskari matn"
+  ],
+  "answer": 1,
+  "explanation": "26 ≡ 0 → o‘zgarmaydi.",
+  "solution": [
+   "26 ta siljish — alifboni to‘liq aylanib, o‘sha harfga qaytish.",
+   "k = 26 ≡ 0 (mod 26).",
+   "Javob: Asl matnning o‘zi"
+  ]
+ },
+ {
+  "id": "shifrlash-13",
+  "unit": "shifrlash",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "«HELLO» so‘zini Sezar shifri bilan, kalit k = 13 (o‘ngga siljitish) bilan shifrlang.",
+  "options": [
+   "TQXXA",
+   "HELLO",
+   "IFMMP",
+   "URYYB"
+  ],
+  "answer": 3,
+  "explanation": "HELLO → URYYB.",
+  "solution": [
+   "Har bir harfni alifboda 13 ta o‘ngga suramiz (Z dan keyin yana A).",
+   "H→U  E→R  L→Y  L→Y  O→B",
+   "Natija: URYYB"
+  ]
+ },
+ {
+  "id": "shifrlash-14",
+  "unit": "shifrlash",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Vigenère shifrida A = 0 bo‘lsa, kalit harfi «A» matn harfini qanday o‘zgartiradi?",
+  "options": [
+   "1 ga suradi",
+   "26 ga suradi",
+   "Teskari qiladi",
+   "O‘zgartirmaydi"
+  ],
+  "answer": 3,
+  "explanation": "A = 0 siljish.",
+  "solution": [
+   "A = 0 → siljish 0.",
+   "Harf o‘z holicha qoladi.",
+   "Javob: O‘zgartirmaydi"
+  ]
+ },
+ {
+  "id": "shifrlash-15",
+  "unit": "shifrlash",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Vigenère shifrida kalit so‘z matndan qisqa bo‘lsa, nima qilinadi?",
+  "options": [
+   "Qolgan harflar shifrlanmaydi",
+   "Shifrlash mumkin emas",
+   "Kalit so‘z matn uzunligigacha takrorlanadi",
+   "Kalit teskari yoziladi"
+  ],
+  "answer": 2,
+  "explanation": "Kalit takrorlanadi.",
+  "solution": [
+   "Kalit: KEY, matn: SALOMAT (7 harf) → KEYKEYK.",
+   "Har bir matn harfiga o‘z kalit harfi mos keladi.",
+   "Javob: Kalit so‘z matn uzunligigacha takrorlanadi"
+  ]
+ },
+ {
+  "id": "shifrlash-16",
+  "unit": "shifrlash",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Vigenère usuli (A = 0, B = 1, …, Z = 25). Kalit so‘z: KEY. Shifrlangan matn: MFB. Matn deshifrlanganda natija qanday bo‘ladi?",
+  "options": [
+   "BAT",
+   "MAT",
+   "CBD",
+   "CAB"
+  ],
+  "answer": 2,
+  "explanation": "MFB → CBD.",
+  "solution": [
+   "Kalitni matn uzunligigacha takrorlaymiz: KEY.",
+   "Har bir harfdan kalit harfini AYIRAMIZ (mod 26).",
+   "M(12) − K(10) = 2 → C; F(5) − E(4) = 1 → B; B(1) − Y(24) = 3 → D",
+   "Natija: CBD"
+  ]
+ },
+ {
+  "id": "shifrlash-17",
+  "unit": "shifrlash",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Vigenère usuli (A = 0, B = 1, …, Z = 25). Kalit so‘z: LOCK. Shifrlanadigan matn: DATA. Matn shifrlanganda natija qanday bo‘ladi?",
+  "options": [
+   "NOPK",
+   "MOPK",
+   "OOVK",
+   "DARA"
+  ],
+  "answer": 2,
+  "explanation": "DATA → OOVK.",
+  "solution": [
+   "Kalitni matn uzunligigacha takrorlaymiz: LOCK.",
+   "Har bir harfga kalit harfini QO‘SHAMIZ (mod 26).",
+   "D(3) + L(11) = 14 → O; A(0) + O(14) = 14 → O; T(19) + C(2) = 21 → V; A(0) + K(10) = 10 → K",
+   "Natija: OOVK"
+  ]
+ },
+ {
+  "id": "shifrlash-18",
+  "unit": "shifrlash",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Vigenère usuli (A = 0, B = 1, …, Z = 25). Kalit so‘z: KEY. Shifrlanadigan matn: HELLO. Matn shifrlanganda natija qanday bo‘ladi?",
+  "options": [
+   "RIJVS",
+   "RIJUS",
+   "RIJVT",
+   "HELLO"
+  ],
+  "answer": 0,
+  "explanation": "HELLO → RIJVS.",
+  "solution": [
+   "Kalitni matn uzunligigacha takrorlaymiz: KEYKE.",
+   "Har bir harfga kalit harfini QO‘SHAMIZ (mod 26).",
+   "H(7) + K(10) = 17 → R; E(4) + E(4) = 8 → I; L(11) + Y(24) = 9 → J; L(11) + K(10) = 21 → V; O(14) + E(4) = 18 → S",
+   "Natija: RIJVS"
+  ]
+ },
+ {
+  "id": "shifrlash-19",
+  "unit": "shifrlash",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Vigenère usuli (A = 0, B = 1, …, Z = 25). Kalit so‘z: AB. Shifrlanadigan matn: CODE. Matn shifrlanganda natija qanday bo‘ladi?",
+  "options": [
+   "CODE",
+   "CPDF",
+   "CNDD",
+   "DODE"
+  ],
+  "answer": 1,
+  "explanation": "CODE → CPDF.",
+  "solution": [
+   "Kalitni matn uzunligigacha takrorlaymiz: ABAB.",
+   "Har bir harfga kalit harfini QO‘SHAMIZ (mod 26).",
+   "C(2) + A(0) = 2 → C; O(14) + B(1) = 15 → P; D(3) + A(0) = 3 → D; E(4) + B(1) = 5 → F",
+   "Natija: CPDF"
+  ]
+ },
+ {
+  "id": "shifrlash-20",
+  "unit": "shifrlash",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Vigenère usuli (A = 0, B = 1, …, Z = 25). Kalit so‘z: KEY. Shifrlangan matn: RIJVS. Matn deshifrlanganda natija qanday bo‘ladi?",
+  "options": [
+   "GELLO",
+   "HELLP",
+   "HELLO",
+   "RIJVS"
+  ],
+  "answer": 2,
+  "explanation": "RIJVS → HELLO.",
+  "solution": [
+   "Kalitni matn uzunligigacha takrorlaymiz: KEYKE.",
+   "Har bir harfdan kalit harfini AYIRAMIZ (mod 26).",
+   "R(17) − K(10) = 7 → H; I(8) − E(4) = 4 → E; J(9) − Y(24) = 11 → L; V(21) − K(10) = 11 → L; S(18) − E(4) = 14 → O",
+   "Natija: HELLO"
+  ]
+ },
+ {
+  "id": "shifrlash-21",
+  "unit": "shifrlash",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "«PYTHON» so‘zini Sezar shifri bilan, kalit k = 5 (o‘ngga siljitish) bilan shifrlang.",
+  "options": [
+   "UDYMTS",
+   "PYTHON",
+   "KTOCJI",
+   "VEZNUT"
+  ],
+  "answer": 0,
+  "explanation": "PYTHON → UDYMTS.",
+  "solution": [
+   "Har bir harfni alifboda 5 ta o‘ngga suramiz (Z dan keyin yana A).",
+   "P→U  Y→D  T→Y  H→M  O→T  N→S",
+   "Natija: UDYMTS"
+  ]
+ },
+ {
+  "id": "shifrlash-22",
+  "unit": "shifrlash",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "«WXYZ» so‘zini Sezar shifri bilan, kalit k = 4 (o‘ngga siljitish) bilan shifrlang.",
+  "options": [
+   "ABCD",
+   "WXYZ",
+   "STUV",
+   "BCDE"
+  ],
+  "answer": 0,
+  "explanation": "WXYZ → ABCD.",
+  "solution": [
+   "Har bir harfni alifboda 4 ta o‘ngga suramiz (Z dan keyin yana A).",
+   "W→A  X→B  Y→C  Z→D",
+   "Natija: ABCD"
+  ]
+ },
+ {
+  "id": "shifrlash-23",
+  "unit": "shifrlash",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Sezar shifri bilan (kalit k = 3) shifrlangan matn: FDHVDU. Asl matnni toping.",
+  "options": [
+   "CAESAQ",
+   "IGKYGX",
+   "CAESAR",
+   "FDHVDU"
+  ],
+  "answer": 2,
+  "explanation": "FDHVDU → CAESAR.",
+  "solution": [
+   "Deshifrlash — teskari yo‘nalish: har harfni 3 ta CHAPGA suramiz (A dan oldin Z).",
+   "F→C  D→A  H→E  V→S  D→A  U→R",
+   "Natija: CAESAR"
+  ]
+ },
+ {
+  "id": "shifrlash-24",
+  "unit": "shifrlash",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Atbash shifrida alifbo teskari almashtiriladi: A ↔ Z, B ↔ Y, C ↔ X, … «ABC» so‘zi qanday shifrlanadi?",
+  "options": [
+   "ZYX",
+   "XYZ",
+   "CBA",
+   "DEF"
+  ],
+  "answer": 0,
+  "explanation": "ABC → ZYX.",
+  "solution": [
+   "A → Z, B → Y, C → X.",
+   "Har bir harf alifbo oxiridan o‘sha tartibdagi harfga almashadi.",
+   "Javob: ZYX"
+  ]
+ },
+ {
+  "id": "shifrlash-25",
+  "unit": "shifrlash",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Atbash shifri bilan «HOLD» so‘zi qanday shifrlanadi?",
+  "options": [
+   "HOLD",
+   "SLOW",
+   "DLOH",
+   "KROG"
+  ],
+  "answer": 1,
+  "explanation": "HOLD → SLOW.",
+  "solution": [
+   "Formula: harf indeksi i → 25 − i (A = 0).",
+   "H(7)→S(18), O(14)→L(11), L(11)→O(14), D(3)→W(22).",
+   "Javob: SLOW"
+  ]
+ },
+ {
+  "id": "shifrlash-26",
+  "unit": "shifrlash",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Sezar shifri bilan «XYZ» → «ABC» bo‘lgan. Kalit nechaga teng?",
+  "options": [
+   "3",
+   "1",
+   "23",
+   "24"
+  ],
+  "answer": 0,
+  "explanation": "23 + 3 = 26 ≡ 0.",
+  "solution": [
+   "X → A: X(23) + k ≡ A(0) (mod 26) → k = 3.",
+   "Tekshiruv: Y → B, Z → C ✔.",
+   "Javob: 3"
+  ]
+ },
+ {
+  "id": "shifrlash-27",
+  "unit": "shifrlash",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Sezar shifrida mumkin bo‘lgan turli (foydali) kalitlar soni nechta?",
+  "options": [
+   "13",
+   "26",
+   "25",
+   "24"
+  ],
+  "answer": 2,
+  "explanation": "1..25 → 25 ta.",
+  "solution": [
+   "k = 0 (yoki 26) matnni o‘zgartirmaydi.",
+   "Foydali kalitlar: 1 dan 25 gacha.",
+   "Javob: 25"
+  ]
+ },
+ {
+  "id": "shifrlash-28",
+  "unit": "shifrlash",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Sezar shifrini «buzish» (kalitni bilmasdan ochish) uchun eng oddiy usul qaysi?",
+  "options": [
+   "Barcha 25 ta kalitni sinab ko‘rish",
+   "Faqat unli harflarni o‘chirish",
+   "Buni umuman ochib bo‘lmaydi",
+   "Matnni teskari o‘qish"
+  ],
+  "answer": 0,
+  "explanation": "25 ta kalitni sinash.",
+  "solution": [
+   "Kalitlar soni juda kam (25 ta), shuning uchun hammasini birma-bir sinash mumkin (brute force).",
+   "Bu Sezar shifrining kuchsiz tomoni.",
+   "Javob: Barcha 25 ta kalitni sinab ko‘rish"
+  ]
+ },
+ {
+  "id": "shifrlash-29",
+  "unit": "shifrlash",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "ROT13 — Sezar shifrining k = 13 bo‘lgan holati. Matnga ROT13 ni ikki marta qo‘llasak nima bo‘ladi?",
+  "options": [
+   "Asl matn qaytadi",
+   "Matn 26 harf o‘ngga siljiydi va o‘zgaradi",
+   "Xatolik",
+   "Matn teskari bo‘ladi"
+  ],
+  "answer": 0,
+  "explanation": "13 + 13 = 26 ≡ 0.",
+  "solution": [
+   "13 + 13 = 26 ≡ 0 (mod 26).",
+   "Demak har harf o‘z o‘rniga qaytadi — shifrlash va deshifrlash bir xil amal.",
+   "Javob: Asl matn qaytadi"
+  ]
+ },
+ {
+  "id": "shifrlash-30",
+  "unit": "shifrlash",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Vigenère usuli (A = 0, B = 1, …, Z = 25). Kalit so‘z: AB. Shifrlanadigan matn: MATH. Matn shifrlanganda natija qanday bo‘ladi?",
+  "options": [
+   "MBTI",
+   "MATH",
+   "NBUI",
+   "NATH"
+  ],
+  "answer": 0,
+  "explanation": "MATH → MBTI.",
+  "solution": [
+   "Kalitni matn uzunligigacha takrorlaymiz: ABAB.",
+   "Har bir harfga kalit harfini QO‘SHAMIZ (mod 26).",
+   "M(12) + A(0) = 12 → M; A(0) + B(1) = 1 → B; T(19) + A(0) = 19 → T; H(7) + B(1) = 8 → I",
+   "Natija: MBTI"
+  ]
+ },
+ {
+  "id": "shifrlash-31",
+  "unit": "shifrlash",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "«BILIM» so‘zini Sezar shifri bilan, kalit k = 4 (o‘ngga siljitish) bilan shifrlang.",
+  "options": [
+   "BILIM",
+   "FMPMQ",
+   "XEHEI",
+   "GNQNR"
+  ],
+  "answer": 1,
+  "explanation": "BILIM → FMPMQ.",
+  "solution": [
+   "Har bir harfni alifboda 4 ta o‘ngga suramiz (Z dan keyin yana A).",
+   "B→F  I→M  L→P  I→M  M→Q",
+   "Natija: FMPMQ"
+  ]
+ },
+ {
+  "id": "shifrlash-32",
+  "unit": "shifrlash",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Sezar shifri bilan (kalit k = 3) shifrlangan matn: HQFUBSW. Asl matnni toping.",
+  "options": [
+   "ENCRYPT",
+   "DMBQXOS",
+   "KTIXEVZ",
+   "HQFUBSW"
+  ],
+  "answer": 0,
+  "explanation": "HQFUBSW → ENCRYPT.",
+  "solution": [
+   "Deshifrlash — teskari yo‘nalish: har harfni 3 ta CHAPGA suramiz (A dan oldin Z).",
+   "H→E  Q→N  F→C  U→R  B→Y  S→P  W→T",
+   "Natija: ENCRYPT"
+  ]
+ },
+ {
+  "id": "shifrlash-33",
+  "unit": "shifrlash",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Vigenère usuli (A = 0, B = 1, …, Z = 25). Kalit so‘z: ABC. Shifrlanadigan matn: KITOB. Matn shifrlanganda natija qanday bo‘ladi?",
+  "options": [
+   "KITOB",
+   "KHROA",
+   "KJVOC",
+   "LKWPD"
+  ],
+  "answer": 2,
+  "explanation": "KITOB → KJVOC.",
+  "solution": [
+   "Kalitni matn uzunligigacha takrorlaymiz: ABCAB.",
+   "Har bir harfga kalit harfini QO‘SHAMIZ (mod 26).",
+   "K(10) + A(0) = 10 → K; I(8) + B(1) = 9 → J; T(19) + C(2) = 21 → V; O(14) + A(0) = 14 → O; B(1) + B(1) = 2 → C",
+   "Natija: KJVOC"
+  ]
+ },
+ {
+  "id": "shifrlash-34",
+  "unit": "shifrlash",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Vigenère usuli (A = 0, B = 1, …, Z = 25). Kalit so‘z: B. Shifrlanadigan matn: TEST. Matn shifrlanganda natija qanday bo‘ladi?",
+  "options": [
+   "VGUV",
+   "UFTU",
+   "SDRS",
+   "TEST"
+  ],
+  "answer": 1,
+  "explanation": "TEST → UFTU.",
+  "solution": [
+   "Kalitni matn uzunligigacha takrorlaymiz: BBBB.",
+   "Har bir harfga kalit harfini QO‘SHAMIZ (mod 26).",
+   "T(19) + B(1) = 20 → U; E(4) + B(1) = 5 → F; S(18) + B(1) = 19 → T; T(19) + B(1) = 20 → U",
+   "Natija: UFTU"
+  ]
+ },
+ {
+  "id": "shifrlash-35",
+  "unit": "shifrlash",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "«ABC» so‘zini Sezar shifri bilan, kalit k = 25 (o‘ngga siljitish) bilan shifrlang.",
+  "options": [
+   "BCD",
+   "YZA",
+   "ABC",
+   "ZAB"
+  ],
+  "answer": 3,
+  "explanation": "ABC → ZAB.",
+  "solution": [
+   "Har bir harfni alifboda 25 ta o‘ngga suramiz (Z dan keyin yana A).",
+   "A→Z  B→A  C→B",
+   "Natija: ZAB"
+  ]
+ },
+ {
+  "id": "shifrlash-36",
+  "unit": "shifrlash",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Vigenère usuli (A = 0, B = 1, …, Z = 25). Kalit so‘z: BB. Shifrlangan matn: ZEBRA. Matn deshifrlanganda natija qanday bo‘ladi?",
+  "options": [
+   "YDAQZ",
+   "ZEBRA",
+   "AFCSB",
+   "XCZPY"
+  ],
+  "answer": 0,
+  "explanation": "ZEBRA → YDAQZ.",
+  "solution": [
+   "Kalitni matn uzunligigacha takrorlaymiz: BBBBB.",
+   "Har bir harfdan kalit harfini AYIRAMIZ (mod 26).",
+   "Z(25) − B(1) = 24 → Y; E(4) − B(1) = 3 → D; B(1) − B(1) = 0 → A; R(17) − B(1) = 16 → Q; A(0) − B(1) = 25 → Z",
+   "Natija: YDAQZ"
+  ]
+ },
+ {
+  "id": "shifrlash-37",
+  "unit": "shifrlash",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Vigenère usuli (A = 0, B = 1, …, Z = 25). Kalit so‘z: UZ. Shifrlanadigan matn: INFORMATIKA. Matn shifrlanganda natija qanday bo‘ladi?",
+  "options": [
+   "OOLPXNGUOLG",
+   "CMZNLLUSCJU",
+   "INFORMATIKA",
+   "CMZNLZUSCJU"
+  ],
+  "answer": 1,
+  "explanation": "INFORMATIKA → CMZNLLUSCJU.",
+  "solution": [
+   "Kalitni matn uzunligigacha takrorlaymiz: UZUZUZUZUZU.",
+   "Har bir harfga kalit harfini QO‘SHAMIZ (mod 26).",
+   "I(8) + U(20) = 2 → C; N(13) + Z(25) = 12 → M; F(5) + U(20) = 25 → Z; O(14) + Z(25) = 13 → N; R(17) + U(20) = 11 → L; M(12) + Z(25) = 11 → L; A(0) + U(20) = 20 → U; T(19) + Z(25) = 18 → S; I(8) + U(20) = 2 → C; K(10) + Z(25) = 9 → J; A(0) + U(20) = 20 → U",
+   "Natija: CMZNLLUSCJU"
+  ]
+ },
+ {
+  "id": "shifrlash-38",
+  "unit": "shifrlash",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Vigenère usuli (A = 0, B = 1, …, Z = 25). Kalit so‘z: SUN. Shifrlanadigan matn: OLIMPIADA. Matn shifrlanganda natija qanday bo‘ladi?",
+  "options": [
+   "WRVUVVIJN",
+   "GFVEJVSXO",
+   "OLIMPIADA",
+   "GFVEJVSXN"
+  ],
+  "answer": 3,
+  "explanation": "OLIMPIADA → GFVEJVSXN.",
+  "solution": [
+   "Kalitni matn uzunligigacha takrorlaymiz: SUNSUNSUN.",
+   "Har bir harfga kalit harfini QO‘SHAMIZ (mod 26).",
+   "O(14) + S(18) = 6 → G; L(11) + U(20) = 5 → F; I(8) + N(13) = 21 → V; M(12) + S(18) = 4 → E; P(15) + U(20) = 9 → J; I(8) + N(13) = 21 → V; A(0) + S(18) = 18 → S; D(3) + U(20) = 23 → X; A(0) + N(13) = 13 → N",
+   "Natija: GFVEJVSXN"
+  ]
+ },
+ {
+  "id": "shifrlash-39",
+  "unit": "shifrlash",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Vigenère usuli (A = 0, B = 1, …, Z = 25). Kalit so‘z: CODE. Shifrlangan matn: USFVGH. Matn deshifrlanganda natija qanday bo‘ladi?",
+  "options": [
+   "SECRAT",
+   "UCFTGH",
+   "SECRET",
+   "SECRETS"
+  ],
+  "answer": 2,
+  "explanation": "USFVGH → SECRET.",
+  "solution": [
+   "Kalitni matn uzunligigacha takrorlaymiz: CODECO.",
+   "Har bir harfdan kalit harfini AYIRAMIZ (mod 26).",
+   "U(20) − C(2) = 18 → S; S(18) − O(14) = 4 → E; F(5) − D(3) = 2 → C; V(21) − E(4) = 17 → R; G(6) − C(2) = 4 → E; H(7) − O(14) = 19 → T",
+   "Natija: SECRET"
+  ]
+ },
+ {
+  "id": "shifrlash-40",
+  "unit": "shifrlash",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Vigenère shifrida (A = 0) matn harfi «T» kalit harfi «Y» bilan shifrlandi. Natija qaysi harf?",
+  "options": [
+   "Q",
+   "R",
+   "S",
+   "U"
+  ],
+  "answer": 1,
+  "explanation": "(19 + 24) mod 26 = 17 → R.",
+  "solution": [
+   "T = 19, Y = 24.",
+   "19 + 24 = 43; 43 mod 26 = 17.",
+   "17 → R. Javob: R"
+  ]
+ },
+ {
+  "id": "shifrlash-41",
+  "unit": "shifrlash",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Vigenère (A = 0): shifrlangan harf «B», kalit harfi «D». Asl harf qaysi?",
+  "options": [
+   "X",
+   "E",
+   "A",
+   "Y"
+  ],
+  "answer": 3,
+  "explanation": "(1 − 3) mod 26 = 24 → Y.",
+  "solution": [
+   "Deshifrlash: (B − D) mod 26 = (1 − 3) mod 26 = −2 mod 26 = 24.",
+   "24 → Y.",
+   "Javob: Y"
+  ]
+ },
+ {
+  "id": "shifrlash-42",
+  "unit": "shifrlash",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Sezar shifri bilan shifrlangan «WKLV LV IXQ» matnida eng ko‘p uchraydigan shifr harfi qaysi va uning asl harfi nima (k = 3)?",
+  "options": [
+   "X → U",
+   "K → H",
+   "W → T",
+   "L va V → I va S (ikkalasi 2 martadan)"
+  ],
+  "answer": 3,
+  "explanation": "THIS IS FUN.",
+  "solution": [
+   "Harflar: W K L V L V I X Q — L 2 marta, V 2 marta.",
+   "L − 3 = I, V − 3 = S. Asl matn: THIS IS FUN.",
+   "Javob: L va V → I va S (ikkalasi 2 martadan)"
+  ]
+ },
+ {
+  "id": "shifrlash-43",
+  "unit": "shifrlash",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Sezar shifrlangan matn «PHHW PH» (k noma’lum). Matn «MEET ME» ekani ma’lum bo‘lsa, kalit nechaga teng?",
+  "options": [
+   "4",
+   "23",
+   "13",
+   "3"
+  ],
+  "answer": 3,
+  "explanation": "P − M = 3.",
+  "solution": [
+   "M(12) → P(15): 15 − 12 = 3.",
+   "Tekshiruv: E → H, T → W ✔.",
+   "Javob: 3"
+  ]
+ },
+ {
+  "id": "shifrlash-44",
+  "unit": "shifrlash",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Vigenère kaliti «AAA» bo‘lsa, shifrlash natijasi qanday bo‘ladi?",
+  "options": [
+   "Matn o‘zgarmaydi",
+   "Matn teskari bo‘ladi",
+   "Har harf 1 ga suriladi",
+   "Har harf 3 ga suriladi"
+  ],
+  "answer": 0,
+  "explanation": "A = 0.",
+  "solution": [
+   "A = 0 siljish → har bir harfga 0 qo‘shiladi.",
+   "Natija asl matnning o‘zi.",
+   "Javob: Matn o‘zgarmaydi"
+  ]
+ },
+ {
+  "id": "shifrlash-45",
+  "unit": "shifrlash",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Vigenère kaliti bitta harfdan iborat bo‘lsa (masalan «D»), bu qaysi shifrga teng?",
+  "options": [
+   "Atbash shifri",
+   "ROT13",
+   "Sezar shifri (k = 3)",
+   "Shifrlamaydi"
+  ],
+  "answer": 2,
+  "explanation": "Bitta harfli kalit = Sezar.",
+  "solution": [
+   "Kalit takrorlanadi: DDDD… — har bir harf bir xil 3 ga suriladi.",
+   "Bu aynan Sezar shifri, kalit D = 3.",
+   "Javob: Sezar shifri (k = 3)"
+  ]
+ },
+ {
+  "id": "shifrlash-46",
+  "unit": "shifrlash",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Sezar shifrida (k = 7) shifrlab, keyin natijani yana k = 21 bilan shifrlasak, umumiy kalit nechaga teng?",
+  "options": [
+   "0",
+   "14",
+   "2",
+   "28"
+  ],
+  "answer": 2,
+  "explanation": "28 mod 26 = 2.",
+  "solution": [
+   "Ketma-ket siljishlar qo‘shiladi: 7 + 21 = 28.",
+   "28 mod 26 = 2.",
+   "Javob: 2"
+  ]
+ },
+ {
+  "id": "shifrlash-47",
+  "unit": "shifrlash",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Python’da chr((ord('X') - 65 + 5) % 26 + 65) natijasi qaysi harf?",
+  "options": [
+   "]",
+   "B",
+   "C",
+   "D"
+  ],
+  "answer": 2,
+  "explanation": "(23 + 5) mod 26 = 2 → C.",
+  "solution": [
+   "ord('X') = 88; 88 − 65 = 23 (X indeksi).",
+   "(23 + 5) % 26 = 28 % 26 = 2; 2 + 65 = 67.",
+   "chr(67) = 'C'. Javob: C"
+  ]
+ },
+ {
+  "id": "shifrlash-48",
+  "unit": "shifrlash",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Sezar shifri bilan (kalit k = 2) shifrlangan matn: VJG SWKEM. Asl matnni toping.",
+  "options": [
+   "XLI UYMGO",
+   "UID RVJDL",
+   "THE QUICK",
+   "VJG SWKEM"
+  ],
+  "answer": 2,
+  "explanation": "VJG SWKEM → THE QUICK.",
+  "solution": [
+   "Deshifrlash — teskari yo‘nalish: har harfni 2 ta CHAPGA suramiz (A dan oldin Z).",
+   "V→T  J→H  G→E   →   S→Q  W→U  K→I  E→C  M→K",
+   "Natija: THE QUICK"
+  ]
+ },
+ {
+  "id": "shifrlash-49",
+  "unit": "shifrlash",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Atbash shifrini ikki marta qo‘llasak, natija qanday bo‘ladi?",
+  "options": [
+   "Barcha harflar Z bo‘ladi",
+   "Sezar shifri k = 2 ga teng",
+   "Asl matn qaytadi",
+   "Matn teskari o‘qiladi"
+  ],
+  "answer": 2,
+  "explanation": "25 − (25 − i) = i.",
+  "solution": [
+   "Atbash: i → 25 − i. Ikki marta: 25 − (25 − i) = i.",
+   "Ya’ni har harf o‘z o‘rniga qaytadi.",
+   "Javob: Asl matn qaytadi"
+  ]
+ },
+ {
+  "id": "shifrlash-50",
+  "unit": "shifrlash",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Vigenère shifri Sezar shifridan nima uchun mustahkamroq?",
+  "options": [
+   "Unda harflar o‘chiriladi",
+   "Unda kalit bo‘lmaydi",
+   "Har bir harf kalitga qarab turli miqdorda siljiydi, shuning uchun bir xil harf turlicha shifrlanadi",
+   "U faqat raqamlarni shifrlaydi"
+  ],
+  "answer": 2,
+  "explanation": "Siljish o‘zgaruvchan.",
+  "solution": [
+   "Sezarda «A» doim bir xil harfga aylanadi — chastota tahlili bilan oson ochiladi.",
+   "Vigenère da siljish kalit harfiga qarab o‘zgaradi, shuning uchun harflar chastotasi yashirinadi.",
+   "Javob: Har bir harf kalitga qarab turli miqdorda siljiydi, shuning uchun bir xil harf turlicha shifrlanadi"
+  ]
+ }
+]

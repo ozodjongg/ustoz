@@ -151,35 +151,14 @@
   "unit": "bit-amallari",
   "difficulty": "easy",
   "points": 0.9,
-  "prompt": "Quyidagi kod natijasini toping:",
-  "options": [
-   "2 10",
-   "10 10",
-   "6 4",
-   "10 2"
-  ],
-  "answer": 3,
-  "explanation": "10 va 2.",
-  "solution": [
-   "5 << 1 = 5 · 2 = 10.",
-   "5 >> 1 = 5 // 2 = 2.",
-   "Natija: 10 2"
-  ],
-  "code": "print(5 << 1, 5 >> 1)"
- },
- {
-  "id": "bit-amallari-09",
-  "unit": "bit-amallari",
-  "difficulty": "easy",
-  "points": 0.9,
   "prompt": "Bitli amallar qaysi sanoq sistemasidagi tasvirga asoslanadi?",
   "options": [
    "sakkizlik",
-   "ikkilik",
+   "o‘nlik",
    "o‘n oltilik",
-   "o‘nlik"
+   "ikkilik"
   ],
-  "answer": 1,
+  "answer": 3,
   "explanation": "Bit — ikkilik raqam.",
   "solution": [
    "Bitli amallar sonning har bir BITI (ikkilik raqami) ustida bajariladi.",
@@ -188,18 +167,18 @@
   ]
  },
  {
-  "id": "bit-amallari-10",
+  "id": "bit-amallari-09",
   "unit": "bit-amallari",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
+   "6",
    "8",
    "2",
-   "14",
-   "6"
+   "14"
   ],
-  "answer": 0,
+  "answer": 1,
   "explanation": "1100 & 1010 = 1000 = 8.",
   "solution": [
    "12 = 1100₂, 10 = 1010₂.",
@@ -209,18 +188,18 @@
   "code": "print(12 & 10)"
  },
  {
-  "id": "bit-amallari-11",
+  "id": "bit-amallari-10",
   "unit": "bit-amallari",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "22",
+   "14",
    "6",
    "8",
-   "14"
+   "22"
   ],
-  "answer": 3,
+  "answer": 0,
   "explanation": "1110₂ = 14.",
   "solution": [
    "1100₂ | 1010₂ = 1110₂.",
@@ -230,18 +209,18 @@
   "code": "print(12 | 10)"
  },
  {
-  "id": "bit-amallari-12",
+  "id": "bit-amallari-11",
   "unit": "bit-amallari",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
+   "0 0",
    "1 7",
    "14 7",
-   "0 7",
-   "0 0"
+   "0 7"
   ],
-  "answer": 2,
+  "answer": 3,
   "explanation": "x^x = 0, x^0 = x.",
   "solution": [
    "x ^ x = 0 (bir xil bitlar → 0).",
@@ -251,35 +230,14 @@
   "code": "print(7 ^ 7, 7 ^ 0)"
  },
  {
-  "id": "bit-amallari-13",
+  "id": "bit-amallari-12",
   "unit": "bit-amallari",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "9",
-   "33",
-   "24",
-   "6"
-  ],
-  "answer": 2,
-  "explanation": "3·8 = 24.",
-  "solution": [
-   "3 << 3 = 3 · 2³.",
-   "3 · 8.",
-   "Natija: 24"
-  ],
-  "code": "print(3 << 3)"
- },
- {
-  "id": "bit-amallari-14",
-  "unit": "bit-amallari",
-  "difficulty": "easy",
-  "points": 0.9,
-  "prompt": "Quyidagi kod natijasini toping:",
-  "options": [
-   "0",
    "Error",
+   "0",
    "-1",
    "1"
   ],
@@ -293,18 +251,18 @@
   "code": "print(~0)"
  },
  {
-  "id": "bit-amallari-15",
+  "id": "bit-amallari-13",
   "unit": "bit-amallari",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
+   "15",
    "1111",
    "5",
-   "10",
-   "15"
+   "10"
   ],
-  "answer": 1,
+  "answer": 2,
   "explanation": "15 & 5 = 5.",
   "solution": [
    "1111₂ = 15, 0101₂ = 5.",
@@ -314,18 +272,18 @@
   "code": "print(int('1111', 2) & int('0101', 2))"
  },
  {
-  "id": "bit-amallari-16",
+  "id": "bit-amallari-14",
   "unit": "bit-amallari",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
+   "9",
    "0",
    "8",
-   "10",
-   "9"
+   "10"
   ],
-  "answer": 1,
+  "answer": 2,
   "explanation": "Eng o‘ngdagi 1 o‘chadi: 8.",
   "solution": [
    "x & (x−1) — eng o‘ngdagi 1 bitni o‘chiradi.",
@@ -335,18 +293,18 @@
   "code": "x = 10\nprint(x & (x - 1))"
  },
  {
-  "id": "bit-amallari-17",
+  "id": "bit-amallari-15",
   "unit": "bit-amallari",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi dasturga qanday minimal natural son kiritilganda, natija 64 dan qat’iy katta bo‘ladi?",
   "options": [
-   "6",
-   "7",
+   "64",
    "8",
-   "64"
+   "6",
+   "7"
   ],
-  "answer": 2,
+  "answer": 1,
   "explanation": "s(n) = 2ⁿ⁻¹; 2⁷ = 128 > 64.",
   "solution": [
    "for i in range(1 << n) — i = 0 dan 2ⁿ − 1 gacha. i & 1 — i toq bo‘lsa 1.",
@@ -357,18 +315,18 @@
   "code": "def s(n):\n    ans = 0\n    for i in range(1 << n):\n        ans += i & 1\n    return ans\n\nprint(s(int(input())))"
  },
  {
-  "id": "bit-amallari-18",
+  "id": "bit-amallari-16",
   "unit": "bit-amallari",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi dasturga qanday minimal natural son kiritilganda, natija 200 dan qat’iy katta bo‘ladi?",
   "options": [
-   "8",
-   "6",
    "5",
-   "7"
+   "7",
+   "8",
+   "6"
   ],
-  "answer": 3,
+  "answer": 1,
   "explanation": "s(n) = n·2ⁿ⁻¹; 6·32 = 192, 7·64 = 448.",
   "solution": [
    "popcount(x) — x ning ikkilik yozuvidagi 1 lar soni. s(n) — 0..2ⁿ−1 sonlarining barcha 1 lari soni.",
@@ -379,18 +337,18 @@
   "code": "def popcount(x):\n    return bin(x).count('1')\n\ndef s(n):\n    ans = 0\n    for i in range(1 << n):\n        ans += popcount(i)\n    return ans\n\nprint(s(int(input())))"
  },
  {
-  "id": "bit-amallari-19",
+  "id": "bit-amallari-17",
   "unit": "bit-amallari",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi dasturga qanday minimal natural son kiritilganda, natija 300 dan katta bo‘ladi?",
   "options": [
    "7",
-   "9",
    "5",
-   "6"
+   "6",
+   "9"
   ],
-  "answer": 3,
+  "answer": 2,
   "explanation": "s(n) = 3ⁿ; 3⁶ = 729 > 300.",
   "solution": [
    "count_submask(x) — (i & x) == i bo‘lgan i lar soni, ya’ni x ning «qism-maskalari» soni: 2^(popcount(x)).",
@@ -401,18 +359,18 @@
   "code": "def count_submask(x):\n    ans = 0\n    for i in range(x + 1):\n        if (i & x) == i:\n            ans += 1\n    return ans\n\ndef s(n):\n    ans = 0\n    for i in range(1 << n):\n        ans += count_submask(i)\n    return ans\n\nprint(s(int(input())))"
  },
  {
-  "id": "bit-amallari-20",
+  "id": "bit-amallari-18",
   "unit": "bit-amallari",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "15",
-   "13",
+   "4",
    "11",
-   "4"
+   "13",
+   "15"
   ],
-  "answer": 0,
+  "answer": 3,
   "explanation": "2-bit yoqiladi: 1111₂ = 15.",
   "solution": [
    "1 << 2 = 100₂ — 2-bit (0 dan sanab).",
@@ -422,18 +380,18 @@
   "code": "x = 0b1011\nprint(x | (1 << 2))"
  },
  {
-  "id": "bit-amallari-21",
+  "id": "bit-amallari-19",
   "unit": "bit-amallari",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
    "2",
    "14",
-   "13",
-   "15"
+   "15",
+   "13"
   ],
-  "answer": 2,
+  "answer": 3,
   "explanation": "1-bit o‘chadi: 1101₂ = 13.",
   "solution": [
    "~(1 << 1) — 1-bitdan boshqa hamma bitlar 1.",
@@ -443,18 +401,18 @@
   "code": "x = 0b1111\nprint(x & ~(1 << 1))"
  },
  {
-  "id": "bit-amallari-22",
+  "id": "bit-amallari-20",
   "unit": "bit-amallari",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "0 1",
+   "1 0",
    "8 0",
-   "1 1",
-   "1 0"
+   "0 1",
+   "1 1"
   ],
-  "answer": 3,
+  "answer": 0,
   "explanation": "3-bit = 1, 2-bit = 0.",
   "solution": [
    "(x >> k) & 1 — k-chi bitni olish.",
@@ -464,18 +422,18 @@
   "code": "x = 0b1010\nprint((x >> 3) & 1, (x >> 2) & 1)"
  },
  {
-  "id": "bit-amallari-23",
+  "id": "bit-amallari-21",
   "unit": "bit-amallari",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "5 9",
-   "0 0",
    "12 12",
-   "9 5"
+   "0 0",
+   "9 5",
+   "5 9"
   ],
-  "answer": 3,
+  "answer": 2,
   "explanation": "XOR-swap: 9 5.",
   "solution": [
    "XOR bilan almashtirish (uchinchi o‘zgaruvchisiz).",
@@ -485,18 +443,18 @@
   "code": "a, b = 5, 9\na ^= b\nb ^= a\na ^= b\nprint(a, b)"
  },
  {
-  "id": "bit-amallari-24",
+  "id": "bit-amallari-22",
   "unit": "bit-amallari",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
+   "29",
    "3",
-   "4",
    "5",
-   "29"
+   "4"
   ],
-  "answer": 1,
+  "answer": 3,
   "explanation": "29 = 11101₂ → 4 ta 1.",
   "solution": [
    "n &= n−1 har safar bitta 1 bitni o‘chiradi. Sikl 1 lar soni marta aylanadi.",
@@ -506,18 +464,18 @@
   "code": "c = 0\nn = 29\nwhile n:\n    n &= n - 1\n    c += 1\nprint(c)"
  },
  {
-  "id": "bit-amallari-25",
+  "id": "bit-amallari-23",
   "unit": "bit-amallari",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "12",
-   "8",
    "4",
-   "16"
+   "12",
+   "16",
+   "8"
   ],
-  "answer": 1,
+  "answer": 3,
   "explanation": "16 / 2 = 8.",
   "solution": [
    "i & 4 — i ning 2-biti (qiymati 4) yoqilganmi.",
@@ -527,18 +485,18 @@
   "code": "print(sum(1 for i in range(16) if i & 4))"
  },
  {
-  "id": "bit-amallari-26",
+  "id": "bit-amallari-24",
   "unit": "bit-amallari",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "5 7",
-   "7 5",
+   "4 5",
    "5 5",
-   "4 5"
+   "5 7",
+   "7 5"
   ],
-  "answer": 2,
+  "answer": 1,
   "explanation": "x & 7 = x % 8 = 5.",
   "solution": [
    "x & (2ᵏ − 1) — oxirgi k bit, bu x % 2ᵏ bilan bir xil.",
@@ -548,18 +506,18 @@
   "code": "x = 37\nprint(x & 7, x % 8)"
  },
  {
-  "id": "bit-amallari-27",
+  "id": "bit-amallari-25",
   "unit": "bit-amallari",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
    "255",
-   "170",
    "85",
-   "425"
+   "425",
+   "170"
   ],
-  "answer": 2,
+  "answer": 1,
   "explanation": "01010101₂ = 85.",
   "solution": [
    "255 = 11111111₂ — barcha bitlar 1. 170 = 10101010₂.",
@@ -569,18 +527,18 @@
   "code": "print(255 ^ 170)"
  },
  {
-  "id": "bit-amallari-28",
+  "id": "bit-amallari-26",
   "unit": "bit-amallari",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "True True",
-   "0 0",
    "False False",
-   "False True"
+   "True True",
+   "False True",
+   "0 0"
   ],
-  "answer": 3,
+  "answer": 2,
   "explanation": "Python’da & oldin, == keyin: False True.",
   "solution": [
    "Python’da bitli & taqqoslash == dan KUCHLIROQ: n & (n − 1) == 0 → (n & (n − 1)) == 0. (C tilida aksincha!)",
@@ -591,16 +549,16 @@
   "code": "n = 6\nprint(n > 0 and n & (n - 1) == 0, 8 & 7 == 0)"
  },
  {
-  "id": "bit-amallari-29",
+  "id": "bit-amallari-27",
   "unit": "bit-amallari",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "5",
+   "23",
    "7",
    "13",
-   "23"
+   "5"
   ],
   "answer": 2,
   "explanation": "1101₂ = 13.",
@@ -612,18 +570,18 @@
   "code": "x = 0\nfor b in [0, 2, 3]:\n    x |= 1 << b\nprint(x)"
  },
  {
-  "id": "bit-amallari-30",
+  "id": "bit-amallari-28",
   "unit": "bit-amallari",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "4 -1",
-   "-4 -1",
    "4 0",
-   "-4 0"
+   "4 -1",
+   "-4 0",
+   "-4 -1"
   ],
-  "answer": 1,
+  "answer": 3,
   "explanation": "−4 va −1.",
   "solution": [
    "Manfiy sonlarda >> ham pastga butun bo‘lish: −8 // 2 = −4.",
@@ -633,18 +591,18 @@
   "code": "print(-8 >> 1, -1 >> 5)"
  },
  {
-  "id": "bit-amallari-31",
+  "id": "bit-amallari-29",
   "unit": "bit-amallari",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "3",
    "28",
-   "16",
-   "10"
+   "3",
+   "10",
+   "16"
   ],
-  "answer": 3,
+  "answer": 2,
   "explanation": "3 + 7 = 10.",
   "solution": [
    "0-bit ham, 1-bit ham yoqilgan sonlar: oxiri ...11₂.",
@@ -654,18 +612,18 @@
   "code": "s = 0\nfor i in range(8):\n    if i & 1 and i & 2:\n        s += i\nprint(s)"
  },
  {
-  "id": "bit-amallari-32",
+  "id": "bit-amallari-30",
   "unit": "bit-amallari",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "0b1011 0b1011",
    "0b1110 0b10",
    "0b101100 0b10",
+   "0b1011 0b1011",
    "0b101100 0b11"
   ],
-  "answer": 2,
+  "answer": 1,
   "explanation": "101100 va 10.",
   "solution": [
    "<< 2 — oxiriga ikkita 0 qo‘shiladi: 101100.",
@@ -675,39 +633,18 @@
   "code": "print(bin(0b1011 << 2), bin(0b1011 >> 2))"
  },
  {
-  "id": "bit-amallari-33",
-  "unit": "bit-amallari",
-  "difficulty": "easy",
-  "points": 0.9,
-  "prompt": "Quyidagi kod natijasini toping:",
-  "options": [
-   "0 0",
-   "15 0",
-   "0 15",
-   "6 9"
-  ],
-  "answer": 2,
-  "explanation": "Umumiy bit yo‘q: 0 va 15.",
-  "solution": [
-   "9 = 1001₂, 6 = 0110₂ — umumiy 1 biti yo‘q.",
-   "& → 0000 = 0; | → 1111 = 15.",
-   "Natija: 0 15"
-  ],
-  "code": "print(9 & 6, 9 | 6)"
- },
- {
-  "id": "bit-amallari-34",
+  "id": "bit-amallari-31",
   "unit": "bit-amallari",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "0 10",
+   "17 11",
    "9 9",
-   "1 11",
-   "17 11"
+   "0 10",
+   "1 11"
   ],
-  "answer": 2,
+  "answer": 3,
   "explanation": "1 va 11.",
   "solution": [
    "^ (1 << k) — k-bitni teskarilaydi.",
@@ -717,18 +654,18 @@
   "code": "x = 0b1001\nprint(x ^ (1 << 3), x ^ (1 << 1))"
  },
  {
-  "id": "bit-amallari-35",
+  "id": "bit-amallari-32",
   "unit": "bit-amallari",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
+   "5",
    "15",
    "31",
-   "5",
    "32"
   ],
-  "answer": 1,
+  "answer": 2,
   "explanation": "1+2+4+8+16 = 31.",
   "solution": [
    "1 << i: 1, 2, 4, 8, 16.",
@@ -738,10 +675,10 @@
   "code": "print(sum(1 << i for i in range(5)))"
  },
  {
-  "id": "bit-amallari-36",
+  "id": "bit-amallari-33",
   "unit": "bit-amallari",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
    "0b11",
@@ -759,39 +696,18 @@
   "code": "m = 0\nfor w in ['ab', 'bc', 'ca']:\n    for ch in w:\n        m |= 1 << (ord(ch) - ord('a'))\nprint(bin(m))"
  },
  {
-  "id": "bit-amallari-37",
-  "unit": "bit-amallari",
-  "difficulty": "easy",
-  "points": 0.9,
-  "prompt": "Quyidagi kod natijasini toping:",
-  "options": [
-   "4 4",
-   "4 8",
-   "8 4",
-   "8 8"
-  ],
-  "answer": 2,
-  "explanation": "<< ≠ **.",
-  "solution": [
-   "2 << 2 = 2 · 2² = 8 (surish).",
-   "2 ** 2 = 4 (daraja).",
-   "Natija: 8 4"
-  ],
-  "code": "print(2 << 2, 2 ** 2)"
- },
- {
-  "id": "bit-amallari-38",
+  "id": "bit-amallari-34",
   "unit": "bit-amallari",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "4 2",
-   "4 8",
+   "8 32",
    "12 40",
-   "8 32"
+   "4 8",
+   "4 2"
   ],
-  "answer": 1,
+  "answer": 2,
   "explanation": "Eng kichik 1-bit: 4 va 8.",
   "solution": [
    "n & −n — eng o‘ngdagi (eng kichik) yoqilgan bitni ajratadi.",
@@ -801,16 +717,16 @@
   "code": "def f(n):\n    return n & -n\nprint(f(12), f(40))"
  },
  {
-  "id": "bit-amallari-39",
+  "id": "bit-amallari-35",
   "unit": "bit-amallari",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "22",
+   "16",
    "8",
    "3",
-   "16"
+   "22"
   ],
   "answer": 1,
   "explanation": "2³ = 8 ta qism-maska.",
@@ -823,16 +739,16 @@
   "code": "x = 0b10110\ns = x\ncnt = 0\nwhile s:\n    cnt += 1\n    s = (s - 1) & x\nprint(cnt + 1)"
  },
  {
-  "id": "bit-amallari-40",
+  "id": "bit-amallari-36",
   "unit": "bit-amallari",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
    "55",
-   "10",
+   "0",
    "11",
-   "0"
+   "10"
   ],
   "answer": 2,
   "explanation": "1^2^…^10 = 11.",
@@ -844,18 +760,18 @@
   "code": "r = 0\nfor i in range(1, 11):\n    r ^= i\nprint(r)"
  },
  {
-  "id": "bit-amallari-41",
+  "id": "bit-amallari-37",
   "unit": "bit-amallari",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "7",
-   "0",
    "23",
-   "3"
+   "3",
+   "7",
+   "0"
   ],
-  "answer": 0,
+  "answer": 2,
   "explanation": "Juftsiz element: 7.",
   "solution": [
    "XOR da bir xil sonlar bir-birini yo‘q qiladi: x ^ x = 0.",
@@ -865,18 +781,18 @@
   "code": "a = [3, 5, 7, 5, 3]\nr = 0\nfor x in a:\n    r ^= x\nprint(r)"
  },
  {
-  "id": "bit-amallari-42",
+  "id": "bit-amallari-38",
   "unit": "bit-amallari",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "12",
-   "1",
    "6",
-   "3"
+   "12",
+   "3",
+   "1"
   ],
-  "answer": 0,
+  "answer": 1,
   "explanation": "0011 → 1100₂ = 12.",
   "solution": [
    "Har qadamda x ning oxirgi bitini r ning oxiriga qo‘shamiz — bitlar teskari tartibda yoziladi.",
@@ -886,18 +802,18 @@
   "code": "def rev(x, n):\n    r = 0\n    for _ in range(n):\n        r = (r << 1) | (x & 1)\n        x >>= 1\n    return r\nprint(rev(0b0011, 4))"
  },
  {
-  "id": "bit-amallari-43",
+  "id": "bit-amallari-39",
   "unit": "bit-amallari",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "1023",
-   "1024",
    "10240",
-   "5120"
+   "5120",
+   "1024",
+   "1023"
   ],
-  "answer": 3,
+  "answer": 1,
   "explanation": "10·512 = 5120.",
   "solution": [
    "0..2ⁿ−1 dagi barcha 1 lar soni = n · 2ⁿ⁻¹.",
@@ -907,18 +823,18 @@
   "code": "print(sum(bin(i).count('1') for i in range(1 << 10)))"
  },
  {
-  "id": "bit-amallari-44",
+  "id": "bit-amallari-40",
   "unit": "bit-amallari",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
+   "5",
    "25",
    "10",
-   "5",
    "32"
   ],
-  "answer": 1,
+  "answer": 2,
   "explanation": "C(5,2) = 10.",
   "solution": [
    "5 ta bitdan aynan 2 tasi 1 bo‘lgan sonlar soni = C(5, 2).",
@@ -928,18 +844,18 @@
   "code": "c = 0\nfor i in range(1 << 5):\n    if bin(i).count('1') == 2:\n        c += 1\nprint(c)"
  },
  {
-  "id": "bit-amallari-45",
+  "id": "bit-amallari-41",
   "unit": "bit-amallari",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "6 0b110101",
    "6 0b101111",
-   "3 0b111",
-   "5 0b101111"
+   "6 0b110101",
+   "5 0b101111",
+   "3 0b111"
   ],
-  "answer": 1,
+  "answer": 0,
   "explanation": "6 xona; Grey kodi 101111.",
   "solution": [
    "bit_length() — ikkilik yozuvdagi xonalar soni: 110101₂ → 6.",
@@ -949,18 +865,18 @@
   "code": "x = 0b110101\nprint(x.bit_length(), bin(x ^ (x >> 1)))"
  },
  {
-  "id": "bit-amallari-46",
+  "id": "bit-amallari-42",
   "unit": "bit-amallari",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "44",
+   "48",
    "11",
    "96",
-   "48"
+   "44"
   ],
-  "answer": 3,
+  "answer": 0,
   "explanation": "16 + 32 = 48.",
   "solution": [
    "s(n) = 2ⁿ⁻¹ (0..2ⁿ−1 dagi toq sonlar soni).",
@@ -970,15 +886,15 @@
   "code": "def s(n):\n    return sum(i & 1 for i in range(1 << n))\nprint(s(5) + s(6))"
  },
  {
-  "id": "bit-amallari-47",
+  "id": "bit-amallari-43",
   "unit": "bit-amallari",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
+   "abc|ab|a|",
    "a|b|c|ab|ac|bc|abc|",
    "|a|b|ab|c|ac|bc|abc",
-   "abc|ab|a|",
    "|a|b|ab|c|ac|bc|abc|"
   ],
   "answer": 3,
@@ -991,16 +907,16 @@
   "code": "n = 3\nfor m in range(1 << n):\n    print(''.join('abc'[i] for i in range(n) if m >> i & 1), end='|')"
  },
  {
-  "id": "bit-amallari-48",
+  "id": "bit-amallari-44",
   "unit": "bit-amallari",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "38",
-   "19",
    "7",
-   "100"
+   "19",
+   "100",
+   "38"
   ],
   "answer": 1,
   "explanation": "1100100 → 0010011 = 19.",
@@ -1012,18 +928,18 @@
   "code": "x = 100\ny = 0\nwhile x:\n    y = y * 2 + (x & 1)\n    x >>= 1\nprint(y)"
  },
  {
-  "id": "bit-amallari-49",
+  "id": "bit-amallari-45",
   "unit": "bit-amallari",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
    "2 3 1",
-   "3 7 1",
    "4 8 2",
+   "3 7 1",
    "5 7 8"
   ],
-  "answer": 2,
+  "answer": 1,
   "explanation": "2^popcount: 4, 8, 2.",
   "solution": [
    "(i & x) == i — i ning barcha 1 bitlari x da ham bor (qism-maska). Soni = 2^(x dagi 1 lar soni).",
@@ -1033,18 +949,18 @@
   "code": "def cnt(x):\n    return sum(1 for i in range(x + 1) if (i & x) == i)\nprint(cnt(5), cnt(7), cnt(8))"
  },
  {
-  "id": "bit-amallari-50",
+  "id": "bit-amallari-46",
   "unit": "bit-amallari",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "24",
-   "12",
    "6",
-   "3"
+   "3",
+   "24",
+   "12"
   ],
-  "answer": 1,
+  "answer": 3,
   "explanation": "6 << 2 >> 1 = 12.",
   "solution": [
    "0b1100 ^ 0b1010 = 0b0110 = 6.",
@@ -1052,5 +968,87 @@
    "Natija: 12"
   ],
   "code": "print((0b1100 ^ 0b1010) << 2 >> 1)"
+ },
+ {
+  "id": "bit-amallari-47",
+  "unit": "bit-amallari",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Hisoblang (bitli VA amali): 25 and 12 and 11",
+  "options": [
+   "11",
+   "25",
+   "1",
+   "8"
+  ],
+  "answer": 3,
+  "explanation": "11001 & 01100 & 01011 = 01000 = 8.",
+  "solution": [
+   "Sonlarni ikkilikda ustma-ust yozamiz: 25 = 11001, 12 = 01100, 11 = 01011.",
+   "25 and 12: 11001 & 01100 = 01000 = 8.",
+   "8 and 11: 01000 & 01011 = 01000 = 8.",
+   "Javob: 8 (Diqqat: Python’dagi «and» operatori sonlarda bitli emas — 25 and 12 and 11 Python’da 11 qaytaradi; bitli amal — &.)"
+  ]
+ },
+ {
+  "id": "bit-amallari-48",
+  "unit": "bit-amallari",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Hisoblang (bitli YOKI): 29 or 6 or 1",
+  "options": [
+   "36",
+   "31",
+   "7",
+   "29"
+  ],
+  "answer": 1,
+  "explanation": "11101 | 00110 | 00001 = 11111 = 31.",
+  "solution": [
+   "29 = 11101, 6 = 00110, 1 = 00001.",
+   "Kamida bittasida 1 bo‘lgan bitlar: 11111.",
+   "Javob: 31"
+  ]
+ },
+ {
+  "id": "bit-amallari-49",
+  "unit": "bit-amallari",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Hisoblang (bitli XOR): 30 xor 12 xor 5",
+  "options": [
+   "13",
+   "9",
+   "23",
+   "47"
+  ],
+  "answer": 2,
+  "explanation": "10010 ^ 00101 = 10111 = 23.",
+  "solution": [
+   "30 = 11110, 12 = 01100 → 30 xor 12 = 10010 = 18.",
+   "18 xor 5: 10010 ^ 00101 = 10111.",
+   "Javob: 23"
+  ]
+ },
+ {
+  "id": "bit-amallari-50",
+  "unit": "bit-amallari",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "11 11",
+   "11 8",
+   "8 8",
+   "25 8"
+  ],
+  "answer": 1,
+  "explanation": "and → 11, & → 8.",
+  "solution": [
+   "Python’da «and» mantiqiy operator: hamma qiymat rost bo‘lsa, OXIRGISINI qaytaradi → 11.",
+   "«&» esa bitli VA: 11001 & 01100 & 01011 = 01000 = 8.",
+   "Natija: 11 8"
+  ],
+  "code": "print(25 and 12 and 11, 25 & 12 & 11)"
  }
 ]
