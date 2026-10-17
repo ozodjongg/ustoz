@@ -1,0 +1,1011 @@
+[
+ {
+  "id": "sanoq-sistemalari-01",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Uchlik sanoq sistemasidagi 2101₃ sonini o‘nlik sanoq sistemasiga o‘tkazing.",
+  "options": [
+   "58",
+   "64",
+   "66",
+   "63"
+  ],
+  "answer": 1,
+  "explanation": "2·27 + 1·9 + 0·3 + 1 = 64.",
+  "solution": [
+   "Har bir raqamni o‘z o‘rnining «og‘irligi»ga ko‘paytiramiz. Uchlikda o‘rinlar og‘irligi o‘ngdan: 1, 3, 9, 27.",
+   "2101₃ = 2·27 + 1·9 + 0·3 + 1·1",
+   "= 54 + 9 + 0 + 1 = 64"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-02",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Ikkilik sanoq sistemasidagi 101101₂ sonini o‘nlik sistemaga o‘tkazing.",
+  "options": [
+   "43",
+   "45",
+   "37",
+   "53"
+  ],
+  "answer": 1,
+  "explanation": "32+8+4+1 = 45.",
+  "solution": [
+   "Ikkilikda o‘rinlar og‘irligi o‘ngdan chapga: 1, 2, 4, 8, 16, 32.",
+   "1 turgan o‘rinlarni qo‘shamiz: 32 + 8 + 4 + 1.",
+   "32 + 8 + 4 + 1 = 45"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-03",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "O‘nlik sistemadagi 37 sonini ikkilik sistemaga o‘tkazing.",
+  "options": [
+   "100101",
+   "100110",
+   "110001",
+   "101011"
+  ],
+  "answer": 0,
+  "explanation": "Qoldiqlar teskari tartibda: 100101.",
+  "solution": [
+   "Sonni 2 ga qoldiqli bo‘lib boramiz va qoldiqlarni yozamiz.",
+   "37:2=18 (q 1), 18:2=9 (q 0), 9:2=4 (q 1), 4:2=2 (q 0), 2:2=1 (q 0), 1:2=0 (q 1).",
+   "Qoldiqlarni pastdan yuqoriga o‘qiymiz: 100101₂."
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-04",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Sakkizlik sistemadagi 157₈ sonini o‘nlik sistemaga o‘tkazing.",
+  "options": [
+   "113",
+   "111",
+   "157",
+   "107"
+  ],
+  "answer": 1,
+  "explanation": "64 + 40 + 7 = 111.",
+  "solution": [
+   "Sakkizlikda o‘rinlar og‘irligi: 1, 8, 64.",
+   "157₈ = 1·64 + 5·8 + 7·1 = 64 + 40 + 7",
+   "Natija: 111"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-05",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "O‘n oltilik sistemadagi 2F₁₆ sonini o‘nlik sistemaga o‘tkazing.",
+  "options": [
+   "215",
+   "47",
+   "45",
+   "32"
+  ],
+  "answer": 1,
+  "explanation": "2·16 + 15 = 47.",
+  "solution": [
+   "O‘n oltilikda F harfi 15 ni bildiradi.",
+   "2F₁₆ = 2·16 + 15·1 = 32 + 15",
+   "Natija: 47"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-06",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Beshlik sanoq sistemasida qaysi raqam ishlatilmaydi?",
+  "options": [
+   "3",
+   "5",
+   "4",
+   "0"
+  ],
+  "answer": 1,
+  "explanation": "Beshlikda raqamlar 0..4, shuning uchun 5 yo‘q.",
+  "solution": [
+   "n lik sanoq sistemasida faqat 0 dan n−1 gacha raqamlar bo‘ladi.",
+   "Beshlikda: 0, 1, 2, 3, 4. «5» raqami yo‘q, chunki 5 = 10₅ deb yoziladi.",
+   "Javob: 5"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-07",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi yozuvlardan qaysi biri sakkizlik sanoq sistemasida yozilgan son bo‘la OLMAYDI?",
+  "options": [
+   "7701",
+   "6500",
+   "1234",
+   "1708"
+  ],
+  "answer": 3,
+  "explanation": "Sakkizlikda 8 raqami yo‘q.",
+  "solution": [
+   "Sakkizlikda raqamlar 0..7 bo‘ladi, 8 va 9 raqamlari yo‘q.",
+   "1708 yozuvida 8 raqami bor — bu mumkin emas.",
+   "Javob: 1708"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-08",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Ikkilikdagi 11010111₂ sonini o‘n oltilik sistemaga o‘tkazing.",
+  "options": [
+   "D6",
+   "D7",
+   "B7",
+   "C7"
+  ],
+  "answer": 1,
+  "explanation": "1101|0111 → D7.",
+  "solution": [
+   "2 → 16 o‘tishda o‘ngdan 4 tadan guruhlaymiz: 1101 | 0111.",
+   "1101₂ = 13 = D, 0111₂ = 7.",
+   "Natija: D7₁₆"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-09",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Sakkizlikdagi 365₈ sonini ikkilik sistemaga o‘tkazing.",
+  "options": [
+   "11110110",
+   "11110101",
+   "11101101",
+   "1111101"
+  ],
+  "answer": 1,
+  "explanation": "3→011, 6→110, 5→101.",
+  "solution": [
+   "8 → 2 o‘tishda har bir raqam 3 ta bitga yoyiladi.",
+   "3 = 011, 6 = 110, 5 = 101.",
+   "011 110 101 → oldidagi 0 ni tashlaymiz: 11110101₂."
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-10",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Ikkilik sistemada 4 xonali eng katta son o‘nlik sistemada nechaga teng?",
+  "options": [
+   "15",
+   "1111",
+   "16",
+   "14"
+  ],
+  "answer": 0,
+  "explanation": "1111₂ = 2⁴ − 1 = 15.",
+  "solution": [
+   "4 xonali eng katta ikkilik son — 1111₂.",
+   "1111₂ = 8 + 4 + 2 + 1.",
+   "Natija: 15 (ya’ni 2⁴ − 1)."
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-11",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "O‘nlik sistemadagi 255 soni o‘n oltilik sistemada qanday yoziladi?",
+  "options": [
+   "FE",
+   "FF",
+   "1FF",
+   "EF"
+  ],
+  "answer": 1,
+  "explanation": "255 = 15·16 + 15 → FF.",
+  "solution": [
+   "255 : 16 = 15, qoldiq 15.",
+   "15 = F, qoldiq 15 = F.",
+   "Natija: FF₁₆"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-12",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "1010₂ + 111₂ yig‘indini ikkilik sistemada toping.",
+  "options": [
+   "1111",
+   "10011",
+   "11011",
+   "10001"
+  ],
+  "answer": 3,
+  "explanation": "10 + 7 = 17 = 10001₂.",
+  "solution": [
+   "Eng osoni: o‘nlikka o‘tib qo‘shamiz. 1010₂ = 10, 111₂ = 7.",
+   "10 + 7 = 17.",
+   "17 = 16 + 1 → 10001₂"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-13",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "O‘n ikkilik sanoq sistemasida «B» raqami qanday qiymatga ega?",
+  "options": [
+   "2",
+   "12",
+   "10",
+   "11"
+  ],
+  "answer": 3,
+  "explanation": "A=10, B=11.",
+  "solution": [
+   "Raqamlar 9 dan keyin harf bilan belgilanadi: A = 10, B = 11.",
+   "O‘n ikkilikda raqamlar: 0..9, A, B.",
+   "B = 11"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-14",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Qaysi sanoq sistemasida 10 yozuvi o‘nlik sistemadagi 7 sonini bildiradi?",
+  "options": [
+   "8 lik",
+   "10 lik",
+   "6 lik",
+   "7 lik"
+  ],
+  "answer": 3,
+  "explanation": "10ₙ = n, demak n = 7.",
+  "solution": [
+   "Istalgan n lik sistemada 10ₙ = 1·n + 0 = n.",
+   "10ₙ = 7 bo‘lishi uchun n = 7.",
+   "Javob: 7 lik"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-15",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "To‘rtlik sistemadagi 3021₄ sonini o‘nlik sistemaga o‘tkazing.",
+  "options": [
+   "197",
+   "201",
+   "193",
+   "209"
+  ],
+  "answer": 1,
+  "explanation": "192 + 8 + 1 = 201.",
+  "solution": [
+   "To‘rtlikda og‘irliklar: 1, 4, 16, 64.",
+   "3·64 + 0·16 + 2·4 + 1 = 192 + 0 + 8 + 1",
+   "Natija: 201"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-16",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "O‘nlik sistemadagi 64 sonini ikkilik sistemada yozganda nechta raqam (xona) hosil bo‘ladi?",
+  "options": [
+   "8",
+   "6",
+   "7",
+   "64"
+  ],
+  "answer": 2,
+  "explanation": "64 = 1000000₂ — 7 xona.",
+  "solution": [
+   "64 = 2⁶. 2⁶ sonining ikkilik yozuvi 1 dan keyin 6 ta 0: 1000000₂.",
+   "Xonalar soni: 1 + 6.",
+   "Natija: 7 ta xona"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-17",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "O‘n ikkilik sistemadagi 3A1₁₂ sonini yettilik sistemaga o‘tkazing.",
+  "options": [
+   "1446",
+   "1433",
+   "1462",
+   "1420"
+  ],
+  "answer": 3,
+  "explanation": "3A1₁₂ = 553 = 1420₇.",
+  "solution": [
+   "Avval o‘nlikka: 3A1₁₂ = 3·144 + 10·12 + 1 = 432 + 120 + 1 = 553.",
+   "Endi 553 ni 7 ga bo‘lamiz: 553:7=79 (q 0), 79:7=11 (q 2), 11:7=1 (q 4), 1:7=0 (q 1).",
+   "Qoldiqlarni teskari o‘qiymiz: 1420₇. ",
+   "Natija: 1420"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-18",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "ABC soni o‘n beshlik sistemada o‘qilganda, o‘n to‘rtlik sistemada o‘qilgandagidan qanchaga katta bo‘ladi? (o‘nlikda)",
+  "options": [
+   "2427",
+   "199",
+   "0",
+   "301"
+  ],
+  "answer": 3,
+  "explanation": "2427 − 2126 = 301.",
+  "solution": [
+   "ABC₁₅ = 10·225 + 11·15 + 12 = 2250 + 165 + 12 = 2427.",
+   "ABC₁₄ = 10·196 + 11·14 + 12 = 1960 + 154 + 12 = 2126.",
+   "Farq: 2427 − 2126 = 301"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-19",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "100ₓ + 100ₓ₊₁ = 100ₓ₊₂ bo‘lsa, x ni toping (x — sanoq asosi).",
+  "options": [
+   "3",
+   "5",
+   "2",
+   "4"
+  ],
+  "answer": 0,
+  "explanation": "x² + (x+1)² = (x+2)² → x = 3.",
+  "solution": [
+   "100ₙ = n², chunki 1·n² + 0·n + 0.",
+   "Tenglama: x² + (x+1)² = (x+2)².",
+   "x² + x² + 2x + 1 = x² + 4x + 4 → x² − 2x − 3 = 0 → (x−3)(x+1) = 0.",
+   "Tekshiruv: 9 + 16 = 25 = 5². Demak x = 3."
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-20",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "20₃ + 14ₓ = 100₁₀₋ₓ tenglikdan x ni toping.",
+  "options": [
+   "5",
+   "7",
+   "6",
+   "3"
+  ],
+  "answer": 2,
+  "explanation": "x + 10 = (10 − x)², x = 6 da 16 = 16.",
+  "solution": [
+   "20₃ = 2·3 = 6. 14ₓ = x + 4. 100₁₀₋ₓ = (10 − x)².",
+   "Tenglama: 6 + x + 4 = (10 − x)² → x + 10 = (10 − x)².",
+   "Variantlarni tekshiramiz: x = 6 → 16 = 4² = 16 ✔.",
+   "Javob: x = 6"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-21",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "O‘n oltilikdagi 16FAB₁₆ sonini to‘rtlik sistemaga o‘tkazing.",
+  "options": [
+   "113322223",
+   "112332223",
+   "112332232",
+   "112323323"
+  ],
+  "answer": 1,
+  "explanation": "Har raqam 2 ta to‘rtlik raqamga: 1|12|33|22|23.",
+  "solution": [
+   "16 = 4², shuning uchun har bir o‘n oltilik raqam 2 ta to‘rtlik raqamga aylanadi.",
+   "1→01, 6→12, F(15)→33, A(10)→22, B(11)→23.",
+   "01 12 33 22 23 → oldidagi 0 ni tashlaymiz: 112332223₄."
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-22",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Yettilikdagi 143₇ sonini o‘nlik sistemadagi 5 soniga bo‘ling va natijani o‘n beshlik sistemada yozing.",
+  "options": [
+   "16",
+   "C",
+   "A",
+   "11"
+  ],
+  "answer": 3,
+  "explanation": "143₇ = 80; 80:5 = 16 = 11₁₅.",
+  "solution": [
+   "143₇ = 1·49 + 4·7 + 3 = 49 + 28 + 3 = 80.",
+   "80 : 5 = 16.",
+   "16 ni o‘n beshlikka: 16 = 1·15 + 1 → 11₁₅."
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-23",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Uchlikdagi 120102₃ sonini o‘nlik sistemaga o‘tkazing.",
+  "options": [
+   "407",
+   "416",
+   "434",
+   "425"
+  ],
+  "answer": 1,
+  "explanation": "243 + 162 + 9 + 2 = 416.",
+  "solution": [
+   "Uchlikda og‘irliklar: 243, 81, 27, 9, 3, 1.",
+   "1·243 + 2·81 + 0·27 + 1·9 + 0·3 + 2·1",
+   "= 243 + 162 + 9 + 2 = 416"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-24",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi sonlardan eng kattasini toping.",
+  "options": [
+   "2100₃",
+   "1000000₂",
+   "77₈",
+   "3E₁₆"
+  ],
+  "answer": 1,
+  "explanation": "64 > 63 = 63 > 62.",
+  "solution": [
+   "Hammasini o‘nlikka o‘tkazamiz.",
+   "1000000₂ = 64; 77₈ = 63; 3E₁₆ = 62; 2100₃ = 2·27 + 1·9 = 63.",
+   "Eng kattasi: 1000000₂ (= 64)."
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-25",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Qaysi eng kichik asosli sanoq sistemasida 2735 yozuvi son bo‘la oladi?",
+  "options": [
+   "10",
+   "7",
+   "8",
+   "6"
+  ],
+  "answer": 2,
+  "explanation": "Eng katta raqam 7 → asos ≥ 8.",
+  "solution": [
+   "Yozuvdagi eng katta raqam 7.",
+   "Asos har doim eng katta raqamdan kamida 1 ga katta bo‘lishi kerak: 7 + 1.",
+   "Javob: 8"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-26",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Ikkilik yozuvida 1 lar soni eng ko‘p bo‘lgan sonni toping.",
+  "options": [
+   "33",
+   "48",
+   "63",
+   "64"
+  ],
+  "answer": 2,
+  "explanation": "63 = 111111₂ — oltita 1.",
+  "solution": [
+   "Har birini ikkilikka o‘tkazamiz:",
+   "63 = 111111₂ (6 ta 1); 64 = 1000000₂ (1 ta); 48 = 110000₂ (2 ta); 33 = 100001₂ (2 ta).",
+   "Eng ko‘p 1 lar: 63"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-27",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "1101₂ · 101₂ ko‘paytmani ikkilik sistemada toping.",
+  "options": [
+   "111001",
+   "1000011",
+   "1000111",
+   "1000001"
+  ],
+  "answer": 3,
+  "explanation": "13·5 = 65 = 1000001₂.",
+  "solution": [
+   "O‘nlikka o‘tamiz: 1101₂ = 13, 101₂ = 5.",
+   "13 · 5 = 65.",
+   "65 = 64 + 1 → 1000001₂"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-28",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Sakkizlikdagi 45₈ va o‘n oltilikdagi 2B₁₆ sonlarining yig‘indisini o‘nlik sistemada toping.",
+  "options": [
+   "78",
+   "82",
+   "80",
+   "74"
+  ],
+  "answer": 2,
+  "explanation": "37 + 43 = 80.",
+  "solution": [
+   "45₈ = 4·8 + 5 = 37.",
+   "2B₁₆ = 2·16 + 11 = 43.",
+   "37 + 43 = 80"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-29",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "O‘nlikdagi 2024 sonini o‘n oltilik sistemada yozing.",
+  "options": [
+   "8E7",
+   "7F8",
+   "7D8",
+   "7E8"
+  ],
+  "answer": 3,
+  "explanation": "2024 = 7·256 + 14·16 + 8 = 7E8₁₆.",
+  "solution": [
+   "2024 : 16 = 126, qoldiq 8.",
+   "126 : 16 = 7, qoldiq 14 (E). 7 : 16 = 0, qoldiq 7.",
+   "Teskari o‘qiymiz: 7E8₁₆."
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-30",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Asosi noma’lum sistemada 23ₓ = 17₁₀ bo‘lsa, x ni toping.",
+  "options": [
+   "6",
+   "8",
+   "5",
+   "7"
+  ],
+  "answer": 3,
+  "explanation": "2x + 3 = 17 → x = 7.",
+  "solution": [
+   "23ₓ = 2·x + 3.",
+   "2x + 3 = 17 → 2x = 14.",
+   "x = 7"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-31",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "121ₓ = 144₁₀ bo‘lsa, x nechaga teng?",
+  "options": [
+   "10",
+   "11",
+   "13",
+   "12"
+  ],
+  "answer": 1,
+  "explanation": "121ₓ = (x+1)², (x+1) = 12.",
+  "solution": [
+   "121ₓ = x² + 2x + 1 = (x + 1)².",
+   "(x + 1)² = 144 = 12² → x + 1 = 12.",
+   "x = 11"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-32",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "O‘nlik sistemadagi 1 dan 30 gacha (30 ham kiradi) sonlarning nechtasi ikkilik yozuvida aynan 5 ta raqamdan iborat?",
+  "options": [
+   "14",
+   "15",
+   "16",
+   "31"
+  ],
+  "answer": 1,
+  "explanation": "16..30 — jami 15 ta.",
+  "solution": [
+   "5 xonali ikkilik sonlar 10000₂ dan 11111₂ gacha, ya’ni 16 dan 31 gacha.",
+   "Bizda 30 gacha: 16, 17, ..., 30.",
+   "Ularning soni: 30 − 16 + 1 = 15"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-33",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Uchlik sistemadagi 222₃ soniga 1 qo‘shilsa, natija uchlikda qanday yoziladi?",
+  "options": [
+   "1000",
+   "1001",
+   "300",
+   "223"
+  ],
+  "answer": 0,
+  "explanation": "222₃ = 26, 27 = 1000₃.",
+  "solution": [
+   "Uchlikda 2 dan keyin keladigan raqam yo‘q — 2 + 1 = 10₃ (o‘tkazish bo‘ladi).",
+   "222₃ + 1: oxirgi xona 0, 1 ko‘chadi; keyingi xona ham 0, 1 ko‘chadi; uchinchi xona ham 0, 1 ko‘chadi.",
+   "Natija: 1000₃ (tekshiruv: 222₃ = 26, 26 + 1 = 27 = 3³)."
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-34",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Ikkilik sistemadagi 1111111₂ sonining sakkizlik yozuvini toping.",
+  "options": [
+   "177",
+   "777",
+   "127",
+   "377"
+  ],
+  "answer": 0,
+  "explanation": "1|111|111 → 177₈.",
+  "solution": [
+   "O‘ngdan 3 tadan guruhlaymiz: 1 | 111 | 111.",
+   "1 = 1, 111 = 7, 111 = 7.",
+   "Natija: 177₈"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-35",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "102ₓ = 6 · 14ₓ + 5 tenglik o‘rinli (6 va 5 — o‘nlik sonlar). 33ₓ sonini o‘nlik sistemada toping.",
+  "options": [
+   "33",
+   "27",
+   "39",
+   "30"
+  ],
+  "answer": 3,
+  "explanation": "x = 9, 33₉ = 30.",
+  "solution": [
+   "102ₓ = x² + 2, 14ₓ = x + 4.",
+   "x² + 2 = 6(x + 4) + 5 → x² + 2 = 6x + 29 → x² − 6x − 27 = 0.",
+   "(x − 9)(x + 3) = 0 → x = 9 (asos musbat).",
+   "33₉ = 3·9 + 3 = 30"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-36",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Qaysi asosda 4 · 5 = 22 tengligi to‘g‘ri bo‘ladi?",
+  "options": [
+   "7",
+   "9",
+   "8",
+   "10"
+  ],
+  "answer": 1,
+  "explanation": "2x + 2 = 20 → x = 9.",
+  "solution": [
+   "4 · 5 = 20 (o‘nlikda). 22ₓ = 2x + 2.",
+   "2x + 2 = 20 → x = 9.",
+   "Javob: 9 lik sistemada"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-37",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "To‘qqizlikdagi noma’lum son uchlikdagi 12200010102₃ sonidan 3 marta katta. Noma’lum sonni to‘qqizlikda yozing.",
+  "options": [
+   "1620131",
+   "560336",
+   "162313",
+   "5600302"
+  ],
+  "answer": 1,
+  "explanation": "×3 → oxiriga 0; keyin 2 tadan guruhlab: 560336₉.",
+  "solution": [
+   "Uchlikdagi sonni 3 ga ko‘paytirish — oxiriga 0 qo‘shish: 122000101020₃.",
+   "3 → 9 o‘tishda o‘ngdan 2 tadan guruhlaymiz: 12 | 20 | 00 | 10 | 10 | 20.",
+   "12₃ = 5, 20₃ = 6, 00 = 0, 10₃ = 3, 10₃ = 3, 20₃ = 6.",
+   "Natija: 560336₉"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-38",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Ikkilik yozuvi 12 xonali bo‘lgan barcha natural sonlar nechta?",
+  "options": [
+   "4095",
+   "4096",
+   "12",
+   "2048"
+  ],
+  "answer": 3,
+  "explanation": "Birinchi xona 1, qolgan 11 xona — 2¹¹ = 2048.",
+  "solution": [
+   "12 xonali ikkilik son birinchi raqami 1 bo‘lishi shart (aks holda xona kamayadi).",
+   "Qolgan 11 ta xonaning har biri 0 yoki 1 — 2¹¹ xil.",
+   "Natija: 2¹¹ = 2048"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-39",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "O‘nlik sistemadagi 1 dan 100 gacha (100 ham kiradi) bo‘lgan nechta son sakkizlik yozuvida 7 raqamini o‘z ichiga oladi?",
+  "options": [
+   "21",
+   "19",
+   "20",
+   "12"
+  ],
+  "answer": 1,
+  "explanation": "Oxirgi raqam 7 — 12 ta, o‘rta raqam 7 — yana 7 ta: 19.",
+  "solution": [
+   "1..100 oralig‘i sakkizlikda 1₈ .. 144₈.",
+   "Oxirgi raqami 7: 7, 17, 27, …, 137 (sakkizlikda) — bular 7, 15, 23, …, 95 — 12 ta.",
+   "Ikkinchi raqami 7: 70₈..77₈ (56..63) — 8 ta, ulardan 77₈ allaqachon sanalgan → 7 ta yangi.",
+   "Jami: 12 + 7 = 19"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-40",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "x = 8¹⁰ + 4⁵ − 2 sonining ikkilik yozuvida nechta 1 bor?",
+  "options": [
+   "30",
+   "11",
+   "10",
+   "9"
+  ],
+  "answer": 2,
+  "explanation": "2³⁰ (1 ta 1) + (2¹⁰ − 2) (9 ta 1) = 10 ta 1.",
+  "solution": [
+   "Hammasini 2 ning darajasiga keltiramiz: 8¹⁰ = 2³⁰, 4⁵ = 2¹⁰.",
+   "2¹⁰ − 2 = 1111111110₂ — bu 9 ta 1 (bit 1 dan bit 9 gacha).",
+   "2³⁰ bilan qo‘shganda bitlar ustma-ust tushmaydi → yana 1 ta 1.",
+   "Jami: 9 + 1 = 10"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-41",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "N — ikkilik yozuvi 101010₂ bo‘lgan son. N ning to‘rtlik va sakkizlik yozuvlarini mos ravishda toping.",
+  "options": [
+   "222₄ va 25₈",
+   "1111₄ va 52₈",
+   "222₄ va 52₈",
+   "2222₄ va 25₈"
+  ],
+  "answer": 2,
+  "explanation": "2 talab: 222₄; 3 talab: 52₈.",
+  "solution": [
+   "To‘rtlik: o‘ngdan 2 tadan guruhlaymiz: 10 | 10 | 10 → 2 2 2 → 222₄.",
+   "Sakkizlik: o‘ngdan 3 tadan: 101 | 010 → 5 2 → 52₈.",
+   "Javob: 222₄ va 52₈ (tekshiruv: 101010₂ = 42 = 2·16+2·4+2 = 5·8+2)."
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-42",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Qaysi eng kichik n asosda 54ₙ + 33ₙ = 120ₙ tengligi to‘g‘ri bo‘ladi?",
+  "options": [
+   "9",
+   "7",
+   "6",
+   "8"
+  ],
+  "answer": 1,
+  "explanation": "n² − 6n − 7 = 0 → n = 7.",
+  "solution": [
+   "Raqamlar orasida 5 bor → n ≥ 6.",
+   "Chap: (5n + 4) + (3n + 3) = 8n + 7. O‘ng: n² + 2n.",
+   "n² + 2n = 8n + 7 → n² − 6n − 7 = 0 → (n − 7)(n + 1) = 0 → n = 7.",
+   "Javob: 7"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-43",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "O‘nlikdagi 3¹⁰ sonini uchlik sistemada yozsak, yozuvda nechta raqam bo‘ladi va ularning yig‘indisi nechaga teng?",
+  "options": [
+   "10 ta raqam, yig‘indi 10",
+   "11 ta raqam, yig‘indi 1",
+   "10 ta raqam, yig‘indi 1",
+   "11 ta raqam, yig‘indi 11"
+  ],
+  "answer": 1,
+  "explanation": "3¹⁰ = 10000000000₃.",
+  "solution": [
+   "Istalgan n uchun nᵏ = 1 dan keyin k ta nol (n lik sistemada): 10…0.",
+   "3¹⁰ = 1 00000 00000₃ — 1 + 10 = 11 ta raqam.",
+   "Raqamlar yig‘indisi: 1 + 0·10 = 1.",
+   "Javob: 11 ta raqam, yig‘indi 1"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-44",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Ikkilik sistemadagi 110110₂ va 101₂ sonlarining bo‘linmasini (butun qismini) va qoldig‘ini o‘nlikda toping.",
+  "options": [
+   "bo‘linma 11, qoldiq 1",
+   "bo‘linma 9, qoldiq 9",
+   "bo‘linma 10, qoldiq 4",
+   "bo‘linma 10, qoldiq 1"
+  ],
+  "answer": 2,
+  "explanation": "54 = 5·10 + 4.",
+  "solution": [
+   "110110₂ = 32 + 16 + 4 + 2 = 54. 101₂ = 5.",
+   "54 = 5 · 10 + 4.",
+   "Javob: bo‘linma 10, qoldiq 4"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-45",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Asosi noma’lum sistemada 31ₓ − 15ₓ = 14ₓ ifodasi to‘g‘ri. x nechaga teng?",
+  "options": [
+   "8",
+   "6",
+   "7",
+   "9"
+  ],
+  "answer": 0,
+  "explanation": "2x − 4 = x + 4 → x = 8.",
+  "solution": [
+   "31ₓ = 3x + 1, 15ₓ = x + 5, 14ₓ = x + 4. Raqam 5 bor → x ≥ 6.",
+   "3x + 1 − (x + 5) = x + 4 → 2x − 4 = x + 4.",
+   "x = 8"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-46",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Ikkilik yozuvi faqat 1 lardan iborat bo‘lgan (1, 11, 111, …) va 1000 dan kichik natural sonlar nechta?",
+  "options": [
+   "8",
+   "9",
+   "10",
+   "11"
+  ],
+  "answer": 1,
+  "explanation": "2ᵏ − 1 < 1000 → k = 1..9 → 9 ta.",
+  "solution": [
+   "Faqat 1 lardan iborat k xonali ikkilik son = 2ᵏ − 1.",
+   "2ᵏ − 1 < 1000 → 2ᵏ < 1001 → k ≤ 9 (2⁹ = 512, 2¹⁰ = 1024).",
+   "k = 1, 2, …, 9 → 9 ta son"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-47",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "O‘n oltilikdagi 3C₁₆ sonini beshlik sistemaga o‘tkazing.",
+  "options": [
+   "220",
+   "202",
+   "1020",
+   "210"
+  ],
+  "answer": 0,
+  "explanation": "3C₁₆ = 60 = 220₅.",
+  "solution": [
+   "Avval o‘nlikka: 3C₁₆ = 3·16 + 12 = 60.",
+   "60 : 5 = 12 (q 0), 12 : 5 = 2 (q 2), 2 : 5 = 0 (q 2).",
+   "Teskari: 220₅"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-48",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "O‘nlik sistemadagi qaysi son ikkilikda ham, uchlikda ham aynan «101» ko‘rinishidagi qolip bilan BOSHLANADI? (101₂… va 101₃…)",
+  "options": [
+   "41",
+   "20",
+   "5",
+   "10"
+  ],
+  "answer": 3,
+  "explanation": "10 = 1010₂ = 101₃.",
+  "solution": [
+   "Variantlarni tekshiramiz: 10 = 1010₂ (101 bilan boshlanadi ✔), 10 = 101₃ ✔.",
+   "5 = 101₂ ✔, lekin 5 = 12₃ ✘. 20 = 10100₂ ✔, 20 = 202₃ ✘. 41 = 101001₂ ✔, 41 = 1112₃ ✘.",
+   "Javob: 10"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-49",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Ikkilik yozuvi 10 ta xonadan iborat bo‘lib, aynan 2 ta 1 qatnashgan natural sonlar nechta?",
+  "options": [
+   "9",
+   "36",
+   "45",
+   "10"
+  ],
+  "answer": 0,
+  "explanation": "Birinchi xona 1, qolgan 9 tadan bittasi 1 → 9 ta.",
+  "solution": [
+   "Birinchi (eng chap) xona albatta 1.",
+   "Qolgan 9 ta xonadan faqat bittasi 1 bo‘ladi — 9 xil tanlov.",
+   "Javob: 9"
+  ]
+ },
+ {
+  "id": "sanoq-sistemalari-50",
+  "unit": "sanoq-sistemalari",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "123₄ + 123₅ + 123₆ yig‘indisini o‘nlik sistemada toping.",
+  "options": [
+   "115",
+   "104",
+   "120",
+   "116"
+  ],
+  "answer": 3,
+  "explanation": "27 + 38 + 51 = 116.",
+  "solution": [
+   "123ₙ = n² + 2n + 3.",
+   "n=4: 16 + 8 + 3 = 27; n=5: 25 + 10 + 3 = 38; n=6: 36 + 12 + 3 = 51.",
+   "27 + 38 + 51 = 116"
+  ]
+ }
+]

@@ -1,0 +1,1005 @@
+[
+ {
+  "id": "excel-manzillar-01",
+  "unit": "excel-manzillar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Excel dasturida B6:E15 bloki nechta katakni o‘z ichiga oladi?",
+  "options": [
+   "30",
+   "27",
+   "36",
+   "40"
+  ],
+  "answer": 3,
+  "explanation": "4 ustun · 10 qator = 40 katak.",
+  "solution": [
+   "Ustunlar: B dan E gacha → 4 ta ustun.",
+   "Qatorlar: 6 dan 15 gacha → 15 − 6 + 1 = 10 ta qator.",
+   "Kataklar: 4 · 10 = 40"
+  ]
+ },
+ {
+  "id": "excel-manzillar-02",
+  "unit": "excel-manzillar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Excel dasturida C3:J5 bloki nechta katakni o‘z ichiga oladi?",
+  "options": [
+   "21",
+   "24",
+   "14",
+   "16"
+  ],
+  "answer": 1,
+  "explanation": "8 ustun · 3 qator = 24 katak.",
+  "solution": [
+   "Ustunlar: C dan J gacha → 8 ta ustun.",
+   "Qatorlar: 3 dan 5 gacha → 5 − 3 + 1 = 3 ta qator.",
+   "Kataklar: 8 · 3 = 24"
+  ]
+ },
+ {
+  "id": "excel-manzillar-03",
+  "unit": "excel-manzillar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Excel dasturida F2:J4 bloki nechta katakni o‘z ichiga oladi?",
+  "options": [
+   "8",
+   "10",
+   "15",
+   "12"
+  ],
+  "answer": 2,
+  "explanation": "5 ustun · 3 qator = 15 katak.",
+  "solution": [
+   "Ustunlar: F dan J gacha → 5 ta ustun.",
+   "Qatorlar: 2 dan 4 gacha → 4 − 2 + 1 = 3 ta qator.",
+   "Kataklar: 5 · 3 = 15"
+  ]
+ },
+ {
+  "id": "excel-manzillar-04",
+  "unit": "excel-manzillar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Excel dasturida A1:A10 bloki nechta katakni o‘z ichiga oladi?",
+  "options": [
+   "11",
+   "1",
+   "100",
+   "10"
+  ],
+  "answer": 3,
+  "explanation": "1 ustun · 10 qator = 10 katak.",
+  "solution": [
+   "Ustunlar: A dan A gacha → 1 ta ustun.",
+   "Qatorlar: 1 dan 10 gacha → 10 − 1 + 1 = 10 ta qator.",
+   "Kataklar: 1 · 10 = 10"
+  ]
+ },
+ {
+  "id": "excel-manzillar-05",
+  "unit": "excel-manzillar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Excel dasturida B2:D4 bloki nechta katakni o‘z ichiga oladi?",
+  "options": [
+   "4",
+   "12",
+   "6",
+   "9"
+  ],
+  "answer": 3,
+  "explanation": "3 ustun · 3 qator = 9 katak.",
+  "solution": [
+   "Ustunlar: B dan D gacha → 3 ta ustun.",
+   "Qatorlar: 2 dan 4 gacha → 4 − 2 + 1 = 3 ta qator.",
+   "Kataklar: 3 · 3 = 9"
+  ]
+ },
+ {
+  "id": "excel-manzillar-06",
+  "unit": "excel-manzillar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Excel jadvalida «C5» manzili nimani bildiradi?",
+  "options": [
+   "C dan 5 gacha bo‘lgan blok",
+   "5-ustun va C qator",
+   "C ustun va 5-qator kesishmasidagi katak",
+   "5 ta katak"
+  ],
+  "answer": 2,
+  "explanation": "Avval ustun (harf), keyin qator (raqam).",
+  "solution": [
+   "Katak manzili avval USTUN harfi, keyin QATOR raqami bilan yoziladi.",
+   "C5 — C ustun, 5-qator.",
+   "Javob: C ustun va 5-qator kesishmasidagi katak"
+  ]
+ },
+ {
+  "id": "excel-manzillar-07",
+  "unit": "excel-manzillar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Excelda ustunlar qanday belgilanadi?",
+  "options": [
+   "lotin harflari bilan (A, B, C, …)",
+   "kirill harflari bilan",
+   "raqamlar bilan (1, 2, 3, …)",
+   "rim raqamlari bilan"
+  ],
+  "answer": 0,
+  "explanation": "Ustun — harf, qator — raqam.",
+  "solution": [
+   "Standart rejimda ustunlar lotin harflari: A, B, …, Z, AA, AB, …",
+   "Qatorlar esa raqamlar bilan: 1, 2, 3, …",
+   "Javob: lotin harflari bilan (A, B, C, …)"
+  ]
+ },
+ {
+  "id": "excel-manzillar-08",
+  "unit": "excel-manzillar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Z ustunidan keyin qaysi ustun keladi?",
+  "options": [
+   "ZA",
+   "AA",
+   "BA",
+   "A1"
+  ],
+  "answer": 1,
+  "explanation": "Z → AA.",
+  "solution": [
+   "Harflar tugagach, ikki harfli nomlar boshlanadi: AA, AB, AC, …",
+   "Xuddi sanoq sistemasidagi kabi: Z dan keyin AA.",
+   "Javob: AA"
+  ]
+ },
+ {
+  "id": "excel-manzillar-09",
+  "unit": "excel-manzillar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Formulada $A$1 ko‘rinishidagi manzil qanday ataladi?",
+  "options": [
+   "blok manzili",
+   "absolyut manzil",
+   "aralash manzil",
+   "nisbiy manzil"
+  ],
+  "answer": 1,
+  "explanation": "$A$1 — absolyut (to‘liq qulflangan).",
+  "solution": [
+   "$ belgisi — «qulf». U ustun oldida ham, qator oldida ham bor.",
+   "Ikkalasi qulflangan — nusxalaganda umuman o‘zgarmaydi.",
+   "Javob: absolyut manzil"
+  ]
+ },
+ {
+  "id": "excel-manzillar-10",
+  "unit": "excel-manzillar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Formulada $A1 ko‘rinishidagi manzil qanday ataladi?",
+  "options": [
+   "aralash manzil",
+   "xato manzil",
+   "absolyut manzil",
+   "nisbiy manzil"
+  ],
+  "answer": 0,
+  "explanation": "$A1 — ustun qulflangan, aralash.",
+  "solution": [
+   "$ faqat ustun oldida — ustun qulflangan, qator esa erkin.",
+   "Bir qismi qulflangan manzil — aralash manzil.",
+   "Javob: aralash manzil"
+  ]
+ },
+ {
+  "id": "excel-manzillar-11",
+  "unit": "excel-manzillar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Excel formulasi qaysi belgi bilan boshlanadi?",
+  "options": [
+   "=",
+   "$",
+   "#",
+   "+"
+  ],
+  "answer": 0,
+  "explanation": "Formula = bilan boshlanadi.",
+  "solution": [
+   "Excel katakdagi yozuv formula ekanini = belgisidan biladi.",
+   "Masalan: =A1+B1.",
+   "Javob: ="
+  ]
+ },
+ {
+  "id": "excel-manzillar-12",
+  "unit": "excel-manzillar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "A1:C1 bloki qaysi kataklardan iborat?",
+  "options": [
+   "A1, C1",
+   "A1, A2, A3",
+   "A1, B1, C1",
+   "A1, B2, C3"
+  ],
+  "answer": 2,
+  "explanation": "A1:C1 = A1, B1, C1.",
+  "solution": [
+   "Ikki nuqta «dan … gacha» degani.",
+   "A1 dan C1 gacha bir qator: A1, B1, C1.",
+   "Javob: A1, B1, C1"
+  ]
+ },
+ {
+  "id": "excel-manzillar-13",
+  "unit": "excel-manzillar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Faqat A1 va C3 kataklarini (2 ta katak) belgilash uchun formulada qanday yoziladi?",
+  "options": [
+   "A1-C3",
+   "A1;C3",
+   "A1..C3",
+   "A1:C3"
+  ],
+  "answer": 1,
+  "explanation": "«;» alohida kataklarni ajratadi.",
+  "solution": [
+   "«:» — blok (oraliq), «;» — alohida kataklar ro‘yxati.",
+   "A1:C3 — 9 ta katak bo‘lardi. Bizga faqat ikkitasi kerak.",
+   "Javob: A1;C3"
+  ]
+ },
+ {
+  "id": "excel-manzillar-14",
+  "unit": "excel-manzillar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Excel dasturida C1 katakdagi =A1+B1 formula C2 katakka nusxalandi. C2 da qanday formula hosil bo‘ladi?",
+  "options": [
+   "=A1+B1",
+   "=B1+C1",
+   "=A2+B2",
+   "=A2+B1"
+  ],
+  "answer": 2,
+  "explanation": "Nisbiy manzillar +0 ustun, +1 qator siljiydi: =A2+B2.",
+  "solution": [
+   "C1 → C2: ustun +0 ga, qator +1 ga siljiydi.",
+   "Ikkala manzil ham nisbiy — qator raqamlari 1 ga oshadi: A1 → A2, B1 → B2.",
+   "Natija: =A2+B2"
+  ]
+ },
+ {
+  "id": "excel-manzillar-15",
+  "unit": "excel-manzillar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Excel dasturida B1 katakdagi =A1*2 formula C1 katakka nusxalandi. C1 da qanday formula hosil bo‘ladi?",
+  "options": [
+   "=A2*2",
+   "=B1*2",
+   "=B2*2",
+   "=A1*2"
+  ],
+  "answer": 1,
+  "explanation": "Nisbiy manzillar +1 ustun, +0 qator siljiydi: =B1*2.",
+  "solution": [
+   "B1 → C1: ustun +1 ga, qator +0 ga siljiydi.",
+   "Nisbiy manzil ustun bo‘yicha 1 ga siljiydi: A1 → B1. Son (2) o‘zgarmaydi.",
+   "Natija: =B1*2"
+  ]
+ },
+ {
+  "id": "excel-manzillar-16",
+  "unit": "excel-manzillar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Excel dasturida C2 katakdagi =$A$1+B2 formula D5 katakka nusxalandi. D5 da qanday formula hosil bo‘ladi?",
+  "options": [
+   "=$A$1+B2",
+   "=$D$4+E5",
+   "=$A$1+C5",
+   "=$A$1+C2"
+  ],
+  "answer": 2,
+  "explanation": "Nisbiy manzillar +1 ustun, +3 qator siljiydi: =$A$1+C5.",
+  "solution": [
+   "C2 → D5: ustun +1 ga, qator +3 ga siljiydi.",
+   "$A$1 absolyut — o‘zgarmaydi. B2 nisbiy: +1 ustun, +3 qator → C5.",
+   "Natija: =$A$1+C5"
+  ]
+ },
+ {
+  "id": "excel-manzillar-17",
+  "unit": "excel-manzillar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Excel dasturida C4 katakdagi =B2*4 formula E3 katakka nusxalandi. E3 da qanday formula hosil bo‘ladi?",
+  "options": [
+   "=D1*3",
+   "=D1*4",
+   "=B2*3",
+   "=F1*4"
+  ],
+  "answer": 1,
+  "explanation": "Nisbiy manzillar +2 ustun, -1 qator siljiydi: =D1*4.",
+  "solution": [
+   "C4 → E3: ustun +2 ga, qator -1 ga siljiydi.",
+   "B2 nisbiy: ustun B → D (+2), qator 2 → 1 (−1). 4 soni o‘zgarmaydi.",
+   "Natija: =D1*4"
+  ]
+ },
+ {
+  "id": "excel-manzillar-18",
+  "unit": "excel-manzillar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Excel dasturida D3 katakdagi =$F6*$C$1 formula F6 katakka nusxalandi. F6 da qanday formula hosil bo‘ladi?",
+  "options": [
+   "=$F9*$C$1",
+   "=$H9*$E$4",
+   "=$F6*$C$1",
+   "=$H9*$C$1"
+  ],
+  "answer": 0,
+  "explanation": "Nisbiy manzillar +2 ustun, +3 qator siljiydi: =$F9*$C$1.",
+  "solution": [
+   "D3 → F6: ustun +2 ga, qator +3 ga siljiydi.",
+   "$F6: ustun qulflangan (F qoladi), qator 6 → 9 (+3). $C$1 to‘liq qulflangan — o‘zgarmaydi.",
+   "Natija: =$F9*$C$1"
+  ]
+ },
+ {
+  "id": "excel-manzillar-19",
+  "unit": "excel-manzillar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Excel dasturida E5 katakdagi =$B2*C$7 formula F7 katakka nusxalandi. F7 da qanday formula hosil bo‘ladi?",
+  "options": [
+   "=$B4*D$7",
+   "=$B2*C$7",
+   "=$B4*C$9",
+   "=$C4*D$9"
+  ],
+  "answer": 0,
+  "explanation": "Nisbiy manzillar +1 ustun, +2 qator siljiydi: =$B4*D$7.",
+  "solution": [
+   "E5 → F7: ustun +1 ga, qator +2 ga siljiydi.",
+   "$B2: ustun B qoladi, qator 2 → 4 (+2). C$7: ustun C → D (+1), qator 7 qulflangan.",
+   "Natija: =$B4*D$7"
+  ]
+ },
+ {
+  "id": "excel-manzillar-20",
+  "unit": "excel-manzillar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Excel dasturida C3 katakdagi =A$1+$B2 formula E6 katakka nusxalandi. E6 da qanday formula hosil bo‘ladi?",
+  "options": [
+   "=C$4+$D5",
+   "=C$1+$B5",
+   "=A$1+$B2",
+   "=C$1+$D5"
+  ],
+  "answer": 1,
+  "explanation": "Nisbiy manzillar +2 ustun, +3 qator siljiydi: =C$1+$B5.",
+  "solution": [
+   "C3 → E6: ustun +2 ga, qator +3 ga siljiydi.",
+   "A$1: ustun A → C (+2), qator 1 qoladi. $B2: ustun B qoladi, qator 2 → 5 (+3).",
+   "Natija: =C$1+$B5"
+  ]
+ },
+ {
+  "id": "excel-manzillar-21",
+  "unit": "excel-manzillar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Excel dasturida A6 katakdagi =SUM(A1:A5) formula B6 katakka nusxalandi. B6 da qanday formula hosil bo‘ladi?",
+  "options": [
+   "=SUM(B1:B5)",
+   "=SUM(A1:A5)",
+   "=SUM(B2:B6)",
+   "=SUM(A1:B5)"
+  ],
+  "answer": 0,
+  "explanation": "Nisbiy manzillar +1 ustun, +0 qator siljiydi: =SUM(B1:B5).",
+  "solution": [
+   "A6 → B6: ustun +1 ga, qator +0 ga siljiydi.",
+   "Ikkala chegara nisbiy, ustun bo‘yicha +1: A1 → B1, A5 → B5.",
+   "Natija: =SUM(B1:B5)"
+  ]
+ },
+ {
+  "id": "excel-manzillar-22",
+  "unit": "excel-manzillar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Excel dasturida B1 katakdagi =SUM($A1:A$5) formula C3 katakka nusxalandi. C3 da qanday formula hosil bo‘ladi?",
+  "options": [
+   "=SUM($A3:B$5)",
+   "=SUM($A1:A$5)",
+   "=SUM($B3:B$5)",
+   "=SUM($A3:B$7)"
+  ],
+  "answer": 0,
+  "explanation": "Nisbiy manzillar +1 ustun, +2 qator siljiydi: =SUM($A3:B$5).",
+  "solution": [
+   "B1 → C3: ustun +1 ga, qator +2 ga siljiydi.",
+   "$A1 → $A3 (faqat qator +2 siljiydi). A$5 → B$5 (faqat ustun +1 siljiydi).",
+   "Natija: =SUM($A3:B$5)"
+  ]
+ },
+ {
+  "id": "excel-manzillar-23",
+  "unit": "excel-manzillar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Excel dasturida E4 katakdagi =D4-$D$2 formula E10 katakka nusxalandi. E10 da qanday formula hosil bo‘ladi?",
+  "options": [
+   "=E10-$D$2",
+   "=D10-$D$8",
+   "=D4-$D$2",
+   "=D10-$D$2"
+  ],
+  "answer": 3,
+  "explanation": "Nisbiy manzillar +0 ustun, +6 qator siljiydi: =D10-$D$2.",
+  "solution": [
+   "E4 → E10: ustun +0 ga, qator +6 ga siljiydi.",
+   "D4 nisbiy: ustun o‘zgarmaydi (E → E), qator +6 → D10. $D$2 qulflangan.",
+   "Natija: =D10-$D$2"
+  ]
+ },
+ {
+  "id": "excel-manzillar-24",
+  "unit": "excel-manzillar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Excel dasturida B4 katakdagi =B$3*$A4 formula D7 katakka nusxalandi. D7 da qanday formula hosil bo‘ladi?",
+  "options": [
+   "=D$3*$A7",
+   "=D$3*$C7",
+   "=D$6*$A7",
+   "=B$3*$A4"
+  ],
+  "answer": 0,
+  "explanation": "Nisbiy manzillar +2 ustun, +3 qator siljiydi: =D$3*$A7.",
+  "solution": [
+   "B4 → D7: ustun +2 ga, qator +3 ga siljiydi.",
+   "B$3: ustun B → D (+2), qator 3 qulflangan. $A4: ustun A qulflangan, qator 4 → 7 (+3).",
+   "Natija: =D$3*$A7"
+  ]
+ },
+ {
+  "id": "excel-manzillar-25",
+  "unit": "excel-manzillar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "B2:C4 va C3:D5 bloklari birgalikda (umumiy kataklar bir marta sanalganda) nechta katakni egallaydi?",
+  "options": [
+   "12",
+   "8",
+   "10",
+   "14"
+  ],
+  "answer": 2,
+  "explanation": "6 + 6 − 2 = 10 katak.",
+  "solution": [
+   "B2:C4 — 2 ustun · 3 qator = 6 katak. C3:D5 — 2 · 3 = 6 katak.",
+   "Umumiy qism: C3:C4 — 2 ta katak.",
+   "6 + 6 − 2 = 10"
+  ]
+ },
+ {
+  "id": "excel-manzillar-26",
+  "unit": "excel-manzillar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "=SUM(A1:B3;D2) formulasi nechta katakdagi qiymatlarni qo‘shadi?",
+  "options": [
+   "7",
+   "4",
+   "8",
+   "6"
+  ],
+  "answer": 0,
+  "explanation": "6 + 1 = 7 katak.",
+  "solution": [
+   "A1:B3 — 2 ustun · 3 qator = 6 katak.",
+   "D2 — yana 1 ta katak.",
+   "6 + 1 = 7"
+  ]
+ },
+ {
+  "id": "excel-manzillar-27",
+  "unit": "excel-manzillar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "AB ustuni chapdan hisoblaganda nechanchi ustun?",
+  "options": [
+   "29",
+   "12",
+   "28",
+   "27"
+  ],
+  "answer": 2,
+  "explanation": "26 + 2 = 28.",
+  "solution": [
+   "A..Z — 26 ta ustun.",
+   "AA — 27-chi, AB — 28-chi.",
+   "Javob: 28"
+  ]
+ },
+ {
+  "id": "excel-manzillar-28",
+  "unit": "excel-manzillar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "B ustunidagi 3-qatordan F ustunidagi 8-qatorgacha bo‘lgan to‘rtburchak blok qanday yoziladi va unda nechta katak bor?",
+  "options": [
+   "B3:F8, 24 ta",
+   "B3:F8, 30 ta",
+   "3B:8F, 30 ta",
+   "B8:F3, 20 ta"
+  ],
+  "answer": 1,
+  "explanation": "B3:F8 — 5·6 = 30 katak.",
+  "solution": [
+   "Blok: chap yuqori katak : o‘ng pastki katak → B3:F8.",
+   "Ustunlar B, C, D, E, F → 5 ta; qatorlar 3..8 → 6 ta.",
+   "5 · 6 = 30 → Javob: B3:F8, 30 ta"
+  ]
+ },
+ {
+  "id": "excel-manzillar-29",
+  "unit": "excel-manzillar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Qaysi manzil nusxalanganda hech qachon o‘zgarmaydi?",
+  "options": [
+   "C5",
+   "$C5",
+   "C$5",
+   "$C$5"
+  ],
+  "answer": 3,
+  "explanation": "$C$5 — to‘liq absolyut.",
+  "solution": [
+   "$ belgisi qulflaydi: $C — ustun qulf, $5 — qator qulf.",
+   "Faqat $C$5 da ikkalasi ham qulflangan.",
+   "Javob: $C$5"
+  ]
+ },
+ {
+  "id": "excel-manzillar-30",
+  "unit": "excel-manzillar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "C1 katakda =A1*B1 formula bor. U C2:C10 ga pastga tortib nusxalansa, C7 da qanday formula bo‘ladi?",
+  "options": [
+   "=C7*B7",
+   "=A7*B7",
+   "=A1*B1",
+   "=A6*B6"
+  ],
+  "answer": 1,
+  "explanation": "Qator +6: =A7*B7.",
+  "solution": [
+   "C1 → C7: qator +6, ustun o‘zgarmaydi.",
+   "A1 → A7, B1 → B7.",
+   "Natija: =A7*B7"
+  ]
+ },
+ {
+  "id": "excel-manzillar-31",
+  "unit": "excel-manzillar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Formulani bir katakdan boshqasiga nusxalaganda ustun harfi o‘zgarmasligi, lekin qator o‘zgarishi uchun qaysi manzil kerak?",
+  "options": [
+   "A1",
+   "A$1",
+   "$A$1",
+   "$A1"
+  ],
+  "answer": 3,
+  "explanation": "$A1 — ustun qulflangan.",
+  "solution": [
+   "$ qaysi qism oldida tursa, o‘sha qism qulflanadi.",
+   "Ustun qulflansin → $ harf oldida: $A1.",
+   "Javob: $A1"
+  ]
+ },
+ {
+  "id": "excel-manzillar-32",
+  "unit": "excel-manzillar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "F4 tugmasi formulada katak manzili ustida bosilganda nima qiladi?",
+  "options": [
+   "katakni bo‘yaydi",
+   "formulani o‘chiradi",
+   "manzil turini almashtiradi (A1 → $A$1 → A$1 → $A1)",
+   "yangi varaq ochadi"
+  ],
+  "answer": 2,
+  "explanation": "F4 — manzil turlarini almashtiradi.",
+  "solution": [
+   "F4 manzilga $ belgilarini navbat bilan qo‘yadi.",
+   "A1 → $A$1 → A$1 → $A1 → A1 …",
+   "Javob: manzil turini almashtiradi (A1 → $A$1 → A$1 → $A1)"
+  ]
+ },
+ {
+  "id": "excel-manzillar-33",
+  "unit": "excel-manzillar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Excel dasturida D10:H25 bloki nechta katakni o‘z ichiga oladi?",
+  "options": [
+   "90",
+   "64",
+   "80",
+   "75"
+  ],
+  "answer": 2,
+  "explanation": "5 ustun · 16 qator = 80 katak.",
+  "solution": [
+   "Ustunlar: D dan H gacha → 5 ta ustun.",
+   "Qatorlar: 10 dan 25 gacha → 25 − 10 + 1 = 16 ta qator.",
+   "Kataklar: 5 · 16 = 80"
+  ]
+ },
+ {
+  "id": "excel-manzillar-34",
+  "unit": "excel-manzillar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Excel dasturida AA1:AC4 bloki nechta katakni o‘z ichiga oladi?",
+  "options": [
+   "8",
+   "12",
+   "16",
+   "9"
+  ],
+  "answer": 1,
+  "explanation": "3 ustun · 4 qator = 12 katak.",
+  "solution": [
+   "Ustunlar: AA dan AC gacha → 3 ta ustun.",
+   "Qatorlar: 1 dan 4 gacha → 4 − 1 + 1 = 4 ta qator.",
+   "Kataklar: 3 · 4 = 12"
+  ]
+ },
+ {
+  "id": "excel-manzillar-35",
+  "unit": "excel-manzillar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Excel dasturida D5 katakdagi =C$2/$B3 formula B4 katakka nusxalandi. B4 da qanday formula hosil bo‘ladi?",
+  "options": [
+   "=A$2/$A2",
+   "=C$2/$B3",
+   "=A$2/$B2",
+   "=A$1/$B2"
+  ],
+  "answer": 2,
+  "explanation": "Nisbiy manzillar -2 ustun, -1 qator siljiydi: =A$2/$B2.",
+  "solution": [
+   "D5 → B4: ustun -2 ga, qator -1 ga siljiydi.",
+   "D5 → B4: ustun −2, qator −1. C$2: ustun C → A, qator 2 qulf. $B3: ustun B qulf, qator 3 → 2.",
+   "Natija: =A$2/$B2"
+  ]
+ },
+ {
+  "id": "excel-manzillar-36",
+  "unit": "excel-manzillar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Excelda bir nechta qo‘shni bo‘lmagan kataklarni bir vaqtda belgilash uchun sichqoncha bilan birga qaysi tugma bosib turiladi?",
+  "options": [
+   "Alt",
+   "Tab",
+   "Ctrl",
+   "Shift"
+  ],
+  "answer": 2,
+  "explanation": "Ctrl — tarqoq kataklar, Shift — blok.",
+  "solution": [
+   "Shift — ketma-ket (blok) belgilash uchun: birinchi va oxirgi katak orasidagi hammasi.",
+   "Ctrl — alohida, tarqoq kataklarni birma-bir qo‘shib belgilash uchun.",
+   "Javob: Ctrl"
+  ]
+ },
+ {
+  "id": "excel-manzillar-37",
+  "unit": "excel-manzillar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Excelda C1 katakda =A1+B$1 formula bor. U C1 dan E4 ga nusxalandi, so‘ng E4 dagi formula D2 ga nusxalandi. D2 da qanday formula bo‘ladi?",
+  "options": [
+   "=C4+D$1",
+   "=B2+C$1",
+   "=A1+B$1",
+   "=B1+C$1"
+  ],
+  "answer": 1,
+  "explanation": "Ikki bosqichda: =C4+D$1 → =B2+C$1.",
+  "solution": [
+   "1-nusxa (C1 → E4): +2 ustun, +3 qator. A1 → C4, B$1 → D$1. Formula: =C4+D$1.",
+   "2-nusxa (E4 → D2): −1 ustun, −2 qator. C4 → B2, D$1 → C$1.",
+   "Natija: =B2+C$1"
+  ]
+ },
+ {
+  "id": "excel-manzillar-38",
+  "unit": "excel-manzillar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "A1:A5 da 1, 2, 3, 4, 5 sonlari. B1 da =A1*$A$5 formula yozilib, B1:B5 ga pastga tortildi. B4 dagi qiymat nechaga teng?",
+  "options": [
+   "16",
+   "20",
+   "25",
+   "9"
+  ],
+  "answer": 1,
+  "explanation": "=A4*$A$5 = 4·5 = 20.",
+  "solution": [
+   "B4 dagi formula: =A4*$A$5 (A1 nisbiy → A4, $A$5 qulflangan).",
+   "A4 = 4, A5 = 5.",
+   "4 · 5 = 20"
+  ]
+ },
+ {
+  "id": "excel-manzillar-39",
+  "unit": "excel-manzillar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "A1 da 2, A2 da 3, B1 da 10. C2 katakda =$A2*B$1 formulasi bor. U D3 ga nusxalanganda D3 dagi formula va (A3=4, C1=5 bo‘lsa) qiymati qanday?",
+  "options": [
+   "=$A3*C$1 → 20",
+   "=$B3*C$1 → 25",
+   "=$A2*C$1 → 15",
+   "=$A3*B$1 → 40"
+  ],
+  "answer": 0,
+  "explanation": "=$A3*C$1 = 4·5 = 20.",
+  "solution": [
+   "C2 → D3: +1 ustun, +1 qator.",
+   "$A2 → $A3 (faqat qator siljiydi); B$1 → C$1 (faqat ustun siljiydi).",
+   "Qiymat: A3 · C1 = 4 · 5 = 20",
+   "Javob: =$A3*C$1 → 20"
+  ]
+ },
+ {
+  "id": "excel-manzillar-40",
+  "unit": "excel-manzillar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "C3 katakdagi =A1 formula A1 katakka nusxalansa nima bo‘ladi?",
+  "options": [
+   "#REF! (mavjud bo‘lmagan katakka murojaat)",
+   "=C3",
+   "=A1",
+   "0"
+  ],
+  "answer": 0,
+  "explanation": "Manzil jadval chegarasidan chiqadi → #REF!.",
+  "solution": [
+   "C3 → A1: ustun −2, qator −2.",
+   "A1 → (A−2)(1−2) — ustun A dan chapda va 1-qatordan yuqorida katak yo‘q.",
+   "Javob: #REF! (mavjud bo‘lmagan katakka murojaat)"
+  ]
+ },
+ {
+  "id": "excel-manzillar-41",
+  "unit": "excel-manzillar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Ko‘paytirish jadvali: B1:J1 da 1..9, A2:A10 da 1..9. B2 katakka qaysi formulani yozib, B2:J10 ga to‘ldirsak, to‘g‘ri jadval hosil bo‘ladi?",
+  "options": [
+   "=A2*B1",
+   "=$A$2*$B$1",
+   "=A$2*$B1",
+   "=$A2*B$1"
+  ],
+  "answer": 3,
+  "explanation": "$A2 — ustun qulf, B$1 — qator qulf.",
+  "solution": [
+   "Har bir katak = (shu qatordagi A ustun soni) · (shu ustundagi 1-qator soni).",
+   "A ustuni qulflanishi kerak ($A2), 1-qator qulflanishi kerak (B$1).",
+   "Javob: =$A2*B$1"
+  ]
+ },
+ {
+  "id": "excel-manzillar-42",
+  "unit": "excel-manzillar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Excel dasturida E5 katakdagi =SUM($B$2:C3)*D$1 formula G9 katakka nusxalandi. G9 da qanday formula hosil bo‘ladi?",
+  "options": [
+   "=SUM($B$2:E7)*D$1",
+   "=SUM($B$2:E7)*F$1",
+   "=SUM($B$2:C3)*D$1",
+   "=SUM($D$6:E7)*F$5"
+  ],
+  "answer": 1,
+  "explanation": "Nisbiy manzillar +2 ustun, +4 qator siljiydi: =SUM($B$2:E7)*F$1.",
+  "solution": [
+   "E5 → G9: ustun +2 ga, qator +4 ga siljiydi.",
+   "$B$2 qulf. C3 nisbiy: +2 ustun, +4 qator → E7. D$1: ustun +2 → F, qator qulf.",
+   "Natija: =SUM($B$2:E7)*F$1"
+  ]
+ },
+ {
+  "id": "excel-manzillar-43",
+  "unit": "excel-manzillar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Excel dasturida D4 katakdagi =$A$1*B3+B$2-$C5 formula F2 katakka nusxalandi. F2 da qanday formula hosil bo‘ladi?",
+  "options": [
+   "=$A$1*D1+D$2-$C3",
+   "=$A$1*D1+D$0-$C3",
+   "=$A$1*D3+D$2-$E3",
+   "=$A$1*B3+B$2-$C5"
+  ],
+  "answer": 0,
+  "explanation": "Ustun +2, qator −2; qulflangan qismlar o‘zgarmaydi.",
+  "solution": [
+   "D4 → F2: ustun +2, qator −2.",
+   "$A$1 o‘zgarmaydi. B3 → D1. B$2 → D$2 (qator qulf). $C5 → $C3 (ustun qulf).",
+   "Natija: =$A$1*D1+D$2-$C3"
+  ]
+ },
+ {
+  "id": "excel-manzillar-44",
+  "unit": "excel-manzillar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "A2:A11 blokida 10 ta son bor. B2 katakka qaysi formulani yozib pastga tortsak, har bir qatorda boshidan shu qatorgacha bo‘lgan yig‘indi (jamg‘arma yig‘indi) hosil bo‘ladi?",
+  "options": [
+   "=SUM($A$2:$A$2)",
+   "=SUM(A2:A2)",
+   "=SUM(A$2:$A2)+1",
+   "=SUM($A$2:A2)"
+  ],
+  "answer": 3,
+  "explanation": "Boshi qulf, oxiri nisbiy.",
+  "solution": [
+   "Boshlanish nuqtasi doim A2 bo‘lishi kerak → $A$2.",
+   "Oxiri esa har qatorda pastga siljishi kerak → A2 (nisbiy).",
+   "B5 da: =SUM($A$2:A5) — 4 ta son yig‘indisi ✔.",
+   "Javob: =SUM($A$2:A2)"
+  ]
+ },
+ {
+  "id": "excel-manzillar-45",
+  "unit": "excel-manzillar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Excel varag‘idagi XFD ustuni nechanchi ustun (bu Excelning oxirgi ustuni)?",
+  "options": [
+   "1048576",
+   "65536",
+   "16384",
+   "16383"
+  ],
+  "answer": 2,
+  "explanation": "24·676 + 6·26 + 4 = 16384.",
+  "solution": [
+   "Uch harfli ustun raqami: X·26² + F·26 + D (A=1, …, Z=26).",
+   "X = 24, F = 6, D = 4: 24·676 + 6·26 + 4 = 16224 + 156 + 4.",
+   "Javob: 16384"
+  ]
+ },
+ {
+  "id": "excel-manzillar-46",
+  "unit": "excel-manzillar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "A1:D4 bloki (4×4) ichidan diagonal kataklar (A1, B2, C3, D4) olib tashlansa, nechta katak qoladi?",
+  "options": [
+   "8",
+   "12",
+   "16",
+   "14"
+  ],
+  "answer": 1,
+  "explanation": "16 − 4 = 12.",
+  "solution": [
+   "A1:D4 — 4 · 4 = 16 katak.",
+   "Diagonal — 4 ta katak.",
+   "16 − 4 = 12"
+  ]
+ },
+ {
+  "id": "excel-manzillar-47",
+  "unit": "excel-manzillar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "D2 katakda =B$1+$C2 formula bor. Uni qaysi katakka nusxalasak, formula =B$1+$C5 ga aylanadi?",
+  "options": [
+   "D5",
+   "D2",
+   "G2",
+   "E5"
+  ],
+  "answer": 0,
+  "explanation": "Ustun 0, qator +3 → D5.",
+  "solution": [
+   "B$1 o‘zgarmagan → ustun siljimagan (ustun 0).",
+   "$C2 → $C5 → qator +3.",
+   "D2 dan 0 ustun, +3 qator → D5",
+   "Javob: D5"
+  ]
+ },
+ {
+  "id": "excel-manzillar-48",
+  "unit": "excel-manzillar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "A ustunida 1-qatordan 100-qatorgacha sonlar, B ustunida ham shunday. C1 da =A1*B1 bo‘lib, C1:C100 ga tortilgan. =SUM(C1:C100) nimani hisoblaydi?",
+  "options": [
+   "B ustuni yig‘indisi kvadratini",
+   "A1·B100 ni",
+   "A ustuni yig‘indisini",
+   "A va B ustunlarining mos elementlari ko‘paytmalari yig‘indisini"
+  ],
+  "answer": 3,
+  "explanation": "Σ Aᵢ·Bᵢ — SUMPRODUCT bilan bir xil.",
+  "solution": [
+   "Har bir Cᵢ = Aᵢ · Bᵢ (nisbiy manzillar har qatorda siljiydi).",
+   "SUM ularni qo‘shadi: A1·B1 + A2·B2 + … + A100·B100.",
+   "Javob: A va B ustunlarining mos elementlari ko‘paytmalari yig‘indisini (=SUMPRODUCT kabi)"
+  ]
+ },
+ {
+  "id": "excel-manzillar-49",
+  "unit": "excel-manzillar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "A1:E1 da 1, 2, 3, 4, 5. A2 da =A1*2 formula, u A2:E2 ga o‘ngga tortildi. Keyin A3 da =SUM(A1:E2). A3 qiymati?",
+  "options": [
+   "30",
+   "15",
+   "60",
+   "45"
+  ],
+  "answer": 3,
+  "explanation": "15 + 30 = 45.",
+  "solution": [
+   "2-qator: B2 = B1·2, …, E2 = E1·2 → 2, 4, 6, 8, 10 (yig‘indi 30).",
+   "1-qator yig‘indisi: 15.",
+   "15 + 30 = 45"
+  ]
+ },
+ {
+  "id": "excel-manzillar-50",
+  "unit": "excel-manzillar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Excel 2016+ varag‘ida jami nechta qator bor?",
+  "options": [
+   "1 048 576",
+   "16 384",
+   "65 536",
+   "1 000 000"
+  ],
+  "answer": 0,
+  "explanation": "2²⁰ = 1 048 576 qator.",
+  "solution": [
+   "Zamonaviy Excelda qatorlar soni 2²⁰ ta.",
+   "2²⁰ = 1 048 576. (Ustunlar esa 2¹⁴ = 16 384.)",
+   "Javob: 1 048 576"
+  ]
+ }
+]

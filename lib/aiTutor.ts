@@ -1,126 +1,15 @@
-import type { GeneratedQuestion } from '../types';
+import type { Question } from '../types';
+import { topicBySlug } from './topics';
 
 export type TutorMode = 'hint' | 'explain' | 'deep';
 
-type TopicContext = {
-  subtopics: string[];
-  concepts: string[];
-  commonMistakes: string[];
-  fastRules: string[];
-};
-
-export const TOPIC_AI_CONTEXT: Record<string, TopicContext> = {
-  hardware: {
-    subtopics: ['kiritish/chiqarish qurilmalari', 'RAM/ROM', 'HDD/SSD va tashqi xotira'],
-    concepts: ['input vs output', 'vaqtinchalik vs doimiy xotira', 'qurilma vazifasi'],
-    commonMistakes: ['monitorni kiritish qurilmasi deb olish', 'SSD bilan RAMni aralashtirish', 'ROM va RAM vazifalarini almashtirish'],
-    fastRules: ['RAM = tez va vaqtinchalik', 'SSD/HDD = uzoq saqlash', 'input kompyuterga kiradi, output kompyuterdan chiqadi']
-  },
-  files: {
-    subtopics: ['fayl kengaytmalari', 'wildcard maskalar', '* va ?', '[A-C] diapazoni'],
-    concepts: ['fayl nomi', 'kengaytma', 'maska bo‘yicha moslik'],
-    commonMistakes: ['? ni * kabi tushunish', 'kengaytmani tekshirmaslik', '[A-C] ni butun so‘zga tegishli deb o‘ylash'],
-    fastRules: ['? = aynan 1 belgi', '* = 0 yoki ko‘p belgi', '[A-C] = A/B/C dan bittasi']
-  },
-  'data-size-transfer': {
-    subtopics: ['bit/byte', 'KB/MB/GB', 'uzatish tezligi', 'arxivlash foizi'],
-    concepts: ['1 byte = 8 bit', '1024 asosli birliklar', 'vaqt = hajm / tezlik'],
-    commonMistakes: ['MB va Mbitni bir xil olish', '8 ga ko‘paytirishni unutish', 'qisqargan foiz bilan qolgan foizni adashtirish'],
-    fastRules: ['1 byte = 8 bit', '1 MB = 1024 KB', 'time = size / speed']
-  },
-  'algorithms-flowcharts': {
-    subtopics: ['ketma-ketlik', 'shart', 'sikl', 'blok-sxema'],
-    concepts: ['boshlang‘ich qiymat', 'shart rost/yolg‘on', 'iteratsiya', 'akkumulyator'],
-    commonMistakes: ['i=i+1 qadamini unutish', '< bilan <= ni aralashtirish', 'noto‘g‘ri tarmoqni bajarish'],
-    fastRules: ['har iteratsiyani jadvalda yoz', 'rombdan keyin faqat bitta yo‘l tanlanadi', 'o‘zgaruvchini yangilash qadamini tashlama']
-  },
-  python: {
-    subtopics: ['for/while', 'if', 'range', 'list', 'string', 'break', 'funksiya'],
-    concepts: ['trace', 'modulo %', 'akkumulyator', 'range oxiri kirmasligi'],
-    commonMistakes: ['range oxirgi sonni oladi deb o‘ylash', '% ni bo‘lish natijasi deb tushunish', 'breakdan keyin sikl davom etadi deb o‘ylash'],
-    fastRules: ['range(a,b) da b olinmaydi', 'x % n == 0 → x n ga qoldiqsiz bo‘linadi', 'break → sikl darhol tugaydi']
-  },
-  cryptography: {
-    subtopics: ['Sezar shifri', 'Vigenère shifri', 'mod 26'],
-    concepts: ['harf indekslari', 'shifrlash', 'deshifrlash', 'kalit'],
-    commonMistakes: ['siljitish yo‘nalishini almashtirish', 'A=0/A=1 konvensiyasini tekshirmaslik', 'Vigenère kalitini takrorlamaslik'],
-    fastRules: ['deshifrlashda siljishni teskari qil', 'alifbo oxirida boshiga qayt', 'Vigenèreda kalitni matn uzunligigacha takrorla']
-  },
-  'number-systems': {
-    subtopics: ['2/8/10/16 lik', 'pozitsion yozuv', 'kasr', 'noma’lum asos'],
-    concepts: ['asos', 'raqam qiymati', 'darajalar', 'bo‘lish/ko‘paytirish algoritmi'],
-    commonMistakes: ['asosdan katta raqam ishlatish', 'kasrni butun qism kabi o‘tkazish', 'hex A-F qiymatlarini unutish'],
-    fastRules: ['n asosda raqamlar 0..n-1', 'A=10 ... F=15', '2↔8 uchun 3 bit, 2↔16 uchun 4 bit']
-  },
-  'boolean-logic': {
-    subtopics: ['AND/OR/NOT', 'NAND/NOR', 'rostlik jadvali', 'mantiqiy sxema'],
-    concepts: ['0/1', 'inkor', 'operator ustuvorligi', '2^n kombinatsiya'],
-    commonMistakes: ['NAND/NOR oxirgi inkorni unutish', 'NOTni noto‘g‘ri joyga qo‘llash', 'operator tartibini buzish'],
-    fastRules: ['AND = ikkalasi ham 1', 'OR = kamida bittasi 1', 'NOT qiymatni teskarilaydi']
-  },
-  software: {
-    subtopics: ['tizimli dastur', 'amaliy dastur', 'dasturlash tili', 'IDE/framework'],
-    concepts: ['operatsion tizim', 'foydalanuvchi dasturi', 'til va muhit farqi'],
-    commonMistakes: ['IDE ni dasturlash tili deb olish', 'Python interpreterini tilning o‘zi bilan aralashtirish', 'framework va tilni tenglashtirish'],
-    fastRules: ['Windows/Linux = tizimli', 'Excel/Photoshop = amaliy', 'Python/Java/C++ = dasturlash tillari']
-  },
-  excel: {
-    subtopics: ['SUM/AVERAGE/MAX/MIN/PRODUCT', 'IF', 'AND', 'diapazonlar'],
-    concepts: ['katak manzili', 'funksiya', 'shartli formula', 'hisoblash tartibi'],
-    commonMistakes: ['A1:A3 diapazonini noto‘g‘ri o‘qish', 'IF ikkala tarmog‘ini hisoblash', 'ichki funksiyani keyin hisoblash'],
-    fastRules: ['ichki qavsni avval hisobla', 'IF faqat bitta tarmoqni qaytaradi', 'A1:A3 → A1,A2,A3']
-  },
-  'databases-sql': {
-    subtopics: ['Primary Key', 'One-to-One/Many', 'SELECT/WHERE/COUNT', 'Access LIKE'],
-    concepts: ['jadval', 'yozuv', 'ustun', 'filtr', 'kalit'],
-    commonMistakes: ['COUNT o‘rniga SUM ishlatish', 'SELECT va DELETE ni adashtirish', 'takrorlanadigan maydonni primary key qilish'],
-    fastRules: ['SELECT = olish', 'WHERE = shart', 'COUNT(*) = satrlar soni']
-  },
-  colors: {
-    subtopics: ['RGB', 'HEX', '16 lik kanal qiymatlari'],
-    concepts: ['R/G/B kanallari', '0..255', '#RRGGBB'],
-    commonMistakes: ['RGB tartibini almashtirish', 'hex juftliklarini noto‘g‘ri ajratish', 'bir xonali hexni 0 bilan to‘ldirmaslik'],
-    fastRules: ['HEX = #RRGGBB', '00=0', 'FF=255']
-  },
-  multimedia: {
-    subtopics: ['audio hajmi', 'video kadrlar', 'rang chuqurligi', 'FPS'],
-    concepts: ['sample rate', 'bit depth', 'kanal', 'piksel', 'kadr'],
-    commonMistakes: ['daqiqani sekundga o‘tkazmaslik', 'stereo uchun 2 kanalni unutish', 'bitdan bytega /8 ni unutish'],
-    fastRules: ['kadrlar = sekund × FPS', 'audio bit = vaqt × Hz × bit × kanal', 'byte = bit / 8']
-  },
-  'networks-web': {
-    subtopics: ['IPv4', 'subnet', 'URL/domain/TLD', 'HTTP status'],
-    concepts: ['32 bit IPv4', 'oktet', 'prefix', 'host', 'TLD'],
-    commonMistakes: ['oktet 255 dan oshishini tekshirmaslik', 'jami manzil bilan usable hostni tenglashtirish', 'URL va lokal fayl yo‘lini aralashtirish'],
-    fastRules: ['IPv4 = 4×8=32 bit', '/n → 2^(32-n) jami manzil', '404 = Not Found']
-  },
-  modeling: {
-    subtopics: ['fizik model', 'matematik model', 'grafik model', 'algoritmik model'],
-    concepts: ['soddalashtirilgan nusxa', 'formula', 'maket', 'chizma'],
-    commonMistakes: ['modelni obyektning o‘zi deb olish', 'formulani grafik model deb olish', 'maketni matematik model deb olish'],
-    fastRules: ['formula → matematik', 'maket → fizik', 'chizma/xarita → grafik']
-  },
-  'web-tech': {
-    subtopics: ['HTML form', 'GET/POST', 'JavaScript frontend', 'Bootstrap'],
-    concepts: ['request method', 'framework/kutubxona', 'UI/CSS framework'],
-    commonMistakes: ['PUTni oddiy HTML form methodi deb olish', 'Bootstrapni React bilan aynan bir tur deb olish', 'GET/POST vazifasini almashtirish'],
-    fastRules: ['HTML form: GET yoki POST', 'React/Angular/Vue → frontend JS', 'Bootstrap → UI/CSS framework']
-  },
-  'encoding-bits': {
-    subtopics: ['ASCII', 'bit bilan kodlash', '2^n holatlar'],
-    concepts: ['bit', 'kod', 'belgi', 'minimal bit soni'],
-    commonMistakes: ['N obyektga N bit kerak deb o‘ylash', '2^n >= N qoidasini unutish', 'bit va byte ni aralashtirish'],
-    fastRules: ['n bit → 2^n holat', 'minimal n: 2^n >= N', '1 byte = 8 bit']
-  }
-};
-
 const letter = (index: number) => String.fromCharCode(65 + index);
 
-function formatOptions(question: GeneratedQuestion) {
+function formatOptions(question: Question) {
   return question.options.map((option, index) => `${letter(index)}) ${option}`).join('\n');
 }
 
-function difficultyLabel(value: GeneratedQuestion['difficulty']) {
+function difficultyLabel(value: Question['difficulty']) {
   if (value === 'easy') return 'Boshlang‘ich';
   if (value === 'medium') return 'O‘rta';
   return 'Olimpiada';
@@ -133,26 +22,25 @@ export function buildTutorPrompt({
   userChoice,
 }: {
   mode: TutorMode;
-  question: GeneratedQuestion;
+  question: Question;
   topicTitle: string;
   userChoice?: number | null;
 }) {
-  const context = TOPIC_AI_CONTEXT[question.unit];
+  const context = topicBySlug(question.unit)?.ai;
   const hasAnswer = typeof userChoice === 'number';
   const chosen = hasAnswer ? `${letter(userChoice!)} ) ${question.options[userChoice!]}`.replace(' )', ')') : 'Hali javob tanlanmagan';
   const correct = `${letter(question.answer)}) ${question.options[question.answer]}`;
+  const siteSolution = `SAYTDAGI QADAM-BAQADAM YECHIM (tekshirish uchun):
+${question.solution.map((step, i) => `${i + 1}. ${step}`).join('\n')}`;
   const contextBlock = context ? `
 KICHIK MAVZULAR:
 - ${context.subtopics.join('\n- ')}
 
-ASOSIY TUSHUNCHALAR:
-- ${context.concepts.join('\n- ')}
-
 BU MAVZUDA KO‘P UCHRAYDIGAN XATOLAR:
-- ${context.commonMistakes.join('\n- ')}
+- ${context.mistakes.join('\n- ')}
 
 TEZKOR QOIDALAR:
-- ${context.fastRules.join('\n- ')}
+- ${context.rules.join('\n- ')}
 ` : '';
 
   const shared = `Sen O‘zbekiston 9–11-sinf Informatika fanidan tuman/shahar olimpiadasiga tayyorlovchi kuchli, sabrli va aniq AI-o‘qituvchisan.
@@ -160,23 +48,20 @@ TEZKOR QOIDALAR:
 Vazifang — javobni shunchaki aytish emas, o‘quvchining aynan qayerda tushunmayotganini topib, o‘sha bilim bo‘shlig‘ini yopish.
 
 KONTEKST:
-- Manba yo‘nalishi: 2025-yil O‘zbekiston Informatika tuman/shahar olimpiadasi mavzulari asosida tuzilgan mashq
+- Manba yo‘nalishi: 2024-yil O‘zbekiston Informatika tuman/shahar olimpiadasi (9–11-sinf) mavzulari asosida tuzilgan mashq
 - Mavzu: ${topicTitle}
 - Savol ID: ${question.id}
 - Qiyinlik: ${difficultyLabel(question.difficulty)}
 - Ball: ${question.points}
 ${contextBlock}
 SAVOL:
-${question.prompt}
+${question.prompt}${question.code ? `\n\nKOD:\n${question.code}` : ''}
 
 JAVOB VARIANTLARI:
 ${formatOptions(question)}
 
 O‘QUVCHI TANLAGAN JAVOB:
 ${chosen}
-
-Saytdagi qisqa izoh:
-${question.explanation}
 
 UMUMIY QOIDALAR:
 1. O‘zbek tilida, sodda va ravon yoz.
@@ -193,7 +78,7 @@ UMUMIY QOIDALAR:
 
 HOZIRGI REJIM: FAQAT HINT.
 
-MUHIM: To‘g‘ri javobning harfini ham, matnini ham AYTMAGIN. Saytdagi qisqa izohdan yakuniy javobni oshkor qilish uchun foydalanma.
+MUHIM: To‘g‘ri javobning harfini ham, matnini ham AYTMAGIN.
 
 Quyidagicha javob ber:
 1. Savol aslida qaysi tushunchani tekshirayotganini 1–2 jumlada ayt.
@@ -210,6 +95,8 @@ Agar o‘quvchi keyin "yana hint" desa, oldingisidan biroz kuchliroq BITTA hint 
 
 TO‘G‘RI JAVOB KALITI:
 ${correct}
+
+${siteSolution}
 
 HOZIRGI REJIM: SAVOLNI TO‘LIQ TUSHUNTIRISH.
 
@@ -230,6 +117,8 @@ To‘g‘ri javob kalitini ham mustaqil tekshir. Agar kalit noto‘g‘ri ko‘r
 
 TO‘G‘RI JAVOB KALITI:
 ${correct}
+
+${siteSolution}
 
 HOZIRGI REJIM: CHUQUR AI-REPETITOR.
 

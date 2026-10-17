@@ -1,0 +1,1052 @@
+[
+ {
+  "id": "python-asoslar-01",
+  "unit": "python-asoslar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "None",
+   "False",
+   "ValueError",
+   "True"
+  ],
+  "answer": 1,
+  "explanation": "bool(0) = False.",
+  "solution": [
+   "bool() qiymatni True yoki False ga aylantiradi.",
+   "Sonlarda faqat 0 «yolg‘on» hisoblanadi, qolgan barcha sonlar True.",
+   "Natija: False"
+  ],
+  "code": "print(bool(0))"
+ },
+ {
+  "id": "python-asoslar-02",
+  "unit": "python-asoslar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "'777'",
+   "Error",
+   "777",
+   "21"
+  ],
+  "answer": 2,
+  "explanation": "'7' uch marta takrorlanadi: 777.",
+  "solution": [
+   "Satrni songa ko‘paytirish — uni shuncha marta takrorlash.",
+   "'7' · 3 = '777'. print qo‘shtirnoqsiz chiqaradi.",
+   "Natija: 777"
+  ],
+  "code": "print(3 * '7')"
+ },
+ {
+  "id": "python-asoslar-03",
+  "unit": "python-asoslar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "<class 'map'>",
+   "<class 'dict'>",
+   "<class 'list'>",
+   "<class 'set'>"
+  ],
+  "answer": 1,
+  "explanation": "{} — bo‘sh dict.",
+  "solution": [
+   "{} — bo‘sh jingalak qavslar.",
+   "Python’da bo‘sh {} lug‘at (dict) yaratadi, bo‘sh to‘plam esa set() bilan yaratiladi.",
+   "Natija: <class 'dict'>"
+  ],
+  "code": "a = {}\nprint(type(a))"
+ },
+ {
+  "id": "python-asoslar-04",
+  "unit": "python-asoslar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "3.5",
+   "4",
+   "1",
+   "3"
+  ],
+  "answer": 3,
+  "explanation": "7 // 2 = 3.",
+  "solution": [
+   "// — butun bo‘lish (qoldiqni tashlaydi).",
+   "7 : 2 = 3,5 → butun qismi 3.",
+   "Natija: 3"
+  ],
+  "code": "print(7 // 2)"
+ },
+ {
+  "id": "python-asoslar-05",
+  "unit": "python-asoslar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "1",
+   "3",
+   "3.5",
+   "0"
+  ],
+  "answer": 0,
+  "explanation": "7 % 2 = 1.",
+  "solution": [
+   "% — qoldiq.",
+   "7 = 2·3 + 1.",
+   "Natija: 1"
+  ],
+  "code": "print(7 % 2)"
+ },
+ {
+  "id": "python-asoslar-06",
+  "unit": "python-asoslar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "24",
+   "8",
+   "6",
+   "16"
+  ],
+  "answer": 3,
+  "explanation": "2**4 = 16.",
+  "solution": [
+   "** — darajaga ko‘tarish.",
+   "2⁴ = 2·2·2·2.",
+   "Natija: 16"
+  ],
+  "code": "print(2 ** 4)"
+ },
+ {
+  "id": "python-asoslar-07",
+  "unit": "python-asoslar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "3.5",
+   "3,5",
+   "4",
+   "3"
+  ],
+  "answer": 0,
+  "explanation": "7 / 2 = 3.5.",
+  "solution": [
+   "/ — oddiy bo‘lish, natija doim float (o‘nli kasr).",
+   "Python’da kasr qismi nuqta bilan yoziladi.",
+   "Natija: 3.5"
+  ],
+  "code": "print(7 / 2)"
+ },
+ {
+  "id": "python-asoslar-08",
+  "unit": "python-asoslar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagilardan qaysi biri Python ma’lumot turlaridan EMAS?",
+  "options": [
+   "int",
+   "float",
+   "str",
+   "chr"
+  ],
+  "answer": 3,
+  "explanation": "chr — funksiya, tur emas.",
+  "solution": [
+   "int — butun son, float — kasr son, str — satr. Bular ma’lumot turlari.",
+   "chr() — bu FUNKSIYA (son kodini belgiga aylantiradi), tur emas.",
+   "Javob: chr"
+  ]
+ },
+ {
+  "id": "python-asoslar-09",
+  "unit": "python-asoslar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "<class 'str'>",
+   "<class 'float'>",
+   "<class 'double'>",
+   "<class 'int'>"
+  ],
+  "answer": 1,
+  "explanation": "3.0 — float.",
+  "solution": [
+   "Nuqtali son — float turi.",
+   "3.0 qiymati butun bo‘lsa ham, yozilishi tufayli float.",
+   "Natija: <class 'float'>"
+  ],
+  "code": "print(type(3.0))"
+ },
+ {
+  "id": "python-asoslar-10",
+  "unit": "python-asoslar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Tizimga o‘rnatilgan Python versiyasini buyruqlar qatori orqali qanday tekshirish mumkin?",
+  "options": [
+   "python --show-version",
+   "python --ver",
+   "python -v",
+   "python --version"
+  ],
+  "answer": 3,
+  "explanation": "python --version.",
+  "solution": [
+   "Versiyani ko‘rsatish uchun rasmiy kalit: --version (yoki katta -V).",
+   "Kichik -v esa «verbose» (batafsil rejim) — boshqa narsa.",
+   "Javob: python --version"
+  ]
+ },
+ {
+  "id": "python-asoslar-11",
+  "unit": "python-asoslar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "3",
+   "8",
+   "5",
+   "53"
+  ],
+  "answer": 1,
+  "explanation": "x = 5 + 3 = 8.",
+  "solution": [
+   "x += 3 — bu x = x + 3 degani.",
+   "5 + 3 = 8.",
+   "Natija: 8"
+  ],
+  "code": "x = 5\nx += 3\nprint(x)"
+ },
+ {
+  "id": "python-asoslar-12",
+  "unit": "python-asoslar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "Error",
+   "53",
+   "8",
+   "15"
+  ],
+  "answer": 1,
+  "explanation": "'5' + '3' = '53'.",
+  "solution": [
+   "Ikkala qiymat ham satr (qo‘shtirnoqda).",
+   "Satrlarni + bilan qo‘shish — yopishtirish.",
+   "Natija: 53"
+  ],
+  "code": "print('5' + '3')"
+ },
+ {
+  "id": "python-asoslar-13",
+  "unit": "python-asoslar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "'15'",
+   "Error",
+   "15",
+   "123"
+  ],
+  "answer": 2,
+  "explanation": "12 + 3 = 15.",
+  "solution": [
+   "int('12') satrni butun songa aylantiradi: 12.",
+   "12 + 3.",
+   "Natija: 15"
+  ],
+  "code": "print(int('12') + 3)"
+ },
+ {
+  "id": "python-asoslar-14",
+  "unit": "python-asoslar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "4",
+   "6",
+   "5",
+   "Salom"
+  ],
+  "answer": 2,
+  "explanation": "5 ta belgi.",
+  "solution": [
+   "len() — satrdagi belgilar soni.",
+   "S-a-l-o-m.",
+   "Natija: 5"
+  ],
+  "code": "print(len('Salom'))"
+ },
+ {
+  "id": "python-asoslar-15",
+  "unit": "python-asoslar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "True",
+   "False",
+   "None",
+   "Error"
+  ],
+  "answer": 0,
+  "explanation": "Qiymatlar teng → True.",
+  "solution": [
+   "== qiymatlarni solishtiradi.",
+   "10 va 10.0 turlari har xil, lekin qiymati teng.",
+   "Natija: True"
+  ],
+  "code": "print(10 == 10.0)"
+ },
+ {
+  "id": "python-asoslar-16",
+  "unit": "python-asoslar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "Py",
+   "P",
+   "n",
+   "Error"
+  ],
+  "answer": 1,
+  "explanation": "s[0] = 'P'.",
+  "solution": [
+   "Satr indekslari 0 dan boshlanadi.",
+   "s[0] — birinchi belgi.",
+   "Natija: P"
+  ],
+  "code": "s = 'Python'\nprint(s[0])"
+ },
+ {
+  "id": "python-asoslar-17",
+  "unit": "python-asoslar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "-1",
+   "6.7",
+   "1",
+   "7"
+  ],
+  "answer": 3,
+  "explanation": "4 + 3 = 7.",
+  "solution": [
+   "abs(-4) = 4 (modul).",
+   "round(2.7) = 3 (eng yaqin butun).",
+   "4 + 3 = 7"
+  ],
+  "code": "print(abs(-4) + round(2.7))"
+ },
+ {
+  "id": "python-asoslar-18",
+  "unit": "python-asoslar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "10 5",
+   "10 20",
+   "5 10",
+   "10 15"
+  ],
+  "answer": 3,
+  "explanation": "O‘ng tomon oldin hisoblanadi: (10, 15).",
+  "solution": [
+   "O‘ng tomon AVVAL to‘liq hisoblanadi (eski qiymatlar bilan): y = 10, x + y = 5 + 10 = 15.",
+   "Keyin bir vaqtda o‘zlashtiriladi: x = 10, y = 15.",
+   "Natija: 10 15"
+  ],
+  "code": "x = 5\ny = 10\nx, y = y, x + y\nprint(x, y)"
+ },
+ {
+  "id": "python-asoslar-19",
+  "unit": "python-asoslar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "None",
+   "True",
+   "False",
+   "Error"
+  ],
+  "answer": 2,
+  "explanation": "'a' < 'b' bo‘lgani uchun False.",
+  "solution": [
+   "Satrlar lug‘at (alifbo) tartibida, birinchi belgidan solishtiriladi.",
+   "'a' va 'b': 'a' kodi 97, 'b' kodi 98 → 'a' < 'b'.",
+   "Demak 'abc' < 'bcd' va 'abc' > 'bcd' yolg‘on.",
+   "Natija: False"
+  ],
+  "code": "print('abc' > 'bcd')"
+ },
+ {
+  "id": "python-asoslar-20",
+  "unit": "python-asoslar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "True",
+   "0",
+   "1",
+   "False"
+  ],
+  "answer": 2,
+  "explanation": "0 and 1 = 0; 1 or 0 = 1.",
+  "solution": [
+   "and kuchliroq: avval 0 and 1 hisoblanadi → 0 (birinchi yolg‘on qiymat qaytadi).",
+   "Keyin 1 or 0 → or birinchi ROST qiymatni qaytaradi → 1.",
+   "Python and/or True/False emas, aynan operand qiymatini qaytaradi.",
+   "Natija: 1"
+  ],
+  "code": "print(1 or 0 and 1)"
+ },
+ {
+  "id": "python-asoslar-21",
+  "unit": "python-asoslar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "32",
+   "10",
+   "2",
+   "12"
+  ],
+  "answer": 3,
+  "explanation": "32 % 20 = 12.",
+  "solution": [
+   "pow(a, b, m) = (a ** b) % m.",
+   "2⁵ = 32. 32 % 20 = 12.",
+   "Natija: 12"
+  ],
+  "code": "print(pow(2, 5, 20))"
+ },
+ {
+  "id": "python-asoslar-22",
+  "unit": "python-asoslar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Python’dagi satrlar (str) haqida to‘g‘ri mulohazani toping.",
+  "options": [
+   "Satrlarni o‘zgartirish mumkin",
+   "Satrlarni o‘zgartirib bo‘lmaydi (immutable)",
+   "Satrlar obyekt, lekin ketma-ketlik emas",
+   "Satrlarni qismlarga ajratish (slicing) mumkin emas"
+  ],
+  "answer": 1,
+  "explanation": "str — o‘zgarmas (immutable) ketma-ketlik.",
+  "solution": [
+   "s = 'abc'; s[0] = 'x' — TypeError beradi: satr elementini o‘zgartirib bo‘lmaydi.",
+   "Satrlar ketma-ketlik: s[1:3] kabi kesish mumkin.",
+   "Javob: Satrlarni o‘zgartirib bo‘lmaydi (immutable)"
+  ]
+ },
+ {
+  "id": "python-asoslar-23",
+  "unit": "python-asoslar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "True False",
+   "True True",
+   "False False",
+   "False True"
+  ],
+  "answer": 3,
+  "explanation": "Bo‘sh — False, bo‘sh emas — True.",
+  "solution": [
+   "Bo‘sh ro‘yxat [] — yolg‘on (False).",
+   "[0] — bitta elementli ro‘yxat, bo‘sh emas → True (ichidagi 0 ahamiyatsiz).",
+   "Natija: False True"
+  ],
+  "code": "print(bool([]), bool([0]))"
+ },
+ {
+  "id": "python-asoslar-24",
+  "unit": "python-asoslar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "-4 -1",
+   "-4 1",
+   "-3 1",
+   "-3 -1"
+  ],
+  "answer": 1,
+  "explanation": "−7 // 2 = −4, −7 % 2 = 1.",
+  "solution": [
+   "// pastga (kichik tomonga) yaxlitlaydi: −3,5 → −4.",
+   "Qoldiq: −7 − 2·(−4) = −7 + 8 = 1.",
+   "Natija: -4 1"
+  ],
+  "code": "print(-7 // 2, -7 % 2)"
+ },
+ {
+  "id": "python-asoslar-25",
+  "unit": "python-asoslar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "orma",
+   "form",
+   "forma",
+   "nfor"
+  ],
+  "answer": 1,
+  "explanation": "Indekslar 2..5: 'form'.",
+  "solution": [
+   "s[2:6] — 2-indeksdan 6-indeksgacha (6 kirmaydi): 2, 3, 4, 5.",
+   "i(0) n(1) f(2) o(3) r(4) m(5).",
+   "Natija: form"
+  ],
+  "code": "s = 'informatika'\nprint(s[2:6])"
+ },
+ {
+  "id": "python-asoslar-26",
+  "unit": "python-asoslar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "adaipmil",
+   "olimpiada",
+   "adaipmilo",
+   "Error"
+  ],
+  "answer": 2,
+  "explanation": "Teskari: 'adaipmilo'.",
+  "solution": [
+   "[::-1] — satrni teskari tartibda o‘qish.",
+   "o-l-i-m-p-i-a-d-a → a-d-a-i-p-m-i-l-o.",
+   "Natija: adaipmilo"
+  ],
+  "code": "s = 'olimpiada'\nprint(s[::-1])"
+ },
+ {
+  "id": "python-asoslar-27",
+  "unit": "python-asoslar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "<class 'bool'>",
+   "<class 'number'>",
+   "<class 'int'>",
+   "<class 'float'>"
+  ],
+  "answer": 3,
+  "explanation": "/ doim float.",
+  "solution": [
+   "/ operatori har doim float qaytaradi, hatto bo‘linma butun bo‘lsa ham.",
+   "5 / 5 = 1.0.",
+   "Natija: <class 'float'>"
+  ],
+  "code": "print(type(5 / 5))"
+ },
+ {
+  "id": "python-asoslar-28",
+  "unit": "python-asoslar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "ab",
+   "bb",
+   "abb",
+   "''"
+  ],
+  "answer": 1,
+  "explanation": "'' + 'bb' = 'bb'.",
+  "solution": [
+   "'a' * 0 = '' (bo‘sh satr).",
+   "'b' * 2 = 'bb'.",
+   "Natija: bb"
+  ],
+  "code": "print('a' * 0 + 'b' * 2)"
+ },
+ {
+  "id": "python-asoslar-29",
+  "unit": "python-asoslar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "66 B",
+   "B 66",
+   "65 B",
+   "66 A"
+  ],
+  "answer": 0,
+  "explanation": "66 va 'B'.",
+  "solution": [
+   "ord('A') = 65 (ASCII kodi). 65 + 1 = 66.",
+   "chr(66) = 'B'.",
+   "Natija: 66 B"
+  ],
+  "code": "print(ord('A') + 1, chr(66))"
+ },
+ {
+  "id": "python-asoslar-30",
+  "unit": "python-asoslar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "1",
+   "9",
+   "100",
+   "11"
+  ],
+  "answer": 1,
+  "explanation": "10//3 = 3, 3² = 9.",
+  "solution": [
+   "x //= 3 → x = 10 // 3 = 3.",
+   "x **= 2 → x = 3² = 9.",
+   "Natija: 9"
+  ],
+  "code": "x = 10\nx //= 3\nx **= 2\nprint(x)"
+ },
+ {
+  "id": "python-asoslar-31",
+  "unit": "python-asoslar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "1",
+   "Error",
+   "2",
+   "0"
+  ],
+  "answer": 0,
+  "explanation": "'SALOM' → 1 ta 'A'.",
+  "solution": [
+   "'Salom'.upper() = 'SALOM'.",
+   "'SALOM' da 'A' bitta.",
+   "Natija: 1"
+  ],
+  "code": "print('Salom'.upper().count('A'))"
+ },
+ {
+  "id": "python-asoslar-32",
+  "unit": "python-asoslar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "True",
+   "Error",
+   "None",
+   "False"
+  ],
+  "answer": 3,
+  "explanation": "Float xatoligi: 0.30000000000000004.",
+  "solution": [
+   "Kompyuterda 0.1 va 0.2 ikkilikda aniq yozilmaydi (cheksiz kasr).",
+   "0.1 + 0.2 = 0.30000000000000004 ≠ 0.3.",
+   "Natija: False"
+  ],
+  "code": "print(0.1 + 0.2 == 0.3)"
+ },
+ {
+  "id": "python-asoslar-33",
+  "unit": "python-asoslar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "5",
+   "Error",
+   "True",
+   "False"
+  ],
+  "answer": 3,
+  "explanation": "not True = False; False and 5 = False.",
+  "solution": [
+   "Tartib: avval taqqoslash, keyin not, keyin and.",
+   "3 > 2 = True → not True = False.",
+   "False and 5 → and birinchi yolg‘on qiymatni qaytaradi.",
+   "Natija: False"
+  ],
+  "code": "print(not 3 > 2 and 5)"
+ },
+ {
+  "id": "python-asoslar-34",
+  "unit": "python-asoslar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "Error",
+   "2 0",
+   "3 -1",
+   "2 -1"
+  ],
+  "answer": 3,
+  "explanation": "'t' indeksi 2, 'z' yo‘q → −1.",
+  "solution": [
+   "find() belgining birinchi indeksini qaytaradi: p(0) y(1) t(2).",
+   "Topilmasa −1 qaytaradi.",
+   "Natija: 2 -1"
+  ],
+  "code": "print('python'.find('t'), 'python'.find('z'))"
+ },
+ {
+  "id": "python-asoslar-35",
+  "unit": "python-asoslar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "24 33",
+   "24 6",
+   "1212 33",
+   "1212 6"
+  ],
+  "answer": 3,
+  "explanation": "'1212' va 6.",
+  "solution": [
+   "str(12) = '12' — satr. Satrni 2 ga ko‘paytirish — takrorlash: '1212'.",
+   "int('3') = 3 — son. 3 * 2 = 6.",
+   "Natija: 1212 6"
+  ],
+  "code": "print(str(12) * 2, int('3') * 2)"
+ },
+ {
+  "id": "python-asoslar-36",
+  "unit": "python-asoslar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "-9",
+   "12",
+   "3",
+   "9"
+  ],
+  "answer": 3,
+  "explanation": "12 − 3 = 9.",
+  "solution": [
+   "Avval ko‘paytirish: a * b = 3 · 4 = 12.",
+   "Keyin ayirish: 12 − 3.",
+   "Natija: 9"
+  ],
+  "code": "a = 3\nb = 4\nprint(a * b - a)"
+ },
+ {
+  "id": "python-asoslar-37",
+  "unit": "python-asoslar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "512",
+   "36",
+   "64",
+   "12"
+  ],
+  "answer": 0,
+  "explanation": "2 ** 9 = 512.",
+  "solution": [
+   "** o‘ngdan chapga bajariladi: 2 ** (3 ** 2).",
+   "3 ** 2 = 9. 2 ** 9 = 512.",
+   "Natija: 512"
+  ],
+  "code": "print(2 ** 3 ** 2)"
+ },
+ {
+  "id": "python-asoslar-38",
+  "unit": "python-asoslar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "4",
+   "Error",
+   "6",
+   "True"
+  ],
+  "answer": 0,
+  "explanation": "1 + 1·3 = 4.",
+  "solution": [
+   "Arifmetikada True = 1, False = 0.",
+   "Avval ko‘paytirish: True * 3 = 3. Keyin 1 + 3.",
+   "Natija: 4"
+  ],
+  "code": "print(True + True * 3)"
+ },
+ {
+  "id": "python-asoslar-39",
+  "unit": "python-asoslar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "False",
+   "oxir",
+   "0",
+   "''"
+  ],
+  "answer": 1,
+  "explanation": "Birinchi rost qiymat: 'oxir'.",
+  "solution": [
+   "or birinchi ROST qiymatni qaytaradi, hammasi yolg‘on bo‘lsa — oxirgisini.",
+   "'' — yolg‘on, 0 — yolg‘on, [] — yolg‘on, 'oxir' — rost.",
+   "Natija: oxir"
+  ],
+  "code": "print('' or 0 or [] or 'oxir')"
+ },
+ {
+  "id": "python-asoslar-40",
+  "unit": "python-asoslar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "3 4",
+   "2 4",
+   "2 3",
+   "3 3"
+  ],
+  "answer": 1,
+  "explanation": "Juft songa: 2 va 4.",
+  "solution": [
+   "Python round() «bankir yaxlitlashi»dan foydalanadi: .5 da eng yaqin JUFT songa.",
+   "2.5 → 2 (juft), 3.5 → 4 (juft).",
+   "Natija: 2 4"
+  ],
+  "code": "print(round(2.5), round(3.5))"
+ },
+ {
+  "id": "python-asoslar-41",
+  "unit": "python-asoslar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "fed",
+   "edc",
+   "edcb",
+   "dcb"
+  ],
+  "answer": 1,
+  "explanation": "−2, −3, −4: 'edc'.",
+  "solution": [
+   "Manfiy qadam −1: o‘ngdan chapga yuramiz. −2 indeks — 'e'.",
+   "−5 indeks — 'b' (kirmaydi). Olinadi: −2, −3, −4 → 'e', 'd', 'c'.",
+   "Natija: edc"
+  ],
+  "code": "s = 'abcdef'\nprint(s[-2:-5:-1])"
+ },
+ {
+  "id": "python-asoslar-42",
+  "unit": "python-asoslar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "273",
+   "275",
+   "Error",
+   "123"
+  ],
+  "answer": 1,
+  "explanation": "5 + 15 + 255 = 275.",
+  "solution": [
+   "int(satr, asos) — satrni berilgan asosdan o‘nlikka aylantiradi.",
+   "101₂ = 5, 17₈ = 15, ff₁₆ = 255.",
+   "5 + 15 + 255 = 275"
+  ],
+  "code": "print(int('101', 2) + int('17', 8) + int('ff', 16))"
+ },
+ {
+  "id": "python-asoslar-43",
+  "unit": "python-asoslar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "0b1010 0xff 0o10",
+   "1010 ff 10",
+   "0b1010 0xFF 0o10",
+   "0b1010 0xff 0o8"
+  ],
+  "answer": 0,
+  "explanation": "Prefikslar: 0b, 0x, 0o.",
+  "solution": [
+   "bin() ikkilik yozuvni '0b' bilan, hex() — '0x' (kichik harflar), oct() — '0o' bilan qaytaradi.",
+   "10 = 1010₂, 255 = ff₁₆, 8 = 10₈.",
+   "Natija: 0b1010 0xff 0o10"
+  ],
+  "code": "print(bin(10), hex(255), oct(8))"
+ },
+ {
+  "id": "python-asoslar-44",
+  "unit": "python-asoslar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "abcd abcd",
+   "abc abc",
+   "Error",
+   "abcd abc"
+  ],
+  "answer": 3,
+  "explanation": "Yangi satr yaratiladi, b o‘zgarmaydi.",
+  "solution": [
+   "Satr o‘zgarmas (immutable). a += 'd' eski satrni o‘zgartirmaydi, YANGI 'abcd' satrini yaratib a ga bog‘laydi.",
+   "b esa avvalgi 'abc' ga bog‘langanicha qoladi.",
+   "Natija: abcd abc"
+  ],
+  "code": "a = 'abc'\nb = a\na += 'd'\nprint(a, b)"
+ },
+ {
+  "id": "python-asoslar-45",
+  "unit": "python-asoslar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "Error",
+   "True False",
+   "False False",
+   "True True"
+  ],
+  "answer": 1,
+  "explanation": "Zanjir: and bilan bog‘lanadi.",
+  "solution": [
+   "Python’da zanjirli taqqoslash: a > b > c ↔ (a > b) and (b > c).",
+   "10 > 5 > 2 → True and True = True. 10 > 5 < 2 → True and (5 < 2 = False) = False.",
+   "Natija: True False"
+  ],
+  "code": "print(10 > 5 > 2, 10 > 5 < 2)"
+ },
+ {
+  "id": "python-asoslar-46",
+  "unit": "python-asoslar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "8",
+   "0",
+   "2",
+   "4"
+  ],
+  "answer": 2,
+  "explanation": "2 · 4 // 3 = 2.",
+  "solution": [
+   "Ustuvorlik: ** eng avval: 2 ** 2 = 4.",
+   "Keyin %, *, // chapdan o‘ngga: 17 % 5 = 2; 2 * 4 = 8; 8 // 3 = 2.",
+   "Natija: 2"
+  ],
+  "code": "x = 17\nprint(x % 5 * 2 ** 2 // 3)"
+ },
+ {
+  "id": "python-asoslar-47",
+  "unit": "python-asoslar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "31",
+   "100",
+   "30",
+   "29"
+  ],
+  "answer": 0,
+  "explanation": "2¹⁰⁰ — 31 xonali son.",
+  "solution": [
+   "2¹⁰ ≈ 10³, demak 2¹⁰⁰ ≈ 10³⁰ — taxminan 31 xonali son.",
+   "Aniq: 2¹⁰⁰ = 1267650600228229401496703205376.",
+   "Raqamlar soni: 31"
+  ],
+  "code": "print(len(str(2 ** 100)))"
+ },
+ {
+  "id": "python-asoslar-48",
+  "unit": "python-asoslar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "abc-True",
+   "a-b-cTrue",
+   "a-b-c3",
+   "a-b-c-True"
+  ],
+  "answer": 1,
+  "explanation": "'a-b-c' + 'True'.",
+  "solution": [
+   "'-'.join('abc') satr belgilarini '-' bilan ulaydi: 'a-b-c'.",
+   "str(3 > 2) = 'True'.",
+   "Natija: a-b-cTrue"
+  ],
+  "code": "print('-'.join('abc') + str(3 > 2))"
+ },
+ {
+  "id": "python-asoslar-49",
+  "unit": "python-asoslar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "3 2 17",
+   "(3, 2) 17",
+   "(3, 2) 15",
+   "(2, 3) 17"
+  ],
+  "answer": 1,
+  "explanation": "(3, 2) va 17.",
+  "solution": [
+   "divmod(a, b) = (a // b, a % b) = (3, 2).",
+   "17 // 5 * 5 + 17 % 5 = 3·5 + 2 = 17 (doim a ga teng).",
+   "Natija: (3, 2) 17"
+  ],
+  "code": "print(divmod(17, 5), 17 // 5 * 5 + 17 % 5)"
+ },
+ {
+  "id": "python-asoslar-50",
+  "unit": "python-asoslar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "olma 1",
+   "banan 1",
+   "anor 1",
+   "olma 3"
+  ],
+  "answer": 0,
+  "explanation": "'olma' alifboda oxirgi; min = 1.",
+  "solution": [
+   "Satrlar alifbo tartibida taqqoslanadi: 'anor' < 'banan' < 'olma'.",
+   "max → 'olma'. min([3, 1, 2]) → 1.",
+   "Natija: olma 1"
+  ],
+  "code": "print(max('banan', 'olma', 'anor'), min([3, 1, 2]))"
+ }
+]

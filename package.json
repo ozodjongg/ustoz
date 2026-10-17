@@ -1,11 +1,13 @@
 {
   "name": "informatika-olympiada-trainer",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "scripts": {
-    "dev": "python3 scripts/generate_data.py && next dev",
-    "build": "python3 scripts/generate_data.py && next build",
-    "start": "next start"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "validate": "node scripts/validate-data.mjs"
   },
   "dependencies": {
     "next": "14.2.16",

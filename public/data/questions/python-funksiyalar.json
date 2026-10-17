@@ -1,0 +1,1052 @@
+[
+ {
+  "id": "python-funksiyalar-01",
+  "unit": "python-funksiyalar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Pythonda funksiya to‘g‘ri yaratilgan qatorni toping.",
+  "options": [
+   "function_name def():",
+   "def function_name:",
+   "def function_name():",
+   "def function_name[]:"
+  ],
+  "answer": 2,
+  "explanation": "def nom(): — to‘g‘ri sintaksis.",
+  "solution": [
+   "Funksiya def kalit so‘zi, nom, oddiy qavslar () va ikki nuqta : bilan yaratiladi.",
+   "Qavslar bo‘sh bo‘lsa ham yozilishi shart; kvadrat qavs [] ishlatilmaydi.",
+   "Javob: def function_name():"
+  ]
+ },
+ {
+  "id": "python-funksiyalar-02",
+  "unit": "python-funksiyalar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "36",
+   "12",
+   "6",
+   "None"
+  ],
+  "answer": 0,
+  "explanation": "6·6 = 36.",
+  "solution": [
+   "kv(6) chaqirilganda x = 6.",
+   "return 6 · 6.",
+   "Natija: 36"
+  ],
+  "code": "def kv(x):\n    return x * x\nprint(kv(6))"
+ },
+ {
+  "id": "python-funksiyalar-03",
+  "unit": "python-funksiyalar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "Salom",
+   "SalomSalom",
+   "Salom\nSalom",
+   "None"
+  ],
+  "answer": 2,
+  "explanation": "Ikki marta, ikki qatorda.",
+  "solution": [
+   "Funksiya 2 marta chaqirildi, har safar 'Salom' alohida qatorda chiqadi.",
+   "print har chaqiruvda yangi qatorga yozadi.",
+   "Natija:\nSalom\nSalom"
+  ],
+  "code": "def salom():\n    print('Salom')\nsalom()\nsalom()"
+ },
+ {
+  "id": "python-funksiyalar-04",
+  "unit": "python-funksiyalar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "None",
+   "1",
+   "Error",
+   "x"
+  ],
+  "answer": 0,
+  "explanation": "return yo‘q → None.",
+  "solution": [
+   "Funksiyada return yo‘q.",
+   "return bo‘lmasa funksiya avtomatik None qaytaradi.",
+   "Natija: None"
+  ],
+  "code": "def f():\n    x = 1\nprint(f())"
+ },
+ {
+  "id": "python-funksiyalar-05",
+  "unit": "python-funksiyalar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "Error",
+   "34 34",
+   "7 34",
+   "7 7"
+  ],
+  "answer": 2,
+  "explanation": "Sonlar qo‘shiladi, satrlar yopishadi.",
+  "solution": [
+   "yig(3, 4) = 3 + 4 = 7 (sonlar).",
+   "yig('3', '4') = '3' + '4' = '34' (satrlar yopishtiriladi).",
+   "Natija: 7 34"
+  ],
+  "code": "def yig(a, b):\n    return a + b\nprint(yig(3, 4), yig('3', '4'))"
+ },
+ {
+  "id": "python-funksiyalar-06",
+  "unit": "python-funksiyalar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "pass kalit so‘zi Python funksiyalarida ishlatilganda nima vazifa bajaradi?",
+  "options": [
+   "Funksiya ishiga ta’sir qilmaydi va bajarilish davom etadi",
+   "Xatolikka olib keladi",
+   "Kodning keyingi qismini o‘tkazib yuboradi",
+   "Joriy funksiya ishini tugatadi"
+  ],
+  "answer": 0,
+  "explanation": "pass — bo‘sh buyruq.",
+  "solution": [
+   "pass — «hech narsa qilma» buyrug‘i. U sintaksis talab qilgan joyni to‘ldirish uchun ishlatiladi (bo‘sh blok bo‘lmasligi uchun).",
+   "U funksiyadan chiqmaydi (bu return ishi) va hech narsani o‘tkazib yubormaydi.",
+   "Javob: Funksiya ishiga ta’sir qilmaydi va bajarilish davom etadi"
+  ]
+ },
+ {
+  "id": "python-funksiyalar-07",
+  "unit": "python-funksiyalar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "11 11",
+   "Error",
+   "1 6",
+   "11 6"
+  ],
+  "answer": 3,
+  "explanation": "Default 10: 11, keyin 6.",
+  "solution": [
+   "x=10 — standart (default) qiymat. Argument berilmasa ishlatiladi.",
+   "f() → 10 + 1 = 11. f(5) → 5 + 1 = 6.",
+   "Natija: 11 6"
+  ],
+  "code": "def f(x=10):\n    return x + 1\nprint(f(), f(5))"
+ },
+ {
+  "id": "python-funksiyalar-08",
+  "unit": "python-funksiyalar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "12",
+   "43",
+   "7",
+   "lambda"
+  ],
+  "answer": 0,
+  "explanation": "4·3 = 12.",
+  "solution": [
+   "lambda — bir qatorli nomsiz funksiya: lambda x: x * 3 ↔ def f(x): return x * 3.",
+   "f(4) = 4 · 3.",
+   "Natija: 12"
+  ],
+  "code": "f = lambda x: x * 3\nprint(f(4))"
+ },
+ {
+  "id": "python-funksiyalar-09",
+  "unit": "python-funksiyalar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "-8",
+   "2",
+   "8",
+   "Error"
+  ],
+  "answer": 2,
+  "explanation": "a=10, b=2 → 8.",
+  "solution": [
+   "Nomli argumentlar: tartib emas, NOM muhim.",
+   "a = 10, b = 2 → 10 − 2.",
+   "Natija: 8"
+  ],
+  "code": "def f(a, b):\n    return a - b\nprint(f(b=2, a=10))"
+ },
+ {
+  "id": "python-funksiyalar-10",
+  "unit": "python-funksiyalar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "musbat emas",
+   "0",
+   "musbat",
+   "None"
+  ],
+  "answer": 0,
+  "explanation": "0 musbat emas.",
+  "solution": [
+   "0 > 0 — yolg‘on, birinchi return ishlamaydi.",
+   "Keyingi qator: return 'musbat emas'.",
+   "Natija: musbat emas"
+  ],
+  "code": "def f(n):\n    if n > 0:\n        return 'musbat'\n    return 'musbat emas'\nprint(f(0))"
+ },
+ {
+  "id": "python-funksiyalar-11",
+  "unit": "python-funksiyalar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "Error",
+   "12",
+   "1",
+   "2"
+  ],
+  "answer": 2,
+  "explanation": "Birinchi return ishlaydi.",
+  "solution": [
+   "return funksiyani DARHOL tugatadi.",
+   "Ikkinchi return hech qachon bajarilmaydi.",
+   "Natija: 1"
+  ],
+  "code": "def f():\n    return 1\n    return 2\nprint(f())"
+ },
+ {
+  "id": "python-funksiyalar-12",
+  "unit": "python-funksiyalar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "3 9 -2",
+   "3 3 2",
+   "abc 9 2",
+   "3 9 2"
+  ],
+  "answer": 3,
+  "explanation": "3, 9, 2.",
+  "solution": [
+   "Bular ichki (built-in) funksiyalar.",
+   "len('abc') = 3, max(3, 9, 4) = 9, abs(−2) = 2.",
+   "Natija: 3 9 2"
+  ],
+  "code": "print(len('abc'), max(3, 9, 4), abs(-2))"
+ },
+ {
+  "id": "python-funksiyalar-13",
+  "unit": "python-funksiyalar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "5",
+   "(5, 10)",
+   "10",
+   "Error"
+  ],
+  "answer": 2,
+  "explanation": "b = 10.",
+  "solution": [
+   "return x, x * 2 — ikki qiymatni KORTEJ ko‘rinishida qaytaradi: (5, 10).",
+   "a, b = (5, 10) → a = 5, b = 10.",
+   "Natija: 10"
+  ],
+  "code": "def f(x):\n    return x, x * 2\na, b = f(5)\nprint(b)"
+ },
+ {
+  "id": "python-funksiyalar-14",
+  "unit": "python-funksiyalar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "Error",
+   "5",
+   "6",
+   "None"
+  ],
+  "answer": 1,
+  "explanation": "y o‘zgarmaydi (son immutable).",
+  "solution": [
+   "Funksiya ichidagi x — mahalliy o‘zgaruvchi, unga y ning QIYMATI (5) beriladi.",
+   "x o‘zgaradi, lekin y o‘zgarmaydi. f(y) natijasi hech qayerga saqlanmadi.",
+   "Natija: 5"
+  ],
+  "code": "def f(x):\n    x = x + 1\n    return x\ny = 5\nf(y)\nprint(y)"
+ },
+ {
+  "id": "python-funksiyalar-15",
+  "unit": "python-funksiyalar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "Error",
+   "3",
+   "1",
+   "6"
+  ],
+  "answer": 1,
+  "explanation": "args = (1, 2, 3) → 3.",
+  "solution": [
+   "*args — istalgan sondagi argumentlarni kortejga yig‘adi: (1, 2, 3).",
+   "len((1, 2, 3)) = 3.",
+   "Natija: 3"
+  ],
+  "code": "def f(*args):\n    return len(args)\nprint(f(1, 2, 3))"
+ },
+ {
+  "id": "python-funksiyalar-16",
+  "unit": "python-funksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "20",
+   "Error",
+   "10",
+   "None"
+  ],
+  "answer": 0,
+  "explanation": "global → tashqi x = 20.",
+  "solution": [
+   "global x — funksiya ichidagi x global (tashqi) o‘zgaruvchining o‘zi ekanini bildiradi.",
+   "x = 20 global x ni o‘zgartiradi.",
+   "Natija: 20"
+  ],
+  "code": "x = 10\ndef foo():\n    global x\n    x = 20\nfoo()\nprint(x)"
+ },
+ {
+  "id": "python-funksiyalar-17",
+  "unit": "python-funksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "None",
+   "20",
+   "10",
+   "Error"
+  ],
+  "answer": 2,
+  "explanation": "Mahalliy x, tashqi x = 10.",
+  "solution": [
+   "global yo‘q — funksiya ichida x = 20 YANGI mahalliy o‘zgaruvchi yaratadi.",
+   "Tashqi x ga tegmaydi.",
+   "Natija: 10"
+  ],
+  "code": "x = 10\ndef foo():\n    x = 20\nfoo()\nprint(x)"
+ },
+ {
+  "id": "python-funksiyalar-18",
+  "unit": "python-funksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "0",
+   "6",
+   "2",
+   "1"
+  ],
+  "answer": 2,
+  "explanation": "6 % 4 = 2.",
+  "solution": [
+   "Ichkaridan boshlaymiz: (lambda y: y + 1)(5) = 6.",
+   "Keyin (lambda x: x % 4)(6) = 6 % 4.",
+   "Natija: 2"
+  ],
+  "code": "print((lambda x: x % 4)((lambda y: y + 1)(5)))"
+ },
+ {
+  "id": "python-funksiyalar-19",
+  "unit": "python-funksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "[1]\n[1, 2]\n[3]",
+   "[1]\n[1, 2]\n[1, 2, 3]",
+   "[1]\n[2]\n[3]",
+   "[1]\n[1, 2]\n[1, 3]"
+  ],
+  "answer": 3,
+  "explanation": "O‘zgaruvchan default qiymat saqlanib qoladi.",
+  "solution": [
+   "Default qiymat L=[] FAQAT BIR MARTA (funksiya yaratilganda) yaratiladi va chaqiruvlar orasida saqlanadi!",
+   "f(1): default L = [1] → [1]. f(2, [1]): yangi ro‘yxat berildi → [1, 2] (default ga ta’sir yo‘q).",
+   "f(3): yana o‘sha default ro‘yxat, u [1] edi → [1, 3].",
+   "Natija:\n[1]\n[1, 2]\n[1, 3]"
+  ],
+  "code": "def f(a, L=[]):\n    L.append(a)\n    return L\nprint(f(1))\nprint(f(2, [1]))\nprint(f(3))"
+ },
+ {
+  "id": "python-funksiyalar-20",
+  "unit": "python-funksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "{15, 20}",
+   "{20}",
+   "{15}",
+   "NameError"
+  ],
+  "answer": 3,
+  "explanation": "Global x yo‘q → NameError.",
+  "solution": [
+   "s ichidagi x = {15} — MAHALLIY o‘zgaruvchi.",
+   "foo ichida global x — modul darajasidagi x ni so‘raydi. Lekin global x mavjud emas!",
+   "x.add(20) da NameError yuz beradi (global x aniqlanmagan).",
+   "Natija: NameError"
+  ],
+  "code": "def s(z):\n    x = {z}\n    def foo():\n        global x\n        x.add(20)\n    foo()\n    print(x)\ns(15)"
+ },
+ {
+  "id": "python-funksiyalar-21",
+  "unit": "python-funksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "14",
+   "7",
+   "12",
+   "13"
+  ],
+  "answer": 3,
+  "explanation": "g(6) = 13.",
+  "solution": [
+   "f(3) = 6.",
+   "g(6) = f(6) + 1 = 12 + 1.",
+   "Natija: 13"
+  ],
+  "code": "def f(n):\n    return n * 2\ndef g(n):\n    return f(n) + 1\nprint(g(f(3)))"
+ },
+ {
+  "id": "python-funksiyalar-22",
+  "unit": "python-funksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "[1, 0, 0]",
+   "[1, 0]",
+   "None",
+   "[1]"
+  ],
+  "answer": 0,
+  "explanation": "Ro‘yxat joyida o‘zgaradi.",
+  "solution": [
+   "Ro‘yxat funksiyaga havola (alias) bo‘lib uzatiladi — funksiya asl ro‘yxatni o‘zgartiradi.",
+   "Ikki chaqiruv: ikki marta 0 qo‘shiladi.",
+   "Natija: [1, 0, 0]"
+  ],
+  "code": "def f(lst):\n    lst.append(0)\na = [1]\nf(a)\nf(a)\nprint(a)"
+ },
+ {
+  "id": "python-funksiyalar-23",
+  "unit": "python-funksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "[1]",
+   "[1, 0]",
+   "[0]",
+   "None"
+  ],
+  "answer": 0,
+  "explanation": "Yangi obyekt, a o‘zgarmaydi.",
+  "solution": [
+   "lst = lst + [0] — YANGI ro‘yxat yaratib, mahalliy lst ni unga bog‘laydi.",
+   "Tashqi a ga ta’sir yo‘q.",
+   "Natija: [1]"
+  ],
+  "code": "def f(lst):\n    lst = lst + [0]\na = [1]\nf(a)\nprint(a)"
+ },
+ {
+  "id": "python-funksiyalar-24",
+  "unit": "python-funksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "[3, 1, 2]",
+   "[3, 2, 1]",
+   "[-3, -2, -1]",
+   "[1, 2, 3]"
+  ],
+  "answer": 1,
+  "explanation": "Kamayish tartibi: [3, 2, 1].",
+  "solution": [
+   "key=lambda x: −x — saralash −x bo‘yicha (o‘sish), ya’ni x bo‘yicha kamayish.",
+   "Elementlarning o‘zi o‘zgarmaydi.",
+   "Natija: [3, 2, 1]"
+  ],
+  "code": "nums = [3, 1, 2]\nprint(sorted(nums, key=lambda x: -x))"
+ },
+ {
+  "id": "python-funksiyalar-25",
+  "unit": "python-funksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "[1, 2, 3]",
+   "[2, 4, 6]",
+   "[1, 4, 9]",
+   "<map object>"
+  ],
+  "answer": 2,
+  "explanation": "Kvadratlar: [1, 4, 9].",
+  "solution": [
+   "map(f, ro‘yxat) — har bir elementga f ni qo‘llaydi.",
+   "1², 2², 3². list() bilan ro‘yxatga aylantiramiz.",
+   "Natija: [1, 4, 9]"
+  ],
+  "code": "print(list(map(lambda x: x ** 2, [1, 2, 3])))"
+ },
+ {
+  "id": "python-funksiyalar-26",
+  "unit": "python-funksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "[1, 3, 5]",
+   "[0, 2, 4, 6]",
+   "[0, 2, 4, 6, 7]",
+   "[2, 4, 6]"
+  ],
+  "answer": 1,
+  "explanation": "Juftlar: [0, 2, 4, 6].",
+  "solution": [
+   "filter(shart, ketma-ketlik) — shart rost bo‘lgan elementlarni qoldiradi.",
+   "range(7) = 0..6, juftlari: 0, 2, 4, 6.",
+   "Natija: [0, 2, 4, 6]"
+  ],
+  "code": "print(list(filter(lambda x: x % 2 == 0, range(7))))"
+ },
+ {
+  "id": "python-funksiyalar-27",
+  "unit": "python-funksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "21",
+   "7",
+   "16",
+   "31"
+  ],
+  "answer": 0,
+  "explanation": "1 + 2·10 = 21.",
+  "solution": [
+   "a = 1, b = 2 (default), c = 10 (nomli).",
+   "1 + 2 · 10.",
+   "Natija: 21"
+  ],
+  "code": "def f(a, b=2, c=3):\n    return a + b * c\nprint(f(1, c=10))"
+ },
+ {
+  "id": "python-funksiyalar-28",
+  "unit": "python-funksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "216",
+   "36",
+   "6",
+   "14"
+  ],
+  "answer": 1,
+  "explanation": "1 + 8 + 27 = 36.",
+  "solution": [
+   "kub(1) = 1, kub(2) = 8, kub(3) = 27.",
+   "Yig‘indi: 1 + 8 + 27.",
+   "Natija: 36"
+  ],
+  "code": "def kub(n):\n    return n ** 3\nprint(sum(kub(i) for i in range(1, 4)))"
+ },
+ {
+  "id": "python-funksiyalar-29",
+  "unit": "python-funksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "1",
+   "Error",
+   "3",
+   "2"
+  ],
+  "answer": 2,
+  "explanation": "Uchinchi chaqiruv 3 qaytaradi.",
+  "solution": [
+   "Har chaqiruvda global c bittaga oshadi.",
+   "1-chaqiruv: 1, 2-chaqiruv: 2, 3-chaqiruv: 3 (va u chop etiladi).",
+   "Natija: 3"
+  ],
+  "code": "c = 0\ndef inc():\n    global c\n    c += 1\n    return c\ninc(); inc()\nprint(inc())"
+ },
+ {
+  "id": "python-funksiyalar-30",
+  "unit": "python-funksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "[1, 2]",
+   "['a', 'b']",
+   "['b', 'a']",
+   "{'b': 1, 'a': 2}"
+  ],
+  "answer": 1,
+  "explanation": "Kalitlar saralanadi.",
+  "solution": [
+   "**kw — nomli argumentlarni lug‘atga yig‘adi: {'b': 1, 'a': 2}.",
+   "sorted(lug‘at) — kalitlarni saralaydi.",
+   "Natija: ['a', 'b']"
+  ],
+  "code": "def f(**kw):\n    return sorted(kw)\nprint(f(b=1, a=2))"
+ },
+ {
+  "id": "python-funksiyalar-31",
+  "unit": "python-funksiyalar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "True False",
+   "False True",
+   "None None",
+   "1 0"
+  ],
+  "answer": 1,
+  "explanation": "7 toq, 10 juft.",
+  "solution": [
+   "n % 2 == 0 — taqqoslash natijasi True yoki False.",
+   "7 % 2 = 1 → False. 10 % 2 = 0 → True.",
+   "Natija: False True"
+  ],
+  "code": "def juftmi(n):\n    return n % 2 == 0\nprint(juftmi(7), juftmi(10))"
+ },
+ {
+  "id": "python-funksiyalar-32",
+  "unit": "python-funksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "Error",
+   "None",
+   "o‘rta",
+   "katta"
+  ],
+  "answer": 1,
+  "explanation": "Hech bir return ishlamadi → None.",
+  "solution": [
+   "x = 1: 1 > 5 yolg‘on, 1 > 2 yolg‘on.",
+   "Hech qaysi return ishlamadi — funksiya oxiriga yetdi.",
+   "Natija: None"
+  ],
+  "code": "def f(x):\n    if x > 5:\n        return 'katta'\n    elif x > 2:\n        return 'o‘rta'\nprint(f(1))"
+ },
+ {
+  "id": "python-funksiyalar-33",
+  "unit": "python-funksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "1-2!\nx-y!",
+   "1-2\nx-y",
+   "1 2!x y!",
+   "1-2!x-y!"
+  ],
+  "answer": 3,
+  "explanation": "sep va end parametrlari.",
+  "solution": [
+   "sep='-' — argumentlar orasiga '-' qo‘yadi; end='!' — oxiriga yangi qator o‘rniga '!'.",
+   "1-chaqiruv: '1-2!', 2-chaqiruv: 'x-y!' — bitta qatorda.",
+   "Natija: 1-2!x-y!"
+  ],
+  "code": "def p(a, b):\n    print(a, b, sep='-', end='!')\np(1, 2)\np('x', 'y')"
+ },
+ {
+  "id": "python-funksiyalar-34",
+  "unit": "python-funksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "6",
+   "36",
+   "21",
+   "9"
+  ],
+  "answer": 2,
+  "explanation": "f(6) = 21.",
+  "solution": [
+   "f(n) = 1 + 2 + … + n.",
+   "f(3) = 6. f(6) = 1 + 2 + … + 6.",
+   "Natija: 21"
+  ],
+  "code": "def f(n):\n    s = 0\n    for i in range(1, n + 1):\n        s += i\n    return s\nprint(f(f(3)))"
+ },
+ {
+  "id": "python-funksiyalar-35",
+  "unit": "python-funksiyalar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "10 6",
+   "7 5",
+   "Error",
+   "10 10"
+  ],
+  "answer": 0,
+  "explanation": "10 va 6.",
+  "solution": [
+   "f(2): b = 5 (default) → 2 · 5 = 10.",
+   "f(2, 3): b = 3 → 2 · 3 = 6.",
+   "Natija: 10 6"
+  ],
+  "code": "def f(a, b=5):\n    return a * b\nprint(f(2), f(2, 3))"
+ },
+ {
+  "id": "python-funksiyalar-36",
+  "unit": "python-funksiyalar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "6",
+   "1",
+   "3",
+   "Error"
+  ],
+  "answer": 0,
+  "explanation": "1 + 2 + 3 = 6.",
+  "solution": [
+   "acc — o‘zgaruvchan default, chaqiruvlar orasida umumiy.",
+   "f('a') → acc = ['a'] → 1. f('b') → 2. f('c') → 3.",
+   "1 + 2 + 3 = 6"
+  ],
+  "code": "def f(x, acc=[]):\n    acc.append(x)\n    return len(acc)\nprint(f('a') + f('b') + f('c'))"
+ },
+ {
+  "id": "python-funksiyalar-37",
+  "unit": "python-funksiyalar",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "18",
+   "Error",
+   "0",
+   "9"
+  ],
+  "answer": 2,
+  "explanation": "9 − 9 = 0.",
+  "solution": [
+   "sq(1, 2) = (1 + 2)² = 9. sq(2, 1) = (2 + 1)² = 9.",
+   "9 − 9.",
+   "Natija: 0"
+  ],
+  "code": "sq = lambda a, b: (a + b) ** 2\nprint(sq(1, 2) - sq(2, 1))"
+ },
+ {
+  "id": "python-funksiyalar-38",
+  "unit": "python-funksiyalar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "1",
+   "3",
+   "2",
+   "Error"
+  ],
+  "answer": 1,
+  "explanation": "nonlocal bilan 3.",
+  "solution": [
+   "nonlocal x — ichki funksiya tashqi (lekin global emas) funksiyaning x ini o‘zgartiradi.",
+   "inner() 2 marta: 1 → 2 → 3.",
+   "Natija: 3"
+  ],
+  "code": "def outer():\n    x = 1\n    def inner():\n        nonlocal x\n        x += 1\n    inner(); inner()\n    return x\nprint(outer())"
+ },
+ {
+  "id": "python-funksiyalar-39",
+  "unit": "python-funksiyalar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "8 1",
+   "8 2",
+   "Error",
+   "5 3"
+  ],
+  "answer": 1,
+  "explanation": "Closure: 8 va 2.",
+  "solution": [
+   "f(5) ichki g funksiyasini qaytaradi va u x = 5 ni «eslab qoladi» (closure).",
+   "add5(3) = 5 + 3 = 8. f(1)(1) = 1 + 1 = 2.",
+   "Natija: 8 2"
+  ],
+  "code": "def f(x):\n    def g(y):\n        return x + y\n    return g\nadd5 = f(5)\nprint(add5(3), f(1)(1))"
+ },
+ {
+  "id": "python-funksiyalar-40",
+  "unit": "python-funksiyalar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "Error",
+   "[2, 2, 2]",
+   "[0, 0, 0]",
+   "[0, 1, 2]"
+  ],
+  "answer": 1,
+  "explanation": "Kech bog‘lanish: hammasi 2.",
+  "solution": [
+   "Lambda i ning QIYMATINI emas, i o‘zgaruvchisini eslab qoladi.",
+   "Lambdalar chaqirilganda sikl allaqachon tugagan, i = 2.",
+   "Natija: [2, 2, 2]"
+  ],
+  "code": "fs = [lambda: i for i in range(3)]\nprint([f() for f in fs])"
+ },
+ {
+  "id": "python-funksiyalar-41",
+  "unit": "python-funksiyalar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "None None",
+   "[1] [2]",
+   "[1, 2] [1, 2]",
+   "[1] [1, 2]"
+  ],
+  "answer": 1,
+  "explanation": "Har safar yangi ro‘yxat.",
+  "solution": [
+   "L=None — to‘g‘ri usul: har chaqiruvda yangi ro‘yxat yaratiladi.",
+   "f(1) → [1], f(2) → [2] (alohida ro‘yxat).",
+   "Natija: [1] [2]"
+  ],
+  "code": "def f(a, L=None):\n    if L is None:\n        L = []\n    L.append(a)\n    return L\nprint(f(1), f(2))"
+ },
+ {
+  "id": "python-funksiyalar-42",
+  "unit": "python-funksiyalar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "1 2 0 3 1 0",
+   "1 0 1 0",
+   "1 0 2 0",
+   "1 2 0 1 0"
+  ],
+  "answer": 1,
+  "explanation": "Qisqa tutashuv: f(2), f(3) chaqirilmaydi.",
+  "solution": [
+   "or: f(1) = 1 rost → f(2) CHAQIRILMAYDI (qisqa tutashuv). Chiqadi: 1. x = 1.",
+   "and: f(0) = 0 yolg‘on → f(3) chaqirilmaydi. Chiqadi: 0. y = 0.",
+   "Natija: 1 0 1 0"
+  ],
+  "code": "def f(n):\n    print(n, end=' ')\n    return n\nx = f(1) or f(2)\ny = f(0) and f(3)\nprint(x, y)"
+ },
+ {
+  "id": "python-funksiyalar-43",
+  "unit": "python-funksiyalar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "10",
+   "9",
+   "5",
+   "8"
+  ],
+  "answer": 0,
+  "explanation": "Dekorator: (4+1)·2 = 10.",
+  "solution": [
+   "@deco — f = deco(f) degani. Endi f(x) = (asl f(x)) · 2.",
+   "Asl f(4) = 5. 5 · 2.",
+   "Natija: 10"
+  ],
+  "code": "def deco(fn):\n    def w(x):\n        return fn(x) * 2\n    return w\n@deco\ndef f(x):\n    return x + 1\nprint(f(4))"
+ },
+ {
+  "id": "python-funksiyalar-44",
+  "unit": "python-funksiyalar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "3",
+   "None",
+   "UnboundLocalError",
+   "5"
+  ],
+  "answer": 2,
+  "explanation": "x mahalliy, lekin hali qiymatsiz → UnboundLocalError.",
+  "solution": [
+   "Funksiya ichida x ga qiymat berilgan (x = 3) → Python butun funksiyada x ni MAHALLIY deb hisoblaydi.",
+   "print(x) vaqtida mahalliy x hali yaratilmagan.",
+   "Natija: UnboundLocalError"
+  ],
+  "code": "x = 5\ndef f():\n    print(x)\n    x = 3\nf()"
+ },
+ {
+  "id": "python-funksiyalar-45",
+  "unit": "python-funksiyalar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "10 0",
+   "10 5",
+   "6 5",
+   "Error"
+  ],
+  "answer": 1,
+  "explanation": "10 va 5.",
+  "solution": [
+   "f(1, 2, 3, c=4): a = 1, b = (2, 3), c = 4 → 1 + 5 + 4 = 10.",
+   "f(5): a = 5, b = (), c = 0 → 5.",
+   "Natija: 10 5"
+  ],
+  "code": "def f(a, *b, c=0):\n    return a + sum(b) + c\nprint(f(1, 2, 3, c=4), f(5))"
+ },
+ {
+  "id": "python-funksiyalar-46",
+  "unit": "python-funksiyalar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "[0, 1, 2, 3, 4, 5]",
+   "[1, 2, 3, 6]",
+   "[2, 3]",
+   "[0, 1, 2, 5]"
+  ],
+  "answer": 3,
+  "explanation": "i + 1 bo‘luvchi bo‘lgan i lar.",
+  "solution": [
+   "i = 0..5; n % (i + 1) == 0 — i + 1 soni 6 ning bo‘luvchisi.",
+   "Bo‘luvchilar 1, 2, 3, 6 → i = 0, 1, 2, 5.",
+   "Natija: [0, 1, 2, 5]"
+  ],
+  "code": "def g(n):\n    return [i for i in range(n) if n % (i + 1) == 0]\nprint(g(6))"
+ },
+ {
+  "id": "python-funksiyalar-47",
+  "unit": "python-funksiyalar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "6",
+   "10",
+   "4",
+   "Error"
+  ],
+  "answer": 1,
+  "explanation": "Default — o‘sha ro‘yxat obyekti: 10.",
+  "solution": [
+   "Default qiymat x=a funksiya yaratilganda HISOBLANADI — u a ro‘yxat obyektining o‘ziga havola.",
+   "a.append(4) o‘sha obyektni o‘zgartiradi → default ham [1, 2, 3, 4].",
+   "Natija: 10"
+  ],
+  "code": "a = [1, 2, 3]\ndef f(x=a):\n    return sum(x)\na.append(4)\nprint(f())"
+ },
+ {
+  "id": "python-funksiyalar-48",
+  "unit": "python-funksiyalar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "24",
+   "987",
+   "7",
+   "15"
+  ],
+  "answer": 0,
+  "explanation": "Raqamlar yig‘indisi: 24.",
+  "solution": [
+   "Bu rekursiv funksiya raqamlarni qo‘shadi, lekin oxirgi qadamda x < 10 bo‘lsa x ning o‘zini qaytaradi.",
+   "f(987) = f(98) + 7 = (f(9) + 8) + 7 = 9 + 8 + 7.",
+   "Natija: 24"
+  ],
+  "code": "def f(x):\n    return x if x < 10 else f(x // 10) + x % 10\nprint(f(987))"
+ },
+ {
+  "id": "python-funksiyalar-49",
+  "unit": "python-funksiyalar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "13",
+   "31",
+   "33",
+   "40"
+  ],
+  "answer": 1,
+  "explanation": "f(g(3)) = 30 + 1 = 31.",
+  "solution": [
+   "compose(f, g)(x) = f(g(x)). Avval g, keyin f.",
+   "g(3) = 30, f(30) = 31.",
+   "Natija: 31"
+  ],
+  "code": "compose = lambda f, g: lambda x: f(g(x))\nh = compose(lambda x: x + 1, lambda x: x * 10)\nprint(h(3))"
+ },
+ {
+  "id": "python-funksiyalar-50",
+  "unit": "python-funksiyalar",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagi kod natijasini toping:",
+  "options": [
+   "finally",
+   "try finally",
+   "try",
+   "finally try"
+  ],
+  "answer": 3,
+  "explanation": "finally return dan oldin ishlaydi.",
+  "solution": [
+   "finally bloki return bo‘lsa ham DOIM bajariladi — funksiya qaytishidan oldin.",
+   "Avval 'finally ' chiqadi, keyin print(f()) natijasi 'try'.",
+   "Natija: finally try"
+  ],
+  "code": "def f():\n    try:\n        return 'try'\n    finally:\n        print('finally', end=' ')\nprint(f())"
+ }
+]

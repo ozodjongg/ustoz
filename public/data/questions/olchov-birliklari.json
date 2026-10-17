@@ -1,0 +1,1010 @@
+[
+ {
+  "id": "olchov-birliklari-01",
+  "unit": "olchov-birliklari",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "1 bayt necha bitga teng?",
+  "options": [
+   "16",
+   "10",
+   "1024",
+   "8"
+  ],
+  "answer": 3,
+  "explanation": "1 bayt = 8 bit.",
+  "solution": [
+   "Bit — eng kichik axborot birligi (0 yoki 1).",
+   "8 ta bit birlashib 1 baytni tashkil qiladi.",
+   "Javob: 8"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-02",
+  "unit": "olchov-birliklari",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "1 kilobayt (KB) necha baytga teng?",
+  "options": [
+   "1024",
+   "8",
+   "100",
+   "1000"
+  ],
+  "answer": 0,
+  "explanation": "1 KB = 1024 bayt.",
+  "solution": [
+   "Informatikada birliklar 2¹⁰ = 1024 marta kattalashadi.",
+   "1 KB = 2¹⁰ bayt.",
+   "Javob: 1024"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-03",
+  "unit": "olchov-birliklari",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi o‘lchov birliklaridan eng kichigini toping.",
+  "options": [
+   "PB",
+   "ZB",
+   "EB",
+   "YB"
+  ],
+  "answer": 0,
+  "explanation": "KB < MB < GB < TB < PB < EB < ZB < YB.",
+  "solution": [
+   "Tartib (kichikdan kattaga): KB, MB, GB, TB, PB, EB, ZB, YB.",
+   "Variantlar ichida eng chapda turgani PB.",
+   "Javob: PB"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-04",
+  "unit": "olchov-birliklari",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagilardan eng katta o‘lchov birligini toping.",
+  "options": [
+   "KB",
+   "MB",
+   "GB",
+   "TB"
+  ],
+  "answer": 3,
+  "explanation": "TB eng katta.",
+  "solution": [
+   "Tartib: KB < MB < GB < TB.",
+   "Har biri oldingisidan 1024 marta katta.",
+   "Javob: TB"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-05",
+  "unit": "olchov-birliklari",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Axborotning eng kichik o‘lchov birligi qaysi?",
+  "options": [
+   "kilobayt",
+   "bit",
+   "belgi",
+   "bayt"
+  ],
+  "answer": 1,
+  "explanation": "Eng kichik birlik — bit.",
+  "solution": [
+   "Bit — bitta ikkilik raqam: 0 yoki 1.",
+   "Undan kichik birlik yo‘q.",
+   "Javob: bit"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-06",
+  "unit": "olchov-birliklari",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "2 KB necha baytga teng?",
+  "options": [
+   "1024",
+   "16",
+   "2000",
+   "2048"
+  ],
+  "answer": 3,
+  "explanation": "2·1024 = 2048 bayt.",
+  "solution": [
+   "1 KB = 1024 bayt.",
+   "2 · 1024",
+   "Javob: 2048"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-07",
+  "unit": "olchov-birliklari",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "1 MB necha KB ga teng?",
+  "options": [
+   "1048576",
+   "8",
+   "1024",
+   "1000"
+  ],
+  "answer": 2,
+  "explanation": "1 MB = 1024 KB.",
+  "solution": [
+   "Har bir keyingi birlik oldingisidan 1024 marta katta.",
+   "1 MB = 1024 KB.",
+   "Javob: 1024"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-08",
+  "unit": "olchov-birliklari",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "32 bit necha baytga teng?",
+  "options": [
+   "32",
+   "256",
+   "4",
+   "8"
+  ],
+  "answer": 2,
+  "explanation": "32 : 8 = 4 bayt.",
+  "solution": [
+   "Bitdan baytga o‘tish uchun 8 ga bo‘lamiz.",
+   "32 : 8 = 4.",
+   "Javob: 4"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-09",
+  "unit": "olchov-birliklari",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "«Kb» va «KB» belgilari nimani bildiradi?",
+  "options": [
+   "ikkalasi ham kilobit",
+   "Kb — kilobit, KB — kilobayt",
+   "Kb — kilobayt, KB — kilobit",
+   "ikkalasi ham kilobayt"
+  ],
+  "answer": 1,
+  "explanation": "b = bit, B = bayt.",
+  "solution": [
+   "Kichik «b» — bit, katta «B» — bayt (byte).",
+   "Demak Kb = kilobit, KB = kilobayt; 1 KB = 8 Kb.",
+   "Javob: Kb — kilobit, KB — kilobayt"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-10",
+  "unit": "olchov-birliklari",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "3 bayt necha bitga teng?",
+  "options": [
+   "24",
+   "3",
+   "12",
+   "30"
+  ],
+  "answer": 0,
+  "explanation": "3·8 = 24 bit.",
+  "solution": [
+   "1 bayt = 8 bit.",
+   "3 · 8",
+   "Javob: 24"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-11",
+  "unit": "olchov-birliklari",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "1 GB necha MB ga teng?",
+  "options": [
+   "1024",
+   "1000",
+   "8",
+   "100"
+  ],
+  "answer": 0,
+  "explanation": "1 GB = 1024 MB.",
+  "solution": [
+   "GB MB dan bir pog‘ona yuqori.",
+   "1 GB = 1024 MB.",
+   "Javob: 1024"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-12",
+  "unit": "olchov-birliklari",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "4096 bayt necha KB ga teng?",
+  "options": [
+   "32",
+   "4,096",
+   "40",
+   "4"
+  ],
+  "answer": 3,
+  "explanation": "4096 : 1024 = 4 KB.",
+  "solution": [
+   "Baytdan KB ga o‘tish uchun 1024 ga bo‘lamiz.",
+   "4096 : 1024 = 4.",
+   "Javob: 4"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-13",
+  "unit": "olchov-birliklari",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "1 KB necha bitga teng?",
+  "options": [
+   "8192",
+   "1024",
+   "1000",
+   "8000"
+  ],
+  "answer": 0,
+  "explanation": "1024·8 = 8192 bit.",
+  "solution": [
+   "1 KB = 1024 bayt, 1 bayt = 8 bit.",
+   "1024 · 8",
+   "Javob: 8192"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-14",
+  "unit": "olchov-birliklari",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "TB (terabayt) dan keyin keladigan (1024 marta katta) birlik qaysi?",
+  "options": [
+   "ZB (zettabayt)",
+   "GB (gigabayt)",
+   "PB (petabayt)",
+   "EB (eksabayt)"
+  ],
+  "answer": 2,
+  "explanation": "TB dan keyin PB.",
+  "solution": [
+   "Ketma-ketlik: … GB, TB, PB, EB, ZB, YB.",
+   "TB dan keyin bevosita PB keladi.",
+   "Javob: PB (petabayt)"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-15",
+  "unit": "olchov-birliklari",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Bitta ikkilik raqam (0 yoki 1) qancha axborot saqlaydi?",
+  "options": [
+   "1 bit",
+   "8 bit",
+   "1 bayt",
+   "2 bit"
+  ],
+  "answer": 0,
+  "explanation": "Bir ikkilik raqam = 1 bit.",
+  "solution": [
+   "Bitta ikkilik raqam ikki holatdan birini bildiradi.",
+   "Bu axborot birligi — bit.",
+   "Javob: 1 bit"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-16",
+  "unit": "olchov-birliklari",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "16 bit necha baytga teng?",
+  "options": [
+   "128",
+   "4",
+   "2",
+   "16"
+  ],
+  "answer": 2,
+  "explanation": "16 : 8 = 2 bayt.",
+  "solution": [
+   "16 : 8 = 2.",
+   "Ya’ni 2 ta bayt.",
+   "Javob: 2"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-17",
+  "unit": "olchov-birliklari",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyida keltirilgan qiymatlardan eng kattasini toping.",
+  "options": [
+   "1300 MB",
+   "10 Gb",
+   "1 GB",
+   "1048576 KB"
+  ],
+  "answer": 0,
+  "explanation": "1300 MB > 1280 MB (10 Gb) > 1024 MB.",
+  "solution": [
+   "Hammasini MB ga keltiramiz.",
+   "10 Gb = 10·1024 Mb = 10240 Mb = 10240 : 8 MB = 1280 MB.",
+   "1 GB = 1024 MB. 1048576 KB = 1048576 : 1024 = 1024 MB.",
+   "Eng kattasi: 1300 MB"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-18",
+  "unit": "olchov-birliklari",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "To‘g‘ri keltirilgan ma’lumotni toping.",
+  "options": [
+   "1024 ZB = 1 PB",
+   "8 Mb = 1024 KB",
+   "8192 bit = 1 Kb",
+   "1500 GB = 1,5 TB"
+  ],
+  "answer": 1,
+  "explanation": "8 Mbit = 1 MB = 1024 KB.",
+  "solution": [
+   "8192 bit = 1024 bayt = 1 KB (kilobayt, kilobit emas) ✘.",
+   "1024 PB = 1 EB, 1024 EB = 1 ZB — 1024 ZB = 1 YB ✘. 1,5 TB = 1536 GB ✘.",
+   "8 Mb = 8 megabit = 1 MB = 1024 KB ✔.",
+   "Javob: 8 Mb = 1024 KB"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-19",
+  "unit": "olchov-birliklari",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "2²⁰ bayt nechaga teng?",
+  "options": [
+   "1 MB",
+   "1 KB",
+   "1 GB",
+   "20 KB"
+  ],
+  "answer": 0,
+  "explanation": "2²⁰ bayt = 1024 KB = 1 MB.",
+  "solution": [
+   "2¹⁰ bayt = 1 KB.",
+   "2²⁰ = 2¹⁰ · 2¹⁰ bayt = 1024 KB.",
+   "Javob: 1 MB"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-20",
+  "unit": "olchov-birliklari",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "1 MB necha bitga teng? (2 ning darajasi ko‘rinishida)",
+  "options": [
+   "2²³",
+   "2³⁰",
+   "2¹³",
+   "2²⁰"
+  ],
+  "answer": 0,
+  "explanation": "2²⁰ · 2³ = 2²³ bit.",
+  "solution": [
+   "1 MB = 2²⁰ bayt.",
+   "1 bayt = 8 = 2³ bit.",
+   "2²⁰ · 2³ = 2²³"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-21",
+  "unit": "olchov-birliklari",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Qaysi qiymat eng kichik?",
+  "options": [
+   "8200 bit",
+   "1000 bayt",
+   "0,001 MB",
+   "1 KB"
+  ],
+  "answer": 1,
+  "explanation": "1000 bayt < 1024 bayt < 1025 bayt < 1048,6 bayt.",
+  "solution": [
+   "Hammasini baytga keltiramiz.",
+   "1 KB = 1024 bayt. 8200 bit = 1025 bayt. 0,001 MB = 0,001·1048576 ≈ 1048,6 bayt.",
+   "Eng kichigi: 1000 bayt"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-22",
+  "unit": "olchov-birliklari",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "512 KB necha MB ga teng?",
+  "options": [
+   "0,512",
+   "2",
+   "0,5",
+   "5,12"
+  ],
+  "answer": 2,
+  "explanation": "512/1024 = 0,5 MB.",
+  "solution": [
+   "KB dan MB ga: 1024 ga bo‘lamiz.",
+   "512 : 1024 = 0,5.",
+   "Javob: 0,5"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-23",
+  "unit": "olchov-birliklari",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "3 MB necha KB ga teng?",
+  "options": [
+   "24576",
+   "3072",
+   "24",
+   "3000"
+  ],
+  "answer": 1,
+  "explanation": "3·1024 = 3072 KB.",
+  "solution": [
+   "1 MB = 1024 KB.",
+   "3 · 1024",
+   "Javob: 3072"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-24",
+  "unit": "olchov-birliklari",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "64 Kb (kilobit) necha KB (kilobayt) ga teng?",
+  "options": [
+   "64",
+   "8",
+   "512",
+   "0,5"
+  ],
+  "answer": 1,
+  "explanation": "64 Kb : 8 = 8 KB.",
+  "solution": [
+   "1 KB = 8 Kb.",
+   "64 : 8 = 8.",
+   "Javob: 8"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-25",
+  "unit": "olchov-birliklari",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagi tengliklardan qaysi biri NOTO‘G‘RI?",
+  "options": [
+   "1 bayt = 8 bit",
+   "1 KB = 2¹⁰ bayt",
+   "1 GB = 1024 KB",
+   "1 TB = 1024 GB"
+  ],
+  "answer": 2,
+  "explanation": "1 GB = 1 048 576 KB.",
+  "solution": [
+   "1 GB = 1024 MB = 1024·1024 KB, ya’ni 1 048 576 KB.",
+   "Shuning uchun «1 GB = 1024 KB» noto‘g‘ri, qolganlari to‘g‘ri.",
+   "Javob: 1 GB = 1024 KB"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-26",
+  "unit": "olchov-birliklari",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "1,5 KB necha bitga teng?",
+  "options": [
+   "12000",
+   "1500",
+   "12288",
+   "1536"
+  ],
+  "answer": 2,
+  "explanation": "1536 bayt · 8 = 12288 bit.",
+  "solution": [
+   "1,5 KB = 1,5 · 1024 = 1536 bayt.",
+   "1536 · 8",
+   "Javob: 12288"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-27",
+  "unit": "olchov-birliklari",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Fleshkada 16 GB joy bor. Unga har biri 512 MB bo‘lgan nechta film sig‘adi?",
+  "options": [
+   "31",
+   "3",
+   "32",
+   "16"
+  ],
+  "answer": 2,
+  "explanation": "16384 : 512 = 32 ta.",
+  "solution": [
+   "16 GB = 16 · 1024 MB = 16384 MB.",
+   "16384 : 512",
+   "Javob: 32"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-28",
+  "unit": "olchov-birliklari",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Qaysi yozuvda birliklar kichikdan kattaga qarab to‘g‘ri joylashgan?",
+  "options": [
+   "bit, KB, bayt, MB, GB",
+   "bayt, bit, KB, GB, MB",
+   "bit, bayt, KB, MB, GB",
+   "KB, bit, bayt, MB, GB"
+  ],
+  "answer": 2,
+  "explanation": "bit < bayt < KB < MB < GB.",
+  "solution": [
+   "Eng kichigi bit, keyin bayt (8 bit), keyin KB, MB, GB.",
+   "Har bir pog‘ona 1024 marta (bit → bayt esa 8 marta) katta.",
+   "Javob: bit, bayt, KB, MB, GB"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-29",
+  "unit": "olchov-birliklari",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "2¹⁶ bit necha KB ga teng?",
+  "options": [
+   "2",
+   "64",
+   "16",
+   "8"
+  ],
+  "answer": 3,
+  "explanation": "2¹⁶ bit = 2¹³ bayt = 2³ KB = 8 KB.",
+  "solution": [
+   "2¹⁶ bit : 8 = 2¹⁶ : 2³ = 2¹³ bayt.",
+   "2¹³ bayt : 2¹⁰ = 2³ KB.",
+   "Javob: 8"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-30",
+  "unit": "olchov-birliklari",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Hajmi 2,5 MB bo‘lgan faylni necha KB deb yozish mumkin?",
+  "options": [
+   "2560",
+   "25",
+   "20480",
+   "2500"
+  ],
+  "answer": 0,
+  "explanation": "2,5·1024 = 2560 KB.",
+  "solution": [
+   "2,5 · 1024 = 2560.",
+   "Ya’ni 2,5 MB = 2560 KB.",
+   "Javob: 2560"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-31",
+  "unit": "olchov-birliklari",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Qaysi juftlikdagi qiymatlar teng?",
+  "options": [
+   "1 GB va 1000 MB",
+   "1 MB va 8 Mb",
+   "1 KB va 1000 bayt",
+   "1 bayt va 10 bit"
+  ],
+  "answer": 1,
+  "explanation": "1 MB = 8 Mb.",
+  "solution": [
+   "1 MB = 8 Mb (1 bayt = 8 bit bo‘lgani kabi) ✔.",
+   "1 KB = 1024 bayt; 1 GB = 1024 MB; 1 bayt = 8 bit.",
+   "Javob: 1 MB va 8 Mb"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-32",
+  "unit": "olchov-birliklari",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Matnli hujjat 6 KB hajmga ega. Har bir belgi 1 bayt bo‘lsa, hujjatda nechta belgi bor?",
+  "options": [
+   "768",
+   "6000",
+   "6144",
+   "49152"
+  ],
+  "answer": 2,
+  "explanation": "6·1024 = 6144 belgi.",
+  "solution": [
+   "6 KB = 6 · 1024 bayt = 6144 bayt.",
+   "Har belgi 1 bayt → belgilar soni baytlar soniga teng.",
+   "Javob: 6144"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-33",
+  "unit": "olchov-birliklari",
+  "difficulty": "medium",
+  "points": 1.7,
+  "prompt": "Quyidagilardan qaysi biri 1 GB dan KATTA?",
+  "options": [
+   "1025 MB",
+   "1024 MB",
+   "1 048 576 KB",
+   "8 Gb"
+  ],
+  "answer": 0,
+  "explanation": "Faqat 1025 MB 1 GB dan katta.",
+  "solution": [
+   "1 GB = 1024 MB = 1 048 576 KB.",
+   "8 Gb = 8/8 GB = 1 GB — teng. 1024 MB — teng. 1025 MB — 1 MB ga katta.",
+   "Javob: 1025 MB"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-34",
+  "unit": "olchov-birliklari",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Kompyuterda bitta lotin harfi (ASCII) odatda necha bayt joy egallaydi?",
+  "options": [
+   "8",
+   "2",
+   "4",
+   "1"
+  ],
+  "answer": 3,
+  "explanation": "ASCII belgi = 8 bit = 1 bayt.",
+  "solution": [
+   "ASCII jadvalida har bir belgi 8 bit bilan kodlanadi.",
+   "8 bit = 1 bayt.",
+   "Javob: 1"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-35",
+  "unit": "olchov-birliklari",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Hajmi 3/8 KB bo‘lgan axborot necha bitga teng?",
+  "options": [
+   "24",
+   "384",
+   "375",
+   "3072"
+  ],
+  "answer": 3,
+  "explanation": "3/8 · 8192 = 3072 bit.",
+  "solution": [
+   "1 KB = 1024 bayt = 8192 bit.",
+   "3/8 · 8192 = 3 · 1024",
+   "Javob: 3072"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-36",
+  "unit": "olchov-birliklari",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Qiymatlarni o‘sish tartibida joylashtiring: a) 2¹³ bit; b) 1 KB; c) 1025 bayt; d) 8 Kb.",
+  "options": [
+   "b < a = d < c",
+   "d < a < b < c",
+   "a = b = d < c",
+   "a < b < c < d"
+  ],
+  "answer": 2,
+  "explanation": "a, b, d — 1024 bayt; c — 1025 bayt.",
+  "solution": [
+   "a) 2¹³ bit = 8192 bit = 1024 bayt. b) 1 KB = 1024 bayt.",
+   "d) 8 Kb = 8·1024 bit = 8192 bit = 1024 bayt. c) 1025 bayt.",
+   "Demak a, b, d teng (1024 bayt), c esa katta.",
+   "Javob: a = b = d < c"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-37",
+  "unit": "olchov-birliklari",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "x ni toping: 16ˣ bit = 32 MB.",
+  "options": [
+   "7",
+   "6",
+   "5",
+   "8"
+  ],
+  "answer": 0,
+  "explanation": "2⁴ˣ = 2²⁸ → x = 7.",
+  "solution": [
+   "32 MB = 2⁵ · 2²⁰ bayt = 2²⁵ bayt = 2²⁵ · 2³ bit = 2²⁸ bit.",
+   "16ˣ = 2⁴ˣ. 4x = 28.",
+   "x = 7"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-38",
+  "unit": "olchov-birliklari",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "8ˣ bit = 4 KB tengligidan x ni toping.",
+  "options": [
+   "6",
+   "5",
+   "4",
+   "3"
+  ],
+  "answer": 1,
+  "explanation": "2³ˣ = 2¹⁵ → x = 5.",
+  "solution": [
+   "4 KB = 2² · 2¹⁰ bayt = 2¹² bayt = 2¹⁵ bit.",
+   "8ˣ = 2³ˣ → 3x = 15.",
+   "x = 5"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-39",
+  "unit": "olchov-birliklari",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "1 YB (yottabayt) necha GB ga teng?",
+  "options": [
+   "2⁴⁰",
+   "2⁶⁰",
+   "2⁵⁰",
+   "2⁸⁰"
+  ],
+  "answer": 2,
+  "explanation": "GB → YB: 5 pog‘ona → 2⁵⁰.",
+  "solution": [
+   "GB dan keyin: TB, PB, EB, ZB, YB — bu 5 ta pog‘ona.",
+   "Har pog‘ona 2¹⁰ marta: (2¹⁰)⁵ = 2⁵⁰.",
+   "Javob: 2⁵⁰"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-40",
+  "unit": "olchov-birliklari",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "1 PB necha MB ga teng?",
+  "options": [
+   "2⁵⁰",
+   "2⁴⁰",
+   "2³⁰",
+   "2²⁰"
+  ],
+  "answer": 2,
+  "explanation": "3 pog‘ona → 2³⁰ MB.",
+  "solution": [
+   "MB → GB → TB → PB: 3 ta pog‘ona.",
+   "(2¹⁰)³ = 2³⁰.",
+   "Javob: 2³⁰"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-41",
+  "unit": "olchov-birliklari",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Qattiq diskda 1 TB joy bor. Uning 3/4 qismi band. Bo‘sh joy necha GB?",
+  "options": [
+   "512",
+   "768",
+   "250",
+   "256"
+  ],
+  "answer": 3,
+  "explanation": "1024/4 = 256 GB.",
+  "solution": [
+   "1 TB = 1024 GB.",
+   "Bo‘sh qism: 1 − 3/4 = 1/4. 1024 · 1/4",
+   "Javob: 256"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-42",
+  "unit": "olchov-birliklari",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "2³⁵ bit necha GB ga teng?",
+  "options": [
+   "32",
+   "4",
+   "8",
+   "2"
+  ],
+  "answer": 1,
+  "explanation": "2³² bayt = 4 GB.",
+  "solution": [
+   "2³⁵ bit : 2³ = 2³² bayt.",
+   "1 GB = 2³⁰ bayt → 2³² : 2³⁰ = 2² GB.",
+   "Javob: 4"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-43",
+  "unit": "olchov-birliklari",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Ikki fayl bor: birinchisi 3 MB, ikkinchisi 20 Mb. Ular birgalikda necha KB?",
+  "options": [
+   "5633",
+   "7168",
+   "23552",
+   "5632"
+  ],
+  "answer": 3,
+  "explanation": "3072 + 2560 = 5632 KB.",
+  "solution": [
+   "Birinchi fayl: 3 MB = 3·1024 = 3072 KB.",
+   "Ikkinchi: 20 Mb = 20/8 MB = 2,5 MB = 2560 KB.",
+   "3072 + 2560",
+   "Javob: 5632"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-44",
+  "unit": "olchov-birliklari",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Quyidagilardan qaysi biri 2⁴³ bitga teng?",
+  "options": [
+   "1 PB",
+   "8 TB",
+   "1 GB",
+   "1 TB"
+  ],
+  "answer": 3,
+  "explanation": "2⁴⁰ bayt = 1 TB.",
+  "solution": [
+   "2⁴³ bit : 2³ = 2⁴⁰ bayt.",
+   "2⁴⁰ bayt = 2¹⁰ GB = 1 TB.",
+   "Javob: 1 TB"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-45",
+  "unit": "olchov-birliklari",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "n ning qanday qiymatida 2ⁿ KB = 1 GB bo‘ladi?",
+  "options": [
+   "23",
+   "10",
+   "30",
+   "20"
+  ],
+  "answer": 3,
+  "explanation": "1 GB = 2²⁰ KB.",
+  "solution": [
+   "1 GB = 2³⁰ bayt, 1 KB = 2¹⁰ bayt.",
+   "1 GB = 2³⁰ : 2¹⁰ = 2²⁰ KB.",
+   "n = 20"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-46",
+  "unit": "olchov-birliklari",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "128 Mb + 16 MB + 2¹⁷ KB yig‘indini MB da hisoblang.",
+  "options": [
+   "272",
+   "160",
+   "144",
+   "48"
+  ],
+  "answer": 1,
+  "explanation": "16 + 16 + 128 = 160 MB.",
+  "solution": [
+   "128 Mb = 128 : 8 = 16 MB.",
+   "2¹⁷ KB = 2¹⁷ : 2¹⁰ = 2⁷ = 128 MB.",
+   "16 + 16 + 128",
+   "Javob: 160"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-47",
+  "unit": "olchov-birliklari",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Qaysi tenglik to‘g‘ri?",
+  "options": [
+   "1 ZB = 2⁷⁰ bayt",
+   "1 PB = 2⁶⁰ bayt",
+   "1 EB = 2⁵⁰ bayt",
+   "1 YB = 2⁷⁰ bayt"
+  ],
+  "answer": 0,
+  "explanation": "ZB = 2⁷⁰ bayt.",
+  "solution": [
+   "Darajalar: KB = 2¹⁰, MB = 2²⁰, GB = 2³⁰, TB = 2⁴⁰, PB = 2⁵⁰, EB = 2⁶⁰, ZB = 2⁷⁰, YB = 2⁸⁰ bayt.",
+   "Faqat ZB = 2⁷⁰ to‘g‘ri yozilgan.",
+   "Javob: 1 ZB = 2⁷⁰ bayt"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-48",
+  "unit": "olchov-birliklari",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Telefonda 64 GB xotira bor. Har bir surat 4 MB. Agar xotiraning 50% i surat uchun ajratilsa, nechta surat sig‘adi?",
+  "options": [
+   "4096",
+   "16384",
+   "8000",
+   "8192"
+  ],
+  "answer": 3,
+  "explanation": "32768 MB : 4 MB = 8192 ta.",
+  "solution": [
+   "64 GB = 64·1024 = 65536 MB.",
+   "50% i: 32768 MB.",
+   "32768 : 4",
+   "Javob: 8192"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-49",
+  "unit": "olchov-birliklari",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Axborot hajmlari: X = 2¹⁰ Kb, Y = 2⁷ KB, Z = 2²⁰ bit. Qaysi tenglik to‘g‘ri?",
+  "options": [
+   "X = Z < Y",
+   "Y < X = Z",
+   "X < Y < Z",
+   "X = Y = Z"
+  ],
+  "answer": 3,
+  "explanation": "Uchalasi ham 2²⁰ bit.",
+  "solution": [
+   "X = 2¹⁰ Kb = 2¹⁰·2¹⁰ bit = 2²⁰ bit.",
+   "Y = 2⁷ KB = 2⁷·2¹⁰·2³ bit = 2²⁰ bit.",
+   "Z = 2²⁰ bit.",
+   "Javob: X = Y = Z"
+  ]
+ },
+ {
+  "id": "olchov-birliklari-50",
+  "unit": "olchov-birliklari",
+  "difficulty": "hard",
+  "points": 2.4,
+  "prompt": "Ikkilik prefiks bo‘yicha 1 KiB = 1024 bayt, o‘nlik bo‘yicha 1 kB = 1000 bayt. Disk ishlab chiqaruvchisi «500 GB» (o‘nlik) deb yozgan. Kompyuter uni taxminan necha GiB (ikkilik) deb ko‘rsatadi?",
+  "options": [
+   "≈ 488,3",
+   "500",
+   "≈ 465,7",
+   "≈ 512"
+  ],
+  "answer": 2,
+  "explanation": "500·10⁹ / 2³⁰ ≈ 465,7 GiB.",
+  "solution": [
+   "500 GB (o‘nlik) = 500 · 10⁹ bayt.",
+   "1 GiB = 2³⁰ = 1 073 741 824 bayt.",
+   "500 000 000 000 : 1 073 741 824 ≈ 465,7",
+   "Javob: ≈ 465,7"
+  ]
+ }
+]
