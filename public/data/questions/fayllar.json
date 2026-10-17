@@ -1,0 +1,1004 @@
+[
+ {
+  "id": "fayllar-01",
+  "unit": "fayllar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Qaysi fayl maskasi har qanday nom va har qanday kengaytmaga ega fayllarni bildiradi?",
+  "options": [
+   "*.*",
+   "*.txt",
+   "*.docx",
+   "?.txt"
+  ],
+  "answer": 0,
+  "explanation": "*.* — barcha fayllar.",
+  "solution": [
+   "* — istalgan sondagi (0 ham) istalgan belgilar.",
+   "*.* — nomi ham, kengaytmasi ham istalgancha.",
+   "Javob: *.*"
+  ]
+ },
+ {
+  "id": "fayllar-02",
+  "unit": "fayllar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Fayl maskasida «?» belgisi nimani bildiradi?",
+  "options": [
+   "Aynan bitta istalgan belgini",
+   "Istalgan sondagi belgilarni",
+   "Faqat raqamni",
+   "Faqat harfni"
+  ],
+  "answer": 0,
+  "explanation": "? — bitta belgi.",
+  "solution": [
+   "? — joyida AYNAN BITTA belgi bo‘lishi shart (har qanday).",
+   "* esa 0 yoki ko‘p belgi.",
+   "Javob: Aynan bitta istalgan belgini"
+  ]
+ },
+ {
+  "id": "fayllar-03",
+  "unit": "fayllar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Fayl maskasida «*» belgisi nimani bildiradi?",
+  "options": [
+   "Istalgan sondagi (0 ham) istalgan belgilarni",
+   "Faqat bitta harfni",
+   "Yulduzcha belgisining o‘zini",
+   "Aynan bitta belgini"
+  ],
+  "answer": 0,
+  "explanation": "* — 0 yoki ko‘p belgi.",
+  "solution": [
+   "* — «nima bo‘lsa ham, qancha bo‘lsa ham».",
+   "Hatto bo‘sh (0 ta belgi) ham bo‘ladi.",
+   "Javob: Istalgan sondagi (0 ham) istalgan belgilarni"
+  ]
+ },
+ {
+  "id": "fayllar-04",
+  "unit": "fayllar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kengaytmalardan qaysi biri faqat ovoz (audio) fayliga tegishli?",
+  "options": [
+   ".avi",
+   ".wav",
+   ".mp4",
+   ".mov"
+  ],
+  "answer": 1,
+  "explanation": ".wav — audio.",
+  "solution": [
+   ".wav — audio formati.",
+   ".mp4, .avi, .mov — video formatlar (ichida ovoz ham bo‘lishi mumkin).",
+   "Javob: .wav"
+  ]
+ },
+ {
+  "id": "fayllar-05",
+  "unit": "fayllar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi fayllardan qaysi biri video fayl hisoblanadi?",
+  "options": [
+   ".aac",
+   ".wav",
+   ".mkv",
+   ".flac"
+  ],
+  "answer": 2,
+  "explanation": ".mkv — video.",
+  "solution": [
+   ".mkv — video konteyner.",
+   ".wav, .aac, .flac — audio formatlar.",
+   "Javob: .mkv"
+  ]
+ },
+ {
+  "id": "fayllar-06",
+  "unit": "fayllar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Qaysi kengaytma rasm (grafik) fayliga tegishli?",
+  "options": [
+   ".docx",
+   ".exe",
+   ".png",
+   ".mp3"
+  ],
+  "answer": 2,
+  "explanation": ".png — rasm.",
+  "solution": [
+   ".png, .jpg, .gif, .bmp — rasm formatlari.",
+   ".mp3 — audio, .docx — Word hujjati, .exe — dastur.",
+   "Javob: .png"
+  ]
+ },
+ {
+  "id": "fayllar-07",
+  "unit": "fayllar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Qaysi kengaytma matnli hujjat (Word) fayliga tegishli?",
+  "options": [
+   ".xlsx",
+   ".jpg",
+   ".docx",
+   ".pptx"
+  ],
+  "answer": 2,
+  "explanation": ".docx — Word.",
+  "solution": [
+   ".docx — Word, .xlsx — Excel, .pptx — PowerPoint.",
+   ".jpg — rasm.",
+   "Javob: .docx"
+  ]
+ },
+ {
+  "id": "fayllar-08",
+  "unit": "fayllar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Qaysi kengaytma elektron jadval (Excel) fayliga tegishli?",
+  "options": [
+   ".txt",
+   ".mp4",
+   ".xlsx",
+   ".docx"
+  ],
+  "answer": 2,
+  "explanation": ".xlsx — Excel.",
+  "solution": [
+   ".xlsx — Excel jadvali (eski formati .xls).",
+   ".docx — Word, .txt — oddiy matn, .mp4 — video.",
+   "Javob: .xlsx"
+  ]
+ },
+ {
+  "id": "fayllar-09",
+  "unit": "fayllar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Qaysi kengaytma arxiv (siqilgan) fayliga tegishli?",
+  "options": [
+   ".pdf",
+   ".py",
+   ".zip",
+   ".html"
+  ],
+  "answer": 2,
+  "explanation": ".zip — arxiv.",
+  "solution": [
+   ".zip, .rar, .7z — arxivlar.",
+   ".pdf — hujjat, .html — veb-sahifa, .py — Python dasturi.",
+   "Javob: .zip"
+  ]
+ },
+ {
+  "id": "fayllar-10",
+  "unit": "fayllar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Windows da bajariluvchi (dastur) fayl kengaytmasi qaysi?",
+  "options": [
+   ".exe",
+   ".bmp",
+   ".txt",
+   ".wav"
+  ],
+  "answer": 0,
+  "explanation": ".exe — dastur.",
+  "solution": [
+   ".exe — executable (bajariladigan) fayl.",
+   "Uni ishga tushirsangiz dastur ochiladi.",
+   "Javob: .exe"
+  ]
+ },
+ {
+  "id": "fayllar-11",
+  "unit": "fayllar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "«otchet.2025.final.docx» fayl nomida kengaytma qaysi?",
+  "options": [
+   "docx",
+   "otchet",
+   "final",
+   "2025"
+  ],
+  "answer": 0,
+  "explanation": "Oxirgi nuqtadan keyingi qism.",
+  "solution": [
+   "Kengaytma — OXIRGI nuqtadan keyingi qism.",
+   "Oxirgi nuqtadan keyin «docx».",
+   "Javob: docx"
+  ]
+ },
+ {
+  "id": "fayllar-12",
+  "unit": "fayllar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagilardan qaysi biri to‘liq (absolyut) fayl yo‘li?",
+  "options": [
+   "kinolar\\film.mp4",
+   "D:\\Fayllar\\photo.jpg",
+   "..\\rasm.png",
+   "photo.jpg"
+  ],
+  "answer": 1,
+  "explanation": "Disk nomidan boshlanadi.",
+  "solution": [
+   "To‘liq yo‘l disk nomidan (D:\\) boshlanadi.",
+   "Qolganlari — joriy papkaga nisbatan (nisbiy) yo‘llar.",
+   "Javob: D:\\Fayllar\\photo.jpg"
+  ]
+ },
+ {
+  "id": "fayllar-13",
+  "unit": "fayllar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi maska a??.doc qaysi fayl nomiga mos keladi?",
+  "options": [
+   "a1c2.doc",
+   "abcd.doc",
+   "ab.doc",
+   "abc.doc"
+  ],
+  "answer": 3,
+  "explanation": "a??.doc → abc.doc.",
+  "solution": [
+   "a??.doc — «a» dan keyin AYNAN 2 ta belgi, keyin .doc.",
+   "abc.doc: a + bc ✔. ab.doc — 1 ta belgi ✘, abcd.doc — 3 ta ✘, a1c2.doc — 3 ta ✘.",
+   "Javob: abc.doc"
+  ]
+ },
+ {
+  "id": "fayllar-14",
+  "unit": "fayllar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi maska *.txt qaysi fayl nomiga mos keladi?",
+  "options": [
+   "readme.txt",
+   "txt.doc",
+   "readme.txt.bak",
+   "readme.doc"
+  ],
+  "answer": 0,
+  "explanation": "*.txt → readme.txt.",
+  "solution": [
+   "*.txt — kengaytmasi aynan .txt bo‘lgan fayllar.",
+   "readme.txt.bak ning kengaytmasi .bak.",
+   "Javob: readme.txt"
+  ]
+ },
+ {
+  "id": "fayllar-15",
+  "unit": "fayllar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Windows da fayl nomida qaysi belgi ishlatilishi MUMKIN EMAS?",
+  "options": [
+   "?",
+   "1",
+   "-",
+   "_"
+  ],
+  "answer": 0,
+  "explanation": "? — taqiqlangan.",
+  "solution": [
+   "Windows taqiqlagan belgilar: \\ / : * ? \" < > |.",
+   "Chunki * va ? maska belgilari sifatida band.",
+   "Javob: ?"
+  ]
+ },
+ {
+  "id": "fayllar-16",
+  "unit": "fayllar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Papka ichidagi papka qanday ataladi?",
+  "options": [
+   "Fayl",
+   "Ichki papka (qism papka)",
+   "Ildiz papka",
+   "Yorliq"
+  ],
+  "answer": 1,
+  "explanation": "Ichki papka.",
+  "solution": [
+   "Papka ichida yana papka bo‘lsa, u ichki (qism) papka deyiladi.",
+   "Diskning eng yuqori papkasi — ildiz papka (masalan C:\\).",
+   "Javob: Ichki papka (qism papka)"
+  ]
+ },
+ {
+  "id": "fayllar-17",
+  "unit": "fayllar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "[A-C]*.txt maskasi qaysi fayl nomiga mos EMAS?",
+  "options": [
+   "Bfile.txt",
+   "A1.txt",
+   "Ddoc.txt",
+   "Cdata.txt"
+  ],
+  "answer": 2,
+  "explanation": "Ddoc.txt maskaga mos emas.",
+  "solution": [
+   "[A-C] — birinchi belgi A, B yoki C bo‘lishi kerak. Keyin * va .txt.",
+   "Ddoc.txt birinchi harfi D — mos emas.",
+   "Javob: Ddoc.txt"
+  ]
+ },
+ {
+  "id": "fayllar-18",
+  "unit": "fayllar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Quyidagi maska ?a*.png qaysi fayl nomiga mos keladi?",
+  "options": [
+   "sat.jpg",
+   "cat.png",
+   "apple.png",
+   "a.png"
+  ],
+  "answer": 1,
+  "explanation": "?a*.png → cat.png.",
+  "solution": [
+   "?a*.png — 1-belgi istalgan, 2-belgi «a», keyin istalgan belgilar, kengaytma .png.",
+   "cat.png ✔ (c, a, t). apple.png — 2-belgi p ✘; sat.jpg — kengaytma ✘; a.png — 2-belgi yo‘q ✘.",
+   "Javob: cat.png"
+  ]
+ },
+ {
+  "id": "fayllar-19",
+  "unit": "fayllar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Papkada quyidagi fayllar bor: a.py, b.js, c.txt, d.c, e.md. *.?? maskasiga nechta fayl mos keladi?",
+  "options": [
+   "3",
+   "1",
+   "2",
+   "0"
+  ],
+  "answer": 0,
+  "explanation": "3 ta: a.py, b.js, e.md.",
+  "solution": [
+   "*.?? — kengaytmasi aynan 2 ta belgidan iborat fayllar.",
+   "Mos fayllar: a.py, b.js, e.md.",
+   "Javob: 3"
+  ]
+ },
+ {
+  "id": "fayllar-20",
+  "unit": "fayllar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Papkada quyidagi fayllar bor: abc.txt, ab.txt, xyz.mp3, abcd.doc, cat.png. ???.* maskasiga nechta fayl mos keladi?",
+  "options": [
+   "1",
+   "2",
+   "3",
+   "0"
+  ],
+  "answer": 2,
+  "explanation": "3 ta: abc.txt, xyz.mp3, cat.png.",
+  "solution": [
+   "???.* — nomi aynan 3 ta belgidan iborat fayllar.",
+   "Mos fayllar: abc.txt, xyz.mp3, cat.png.",
+   "Javob: 3"
+  ]
+ },
+ {
+  "id": "fayllar-21",
+  "unit": "fayllar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Papkada quyidagi fayllar bor: hisobot2025.docx, 2025.xlsx, rasm_2024.png, plan-2025-yil.txt, video.mp4. *2025* maskasiga nechta fayl mos keladi?",
+  "options": [
+   "2",
+   "3",
+   "0",
+   "1"
+  ],
+  "answer": 1,
+  "explanation": "3 ta: hisobot2025.docx, 2025.xlsx, plan-2025-yil.txt.",
+  "solution": [
+   "*2025* — nomining istalgan joyida «2025» bor.",
+   "Mos fayllar: hisobot2025.docx, 2025.xlsx, plan-2025-yil.txt.",
+   "Javob: 3"
+  ]
+ },
+ {
+  "id": "fayllar-22",
+  "unit": "fayllar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "f*e.* maskasi qaysi fayl nomiga mos EMAS?",
+  "options": [
+   "fe.doc",
+   "file.txt",
+   "flag.txt",
+   "frame.png"
+  ],
+  "answer": 2,
+  "explanation": "flag.txt maskaga mos emas.",
+  "solution": [
+   "f*e.* — f bilan boshlanib, nuqtadan oldin e bilan tugaydi.",
+   "flag.txt — nom «flag» e bilan tugamaydi.",
+   "Javob: flag.txt"
+  ]
+ },
+ {
+  "id": "fayllar-23",
+  "unit": "fayllar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Quyidagi maska rasm?.jpg qaysi fayl nomiga mos keladi?",
+  "options": [
+   "rasm.jpg",
+   "rasm1.jpg",
+   "rasm12.jpg",
+   "rasm1.png"
+  ],
+  "answer": 1,
+  "explanation": "rasm?.jpg → rasm1.jpg.",
+  "solution": [
+   "rasm?.jpg — «rasm» dan keyin aynan BITTA belgi.",
+   "rasm.jpg — belgi yo‘q ✘; rasm12.jpg — 2 ta ✘; rasm1.png — kengaytma ✘.",
+   "Javob: rasm1.jpg"
+  ]
+ },
+ {
+  "id": "fayllar-24",
+  "unit": "fayllar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Papkada quyidagi fayllar bor: apple, banana, avocado, cherry. [!a]* maskasiga nechta fayl mos keladi?",
+  "options": [
+   "2",
+   "0",
+   "3",
+   "1"
+  ],
+  "answer": 0,
+  "explanation": "2 ta: banana, cherry.",
+  "solution": [
+   "[!a] — birinchi belgi «a» EMAS. (! — inkor.)",
+   "Mos fayllar: banana, cherry.",
+   "Javob: 2"
+  ]
+ },
+ {
+  "id": "fayllar-25",
+  "unit": "fayllar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "*.* maskasi va * maskasi farqi (Windows da) nimada?",
+  "options": [
+   "*.* faqat kengaytmasiz fayllarni tanlaydi",
+   "* hech narsani tanlamaydi",
+   "*.* faqat papkalarni tanlaydi",
+   "Amalda ikkalasi ham barcha fayllarni tanlaydi"
+  ],
+  "answer": 3,
+  "explanation": "Windows da bir xil ishlaydi.",
+  "solution": [
+   "* — istalgan nom. *.* — istalgan nom + nuqta + istalgan kengaytma.",
+   "Windows da *.* kengaytmasiz fayllarni ham qamraydi, shuning uchun amalda bir xil.",
+   "Javob: Amalda ikkalasi ham barcha fayllarni tanlaydi"
+  ]
+ },
+ {
+  "id": "fayllar-26",
+  "unit": "fayllar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Fayl yo‘li C:\\Maktab\\9-sinf\\Informatika\\test.docx. Fayl qaysi papkada joylashgan (bevosita)?",
+  "options": [
+   "Informatika",
+   "Maktab",
+   "9-sinf",
+   "C:\\"
+  ],
+  "answer": 0,
+  "explanation": "Oxirgi papka — Informatika.",
+  "solution": [
+   "Yo‘l papkalarni ichkariga qarab ko‘rsatadi: C:\\ → Maktab → 9-sinf → Informatika → fayl.",
+   "Fayl oxirgi papka ichida.",
+   "Javob: Informatika"
+  ]
+ },
+ {
+  "id": "fayllar-27",
+  "unit": "fayllar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "C:\\Maktab\\9-sinf\\Informatika\\test.docx yo‘lida fayl ildiz papkadan necha daraja ichkarida?",
+  "options": [
+   "1",
+   "2",
+   "4",
+   "3"
+  ],
+  "answer": 3,
+  "explanation": "3 ta papka ichida.",
+  "solution": [
+   "Ildiz: C:\\. 1-daraja — Maktab, 2-daraja — 9-sinf, 3-daraja — Informatika.",
+   "Fayl 3-darajadagi papka ichida.",
+   "Javob: 3"
+  ]
+ },
+ {
+  "id": "fayllar-28",
+  "unit": "fayllar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Qaysi kengaytmalar qatori faqat audio formatlardan iborat?",
+  "options": [
+   ".flac, .mkv, .ogg, .png",
+   ".aac, .gif, .mp3, .wma",
+   ".mp3, .mp4, .wav, .avi",
+   ".mp3, .wav, .flac, .aac"
+  ],
+  "answer": 3,
+  "explanation": "Faqat audio.",
+  "solution": [
+   "Audio: mp3, wav, flac, aac, ogg, wma.",
+   "mp4, avi, mkv — video; png, gif — rasm.",
+   "Javob: .mp3, .wav, .flac, .aac"
+  ]
+ },
+ {
+  "id": "fayllar-29",
+  "unit": "fayllar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Qaysi qatordagi kengaytmalarning hammasi rasm formati?",
+  "options": [
+   ".gif, .avi, .bmp, .svg",
+   ".jpg, .pdf, .png, .mp3",
+   ".png, .doc, .tif, .jpg",
+   ".jpg, .png, .gif, .bmp"
+  ],
+  "answer": 3,
+  "explanation": "Faqat rasm formatlari.",
+  "solution": [
+   "Rasm: jpg (jpeg), png, gif, bmp, tif, svg, webp.",
+   "pdf — hujjat, mp3 — audio, avi — video, doc — Word.",
+   "Javob: .jpg, .png, .gif, .bmp"
+  ]
+ },
+ {
+  "id": "fayllar-30",
+  "unit": "fayllar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Papkada quyidagi fayllar bor: test1.py, test.py, test12.py, testA.py, test1.txt. test?.py maskasiga nechta fayl mos keladi?",
+  "options": [
+   "1",
+   "2",
+   "0",
+   "3"
+  ],
+  "answer": 1,
+  "explanation": "2 ta: test1.py, testA.py.",
+  "solution": [
+   "test?.py — «test» + bitta belgi + .py.",
+   "Mos fayllar: test1.py, testA.py.",
+   "Javob: 2"
+  ]
+ },
+ {
+  "id": "fayllar-31",
+  "unit": "fayllar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Linux da fayl yo‘llarida papkalar qaysi belgi bilan ajratiladi?",
+  "options": [
+   ":",
+   "/",
+   "|",
+   "\\"
+  ],
+  "answer": 1,
+  "explanation": "Linux — /, Windows — \\.",
+  "solution": [
+   "Linux/macOS: /home/ali/rasm.png (to‘g‘ri chiziq).",
+   "Windows: C:\\Users\\Ali\\rasm.png (teskari chiziq).",
+   "Javob: /"
+  ]
+ },
+ {
+  "id": "fayllar-32",
+  "unit": "fayllar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Nisbiy yo‘lda «..» nimani bildiradi?",
+  "options": [
+   "Ildiz papkani",
+   "Barcha papkalarni",
+   "Joriy papkani",
+   "Bir daraja yuqoridagi (ota) papkani"
+  ],
+  "answer": 3,
+  "explanation": ".. — ota papka.",
+  "solution": [
+   ". — joriy papka, .. — bir daraja yuqoridagi papka.",
+   "Masalan ..\\rasm.png — ota papkadagi rasm.",
+   "Javob: Bir daraja yuqoridagi (ota) papkani"
+  ]
+ },
+ {
+  "id": "fayllar-33",
+  "unit": "fayllar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Quyidagi maska *.mp? qaysi fayl nomiga mos keladi?",
+  "options": [
+   "film.mp44",
+   "mp3.txt",
+   "qoshiq.mp3",
+   "audio.wav"
+  ],
+  "answer": 2,
+  "explanation": "*.mp? → qoshiq.mp3.",
+  "solution": [
+   "*.mp? — kengaytma «mp» + aynan bitta belgi.",
+   "qoshiq.mp3 ✔; film.mp44 — 2 ta belgi ✘; audio.wav ✘; mp3.txt — kengaytma txt ✘.",
+   "Javob: qoshiq.mp3"
+  ]
+ },
+ {
+  "id": "fayllar-34",
+  "unit": "fayllar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "*o*.* maskasi qaysi fayl nomiga mos EMAS?",
+  "options": [
+   "logo.png",
+   "video.mp4",
+   "foto.jpg",
+   "data.csv"
+  ],
+  "answer": 3,
+  "explanation": "data.csv maskaga mos emas.",
+  "solution": [
+   "*o*.* — nomida (nuqtadan oldin) kamida bitta «o» harfi bor.",
+   "data.csv — nomida «o» yo‘q.",
+   "Javob: data.csv"
+  ]
+ },
+ {
+  "id": "fayllar-35",
+  "unit": "fayllar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Papkada quyidagi fayllar bor: img_001.png, img_002.png, img_010.png, img_00.png, img_003.jpg. img_00?.png maskasiga nechta fayl mos keladi?",
+  "options": [
+   "1",
+   "2",
+   "3",
+   "0"
+  ],
+  "answer": 1,
+  "explanation": "2 ta: img_001.png, img_002.png.",
+  "solution": [
+   "img_00?.png — «img_00» + bitta belgi + .png.",
+   "Mos fayllar: img_001.png, img_002.png.",
+   "Javob: 2"
+  ]
+ },
+ {
+  "id": "fayllar-36",
+  "unit": "fayllar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Fayl nomi «yozuv.txt» bo‘lsa, uning NOMI (kengaytmasiz) qaysi?",
+  "options": [
+   "txt",
+   ".txt",
+   "yozuv.txt",
+   "yozuv"
+  ],
+  "answer": 3,
+  "explanation": "Nom — yozuv.",
+  "solution": [
+   "Fayl nomi = nom + nuqta + kengaytma.",
+   "Nuqtadan oldingi qism — nom.",
+   "Javob: yozuv"
+  ]
+ },
+ {
+  "id": "fayllar-37",
+  "unit": "fayllar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Papkada 100 ta fayl: f1.txt dan f100.txt gacha. f??.txt maskasiga nechta fayl mos keladi?",
+  "options": [
+   "99",
+   "90",
+   "100",
+   "9"
+  ],
+  "answer": 1,
+  "explanation": "10..99 — 90 ta.",
+  "solution": [
+   "f??.txt — «f» dan keyin aynan 2 ta belgi: f10.txt … f99.txt.",
+   "Ikki xonali sonlar: 10..99 → 90 ta.",
+   "Javob: 90"
+  ]
+ },
+ {
+  "id": "fayllar-38",
+  "unit": "fayllar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Papkada quyidagi fayllar bor: a1.txt, b22.txt, 3c.txt, x.txt, z9file.txt, k0.doc. ?[0-9]*.txt maskasiga nechta fayl mos keladi?",
+  "options": [
+   "1",
+   "0",
+   "2",
+   "3"
+  ],
+  "answer": 3,
+  "explanation": "3 ta: a1.txt, b22.txt, z9file.txt.",
+  "solution": [
+   "?[0-9]*.txt — 1-belgi istalgan, 2-belgi raqam, keyin istalgan, kengaytma .txt.",
+   "Mos fayllar: a1.txt, b22.txt, z9file.txt.",
+   "Javob: 3"
+  ]
+ },
+ {
+  "id": "fayllar-39",
+  "unit": "fayllar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Papkada quyidagi fayllar bor: data.csv, pic.png, tab.xls, mac.py, note.txt. *[a-c].* maskasiga nechta fayl mos keladi?",
+  "options": [
+   "4",
+   "0",
+   "2",
+   "1"
+  ],
+  "answer": 0,
+  "explanation": "4 ta: data.csv, pic.png, tab.xls, mac.py.",
+  "solution": [
+   "*[a-c].* — nuqtadan oldingi oxirgi belgi a, b yoki c.",
+   "Mos fayllar: data.csv, pic.png, tab.xls, mac.py.",
+   "Javob: 4"
+  ]
+ },
+ {
+  "id": "fayllar-40",
+  "unit": "fayllar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "??*.?* maskasi qaysi fayl nomiga mos EMAS?",
+  "options": [
+   "xy.z1",
+   "ab.c",
+   "a.txt",
+   "abc.de"
+  ],
+  "answer": 2,
+  "explanation": "a.txt maskaga mos emas.",
+  "solution": [
+   "??*.?* — nom kamida 2 ta belgi, kengaytma kamida 1 ta belgi.",
+   "a.txt — nom 1 ta belgi.",
+   "Javob: a.txt"
+  ]
+ },
+ {
+  "id": "fayllar-41",
+  "unit": "fayllar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Papkada 5 ta fayl bor: doc1.txt, doc2.txt, doc10.txt, docA.txt, doc1.pdf. doc?.txt maskasi bilan tanlangan fayllar o‘chirilsa, nechta fayl qoladi?",
+  "options": [
+   "2",
+   "4",
+   "1",
+   "3"
+  ],
+  "answer": 0,
+  "explanation": "3 ta o‘chadi, 2 ta qoladi.",
+  "solution": [
+   "doc?.txt — «doc» + aynan bitta belgi + .txt: doc1.txt, doc2.txt, docA.txt (3 ta).",
+   "doc10.txt — 2 ta belgi ✘, doc1.pdf — kengaytma ✘.",
+   "5 − 3 = 2",
+   "Javob: 2"
+  ]
+ },
+ {
+  "id": "fayllar-42",
+  "unit": "fayllar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Qaysi maska «2024» yoki «2025» yilidagi istalgan .xlsx hisobotlarga (masalan hisobot_2024.xlsx, hisobot_2025.xlsx) mos keladi, lekin hisobot_2023.xlsx ga mos kelmaydi?",
+  "options": [
+   "hisobot_202?.xlsx",
+   "hisobot_2024.xlsx",
+   "hisobot_202[45].xlsx",
+   "hisobot_*.xlsx"
+  ],
+  "answer": 2,
+  "explanation": "[45] — 4 yoki 5.",
+  "solution": [
+   "[45] — faqat 4 yoki 5 raqami.",
+   "202? — 2023 ni ham qamraydi; * — hammasini; aniq nom — faqat bittasini.",
+   "Javob: hisobot_202[45].xlsx"
+  ]
+ },
+ {
+  "id": "fayllar-43",
+  "unit": "fayllar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Python’da glob.glob('*.py') funksiyasi nima qaytaradi?",
+  "options": [
+   "Joriy papkadagi .py kengaytmali fayllar nomlari ro‘yxatini",
+   "Faqat bitta faylni",
+   "Fayllar sonini",
+   "Barcha papkalarni"
+  ],
+  "answer": 0,
+  "explanation": "glob — maska bo‘yicha qidirish.",
+  "solution": [
+   "glob moduli maskalar bo‘yicha fayl qidiradi.",
+   "'*.py' — kengaytmasi .py bo‘lgan barcha fayllar; natija — ro‘yxat.",
+   "Javob: Joriy papkadagi .py kengaytmali fayllar nomlari ro‘yxatini"
+  ]
+ },
+ {
+  "id": "fayllar-44",
+  "unit": "fayllar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Papkada quyidagi fayllar bor: a.b.c, arxiv.tar.gz, rasm.png, v1.2.3.txt, readme. *.*.* maskasiga nechta fayl mos keladi?",
+  "options": [
+   "1",
+   "2",
+   "3",
+   "0"
+  ],
+  "answer": 2,
+  "explanation": "3 ta: a.b.c, arxiv.tar.gz, v1.2.3.txt.",
+  "solution": [
+   "*.*.* — nomda kamida 2 ta nuqta bo‘lishi kerak.",
+   "Mos fayllar: a.b.c, arxiv.tar.gz, v1.2.3.txt.",
+   "Javob: 3"
+  ]
+ },
+ {
+  "id": "fayllar-45",
+  "unit": "fayllar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Papkada quyidagi fayllar bor: Ab, Abc, A1x, aBc, XY_1, B22. [A-Z]?[!0-9]* maskasiga nechta fayl mos keladi?",
+  "options": [
+   "0",
+   "3",
+   "1",
+   "2"
+  ],
+  "answer": 1,
+  "explanation": "3 ta: Abc, A1x, XY_1.",
+  "solution": [
+   "[A-Z] — 1-belgi katta harf; ? — 2-belgi istalgan; [!0-9] — 3-belgi raqam emas; * — qolgani.",
+   "Uzunligi kamida 3 bo‘lishi kerak.",
+   "Mos fayllar: Abc, A1x, XY_1.",
+   "Javob: 3"
+  ]
+ },
+ {
+  "id": "fayllar-46",
+  "unit": "fayllar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "D:\\Loyiha\\src\\main.py faylidan turib ..\\docs\\info.txt nisbiy yo‘li qaysi faylni ko‘rsatadi?",
+  "options": [
+   "D:\\Loyiha\\docs\\info.txt",
+   "D:\\Loyiha\\src\\docs\\info.txt",
+   "D:\\info.txt",
+   "D:\\docs\\info.txt"
+  ],
+  "answer": 0,
+  "explanation": "src → .. → Loyiha → docs.",
+  "solution": [
+   "Joriy papka — D:\\Loyiha\\src.",
+   ".. — bir daraja yuqori: D:\\Loyiha. Keyin docs\\info.txt.",
+   "Javob: D:\\Loyiha\\docs\\info.txt"
+  ]
+ },
+ {
+  "id": "fayllar-47",
+  "unit": "fayllar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Fayl hajmi 4 GB dan katta bo‘lsa, uni qaysi fayl tizimidagi fleshkaga yozib BO‘LMAYDI?",
+  "options": [
+   "FAT32",
+   "NTFS",
+   "exFAT",
+   "ext4"
+  ],
+  "answer": 0,
+  "explanation": "FAT32 — 4 GB cheklov.",
+  "solution": [
+   "FAT32 da bitta faylning maksimal hajmi 4 GB − 1 bayt.",
+   "NTFS, exFAT, ext4 bunday cheklovga ega emas.",
+   "Javob: FAT32"
+  ]
+ },
+ {
+  "id": "fayllar-48",
+  "unit": "fayllar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Qaysi maska kengaytmasi «.jpg» yoki «.jpeg» bo‘lgan barcha fayllarni (va boshqa hech narsani emas) tanlay oladi?",
+  "options": [
+   "*.jp*g",
+   "*.j*",
+   "*.jp?",
+   "*.jpg"
+  ],
+  "answer": 0,
+  "explanation": "*.jp*g — jpg va jpeg.",
+  "solution": [
+   "*.jp*g — jp va g orasida 0 yoki ko‘p belgi: jpg ✔, jpeg ✔.",
+   "*.jp? — jpeg ni olmaydi; *.j* — .js, .json ni ham oladi; *.jpg — jpeg ni olmaydi.",
+   "(Diqqat: *.jp*g kamdan-kam uchraydigan .jpxg kabi nomlarni ham oladi, lekin variantlar ichida eng to‘g‘risi shu.) Javob: *.jp*g"
+  ]
+ },
+ {
+  "id": "fayllar-49",
+  "unit": "fayllar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Papkada quyidagi fayllar bor: plan_v1.doc, plan_v12.doc, plan_v.doc, logo_v3.png, logo_V2.png. *_v[0-9].* maskasiga nechta fayl mos keladi?",
+  "options": [
+   "1",
+   "2",
+   "0",
+   "3"
+  ],
+  "answer": 1,
+  "explanation": "2 ta: plan_v1.doc, logo_v3.png.",
+  "solution": [
+   "*_v[0-9].* — «_v» dan keyin aynan BITTA raqam, keyin nuqta. Katta-kichik harf farqlanadi.",
+   "Mos fayllar: plan_v1.doc, logo_v3.png.",
+   "Javob: 2"
+  ]
+ },
+ {
+  "id": "fayllar-50",
+  "unit": "fayllar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Qaysi kengaytma qatori «bitta faylda ko‘p fayl siqilgan» turdagi fayllarga tegishli?",
+  "options": [
+   ".txt, .rtf, .doc",
+   ".exe, .msi, .bat",
+   ".mp3, .ogg, .wav",
+   ".zip, .rar, .7z"
+  ],
+  "answer": 3,
+  "explanation": "Arxivlar.",
+  "solution": [
+   "Arxiv fayllar ichida bir nechta fayl siqilgan holda saqlanadi.",
+   "zip, rar, 7z, tar.gz — arxiv formatlari.",
+   "Javob: .zip, .rar, .7z"
+  ]
+ }
+]

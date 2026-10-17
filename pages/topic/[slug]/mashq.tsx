@@ -14,8 +14,8 @@ type Filter = 'all' | 'easy' | 'medium' | 'hard' | 'todo' | 'wrong';
 const FILTERS: Array<{ key: Filter; label: string }> = [
   { key: 'all', label: 'Hammasi' },
   { key: 'easy', label: '0,9 ball' },
-  { key: 'medium', label: '1,7 ball' },
-  { key: 'hard', label: '2,4 ball' },
+  { key: 'medium', label: '1,5 ball' },
+  { key: 'hard', label: '2,6 ball' },
   { key: 'todo', label: 'Yechilmagan' },
   { key: 'wrong', label: 'Xatolarim' },
 ];

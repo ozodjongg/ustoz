@@ -1,0 +1,1002 @@
+[
+ {
+  "id": "tarmoq-internet-01",
+  "unit": "tarmoq-internet",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi manzillardan qaysi biri URL (veb manzil) hisoblanadi?",
+  "options": [
+   "kinolar\\film.mp4",
+   "255.255.255.0",
+   "D:\\Fayllar\\photo.jpg",
+   "http://www.wikipedia.org"
+  ],
+  "answer": 3,
+  "explanation": "URL protokol bilan boshlanadi.",
+  "solution": [
+   "URL — Internetdagi resurs manzili: protokol://domen/yo‘l.",
+   "255.255.255.0 — tarmoq maskasi; qolganlari — kompyuterdagi fayl yo‘llari.",
+   "Javob: http://www.wikipedia.org"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-02",
+  "unit": "tarmoq-internet",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi qaysi nom domen nomi hisoblanadi?",
+  "options": [
+   "192.168.0.1",
+   "C:\\Windows\\System32",
+   "www.edu.uz",
+   "http://192.168.1.1"
+  ],
+  "answer": 2,
+  "explanation": "www.edu.uz — domen.",
+  "solution": [
+   "Domen nomi — harflardan iborat, nuqtalar bilan ajratilgan nom: www.edu.uz.",
+   "192.168.0.1 — IP manzil; C:\\… — fayl yo‘li.",
+   "Javob: www.edu.uz"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-03",
+  "unit": "tarmoq-internet",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "www.support.microsoft.com manzilidagi birinchi darajali (TLD) domen qaysi?",
+  "options": [
+   "com",
+   "microsoft",
+   "www",
+   "support"
+  ],
+  "answer": 0,
+  "explanation": "Eng o‘ngdagi qism — TLD.",
+  "solution": [
+   "Domen o‘ngdan chapga o‘qiladi: eng o‘ngdagi qism — birinchi (yuqori) daraja.",
+   "com — 1-daraja, microsoft — 2-daraja, support — 3-daraja.",
+   "Javob: com"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-04",
+  "unit": "tarmoq-internet",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "O‘zbekistonning milliy domeni qaysi?",
+  "options": [
+   ".uz",
+   ".uzb",
+   ".us",
+   ".oz"
+  ],
+  "answer": 0,
+  "explanation": ".uz.",
+  "solution": [
+   ".uz — O‘zbekistonning mamlakat domeni (ccTLD).",
+   ".us — AQSH.",
+   "Javob: .uz"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-05",
+  "unit": "tarmoq-internet",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "IPv4 manzil necha bitdan iborat?",
+  "options": [
+   "16 bit",
+   "32 bit",
+   "64 bit",
+   "128 bit"
+  ],
+  "answer": 1,
+  "explanation": "4 bayt = 32 bit.",
+  "solution": [
+   "IPv4: 4 ta son, har biri 0..255 (8 bit).",
+   "4 · 8 = 32 bit. (IPv6 — 128 bit.)",
+   "Javob: 32 bit"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-06",
+  "unit": "tarmoq-internet",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagilardan qaysi biri to‘g‘ri IPv4 manzil?",
+  "options": [
+   "192.168.1.1",
+   "192.168.300.1",
+   "256.100.0.1",
+   "192.168.1"
+  ],
+  "answer": 0,
+  "explanation": "4 ta son, har biri ≤ 255.",
+  "solution": [
+   "IPv4 da aynan 4 ta son bo‘lishi va har biri 0..255 oralig‘ida bo‘lishi kerak.",
+   "256 va 300 — 255 dan katta; 192.168.1 — 3 ta son.",
+   "Javob: 192.168.1.1"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-07",
+  "unit": "tarmoq-internet",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "HTTP status kodi 404 nimani anglatadi?",
+  "options": [
+   "Sahifa topilmadi",
+   "So‘rov muvaffaqiyatli",
+   "Server xatosi",
+   "Server topilmadi"
+  ],
+  "answer": 0,
+  "explanation": "404 — Not Found.",
+  "solution": [
+   "4xx — mijoz tomonidagi xatolar. 404 Not Found — so‘ralgan sahifa (resurs) serverda yo‘q.",
+   "200 — muvaffaqiyatli, 500 — server xatosi.",
+   "Javob: Sahifa topilmadi"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-08",
+  "unit": "tarmoq-internet",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Qaysi HTTP usuli HTML formadagi ma’lumotlarni serverga yuborish uchun ishlatiladi (variantlar ichidan)?",
+  "options": [
+   "GET",
+   "PUT",
+   "HEAD",
+   "DELETE"
+  ],
+  "answer": 0,
+  "explanation": "Forma: GET yoki POST.",
+  "solution": [
+   "HTML forma method atributi faqat GET yoki POST bo‘lishi mumkin.",
+   "Variantlarda POST yo‘q, shuning uchun GET (ma’lumotlar URL da yuboriladi).",
+   "Javob: GET"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-09",
+  "unit": "tarmoq-internet",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Veb-sahifalarni xavfsiz (shifrlangan) uzatish protokoli qaysi?",
+  "options": [
+   "SMTP",
+   "FTP",
+   "HTTPS",
+   "HTTP"
+  ],
+  "answer": 2,
+  "explanation": "HTTPS — xavfsiz.",
+  "solution": [
+   "HTTPS = HTTP + TLS shifrlash.",
+   "FTP — fayl uzatish, SMTP — pochta yuborish.",
+   "Javob: HTTPS"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-10",
+  "unit": "tarmoq-internet",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Elektron pochta yuborish uchun ishlatiladigan protokol qaysi?",
+  "options": [
+   "FTP",
+   "SMTP",
+   "DNS",
+   "HTTP"
+  ],
+  "answer": 1,
+  "explanation": "SMTP — pochta yuborish.",
+  "solution": [
+   "SMTP — Simple Mail Transfer Protocol: xatni yuborish.",
+   "Qabul qilish uchun POP3 yoki IMAP.",
+   "Javob: SMTP"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-11",
+  "unit": "tarmoq-internet",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Elektron pochta manzilida «@» belgisidan keyin nima yoziladi?",
+  "options": [
+   "Mamlakat nomi",
+   "Foydalanuvchi paroli",
+   "Foydalanuvchi ismi",
+   "Pochta serveri (domen) nomi"
+  ],
+  "answer": 3,
+  "explanation": "@ dan keyin — domen.",
+  "solution": [
+   "Manzil: foydalanuvchi@domen, masalan ali@mail.uz.",
+   "@ dan oldin — foydalanuvchi nomi, keyin — pochta xizmati domeni.",
+   "Javob: Pochta serveri (domen) nomi"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-12",
+  "unit": "tarmoq-internet",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Bir bino yoki sinf xonasi ichidagi kompyuterlar tarmog‘i qanday ataladi?",
+  "options": [
+   "Global tarmoq (WAN)",
+   "Shahar tarmog‘i (MAN)",
+   "Internet",
+   "Lokal tarmoq (LAN)"
+  ],
+  "answer": 3,
+  "explanation": "LAN — lokal.",
+  "solution": [
+   "LAN — Local Area Network: kichik hudud (xona, bino).",
+   "MAN — shahar, WAN — davlatlar/butun dunyo.",
+   "Javob: Lokal tarmoq (LAN)"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-13",
+  "unit": "tarmoq-internet",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "DNS ning vazifasi nima?",
+  "options": [
+   "Fayllarni siqish",
+   "Rasmlarni tahrirlash",
+   "Domen nomlarini IP manzillarga aylantirish",
+   "Viruslarni topish"
+  ],
+  "answer": 2,
+  "explanation": "DNS: nom → IP.",
+  "solution": [
+   "DNS — Domain Name System, Internetning «telefon daftari».",
+   "edu.uz → 195.158.x.x kabi IP manzil topiladi.",
+   "Javob: Domen nomlarini IP manzillarga aylantirish"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-14",
+  "unit": "tarmoq-internet",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Turli tarmoqlarni bir-biriga ulovchi va paketlarga yo‘l tanlovchi qurilma qaysi?",
+  "options": [
+   "Marshrutizator (router)",
+   "Skaner",
+   "Klaviatura",
+   "Monitor"
+  ],
+  "answer": 0,
+  "explanation": "Router — tarmoqlarni ulaydi.",
+  "solution": [
+   "Router (marshrutizator) uy tarmog‘ini Internetga ulaydi va paketlarni yo‘naltiradi.",
+   "Switch (kommutator) esa bitta lokal tarmoq ichida qurilmalarni ulaydi.",
+   "Javob: Marshrutizator (router)"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-15",
+  "unit": "tarmoq-internet",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "URL https://kun.uz/news/2025 dagi protokol qismi qaysi?",
+  "options": [
+   "https",
+   "2025",
+   "news",
+   "kun.uz"
+  ],
+  "answer": 0,
+  "explanation": "https — protokol.",
+  "solution": [
+   "URL tuzilishi: protokol://domen/yo‘l.",
+   "«://» dan oldingi qism — protokol.",
+   "Javob: https"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-16",
+  "unit": "tarmoq-internet",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Fayllarni serverga yuklash/yuklab olish uchun mo‘ljallangan klassik protokol qaysi?",
+  "options": [
+   "POP3",
+   "SMTP",
+   "FTP",
+   "DNS"
+  ],
+  "answer": 2,
+  "explanation": "FTP — fayl uzatish.",
+  "solution": [
+   "FTP — File Transfer Protocol.",
+   "SMTP va POP3 — pochta, DNS — nomlar xizmati.",
+   "Javob: FTP"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-17",
+  "unit": "tarmoq-internet",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "IP: 172.16.0.0/30 tarmog‘ida nechta foydalaniladigan xost IP mavjud?",
+  "options": [
+   "2",
+   "14",
+   "4",
+   "6"
+  ],
+  "answer": 0,
+  "explanation": "2² − 2 = 2.",
+  "solution": [
+   "/30 — 32 bitdan 30 tasi tarmoq qismi, 2 tasi xost qismi → 2² = 4 ta manzil.",
+   "Ulardan biri tarmoq manzili, biri broadcast — foydalanilmaydi: 4 − 2.",
+   "Javob: 2"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-18",
+  "unit": "tarmoq-internet",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "192.168.1.0/24 tarmog‘ida nechta foydalaniladigan xost manzili bor?",
+  "options": [
+   "254",
+   "256",
+   "128",
+   "255"
+  ],
+  "answer": 0,
+  "explanation": "2⁸ − 2 = 254.",
+  "solution": [
+   "/24 → xost qismi 32 − 24 = 8 bit → 2⁸ = 256 manzil.",
+   "Tarmoq va broadcast manzillari chiqariladi: 256 − 2.",
+   "Javob: 254"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-19",
+  "unit": "tarmoq-internet",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "10.0.0.0/29 tarmog‘ida nechta foydalaniladigan xost bor?",
+  "options": [
+   "6",
+   "8",
+   "4",
+   "29"
+  ],
+  "answer": 0,
+  "explanation": "2³ − 2 = 6.",
+  "solution": [
+   "Xost qismi: 32 − 29 = 3 bit → 2³ = 8 manzil.",
+   "8 − 2.",
+   "Javob: 6"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-20",
+  "unit": "tarmoq-internet",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "/24 tarmoq maskasi o‘nlik ko‘rinishda qanday yoziladi?",
+  "options": [
+   "255.0.0.0",
+   "255.255.255.0",
+   "255.255.255.255",
+   "255.255.0.0"
+  ],
+  "answer": 1,
+  "explanation": "24 ta 1 → 255.255.255.0.",
+  "solution": [
+   "/24 — birinchi 24 bit 1: 11111111.11111111.11111111.00000000.",
+   "Har 8 ta 1 = 255.",
+   "Javob: 255.255.255.0"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-21",
+  "unit": "tarmoq-internet",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Qaysi qator faqat to‘g‘ri IPv4 manzillardan iborat?",
+  "options": [
+   "172.16.0.1.5 va 127.0.0.1",
+   "8.8.8.8 va 10.0.0.255",
+   "1.2.3 va 10.10.10.10",
+   "192.168.1.256 va 8.8.8.8"
+  ],
+  "answer": 1,
+  "explanation": "Faqat 1-qator to‘g‘ri.",
+  "solution": [
+   "Har bir manzilda 4 ta son, har biri 0..255.",
+   "256 — chegaradan tashqari; 1.2.3 — 3 ta son; 172.16.0.1.5 — 5 ta son.",
+   "Javob: 8.8.8.8 va 10.0.0.255"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-22",
+  "unit": "tarmoq-internet",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "HTTP status kodi 200 nimani anglatadi?",
+  "options": [
+   "So‘rov muvaffaqiyatli bajarildi",
+   "Sahifa topilmadi",
+   "Server xatosi",
+   "Ruxsat yo‘q"
+  ],
+  "answer": 0,
+  "explanation": "200 OK.",
+  "solution": [
+   "2xx — muvaffaqiyat. 200 OK.",
+   "403 — ruxsat yo‘q, 404 — topilmadi, 500 — server xatosi.",
+   "Javob: So‘rov muvaffaqiyatli bajarildi"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-23",
+  "unit": "tarmoq-internet",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "HTTP status kodi 500 nimani bildiradi?",
+  "options": [
+   "So‘rov muvaffaqiyatli",
+   "Sahifa topilmadi",
+   "Sahifa boshqa manzilga ko‘chirilgan",
+   "Serverning ichki xatosi"
+  ],
+  "answer": 3,
+  "explanation": "500 — server xatosi.",
+  "solution": [
+   "5xx — server tomonidagi xatolar. 500 Internal Server Error.",
+   "301 — doimiy ko‘chirilgan.",
+   "Javob: Serverning ichki xatosi"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-24",
+  "unit": "tarmoq-internet",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "127.0.0.1 IP manzili nimani bildiradi?",
+  "options": [
+   "Noto‘g‘ri manzil",
+   "Google serverini",
+   "Routerni",
+   "Kompyuterning o‘zini (localhost)"
+  ],
+  "answer": 3,
+  "explanation": "localhost.",
+  "solution": [
+   "127.0.0.1 — «loopback», kompyuter o‘ziga murojaat qiladi.",
+   "Nomi — localhost.",
+   "Javob: Kompyuterning o‘zini (localhost)"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-25",
+  "unit": "tarmoq-internet",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Quyidagilardan qaysi biri xususiy (lokal tarmoq uchun) IP manzil diapazoniga kiradi?",
+  "options": [
+   "192.168.5.10",
+   "8.8.8.8",
+   "1.1.1.1",
+   "142.250.1.1"
+  ],
+  "answer": 0,
+  "explanation": "192.168.x.x — xususiy.",
+  "solution": [
+   "Xususiy diapazonlar: 10.x.x.x, 172.16–31.x.x, 192.168.x.x.",
+   "Ular Internetda to‘g‘ridan-to‘g‘ri ishlatilmaydi.",
+   "Javob: 192.168.5.10"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-26",
+  "unit": "tarmoq-internet",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Barcha kompyuterlar bitta markaziy qurilmaga (switch) ulangan tarmoq topologiyasi qanday ataladi?",
+  "options": [
+   "Halqa",
+   "Daraxt",
+   "Yulduz",
+   "Shina"
+  ],
+  "answer": 2,
+  "explanation": "Yulduz topologiyasi.",
+  "solution": [
+   "Yulduz — markazda bitta qurilma, qolganlari unga nur kabi ulanadi.",
+   "Shina — bitta umumiy kabel; halqa — yopiq zanjir.",
+   "Javob: Yulduz"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-27",
+  "unit": "tarmoq-internet",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Tarmoq kartasining zavodda berilgan noyob fizik manzili qanday ataladi?",
+  "options": [
+   "IP manzil",
+   "MAC manzil",
+   "URL",
+   "Domen"
+  ],
+  "answer": 1,
+  "explanation": "MAC — fizik manzil.",
+  "solution": [
+   "MAC — 48 bitli apparat manzili, masalan 00:1A:2B:3C:4D:5E.",
+   "IP esa tarmoqqa ulanganda beriladi va o‘zgarishi mumkin.",
+   "Javob: MAC manzil"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-28",
+  "unit": "tarmoq-internet",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "https://www.edu.uz/uz/news?id=5 URL ida domen nomi qaysi?",
+  "options": [
+   "www.edu.uz",
+   "https",
+   "id=5",
+   "/uz/news"
+  ],
+  "answer": 0,
+  "explanation": "www.edu.uz — domen.",
+  "solution": [
+   "Protokol: https. Domen: www.edu.uz. Yo‘l: /uz/news. Parametr: id=5.",
+   "Domen — «://» dan keyin, birinchi «/» gacha.",
+   "Javob: www.edu.uz"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-29",
+  "unit": "tarmoq-internet",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "IPv6 manzil necha bitdan iborat?",
+  "options": [
+   "128",
+   "64",
+   "256",
+   "32"
+  ],
+  "answer": 0,
+  "explanation": "IPv6 — 128 bit.",
+  "solution": [
+   "IPv4 manzillari (2³² ≈ 4,3 mlrd) yetishmagani uchun IPv6 yaratilgan.",
+   "IPv6 — 128 bit, o‘n oltilik ko‘rinishda yoziladi: 2001:db8::1.",
+   "Javob: 128"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-30",
+  "unit": "tarmoq-internet",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Butun dunyo bo‘ylab kompyuter tarmoqlarini birlashtiruvchi global tarmoq qanday ataladi?",
+  "options": [
+   "Intranet",
+   "Internet",
+   "LAN",
+   "Bluetooth"
+  ],
+  "answer": 1,
+  "explanation": "Internet — global.",
+  "solution": [
+   "Internet — tarmoqlar tarmog‘i (WAN ning eng katta namunasi).",
+   "Intranet — bitta tashkilot ichki tarmog‘i.",
+   "Javob: Internet"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-31",
+  "unit": "tarmoq-internet",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Ma’lumotlar Internetda qanday birliklarga bo‘linib uzatiladi?",
+  "options": [
+   "Papkalarga",
+   "Paketlarga",
+   "Fayllarga",
+   "Disklarga"
+  ],
+  "answer": 1,
+  "explanation": "Paketlar.",
+  "solution": [
+   "Katta ma’lumot kichik paketlarga bo‘linadi; har bir paket o‘z yo‘li bilan boradi va manzilda yig‘iladi.",
+   "Bu TCP/IP protokollari orqali amalga oshadi.",
+   "Javob: Paketlarga"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-32",
+  "unit": "tarmoq-internet",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "10.0.0.0/28 tarmog‘ida nechta foydalaniladigan xost bor?",
+  "options": [
+   "14",
+   "16",
+   "28",
+   "12"
+  ],
+  "answer": 0,
+  "explanation": "2⁴ − 2 = 14.",
+  "solution": [
+   "Xost qismi: 32 − 28 = 4 bit → 2⁴ = 16 manzil.",
+   "16 − 2.",
+   "Javob: 14"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-33",
+  "unit": "tarmoq-internet",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "HTTP status kodi 403 nimani bildiradi?",
+  "options": [
+   "Server xatosi",
+   "Kirish taqiqlangan (ruxsat yo‘q)",
+   "Sahifa topilmadi",
+   "Muvaffaqiyatli"
+  ],
+  "answer": 1,
+  "explanation": "403 — Forbidden.",
+  "solution": [
+   "403 Forbidden — server so‘rovni tushundi, lekin ruxsat bermaydi.",
+   "404 — topilmadi, 500 — server xatosi.",
+   "Javob: Kirish taqiqlangan (ruxsat yo‘q)"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-34",
+  "unit": "tarmoq-internet",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Elektron pochta manzili qaysi qatorda to‘g‘ri yozilgan?",
+  "options": [
+   "ali.valiyev.mail.uz",
+   "ali valiyev@mail.uz",
+   "ali.valiyev@mail.uz",
+   "@ali.mail.uz"
+  ],
+  "answer": 2,
+  "explanation": "foydalanuvchi@domen.",
+  "solution": [
+   "To‘g‘ri manzil: foydalanuvchi@domen, bo‘sh joysiz va bitta @ bilan.",
+   "2-variantda bo‘sh joy bor, 3-sida @ yo‘q, 4-sida foydalanuvchi nomi yo‘q.",
+   "Javob: ali.valiyev@mail.uz"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-35",
+  "unit": "tarmoq-internet",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Wi-Fi nima?",
+  "options": [
+   "Simsiz lokal tarmoq texnologiyasi",
+   "Brauzer turi",
+   "Fayl kengaytmasi",
+   "Antivirus dasturi"
+  ],
+  "answer": 0,
+  "explanation": "Wi-Fi — simsiz tarmoq.",
+  "solution": [
+   "Wi-Fi — radio to‘lqinlar orqali simsiz ulanish.",
+   "Odatda uy yoki ofisdagi lokal tarmoq uchun.",
+   "Javob: Simsiz lokal tarmoq texnologiyasi"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-36",
+  "unit": "tarmoq-internet",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Barcha kompyuterlar bitta umumiy kabelga ketma-ket ulangan topologiya qanday ataladi?",
+  "options": [
+   "Shina",
+   "To‘r",
+   "Yulduz",
+   "Halqa"
+  ],
+  "answer": 0,
+  "explanation": "Shina — umumiy kabel.",
+  "solution": [
+   "Shina (bus) — bitta umumiy kabel, barcha qurilmalar unga ulanadi; kabel uzilsa tarmoq ishlamaydi.",
+   "Halqada esa kompyuterlar yopiq aylana hosil qiladi.",
+   "Javob: Shina"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-37",
+  "unit": "tarmoq-internet",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "IPv4 da jami nechta turli manzil bo‘lishi mumkin (nazariy)?",
+  "options": [
+   "255⁴",
+   "2¹²⁸",
+   "2³² ≈ 4,3 milliard",
+   "2¹⁶ = 65 536"
+  ],
+  "answer": 2,
+  "explanation": "2³² manzil.",
+  "solution": [
+   "32 bit → 2³² ta kombinatsiya.",
+   "2³² = 4 294 967 296 ≈ 4,3 milliard.",
+   "Javob: 2³² ≈ 4,3 milliard"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-38",
+  "unit": "tarmoq-internet",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "192.168.10.0/26 tarmog‘ida nechta foydalaniladigan xost bor?",
+  "options": [
+   "62",
+   "30",
+   "64",
+   "26"
+  ],
+  "answer": 0,
+  "explanation": "2⁶ − 2 = 62.",
+  "solution": [
+   "Xost qismi: 32 − 26 = 6 bit → 2⁶ = 64 manzil.",
+   "64 − 2.",
+   "Javob: 62"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-39",
+  "unit": "tarmoq-internet",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Kamida 100 ta xost uchun eng kichik tarmoq qaysi prefiksga ega bo‘lishi kerak?",
+  "options": [
+   "/24",
+   "/25",
+   "/26",
+   "/27"
+  ],
+  "answer": 1,
+  "explanation": "/25 → 126 xost.",
+  "solution": [
+   "/26 → 62 xost (yetmaydi). /25 → 2⁷ − 2 = 126 xost ✔.",
+   "Eng kichigi — /25.",
+   "Javob: /25"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-40",
+  "unit": "tarmoq-internet",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "255.255.255.240 maskasi qaysi prefiksga mos keladi?",
+  "options": [
+   "/26",
+   "/30",
+   "/24",
+   "/28"
+  ],
+  "answer": 3,
+  "explanation": "24 + 4 = /28.",
+  "solution": [
+   "240 = 11110000₂ — oxirgi baytda 4 ta 1.",
+   "24 + 4 = 28.",
+   "Javob: /28"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-41",
+  "unit": "tarmoq-internet",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "192.168.1.130/25 manzili qaysi tarmoqqa tegishli (tarmoq manzili)?",
+  "options": [
+   "192.168.1.128",
+   "192.168.1.130",
+   "192.168.1.0",
+   "192.168.1.255"
+  ],
+  "answer": 0,
+  "explanation": "130 & 128 = 128.",
+  "solution": [
+   "/25 → oxirgi baytning birinchi biti tarmoq qismida: 130 = 10000010₂.",
+   "Xost bitlarini 0 qilamiz: 10000000₂ = 128.",
+   "Javob: 192.168.1.128"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-42",
+  "unit": "tarmoq-internet",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "192.168.1.0/24 tarmog‘ining broadcast (keng tarqatish) manzili qaysi?",
+  "options": [
+   "192.168.1.1",
+   "192.168.1.255",
+   "192.168.1.0",
+   "255.255.255.0"
+  ],
+  "answer": 1,
+  "explanation": "Xost bitlari 1 → .255.",
+  "solution": [
+   "Broadcast — xost qismining barcha bitlari 1 bo‘lgan manzil.",
+   "Oxirgi bayt 11111111₂ = 255.",
+   "Javob: 192.168.1.255"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-43",
+  "unit": "tarmoq-internet",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Brauzerga https://google.com yozilganda qaysi xizmat birinchi bo‘lib server IP manzilini aniqlaydi?",
+  "options": [
+   "DNS",
+   "DHCP",
+   "SMTP",
+   "FTP"
+  ],
+  "answer": 0,
+  "explanation": "Avval DNS.",
+  "solution": [
+   "Brauzer avval domenning IP manzilini bilishi kerak.",
+   "Buni DNS server javob beradi; keyin HTTPS ulanish o‘rnatiladi.",
+   "Javob: DNS"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-44",
+  "unit": "tarmoq-internet",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Qurilmalarga IP manzilni avtomatik beradigan protokol qaysi?",
+  "options": [
+   "DHCP",
+   "FTP",
+   "HTTP",
+   "DNS"
+  ],
+  "answer": 0,
+  "explanation": "DHCP — avtomatik IP.",
+  "solution": [
+   "DHCP — Dynamic Host Configuration Protocol.",
+   "Uyda router telefon va noutbuklarga avtomatik IP tarqatadi.",
+   "Javob: DHCP"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-45",
+  "unit": "tarmoq-internet",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "192.168.0.0/16 tarmog‘ida nechta foydalaniladigan xost bor?",
+  "options": [
+   "65536",
+   "65534",
+   "16",
+   "254"
+  ],
+  "answer": 1,
+  "explanation": "2¹⁶ − 2 = 65534.",
+  "solution": [
+   "Xost qismi: 16 bit → 2¹⁶ = 65 536 manzil.",
+   "65 536 − 2.",
+   "Javob: 65534"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-46",
+  "unit": "tarmoq-internet",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "HTTP status kodlarining guruhlari to‘g‘ri berilgan qatorni toping.",
+  "options": [
+   "2xx — xato, 4xx — muvaffaqiyat",
+   "1xx — sahifa topilmadi",
+   "3xx — server xatosi, 5xx — yo‘naltirish",
+   "2xx — muvaffaqiyat, 3xx — yo‘naltirish, 4xx — mijoz xatosi, 5xx — server xatosi"
+  ],
+  "answer": 3,
+  "explanation": "2xx/3xx/4xx/5xx.",
+  "solution": [
+   "1xx — axborot, 2xx — muvaffaqiyat (200 OK).",
+   "3xx — yo‘naltirish (301), 4xx — mijoz xatosi (404), 5xx — server xatosi (500).",
+   "Javob: 2xx — muvaffaqiyat, 3xx — yo‘naltirish, 4xx — mijoz xatosi, 5xx — server xatosi"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-47",
+  "unit": "tarmoq-internet",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "GET va POST usullarining asosiy farqi nimada?",
+  "options": [
+   "POST faqat sahifani o‘qiydi",
+   "GET faqat rasm yuboradi",
+   "Hech qanday farq yo‘q",
+   "GET ma’lumotni URL da, POST esa so‘rov tanasida yuboradi"
+  ],
+  "answer": 3,
+  "explanation": "GET — URL da, POST — tanada.",
+  "solution": [
+   "GET: ma’lumot URL oxirida ko‘rinadi (?q=salom) — qidiruv uchun qulay.",
+   "POST: ma’lumot so‘rov tanasida — parol, katta fayllar uchun.",
+   "Javob: GET ma’lumotni URL da, POST esa so‘rov tanasida yuboradi"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-48",
+  "unit": "tarmoq-internet",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Tarmoq tezligi 100 Mbit/s. 1 GB faylni yuklab olish uchun taxminan qancha vaqt ketadi? (1 GB = 1024 MB, 1 MB = 8 Mbit)",
+  "options": [
+   "1000 soniya",
+   "≈ 82 soniya",
+   "10 soniya",
+   "≈ 1,4 soat"
+  ],
+  "answer": 1,
+  "explanation": "8192/100 ≈ 82 s.",
+  "solution": [
+   "1 GB = 1024 · 8 = 8192 Mbit.",
+   "8192 : 100 ≈ 81,92 s.",
+   "Javob: ≈ 82 soniya"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-49",
+  "unit": "tarmoq-internet",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Domen nomi www.math.tdpu.uz da nechta daraja bor va 2-darajali domen qaysi?",
+  "options": [
+   "4 daraja, math",
+   "2 daraja, uz",
+   "3 daraja, math",
+   "4 daraja, tdpu"
+  ],
+  "answer": 3,
+  "explanation": "uz → tdpu → math → www.",
+  "solution": [
+   "O‘ngdan: uz (1), tdpu (2), math (3), www (4).",
+   "2-darajali domen — tdpu.",
+   "Javob: 4 daraja, tdpu"
+  ]
+ },
+ {
+  "id": "tarmoq-internet-50",
+  "unit": "tarmoq-internet",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Qaysi qurilma faqat bitta lokal tarmoq ichida kompyuterlarni ulaydi va ma’lumotni MAC manzil bo‘yicha kerakli portga yuboradi?",
+  "options": [
+   "Modem",
+   "Printer",
+   "Marshrutizator (router)",
+   "Kommutator (switch)"
+  ],
+  "answer": 3,
+  "explanation": "Switch — MAC bo‘yicha.",
+  "solution": [
+   "Switch lokal tarmoq ichida ishlaydi va MAC manzillar jadvalidan foydalanadi.",
+   "Router turli tarmoqlarni IP manzil bo‘yicha ulaydi.",
+   "Javob: Kommutator (switch)"
+  ]
+ }
+]

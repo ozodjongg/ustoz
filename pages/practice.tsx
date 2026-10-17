@@ -113,7 +113,7 @@ Xato mavzular: ${wrongUnits.length ? wrongUnits.map(topicTitle).join(', ') : 'yo
     <Head><title>Sinov — Informatika olimpiada</title></Head>
     <div className="eyebrow">Olimpiada formatidagi sinov</div>
     <h1>Vaqt, savollar va mavzularni tanlang</h1>
-    <p className="lead">30 ta savol tanlansa, xuddi olimpiadadagidek 10 ta 0,9 ballik, 10 ta 1,7 ballik va 10 ta 2,4 ballik savol beriladi — jami 50 ball.</p>
+    <p className="lead">30 ta savol tanlansa, xuddi olimpiadadagidek 10 ta 0,9 ballik, 10 ta 1,5 ballik va 10 ta 2,6 ballik savol beriladi — jami 50 ball.</p>
     <div className="panel">
       <div className="formGrid">
         <label>Vaqt (daqiqa)<input type="number" min={5} max={240} value={minutes} onChange={e => setMinutes(Math.min(240, Math.max(5, Number(e.target.value) || 5)))} /></label>

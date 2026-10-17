@@ -1,0 +1,1004 @@
+[
+ {
+  "id": "modellashtirish-01",
+  "unit": "modellashtirish",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Modellashtirish nima?",
+  "options": [
+   "Hisoblashlarni avtomatlashtirish",
+   "Grafik chizmachilik jarayoni",
+   "Kompyuter kodini yozish",
+   "Haqiqiy obyektning soddalashtirilgan nusxasini yaratish"
+  ],
+  "answer": 3,
+  "explanation": "Model — soddalashtirilgan nusxa.",
+  "solution": [
+   "Model — obyektning eng muhim xususiyatlarini saqlagan, soddalashtirilgan o‘rinbosari.",
+   "Modellashtirish — shunday model yaratish va u orqali obyektni o‘rganish.",
+   "Javob: Haqiqiy obyektning soddalashtirilgan nusxasini yaratish"
+  ]
+ },
+ {
+  "id": "modellashtirish-02",
+  "unit": "modellashtirish",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Haqiqiy obyektning kichraytirilgan yoki kattalashtirilgan nusxasi qaysi model turiga kiradi?",
+  "options": [
+   "Matematik model",
+   "Iqtisodiy model",
+   "Fizik (jismoniy, moddiy) model",
+   "Kompyuter modeli"
+  ],
+  "answer": 2,
+  "explanation": "Maket — fizik model.",
+  "solution": [
+   "Qo‘l bilan ushlash mumkin bo‘lgan nusxa — moddiy (fizik) model.",
+   "Masalan: samolyot maketi, globus, atom modeli.",
+   "Javob: Fizik (jismoniy, moddiy) model"
+  ]
+ },
+ {
+  "id": "modellashtirish-03",
+  "unit": "modellashtirish",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Globus qanday model?",
+  "options": [
+   "Jadval model",
+   "Matematik model",
+   "Matnli model",
+   "Yer sharining fizik (moddiy) modeli"
+  ],
+  "answer": 3,
+  "explanation": "Globus — moddiy model.",
+  "solution": [
+   "Globus — Yerning kichraytirilgan, qo‘lda ushlanadigan nusxasi.",
+   "Demak u moddiy (fizik) model.",
+   "Javob: Yer sharining fizik (moddiy) modeli"
+  ]
+ },
+ {
+  "id": "modellashtirish-04",
+  "unit": "modellashtirish",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "S = a · b (to‘g‘ri to‘rtburchak yuzi) formulasi qanday model?",
+  "options": [
+   "Matematik model",
+   "Grafik model",
+   "Moddiy model",
+   "Fizik model"
+  ],
+  "answer": 0,
+  "explanation": "Formula — matematik model.",
+  "solution": [
+   "Obyekt xususiyatlari formulalar va tenglamalar bilan ifodalangan.",
+   "Bu — matematik (formal) model.",
+   "Javob: Matematik model"
+  ]
+ },
+ {
+  "id": "modellashtirish-05",
+  "unit": "modellashtirish",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Shahar xaritasi qanday model?",
+  "options": [
+   "Matematik formula",
+   "Fizik model",
+   "Ovozli model",
+   "Grafik (tasviriy) axborot modeli"
+  ],
+  "answer": 3,
+  "explanation": "Xarita — grafik model.",
+  "solution": [
+   "Xarita — joy haqidagi axborotni rasm, belgilar va chiziqlar bilan ko‘rsatadi.",
+   "Bu — grafik axborot modeli.",
+   "Javob: Grafik (tasviriy) axborot modeli"
+  ]
+ },
+ {
+  "id": "modellashtirish-06",
+  "unit": "modellashtirish",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Dars jadvali qanday model?",
+  "options": [
+   "Matematik formula",
+   "Jadvalli axborot modeli",
+   "Fizik model",
+   "Grafik model"
+  ],
+  "answer": 1,
+  "explanation": "Jadval model.",
+  "solution": [
+   "Ma’lumotlar qator va ustunlarda tartiblangan.",
+   "Bu — jadvalli (tabular) axborot modeli.",
+   "Javob: Jadvalli axborot modeli"
+  ]
+ },
+ {
+  "id": "modellashtirish-07",
+  "unit": "modellashtirish",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Obyektni so‘zlar bilan ta’riflash (masalan, kitobdagi tavsif) qanday model?",
+  "options": [
+   "Grafik model",
+   "Fizik model",
+   "Og‘zaki (matnli, verbal) model",
+   "Matematik model"
+  ],
+  "answer": 2,
+  "explanation": "Matnli model.",
+  "solution": [
+   "So‘z yoki matn orqali ifodalangan model — verbal (matnli) model.",
+   "Masalan: «Mushuk — to‘rt oyoqli, mo‘ynali uy hayvoni».",
+   "Javob: Og‘zaki (matnli, verbal) model"
+  ]
+ },
+ {
+  "id": "modellashtirish-08",
+  "unit": "modellashtirish",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Algoritmning blok-sxemasi qanday model?",
+  "options": [
+   "Jadval model",
+   "Grafik model",
+   "Fizik model",
+   "Moddiy model"
+  ],
+  "answer": 1,
+  "explanation": "Blok-sxema — grafik model.",
+  "solution": [
+   "Blok-sxema algoritmni shakllar va strelkalar bilan tasvirlaydi.",
+   "Bu grafik (sxematik) model.",
+   "Javob: Grafik model"
+  ]
+ },
+ {
+  "id": "modellashtirish-09",
+  "unit": "modellashtirish",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Model haqiqiy obyektning qaysi xususiyatlarini aks ettirishi kerak?",
+  "options": [
+   "Barcha xususiyatlarini",
+   "Faqat rangini",
+   "O‘rganish maqsadi uchun muhim bo‘lgan xususiyatlarini",
+   "Hech qaysisini"
+  ],
+  "answer": 2,
+  "explanation": "Faqat muhim xususiyatlar.",
+  "solution": [
+   "Model har doim soddalashtirilgan bo‘ladi — hamma narsani aks ettirmaydi.",
+   "Faqat maqsadga muhim xususiyatlar olinadi.",
+   "Javob: O‘rganish maqsadi uchun muhim bo‘lgan xususiyatlarini"
+  ]
+ },
+ {
+  "id": "modellashtirish-10",
+  "unit": "modellashtirish",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Mashinaning o‘yinchoq nusxasi qanday model?",
+  "options": [
+   "Axborot modeli",
+   "Grafik model",
+   "Moddiy (fizik) model",
+   "Matematik model"
+  ],
+  "answer": 2,
+  "explanation": "O‘yinchoq — moddiy model.",
+  "solution": [
+   "O‘yinchoq — haqiqiy mashinaning kichraytirilgan jismoniy nusxasi.",
+   "Uni qo‘l bilan ushlash mumkin — demak moddiy.",
+   "Javob: Moddiy (fizik) model"
+  ]
+ },
+ {
+  "id": "modellashtirish-11",
+  "unit": "modellashtirish",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Kompyuterda ob-havoni bashorat qilish dasturi qanday model?",
+  "options": [
+   "Fizik model",
+   "Kompyuter modeli",
+   "Moddiy model",
+   "Og‘zaki model"
+  ],
+  "answer": 1,
+  "explanation": "Kompyuter modeli.",
+  "solution": [
+   "Matematik model kompyuter dasturi sifatida amalga oshirilgan.",
+   "Bu — kompyuter (imitatsion) modeli.",
+   "Javob: Kompyuter modeli"
+  ]
+ },
+ {
+  "id": "modellashtirish-12",
+  "unit": "modellashtirish",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Inson skeleti maketi biologiya darsida qanday maqsadda ishlatiladi?",
+  "options": [
+   "Shifrlash uchun",
+   "Hisoblash uchun",
+   "Dastur yozish uchun",
+   "O‘quv (ta’limiy) model sifatida"
+  ],
+  "answer": 3,
+  "explanation": "O‘quv model.",
+  "solution": [
+   "Maket o‘quvchilarga suyaklar tuzilishini ko‘rsatib, o‘rgatadi.",
+   "Bunday modellar o‘quv modellari deyiladi.",
+   "Javob: O‘quv (ta’limiy) model sifatida"
+  ]
+ },
+ {
+  "id": "modellashtirish-13",
+  "unit": "modellashtirish",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Oila shajarasi (daraxti) qanday turdagi model?",
+  "options": [
+   "Ovozli model",
+   "Fizik model",
+   "Ierarxik (daraxtsimon) grafik model",
+   "Matematik formula"
+  ],
+  "answer": 2,
+  "explanation": "Daraxtsimon model.",
+  "solution": [
+   "Shajara — ajdodlar va avlodlarni daraxt shaklida, darajalar bo‘yicha ko‘rsatadi.",
+   "Bu ierarxik (daraxtsimon) model.",
+   "Javob: Ierarxik (daraxtsimon) grafik model"
+  ]
+ },
+ {
+  "id": "modellashtirish-14",
+  "unit": "modellashtirish",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Qaysi biri moddiy (fizik) modelga misol EMAS?",
+  "options": [
+   "Globus",
+   "Samolyot maketi",
+   "Fizika formulasi",
+   "Uy maketi"
+  ],
+  "answer": 2,
+  "explanation": "Formula — axborot model.",
+  "solution": [
+   "Maket va globus — qo‘lda ushlanadigan nusxalar.",
+   "Formula — belgilar bilan yozilgan axborot (matematik) model.",
+   "Javob: Fizika formulasi"
+  ]
+ },
+ {
+  "id": "modellashtirish-15",
+  "unit": "modellashtirish",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Bir xil obyekt uchun turli maqsadlarda turli modellar yaratish mumkinmi?",
+  "options": [
+   "Ha, maqsadga qarab turli modellar tuziladi",
+   "Model yaratib bo‘lmaydi",
+   "Faqat fizik model bo‘ladi",
+   "Yo‘q, faqat bitta model bo‘ladi"
+  ],
+  "answer": 0,
+  "explanation": "Maqsadga qarab turlicha.",
+  "solution": [
+   "Modelning ko‘rinishi uni yaratish MAQSADIGA bog‘liq.",
+   "Odam: shifokorga — skelet maketi, kadrlar bo‘limiga — anketa, rassomga — portret.",
+   "Javob: Ha, maqsadga qarab turli modellar tuziladi"
+  ]
+ },
+ {
+  "id": "modellashtirish-16",
+  "unit": "modellashtirish",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Musiqiy nota yozuvi qanday model?",
+  "options": [
+   "Fizik model",
+   "Jadval model",
+   "Moddiy model",
+   "Belgili (ramziy) axborot modeli"
+  ],
+  "answer": 3,
+  "explanation": "Notalar — belgili model.",
+  "solution": [
+   "Notalar — tovushlarni maxsus belgilar bilan yozish.",
+   "Bu belgili (ramziy, formal) axborot modeli.",
+   "Javob: Belgili (ramziy) axborot modeli"
+  ]
+ },
+ {
+  "id": "modellashtirish-17",
+  "unit": "modellashtirish",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Aholi sonining o‘sishini ifodalovchi P = P₀(1 + r)ᵗ tenglamasi qaysi turdagi modelga kiradi?",
+  "options": [
+   "Fizik model",
+   "Algoritmik model",
+   "Matematik model",
+   "Grafik model"
+  ],
+  "answer": 2,
+  "explanation": "Tenglama — matematik model.",
+  "solution": [
+   "Jarayon formula (tenglama) orqali ifodalangan.",
+   "Bu — matematik model.",
+   "Javob: Matematik model"
+  ]
+ },
+ {
+  "id": "modellashtirish-18",
+  "unit": "modellashtirish",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Aholi soni P = P₀(1 + r)ᵗ modeli bilan hisoblanadi. P₀ = 1000, r = 10% (0,1) bo‘lsa, 2 yildan keyin aholi soni nechta?",
+  "options": [
+   "1020",
+   "1200",
+   "1100",
+   "1210"
+  ],
+  "answer": 3,
+  "explanation": "1000 · 1,21 = 1210.",
+  "solution": [
+   "P = 1000 · (1 + 0,1)² = 1000 · 1,1².",
+   "1,1² = 1,21.",
+   "1000 · 1,21 = 1210",
+   "Javob: 1210"
+  ]
+ },
+ {
+  "id": "modellashtirish-19",
+  "unit": "modellashtirish",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Xarita masshtabi 1 : 100 000. Xaritada 5 sm bo‘lgan masofa haqiqatda necha km?",
+  "options": [
+   "500 km",
+   "0,5 km",
+   "5 km",
+   "50 km"
+  ],
+  "answer": 2,
+  "explanation": "1 sm = 1 km.",
+  "solution": [
+   "1 sm xaritada = 100 000 sm haqiqatda = 1 km.",
+   "5 sm → 5 km.",
+   "Javob: 5 km"
+  ]
+ },
+ {
+  "id": "modellashtirish-20",
+  "unit": "modellashtirish",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Maket masshtabi 1 : 50. Maketdagi uy balandligi 30 sm bo‘lsa, haqiqiy uy balandligi necha metr?",
+  "options": [
+   "60 m",
+   "15 m",
+   "1,5 m",
+   "150 m"
+  ],
+  "answer": 1,
+  "explanation": "30·50 = 1500 sm = 15 m.",
+  "solution": [
+   "Haqiqiy = 30 · 50 = 1500 sm.",
+   "1500 sm = 15 m.",
+   "Javob: 15 m"
+  ]
+ },
+ {
+  "id": "modellashtirish-21",
+  "unit": "modellashtirish",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Vaqt o‘tishi bilan o‘zgaradigan jarayonlarni tasvirlovchi modellar qanday ataladi?",
+  "options": [
+   "Fizik modellar",
+   "Jadval modellar",
+   "Statik modellar",
+   "Dinamik modellar"
+  ],
+  "answer": 3,
+  "explanation": "O‘zgarish → dinamik.",
+  "solution": [
+   "Statik model — obyektning bir lahzadagi holati (masalan, rasm, xarita).",
+   "Dinamik model — o‘zgarishni ko‘rsatadi (harakat, o‘sish).",
+   "Javob: Dinamik modellar"
+  ]
+ },
+ {
+  "id": "modellashtirish-22",
+  "unit": "modellashtirish",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Quyidagilardan qaysi biri statik modelga misol?",
+  "options": [
+   "Ob-havo prognozi",
+   "Bino chizmasi (loyihasi)",
+   "Aholi o‘sishi grafigi vaqt bo‘yicha",
+   "Avtomobil harakatining kompyuter simulyatsiyasi"
+  ],
+  "answer": 1,
+  "explanation": "Chizma — statik.",
+  "solution": [
+   "Chizma binoning bir holatini ko‘rsatadi — vaqt o‘tishi tasvirlanmaydi.",
+   "Qolganlari vaqt bo‘yicha o‘zgarishni ko‘rsatadi.",
+   "Javob: Bino chizmasi (loyihasi)"
+  ]
+ },
+ {
+  "id": "modellashtirish-23",
+  "unit": "modellashtirish",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Modellashtirish bosqichlari to‘g‘ri tartibda berilgan qatorni toping.",
+  "options": [
+   "Masalani qo‘yish → model yaratish → modelni tadqiq qilish → natijani tahlil qilish",
+   "Kompyuterni yoqish → dastur yozish → chop etish",
+   "Model yaratish → natija → masalani qo‘yish",
+   "Natijani tahlil qilish → model yaratish → masalani qo‘yish"
+  ],
+  "answer": 0,
+  "explanation": "Masala → model → tadqiq → tahlil.",
+  "solution": [
+   "Avval nima o‘rganilayotganini aniqlaymiz (masala, maqsad).",
+   "So‘ng model quramiz, u bilan tajriba qilamiz va natijani haqiqiy obyekt bilan solishtiramiz.",
+   "Javob: Masalani qo‘yish → model yaratish → modelni tadqiq qilish → natijani tahlil qilish"
+  ]
+ },
+ {
+  "id": "modellashtirish-24",
+  "unit": "modellashtirish",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Excel jadvalidagi formulalar yordamida oila byudjetini hisoblash qanday model?",
+  "options": [
+   "Moddiy model",
+   "Jadvalli matematik (kompyuter) model",
+   "Og‘zaki model",
+   "Fizik model"
+  ],
+  "answer": 1,
+  "explanation": "Excel — jadvalli model.",
+  "solution": [
+   "Ma’lumotlar jadvalda, hisoblar formulalar bilan bajariladi.",
+   "Bu kompyuterda amalga oshirilgan jadvalli matematik model.",
+   "Javob: Jadvalli matematik (kompyuter) model"
+  ]
+ },
+ {
+  "id": "modellashtirish-25",
+  "unit": "modellashtirish",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Uchish simulyatori (uchuvchilarni o‘qitish uchun) qanday model?",
+  "options": [
+   "Og‘zaki model",
+   "Kompyuter (imitatsion) modeli",
+   "Jadval model",
+   "Matnli model"
+  ],
+  "answer": 1,
+  "explanation": "Simulyator — imitatsion model.",
+  "solution": [
+   "Simulyator real parvozni kompyuterda «taqlid» qiladi.",
+   "Bu imitatsion (kompyuter) model.",
+   "Javob: Kompyuter (imitatsion) modeli"
+  ]
+ },
+ {
+  "id": "modellashtirish-26",
+  "unit": "modellashtirish",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Jism erkin tushganda bosib o‘tgan yo‘l h = g·t²/2 (g ≈ 10 m/s²). 3 sekundda jism necha metr tushadi?",
+  "options": [
+   "30",
+   "90",
+   "15",
+   "45"
+  ],
+  "answer": 3,
+  "explanation": "10·9/2 = 45 m.",
+  "solution": [
+   "h = 10 · 3² / 2 = 10 · 9 / 2.",
+   "90 / 2 = 45.",
+   "Javob: 45"
+  ]
+ },
+ {
+  "id": "modellashtirish-27",
+  "unit": "modellashtirish",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Qaysi biri axborot modeli EMAS?",
+  "options": [
+   "Kimyoviy formula H₂O",
+   "Shahar xaritasi",
+   "Poyezdlar jadvali",
+   "Samolyotning aerodinamik trubada sinaladigan maketi"
+  ],
+  "answer": 3,
+  "explanation": "Maket — moddiy model.",
+  "solution": [
+   "Axborot modeli — belgilar, matn, jadval, rasm ko‘rinishidagi model.",
+   "Maket — moddiy (fizik) model.",
+   "Javob: Samolyotning aerodinamik trubada sinaladigan maketi"
+  ]
+ },
+ {
+  "id": "modellashtirish-28",
+  "unit": "modellashtirish",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "H₂O kimyoviy formulasi qanday model?",
+  "options": [
+   "Fizik model",
+   "Belgili (formal) axborot modeli",
+   "Grafik model",
+   "Dinamik kompyuter modeli"
+  ],
+  "answer": 1,
+  "explanation": "Belgili model.",
+  "solution": [
+   "Formula modda tarkibini kimyoviy belgilar bilan ifodalaydi.",
+   "Bu belgili axborot modeli.",
+   "Javob: Belgili (formal) axborot modeli"
+  ]
+ },
+ {
+  "id": "modellashtirish-29",
+  "unit": "modellashtirish",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Model adekvat deyiladi, agar u…",
+  "options": [
+   "…kompyuterda yaratilgan bo‘lsa",
+   "…o‘rganilayotgan xususiyatlar bo‘yicha haqiqiy obyektga mos kelsa",
+   "…juda katta bo‘lsa",
+   "…rangli bo‘lsa"
+  ],
+  "answer": 1,
+  "explanation": "Adekvat — haqiqatga mos.",
+  "solution": [
+   "Adekvatlik — model natijalari haqiqat bilan mos kelishi.",
+   "Agar model noto‘g‘ri natija bersa — u adekvat emas.",
+   "Javob: …o‘rganilayotgan xususiyatlar bo‘yicha haqiqiy obyektga mos kelsa"
+  ]
+ },
+ {
+  "id": "modellashtirish-30",
+  "unit": "modellashtirish",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Metro sxemasi qanday model va unda nima saqlangan?",
+  "options": [
+   "Matnli model; bekatlar tarixi",
+   "Grafik model; bekatlar va ular orasidagi bog‘lanishlar",
+   "Fizik model; tunnellarning aniq uzunligi",
+   "Matematik model; poyezd tezligi formulasi"
+  ],
+  "answer": 1,
+  "explanation": "Sxema — bog‘lanishlar grafi.",
+  "solution": [
+   "Metro sxemasi — graf: bekatlar (nuqtalar) va yo‘nalishlar (chiziqlar).",
+   "Unda haqiqiy masofa va burilishlar emas, faqat bog‘lanishlar muhim.",
+   "Javob: Grafik model; bekatlar va ular orasidagi bog‘lanishlar"
+  ]
+ },
+ {
+  "id": "modellashtirish-31",
+  "unit": "modellashtirish",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Bank omonati: S = S₀ · (1 + p)ⁿ. S₀ = 2 000 000 so‘m, p = 20% (yillik), n = 2 yil. S nechaga teng?",
+  "options": [
+   "4000000",
+   "2880000",
+   "2400000",
+   "2800000"
+  ],
+  "answer": 1,
+  "explanation": "2 000 000 · 1,44 = 2 880 000.",
+  "solution": [
+   "Formula: S = S₀ · (1 + p)ⁿ — har yili summa 1,2 marta oshadi.",
+   "S = 2 000 000 · 1,2² = 2 000 000 · 1,44.",
+   "Javob: 2880000"
+  ]
+ },
+ {
+  "id": "modellashtirish-32",
+  "unit": "modellashtirish",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Quyidagilardan qaysi biri kompyuter modellashtirishning afzalligi?",
+  "options": [
+   "Hech qanday ma’lumot talab qilmaydi",
+   "Xavfli yoki qimmat tajribalarni xavfsiz va arzon sinash mumkin",
+   "Har doim 100% aniq natija beradi",
+   "Faqat rasm chiza oladi"
+  ],
+  "answer": 1,
+  "explanation": "Xavfsiz va arzon tajriba.",
+  "solution": [
+   "Masalan, avtomobil to‘qnashuvini, yadro reaktorini yoki zilzilani kompyuterda sinash xavfsiz.",
+   "Lekin natija model sifatiga bog‘liq — 100% kafolat yo‘q.",
+   "Javob: Xavfli yoki qimmat tajribalarni xavfsiz va arzon sinash mumkin"
+  ]
+ },
+ {
+  "id": "modellashtirish-33",
+  "unit": "modellashtirish",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Bitta kvadrat tomoni a bo‘lgan modeli: perimetr P = 4a, yuza S = a². a = 7 bo‘lsa, S − P = ?",
+  "options": [
+   "28",
+   "49",
+   "21",
+   "7"
+  ],
+  "answer": 2,
+  "explanation": "49 − 28 = 21.",
+  "solution": [
+   "S = 7² = 49. P = 4 · 7 = 28.",
+   "49 − 28.",
+   "Javob: 21"
+  ]
+ },
+ {
+  "id": "modellashtirish-34",
+  "unit": "modellashtirish",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Xarita masshtabi 1 : 200 000. Ikki shahar orasidagi haqiqiy masofa 30 km. Xaritada necha sm?",
+  "options": [
+   "1,5 sm",
+   "150 sm",
+   "15 sm",
+   "6 sm"
+  ],
+  "answer": 2,
+  "explanation": "30 / 2 = 15 sm.",
+  "solution": [
+   "1 sm xaritada = 200 000 sm = 2 km.",
+   "30 km : 2 km = 15.",
+   "Javob: 15 sm"
+  ]
+ },
+ {
+  "id": "modellashtirish-35",
+  "unit": "modellashtirish",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Sinf o‘quvchilarining bo‘yi va vazni ko‘rsatilgan ustunli diagramma qanday model?",
+  "options": [
+   "Grafik axborot modeli",
+   "Moddiy model",
+   "Fizik maket",
+   "Og‘zaki model"
+  ],
+  "answer": 0,
+  "explanation": "Diagramma — grafik model.",
+  "solution": [
+   "Diagramma ma’lumotlarni rasm (ustunlar) ko‘rinishida ko‘rsatadi.",
+   "Bu grafik axborot modeli.",
+   "Javob: Grafik axborot modeli"
+  ]
+ },
+ {
+  "id": "modellashtirish-36",
+  "unit": "modellashtirish",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Qaysi biri dinamik modelga misol?",
+  "options": [
+   "Bino chizmasi",
+   "Avtomobil harakatining kompyuter animatsiyasi",
+   "Shahar xaritasi",
+   "Uyning fotosurati"
+  ],
+  "answer": 1,
+  "explanation": "Harakat — dinamik.",
+  "solution": [
+   "Dinamik model vaqt o‘tishi bilan o‘zgarishni ko‘rsatadi.",
+   "Animatsiyada avtomobil harakatlanadi; qolganlari bir lahzadagi holat.",
+   "Javob: Avtomobil harakatining kompyuter animatsiyasi"
+  ]
+ },
+ {
+  "id": "modellashtirish-37",
+  "unit": "modellashtirish",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Bakteriyalar soni har soatda 2 marta ko‘payadi: N = N₀ · 2ᵗ. N₀ = 50 bo‘lsa, necha soatdan keyin bakteriyalar soni birinchi marta 1000 dan oshadi?",
+  "options": [
+   "20",
+   "4",
+   "10",
+   "5"
+  ],
+  "answer": 3,
+  "explanation": "50·2⁵ = 1600 > 1000.",
+  "solution": [
+   "t = 4: 50 · 16 = 800 (oshmadi).",
+   "t = 5: 50 · 32 = 1600 > 1000 ✔.",
+   "Javob: 5"
+  ]
+ },
+ {
+  "id": "modellashtirish-38",
+  "unit": "modellashtirish",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Aholi P = P₀(1 + r)ᵗ, P₀ = 10 000, r = 5%. 3 yildan keyin aholi soni (butun qismi)?",
+  "options": [
+   "10150",
+   "11500",
+   "11576",
+   "11000"
+  ],
+  "answer": 2,
+  "explanation": "10000 · 1,157625 ≈ 11576.",
+  "solution": [
+   "1,05³ = 1,05 · 1,05 · 1,05 = 1,157625.",
+   "10 000 · 1,157625 = 11 576,25.",
+   "Javob: 11576"
+  ]
+ },
+ {
+  "id": "modellashtirish-39",
+  "unit": "modellashtirish",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Xarita masshtabi 1 : 25 000. Haqiqiy masofa 3 km bo‘lsa, xaritada necha sm bo‘ladi?",
+  "options": [
+   "7,5 sm",
+   "1,2 sm",
+   "12 sm",
+   "120 sm"
+  ],
+  "answer": 2,
+  "explanation": "300000/25000 = 12 sm.",
+  "solution": [
+   "3 km = 300 000 sm.",
+   "300 000 : 25 000 = 12.",
+   "Javob: 12 sm"
+  ]
+ },
+ {
+  "id": "modellashtirish-40",
+  "unit": "modellashtirish",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Tezlik modeli: s = v · t. Avtomobil 72 km/soat tezlikda 25 minut yurdi. U necha km yo‘l bosdi?",
+  "options": [
+   "30",
+   "25",
+   "1800",
+   "36"
+  ],
+  "answer": 0,
+  "explanation": "72·5/12 = 30 km.",
+  "solution": [
+   "25 minut = 25/60 soat = 5/12 soat.",
+   "s = 72 · 5/12 = 30.",
+   "Javob: 30"
+  ]
+ },
+ {
+  "id": "modellashtirish-41",
+  "unit": "modellashtirish",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Kompyuter modeli: har yili o‘rmon maydoni 10% kamayadi (S = S₀ · 0,9ᵗ). Necha yildan keyin maydon dastlabkisining yarmidan kam bo‘ladi?",
+  "options": [
+   "6",
+   "7",
+   "5",
+   "10"
+  ],
+  "answer": 1,
+  "explanation": "0,9⁷ ≈ 0,478.",
+  "solution": [
+   "0,9⁶ ≈ 0,531 (hali yarmidan ko‘p).",
+   "0,9⁷ ≈ 0,478 < 0,5 ✔.",
+   "Javob: 7"
+  ]
+ },
+ {
+  "id": "modellashtirish-42",
+  "unit": "modellashtirish",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Modelni sinashda natija haqiqiy obyekt bilan mos kelmadi. Keyingi to‘g‘ri qadam qaysi?",
+  "options": [
+   "Modelni aniqlashtirish (yangi omillarni hisobga olish) va qayta sinash",
+   "Modellashtirishni to‘xtatish",
+   "Natijani yashirish",
+   "Haqiqiy obyektni o‘zgartirish"
+  ],
+  "answer": 0,
+  "explanation": "Modelni tuzatib qayta sinash.",
+  "solution": [
+   "Mos kelmaslik — model adekvat emasligini bildiradi.",
+   "Modelga muhim, lekin hisobga olinmagan omillar qo‘shiladi va jarayon takrorlanadi.",
+   "Javob: Modelni aniqlashtirish (yangi omillarni hisobga olish) va qayta sinash"
+  ]
+ },
+ {
+  "id": "modellashtirish-43",
+  "unit": "modellashtirish",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Graf modeli: 5 ta shahar, har ikki shahar orasida bittadan yo‘l bor. Jami nechta yo‘l?",
+  "options": [
+   "20",
+   "5",
+   "25",
+   "10"
+  ],
+  "answer": 3,
+  "explanation": "C(5,2) = 10.",
+  "solution": [
+   "Har bir juftlik uchun bitta yo‘l: C(5, 2).",
+   "5 · 4 / 2 = 10.",
+   "Javob: 10"
+  ]
+ },
+ {
+  "id": "modellashtirish-44",
+  "unit": "modellashtirish",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Sovuyotgan choy harorati modeli: har daqiqada xona harorati (20°C) bilan farq 10% kamayadi. Boshlang‘ich harorat 90°C. 2 daqiqadan keyin harorat?",
+  "options": [
+   "72",
+   "81",
+   "76",
+   "76,7"
+  ],
+  "answer": 3,
+  "explanation": "20 + 56,7 = 76,7°C.",
+  "solution": [
+   "Boshlang‘ich farq: 90 − 20 = 70.",
+   "2 daqiqadan keyin farq: 70 · 0,9² = 70 · 0,81 = 56,7.",
+   "Harorat: 20 + 56,7 = 76,7",
+   "Javob: 76,7"
+  ]
+ },
+ {
+  "id": "modellashtirish-45",
+  "unit": "modellashtirish",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Qaysi qatorda model turi va misol to‘g‘ri juftlangan?",
+  "options": [
+   "matematik — globus; grafik — formula; moddiy — xarita",
+   "matematik — kvadrat tenglama formulasi; grafik — diagramma; moddiy — maket",
+   "matematik — rasm; grafik — maket; moddiy — jadval",
+   "matematik — she’r; grafik — qo‘shiq; moddiy — formula"
+  ],
+  "answer": 1,
+  "explanation": "Formula/diagramma/maket.",
+  "solution": [
+   "Formula — matematik, diagramma — grafik, maket — moddiy model.",
+   "Qolgan qatorlarda juftlar chalkashtirilgan.",
+   "Javob: matematik — kvadrat tenglama formulasi; grafik — diagramma; moddiy — maket"
+  ]
+ },
+ {
+  "id": "modellashtirish-46",
+  "unit": "modellashtirish",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Model: y = 2x + 3 (do‘kon daromadi, x — sotilgan mahsulot soni yuzlarda, y — mln so‘m). Daromad 15 mln bo‘lishi uchun nechta mahsulot sotilishi kerak?",
+  "options": [
+   "6",
+   "300",
+   "600",
+   "900"
+  ],
+  "answer": 2,
+  "explanation": "x = 6 yuz = 600.",
+  "solution": [
+   "2x + 3 = 15 → 2x = 12 → x = 6 (yuzlarda).",
+   "6 · 100 = 600 ta.",
+   "Javob: 600"
+  ]
+ },
+ {
+  "id": "modellashtirish-47",
+  "unit": "modellashtirish",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Qaysi model ham dinamik, ham kompyuter modeli hisoblanadi?",
+  "options": [
+   "Sayyoralar ro‘yxati jadvali",
+   "Qog‘ozdagi Quyosh tizimi rasmi",
+   "Kompyuterda Quyosh tizimi sayyoralari harakatining animatsiyasi",
+   "Plastilindan yasalgan sayyora"
+  ],
+  "answer": 2,
+  "explanation": "Animatsiya — dinamik kompyuter modeli.",
+  "solution": [
+   "Dinamik — vaqt bo‘yicha o‘zgarish (harakat). Kompyuter — dasturda amalga oshirilgan.",
+   "Faqat animatsiya ikkala shartga mos.",
+   "Javob: Kompyuterda Quyosh tizimi sayyoralari harakatining animatsiyasi"
+  ]
+ },
+ {
+  "id": "modellashtirish-48",
+  "unit": "modellashtirish",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Qiya otilgan jismning eng uzoq uchish masofasi L = v²/g (g = 10). v = 20 m/s bo‘lsa, L = ?",
+  "options": [
+   "40 m",
+   "20 m",
+   "2 m",
+   "400 m"
+  ],
+  "answer": 0,
+  "explanation": "400/10 = 40 m.",
+  "solution": [
+   "v² = 400.",
+   "400 / 10 = 40.",
+   "Javob: 40 m"
+  ]
+ },
+ {
+  "id": "modellashtirish-49",
+  "unit": "modellashtirish",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Ikki model: A — «tezlik = masofa / vaqt» formulasi, B — avtomobilning shamol trubasidagi maketi. Ularni turi bo‘yicha to‘g‘ri tasniflang.",
+  "options": [
+   "Ikkalasi ham axborot",
+   "A — axborot (matematik), B — moddiy (fizik)",
+   "Ikkalasi ham moddiy",
+   "A — moddiy, B — axborot"
+  ],
+  "answer": 1,
+  "explanation": "Formula — axborot, maket — moddiy.",
+  "solution": [
+   "Formula — belgilardan iborat, ya’ni axborot (matematik) model.",
+   "Maket — jismoniy nusxa, moddiy model.",
+   "Javob: A — axborot (matematik), B — moddiy (fizik)"
+  ]
+ },
+ {
+  "id": "modellashtirish-50",
+  "unit": "modellashtirish",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Excel da ketma-ketlik modeli: A1 = 1, A2 = A1·2 + 1, formula pastga tortildi. A5 qiymati?",
+  "options": [
+   "9",
+   "15",
+   "31",
+   "63"
+  ],
+  "answer": 2,
+  "explanation": "1, 3, 7, 15, 31.",
+  "solution": [
+   "A2 = 3, A3 = 7, A4 = 15, A5 = 31.",
+   "Umumiy: Aₙ = 2ⁿ − 1.",
+   "Javob: 31"
+  ]
+ }
+]

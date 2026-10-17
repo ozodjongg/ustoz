@@ -44,31 +44,11 @@
   "unit": "mantiqiy-ifodalar",
   "difficulty": "easy",
   "points": 0.9,
-  "prompt": "¬1 (1 ning inkori) nechaga teng?",
-  "options": [
-   "1",
-   "2",
-   "−1",
-   "0"
-  ],
-  "answer": 3,
-  "explanation": "¬1 = 0.",
-  "solution": [
-   "Inkor (EMAS, NOT, ¬) qiymatni teskarisiga aylantiradi.",
-   "Rost (1) → yolg‘on (0).",
-   "Javob: 0"
-  ]
- },
- {
-  "id": "mantiqiy-ifodalar-04",
-  "unit": "mantiqiy-ifodalar",
-  "difficulty": "easy",
-  "points": 0.9,
   "prompt": "A = 1, B = 0 bo‘lsa, A ∨ B nechaga teng?",
   "options": [
    "0",
-   "10",
    "2",
+   "10",
    "1"
   ],
   "answer": 3,
@@ -80,35 +60,15 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-05",
-  "unit": "mantiqiy-ifodalar",
-  "difficulty": "easy",
-  "points": 0.9,
-  "prompt": "A = 1, B = 0 bo‘lsa, A ∧ B nechaga teng?",
-  "options": [
-   "0",
-   "1",
-   "−1",
-   "10"
-  ],
-  "answer": 0,
-  "explanation": "1 ∧ 0 = 0.",
-  "solution": [
-   "VA amali ikkalasi 1 bo‘lsagina 1 beradi.",
-   "B = 0, demak natija 0.",
-   "Javob: 0"
-  ]
- },
- {
-  "id": "mantiqiy-ifodalar-06",
+  "id": "mantiqiy-ifodalar-04",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Implikatsiya A → B qachon YOLG‘ON bo‘ladi?",
   "options": [
+   "A yolg‘on, B rost bo‘lganda",
    "ikkalasi yolg‘on bo‘lganda",
    "ikkalasi rost bo‘lganda",
-   "A yolg‘on, B rost bo‘lganda",
    "A rost, B yolg‘on bo‘lganda"
   ],
   "answer": 3,
@@ -120,18 +80,18 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-07",
+  "id": "mantiqiy-ifodalar-05",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Ekvivalensiya A ↔ B qachon ROST bo‘ladi?",
   "options": [
-   "A va B har xil bo‘lganda",
-   "hech qachon",
+   "A va B bir xil qiymatga ega bo‘lganda",
    "faqat ikkalasi 1 bo‘lganda",
-   "A va B bir xil qiymatga ega bo‘lganda"
+   "hech qachon",
+   "A va B har xil bo‘lganda"
   ],
-  "answer": 3,
+  "answer": 0,
   "explanation": "↔ bir xil qiymatlarda rost.",
   "solution": [
    "↔ — «teng kuchli»: ikkala tomon bir xil bo‘lsa rost.",
@@ -140,18 +100,18 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-08",
+  "id": "mantiqiy-ifodalar-06",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "XOR (istisno qiluvchi YOKI, A ⊕ B) qachon 1 ga teng?",
   "options": [
-   "har doim",
-   "A va B har xil bo‘lganda",
    "ikkalasi 0 bo‘lganda",
-   "ikkalasi 1 bo‘lganda"
+   "har doim",
+   "ikkalasi 1 bo‘lganda",
+   "A va B har xil bo‘lganda"
   ],
-  "answer": 1,
+  "answer": 3,
   "explanation": "XOR qiymatlar har xil bo‘lsa 1.",
   "solution": [
    "XOR — «yoki u, yoki bu, lekin ikkalasi emas».",
@@ -160,18 +120,18 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-09",
+  "id": "mantiqiy-ifodalar-07",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Ikki o‘zgaruvchili mantiqiy ifodaning rostlik jadvalida nechta qator (kombinatsiya) bo‘ladi?",
   "options": [
    "8",
-   "4",
    "3",
-   "2"
+   "2",
+   "4"
   ],
-  "answer": 1,
+  "answer": 3,
   "explanation": "2² = 4 qator.",
   "solution": [
    "Har bir o‘zgaruvchi 2 xil qiymat oladi: 0 yoki 1.",
@@ -180,18 +140,18 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-10",
+  "id": "mantiqiy-ifodalar-08",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Quyidagilardan qaysi biri mulohaza (rost yoki yolg‘onligini aytish mumkin bo‘lgan gap) EMAS?",
   "options": [
+   "Bir yilda 12 oy bor.",
    "Eshikni yop!",
    "2 + 2 = 5",
-   "Bir yilda 12 oy bor.",
    "Toshkent — O‘zbekiston poytaxti."
   ],
-  "answer": 0,
+  "answer": 1,
   "explanation": "Buyruq gap mulohaza emas.",
   "solution": [
    "Mulohaza — rost yoki yolg‘on deb baholash mumkin bo‘lgan darak gap.",
@@ -201,18 +161,18 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-11",
+  "id": "mantiqiy-ifodalar-09",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Mantiqiy amallarning bajarilish tartibi (ustuvorligi) to‘g‘ri ko‘rsatilgan qatorni toping.",
   "options": [
    "∧, ∨, ¬, ↔, →",
-   "∨, ∧, ¬, →, ↔",
+   "¬, ∧, ∨, →, ↔",
    "→, ↔, ¬, ∧, ∨",
-   "¬, ∧, ∨, →, ↔"
+   "∨, ∧, ¬, →, ↔"
   ],
-  "answer": 3,
+  "answer": 1,
   "explanation": "¬ → ∧ → ∨ → → → ↔.",
   "solution": [
    "Avval qavslar, keyin inkor ¬ (eng kuchli).",
@@ -221,18 +181,18 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-12",
+  "id": "mantiqiy-ifodalar-10",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "¬(¬A) ifoda nimaga teng?",
   "options": [
-   "¬A",
-   "1",
    "A",
-   "0"
+   "0",
+   "1",
+   "¬A"
   ],
-  "answer": 2,
+  "answer": 0,
   "explanation": "Ikki karra inkor: ¬¬A = A.",
   "solution": [
    "Ikki marta inkor qilish — qiymatni ikki marta teskarilash.",
@@ -241,18 +201,18 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-13",
+  "id": "mantiqiy-ifodalar-11",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "A ∨ 1 ifoda nimaga teng (A ning qiymatidan qat’i nazar)?",
   "options": [
    "0",
-   "1",
+   "A",
    "¬A",
-   "A"
+   "1"
   ],
-  "answer": 1,
+  "answer": 3,
   "explanation": "A ∨ 1 = 1.",
   "solution": [
    "YOKI amalida bitta tomon 1 bo‘lsa, natija har doim 1.",
@@ -261,36 +221,16 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-14",
-  "unit": "mantiqiy-ifodalar",
-  "difficulty": "easy",
-  "points": 0.9,
-  "prompt": "A ∧ 0 ifoda nimaga teng?",
-  "options": [
-   "A",
-   "¬A",
-   "0",
-   "1"
-  ],
-  "answer": 2,
-  "explanation": "A ∧ 0 = 0.",
-  "solution": [
-   "VA amalida bitta tomon 0 bo‘lsa, ko‘paytma 0.",
-   "A ∧ 0 = 0.",
-   "Javob: 0"
-  ]
- },
- {
-  "id": "mantiqiy-ifodalar-15",
+  "id": "mantiqiy-ifodalar-12",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "A ∨ ¬A ifoda nimaga teng?",
   "options": [
-   "A",
    "0",
+   "¬A",
    "1",
-   "¬A"
+   "A"
   ],
   "answer": 2,
   "explanation": "A ∨ ¬A = 1 (doim rost).",
@@ -301,35 +241,15 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-16",
-  "unit": "mantiqiy-ifodalar",
-  "difficulty": "easy",
-  "points": 0.9,
-  "prompt": "A ∧ ¬A ifoda nimaga teng?",
-  "options": [
-   "¬A",
-   "A",
-   "0",
-   "1"
-  ],
-  "answer": 2,
-  "explanation": "A ∧ ¬A = 0 (doim yolg‘on).",
-  "solution": [
-   "A va ¬A bir vaqtda 1 bo‘la olmaydi.",
-   "Shuning uchun VA natijasi har doim 0 (qarama-qarshilik).",
-   "Javob: 0"
-  ]
- },
- {
-  "id": "mantiqiy-ifodalar-17",
+  "id": "mantiqiy-ifodalar-13",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Uch o‘zgaruvchili (A, B, C) ifodaning rostlik jadvalida nechta qator bo‘ladi?",
   "options": [
-   "9",
-   "8",
    "3",
+   "8",
+   "9",
    "6"
   ],
   "answer": 1,
@@ -341,16 +261,16 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-18",
+  "id": "mantiqiy-ifodalar-14",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "C ∨ A ∧ B mantiqiy ifodaning rostlik jadvalida nechta ROST qiymat bor?",
   "options": [
-   "6",
    "4",
+   "3",
    "5",
-   "3"
+   "6"
   ],
   "answer": 2,
   "explanation": "C = 1 da 4 ta + (A=B=1, C=0) 1 ta = 5.",
@@ -362,18 +282,18 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-19",
+  "id": "mantiqiy-ifodalar-15",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "A = «Bir sutkada 1440 daqiqa bor», B = «Tafakkurning 3 xil shakli bor», C = «π < 3,14». (A → B) ∨ (C → A) ↔ (A ∧ C) ifodaning qiymatini toping.",
   "options": [
    "aniqlab bo‘lmaydi",
-   "A ga teng",
    "1 (rost)",
-   "0 (yolg‘on)"
+   "0 (yolg‘on)",
+   "A ga teng"
   ],
-  "answer": 3,
+  "answer": 2,
   "explanation": "Chap tomon 1, o‘ng tomon 0 → 1 ↔ 0 = 0.",
   "solution": [
    "Mulohazalarni baholaymiz: 24·60 = 1440 → A = 1. Tafakkur shakllari: tushuncha, hukm, xulosa → B = 1. π = 3,1415… > 3,14 → C = 0.",
@@ -384,18 +304,18 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-20",
+  "id": "mantiqiy-ifodalar-16",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "A = True, B = False bo‘lsa, quyidagi tengliklardan qaysi biri to‘g‘ri?",
   "options": [
-   "(A → B) = ¬(A ∨ B) ∨ A",
-   "(B ∧ A ∨ ¬A) = True",
    "(B → A) = (¬A ∧ 0)",
-   "¬(¬B) = A ∧ False"
+   "(B ∧ A ∨ ¬A) = True",
+   "¬(¬B) = A ∧ False",
+   "(A → B) = ¬(A ∨ B) ∨ A"
   ],
-  "answer": 3,
+  "answer": 2,
   "explanation": "¬¬B = 0 va A ∧ False = 0.",
   "solution": [
    "Har birini hisoblaymiz (A = 1, B = 0).",
@@ -406,16 +326,16 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-21",
+  "id": "mantiqiy-ifodalar-17",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "De Morgan qonuniga ko‘ra ¬(A ∧ B) nimaga teng?",
   "options": [
-   "A ∨ B",
+   "¬A ∧ B",
    "¬A ∨ ¬B",
-   "¬A ∧ ¬B",
-   "¬A ∧ B"
+   "A ∨ B",
+   "¬A ∧ ¬B"
   ],
   "answer": 1,
   "explanation": "¬(A∧B) = ¬A ∨ ¬B.",
@@ -426,18 +346,18 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-22",
+  "id": "mantiqiy-ifodalar-18",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "De Morgan qonuniga ko‘ra ¬(A ∨ B) nimaga teng?",
   "options": [
-   "¬A ∨ ¬B",
-   "A ∨ ¬B",
    "A ∧ B",
-   "¬A ∧ ¬B"
+   "¬A ∨ ¬B",
+   "¬A ∧ ¬B",
+   "A ∨ ¬B"
   ],
-  "answer": 3,
+  "answer": 2,
   "explanation": "¬(A∨B) = ¬A ∧ ¬B.",
   "solution": [
    "Inkorni ichkariga kiritamiz: har bir o‘zgaruvchi inkor bo‘ladi.",
@@ -446,15 +366,15 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-23",
+  "id": "mantiqiy-ifodalar-19",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "A → B implikatsiyasi qaysi ifodaga teng kuchli?",
   "options": [
-   "A ∨ ¬B",
    "¬A ∧ B",
    "A ∧ ¬B",
+   "A ∨ ¬B",
    "¬A ∨ B"
   ],
   "answer": 3,
@@ -466,18 +386,18 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-24",
+  "id": "mantiqiy-ifodalar-20",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "A ∨ A ∧ B ifodani soddalashtiring.",
   "options": [
-   "A",
-   "A ∨ B",
    "B",
-   "A ∧ B"
+   "A ∧ B",
+   "A ∨ B",
+   "A"
   ],
-  "answer": 0,
+  "answer": 3,
   "explanation": "Yutilish: A ∨ AB = A.",
   "solution": [
    "Bu yutilish (absorbsiya) qonuni.",
@@ -486,18 +406,18 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-25",
+  "id": "mantiqiy-ifodalar-21",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "A ∧ (A ∨ B) ifodani soddalashtiring.",
   "options": [
+   "A ∨ B",
    "A",
    "B",
-   "1",
-   "A ∨ B"
+   "1"
   ],
-  "answer": 0,
+  "answer": 1,
   "explanation": "A ∧ (A ∨ B) = A.",
   "solution": [
    "Yutilish qonunining ikkinchi ko‘rinishi.",
@@ -506,18 +426,18 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-26",
+  "id": "mantiqiy-ifodalar-22",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "(A ∨ B) ∧ ¬A ifodani soddalashtiring.",
   "options": [
+   "A",
    "A ∨ ¬B",
-   "¬A ∧ B",
    "B",
-   "A"
+   "¬A ∧ B"
   ],
-  "answer": 1,
+  "answer": 3,
   "explanation": "A¬A = 0 bo‘lgani uchun ¬A ∧ B qoladi.",
   "solution": [
    "Taqsimlaymiz: (A ∨ B) ∧ ¬A = A∧¬A ∨ B∧¬A.",
@@ -526,18 +446,18 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-27",
+  "id": "mantiqiy-ifodalar-23",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "A ⊕ B (XOR) ifodasining rostlik jadvalida nechta 1 bor?",
   "options": [
-   "2",
-   "4",
+   "1",
    "3",
-   "1"
+   "4",
+   "2"
   ],
-  "answer": 0,
+  "answer": 3,
   "explanation": "(0,1) va (1,0) — 2 ta.",
   "solution": [
    "XOR qiymatlar har xil bo‘lganda 1.",
@@ -546,15 +466,15 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-28",
+  "id": "mantiqiy-ifodalar-24",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "A → B ifodaning rostlik jadvalida nechta ROST qiymat bor?",
   "options": [
    "3",
-   "1",
    "4",
+   "1",
    "2"
   ],
   "answer": 0,
@@ -566,18 +486,18 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-29",
+  "id": "mantiqiy-ifodalar-25",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Qaysi qiymatlar to‘plamida ¬A ∧ B ∨ C = 0 bo‘ladi?",
   "options": [
-   "A=1, B=0, C=1",
    "A=1, B=1, C=0",
    "A=0, B=1, C=0",
+   "A=1, B=0, C=1",
    "A=0, B=0, C=1"
   ],
-  "answer": 1,
+  "answer": 0,
   "explanation": "C = 0 va ¬A∧B = 0 bo‘lishi kerak.",
   "solution": [
    "Natija 0 bo‘lishi uchun C = 0 va ¬A ∧ B = 0 bo‘lishi kerak.",
@@ -587,38 +507,18 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-30",
+  "id": "mantiqiy-ifodalar-26",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "medium",
-  "points": 1.7,
-  "prompt": "(A ∧ B) ∨ (A ∧ ¬B) ifodani soddalashtiring.",
-  "options": [
-   "A ∧ B",
-   "A",
-   "1",
-   "B"
-  ],
-  "answer": 1,
-  "explanation": "A(B ∨ ¬B) = A.",
-  "solution": [
-   "A ni qavsdan tashqariga chiqaramiz: A ∧ (B ∨ ¬B).",
-   "B ∨ ¬B = 1, demak A ∧ 1.",
-   "Natija: A"
-  ]
- },
- {
-  "id": "mantiqiy-ifodalar-31",
-  "unit": "mantiqiy-ifodalar",
-  "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Qaysi ifoda tavtologiya (har doim rost)?",
   "options": [
-   "A → B",
-   "A ∧ ¬B",
    "A ↔ ¬A",
-   "A → (B → A)"
+   "A → (B → A)",
+   "A ∧ ¬B",
+   "A → B"
   ],
-  "answer": 3,
+  "answer": 1,
   "explanation": "A → (B → A) har doim 1.",
   "solution": [
    "A → (B → A) ni tekshiramiz: A = 0 bo‘lsa implikatsiya 1. A = 1 bo‘lsa B → 1 = 1, demak 1 → 1 = 1.",
@@ -627,18 +527,18 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-32",
+  "id": "mantiqiy-ifodalar-27",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "A ↔ B ifoda qaysi ifodaga teng?",
   "options": [
-   "A ∨ B",
-   "(A ∧ ¬B) ∨ (¬A ∧ B)",
+   "(A ∧ B) ∨ (¬A ∧ ¬B)",
    "¬A ∨ B",
-   "(A ∧ B) ∨ (¬A ∧ ¬B)"
+   "A ∨ B",
+   "(A ∧ ¬B) ∨ (¬A ∧ B)"
   ],
-  "answer": 3,
+  "answer": 0,
   "explanation": "Bir xil bo‘lish: ikkalasi 1 yoki ikkalasi 0.",
   "solution": [
    "A ↔ B rost bo‘lgan hollar: ikkalasi 1 (A ∧ B) yoki ikkalasi 0 (¬A ∧ ¬B).",
@@ -647,18 +547,18 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-33",
+  "id": "mantiqiy-ifodalar-28",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "A = 0, B = 1, C = 1 bo‘lsa, (A ∨ B) ∧ ¬C ning qiymatini toping.",
   "options": [
-   "aniqlab bo‘lmaydi",
-   "1",
    "0",
+   "1",
+   "aniqlab bo‘lmaydi",
    "C"
   ],
-  "answer": 2,
+  "answer": 0,
   "explanation": "1 ∧ 0 = 0.",
   "solution": [
    "A ∨ B = 0 ∨ 1 = 1.",
@@ -667,38 +567,18 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-34",
+  "id": "mantiqiy-ifodalar-29",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "medium",
-  "points": 1.7,
-  "prompt": "¬A → A ifoda nimaga teng?",
-  "options": [
-   "A",
-   "0",
-   "¬A",
-   "1"
-  ],
-  "answer": 0,
-  "explanation": "¬A → A = A ∨ A = A.",
-  "solution": [
-   "X → Y = ¬X ∨ Y. Bu yerda X = ¬A, Y = A.",
-   "¬(¬A) ∨ A = A ∨ A = A.",
-   "Natija: A"
-  ]
- },
- {
-  "id": "mantiqiy-ifodalar-35",
-  "unit": "mantiqiy-ifodalar",
-  "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "A = 1, B = 0, C = 1 bo‘lsa, A → B ↔ ¬C ifodaning qiymatini toping.",
   "options": [
-   "B",
    "aniqlab bo‘lmaydi",
    "1",
-   "0"
+   "0",
+   "B"
   ],
-  "answer": 2,
+  "answer": 1,
   "explanation": "(1→0) = 0, ¬C = 0, 0 ↔ 0 = 1.",
   "solution": [
    "Tartib: avval ¬, keyin →, oxirida ↔. Ya’ni (A → B) ↔ (¬C).",
@@ -708,16 +588,16 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-36",
+  "id": "mantiqiy-ifodalar-30",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Mantiqiy ifodani soddalashtiring: ¬(A ∧ ((A → C) ∨ (B → A)))",
   "options": [
-   "A",
+   "1",
    "¬A",
    "¬A ∧ ¬C",
-   "1"
+   "A"
   ],
   "answer": 1,
   "explanation": "(A→C) ∨ (B→A) = 1, shuning uchun ¬(A ∧ 1) = ¬A.",
@@ -729,18 +609,18 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-37",
+  "id": "mantiqiy-ifodalar-31",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "(A → B) ∧ (B → C) ∧ (C → A) ifoda rostlik jadvalida nechta rost qiymatga ega?",
   "options": [
-   "2",
    "1",
+   "4",
    "3",
-   "4"
+   "2"
   ],
-  "answer": 0,
+  "answer": 3,
   "explanation": "Faqat 000 va 111 → 2 ta.",
   "solution": [
    "Implikatsiyalar zanjiri A → B → C → A: biri 1 bo‘lsa, keyingisi ham 1 bo‘lishi shart.",
@@ -750,18 +630,18 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-38",
+  "id": "mantiqiy-ifodalar-32",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "(A ∨ B) → C ifodaning rostlik jadvalida nechta YOLG‘ON qiymat bor?",
   "options": [
-   "3",
-   "5",
+   "2",
    "1",
-   "2"
+   "5",
+   "3"
   ],
-  "answer": 0,
+  "answer": 3,
   "explanation": "C=0 va A∨B=1 — 3 ta qator.",
   "solution": [
    "Implikatsiya yolg‘on: chap tomon 1, o‘ng tomon 0.",
@@ -770,16 +650,16 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-39",
+  "id": "mantiqiy-ifodalar-33",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "A ⊕ B ⊕ C ifoda (XOR zanjiri) rostlik jadvalida nechta 1 ga ega?",
   "options": [
-   "2",
+   "6",
    "3",
    "4",
-   "6"
+   "2"
   ],
   "answer": 2,
   "explanation": "1 lar soni toq: 3 + 1 = 4 ta.",
@@ -790,18 +670,18 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-40",
+  "id": "mantiqiy-ifodalar-34",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "F = ¬(A ∨ B) ∨ (A ∧ B ∧ C) ifoda nechta qatorda rost?",
   "options": [
-   "1",
-   "2",
+   "3",
    "4",
-   "3"
+   "2",
+   "1"
   ],
-  "answer": 3,
+  "answer": 0,
   "explanation": "000, 001, 111 → 3 ta.",
   "solution": [
    "¬(A ∨ B) = 1 faqat A = 0, B = 0 da → C ixtiyoriy → 2 qator (000, 001).",
@@ -810,18 +690,18 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-41",
+  "id": "mantiqiy-ifodalar-35",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "To‘rt o‘zgaruvchili A ∧ B ∨ C ∧ D ifoda nechta qatorda rost?",
   "options": [
-   "7",
    "4",
-   "8",
-   "9"
+   "9",
+   "7",
+   "8"
   ],
-  "answer": 0,
+  "answer": 2,
   "explanation": "Yolg‘on 3·3 = 9, rost 16 − 9 = 7.",
   "solution": [
    "Jami 2⁴ = 16 qator. Teskarisini sanash osonroq: qachon 0?",
@@ -830,18 +710,18 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-42",
+  "id": "mantiqiy-ifodalar-36",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Qaysi ifoda A ↔ B ning inkoriga (¬(A ↔ B)) teng?",
   "options": [
    "A ∧ B",
+   "A ⊕ B",
    "¬A ↔ ¬B",
-   "A → B",
-   "A ⊕ B"
+   "A → B"
   ],
-  "answer": 3,
+  "answer": 1,
   "explanation": "¬(A ↔ B) = A ⊕ B.",
   "solution": [
    "A ↔ B — qiymatlar bir xil bo‘lsa 1. Uning inkori — qiymatlar har xil bo‘lsa 1.",
@@ -850,18 +730,18 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-43",
+  "id": "mantiqiy-ifodalar-37",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "(A → B) → C ifoda qiymati 0 bo‘lgan qatorlar soni nechta?",
   "options": [
-   "4",
-   "1",
    "3",
+   "1",
+   "4",
    "2"
   ],
-  "answer": 2,
+  "answer": 0,
   "explanation": "(A→B) = 1 (3 xil) va C = 0 → 3 ta.",
   "solution": [
    "Tashqi implikatsiya 0 bo‘lishi uchun: (A → B) = 1 va C = 0.",
@@ -871,18 +751,18 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-44",
+  "id": "mantiqiy-ifodalar-38",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "¬A ∧ ¬B ∨ A ∧ B ∨ ¬A ∧ B ifodani soddalashtiring.",
   "options": [
-   "A ∨ ¬B",
    "¬A ∨ B",
-   "A ↔ B",
-   "1"
+   "1",
+   "A ∨ ¬B",
+   "A ↔ B"
   ],
-  "answer": 1,
+  "answer": 0,
   "explanation": "Faqat (1,0) da yolg‘on → ¬A ∨ B.",
   "solution": [
    "Qatorlarni ko‘ramiz: ¬A¬B (00), AB (11), ¬AB (01) — rost. Faqat A=1, B=0 (10) da yolg‘on.",
@@ -891,18 +771,18 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-45",
+  "id": "mantiqiy-ifodalar-39",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Uch o‘zgaruvchili ifodalardan qaysi biri aynan bitta qatorda ROST bo‘ladi?",
   "options": [
    "A ∧ B",
+   "A ∨ B ∨ C",
    "A ∧ ¬B ∧ C",
-   "¬A ∨ C",
-   "A ∨ B ∨ C"
+   "¬A ∨ C"
   ],
-  "answer": 1,
+  "answer": 2,
   "explanation": "Uchala o‘zgaruvchi VA bilan — 1 qator.",
   "solution": [
    "Uchala o‘zgaruvchi VA bilan bog‘lansa, faqat bitta kombinatsiya mos keladi.",
@@ -912,18 +792,18 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-46",
+  "id": "mantiqiy-ifodalar-40",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "A ∨ B → A ∧ B ifoda (amallar tartibiga e’tibor bering) qachon rost?",
   "options": [
-   "A va B bir xil bo‘lganda",
-   "har doim",
+   "A va B har xil bo‘lganda",
    "faqat A = B = 1 bo‘lganda",
-   "A va B har xil bo‘lganda"
+   "har doim",
+   "A va B bir xil bo‘lganda"
   ],
-  "answer": 0,
+  "answer": 3,
   "explanation": "(A∨B) → (A∧B) = A ↔ B.",
   "solution": [
    "Tartib: avval ∧ va ∨, keyin →. Ya’ni (A ∨ B) → (A ∧ B).",
@@ -932,18 +812,18 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-47",
+  "id": "mantiqiy-ifodalar-41",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Uchala do‘st haqida: «Ali keldi yoki Vali keldi», «Agar Ali kelsa, Sami ham keladi», «Sami kelmadi». Kim albatta keldi?",
   "options": [
+   "Vali",
    "Sami",
    "Ali",
-   "hech kim",
-   "Vali"
+   "hech kim"
   ],
-  "answer": 3,
+  "answer": 0,
   "explanation": "S=0 → A=0 → V=1.",
   "solution": [
    "Sami kelmagan (S = 0). Agar A = 1 bo‘lsa, S = 1 bo‘lishi kerak edi — ziddiyat. Demak A = 0.",
@@ -952,10 +832,10 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-48",
+  "id": "mantiqiy-ifodalar-42",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "X = (A ∧ ¬B) ∨ (¬A ∧ B) ∨ (A ∧ B). X ni eng sodda ko‘rinishda yozing.",
   "options": [
    "A ⊕ B",
@@ -972,18 +852,18 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-49",
+  "id": "mantiqiy-ifodalar-43",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "A, B, C — mantiqiy o‘zgaruvchilar. (A ∨ B) ∧ (B ∨ C) ∧ (A ∨ C) = 1 bo‘ladigan qatorlar soni nechta?",
   "options": [
-   "7",
-   "4",
    "5",
-   "3"
+   "3",
+   "4",
+   "7"
   ],
-  "answer": 1,
+  "answer": 2,
   "explanation": "Kamida ikkita 1 → 3 + 1 = 4.",
   "solution": [
    "Har bir juftlikdan kamida bittasi 1 bo‘lishi kerak, ya’ni kamida ikkita o‘zgaruvchi 1.",
@@ -992,23 +872,145 @@
   ]
  },
  {
-  "id": "mantiqiy-ifodalar-50",
+  "id": "mantiqiy-ifodalar-44",
   "unit": "mantiqiy-ifodalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "A → (B ∧ C) ifoda nechta qatorda rost?",
   "options": [
+   "6",
    "5",
-   "7",
    "4",
-   "6"
+   "7"
   ],
-  "answer": 0,
+  "answer": 1,
   "explanation": "A=0 da 4 ta + 111 → 5.",
   "solution": [
    "A = 0 bo‘lsa implikatsiya doim rost → 4 ta qator.",
    "A = 1 bo‘lsa B ∧ C = 1 bo‘lishi kerak → faqat 111 → 1 ta.",
    "4 + 1 = 5"
+  ]
+ },
+ {
+  "id": "mantiqiy-ifodalar-45",
+  "unit": "mantiqiy-ifodalar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Agar p ∧ q = 1 bo‘lsa, quyidagi ifodalarning qaysilari k ning qiymatidan qat’i nazar har doim ROST?\n1) (p ∨ q) ∨ k\n2) (¬p ∨ ¬q) ∧ k\n3) ¬(p ∨ k) ∨ q",
+  "options": [
+   "1, 2",
+   "1, 3",
+   "1, 2, 3",
+   "2, 3"
+  ],
+  "answer": 1,
+  "explanation": "p = q = 1 → 1) va 3) doim rost.",
+  "solution": [
+   "p ∧ q = 1 bo‘lishi uchun p = 1 va q = 1.",
+   "1) (1 ∨ 1) ∨ k = 1 ✔. 2) (0 ∨ 0) ∧ k = 0 ✘.",
+   "3) ¬(1 ∨ k) ∨ 1 = 0 ∨ 1 = 1 ✔.",
+   "Javob: 1, 3"
+  ]
+ },
+ {
+  "id": "mantiqiy-ifodalar-46",
+  "unit": "mantiqiy-ifodalar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "(p ∧ ¬q) ∨ k mantiqiy ifodaning rostlik jadvalida nechta rost qiymat bor?",
+  "options": [
+   "5",
+   "4",
+   "8",
+   "3"
+  ],
+  "answer": 0,
+  "explanation": "4 + 1 = 5.",
+  "solution": [
+   "k = 1 bo‘lgan 4 ta qatorda ifoda rost.",
+   "k = 0 bo‘lsa, p ∧ ¬q = 1 kerak: faqat p = 1, q = 0 → 1 ta qator.",
+   "4 + 1 = 5"
+  ]
+ },
+ {
+  "id": "mantiqiy-ifodalar-47",
+  "unit": "mantiqiy-ifodalar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Agar p ∧ ¬q = 1 bo‘lsa, ¬(p ∨ q) ∧ ¬k ifodaning qiymatini toping.",
+  "options": [
+   "p",
+   "¬q",
+   "1",
+   "0"
+  ],
+  "answer": 3,
+  "explanation": "¬(1) ∧ … = 0.",
+  "solution": [
+   "p ∧ ¬q = 1 → p = 1, q = 0.",
+   "p ∨ q = 1 → ¬(p ∨ q) = 0.",
+   "0 ∧ ¬k = 0 (k qanday bo‘lmasin).",
+   "Javob: 0"
+  ]
+ },
+ {
+  "id": "mantiqiy-ifodalar-48",
+  "unit": "mantiqiy-ifodalar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "(¬p ∨ q) ∧ k ifodaning rostlik jadvalida nechta rost qiymat bor?",
+  "options": [
+   "4",
+   "5",
+   "6",
+   "3"
+  ],
+  "answer": 3,
+  "explanation": "k = 1 va p → q: 3 ta.",
+  "solution": [
+   "k = 1 bo‘lishi shart (4 ta qator).",
+   "Ulardan ¬p ∨ q = 1 bo‘lganlari: (p,q) = 00, 01, 11 → 3 ta.",
+   "Javob: 3"
+  ]
+ },
+ {
+  "id": "mantiqiy-ifodalar-49",
+  "unit": "mantiqiy-ifodalar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Agar ¬p ∨ q = 0 bo‘lsa, p va q ning qiymatlari qanday?",
+  "options": [
+   "p = 1, q = 1",
+   "p = 1, q = 0",
+   "p = 0, q = 0",
+   "p = 0, q = 1"
+  ],
+  "answer": 1,
+  "explanation": "¬p = 0, q = 0.",
+  "solution": [
+   "YOKI 0 bo‘lishi uchun ikkala qism 0: ¬p = 0 va q = 0.",
+   "¬p = 0 → p = 1.",
+   "Javob: p = 1, q = 0"
+  ]
+ },
+ {
+  "id": "mantiqiy-ifodalar-50",
+  "unit": "mantiqiy-ifodalar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "(p ∨ q) ∧ ¬k ifodaning rostlik jadvalida nechta qator bor va ulardan nechtasida natija rost?",
+  "options": [
+   "8 qator, 3 ta rost",
+   "4 qator, 3 ta rost",
+   "6 qator, 3 ta rost",
+   "8 qator, 4 ta rost"
+  ],
+  "answer": 0,
+  "explanation": "8 qator, 3 ta rost.",
+  "solution": [
+   "3 o‘zgaruvchi → 2³ = 8 qator.",
+   "k = 0 bo‘lishi va p ∨ q = 1 bo‘lishi kerak: (p,q) = 01, 10, 11 → 3 ta.",
+   "Javob: 8 qator, 3 ta rost"
   ]
  }
 ]

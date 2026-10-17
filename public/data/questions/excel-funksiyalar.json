@@ -4,32 +4,12 @@
   "unit": "excel-funksiyalar",
   "difficulty": "easy",
   "points": 0.9,
-  "prompt": "=SUM(2; 3; 5) (ruscha =СУММ(2;3;5)) formulaning natijasi nechaga teng?",
-  "options": [
-   "235",
-   "30",
-   "10",
-   "5"
-  ],
-  "answer": 2,
-  "explanation": "2 + 3 + 5 = 10.",
-  "solution": [
-   "SUM (СУММ) — berilgan sonlarni qo‘shadi.",
-   "2 + 3 + 5",
-   "Javob: 10"
-  ]
- },
- {
-  "id": "excel-funksiyalar-02",
-  "unit": "excel-funksiyalar",
-  "difficulty": "easy",
-  "points": 0.9,
   "prompt": "=MAX(4; 9; 1; 7) (ruscha =МАКС) natijasi?",
   "options": [
-   "4",
    "21",
+   "1",
    "9",
-   "1"
+   "4"
   ],
   "answer": 2,
   "explanation": "Eng kattasi 9.",
@@ -40,38 +20,18 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-03",
-  "unit": "excel-funksiyalar",
-  "difficulty": "easy",
-  "points": 0.9,
-  "prompt": "=MIN(4; 9; 1; 7) (ruscha =МИН) natijasi?",
-  "options": [
-   "9",
-   "4",
-   "7",
-   "1"
-  ],
-  "answer": 3,
-  "explanation": "Eng kichigi 1.",
-  "solution": [
-   "MIN — eng kichik qiymatni qaytaradi.",
-   "Eng kichigi 1.",
-   "Javob: 1"
-  ]
- },
- {
-  "id": "excel-funksiyalar-04",
+  "id": "excel-funksiyalar-02",
   "unit": "excel-funksiyalar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "=AVERAGE(2; 4; 9) (ruscha =СРЗНАЧ) natijasi?",
   "options": [
-   "15",
-   "5",
    "3",
-   "4"
+   "4",
+   "5",
+   "15"
   ],
-  "answer": 1,
+  "answer": 2,
   "explanation": "15 : 3 = 5.",
   "solution": [
    "AVERAGE — o‘rta arifmetik: yig‘indi : soni.",
@@ -80,18 +40,18 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-05",
+  "id": "excel-funksiyalar-03",
   "unit": "excel-funksiyalar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "=LEN(\"Dota\") (ruscha =ДЛСТР(\"Dota\")) natijasi?",
   "options": [
-   "5",
    "3",
-   "4",
-   "Dota"
+   "5",
+   "Dota",
+   "4"
   ],
-  "answer": 2,
+  "answer": 3,
   "explanation": "«Dota» — 4 ta belgi.",
   "solution": [
    "LEN (ДЛСТР) — matndagi belgilar sonini qaytaradi.",
@@ -100,18 +60,18 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-06",
+  "id": "excel-funksiyalar-04",
   "unit": "excel-funksiyalar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "=SQRT(81) (ruscha =КОРЕНЬ(81)) natijasi?",
   "options": [
-   "40,5",
    "81",
-   "6561",
-   "9"
+   "9",
+   "40,5",
+   "6561"
   ],
-  "answer": 3,
+  "answer": 1,
   "explanation": "√81 = 9.",
   "solution": [
    "SQRT (КОРЕНЬ) — kvadrat ildiz.",
@@ -120,18 +80,18 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-07",
+  "id": "excel-funksiyalar-05",
   "unit": "excel-funksiyalar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "=POWER(2; 5) (ruscha =СТЕПЕНЬ(2;5)) natijasi?",
   "options": [
+   "25",
    "10",
    "32",
-   "25",
    "7"
   ],
-  "answer": 1,
+  "answer": 2,
   "explanation": "2⁵ = 32.",
   "solution": [
    "POWER (СТЕПЕНЬ) — darajaga ko‘tarish: 2⁵.",
@@ -140,18 +100,18 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-08",
+  "id": "excel-funksiyalar-06",
   "unit": "excel-funksiyalar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "=IF(5>3; \"ha\"; \"yo‘q\") (ruscha =ЕСЛИ) natijasi?",
   "options": [
-   "ha",
-   "yo‘q",
    "5",
-   "TRUE"
+   "yo‘q",
+   "TRUE",
+   "ha"
   ],
-  "answer": 0,
+  "answer": 3,
   "explanation": "Shart rost → «ha».",
   "solution": [
    "IF (ЕСЛИ) shartni tekshiradi: rost bo‘lsa 2-argument, yolg‘on bo‘lsa 3-argument.",
@@ -160,18 +120,18 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-09",
+  "id": "excel-funksiyalar-07",
   "unit": "excel-funksiyalar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "=LEFT(\"informatika\"; 3) (ruscha =ЛЕВСИМВ) natijasi?",
   "options": [
    "ika",
-   "nfo",
+   "inf",
    "info",
-   "inf"
+   "nfo"
   ],
-  "answer": 3,
+  "answer": 1,
   "explanation": "Chapdan 3 belgi: «inf».",
   "solution": [
    "LEFT (ЛЕВСИМВ) — matnning chap tomonidan n ta belgini oladi.",
@@ -180,18 +140,18 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-10",
+  "id": "excel-funksiyalar-08",
   "unit": "excel-funksiyalar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "=RIGHT(\"olimpiada\"; 2) (ruscha =ПРАВСИМВ) natijasi?",
   "options": [
-   "ad",
-   "ada",
    "da",
-   "ol"
+   "ol",
+   "ad",
+   "ada"
   ],
-  "answer": 2,
+  "answer": 0,
   "explanation": "O‘ngdan 2 belgi: «da».",
   "solution": [
    "RIGHT (ПРАВСИМВ) — o‘ng tomondan n ta belgi.",
@@ -200,35 +160,15 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-11",
-  "unit": "excel-funksiyalar",
-  "difficulty": "easy",
-  "points": 0.9,
-  "prompt": "=ABS(-15) natijasi?",
-  "options": [
-   "-15",
-   "0",
-   "15",
-   "1"
-  ],
-  "answer": 2,
-  "explanation": "|−15| = 15.",
-  "solution": [
-   "ABS — sonning moduli (absolyut qiymati), ya’ni manfiy belgisiz qiymati.",
-   "|−15| = 15.",
-   "Javob: 15"
-  ]
- },
- {
-  "id": "excel-funksiyalar-12",
+  "id": "excel-funksiyalar-09",
   "unit": "excel-funksiyalar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "=\"Salom\" & \"!\" formulaning natijasi?",
   "options": [
-   "Salom !",
-   "xatolik",
    "Salom &!",
+   "xatolik",
+   "Salom !",
    "Salom!"
   ],
   "answer": 3,
@@ -240,16 +180,16 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-13",
+  "id": "excel-funksiyalar-10",
   "unit": "excel-funksiyalar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "=AND(TRUE; FALSE) (ruscha =И(ИСТИНА;ЛОЖЬ)) natijasi?",
   "options": [
    "xatolik",
-   "TRUE (ИСТИНА)",
+   "0,5",
    "FALSE (ЛОЖЬ)",
-   "0,5"
+   "TRUE (ИСТИНА)"
   ],
   "answer": 2,
   "explanation": "AND da bitta FALSE bo‘lsa — FALSE.",
@@ -260,16 +200,16 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-14",
+  "id": "excel-funksiyalar-11",
   "unit": "excel-funksiyalar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "=OR(FALSE; TRUE) (ruscha =ИЛИ) natijasi?",
   "options": [
    "FALSE (ЛОЖЬ)",
-   "xatolik",
+   "1/2",
    "TRUE (ИСТИНА)",
-   "1/2"
+   "xatolik"
   ],
   "answer": 2,
   "explanation": "OR da bitta TRUE yetarli.",
@@ -280,38 +220,18 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-15",
-  "unit": "excel-funksiyalar",
-  "difficulty": "easy",
-  "points": 0.9,
-  "prompt": "=NOT(FALSE) (ruscha =НЕ(ЛОЖЬ)) natijasi?",
-  "options": [
-   "FALSE (ЛОЖЬ)",
-   "0",
-   "-1",
-   "TRUE (ИСТИНА)"
-  ],
-  "answer": 3,
-  "explanation": "NOT(FALSE) = TRUE.",
-  "solution": [
-   "NOT (НЕ) — mantiqiy qiymatni teskarisiga aylantiradi.",
-   "FALSE → TRUE.",
-   "Javob: TRUE (ИСТИНА)"
-  ]
- },
- {
-  "id": "excel-funksiyalar-16",
+  "id": "excel-funksiyalar-12",
   "unit": "excel-funksiyalar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "=MOD(17; 5) (ruscha =ОСТАТ(17;5)) natijasi?",
   "options": [
+   "3,4",
    "12",
-   "2",
    "3",
-   "3,4"
+   "2"
   ],
-  "answer": 1,
+  "answer": 3,
   "explanation": "17 mod 5 = 2.",
   "solution": [
    "MOD (ОСТАТ) — bo‘lishdagi qoldiq.",
@@ -320,18 +240,18 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-17",
+  "id": "excel-funksiyalar-13",
   "unit": "excel-funksiyalar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "A1=3, A2=7, A3=10 bo‘lsa, =SUM(A1:A3) natijasi?",
   "options": [
-   "13",
    "3",
    "10",
-   "20"
+   "20",
+   "13"
   ],
-  "answer": 3,
+  "answer": 2,
   "explanation": "3 + 7 + 10 = 20.",
   "solution": [
    "A1:A3 — A1, A2, A3 kataklari.",
@@ -340,18 +260,18 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-18",
+  "id": "excel-funksiyalar-14",
   "unit": "excel-funksiyalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Excel kitobida B4 = 19. =IF(POWER(B4;2) − POWER(15;2) > 135; C4 − LEN(\"Dota\"); 40 − C4) ifodaning qiymati 21 ga teng bo‘lsa, C4 ni toping.",
   "options": [
-   "17",
-   "21",
    "19",
-   "25"
+   "17",
+   "25",
+   "21"
   ],
-  "answer": 3,
+  "answer": 2,
   "explanation": "136 > 135 → C4 − 4 = 21 → C4 = 25.",
   "solution": [
    "Shartni hisoblaymiz: 19² − 15² = 361 − 225 = 136.",
@@ -361,10 +281,10 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-19",
+  "id": "excel-funksiyalar-15",
   "unit": "excel-funksiyalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "=IF(ISEVEN(12); \"juftmas\"; \"juft\") (ruscha =ЕСЛИ(ЕЧЁТН(12);…)) formulaning natijasi?",
   "options": [
    "juft",
@@ -382,16 +302,16 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-20",
+  "id": "excel-funksiyalar-16",
   "unit": "excel-funksiyalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "=LEFT(\"capybara\"; 2) & RIGHT(\"rest\"; 1) formulaning natijasi?",
   "options": [
-   "rar",
+   "formulada xatolik bor",
    "cat",
    "car",
-   "formulada xatolik bor"
+   "rar"
   ],
   "answer": 1,
   "explanation": "«ca» & «t» = «cat».",
@@ -402,18 +322,18 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-21",
+  "id": "excel-funksiyalar-17",
   "unit": "excel-funksiyalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "=XOR(TRUE; OR(0 < SIGN(−32); NOT(FALSE))) (ruscha =ИСКЛИЛИ(ИСТИНА;ИЛИ(0<ЗНАК(-32);НЕ(ЛОЖЬ)))) natijasi?",
   "options": [
-   "FALSE (ЛОЖЬ)",
    "-1",
+   "xatolik",
    "TRUE (ИСТИНА)",
-   "xatolik"
+   "FALSE (ЛОЖЬ)"
   ],
-  "answer": 0,
+  "answer": 3,
   "explanation": "XOR(TRUE; TRUE) = FALSE.",
   "solution": [
    "SIGN(−32) = −1 (manfiy son belgisi). 0 < −1 — FALSE.",
@@ -423,10 +343,10 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-22",
+  "id": "excel-funksiyalar-18",
   "unit": "excel-funksiyalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "A1:C3 jadvalida qiymatlar: 1; 2; 0,5 | 3; 1,5; 1 | 2; 4; 0. =COUNTIF(A1:C3; \">1,5\") (ruscha =СЧЁТЕСЛИ) natijasi?",
   "options": [
    "6",
@@ -444,18 +364,18 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-23",
+  "id": "excel-funksiyalar-19",
   "unit": "excel-funksiyalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "=SQRT(LEN(REPT(\"ABC\"; 5)) + 1) (ruscha =КОРЕНЬ(ДЛСТР(ПОВТОР(\"ABC\";5))+1)) natijasi?",
   "options": [
-   "4",
+   "16",
    "15",
    "3",
-   "16"
+   "4"
   ],
-  "answer": 0,
+  "answer": 3,
   "explanation": "√(15 + 1) = 4.",
   "solution": [
    "REPT (ПОВТОР) matnni n marta takrorlaydi: «ABCABCABCABCABC».",
@@ -465,18 +385,18 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-24",
+  "id": "excel-funksiyalar-20",
   "unit": "excel-funksiyalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "=ROUND(3,456; 1) (ruscha =ОКРУГЛ(3,456;1)) natijasi?",
   "options": [
+   "3,46",
    "3,5",
-   "3",
    "3,4",
-   "3,46"
+   "3"
   ],
-  "answer": 0,
+  "answer": 1,
   "explanation": "3,456 ≈ 3,5.",
   "solution": [
    "ROUND (ОКРУГЛ) — ko‘rsatilgan xonagacha yaxlitlaydi. 1 — verguldan keyin 1 xona.",
@@ -485,18 +405,18 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-25",
+  "id": "excel-funksiyalar-21",
   "unit": "excel-funksiyalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "=ROUND(1234; −2) natijasi?",
   "options": [
-   "1234",
-   "1300",
    "1200",
-   "1230"
+   "1230",
+   "1234",
+   "1300"
   ],
-  "answer": 2,
+  "answer": 0,
   "explanation": "Yuzlikkacha: 1200.",
   "solution": [
    "Manfiy xona — verguldan CHAPGA yaxlitlash: −2 → yuzlikkacha.",
@@ -505,15 +425,15 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-26",
+  "id": "excel-funksiyalar-22",
   "unit": "excel-funksiyalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "=INT(−3,7) (ruscha =ЦЕЛОЕ) natijasi?",
   "options": [
-   "-3",
    "-3,7",
    "3",
+   "-3",
    "-4"
   ],
   "answer": 3,
@@ -525,18 +445,18 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-27",
+  "id": "excel-funksiyalar-23",
   "unit": "excel-funksiyalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "=MID(\"KOMPYUTER\"; 4; 3) (ruscha =ПСТР) natijasi?",
   "options": [
-   "MPY",
-   "YUT",
    "PYU",
-   "OMP"
+   "YUT",
+   "OMP",
+   "MPY"
   ],
-  "answer": 2,
+  "answer": 0,
   "explanation": "4-belgidan 3 ta: «PYU».",
   "solution": [
    "MID (ПСТР)(matn; boshlanish; uzunlik) — o‘rtadan qism oladi.",
@@ -545,18 +465,18 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-28",
+  "id": "excel-funksiyalar-24",
   "unit": "excel-funksiyalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "A1=5, B1=8. =IF(AND(A1>3; B1<8); A1+B1; A1*B1) natijasi?",
   "options": [
-   "13",
+   "40",
    "FALSE",
-   "3",
-   "40"
+   "13",
+   "3"
   ],
-  "answer": 3,
+  "answer": 0,
   "explanation": "AND → FALSE → 5·8 = 40.",
   "solution": [
    "A1 > 3 → 5 > 3 TRUE. B1 < 8 → 8 < 8 FALSE.",
@@ -565,18 +485,18 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-29",
+  "id": "excel-funksiyalar-25",
   "unit": "excel-funksiyalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "A1:A5 da: 4, \"olma\", 7, (bo‘sh), 2. =COUNT(A1:A5) (ruscha =СЧЁТ) natijasi?",
   "options": [
    "4",
+   "13",
    "3",
-   "5",
-   "13"
+   "5"
   ],
-  "answer": 1,
+  "answer": 2,
   "explanation": "Faqat sonlar: 3 ta.",
   "solution": [
    "COUNT (СЧЁТ) faqat SON yozilgan kataklarni sanaydi.",
@@ -585,18 +505,18 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-30",
+  "id": "excel-funksiyalar-26",
   "unit": "excel-funksiyalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "=SUMPRODUCT({1;2;3}; {4;5;6}) (ruscha =СУММПРОИЗВ) natijasi?",
   "options": [
-   "32",
    "21",
+   "15",
    "90",
-   "15"
+   "32"
   ],
-  "answer": 0,
+  "answer": 3,
   "explanation": "4 + 10 + 18 = 32.",
   "solution": [
    "SUMPRODUCT mos elementlarni ko‘paytirib, so‘ng qo‘shadi.",
@@ -605,38 +525,18 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-31",
+  "id": "excel-funksiyalar-27",
   "unit": "excel-funksiyalar",
   "difficulty": "medium",
-  "points": 1.7,
-  "prompt": "=UPPER(\"salom\") & LEN(\"abc\") natijasi?",
-  "options": [
-   "xatolik",
-   "SALOM3",
-   "salom3",
-   "SALOM 3"
-  ],
-  "answer": 1,
-  "explanation": "«SALOM» & 3 = «SALOM3».",
-  "solution": [
-   "UPPER — barcha harflarni katta qiladi: «SALOM».",
-   "LEN(\"abc\") = 3. & son va matnni ham yopishtiradi.",
-   "Natija: SALOM3"
-  ]
- },
- {
-  "id": "excel-funksiyalar-32",
-  "unit": "excel-funksiyalar",
-  "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "A1=10, A2=20, A3=30, A4=40. =SUMIF(A1:A4; \">15\") natijasi?",
   "options": [
-   "3",
-   "90",
    "100",
-   "70"
+   "70",
+   "90",
+   "3"
   ],
-  "answer": 1,
+  "answer": 2,
   "explanation": "20 + 30 + 40 = 90.",
   "solution": [
    "SUMIF — shartga mos qiymatlarni qo‘shadi.",
@@ -645,38 +545,18 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-33",
+  "id": "excel-funksiyalar-28",
   "unit": "excel-funksiyalar",
   "difficulty": "medium",
-  "points": 1.7,
-  "prompt": "=SIGN(0) + SIGN(25) + SIGN(−7) natijasi?",
-  "options": [
-   "1",
-   "0",
-   "-1",
-   "18"
-  ],
-  "answer": 1,
-  "explanation": "0 + 1 − 1 = 0.",
-  "solution": [
-   "SIGN: musbat → 1, nol → 0, manfiy → −1.",
-   "0 + 1 + (−1)",
-   "Javob: 0"
-  ]
- },
- {
-  "id": "excel-funksiyalar-34",
-  "unit": "excel-funksiyalar",
-  "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "=IF(MOD(A1; 2) = 0; \"juft\"; \"toq\") formulasi A1 = 15 da nima qaytaradi?",
   "options": [
    "juft",
+   "0",
    "1",
-   "toq",
-   "0"
+   "toq"
   ],
-  "answer": 2,
+  "answer": 3,
   "explanation": "MOD(15;2) = 1 ≠ 0 → «toq».",
   "solution": [
    "MOD(15; 2) = 1 (15 = 2·7 + 1).",
@@ -685,18 +565,18 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-35",
+  "id": "excel-funksiyalar-29",
   "unit": "excel-funksiyalar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "=PRODUCT(2; 3; 4) (ruscha =ПРОИЗВЕД) natijasi?",
   "options": [
-   "234",
-   "14",
+   "9",
    "24",
-   "9"
+   "234",
+   "14"
   ],
-  "answer": 2,
+  "answer": 1,
   "explanation": "2·3·4 = 24.",
   "solution": [
    "PRODUCT — barcha argumentlarni ko‘paytiradi.",
@@ -705,16 +585,16 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-36",
+  "id": "excel-funksiyalar-30",
   "unit": "excel-funksiyalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "=ROUND((1 − RANDBETWEEN(12; 15)) / 11; 0) + SQRT(POWER(4; 3)) formulaning qiymatini hisoblang.",
   "options": [
    "7",
-   "har safar har xil",
+   "8",
    "6",
-   "8"
+   "har safar har xil"
   ],
   "answer": 0,
   "explanation": "Tasodifiy qism doim −1 ga yaxlitlanadi: −1 + 8 = 7.",
@@ -727,18 +607,18 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-37",
+  "id": "excel-funksiyalar-31",
   "unit": "excel-funksiyalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "A1=1, B1=2, A2=3, B2=4, C1=SUMPRODUCT(A1:B1; A2:B2), C2=SUM(A2:B2). C1 dagi formula D1 ga nusxalansa, D1 da qanday son hosil bo‘ladi?",
   "options": [
+   "77",
    "85",
    "41",
-   "11",
-   "77"
+   "11"
   ],
-  "answer": 0,
+  "answer": 1,
   "explanation": "=SUMPRODUCT(B1:C1;B2:C2) = 2·4 + 11·7 = 85.",
   "solution": [
    "C1 → D1: ustun +1. Formula: =SUMPRODUCT(B1:C1; B2:C2).",
@@ -748,18 +628,18 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-38",
+  "id": "excel-funksiyalar-32",
   "unit": "excel-funksiyalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "=LEN(REPT(\"ab\"; 3) & REPT(\"c\"; 4)) natijasi?",
   "options": [
-   "7",
    "6",
-   "12",
-   "10"
+   "10",
+   "7",
+   "12"
   ],
-  "answer": 3,
+  "answer": 1,
   "explanation": "6 + 4 = 10.",
   "solution": [
    "REPT(\"ab\"; 3) = «ababab» (6 belgi). REPT(\"c\"; 4) = «cccc» (4 belgi).",
@@ -768,18 +648,18 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-39",
+  "id": "excel-funksiyalar-33",
   "unit": "excel-funksiyalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "A1 = 7. =IF(A1>5; IF(A1>8; \"katta\"; \"o‘rta\"); \"kichik\") natijasi?",
   "options": [
    "katta",
-   "FALSE",
    "o‘rta",
-   "kichik"
+   "kichik",
+   "FALSE"
   ],
-  "answer": 2,
+  "answer": 1,
   "explanation": "7 > 5, lekin 7 ≤ 8 → «o‘rta».",
   "solution": [
    "Tashqi shart: 7 > 5 — rost → ichki IF ga o‘tamiz.",
@@ -788,18 +668,18 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-40",
+  "id": "excel-funksiyalar-34",
   "unit": "excel-funksiyalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "=MOD(−7; 3) natijasi (Excelda)?",
   "options": [
-   "2",
-   "-2",
    "-1",
-   "1"
+   "1",
+   "2",
+   "-2"
   ],
-  "answer": 0,
+  "answer": 2,
   "explanation": "−7 − 3·(−3) = 2.",
   "solution": [
    "Excelda MOD natijasi bo‘luvchi bilan bir xil ishorali bo‘ladi: MOD(n; d) = n − d·INT(n/d).",
@@ -808,18 +688,18 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-41",
+  "id": "excel-funksiyalar-35",
   "unit": "excel-funksiyalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "=SUM(1; 2; \"3\"; TRUE) natijasi (argumentlar to‘g‘ridan-to‘g‘ri yozilgan)?",
   "options": [
+   "6",
    "xatolik",
    "7",
-   "6",
    "3"
   ],
-  "answer": 1,
+  "answer": 2,
   "explanation": "1 + 2 + 3 + 1 = 7.",
   "solution": [
    "To‘g‘ridan-to‘g‘ri yozilgan argumentlarda Excel matnli sonni («3») va TRUE ni songa aylantiradi: «3» → 3, TRUE → 1.",
@@ -828,18 +708,18 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-42",
+  "id": "excel-funksiyalar-36",
   "unit": "excel-funksiyalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "A1:A6: 5, 8, 3, 8, 1, 6. =COUNTIF(A1:A6; MAX(A1:A6)) natijasi?",
   "options": [
+   "2",
    "6",
    "8",
-   "1",
-   "2"
+   "1"
   ],
-  "answer": 3,
+  "answer": 0,
   "explanation": "8 ikki marta uchraydi.",
   "solution": [
    "MAX(A1:A6) = 8.",
@@ -848,16 +728,16 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-43",
+  "id": "excel-funksiyalar-37",
   "unit": "excel-funksiyalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "=LEFT(RIGHT(\"abcdefgh\"; 5); 2) natijasi?",
   "options": [
    "de",
-   "fg",
+   "gh",
    "ab",
-   "gh"
+   "fg"
   ],
   "answer": 0,
   "explanation": "«defgh» → «de».",
@@ -868,18 +748,18 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-44",
+  "id": "excel-funksiyalar-38",
   "unit": "excel-funksiyalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "=IF(OR(LEN(\"test\")=4; 1/0 > 1); \"A\"; \"B\") natijasi?",
   "options": [
-   "#DIV/0! xatoligi",
-   "B",
+   "A",
    "TRUE",
-   "A"
+   "B",
+   "#DIV/0! xatoligi"
   ],
-  "answer": 0,
+  "answer": 3,
   "explanation": "OR barcha argumentlarni hisoblaydi → #DIV/0!.",
   "solution": [
    "Excel OR funksiyasi barcha argumentlarini hisoblaydi (qisqa tutashuv yo‘q).",
@@ -888,38 +768,18 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-45",
+  "id": "excel-funksiyalar-39",
   "unit": "excel-funksiyalar",
   "difficulty": "hard",
-  "points": 2.4,
-  "prompt": "=AVERAGE(10; 20; MAX(5; 30); MIN(0; −10)) natijasi?",
-  "options": [
-   "10",
-   "17,5",
-   "15",
-   "12,5"
-  ],
-  "answer": 3,
-  "explanation": "50 : 4 = 12,5.",
-  "solution": [
-   "MAX(5; 30) = 30. MIN(0; −10) = −10.",
-   "AVERAGE(10; 20; 30; −10) = (10 + 20 + 30 − 10) : 4 = 50 : 4",
-   "Javob: 12,5"
-  ]
- },
- {
-  "id": "excel-funksiyalar-46",
-  "unit": "excel-funksiyalar",
-  "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "A1=2. =POWER(A1; A1+1) + SQRT(POWER(A1; 4)) natijasi?",
   "options": [
-   "12",
    "16",
-   "10",
-   "8"
+   "8",
+   "12",
+   "10"
   ],
-  "answer": 0,
+  "answer": 2,
   "explanation": "8 + 4 = 12.",
   "solution": [
    "POWER(2; 3) = 8.",
@@ -928,18 +788,18 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-47",
+  "id": "excel-funksiyalar-40",
   "unit": "excel-funksiyalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "=ROUND(2,5; 0) + ROUND(−2,5; 0) natijasi (Excelda)?",
   "options": [
-   "-1",
-   "1",
+   "0",
    "5",
-   "0"
+   "1",
+   "-1"
   ],
-  "answer": 3,
+  "answer": 0,
   "explanation": "3 + (−3) = 0.",
   "solution": [
    "Excel ROUND 0,5 ni NOLDAN UZOQQA yaxlitlaydi: 2,5 → 3, −2,5 → −3.",
@@ -948,18 +808,18 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-48",
+  "id": "excel-funksiyalar-41",
   "unit": "excel-funksiyalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "=IF(A1>=90;\"5\";IF(A1>=70;\"4\";IF(A1>=50;\"3\";\"2\"))) formulasi A1 = 70 da nima qaytaradi?",
   "options": [
-   "3",
-   "5",
    "2",
-   "4"
+   "4",
+   "3",
+   "5"
   ],
-  "answer": 3,
+  "answer": 1,
   "explanation": "70 ≥ 70 → «4».",
   "solution": [
    "70 >= 90 — yolg‘on → keyingi IF.",
@@ -968,18 +828,18 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-49",
+  "id": "excel-funksiyalar-42",
   "unit": "excel-funksiyalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "=XOR(TRUE; TRUE; TRUE) natijasi?",
   "options": [
    "xatolik",
+   "3",
    "FALSE",
-   "TRUE",
-   "3"
+   "TRUE"
   ],
-  "answer": 2,
+  "answer": 3,
   "explanation": "TRUE lar soni toq (3) → TRUE.",
   "solution": [
    "Ko‘p argumentli XOR: TRUE lar soni TOQ bo‘lsa TRUE.",
@@ -988,24 +848,169 @@
   ]
  },
  {
-  "id": "excel-funksiyalar-50",
+  "id": "excel-funksiyalar-43",
   "unit": "excel-funksiyalar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "A1 da \"Toshkent\". =LEN(A1) − LEN(SUBSTITUTE(A1; \"t\"; \"\")) natijasi? (SUBSTITUTE katta-kichik harfni farqlaydi)",
   "options": [
-   "0",
-   "2",
    "1",
-   "8"
+   "8",
+   "0",
+   "2"
   ],
-  "answer": 2,
+  "answer": 0,
   "explanation": "Kichik «t» bitta → 8 − 7 = 1.",
   "solution": [
    "SUBSTITUTE(A1; \"t\"; \"\") — barcha kichik «t» larni o‘chiradi. «Toshkent» da kichik t — faqat oxirida (bosh harf T katta).",
    "Natija: «Toshken» — 7 belgi. LEN(A1) = 8.",
    "8 − 7 = 1",
    "Javob: 1"
+  ]
+ },
+ {
+  "id": "excel-funksiyalar-44",
+  "unit": "excel-funksiyalar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "MS Excel jadvalida A1 = 6, A2 = 8, A3 = 10. =AVERAGE(A1:A3) + MAX(A1:A2) * MIN(A2:A3) (ruscha =СРЗНАЧ(A1:A3)+МАКС(A1:A2)*МИН(A2:A3)) natijasini hisoblang.",
+  "options": [
+   "72",
+   "68",
+   "24",
+   "71"
+  ],
+  "answer": 0,
+  "explanation": "8 + 8·8 = 72.",
+  "solution": [
+   "AVERAGE(6; 8; 10) = 24 : 3 = 8.",
+   "MAX(6; 8) = 8, MIN(8; 10) = 8.",
+   "Amallar tartibi: avval ko‘paytirish → 8 · 8 = 64, keyin 8 + 64.",
+   "Javob: 72"
+  ]
+ },
+ {
+  "id": "excel-funksiyalar-45",
+  "unit": "excel-funksiyalar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "A1 = 12, B1 = 18, C1 = 25. =IF(AND(A1>10; B1<20); SUM(A1:C1); PRODUCT(A1:B1)) (ruscha =ЕСЛИ(И(…); СУММ(…); ПРОИЗВЕД(…))) natijasi?",
+  "options": [
+   "12",
+   "30",
+   "216",
+   "55"
+  ],
+  "answer": 3,
+  "explanation": "AND rost → 55.",
+  "solution": [
+   "A1 > 10 → 12 > 10 TRUE; B1 < 20 → 18 < 20 TRUE; AND → TRUE.",
+   "Shart rost → SUM(A1:C1) = 12 + 18 + 25.",
+   "Javob: 55"
+  ]
+ },
+ {
+  "id": "excel-funksiyalar-46",
+  "unit": "excel-funksiyalar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "A1 = 3, A2 = 5, A3 = 2, B1 = 4. =PRODUCT(A1:A3) + MAX(A2:B1) − MIN(A1:B1) natijasini hisoblang.",
+  "options": [
+   "32",
+   "23",
+   "25",
+   "30"
+  ],
+  "answer": 0,
+  "explanation": "30 + 5 − 3 = 32.",
+  "solution": [
+   "PRODUCT(3; 5; 2) = 30.",
+   "A2:B1 bloki A1:B2 to‘rtburchagiga teng: A1 = 3, A2 = 5, B1 = 4, B2 bo‘sh → MAX = 5.",
+   "MIN(A1:B1) = MIN(3; 4) = 3. 30 + 5 − 3.",
+   "Javob: 32"
+  ]
+ },
+ {
+  "id": "excel-funksiyalar-47",
+  "unit": "excel-funksiyalar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "A1 = −2, A2 = 5, A3 = −3. =IF(A1>A3; INT(RAND())+3,14; SUM(A1:A3)) (ruscha =ЕСЛИ(A1>A3; ЦЕЛОЕ(СЛЧИС())+3,14; СУММ(A1:A3))) natijasi?",
+  "options": [
+   "7,14",
+   "0",
+   "1",
+   "3,14"
+  ],
+  "answer": 3,
+  "explanation": "INT(RAND()) = 0 → 3,14.",
+  "solution": [
+   "A1 > A3 → −2 > −3 TRUE → 2-argument hisoblanadi.",
+   "RAND() — 0 dan 1 gacha (1 kirmaydi) tasodifiy son, INT(RAND()) har doim 0.",
+   "0 + 3,14",
+   "Javob: 3,14"
+  ]
+ },
+ {
+  "id": "excel-funksiyalar-48",
+  "unit": "excel-funksiyalar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Jadval: A1 = −2, B1 = 3, C1 = 4; A2 = ?, B2 = 0, C2 = 1; A3 = 3, B3 = ?, C3 = 0. =SUM(A1:A3) = 5, =MAX(B1:C3) = 5. =AVERAGE(A1:C3) ni toping.",
+  "options": [
+   "12",
+   "18",
+   "9",
+   "2"
+  ],
+  "answer": 3,
+  "explanation": "A2 = 4, B3 = 5 → 18/9 = 2.",
+  "solution": [
+   "SUM(A1:A3) = −2 + A2 + 3 = 5 → A2 = 4.",
+   "MAX(B1:C3) = 5, ma’lum qiymatlar ichida eng kattasi 4 → B3 = 5.",
+   "Barcha 9 katak: −2 + 3 + 4 + 4 + 0 + 1 + 3 + 5 + 0 = 18; 18 : 9 = 2.",
+   "Javob: 2"
+  ]
+ },
+ {
+  "id": "excel-funksiyalar-49",
+  "unit": "excel-funksiyalar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Jadval: A1 = ?, B1 = −1, C1 = 0; A2 = −1, B2 = ?, C2 = 2; A3 = 6, B3 = −2, C3 = 1. =SUM(A1:A3) = 19, =MAX(B1:C3) = 8. =AVERAGE(A1:C3) ni toping.",
+  "options": [
+   "9",
+   "2",
+   "3",
+   "27"
+  ],
+  "answer": 2,
+  "explanation": "A1 = 14, B2 = 8 → 27/9 = 3.",
+  "solution": [
+   "SUM(A1:A3) = A1 − 1 + 6 = 19 → A1 = 14.",
+   "MAX(B1:C3) = 8, qolganlari 2 dan oshmaydi → B2 = 8.",
+   "Yig‘indi: 14 − 1 + 0 − 1 + 8 + 2 + 6 − 2 + 1 = 27; 27 : 9 = 3.",
+   "Javob: 3"
+  ]
+ },
+ {
+  "id": "excel-funksiyalar-50",
+  "unit": "excel-funksiyalar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "A1:A4 da 2, bo‘sh katak, 6, 4 bor. =AVERAGE(A1:A4) natijasi?",
+  "options": [
+   "12",
+   "3",
+   "4",
+   "0"
+  ],
+  "answer": 2,
+  "explanation": "Bo‘sh katak sanalmaydi: 12/3 = 4.",
+  "solution": [
+   "AVERAGE bo‘sh kataklarni hisobga OLMAYDI (ular 0 deb sanalmaydi).",
+   "(2 + 6 + 4) : 3 = 12 : 3.",
+   "Javob: 4"
   ]
  }
 ]

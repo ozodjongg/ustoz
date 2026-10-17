@@ -48,7 +48,7 @@ TEZKOR QOIDALAR:
 Vazifang — javobni shunchaki aytish emas, o‘quvchining aynan qayerda tushunmayotganini topib, o‘sha bilim bo‘shlig‘ini yopish.
 
 KONTEKST:
-- Manba yo‘nalishi: 2024-yil O‘zbekiston Informatika tuman/shahar olimpiadasi (9–11-sinf) mavzulari asosida tuzilgan mashq
+- Manba yo‘nalishi: O‘zbekiston Informatika fan olimpiadasi tuman/shahar bosqichi (9–11-sinf, 2024 va 2025–2026 o‘quv yillari) savollari asosida tuzilgan mashq
 - Mavzu: ${topicTitle}
 - Savol ID: ${question.id}
 - Qiyinlik: ${difficultyLabel(question.difficulty)}

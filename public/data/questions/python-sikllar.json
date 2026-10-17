@@ -6,54 +6,12 @@
   "points": 0.9,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "0 1 2 3",
-   "1 2 3",
-   "3",
-   "0 1 2"
+   "[1, 4, 7, 10]",
+   "[1, 3, 6, 9]",
+   "[3, 6, 9]",
+   "[1, 4, 7]"
   ],
   "answer": 3,
-  "explanation": "range(3) = 0, 1, 2.",
-  "solution": [
-   "range(3) — 0 dan boshlab 3 gacha (3 kirmaydi): 0, 1, 2.",
-   "end=' ' — har bir qiymatdan keyin yangi qator emas, bo‘sh joy chiqaradi.",
-   "Natija: 0 1 2"
-  ],
-  "code": "for i in range(3):\n    print(i, end=' ')"
- },
- {
-  "id": "python-sikllar-02",
-  "unit": "python-sikllar",
-  "difficulty": "easy",
-  "points": 0.9,
-  "prompt": "Quyidagi kod natijasini toping:",
-  "options": [
-   "[2, 3, 4, 5]",
-   "[2, 6]",
-   "[2, 3, 4, 5, 6]",
-   "[3, 4, 5, 6]"
-  ],
-  "answer": 0,
-  "explanation": "2..5.",
-  "solution": [
-   "range(a, b) — a dan b gacha, b kirmaydi.",
-   "2, 3, 4, 5.",
-   "Natija: [2, 3, 4, 5]"
-  ],
-  "code": "print(list(range(2, 6)))"
- },
- {
-  "id": "python-sikllar-03",
-  "unit": "python-sikllar",
-  "difficulty": "easy",
-  "points": 0.9,
-  "prompt": "Quyidagi kod natijasini toping:",
-  "options": [
-   "[3, 6, 9]",
-   "[1, 4, 7, 10]",
-   "[1, 4, 7]",
-   "[1, 3, 6, 9]"
-  ],
-  "answer": 2,
   "explanation": "1, 4, 7.",
   "solution": [
    "range(a, b, qadam) — a dan boshlab har safar qadam qo‘shiladi, b dan oldin to‘xtaydi.",
@@ -63,18 +21,18 @@
   "code": "print(list(range(1, 10, 3)))"
  },
  {
-  "id": "python-sikllar-04",
+  "id": "python-sikllar-02",
   "unit": "python-sikllar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "0 1 2 3 4",
    "range(0, 5)",
    "[1, 2, 3, 4, 5]",
-   "[0, 1, 2, 3, 4]"
+   "[0, 1, 2, 3, 4]",
+   "0 1 2 3 4"
   ],
-  "answer": 1,
+  "answer": 0,
   "explanation": "range obyekti o‘zicha chiqadi: range(0, 5).",
   "solution": [
    "range() ro‘yxat emas — u «dangasa» ketma-ketlik obyekti.",
@@ -84,18 +42,18 @@
   "code": "print(range(5))"
  },
  {
-  "id": "python-sikllar-05",
+  "id": "python-sikllar-03",
   "unit": "python-sikllar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "15",
-   "4",
    "5",
-   "10"
+   "4",
+   "10",
+   "15"
   ],
-  "answer": 3,
+  "answer": 2,
   "explanation": "1+2+3+4 = 10.",
   "solution": [
    "i qiymatlari: 1, 2, 3, 4.",
@@ -105,18 +63,18 @@
   "code": "s = 0\nfor i in range(1, 5):\n    s += i\nprint(s)"
  },
  {
-  "id": "python-sikllar-06",
+  "id": "python-sikllar-04",
   "unit": "python-sikllar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
    "a2b2c2",
-   "a a b b c c",
    "aabbcc",
+   "a a b b c c",
    "abcabc"
   ],
-  "answer": 2,
+  "answer": 1,
   "explanation": "'aa'+'bb'+'cc'.",
   "solution": [
    "Satr bo‘yicha sikl har bir belgini oladi: 'a', 'b', 'c'.",
@@ -126,36 +84,15 @@
   "code": "for c in 'abc':\n    print(c * 2, end='')"
  },
  {
-  "id": "python-sikllar-07",
+  "id": "python-sikllar-05",
   "unit": "python-sikllar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "5",
-   "7",
-   "6",
-   "4"
-  ],
-  "answer": 2,
-  "explanation": "0, 2, 4, 6 → 6.",
-  "solution": [
-   "n: 0 → 2 → 4 → 6. Har safar shart tekshiriladi.",
-   "n = 6 bo‘lganda 6 < 5 — yolg‘on, sikl tugaydi.",
-   "Natija: 6"
-  ],
-  "code": "n = 0\nwhile n < 5:\n    n += 2\nprint(n)"
- },
- {
-  "id": "python-sikllar-08",
-  "unit": "python-sikllar",
-  "difficulty": "easy",
-  "points": 0.9,
-  "prompt": "Quyidagi kod natijasini toping:",
-  "options": [
-   "5432",
    "543210",
    "012345",
+   "5432",
    "54321"
   ],
   "answer": 3,
@@ -168,16 +105,16 @@
   "code": "for i in range(5, 0, -1):\n    print(i, end='')"
  },
  {
-  "id": "python-sikllar-09",
+  "id": "python-sikllar-06",
   "unit": "python-sikllar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
+   "3",
    "0123456789",
-   "0123",
    "012",
-   "3"
+   "0123"
   ],
   "answer": 2,
   "explanation": "break i=3 da: 012.",
@@ -189,18 +126,18 @@
   "code": "for i in range(10):\n    if i == 3:\n        break\n    print(i, end='')"
  },
  {
-  "id": "python-sikllar-10",
+  "id": "python-sikllar-07",
   "unit": "python-sikllar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
    "01234",
-   "01",
    "2",
-   "0134"
+   "0134",
+   "01"
   ],
-  "answer": 3,
+  "answer": 2,
   "explanation": "2 o‘tkazib yuboriladi.",
   "solution": [
    "continue joriy qadamning qolganini o‘tkazib, keyingi qadamga o‘tadi.",
@@ -210,18 +147,18 @@
   "code": "for i in range(5):\n    if i == 2:\n        continue\n    print(i, end='')"
  },
  {
-  "id": "python-sikllar-11",
+  "id": "python-sikllar-08",
   "unit": "python-sikllar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "24",
-   "10",
    "4",
-   "120"
+   "10",
+   "120",
+   "24"
   ],
-  "answer": 0,
+  "answer": 3,
   "explanation": "4! = 24.",
   "solution": [
    "p = 1 · 1 · 2 · 3 · 4.",
@@ -231,16 +168,16 @@
   "code": "p = 1\nfor i in range(1, 5):\n    p *= i\nprint(p)"
  },
  {
-  "id": "python-sikllar-12",
+  "id": "python-sikllar-09",
   "unit": "python-sikllar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
+   "3",
    "5",
-   "20",
    "4",
-   "3"
+   "20"
   ],
   "answer": 2,
   "explanation": "0, 5, 10, 15 → 4 ta.",
@@ -252,60 +189,18 @@
   "code": "print(len(range(0, 20, 5)))"
  },
  {
-  "id": "python-sikllar-13",
-  "unit": "python-sikllar",
-  "difficulty": "easy",
-  "points": 0.9,
-  "prompt": "Quyidagi kod natijasini toping:",
-  "options": [
-   "12",
-   "3",
-   "7",
-   "4"
-  ],
-  "answer": 0,
-  "explanation": "3·4 = 12.",
-  "solution": [
-   "Tashqi sikl 3 marta, har birida ichki sikl 4 marta.",
-   "3 · 4.",
-   "Natija: 12"
-  ],
-  "code": "k = 0\nfor i in range(3):\n    for j in range(4):\n        k += 1\nprint(k)"
- },
- {
-  "id": "python-sikllar-14",
-  "unit": "python-sikllar",
-  "difficulty": "easy",
-  "points": 0.9,
-  "prompt": "Quyidagi kod natijasini toping:",
-  "options": [
-   "-3",
-   "0",
-   "1",
-   "-2"
-  ],
-  "answer": 3,
-  "explanation": "10, 7, 4, 1, −2.",
-  "solution": [
-   "x: 10 → 7 → 4 → 1 → −2.",
-   "−2 > 0 — yolg‘on, sikl tugaydi.",
-   "Natija: -2"
-  ],
-  "code": "x = 10\nwhile x > 0:\n    x -= 3\nprint(x)"
- },
- {
-  "id": "python-sikllar-15",
+  "id": "python-sikllar-10",
   "unit": "python-sikllar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Blok-sxemada romb ichida shart bor va «ha» tarmog‘idan strelka yana shartdan oldingi blokka qaytadi. Bu sxema qaysi operatorni ifodalaydi?",
   "options": [
-   "Sikl operatori",
    "Shart operatori",
    "Kiritish operatori",
-   "Dasturni boshlash operatori"
+   "Dasturni boshlash operatori",
+   "Sikl operatori"
   ],
-  "answer": 0,
+  "answer": 3,
   "explanation": "Orqaga qaytish — takrorlash (sikl).",
   "solution": [
    "Romb — shart tekshirish bloki.",
@@ -314,39 +209,18 @@
   ]
  },
  {
-  "id": "python-sikllar-16",
-  "unit": "python-sikllar",
-  "difficulty": "easy",
-  "points": 0.9,
-  "prompt": "Quyidagi kod natijasini toping:",
-  "options": [
-   "2 4 6 8 10",
-   "2 4 6 8",
-   "2 4 6",
-   "0 2 4 6 8"
-  ],
-  "answer": 1,
-  "explanation": "2, 4, 6, 8.",
-  "solution": [
-   "2 dan boshlab 2 qadam bilan, 9 dan oldin to‘xtaydi.",
-   "2, 4, 6, 8.",
-   "Natija: 2 4 6 8"
-  ],
-  "code": "for i in range(2, 9, 2):\n    print(i, end=' ')"
- },
- {
-  "id": "python-sikllar-17",
+  "id": "python-sikllar-11",
   "unit": "python-sikllar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "30",
-   "35",
+   "36",
    "45",
-   "36"
+   "35",
+   "30"
   ],
-  "answer": 3,
+  "answer": 0,
   "explanation": "25 + 9 + 1 + 1 = 36.",
   "solution": [
    "i qiymatlari: 8, 6, 4, 2.",
@@ -356,16 +230,16 @@
   "code": "s = 0\nfor i in range(8, 0, -2):\n    s += (i - 3) ** 2\nprint(s)"
  },
  {
-  "id": "python-sikllar-18",
+  "id": "python-sikllar-12",
   "unit": "python-sikllar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi kod parchasida print() funksiyasi necha marta chaqiriladi?",
   "options": [
+   "5050",
    "100",
-   "10000",
    "4950",
-   "5050"
+   "10000"
   ],
   "answer": 2,
   "explanation": "0+1+…+99 = 4950.",
@@ -377,18 +251,18 @@
   "code": "for i in range(100):\n    for j in range(i):\n        print(i*j)"
  },
  {
-  "id": "python-sikllar-19",
+  "id": "python-sikllar-13",
   "unit": "python-sikllar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "20",
-   "53",
    "47",
-   "33"
+   "33",
+   "53",
+   "20"
   ],
-  "answer": 2,
+  "answer": 0,
   "explanation": "33 + 20 − 6 = 47.",
   "solution": [
    "3 ga bo‘linadiganlar: 100 // 3 = 33. 5 ga: 100 // 5 = 20.",
@@ -398,15 +272,15 @@
   "code": "c = 0\nfor i in range(1, 101):\n    if i % 3 == 0 or i % 5 == 0:\n        c += 1\nprint(c)"
  },
  {
-  "id": "python-sikllar-20",
+  "id": "python-sikllar-14",
   "unit": "python-sikllar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "5",
-   "12345",
    "54321",
+   "12345",
+   "5",
    "15"
   ],
   "answer": 3,
@@ -419,18 +293,18 @@
   "code": "n = 12345\ns = 0\nwhile n > 0:\n    s += n % 10\n    n //= 10\nprint(s)"
  },
  {
-  "id": "python-sikllar-21",
+  "id": "python-sikllar-15",
   "unit": "python-sikllar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "10",
    "4321",
-   "4",
-   "1234"
+   "1234",
+   "10",
+   "4"
   ],
-  "answer": 1,
+  "answer": 0,
   "explanation": "Sonni teskari aylantirish: 4321.",
   "solution": [
    "Har qadamda oxirgi raqam r ning oxiriga qo‘shiladi.",
@@ -440,16 +314,16 @@
   "code": "n = 1234\nr = 0\nwhile n:\n    r = r * 10 + n % 10\n    n //= 10\nprint(r)"
  },
  {
-  "id": "python-sikllar-22",
+  "id": "python-sikllar-16",
   "unit": "python-sikllar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "NameError",
-   "2",
    "3",
-   "0"
+   "2",
+   "0",
+   "NameError"
   ],
   "answer": 1,
   "explanation": "Oxirgi qiymat 2 saqlanadi.",
@@ -461,18 +335,18 @@
   "code": "for i in range(3):\n    pass\nprint(i)"
  },
  {
-  "id": "python-sikllar-23",
+  "id": "python-sikllar-17",
   "unit": "python-sikllar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
    "!",
+   "0!1!2!",
    "012",
-   "012!",
-   "0!1!2!"
+   "012!"
   ],
-  "answer": 2,
+  "answer": 3,
   "explanation": "break bo‘lmasa else ishlaydi: 012!.",
   "solution": [
    "for … else: else bloki sikl break SIZ normal tugasa bajariladi.",
@@ -482,18 +356,18 @@
   "code": "for i in range(3):\n    print(i, end='')\nelse:\n    print('!', end='')"
  },
  {
-  "id": "python-sikllar-24",
+  "id": "python-sikllar-18",
   "unit": "python-sikllar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "3",
    "yo‘q4",
    "4",
+   "3",
    "yo‘q3"
   ],
-  "answer": 0,
+  "answer": 2,
   "explanation": "break → else ishlamaydi; i = 3.",
   "solution": [
    "i = 3 da break ishladi.",
@@ -503,18 +377,18 @@
   "code": "for i in range(5):\n    if i == 3:\n        break\nelse:\n    print('yo‘q', end='')\nprint(i)"
  },
  {
-  "id": "python-sikllar-25",
+  "id": "python-sikllar-19",
   "unit": "python-sikllar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
+   "8",
    "3",
    "9",
-   "8",
    "4"
   ],
-  "answer": 1,
+  "answer": 2,
   "explanation": "Eng katta element 9.",
   "solution": [
    "Bu eng kattasini topish algoritmi: m = 3 dan boshlab har bir katta son bilan almashtiriladi.",
@@ -524,14 +398,14 @@
   "code": "a = [3, 8, 2, 9, 4]\nm = a[0]\nfor x in a:\n    if x > m:\n        m = x\nprint(m)"
  },
  {
-  "id": "python-sikllar-26",
+  "id": "python-sikllar-20",
   "unit": "python-sikllar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "81",
    "100",
+   "81",
    "27",
    "243"
   ],
@@ -545,15 +419,15 @@
   "code": "i = 1\nwhile i < 100:\n    i *= 3\nprint(i)"
  },
  {
-  "id": "python-sikllar-27",
+  "id": "python-sikllar-21",
   "unit": "python-sikllar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "111",
-   "321",
    "6",
+   "321",
+   "111",
    "123"
   ],
   "answer": 1,
@@ -566,18 +440,18 @@
   "code": "s = ''\nfor i in range(1, 4):\n    s = str(i) + s\nprint(s)"
  },
  {
-  "id": "python-sikllar-28",
+  "id": "python-sikllar-22",
   "unit": "python-sikllar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "100",
    "50",
-   "45",
-   "55"
+   "55",
+   "100",
+   "45"
   ],
-  "answer": 3,
+  "answer": 1,
   "explanation": "10+9+…+1 = 55.",
   "solution": [
    "i = 0 da ichki sikl 10 marta, i = 1 da 9 marta, …, i = 9 da 1 marta.",
@@ -587,18 +461,18 @@
   "code": "c = 0\nfor i in range(10):\n    for j in range(i, 10):\n        c += 1\nprint(c)"
  },
  {
-  "id": "python-sikllar-29",
+  "id": "python-sikllar-23",
   "unit": "python-sikllar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
    "0",
+   "5",
    "-5",
-   "55",
-   "5"
+   "55"
   ],
-  "answer": 1,
+  "answer": 2,
   "explanation": "5 · (−1) = −5.",
   "solution": [
    "i toq bo‘lsa (i % 2 = 1 → rost) qo‘shiladi, juft bo‘lsa ayriladi.",
@@ -608,16 +482,16 @@
   "code": "x = 0\nfor i in range(1, 11):\n    if i % 2:\n        x += i\n    else:\n        x -= i\nprint(x)"
  },
  {
-  "id": "python-sikllar-30",
+  "id": "python-sikllar-24",
   "unit": "python-sikllar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
    "6 2",
-   "5 3",
    "6 3",
-   "3 2"
+   "3 2",
+   "5 3"
   ],
   "answer": 0,
   "explanation": "6 ta qadam, oxirgi i = 2.",
@@ -629,18 +503,18 @@
   "code": "n = 0\nfor i in range(-3, 3):\n    n += 1\nprint(n, i)"
  },
  {
-  "id": "python-sikllar-31",
+  "id": "python-sikllar-25",
   "unit": "python-sikllar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "50",
    "5050",
-   "2550",
-   "2500"
+   "2500",
+   "50",
+   "2550"
   ],
-  "answer": 3,
+  "answer": 1,
   "explanation": "50² = 2500.",
   "solution": [
    "range(1, 101, 2) — 1 dan 99 gacha toq sonlar (50 ta).",
@@ -650,18 +524,18 @@
   "code": "print(sum(range(1, 101, 2)))"
  },
  {
-  "id": "python-sikllar-32",
+  "id": "python-sikllar-26",
   "unit": "python-sikllar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "6",
-   "7",
+   "64",
    "32",
-   "64"
+   "7",
+   "6"
   ],
-  "answer": 0,
+  "answer": 3,
   "explanation": "log₂64 = 6.",
   "solution": [
    "Har qadamda n ikki marta kamayadi: 64 → 32 → 16 → 8 → 4 → 2 → 1.",
@@ -671,16 +545,16 @@
   "code": "k = 0\nn = 64\nwhile n > 1:\n    n //= 2\n    k += 1\nprint(k)"
  },
  {
-  "id": "python-sikllar-33",
+  "id": "python-sikllar-27",
   "unit": "python-sikllar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "20",
-   "12",
    "4",
-   "8"
+   "12",
+   "8",
+   "20"
   ],
   "answer": 1,
   "explanation": "Juft elementlar yig‘indisi: 12.",
@@ -692,15 +566,15 @@
   "code": "s = 0\nfor x in [4, 7, 1, 8]:\n    if x % 2 == 0:\n        s += x\nprint(s)"
  },
  {
-  "id": "python-sikllar-34",
+  "id": "python-sikllar-28",
   "unit": "python-sikllar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "9",
    "3",
    "18",
+   "9",
    "6"
   ],
   "answer": 3,
@@ -713,18 +587,18 @@
   "code": "t = 0\nfor i in range(3):\n    for j in range(3):\n        if i == j:\n            t += i + j\nprint(t)"
  },
  {
-  "id": "python-sikllar-35",
+  "id": "python-sikllar-29",
   "unit": "python-sikllar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "*\n**\n***",
    "***",
-   "*\n*\n*",
-   "* ** ***"
+   "*\n**\n***",
+   "* ** ***",
+   "*\n*\n*"
   ],
-  "answer": 0,
+  "answer": 1,
   "explanation": "Har qatorda i ta yulduzcha.",
   "solution": [
    "i = 1: '*'; i = 2: '**'; i = 3: '***'. Har biri yangi qatorda.",
@@ -734,18 +608,18 @@
   "code": "for i in range(1, 4):\n    print('*' * i)"
  },
  {
-  "id": "python-sikllar-36",
+  "id": "python-sikllar-30",
   "unit": "python-sikllar",
   "difficulty": "medium",
-  "points": 1.7,
+  "points": 1.5,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "24",
    "120",
-   "15",
-   "5"
+   "24",
+   "5",
+   "15"
   ],
-  "answer": 1,
+  "answer": 0,
   "explanation": "5! = 120.",
   "solution": [
    "f = 5 · 4 · 3 · 2 (n = 1 da to‘xtaydi).",
@@ -755,18 +629,18 @@
   "code": "n = 5\nf = 1\nwhile n > 1:\n    f *= n\n    n -= 1\nprint(f)"
  },
  {
-  "id": "python-sikllar-37",
+  "id": "python-sikllar-31",
   "unit": "python-sikllar",
   "difficulty": "easy",
   "points": 0.9,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
    "9",
-   "2",
    "1",
-   "3"
+   "3",
+   "2"
   ],
-  "answer": 1,
+  "answer": 3,
   "explanation": "'a' 2 marta.",
   "solution": [
    "Satrdagi har bir belgini tekshiramiz.",
@@ -776,18 +650,18 @@
   "code": "c = 0\nfor ch in 'olimpiada':\n    if ch == 'a':\n        c += 1\nprint(c)"
  },
  {
-  "id": "python-sikllar-38",
+  "id": "python-sikllar-32",
   "unit": "python-sikllar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "1201200",
    "120120",
-   "123123",
-   "12012"
+   "12012",
+   "1201200",
+   "123123"
   ],
-  "answer": 1,
+  "answer": 0,
   "explanation": "Raqamlar 1,2,0,1,2,0 → 120120.",
   "solution": [
    "i % 3 qiymatlari: 1, 2, 0, 1, 2, 0.",
@@ -797,18 +671,18 @@
   "code": "res = 0\nfor i in range(1, 7):\n    res = res * 10 + i % 3\nprint(res)"
  },
  {
-  "id": "python-sikllar-39",
+  "id": "python-sikllar-33",
   "unit": "python-sikllar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "15",
    "25",
+   "10",
    "5",
-   "10"
+   "15"
   ],
-  "answer": 3,
+  "answer": 1,
   "explanation": "C(5,2) = 10.",
   "solution": [
    "i < j bo‘lgan (i, j) juftliklar soni — 5 ta sondan 2 tasini tanlash.",
@@ -818,18 +692,18 @@
   "code": "c = 0\nfor i in range(1, 6):\n    for j in range(1, 6):\n        if i < j:\n            c += 1\nprint(c)"
  },
  {
-  "id": "python-sikllar-40",
+  "id": "python-sikllar-34",
   "unit": "python-sikllar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
    "6",
-   "10",
+   "20",
    "16",
-   "20"
+   "10"
   ],
-  "answer": 1,
+  "answer": 3,
   "explanation": "0+1+3+6 = 10.",
   "solution": [
    "i=1: j=0 → 0. i=2: j=0,1 → 1. i=3: 0+1+2 = 3. i=4: 0+1+2+3 = 6.",
@@ -839,15 +713,15 @@
   "code": "s = 0\nfor i in range(1, 5):\n    for j in range(i):\n        s += j\nprint(s)"
  },
  {
-  "id": "python-sikllar-41",
+  "id": "python-sikllar-35",
   "unit": "python-sikllar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
    "55",
-   "89",
    "34",
+   "89",
    "144"
   ],
   "answer": 0,
@@ -860,18 +734,18 @@
   "code": "a, b = 0, 1\nfor _ in range(10):\n    a, b = b, a + b\nprint(a)"
  },
  {
-  "id": "python-sikllar-42",
+  "id": "python-sikllar-36",
   "unit": "python-sikllar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "[1, 2, 3, 5]",
-   "[30]",
+   "[2, 3, 5, 6]",
    "[2, 3, 5]",
-   "[2, 3, 5, 6]"
+   "[1, 2, 3, 5]",
+   "[30]"
   ],
-  "answer": 2,
+  "answer": 1,
   "explanation": "30 = 2·3·5.",
   "solution": [
    "Bu sonni tub ko‘paytuvchilarga ajratish.",
@@ -881,18 +755,18 @@
   "code": "n = 30\nd = 2\nr = []\nwhile n > 1:\n    if n % d == 0:\n        r.append(d)\n        n //= d\n    else:\n        d += 1\nprint(r)"
  },
  {
-  "id": "python-sikllar-43",
+  "id": "python-sikllar-37",
   "unit": "python-sikllar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
    "36",
-   "30",
    "33",
+   "30",
    "100"
   ],
-  "answer": 2,
+  "answer": 1,
   "explanation": "9 + 12 + 12 = 33.",
   "solution": [
    "1..10 sonlari 3 ga bo‘lishdagi qoldiq bo‘yicha: qoldiq 0 — 3 ta (3,6,9), 1 — 4 ta (1,4,7,10), 2 — 3 ta (2,5,8).",
@@ -902,16 +776,16 @@
   "code": "c = 0\nfor i in range(1, 11):\n    for j in range(1, 11):\n        if (i + j) % 3 == 0:\n            c += 1\nprint(c)"
  },
  {
-  "id": "python-sikllar-44",
+  "id": "python-sikllar-38",
   "unit": "python-sikllar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "70",
+   "12",
    "35",
    "7",
-   "12"
+   "70"
   ],
   "answer": 1,
   "explanation": "EKUK(5,7) = 35.",
@@ -923,15 +797,15 @@
   "code": "i = 0\nwhile True:\n    i += 1\n    if i % 7 == 0 and i % 5 == 0:\n        break\nprint(i)"
  },
  {
-  "id": "python-sikllar-45",
+  "id": "python-sikllar-39",
   "unit": "python-sikllar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
+   "24",
    "25",
    "9",
-   "24",
    "16"
   ],
   "answer": 3,
@@ -945,18 +819,18 @@
   "code": "s = 0\nfor i in range(10):\n    if i % 2 == 0:\n        continue\n    if i > 7:\n        break\n    s += i\nprint(s)"
  },
  {
-  "id": "python-sikllar-46",
+  "id": "python-sikllar-40",
   "unit": "python-sikllar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "20",
    "9",
-   "19",
-   "16"
+   "16",
+   "20",
+   "19"
   ],
-  "answer": 3,
+  "answer": 1,
   "explanation": "9+4+2+1 = 16.",
   "solution": [
    "Har i uchun u nechta marta 2 ga bo‘linishini sanaymiz (2 ning darajasi).",
@@ -966,18 +840,18 @@
   "code": "n = 0\nfor i in range(1, 20):\n    j = i\n    while j % 2 == 0:\n        j //= 2\n        n += 1\nprint(n)"
  },
  {
-  "id": "python-sikllar-47",
+  "id": "python-sikllar-41",
   "unit": "python-sikllar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "17",
    "26",
    "32",
+   "17",
    "25"
   ],
-  "answer": 1,
+  "answer": 0,
   "explanation": "2 → 5 → 10 → 13 → 26.",
   "solution": [
    "i=1 (toq): x = 2. i=2 (juft): x = 5. i=3: x = 10. i=4: x = 13. i=5: x = 26.",
@@ -987,18 +861,18 @@
   "code": "x = 1\nfor i in range(1, 6):\n    x = x * 2 if i % 2 else x + 3\nprint(x)"
  },
  {
-  "id": "python-sikllar-48",
+  "id": "python-sikllar-42",
   "unit": "python-sikllar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "36",
-   "8",
+   "6",
    "27",
-   "6"
+   "8",
+   "36"
   ],
-  "answer": 1,
+  "answer": 2,
   "explanation": "8 xil ajratish.",
   "solution": [
    "a ≤ b ≤ d, yig‘indi 10 — 10 ni 3 ta musbat qo‘shiluvchiga (tartibsiz) ajratishlar soni.",
@@ -1008,18 +882,18 @@
   "code": "c = 0\nfor a in range(1, 10):\n    for b in range(a, 10):\n        for d in range(b, 10):\n            if a + b + d == 10:\n                c += 1\nprint(c)"
  },
  {
-  "id": "python-sikllar-49",
+  "id": "python-sikllar-43",
   "unit": "python-sikllar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "4",
    "100",
    "10",
-   "9"
+   "9",
+   "4"
   ],
-  "answer": 3,
+  "answer": 2,
   "explanation": "100 ning 9 ta bo‘luvchisi bor.",
   "solution": [
    "100 ning bo‘luvchilari soni: 100 = 2² · 5² → (2+1)(2+1).",
@@ -1029,18 +903,18 @@
   "code": "n = 100\ncnt = 0\nfor i in range(1, n + 1):\n    if n % i == 0:\n        cnt += 1\nprint(cnt)"
  },
  {
-  "id": "python-sikllar-50",
+  "id": "python-sikllar-44",
   "unit": "python-sikllar",
   "difficulty": "hard",
-  "points": 2.4,
+  "points": 2.6,
   "prompt": "Quyidagi kod natijasini toping:",
   "options": [
-   "22 1",
-   "19 1",
    "21 -2",
-   "22 -2"
+   "22 -2",
+   "19 1",
+   "22 1"
   ],
-  "answer": 3,
+  "answer": 1,
   "explanation": "s = 22, i = −2.",
   "solution": [
    "i = 10: s = 10, i = 7. i = 7: s = 17, i = 4. i = 4: s = 21, i = 1.",
@@ -1048,5 +922,132 @@
    "Natija: 22 -2"
   ],
   "code": "s = 0\ni = 10\nwhile i:\n    s += i\n    i -= 3\n    if i < 0:\n        break\nprint(s, i)"
+ },
+ {
+  "id": "python-sikllar-45",
+  "unit": "python-sikllar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Quyidagi kod natijasini aniqlang:",
+  "options": [
+   "24",
+   "18",
+   "1",
+   "8"
+  ],
+  "answer": 3,
+  "explanation": "4 · 2 = 8.",
+  "solution": [
+   "i: 5, 4, 3, 2, 1. Faqat juft i larda P ko‘paytiriladi.",
+   "Juftlar: 4 va 2 → P = 1 · 4 · 2.",
+   "Natija: 8"
+  ],
+  "code": "P = 1\ni = 5\nwhile i >= 1:\n    if i % 2 == 0:\n        P = P * i\n    i = i - 1\nprint(P)"
+ },
+ {
+  "id": "python-sikllar-46",
+  "unit": "python-sikllar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Quyidagi kod natijasini aniqlang:",
+  "options": [
+   "1",
+   "15",
+   "0",
+   "2"
+  ],
+  "answer": 3,
+  "explanation": "2 ta 'i'.",
+  "solution": [
+   "Sikl satrning har bir belgisini n ga oladi va 'i' bo‘lsa sanaydi.",
+   "\"sun'iy\" da bitta 'i', \"intellekt\" da bitta 'i'.",
+   "Natija: 2"
+  ],
+  "code": "text = \"sun'iy intellekt\"\ni = 0\nfor n in text:\n    if n == \"i\":\n        i += 1\nprint(i)"
+ },
+ {
+  "id": "python-sikllar-47",
+  "unit": "python-sikllar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini aniqlang:",
+  "options": [
+   "9",
+   "18",
+   "30",
+   "8"
+  ],
+  "answer": 1,
+  "explanation": "3+6+9 = 18.",
+  "solution": [
+   "i = 1..10 orasida 3 ga bo‘linadiganlar: 3, 6, 9.",
+   "S = 3 + 6 + 9.",
+   "Natija: 18"
+  ],
+  "code": "S = 0\ni = 1\nwhile i <= 10:\n    if i % 3 == 0:\n        S = S + i\n    i = i + 1\nprint(S)"
+ },
+ {
+  "id": "python-sikllar-48",
+  "unit": "python-sikllar",
+  "difficulty": "hard",
+  "points": 2.6,
+  "prompt": "Quyidagi kod natijasini aniqlang:",
+  "options": [
+   "1",
+   "8",
+   "0",
+   "-8"
+  ],
+  "answer": 1,
+  "explanation": "2·4·1 = 8, keyin break.",
+  "solution": [
+   "Birinchi manfiy son uchramaguncha ko‘paytiramiz: 2 · 4 · 1 = 8.",
+   "−1 da break — sikl to‘xtaydi, qolganlari (3, 7, −3) ishlatilmaydi.",
+   "Natija: 8"
+  ],
+  "code": "lst = [2, 4, 1, -1, 3, 7, -3]\np = 1\nfor x in lst:\n    if x < 0:\n        break\n    p *= x\nprint(p)"
+ },
+ {
+  "id": "python-sikllar-49",
+  "unit": "python-sikllar",
+  "difficulty": "easy",
+  "points": 0.9,
+  "prompt": "Quyidagi kod natijasini aniqlang:",
+  "options": [
+   "75",
+   "60",
+   "45",
+   "90"
+  ],
+  "answer": 3,
+  "explanation": "15+30+45 = 90.",
+  "solution": [
+   "range(1, 51) — 1 dan 50 gacha.",
+   "15 ga bo‘linadiganlar: 15, 30, 45.",
+   "15 + 30 + 45 = 90",
+   "Natija: 90"
+  ],
+  "code": "S = 0\nfor n in range(1, 51):\n    if n % 15 == 0:\n        S += n\nprint(S)"
+ },
+ {
+  "id": "python-sikllar-50",
+  "unit": "python-sikllar",
+  "difficulty": "medium",
+  "points": 1.5,
+  "prompt": "Quyidagi kod natijasini aniqlang:",
+  "options": [
+   "18",
+   "55",
+   "19",
+   "22"
+  ],
+  "answer": 3,
+  "explanation": "10+7+4+1 = 22.",
+  "solution": [
+   "range(10, 0, −3): 10, 7, 4, 1.",
+   "10 + 7 + 4 + 1.",
+   "Natija: 22"
+  ],
+  "code": "S = 0\nfor i in range(10, 0, -3):\n    S += i\nprint(S)"
  }
 ]

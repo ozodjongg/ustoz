@@ -55,7 +55,7 @@ export default function Layout({ children }: { children: ReactNode }) {
     <main>{children}</main>
     <footer className="footer">
       <div className="container footRow">
-        <span>2024-yil 9–11-sinf Informatika olimpiadasi (tuman/shahar bosqichi) mavzulari asosida.</span>
+        <span>2024 va 2025–2026 o‘quv yillari 9–11-sinf Informatika olimpiadasi (tuman/shahar bosqichi) savollari asosida.</span>
         <span>Natijalar faqat shu brauzerda saqlanadi.</span>
       </div>
     </footer>
