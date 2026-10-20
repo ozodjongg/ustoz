@@ -5,7 +5,8 @@
       "command": "npx",
       "args": [
         "-y",
-        "rea-agents"
+        "rea-agents",
+        "--mcp"
       ],
       "env": {}
     }
